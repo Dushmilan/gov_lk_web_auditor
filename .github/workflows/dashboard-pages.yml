@@ -1,0 +1,45 @@
+name: Build and deploy dashboard to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/glwa/dashboard/**"
+      - "latest_audit_reports/**"
+      - "static_data/websites.json"
+      - "audit.output/**"
+      - "tests/test_Dashboard*.py"
+      - ".github/workflows/dashboard-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v6
+      - name: Install locked environment
+        run: uv sync --locked
+      - name: Build static dashboard (committed audit data only)
+        run: PYTHONPATH=src uv run python -m glwa.dashboard --reports latest_audit_reports --output site
+      - name: Check for broken internal links
+        run: PYTHONPATH=src uv run python -m unittest tests.test_DashboardBuilder -v
+      - name: Publish dashboard to gh-pages branch
+        run: |
+          cd site
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Deploy dashboard to gh-pages"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:gh-pages

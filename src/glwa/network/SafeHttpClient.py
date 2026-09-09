@@ -1,3 +1,5 @@
+import os
+import time
 from urllib.parse import urljoin, urlsplit
 
 import httpx
@@ -18,28 +20,34 @@ class SafeHttpClient:
     def get(self, url: str, max_bytes: int) -> FetchedPage:
         redirects = []
         current = url
+        proxy = os.getenv("HTTPS_PROXY") or os.getenv("HTTP_PROXY")
         with httpx.Client(
             follow_redirects=False,
             timeout=self.timeout,
             headers={"User-Agent": "lk-gov-web-auditor/0.1"},
+            proxy=proxy,
         ) as client:
             for _ in range(11):
                 self._validate(current)
                 host = urlsplit(current).hostname or ""
                 self.rate_limiter.wait(host)
+                started = time.monotonic()
                 with client.stream("GET", current) as response:
                     location = response.headers.get("location")
                     redirected = response.status_code in self.REDIRECT_CODES
                     if redirected and location:
+                        response.close()
                         current = urljoin(current, location)
                         redirects.append(current)
                         continue
                     content = self._read(response, max_bytes)
+                    response.close()
+                    elapsed_ms = int((time.monotonic() - started) * 1000)
                     return FetchedPage(
                         response.status_code,
                         str(response.url),
                         redirects,
-                        int(response.elapsed.total_seconds() * 1000),
+                        elapsed_ms,
                         response.headers.get("content-type"),
                         content,
                     )
