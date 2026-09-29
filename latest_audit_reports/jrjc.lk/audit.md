@@ -1,7 +1,8 @@
 # Website Audit: https://jrjc.lk/
 
-- Completed: 2026-09-08 23:26
+- Completed: 2026-09-29 08:37
 - Overall result: 🔴 Level 1
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -36,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: here Request Type * I need to access Books I need to access Periodicals and Journals I need to access Manuscripts Collec |
+| postal_address | ✅ | Published postal address: No. 191, Dharmapala Mawatha, Colombo 07, Sri Lanka. Fax +94 11 269 5137​ Email [email protected] [email protected] Openi |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: department |
 

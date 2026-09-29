@@ -1,7 +1,8 @@
 # Website Audit: https://ranaviruseva.gov.lk/
 
-- Completed: 2026-09-08 23:26
+- Completed: 2026-09-29 08:40
 - Overall result: 🔴 Level 1
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +38,7 @@ No passing postal address evidence found; No passing named responsibility eviden
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 071-3212505 (5 phone numbers found); Email: ranaviruseva@gmail.com |
+| reachable_contacts | ✅ | Phone: 011 2 055673 (4 phone numbers found); Email: ranaviruseva@gmail.com |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

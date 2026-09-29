@@ -1,7 +1,8 @@
 # Website Audit: https://snsca.gov.lk/
 
-- Completed: 2026-09-09 00:04
+- Completed: 2026-09-29 09:24
 - Overall result: 🟠 Level 2
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

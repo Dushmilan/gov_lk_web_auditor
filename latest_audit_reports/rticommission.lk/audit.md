@@ -1,7 +1,8 @@
 # Website Audit: https://rticommission.lk/
 
-- Completed: 2026-09-08 23:50
+- Completed: 2026-09-29 09:07
 - Overall result: 🔴 Level 1
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

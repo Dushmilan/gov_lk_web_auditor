@@ -1,7 +1,8 @@
 # Website Audit: https://www.sema.gov.lk/
 
-- Completed: 2026-09-08 23:43
+- Completed: 2026-09-29 08:56
 - Overall result: ⚫ Level 0
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

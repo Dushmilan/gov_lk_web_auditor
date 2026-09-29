@@ -1,7 +1,8 @@
 # Website Audit: https://www.nitf.lk/
 
-- Completed: 2026-09-08 23:40
+- Completed: 2026-09-29 08:55
 - Overall result: 🟠 Level 2
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: customer complaints and ensure a resolution at the earliest. Discover More Quick Links About Us Downloads News Help & FA; Phone: +94711784547 (60 phone numbers found); Email: awp@nitf.lk (21 email addresses found); Published named responsibility: director
+Published postal address: customer complaints and ensure a resolution at the earliest. Discover More Quick Links About Us Downloads News Help & FA; Phone: +94711784552 (12 phone numbers found); Email: mail@nitf.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: customer complaints and ensure a resolution at the earliest. Discover More Quick Links About Us Downloads News Help & FA |
-| reachable_contacts | ✅ | Phone: +94711784547 (60 phone numbers found); Email: awp@nitf.lk (21 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94711784552 (12 phone numbers found); Email: mail@nitf.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs 171,748 |
+| fees_and_payment | ✅ | Published fees and payment: RS 17 |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 10 days |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://www.nitf.lk/assets/doc/New Registration Form.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

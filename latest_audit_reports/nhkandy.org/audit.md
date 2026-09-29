@@ -1,7 +1,8 @@
 # Website Audit: https://nhkandy.org/
 
-- Completed: 2026-09-08 23:49
+- Completed: 2026-09-29 09:06
 - Overall result: 🔴 Level 1
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

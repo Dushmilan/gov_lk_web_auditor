@@ -1,7 +1,8 @@
 # Website Audit: https://www.sec.gov.lk/
 
-- Completed: 2026-09-08 23:40
+- Completed: 2026-09-29 08:56
 - Overall result: 🔴 Level 1
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

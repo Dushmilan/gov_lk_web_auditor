@@ -1,7 +1,8 @@
 # Website Audit: https://www.nsf.gov.lk/
 
-- Completed: 2026-09-09 00:00
-- Overall result: ⚫ Level 0
+- Completed: 2026-09-29 09:17
+- Overall result: 🔴 Level 1
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -9,20 +10,20 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ✅
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 59 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 59 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 59 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 59 visible characters across 2 pages; below substance threshold 200
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: Server disconnected without sending a response.; http://www.nsf.gov.lk/: Probe 4: Server disconnected without sending a response.; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 59 visible characters across 2 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 59 visible characters across 2 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 59 visible characters across 2 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 59 visible characters across 2 pages; below substance threshold 200 |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: [Errno 111] Connection refused; http://www.nsf.gov.lk/: Probe 4: [Errno 111] Connection refused |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: Server disconnected without sending a response.; http://www.nsf.gov.lk/: Probe 4: Server disconnected without sending a response. |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -32,7 +33,13 @@ Insufficient substantive page content: Only 59 visible characters across 2 pages
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Not run because 🔴 Level 1 did not pass
+No passing postal address evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: 0962570016 . (106 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 

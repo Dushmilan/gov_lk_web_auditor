@@ -1,7 +1,8 @@
 # Website Audit: http://govtfactory.gov.lk/
 
-- Completed: 2026-09-08 23:52
+- Completed: 2026-09-29 09:08
 - Overall result: ⚫ Level 0
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -13,20 +14,20 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1032); [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1032)
+Insufficient substantive page content: Only 53 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 53 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 53 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 53 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010); [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010)
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200 |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 53 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 53 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 53 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 53 visible characters across 2 pages; below substance threshold 200 |
 | http_available | ❓ | An HTTP probe was transient |
-| redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1032) |
-| tls_hostname_matches | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1032) |
+| redirect_related | ❓ | No redirect result was available |
+| tls_browser_trusted | ❓ | Browser TLS check did not complete |
+| tls_not_expired | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010) |
+| tls_hostname_matches | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010) |
 
 ## 🟠 Level 2: ❓
 

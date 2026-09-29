@@ -1,7 +1,8 @@
 # Website Audit: http://www.pgia.ac.lk/
 
-- Completed: 2026-09-08 23:30
+- Completed: 2026-09-29 08:44
 - Overall result: 🟠 Level 2
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

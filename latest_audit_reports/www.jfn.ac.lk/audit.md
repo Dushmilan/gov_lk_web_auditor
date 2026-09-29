@@ -1,7 +1,8 @@
 # Website Audit: http://www.jfn.ac.lk/
 
-- Completed: 2026-09-08 23:28
+- Completed: 2026-09-29 08:43
 - Overall result: 🔴 Level 1
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94) 021 221 810 (29 phone numbers found); Email: info@univ.jfn.ac.lk (23 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 021 221 810 (29 phone numbers found); Email: info@univ.jfn.ac.lk (22 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

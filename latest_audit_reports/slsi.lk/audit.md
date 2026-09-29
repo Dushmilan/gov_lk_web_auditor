@@ -1,7 +1,8 @@
 # Website Audit: https://slsi.lk/
 
-- Completed: 2026-09-09 00:01
+- Completed: 2026-09-29 09:18
 - Overall result: 🔴 Level 1
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

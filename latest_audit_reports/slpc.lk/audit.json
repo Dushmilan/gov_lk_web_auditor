@@ -1,24 +1,17 @@
 {
-  "schema_version": "1.2.0",
-  "audit_id": "bd6d1e77-a18e-4484-a76c-9c1bd905d56e",
+  "schema_version": "1.3.0",
+  "audit_id": "dff1dceb-189f-4cf5-9a00-37fe3c82401b",
   "url": "https://slpc.lk/",
   "normalized_url": "https://slpc.lk/",
-  "started_at": "2026-09-08T23:51:10.125869+05:30",
-  "completed_at": "2026-09-08T23:51:51.411625+05:30",
+  "started_at": "2026-09-29T09:08:10.830407+05:30",
+  "completed_at": "2026-09-29T09:08:22.146561+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "http_available: An HTTP probe was transient",
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -26,968 +19,124 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-08T23:51:11.415168+05:30"
+      "observed_at": "2026-09-29T09:08:14.081145+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-08T23:51:11.415185+05:30"
+      "observed_at": "2026-09-29T09:08:14.081165+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-09-08T23:51:12.475247+05:30"
+      "status": "error",
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-09-29T09:08:16.154505+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://slpc.lk/english/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://slpc.lk/",
-      "observed_at": "2026-09-08T23:51:50.683045+05:30"
+      "observed_at": "2026-09-29T09:08:22.135424+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://slpc.lk/english/",
+      "detail": "Probe 2: HTTP 200 at http://slpc.lk/",
       "source": "http://slpc.lk/",
-      "observed_at": "2026-09-08T23:51:50.683068+05:30"
+      "observed_at": "2026-09-29T09:08:22.135443+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://slpc.lk/english/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://slpc.lk/",
-      "observed_at": "2026-09-08T23:51:50.683071+05:30"
+      "observed_at": "2026-09-29T09:08:22.135447+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://slpc.lk/english/",
+      "detail": "Probe 4: HTTP 200 at http://slpc.lk/",
       "source": "http://slpc.lk/",
-      "observed_at": "2026-09-08T23:51:50.683074+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://slpc.lk/english/about/senior-officers",
-      "source": "https://slpc.lk/english/about/senior-officers",
-      "observed_at": "2026-09-08T23:51:50.683077+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://slpc.lk/english/services/news-paper-registrations",
-      "source": "https://slpc.lk/english/services/news-paper-registrations",
-      "observed_at": "2026-09-08T23:51:50.683080+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://slpc.lk/english/services/courses-seminars",
-      "source": "https://slpc.lk/english/services/courses-seminars",
-      "observed_at": "2026-09-08T23:51:50.683082+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://slpc.lk/english/services/workshops/school-workshops",
-      "source": "https://slpc.lk/english/services/workshops/school-workshops",
-      "observed_at": "2026-09-08T23:51:50.683085+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://slpc.lk/english/services/workshops/media-workshops",
-      "source": "https://slpc.lk/english/services/workshops/media-workshops",
-      "observed_at": "2026-09-08T23:51:50.683088+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://slpc.lk/english/services/workshops/other",
-      "source": "https://slpc.lk/english/services/workshops/other",
-      "observed_at": "2026-09-08T23:51:50.683090+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://slpc.lk/english/services/workshops/teacher-training-workshops",
-      "source": "https://slpc.lk/english/services/workshops/teacher-training-workshops",
-      "observed_at": "2026-09-08T23:51:50.683093+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://slpc.lk/english/services/kaleena-kathikawa",
-      "source": "https://slpc.lk/english/services/kaleena-kathikawa",
-      "observed_at": "2026-09-08T23:51:50.683095+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "source": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "observed_at": "2026-09-08T23:51:50.683098+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://slpc.lk/english/services/special-events",
-      "source": "https://slpc.lk/english/services/special-events",
-      "observed_at": "2026-09-08T23:51:50.683100+05:30"
+      "observed_at": "2026-09-29T09:08:22.135451+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/",
+      "detail": "Published phone: 0114216061",
+      "source": "http://slpc.lk/",
       "data": {
-        "value": "0112693272 "
+        "value": "0114216061"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0269462854 ",
-      "source": "https://slpc.lk/english/",
+      "detail": "Published phone: +94 (0)11 421-606",
+      "source": "http://slpc.lk/",
       "data": {
-        "value": "0269462854 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0112693271 "
+        "value": "+94 (0)11 421-606"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/",
+      "detail": "Published email: hostmaster@domains.lk",
+      "source": "http://slpc.lk/",
       "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0269462854 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0269462854 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0269462854 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0269462854 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0269462854 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0269462854 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 269 3268",
-      "source": "https://slpc.lk/english/about/senior-officers",
-      "data": {
-        "value": "011 269 3268"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 4413371 ",
-      "source": "https://slpc.lk/english/about/senior-officers",
-      "data": {
-        "value": "071 4413371 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/about/senior-officers",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 269 3267",
-      "source": "https://slpc.lk/english/about/senior-officers",
-      "data": {
-        "value": "011 269 3267"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 693274 ",
-      "source": "https://slpc.lk/english/about/senior-officers",
-      "data": {
-        "value": "0112 693274 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/about/senior-officers",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/about/senior-officers",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/services/news-paper-registrations",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/services/news-paper-registrations",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/services/news-paper-registrations",
-      "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/services/news-paper-registrations",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/services/news-paper-registrations",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/services/news-paper-registrations",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://slpc.lk/media/attachments/2024/02/08/newspaper_registration_application_english1.pdf",
-      "source": "https://slpc.lk/english/services/news-paper-registrations",
-      "data": {
-        "value": "https://slpc.lk/media/attachments/2024/02/08/newspaper_registration_application_english1.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0292945290",
-      "source": "https://slpc.lk/english/services/courses-seminars",
-      "data": {
-        "value": "0292945290"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693268 ",
-      "source": "https://slpc.lk/english/services/courses-seminars",
-      "data": {
-        "value": "0112693268 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/services/courses-seminars",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/services/courses-seminars",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/services/courses-seminars",
-      "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/services/courses-seminars",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/services/courses-seminars",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/services/courses-seminars",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/services/workshops/school-workshops",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/services/workshops/school-workshops",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/services/workshops/school-workshops",
-      "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/services/workshops/school-workshops",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
+        "value": "hostmaster@domains.lk"
       }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: division",
-      "source": "https://slpc.lk/english/services/workshops/school-workshops",
+      "source": "http://slpc.lk/",
       "data": {
         "value": "division"
       }
     },
     {
-      "check": "legal_basis",
+      "check": "phone",
       "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/services/workshops/school-workshops",
+      "detail": "Published phone: 0114216061",
+      "source": "http://slpc.lk/",
       "data": {
-        "value": "regulations"
+        "value": "0114216061"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/services/workshops/media-workshops",
+      "detail": "Published phone: +94 (0)11 421-606",
+      "source": "http://slpc.lk/",
       "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/services/workshops/media-workshops",
-      "data": {
-        "value": "0112693271 "
+        "value": "+94 (0)11 421-606"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/services/workshops/media-workshops",
+      "detail": "Published email: hostmaster@domains.lk",
+      "source": "http://slpc.lk/",
       "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/services/workshops/media-workshops",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
+        "value": "hostmaster@domains.lk"
       }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/services/workshops/media-workshops",
+      "detail": "Published named responsibility: division",
+      "source": "http://slpc.lk/",
       "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/services/workshops/media-workshops",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/services/workshops/other",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/services/workshops/other",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/services/workshops/other",
-      "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/services/workshops/other",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/services/workshops/other",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/services/workshops/other",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/services/workshops/teacher-training-workshops",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/services/workshops/teacher-training-workshops",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/services/workshops/teacher-training-workshops",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/services/workshops/teacher-training-workshops",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/services/kaleena-kathikawa",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/services/kaleena-kathikawa",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/services/kaleena-kathikawa",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/services/kaleena-kathikawa",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0067799420 ",
-      "source": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "data": {
-        "value": "0067799420 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0067799416",
-      "source": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "data": {
-        "value": "0067799416"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0067799417",
-      "source": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "data": {
-        "value": "0067799417"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc",
-      "source": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "data": {
-        "value": "Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0781001422",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "0781001422"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2693272 ",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "011-2693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693272 ",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "0112693272 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112693271 ",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "0112693271 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: slpresscouncil@gmail.com",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "slpresscouncil@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak8faa1464b76c92ca",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak8faa1464b76c92ca"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: රු. 200",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "රු. 200"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 23 May 2026",
-      "source": "https://slpc.lk/english/services/special-events",
-      "data": {
-        "value": "23 May 2026"
+        "value": "division"
       }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 14473 visible characters across 14 pages",
+      "detail": "Substantive page content: 1468 visible characters across 2 pages",
       "source": "https://slpc.lk/"
     }
   ],
@@ -995,7 +144,7 @@
     {
       "host": "slpc.lk",
       "addresses": [
-        "104.37.86.21"
+        "64.120.94.96"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -1008,232 +157,60 @@
     },
     {
       "host": "slpc.lk",
-      "status": "valid",
-      "expires_at": "2026-09-23T09:52:49+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://slpc.lk/",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/",
-      "redirects": [
-        "https://slpc.lk/english/"
-      ],
-      "elapsed_ms": 2898,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://slpc.lk/",
       "status_code": 200,
-      "final_url": "https://slpc.lk/english/",
-      "redirects": [
-        "https://slpc.lk/",
-        "https://slpc.lk/english/"
-      ],
-      "elapsed_ms": 1706,
-      "content_type": "text/html; charset=utf-8",
+      "final_url": "http://slpc.lk/",
+      "redirects": [],
+      "elapsed_ms": 839,
+      "content_type": "text/html",
       "error": null
     },
     {
       "url": "https://slpc.lk/",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/",
-      "redirects": [
-        "https://slpc.lk/english/"
-      ],
-      "elapsed_ms": 1438,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://slpc.lk/",
       "status_code": 200,
-      "final_url": "https://slpc.lk/english/",
-      "redirects": [
-        "https://slpc.lk/",
-        "https://slpc.lk/english/"
-      ],
-      "elapsed_ms": 2376,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/about/senior-officers",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/about/senior-officers",
+      "final_url": "http://slpc.lk/",
       "redirects": [],
-      "elapsed_ms": 1927,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/services/news-paper-registrations",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/services/news-paper-registrations",
-      "redirects": [],
-      "elapsed_ms": 1856,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/services/courses-seminars",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/services/courses-seminars",
-      "redirects": [],
-      "elapsed_ms": 2851,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/services/workshops/school-workshops",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/services/workshops/school-workshops",
-      "redirects": [],
-      "elapsed_ms": 2137,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/services/workshops/media-workshops",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/services/workshops/media-workshops",
-      "redirects": [],
-      "elapsed_ms": 2001,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/services/workshops/other",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/services/workshops/other",
-      "redirects": [],
-      "elapsed_ms": 1841,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/services/workshops/teacher-training-workshops",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/services/workshops/teacher-training-workshops",
-      "redirects": [],
-      "elapsed_ms": 1513,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/services/kaleena-kathikawa",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/services/kaleena-kathikawa",
-      "redirects": [],
-      "elapsed_ms": 1683,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "redirects": [],
-      "elapsed_ms": 2329,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://slpc.lk/english/services/special-events",
-      "status_code": 200,
-      "final_url": "https://slpc.lk/english/services/special-events",
-      "redirects": [],
-      "elapsed_ms": 2341,
-      "content_type": "text/html; charset=utf-8",
+      "elapsed_ms": 741,
+      "content_type": "text/html",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "https://slpc.lk/english/",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-01-592e030cc8ef.html",
-      "sha256": "592e030cc8efb1d96a75b9edc64dbe8e8a25083c5f7dc79158ffec53d6b9a740",
-      "bytes": 115533
+      "url": "http://slpc.lk/",
+      "path": "audit.output/slpc.lk/20260929.0908/snapshots/page-01-3c5eb1957783.html",
+      "sha256": "3c5eb195778329b8ca01476e44349207a103fc1a43df81ca00e0d29ac0ca35d4",
+      "bytes": 17156
     },
     {
-      "url": "https://slpc.lk/english/",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-02-592e030cc8ef.html",
-      "sha256": "592e030cc8efb1d96a75b9edc64dbe8e8a25083c5f7dc79158ffec53d6b9a740",
-      "bytes": 115533
-    },
-    {
-      "url": "https://slpc.lk/english/",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-03-592e030cc8ef.html",
-      "sha256": "592e030cc8efb1d96a75b9edc64dbe8e8a25083c5f7dc79158ffec53d6b9a740",
-      "bytes": 115533
-    },
-    {
-      "url": "https://slpc.lk/english/",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-04-592e030cc8ef.html",
-      "sha256": "592e030cc8efb1d96a75b9edc64dbe8e8a25083c5f7dc79158ffec53d6b9a740",
-      "bytes": 115533
-    },
-    {
-      "url": "https://slpc.lk/english/about/senior-officers",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-05-0a166810ce85.html",
-      "sha256": "0a166810ce85ae29e8be16835001fc3e70bfd0d800b53f87fbf63830717d2d57",
-      "bytes": 38561
-    },
-    {
-      "url": "https://slpc.lk/english/services/news-paper-registrations",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-06-7b2cd591e69d.html",
-      "sha256": "7b2cd591e69d04a27118b6805c0f37b0a36b5f2083f5e10bfdbf01a61126afd6",
-      "bytes": 61062
-    },
-    {
-      "url": "https://slpc.lk/english/services/courses-seminars",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-07-7dc97b362c99.html",
-      "sha256": "7dc97b362c99e5a95a8ec9868219a5633bbec3e6d5d17033c982eee76e85062e",
-      "bytes": 72552
-    },
-    {
-      "url": "https://slpc.lk/english/services/workshops/school-workshops",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-08-c3ee36106939.html",
-      "sha256": "c3ee361069392c135d7e182c0644c94cb86b7d2e5b209b44f988392d67ca67a4",
-      "bytes": 107516
-    },
-    {
-      "url": "https://slpc.lk/english/services/workshops/media-workshops",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-09-6cf521fcc42d.html",
-      "sha256": "6cf521fcc42de6ffe0705af926a2eb7985eb750e6eaa03b24f6b7247869fc515",
-      "bytes": 145819
-    },
-    {
-      "url": "https://slpc.lk/english/services/workshops/other",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-10-9291b29e85d6.html",
-      "sha256": "9291b29e85d6cf890d7f3fe8fa8f64222010e2ec6243cdb8a61ea8faf85e5281",
-      "bytes": 145959
-    },
-    {
-      "url": "https://slpc.lk/english/services/workshops/teacher-training-workshops",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-11-96fdac276f55.html",
-      "sha256": "96fdac276f551bb866b58fafc542050752984481c224153337f2be86aa3b9665",
-      "bytes": 61788
-    },
-    {
-      "url": "https://slpc.lk/english/services/kaleena-kathikawa",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-12-8ad2be8952d1.html",
-      "sha256": "8ad2be8952d1f8e81ef5f02f428e96f79ca09ecf17f444bfc467604e8a9a8623",
-      "bytes": 65256
-    },
-    {
-      "url": "https://slpc.lk/english/services/sanniwedana-kathikawatha",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-13-6550fd42a390.html",
-      "sha256": "6550fd42a390576d324d67560a94203a7c866577cb77997d62ce95b43eed894d",
-      "bytes": 66382
-    },
-    {
-      "url": "https://slpc.lk/english/services/special-events",
-      "path": "audit.output/slpc.lk/20260908.2351/snapshots/page-14-a961aa824c4e.html",
-      "sha256": "a961aa824c4e170c46debb3414455b39fc00d1521845c338319ecb74709cc1de",
-      "bytes": 264050
+      "url": "http://slpc.lk/",
+      "path": "audit.output/slpc.lk/20260929.0908/snapshots/page-02-3c5eb1957783.html",
+      "sha256": "3c5eb195778329b8ca01476e44349207a103fc1a43df81ca00e0d29ac0ca35d4",
+      "bytes": 17156
     }
   ],
   "reviewer_decisions": [],
@@ -1249,8 +226,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "An HTTP probe was transient; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -1286,8 +263,8 @@
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -1304,94 +281,32 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc; Phone: 0112693272 (14 phone numbers found); Email: slpresscouncil@gmail.com; Published named responsibility: director",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 0112693272 (14 phone numbers found); Email: slpresscouncil@gmail.com"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: රු. 200"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: regulations"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published downloadable form: https://slpc.lk/media/attachments/2024/02/08/newspaper_registration_application_english1.pdf"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published published update date: 23 May 2026"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1409,5 +324,11 @@
       "executed": false,
       "checks": []
     }
-  ]
+  ],
+  "vantage": {
+    "egress_ip": "172.174.125.241",
+    "country": "US",
+    "runner": "github-actions",
+    "proxy": false
+  }
 }

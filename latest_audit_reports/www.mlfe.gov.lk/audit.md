@@ -1,7 +1,8 @@
 # Website Audit: https://www.mlfe.gov.lk/
 
-- Completed: 2026-09-09 00:05
+- Completed: 2026-09-29 09:25
 - Overall result: 🟠 Level 2
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

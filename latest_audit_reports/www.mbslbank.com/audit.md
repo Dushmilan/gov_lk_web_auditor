@@ -1,7 +1,8 @@
 # Website Audit: https://www.mbslbank.com/
 
-- Completed: 2026-09-08 23:37
+- Completed: 2026-09-29 08:50
 - Overall result: 🔴 Level 1
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

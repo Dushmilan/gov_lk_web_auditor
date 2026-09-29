@@ -1,7 +1,8 @@
 # Website Audit: https://www.leco.lk/
 
-- Completed: 2026-09-08 23:35
+- Completed: 2026-09-29 08:49
 - Overall result: ⚫ Level 0
+- Vantage: 172.174.125.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
