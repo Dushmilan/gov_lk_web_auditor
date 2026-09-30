@@ -1,8 +1,8 @@
 # Website Audit: https://emb-beirut.gov.lk/
 
-- Completed: 2026-09-29 09:04
+- Completed: 2026-09-30 08:48
 - Overall result: 🟠 Level 2
-- Vantage: 172.174.125.241 (US, github-actions)
+- Vantage: 20.109.38.51 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a; Phone: +9615457226 (7 phone numbers found); Email: slemb.beirut@mfa.gov.lk (2 email addresses found); Published named responsibility: department
+Published postal address: Line 2\",\"validation_email_valid\":\"Please enter a valid email address\",\"copy_button\":\"Copy\",\"appointment_detail; Phone: +9615457226 (7 phone numbers found); Email: slemb.beirut@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a |
+| postal_address | ✅ | Published postal address: Line 2\",\"validation_email_valid\":\"Please enter a valid email address\",\"copy_button\":\"Copy\",\"appointment_detail |
 | reachable_contacts | ✅ | Phone: +9615457226 (7 phone numbers found); Email: slemb.beirut@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
@@ -45,7 +45,7 @@ Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth can
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found
+No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing downloadable form evidence found
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 3 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-09-15 |
+| published_update_date | ❓ | No passing published update date evidence found |

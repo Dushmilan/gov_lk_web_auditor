@@ -1,8 +1,8 @@
 # Website Audit: https://idb.gov.lk/
 
-- Completed: 2026-09-29 09:09
+- Completed: 2026-09-30 08:53
 - Overall result: 🔴 Level 1
-- Vantage: 172.174.125.241 (US, github-actions)
+- Vantage: 20.109.38.51 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 011 2 605 394 (10 phone numbers found); Email: info@idb.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 2 624 846- (10 phone numbers found); Email: info@idb.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

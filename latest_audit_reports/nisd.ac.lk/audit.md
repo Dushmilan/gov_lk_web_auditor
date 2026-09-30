@@ -1,8 +1,8 @@
 # Website Audit: https://nisd.ac.lk/
 
-- Completed: 2026-09-29 09:16
+- Completed: 2026-09-30 08:59
 - Overall result: 🟠 Level 2
-- Vantage: 172.174.125.241 (US, github-actions)
+- Vantage: 20.109.38.51 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

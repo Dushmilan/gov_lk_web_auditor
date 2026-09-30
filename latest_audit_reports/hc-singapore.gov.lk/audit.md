@@ -1,8 +1,8 @@
 # Website Audit: https://hc-singapore.gov.lk/
 
-- Completed: 2026-09-29 09:00
+- Completed: 2026-09-30 08:44
 - Overall result: 🟠 Level 2
-- Vantage: 172.174.125.241 (US, github-actions)
+- Vantage: 20.109.38.51 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: +6562544597 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found); Published named responsibility: department
+Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu; Phone: +6562507201 (16 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: +6562544597 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: department |
+| postal_address | ✅ | Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu |
+| reachable_contacts | ✅ | Phone: +6562507201 (16 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs , |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 1300 Hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://kdb.gov.lk/
 
-- Completed: 2026-09-29 09:13
+- Completed: 2026-09-30 08:57
 - Overall result: ⚫ Level 0
-- Vantage: 172.174.125.241 (US, github-actions)
+- Vantage: 20.109.38.51 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -26,5 +26,5 @@ Every repeated HTTP probe failed: [500, 500, 500, 500]
 | http_available | ❌ | Every repeated HTTP probe failed: [500, 500, 500, 500] |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |

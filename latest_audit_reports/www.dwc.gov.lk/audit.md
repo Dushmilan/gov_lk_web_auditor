@@ -1,8 +1,8 @@
 # Website Audit: https://www.dwc.gov.lk/
 
-- Completed: 2026-09-29 08:59
-- Overall result: 🔴 Level 1
-- Vantage: 172.174.125.241 (US, github-actions)
+- Completed: 2026-09-30 08:35
+- Overall result: 🟠 Level 2
+- Vantage: 20.109.38.51 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found
+Published postal address: will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in; Phone: +94 11 2 883 355 (2 phone numbers found); Email: dg@dwc.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2 888 585 (2 phone numbers found); Email: dg@dwc.gov.lk |
+| postal_address | ✅ | Published postal address: will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in |
+| reachable_contacts | ✅ | Phone: +94 11 2 883 355 (2 phone numbers found); Email: dg@dwc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
+| legal_basis | ❓ | No passing legal basis evidence found |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❓ | No passing published update date evidence found |

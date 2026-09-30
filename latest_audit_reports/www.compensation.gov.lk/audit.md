@@ -1,8 +1,8 @@
 # Website Audit: https://www.compensation.gov.lk/
 
-- Completed: 2026-09-29 09:12
+- Completed: 2026-09-30 08:56
 - Overall result: 🔴 Level 1
-- Vantage: 172.174.125.241 (US, github-actions)
+- Vantage: 20.109.38.51 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

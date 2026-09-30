@@ -1,8 +1,8 @@
 # Website Audit: https://pdl.lk/
 
-- Completed: 2026-09-29 08:50
+- Completed: 2026-09-30 08:35
 - Overall result: 🟠 Level 2
-- Vantage: 172.174.125.241 (US, github-actions)
+- Vantage: 20.109.38.51 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: .address-item:hover .address-icon{ background: #006634 !important; } .nav ul ul.sub-menu> li:first-child, blockquote{ bo; Phone: 0994364209 (29 phone numbers found); Email: pdlhrm@sltnet.lk (4 email addresses found); Published named responsibility: director
+Published postal address: .address-item:hover .address-icon{ background: #006634 !important; } .nav ul ul.sub-menu> li:first-child, blockquote{ bo; Phone: 0554100819 (29 phone numbers found); Email: pdlhrm@sltnet.lk (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: .address-item:hover .address-icon{ background: #006634 !important; } .nav ul ul.sub-menu> li:first-child, blockquote{ bo |
-| reachable_contacts | ✅ | Phone: 0994364209 (29 phone numbers found); Email: pdlhrm@sltnet.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0554100819 (29 phone numbers found); Email: pdlhrm@sltnet.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
