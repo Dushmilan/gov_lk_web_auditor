@@ -1,16 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "e8911250-c470-4e74-85df-e1a35a6b0a59",
+  "audit_id": "d32c18a0-6718-4f02-ac42-86ecf296e77e",
   "url": "https://cgf.gov.lk/",
   "normalized_url": "https://cgf.gov.lk/",
-  "started_at": "2026-09-30T08:52:30.479692+05:30",
-  "completed_at": "2026-09-30T08:53:18.587185+05:30",
+  "started_at": "2026-10-02T08:56:17.851509+05:30",
+  "completed_at": "2026-10-02T09:15:28.538325+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
-      "tls_not_expired: TLS certificate has expired"
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -18,47 +18,1998 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-30T08:52:30.780588+05:30"
+      "observed_at": "2026-10-02T08:56:18.120329+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-30T08:52:30.780610+05:30"
+      "observed_at": "2026-10-02T08:56:18.120345+05:30"
     },
     {
-      "check": "tls_expired",
-      "status": "fail",
-      "detail": "TLS certificate has expired",
-      "observed_at": "2026-09-30T08:52:31.787310+05:30"
+      "check": "tls",
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-02T08:56:28.132898+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://cgf.gov.lk/",
       "source": "https://cgf.gov.lk/",
-      "observed_at": "2026-09-30T08:53:18.587022+05:30"
+      "observed_at": "2026-10-02T09:15:27.542268+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://cgf.gov.lk/",
-      "observed_at": "2026-09-30T08:53:18.587041+05:30"
+      "observed_at": "2026-10-02T09:15:27.542291+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://cgf.gov.lk/",
-      "observed_at": "2026-09-30T08:53:18.587046+05:30"
+      "observed_at": "2026-10-02T09:15:27.542295+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://cgf.gov.lk/",
-      "observed_at": "2026-09-30T08:53:18.587049+05:30"
+      "observed_at": "2026-10-02T09:15:27.542298+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://cgf.gov.lk/contact.html",
+      "source": "https://cgf.gov.lk/contact.html",
+      "observed_at": "2026-10-02T09:15:27.542300+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "observed_at": "2026-10-02T09:15:27.542303+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "observed_at": "2026-10-02T09:15:27.542306+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION WITH CGF - [COIN-SOLE].pdf",
+      "observed_at": "2026-10-02T09:15:27.542308+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 267 3087 ",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "+94 11 267 3087 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 673087 ",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "+94 112 673087 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 70 158 5880 ",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "+94 70 158 5880 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 67 30 87 ",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "+94 112 67 30 87 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2670966 ",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "+94 11 2670966 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 70 158 5888 ",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "+94 70 158 5888 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 70 156 0646 ",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "+94 70 156 0646 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 70 1585880 ",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "+94 70 1585880 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cgf@cgf.gov.lk",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "cgf@cgf.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No. 123, Wijerama Mawatha, Colombo 07, Sri Lanka",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "No. 123, Wijerama Mawatha, Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "eligibility_criteria",
+      "status": "pass",
+      "detail": "Published eligibility criteria: eligibility",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "eligibility"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://cgf.gov.lk/cgfresouce/recgf/CGF-100-BB.pdf",
+      "source": "https://cgf.gov.lk/",
+      "data": {
+        "value": "https://cgf.gov.lk/cgfresouce/recgf/CGF-100-BB.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 267 30 87",
+      "source": "https://cgf.gov.lk/contact.html",
+      "data": {
+        "value": "+94 11 267 30 87"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 267 30 88 ",
+      "source": "https://cgf.gov.lk/contact.html",
+      "data": {
+        "value": "+94 11 267 30 88 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 67 30 87 ",
+      "source": "https://cgf.gov.lk/contact.html",
+      "data": {
+        "value": "+94 112 67 30 87 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 267 0966 ",
+      "source": "https://cgf.gov.lk/contact.html",
+      "data": {
+        "value": "+94 11 267 0966 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cgf@cgf.gov.lk",
+      "source": "https://cgf.gov.lk/contact.html",
+      "data": {
+        "value": "cgf@cgf.gov.lk"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://cgf.gov.lk/cgfresouce/recgf/APPLICATION FOR BID BOND - [A-BB].pdf",
+      "source": "https://cgf.gov.lk/contact.html",
+      "data": {
+        "value": "https://cgf.gov.lk/cgfresouce/recgf/APPLICATION FOR BID BOND - [A-BB].pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 841 0 0 0 769 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 841 0 0 0 769 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 579 544 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 579 544 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 563 473 495 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 563 473 495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07 507 268 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "07 507 268 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 611 889 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 611 889 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 0 4",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 0 4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 355 0 0 0 0 0 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 355 0 0 0 0 0 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 662 0 0 600 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 662 0 0 600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 500 27",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 500 500 27"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 773 700 750 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 773 700 750 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 184 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 184 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 349 391 335 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 349 391 335 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 543 452 487 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 543 452 487 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 556 278 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 556 278 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 444 333 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 444 333 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 556 500 0 0 4",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 556 500 0 0 4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 250 333 25",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 250 333 25"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 230 799 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 230 799 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 722 0 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 500 722 0 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 579 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 579 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07 507 507 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "07 507 507 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 0 333 3",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 500 0 333 3"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 423 874 65",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 423 874 65"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 278 778 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 278 778 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 722 0 0 0 0 0 2",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 722 0 0 0 0 0 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 618 618 615 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 618 618 615 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 556 0 0 0 611 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 556 0 0 0 611 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 964 662 604 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 964 662 604 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 779 720 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 779 720 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 737 778 8",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 737 778 8"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 348 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 348 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 306 267 43",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 306 267 43"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 507 510 520 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 507 510 520 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 333 250 278 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 333 250 278 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 811 585 69",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 811 585 69"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 519 487 468 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 519 487 468 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 410 0 0 0 0 87",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 410 0 0 0 0 87"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 303 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 303 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 520 420 855 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 520 420 855 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 278 500 500 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 278 500 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 33",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 33"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 811 0 760 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 811 0 760 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 507 507 507 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 507 507 507 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 785 0 0 0 713 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 785 0 0 0 713 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 31",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 31"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 667 0 778 0 3",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 667 0 778 0 3"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 444 500 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 444 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 520 0 0 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 520 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 606 561 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 606 561 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 09 524 624 55",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "09 524 624 55"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 306 252 386 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 306 252 386 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 551 0 0 325 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 551 0 0 325 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 715 682 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 715 682 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 722 556 667 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 722 556 667 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 586 628 716 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 586 628 716 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 03 0 0 0 0 252 3",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "03 0 0 0 0 252 3"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 357 0 0 571 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 357 0 0 571 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 03 -250 1240 7",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "03 -250 1240 7"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 278 778 500 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 278 778 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 463 413 6",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 463 413 6"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 667 0 722 7",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 667 0 722 7"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 05 471 525 23",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "05 471 525 23"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 500 500 500 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 500 500 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 444 500 44",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 444 500 44"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 420 855 646 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 420 855 646 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 667 667 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 667 667 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 700 0 250 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 700 0 250 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 0 6",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 0 6"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 500 278 0 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 500 278 0 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 0 639 619 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 0 639 619 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 722 0 722 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 722 0 722 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 488 459 637 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 488 459 637 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 619 0 0 6",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 619 0 0 6"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 333 556 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 333 556 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 303 303 0 49",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 303 303 0 49"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 278 0 0 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 278 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 479 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 479 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 286 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 0 0 286 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 04 624 625 66",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "04 624 625 66"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 500 0 444 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "0 0 500 0 444 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 278 27",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 500 278 27"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 500 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "data": {
+        "value": "00 500 500 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 563 473 495 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 563 473 495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 355 0 0 0 0 0 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 355 0 0 0 0 0 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 611 889 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 611 889 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 682 0 3",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 0 682 0 3"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 678 918 841 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 678 918 841 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 662 0 0 600 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 662 0 0 600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 713 840 819 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 713 840 819 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 500 27",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 500 500 27"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 667 611 778 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 667 611 778 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 -12 1279 57",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 -12 1279 57"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 556 278 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 556 278 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 444 333 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 444 333 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 556 500 0 0 4",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 556 500 0 0 4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 250 333 25",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 250 333 25"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 722 0 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 500 722 0 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 479 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 479 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07 507 507 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "07 507 507 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 0 333 3",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 500 0 333 3"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 746 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 746 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 278 778 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 278 778 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 06 252 386 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "06 252 386 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 722 778 611 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 722 778 611 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 964 662 604 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 964 662 604 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 556 0 0 0 611 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 556 0 0 0 611 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 606 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 606 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 779 720 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 779 720 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 348 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 348 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 306 267 43",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 306 267 43"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 684 0 590 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 684 0 590 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 551 0 0 0 0 32",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 551 0 0 0 0 32"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 333 250 278 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 333 250 278 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 811 585 69",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 811 585 69"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 519 487 468 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 519 487 468 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 410 0 0 0 0 87",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 410 0 0 0 0 87"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07 0 507 0 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "07 0 507 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 278 500 500 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 278 500 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 811 0 760 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 811 0 760 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 507 507 507 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 507 507 507 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 773 700 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 773 700 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 498 305 471 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 498 305 471 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 644 711 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 644 711 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 785 0 0 0 713 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 785 0 0 0 713 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 423 874 659 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 423 874 659 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 444 500 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 444 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 737 77",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 0 737 77"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 09 524 624 55",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "09 524 624 55"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 769 748 66",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 769 748 66"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 230 0 0 230 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 230 0 0 230 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 349 391 0 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 349 391 0 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 722 556 667 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 722 556 667 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 586 628 716 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 586 628 716 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07 0 0 0 0 0 0 0 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "07 0 0 0 0 0 0 0 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 357 0 0 571 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 357 0 0 571 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 278 778 500 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 278 778 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 463 413 6",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 463 413 6"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 716 0 0 651 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 716 0 0 651 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 619 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 619 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 500 500 500 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 500 500 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 444 500 44",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 444 500 44"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 420 855 646 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 420 855 646 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 667 667 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 667 667 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 618 618 615",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 618 618 615"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 500 278 0 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 500 278 0 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 03 303 0 0 250 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "03 303 0 0 250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 722 0 722 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 722 0 722 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 488 459 637 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 488 459 637 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 543 459 487 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 543 459 487 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 333 556 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 333 556 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 722 0 0 0 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 722 0 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 389 500 0 66",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 389 500 0 66"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 639 0 553 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "0 0 0 639 0 553 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 278 0 0 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 278 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 04 624 625 66",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "04 624 625 66"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 278 27",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 500 278 27"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 0 444 0 444 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 0 444 0 444 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 500 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "data": {
+        "value": "00 500 500 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 420 855 646 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 420 855 646 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 579 544 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 0 579 544 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 520 0 0 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 520 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 09 524 624 55",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "09 524 624 55"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07 507 268 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "07 507 268 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 355 0 0 0 0 0 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 355 0 0 0 0 0 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 0 6",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 0 6"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 306 252 386 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 306 252 386 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 618 618 615 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 618 618 615 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 964 662 604 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 964 662 604 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 779 720 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 779 720 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 715 682 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 0 715 682 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 662 0 0 600 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 662 0 0 600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 348 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 348 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 586 628 716 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 586 628 716 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 507 510 520 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 507 510 520 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 811 585 69",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 811 585 69"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 519 487 468 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 519 487 468 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 410 0 0 0 0 87",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 410 0 0 0 0 87"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 184 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 0 184 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 357 0 0 571 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 357 0 0 571 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 349 391 335 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 349 391 335 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 595.32 841.",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 595.32 841."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 303 303 0 49",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 303 303 0 49"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 33",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 33"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 463 413 6",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 463 413 6"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 811 0 760 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 811 0 760 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 479 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 479 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 0 0 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 04 624 625 66",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "04 624 625 66"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 230 799 5",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 0 0 230 799 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 05 471 525 23",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "05 471 525 23"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 785 0 0 0 713 ",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "0 785 0 0 0 713 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07 507 507 50",
+      "source": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "data": {
+        "value": "07 507 507 50"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 495262 visible characters across 5 pages",
+      "source": "https://cgf.gov.lk/"
     }
   ],
   "observations": [
@@ -78,19 +2029,19 @@
     },
     {
       "host": "cgf.gov.lk",
-      "status": "expired",
-      "expires_at": "2026-01-16T22:24:42+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate has expired"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://cgf.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://cgf.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
+      "elapsed_ms": 1243,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://cgf.gov.lk/",
@@ -99,7 +2050,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "https://cgf.gov.lk/",
@@ -108,7 +2059,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "http://cgf.gov.lk/",
@@ -117,10 +2068,77 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
+      "error": "timed out"
+    },
+    {
+      "url": "https://cgf.gov.lk/contact.html",
+      "status_code": 200,
+      "final_url": "https://cgf.gov.lk/contact.html",
+      "redirects": [],
+      "elapsed_ms": 1240,
+      "content_type": "text/html",
+      "error": null
+    },
+    {
+      "url": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "status_code": 200,
+      "final_url": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "redirects": [],
+      "elapsed_ms": 3144,
+      "content_type": "application/pdf",
+      "error": null
+    },
+    {
+      "url": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "status_code": 200,
+      "final_url": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "redirects": [],
+      "elapsed_ms": 31350,
+      "content_type": "application/pdf",
+      "error": null
+    },
+    {
+      "url": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION WITH CGF - [COIN-SOLE].pdf",
+      "status_code": 200,
+      "final_url": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "redirects": [],
+      "elapsed_ms": 3341,
+      "content_type": "application/pdf",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://cgf.gov.lk/",
+      "path": "audit.output/cgf.gov.lk/20261002.0856/snapshots/page-01-c12da71e4d63.html",
+      "sha256": "c12da71e4d6307bb484ba6363bab699ae6ec0736aa0821d367bcef3f6030b929",
+      "bytes": 61039
+    },
+    {
+      "url": "https://cgf.gov.lk/contact.html",
+      "path": "audit.output/cgf.gov.lk/20261002.0856/snapshots/page-02-bd28f70f3616.html",
+      "sha256": "bd28f70f3616bbc4981804e48d09039a7b4f8f2b936f58ecbcaf043453bbbedb",
+      "bytes": 25787
+    },
+    {
+      "url": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-1SOL&SD.pdf",
+      "path": "audit.output/cgf.gov.lk/20261002.0856/snapshots/page-03-18c715e9b1fc.html",
+      "sha256": "18c715e9b1fc9bb6b77b8e00802235f9f8ce7297c7db0a11c5e4b21a8c1df517",
+      "bytes": 1819491
+    },
+    {
+      "url": "https://cgf.gov.lk/cgfresouce/recgf/CGF-COIN001-3LTDFORE.pdf",
+      "path": "audit.output/cgf.gov.lk/20261002.0856/snapshots/page-04-c8ab2047b160.html",
+      "sha256": "c8ab2047b160ccfc2705f04e9f897cb8b60d480166af7dbb0bea044d4f536ad5",
+      "bytes": 1805244
+    },
+    {
+      "url": "https://cgf.gov.lk/cgfresouce/recgf/REGISTRATION%20WITH%20CGF%20-%20[COIN-SOLE].pdf",
+      "path": "audit.output/cgf.gov.lk/20261002.0856/snapshots/page-05-cd1a60856859.html",
+      "sha256": "cd1a60856859f2fa2cda8a63eafd3154c38932cc0c8b750d285c540fafc00de1",
+      "bytes": 1810844
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -134,8 +2152,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010); TLS certificate has expired",
+      "status": "inconclusive",
+      "reason": "timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -147,56 +2165,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "HTTP checks did not run"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: http://cgf.gov.lk/: Probe 2: timed out; https://cgf.gov.lk/: Probe 3: timed out; http://cgf.gov.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate has expired"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "reason": "timed out"
         }
       ]
     },
@@ -234,7 +2252,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.109.38.51",
+    "egress_ip": "48.217.140.96",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

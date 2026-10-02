@@ -1,8 +1,8 @@
 # Website Audit: https://www.psmpa.com/
 
-- Completed: 2026-09-30 08:39
+- Completed: 2026-10-02 08:44
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Public Service Mutual Provident Association P.O. Box 150, "PSMPA Nivahana", 155/5, Castle Street, Colombo 08, Sri Lanka.; Phone: 011 2665200 (22 phone numbers found); Email: psmpa@sltnet.lk (2 email addresses found); Published named responsibility: department
+Published postal address: Public Service Mutual Provident Association P.O. Box 150, "PSMPA Nivahana", 155/5, Castle Street, Colombo 08, Sri Lanka.; Phone: 0112665226 (22 phone numbers found); Email: psmpa@sltnet.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Public Service Mutual Provident Association P.O. Box 150, "PSMPA Nivahana", 155/5, Castle Street, Colombo 08, Sri Lanka. |
-| reachable_contacts | ✅ | Phone: 011 2665200 (22 phone numbers found); Email: psmpa@sltnet.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112665226 (22 phone numbers found); Email: psmpa@sltnet.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

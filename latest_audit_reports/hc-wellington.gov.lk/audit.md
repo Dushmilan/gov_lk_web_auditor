@@ -1,8 +1,8 @@
 # Website Audit: https://hc-wellington.gov.lk/
 
-- Completed: 2026-09-30 08:45
+- Completed: 2026-10-02 08:48
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Floor 08, 38 Waring Taylor Street, Wellington Central, Wellington 6011, New Zealand. Postal Address High Commission of S; Phone: +64042420640 (9 phone numbers found); Email: consular.wellington@mfa.gov.lk (5 email addresses found); Published named responsibility: director
+Published postal address: Floor 08, 38 Waring Taylor Street, Wellington Central, Wellington 6011, New Zealand. Postal Address High Commission of S; Phone: 0834910476 (11 phone numbers found); Email: john@example.com (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Floor 08, 38 Waring Taylor Street, Wellington Central, Wellington 6011, New Zealand. Postal Address High Commission of S |
-| reachable_contacts | ✅ | Phone: +64042420640 (9 phone numbers found); Email: consular.wellington@mfa.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0834910476 (11 phone numbers found); Email: john@example.com (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing legal basis evidence found; No passing downloadable form evidence fou
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: free of charge |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 12 weeks |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

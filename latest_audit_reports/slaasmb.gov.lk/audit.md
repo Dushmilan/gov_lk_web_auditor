@@ -1,8 +1,8 @@
 # Website Audit: https://slaasmb.gov.lk/
 
-- Completed: 2026-09-30 08:47
+- Completed: 2026-10-02 09:24
 - Overall result: ⚫ Level 0
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://slaasmb.gov.lk/: Probe 4: timed out |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://slaasmb.gov.lk/: Probe 1: timed out; https://slaasmb.gov.lk/: Probe 3: timed out; http://slaasmb.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

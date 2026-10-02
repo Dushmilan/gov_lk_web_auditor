@@ -1,8 +1,8 @@
 # Website Audit: https://drp.gov.lk/
 
-- Completed: 2026-09-30 08:22
+- Completed: 2026-10-02 08:29
 - Overall result: 🔴 Level 1
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,8 +1,8 @@
 # Website Audit: https://www.childwomenmin.gov.lk/
 
-- Completed: 2026-09-30 09:08
+- Completed: 2026-10-02 09:25
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Ministry of Women and Child Affairs, 5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Phone: +94 11 2186055 Fa; Phone: 011 2187249 (16 phone numbers found); Email: minister@childwomenmin.gov.lk (6 email addresses found); Published named responsibility: department
+Published postal address: Ministry of Women and Child Affairs, 5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Phone: +94 11 2186055 Fa; Phone: 011 2186055 (16 phone numbers found); Email: deputyminister@childwomenmin.gov.lk (6 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Ministry of Women and Child Affairs, 5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Phone: +94 11 2186055 Fa |
-| reachable_contacts | ✅ | Phone: 011 2187249 (16 phone numbers found); Email: minister@childwomenmin.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 2186055 (16 phone numbers found); Email: deputyminister@childwomenmin.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs 5 |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-09-26 |
+| published_update_date | ✅ | Published published update date: 2026-10-02 |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.irrigation.gov.lk/
 
-- Completed: 2026-09-30 08:15
+- Completed: 2026-10-02 08:23
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: PO Box 1138, 230, Bauddhaloka Mawatha, Colombo 07, E-Mail info@irrigation.gov.lk Social Media - Quick Links Home Overvie; Phone: +94 11 2581 162 (30 phone numbers found); Email: info@irrigation.gov.lk; Published named responsibility: department
+Published postal address: PO Box 1138, 230, Bauddhaloka Mawatha, Colombo 07, E-Mail info@irrigation.gov.lk Social Media - Quick Links Home Overvie; Phone: +94 11 2581 162 (669 phone numbers found); Email: info@irrigation.gov.lk (12 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: PO Box 1138, 230, Bauddhaloka Mawatha, Colombo 07, E-Mail info@irrigation.gov.lk Social Media - Quick Links Home Overvie |
-| reachable_contacts | ✅ | Phone: +94 11 2581 162 (30 phone numbers found); Email: info@irrigation.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2581 162 (669 phone numbers found); Email: info@irrigation.gov.lk (12 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://www.irrigation.gov.lk/web/images/RTI/Information_Officers_-_2024.pdf |
-| published_update_date | ✅ | Published published update date: 29 September 2026 |
+| downloadable_form | ✅ | Published downloadable form: https://www.irrigation.gov.lk/web/images/RTI/20261001_infromation_officers.pdf |
+| published_update_date | ✅ | Published published update date: 01 October 2026 |

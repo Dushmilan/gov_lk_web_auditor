@@ -1,8 +1,8 @@
 # Website Audit: https://slmc.gov.lk/
 
-- Completed: 2026-09-30 08:52
+- Completed: 2026-10-02 08:56
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Registration Accreditation Unit Contact 31, Norris Canal Road, Colombo 10, Sri Lanka; Phone: 09.09.2026 04 (8 phone numbers found); Email: da@slmc.gov.lk (3 email addresses found); Published named responsibility: department
+Published postal address: Registration Accreditation Unit Contact 31, Norris Canal Road, Colombo 10, Sri Lanka; Phone: +94 11 267 4787 (7 phone numbers found); Email: da@slmc.gov.lk (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Registration Accreditation Unit Contact 31, Norris Canal Road, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 09.09.2026 04 (8 phone numbers found); Email: da@slmc.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 267 4787 (7 phone numbers found); Email: da@slmc.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

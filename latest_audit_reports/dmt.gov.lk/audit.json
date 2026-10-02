@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "de37482f-8ed4-4ccc-bc58-6c15d9de6ea0",
+  "audit_id": "f029e008-4599-44cb-b628-de80808137fc",
   "url": "https://dmt.gov.lk/",
   "normalized_url": "https://dmt.gov.lk/",
-  "started_at": "2026-09-30T09:03:52.220757+05:30",
-  "completed_at": "2026-09-30T09:04:27.046285+05:30",
+  "started_at": "2026-10-02T09:18:05.829957+05:30",
+  "completed_at": "2026-10-02T09:19:29.137887+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "hosting_configured: Detected generic hosting marker: under construction"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -17,849 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-30T09:03:53.640732+05:30"
+      "observed_at": "2026-10-02T09:18:06.094149+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-30T09:03:53.640751+05:30"
+      "observed_at": "2026-10-02T09:18:06.094168+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-09-30T09:03:55.177345+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-02T09:18:16.369048+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://dmt.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://dmt.gov.lk/",
-      "observed_at": "2026-09-30T09:04:26.715593+05:30"
+      "observed_at": "2026-10-02T09:19:29.137692+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://dmt.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://dmt.gov.lk/",
-      "observed_at": "2026-09-30T09:04:26.715612+05:30"
+      "observed_at": "2026-10-02T09:19:29.137714+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://dmt.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://dmt.gov.lk/",
-      "observed_at": "2026-09-30T09:04:26.715617+05:30"
+      "observed_at": "2026-10-02T09:19:29.137718+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://dmt.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://dmt.gov.lk/",
-      "observed_at": "2026-09-30T09:04:26.715620+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715623+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=article&id=9&Itemid=124&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=9&Itemid=124&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715626+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=125&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=125&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715629+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=127&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=127&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715631+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=article&id=11&Itemid=126&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=11&Itemid=126&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715634+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715636+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715639+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715642+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715645+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "observed_at": "2026-09-30T09:04:26.715647+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 950 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 518 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 033333 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 033333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 926 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 518 926 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ad.ict@dmt.gov.lk",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "ad.ict@dmt.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 950 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 518 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 033333 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 033333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 926 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 518 926 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ad.ict@dmt.gov.lk",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "ad.ict@dmt.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 950 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 518 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 033333 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 033333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 926 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 518 926 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ad.ict@dmt.gov.lk",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "ad.ict@dmt.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 950 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 518 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 033333 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 033333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 926 ",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 518 926 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ad.ict@dmt.gov.lk",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "ad.ict@dmt.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 950 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 518 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 033333 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 033333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 518 926 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 518 926 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ad.ict@dmt.gov.lk",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "ad.ict@dmt.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=9&Itemid=124&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=9&Itemid=124&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=9&Itemid=124&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=125&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=125&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=125&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=127&lang=en"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=127&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=127&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=127&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=11&Itemid=126&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=11&Itemid=126&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=11&Itemid=126&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "required_documents",
-      "status": "pass",
-      "detail": "Published required documents: documents required",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "data": {
-        "value": "documents required"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: free of charge",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "data": {
-        "value": "free of charge"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: through one day service after getting statements from the relevant parties For a property of Vihara and Devalayas the no",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "data": {
-        "value": "through one day service after getting statements from the relevant parties For a property of Vihara and Devalayas the no"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: officer in charge",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "data": {
-        "value": "officer in charge"
-      }
-    },
-    {
-      "check": "required_documents",
-      "status": "pass",
-      "detail": "Published required documents: documents required",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "data": {
-        "value": "documents required"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: RS3",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "data": {
-        "value": "RS3"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 06 months",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "data": {
-        "value": "06 months"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 1000 150 7",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "00 1000 150 7"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 1000 150 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "000 1000 150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 1000 150 1",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "00 1000 150 1"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 150 50",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "00 500 150 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 1000 150 2",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "00 1000 150 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 1000 150 5",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "00 1000 150 5"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 1000 150 3",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "00 1000 150 3"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 200 1000 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "data": {
-        "value": "000 200 1000 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 200 1000 3",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "data": {
-        "value": "00 200 1000 3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 02 - 2022.11.14 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "data": {
-        "value": "02 - 2022.11.14 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 500 200 300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "data": {
-        "value": "0 500 200 300 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-4033300 ",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "data": {
-        "value": "071-4033300 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 6 months",
-      "source": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "data": {
-        "value": "6 months"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 16191 visible characters across 14 pages",
-      "source": "https://dmt.gov.lk/"
+      "observed_at": "2026-10-02T09:19:29.137721+05:30"
     }
   ],
   "observations": [
@@ -879,234 +85,49 @@
     },
     {
       "host": "dmt.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-13T09:47:06+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://dmt.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://dmt.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 2388,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://dmt.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://dmt.gov.lk/",
-        "https://dmt.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 2098,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://dmt.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://dmt.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 2056,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://dmt.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://dmt.gov.lk/",
-        "https://dmt.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 2378,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 3150,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=9&Itemid=124&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=9&Itemid=124&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1194,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=125&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=125&lang=en",
-      "redirects": [],
-      "elapsed_ms": 972,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=127&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=127&lang=en",
-      "redirects": [],
-      "elapsed_ms": 965,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=11&Itemid=126&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=11&Itemid=126&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1264,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "redirects": [],
-      "elapsed_ms": 985,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1285,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "redirects": [],
-      "elapsed_ms": 957,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "redirects": [],
-      "elapsed_ms": 946,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "status_code": 200,
-      "final_url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "redirects": [],
-      "elapsed_ms": 993,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://dmt.gov.lk/index.php?lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-01-746fc0c5dad4.html",
-      "sha256": "746fc0c5dad40c2b92807af8b67ea87f9de10c064f58fc109fcc63c9390e2f1d",
-      "bytes": 64093
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-02-45d1f6692332.html",
-      "sha256": "45d1f6692332d127facb9ed567b4ce856bf8b71c0ee17ed2e5dc002212e86331",
-      "bytes": 64093
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-03-38fc7de5fd79.html",
-      "sha256": "38fc7de5fd797fe81305524b38ccc6731214cbb679ead7585599ec632ca7c182",
-      "bytes": 64093
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-04-d03e82cd972e.html",
-      "sha256": "d03e82cd972ed06a141d06e5481417cb08a5eba8b47d5eef926c9c0b9a48ac22",
-      "bytes": 64093
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-05-bf7dc2dea137.html",
-      "sha256": "bf7dc2dea137b46cbda17c5f4c5eeebd04dbf53b622b74e9d231453023626446",
-      "bytes": 64543
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=9&Itemid=124&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-06-6499baf3bef1.html",
-      "sha256": "6499baf3bef11aefb15abf8991a489f93ea9d7fa4eb005fe13b6e97047cd984f",
-      "bytes": 32013
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=125&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-07-8e642fa8cc2c.html",
-      "sha256": "8e642fa8cc2cf94c8d21e6b62064fc0157c05aef4019457cb3316d17faa822be",
-      "bytes": 31808
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=127&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-08-af4c1752fd29.html",
-      "sha256": "af4c1752fd29b7971332d445ac240f7e28d0ebb87696b554c5ed7745a2f026ca",
-      "bytes": 30100
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=11&Itemid=126&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-09-c788fa70eb79.html",
-      "sha256": "c788fa70eb799fd51026d7ecd331be7a759275c96eba7872bbff70ff0d58cb4c",
-      "bytes": 30351
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=147&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-10-3800c708096d.html",
-      "sha256": "3800c708096d6d3ce7911e837c781ecd325faef72ebf6153643c12b9e6aeb0ec",
-      "bytes": 34971
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=148&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-11-18d077ddcf7e.html",
-      "sha256": "18d077ddcf7e55df35fdad3657843f21448b2d5288d388a1629e8d2b0754f2af",
-      "bytes": 61992
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=156&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-12-875c2bfd2500.html",
-      "sha256": "875c2bfd250010639280f25a49b69b9095a027e8e3cd234f3229ab2e3528daa2",
-      "bytes": 52416
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=157&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-13-95c3bc5b8994.html",
-      "sha256": "95c3bc5b89942a4b5ec02e8588f5db4dddc5536232e302ae514fea1313961f75",
-      "bytes": 39053
-    },
-    {
-      "url": "https://dmt.gov.lk/index.php?option=com_content&view=article&id=41&Itemid=158&lang=en",
-      "path": "audit.output/dmt.gov.lk/20260930.0903/snapshots/page-14-80adcf5b6205.html",
-      "sha256": "80adcf5b62050fa742348224513e31a9ebde1e003a57ec54e8bf57aed90e9b28",
-      "bytes": 33929
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1120,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Detected generic hosting marker: under construction",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -1133,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "fail",
-          "reason": "Detected generic hosting marker: under construction"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -1220,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.109.38.51",
+    "egress_ip": "48.217.140.96",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

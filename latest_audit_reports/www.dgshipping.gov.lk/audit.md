@@ -1,8 +1,8 @@
 # Website Audit: http://www.dgshipping.gov.lk/
 
-- Completed: 2026-09-30 08:59
+- Completed: 2026-10-02 09:04
 - Overall result: ⚫ Level 0
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ❓ | An HTTP probe was transient |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.dgshipping.gov.lk'. (_ssl.c:1010) |
 | tls_not_expired | ❓ | TLS expiry check did not run |

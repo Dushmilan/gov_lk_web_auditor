@@ -1,8 +1,8 @@
 # Website Audit: https://emb-havana.gov.lk/
 
-- Completed: 2026-09-30 08:47
+- Completed: 2026-10-02 08:50
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 5ta Avenida, e/30 y 32 # 3004, Miramar, Havana, Cuba. Tel: +53 72042562 , +53 72141125 Email: slemb.havana@mfa.gov.lk Re; Phone: 0247472946 (8 phone numbers found); Email: slemb.havana@mfa.gov.lk (2 email addresses found); Published named responsibility: department
+Published postal address: 5ta Avenida, e/30 y 32 # 3004, Miramar, Havana, Cuba. Tel: +53 72042562 , +53 72141125 Email: slemb.havana@mfa.gov.lk Re; Phone: +5372042562 (8 phone numbers found); Email: slemb.havana@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 5ta Avenida, e/30 y 32 # 3004, Miramar, Havana, Cuba. Tel: +53 72042562 , +53 72141125 Email: slemb.havana@mfa.gov.lk Re |
-| reachable_contacts | ✅ | Phone: 0247472946 (8 phone numbers found); Email: slemb.havana@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +5372042562 (8 phone numbers found); Email: slemb.havana@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

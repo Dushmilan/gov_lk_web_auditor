@@ -1,8 +1,8 @@
 # Website Audit: https://cgf.gov.lk/
 
-- Completed: 2026-09-30 08:53
+- Completed: 2026-10-02 09:15
 - Overall result: ⚫ Level 0
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,21 +10,33 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❌
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010); TLS certificate has expired
+timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | No usable page was inspected |
-| site_not_defaced | ❓ | No usable page was inspected |
-| content_relevant | ❓ | No usable page was inspected |
-| hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | HTTP checks did not run |
-| redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010) |
-| tls_not_expired | ❌ | TLS certificate has expired |
-| tls_hostname_matches | ❓ | TLS hostname check did not run |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://cgf.gov.lk/: Probe 2: timed out; https://cgf.gov.lk/: Probe 3: timed out; http://cgf.gov.lk/: Probe 4: timed out |
+| redirect_related | ✅ | No unrelated redirect found |
+| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
+
+## 🟠 Level 2: ❓
+
+To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
+
+Not run because 🔴 Level 1 did not pass
+
+## 🟢 Level 3: ❓
+
+To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
+
+Not run because 🟠 Level 2 did not pass

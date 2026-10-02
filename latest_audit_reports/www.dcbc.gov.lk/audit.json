@@ -1,24 +1,17 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "546f98d0-f838-46d4-8267-c9a679dcb280",
+  "audit_id": "e6e21f43-d7e5-4bc5-974b-273f3becbfe2",
   "url": "http://www.dcbc.gov.lk",
   "normalized_url": "http://www.dcbc.gov.lk/",
-  "started_at": "2026-09-30T08:55:06.581616+05:30",
-  "completed_at": "2026-09-30T08:55:36.073250+05:30",
+  "started_at": "2026-10-02T08:59:21.191201+05:30",
+  "completed_at": "2026-10-02T09:01:26.077180+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "http_available: An HTTP probe was transient",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,47 +19,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-30T08:55:06.873502+05:30"
+      "observed_at": "2026-10-02T08:59:21.470703+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-30T08:55:06.873522+05:30"
+      "observed_at": "2026-10-02T08:59:21.470718+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-09-30T08:55:07.868226+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-02T08:59:31.745695+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.dcbc.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.dcbc.gov.lk/",
-      "observed_at": "2026-09-30T08:55:36.073001+05:30"
+      "observed_at": "2026-10-02T09:01:26.076991+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://dcbc.gov.lk/",
       "source": "http://www.dcbc.gov.lk/",
-      "observed_at": "2026-09-30T08:55:36.073018+05:30"
+      "observed_at": "2026-10-02T09:01:26.077014+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.dcbc.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.dcbc.gov.lk/",
-      "observed_at": "2026-09-30T08:55:36.073025+05:30"
+      "observed_at": "2026-10-02T09:01:26.077018+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://dcbc.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.dcbc.gov.lk/",
-      "observed_at": "2026-09-30T08:55:36.073030+05:30"
+      "observed_at": "2026-10-02T09:01:26.077021+05:30"
     }
   ],
   "observations": [
@@ -86,19 +79,19 @@
     },
     {
       "host": "www.dcbc.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-10-17T04:17:24+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.dcbc.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.dcbc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1533,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.dcbc.gov.lk/",
@@ -107,29 +100,27 @@
       "redirects": [
         "https://dcbc.gov.lk/"
       ],
-      "elapsed_ms": 1273,
+      "elapsed_ms": 20937,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://www.dcbc.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.dcbc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 20876,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.dcbc.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://dcbc.gov.lk/",
-      "redirects": [
-        "https://dcbc.gov.lk/"
-      ],
-      "elapsed_ms": 1251,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
   "snapshots": [],
@@ -146,8 +137,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "An HTTP probe was transient; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -183,8 +174,8 @@
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -201,14 +192,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -216,28 +207,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No phone or email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing named responsibility evidence found"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -265,7 +237,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.109.38.51",
+    "egress_ip": "48.217.140.96",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

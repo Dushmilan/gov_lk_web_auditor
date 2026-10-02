@@ -1,8 +1,8 @@
 # Website Audit: https://www.defence.lk/
 
-- Completed: 2026-09-30 09:07
+- Completed: 2026-10-02 09:23
 - Overall result: 🔴 Level 1
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,8 +38,8 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2354354 (2 phone numbers found); Email: kgdharmathilakage@gmail.com (18 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: division |
+| reachable_contacts | ✅ | Phone: +94 11 2354354 (2 phone numbers found); Email: knilupul@yahoo.com (18 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 

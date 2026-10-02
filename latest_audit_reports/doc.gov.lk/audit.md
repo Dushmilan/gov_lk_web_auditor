@@ -1,8 +1,8 @@
 # Website Audit: https://doc.gov.lk/
 
-- Completed: 2026-09-30 09:10
+- Completed: 2026-10-02 09:16
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://doc.gov.lk/: Probe 3: timed out; http://doc.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 4: [Errno 111] Connection refused; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://doc.gov.lk/: Probe 3: timed out; http://doc.gov.lk/: Probe 4: timed out |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 4: [Errno 111] Connection refused |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: issues emanating from PTAs, FTAs Conducting Joint Commissions with China, Egypt, Russia, Malaysia, Turkey, Kuwait etc Wo; Phone: 071 450 1444 (3 phone numbers found); Email: fortrade@doc.gov.lk; Published named responsibility: department
+Published postal address: issues emanating from PTAs, FTAs Conducting Joint Commissions with China, Egypt, Russia, Malaysia, Turkey, Kuwait etc Wo; Phone: 071 450 1444 (112 phone numbers found); Email: fortrade@doc.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: issues emanating from PTAs, FTAs Conducting Joint Commissions with China, Egypt, Russia, Malaysia, Turkey, Kuwait etc Wo |
-| reachable_contacts | ✅ | Phone: 071 450 1444 (3 phone numbers found); Email: fortrade@doc.gov.lk |
+| reachable_contacts | ✅ | Phone: 071 450 1444 (112 phone numbers found); Email: fortrade@doc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❌
@@ -51,7 +51,7 @@ Published published update date: 01 January 2018
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: supporting documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: rs 0 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 12 months |
 | downloadable_form | ✅ | Published downloadable form: https://doc.gov.lk/images/pdf/RTI/Right_to_Information_Acte.pdf |

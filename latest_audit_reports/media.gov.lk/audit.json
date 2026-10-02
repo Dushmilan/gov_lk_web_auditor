@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "1065a2a7-b7a4-467e-9ffa-430d3a8ed3ad",
+  "audit_id": "5c111f45-c3d3-4c92-bc83-87c92cbba92a",
   "url": "https://media.gov.lk/",
   "normalized_url": "https://media.gov.lk/",
-  "started_at": "2026-09-30T09:07:49.215478+05:30",
-  "completed_at": "2026-09-30T09:07:56.682544+05:30",
+  "started_at": "2026-10-02T09:24:08.039531+05:30",
+  "completed_at": "2026-10-02T09:24:24.838658+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [500, 500, 500, 500]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,59 +26,1662 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-30T09:07:49.515041+05:30"
+      "observed_at": "2026-10-02T09:24:08.334485+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-30T09:07:49.515062+05:30"
+      "observed_at": "2026-10-02T09:24:08.334506+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-30T09:07:49.896304+05:30"
+      "observed_at": "2026-10-02T09:24:08.696157+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 500 at https://media.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://media.gov.lk/",
       "source": "https://media.gov.lk/",
-      "observed_at": "2026-09-30T09:07:56.637186+05:30"
+      "observed_at": "2026-10-02T09:24:24.509722+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 500 at https://media.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://media.gov.lk/",
       "source": "http://media.gov.lk/",
-      "observed_at": "2026-09-30T09:07:56.637201+05:30"
+      "observed_at": "2026-10-02T09:24:24.509742+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 500 at https://media.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://media.gov.lk/",
       "source": "https://media.gov.lk/",
-      "observed_at": "2026-09-30T09:07:56.637205+05:30"
+      "observed_at": "2026-10-02T09:24:24.509745+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 500 at https://media.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://media.gov.lk/",
       "source": "http://media.gov.lk/",
-      "observed_at": "2026-09-30T09:07:56.637209+05:30"
+      "observed_at": "2026-10-02T09:24:24.509748+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://media.gov.lk/about-us/divisions-units/administration",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "observed_at": "2026-10-02T09:24:24.509750+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://media.gov.lk/about-us/divisions-units/development-planning",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "observed_at": "2026-10-02T09:24:24.509752+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://media.gov.lk/about-us/divisions-units/finance",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "observed_at": "2026-10-02T09:24:24.509754+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://media.gov.lk/about-us/divisions-units/media-unit",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "observed_at": "2026-10-02T09:24:24.509756+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "observed_at": "2026-10-02T09:24:24.509758+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "observed_at": "2026-10-02T09:24:24.509760+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "observed_at": "2026-10-02T09:24:24.509762+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://media.gov.lk/institutions/1/department-of-government-printing",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "observed_at": "2026-10-02T09:24:24.509764+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://media.gov.lk/institutions/1/department-of-government-information",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "observed_at": "2026-10-02T09:24:24.509766+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "observed_at": "2026-10-02T09:24:24.509768+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513468 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2513468 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 3462 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-251 3462 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2514632 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2514632 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 2052 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-251 2052 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 631 0",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-251 631 0"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-643 8590 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "077-643 8590 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513398 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2513398 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 524 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2512 524 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 3398 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-251 3398 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 002 011-251 2",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "002 011-251 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 3468 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-251 3468 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 2340 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-251 2340 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512524 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2512524 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512052",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2512052"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 052 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "011-2512 052 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mm.additionalsecretary@gmail.com",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "mm.additionalsecretary@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: trans.en.sin.2019@gmail.com",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "trans.en.sin.2019@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: addsec.admin@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "addsec.admin@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sas.postal@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "sas.postal@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sasadmin@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "sasadmin@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: asadmin@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "asadmin@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: adsecadmin@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "adsecadmin@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: admin@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "admin@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legaloff@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "legaloff@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://media.gov.lk/about-us/divisions-units/administration",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 451 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2513 451 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 943 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2513 943 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2514 351 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2514 351 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 4351 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-251 4351 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 470 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2513 470 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 462 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2513 462 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 3466 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-251 3466 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 2843 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-251 2843 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 343 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2512 343 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: asdev@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "asdev@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ad.pl@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "ad.pl@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dirplan@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "dirplan@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: adsecdev@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "adsecdev@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dir.dev@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "dir.dev@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 3437 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "011-251 3437 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 442 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "011-2513 442 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 3464 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "011-251 3464 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ca@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "ca@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: kgvijinisena@gmail.com",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "kgvijinisena@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://media.gov.lk/about-us/divisions-units/finance",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 469 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "data": {
+        "value": "011-2513 469 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dirmedia@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "data": {
+        "value": "dirmedia@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 3497 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "011-251 3497 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-251 3735 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "011-251 3735 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cia@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "cia@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 943 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "data": {
+        "value": "011-2513 943 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 343 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "data": {
+        "value": "011-2512 343 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-244 5333 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "011-244 5333 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-244 0288 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "011-244 0288 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-243 3999 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "011-243 3999 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: addsec.postal@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "addsec.postal@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sas.postal@media.gov.lk",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "sas.postal@media.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112694733-",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "0112694733-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112698653 ",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "0112698653 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakc95759f3d79448ff",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakc95759f3d79448ff"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112515759 ",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "0112515759 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 040 251 3638 ",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "040 251 3638 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112514753 ",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "0112514753 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakfe1c2b66a89f1909",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakfe1c2b66a89f1909"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691 814 ",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "0112 691 814 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112698377 ",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "0112698377 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 459",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "011-2513 459"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2512 321",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "011-2512 321"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 498 ",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "011-2513 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 695 249 ",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "0112 695 249 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2513 460",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "011-2513 460"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@media.gov.lk",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "secretary@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@media.gov.lk",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "info@media.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: chairman@slf.lk",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "chairman@slf.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakcedd1cbd47dfcdca",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakcedd1cbd47dfcdca"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "data": {
+        "value": "division"
+      }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 113 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 7414 visible characters across 14 pages",
       "source": "https://media.gov.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
-      "observed_at": "2026-09-30T09:07:56.641087+05:30"
     }
   ],
   "observations": [
@@ -96,69 +1708,219 @@
     },
     {
       "url": "https://media.gov.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://media.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 876,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 675,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://media.gov.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://media.gov.lk/",
       "redirects": [
         "https://media.gov.lk/"
       ],
-      "elapsed_ms": 619,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 464,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "https://media.gov.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://media.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 372,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 519,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://media.gov.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://media.gov.lk/",
       "redirects": [
         "https://media.gov.lk/"
       ],
-      "elapsed_ms": 1329,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 528,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/administration",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/about-us/divisions-units/administration",
+      "redirects": [],
+      "elapsed_ms": 570,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "redirects": [],
+      "elapsed_ms": 591,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/finance",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/about-us/divisions-units/finance",
+      "redirects": [],
+      "elapsed_ms": 482,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "redirects": [],
+      "elapsed_ms": 569,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "redirects": [],
+      "elapsed_ms": 455,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "redirects": [],
+      "elapsed_ms": 213,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "redirects": [],
+      "elapsed_ms": 480,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "redirects": [],
+      "elapsed_ms": 289,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "redirects": [],
+      "elapsed_ms": 291,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "status_code": 200,
+      "final_url": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "redirects": [],
+      "elapsed_ms": 544,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://media.gov.lk/",
-      "path": "audit.output/media.gov.lk/20260930.0907/snapshots/page-01-6e7371eace74.html",
-      "sha256": "6e7371eace7488dbbf36587bc58a117006a36d31a342245b9ed6a83422b1c0c3",
-      "bytes": 3742
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-01-cb5a20a29d89.html",
+      "sha256": "cb5a20a29d893c13b519cefd25d171de4c18d121a5d5a98599a1046211c29797",
+      "bytes": 28074
     },
     {
       "url": "https://media.gov.lk/",
-      "path": "audit.output/media.gov.lk/20260930.0907/snapshots/page-02-3c6dd8a9bec5.html",
-      "sha256": "3c6dd8a9bec505fcc8f5ce332649f353642c2c028da58308d9434a2eb7a647c5",
-      "bytes": 3742
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-02-5a31275f5388.html",
+      "sha256": "5a31275f538846e6b1400e1e681973b060fe8ba040e9ba7d4948ceb24d35aae3",
+      "bytes": 28074
     },
     {
       "url": "https://media.gov.lk/",
-      "path": "audit.output/media.gov.lk/20260930.0907/snapshots/page-03-aaae161d38ba.html",
-      "sha256": "aaae161d38baffe9caa68a6a1c9ba07f0931cce28fb4c86a57b9178d8ddb9c74",
-      "bytes": 3742
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-03-fd37e2d8d529.html",
+      "sha256": "fd37e2d8d529f543f0d65defd42de5a36edf92508e53fc5028ae8df6a9cddbfb",
+      "bytes": 28074
     },
     {
       "url": "https://media.gov.lk/",
-      "path": "audit.output/media.gov.lk/20260930.0907/snapshots/page-04-1179038e51d8.html",
-      "sha256": "1179038e51d8888aea4f3d4bf285ebe866dcec4cf8bd454495663290433c3849",
-      "bytes": 3742
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-04-82ba080a9dc9.html",
+      "sha256": "82ba080a9dc94c3bd015ad73f3ae844e71c72754f961b3b23c27b137fd2916cf",
+      "bytes": 28074
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/administration",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-05-9cf8783208e0.html",
+      "sha256": "9cf8783208e0125b37c5a2cab04a09c142679f90c393a0eae140b413736a0036",
+      "bytes": 85622
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/development-planning",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-06-cacad0928dec.html",
+      "sha256": "cacad0928decd1ec4ddecb4c5952514e52d0e0669e1ce723d6ca16bf9a5bee8a",
+      "bytes": 65168
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/finance",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-07-0f386039f55a.html",
+      "sha256": "0f386039f55a29714da92119f0b4423300f2b928707e36dddb041b8f5838746b",
+      "bytes": 52843
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/media-unit",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-08-cb787aec9fa9.html",
+      "sha256": "cb787aec9fa94fb754462ed9db71f0563cd4cb6f5329714751e9562707df4c34",
+      "bytes": 43336
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/internal-audit",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-09-b2f74998df17.html",
+      "sha256": "b2f74998df17dacaab5e3fdc57990a7ddc079fc3a4e42f74bafaf9e7fefa61e7",
+      "bytes": 49542
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/right-to-information",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-10-ba4ae0094be3.html",
+      "sha256": "ba4ae0094be3111d5d06612ecefd9fc87501d12955416faa98679b8d2b029f47",
+      "bytes": 36331
+    },
+    {
+      "url": "https://media.gov.lk/about-us/divisions-units/postal-branch",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-11-6292dd0f33c9.html",
+      "sha256": "6292dd0f33c969f9a2582ca23c9959d4c85ce4442870b4066f0ca94a58ed27ae",
+      "bytes": 50518
+    },
+    {
+      "url": "https://media.gov.lk/institutions/1/department-of-government-printing",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-12-57be6d28c4f3.html",
+      "sha256": "57be6d28c4f33dc45ac8e74a2fd3fedd532081ecedc1627831bf5e88aa9a5aca",
+      "bytes": 36353
+    },
+    {
+      "url": "https://media.gov.lk/institutions/1/department-of-government-information",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-13-8c2eb85bf030.html",
+      "sha256": "8c2eb85bf030d0933de878b350b9bd66f3a8f91923703e280df2b84045507d37",
+      "bytes": 36166
+    },
+    {
+      "url": "https://media.gov.lk/institutions/2/department-of-government-printing-sri-lanka",
+      "path": "audit.output/media.gov.lk/20261002.0924/snapshots/page-14-50dfb0a96c99.html",
+      "sha256": "50dfb0a96c99627068a5c5eefc5cd65368986751d58d8d49cac7c18aa9d65197",
+      "bytes": 36090
     }
   ],
   "reviewer_decisions": [],
@@ -174,8 +1936,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -187,44 +1949,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 113 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 113 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 113 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 113 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -243,18 +2005,80 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakc95759f3d79448ff; Phone: 011-2513 459 (45 phone numbers found); Email: secretary@media.gov.lk (22 email addresses found); Published named responsibility: division",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakc95759f3d79448ff"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 011-2513 459 (45 phone numbers found); Email: secretary@media.gov.lk (22 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: rs,"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -274,7 +2098,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.109.38.51",
+    "egress_ip": "48.217.140.96",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

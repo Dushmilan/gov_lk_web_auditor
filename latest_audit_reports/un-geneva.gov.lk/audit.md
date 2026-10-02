@@ -1,8 +1,8 @@
 # Website Audit: https://un-geneva.gov.lk/
 
-- Completed: 2026-09-30 08:46
+- Completed: 2026-10-02 08:50
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De; Phone: 022 919 12 50 (9 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: division
+Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De; Phone: 0797173552 (11 phone numbers found); Email: trade@lankamission.org (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De |
-| reachable_contacts | ✅ | Phone: 022 919 12 50 (9 phone numbers found); Email: john@example.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0797173552 (11 phone numbers found); Email: trade@lankamission.org (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

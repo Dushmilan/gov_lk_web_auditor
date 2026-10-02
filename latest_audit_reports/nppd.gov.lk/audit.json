@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "444ac02d-ed7b-4e7c-a8af-bf4629426475",
+  "audit_id": "483976bf-2ed8-415d-90ee-13d9adab46a8",
   "url": "https://nppd.gov.lk/",
   "normalized_url": "https://nppd.gov.lk/",
-  "started_at": "2026-09-30T09:04:01.967908+05:30",
-  "completed_at": "2026-09-30T09:05:55.925236+05:30",
+  "started_at": "2026-10-02T09:19:35.379127+05:30",
+  "completed_at": "2026-10-02T09:20:41.443487+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,117 +26,162 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-30T09:04:02.259353+05:30"
+      "observed_at": "2026-10-02T09:19:35.659825+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-30T09:04:02.259368+05:30"
+      "observed_at": "2026-10-02T09:19:35.659844+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-09-30T09:04:12.520200+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-02T09:19:36.397834+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
       "source": "https://nppd.gov.lk/",
-      "observed_at": "2026-09-30T09:05:55.666678+05:30"
+      "observed_at": "2026-10-02T09:20:40.940478+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
       "source": "http://nppd.gov.lk/",
-      "observed_at": "2026-09-30T09:05:55.666696+05:30"
+      "observed_at": "2026-10-02T09:20:40.940499+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
       "source": "https://nppd.gov.lk/",
-      "observed_at": "2026-09-30T09:05:55.666701+05:30"
+      "observed_at": "2026-10-02T09:20:40.940503+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
       "source": "http://nppd.gov.lk/",
-      "observed_at": "2026-09-30T09:05:55.666705+05:30"
+      "observed_at": "2026-10-02T09:20:40.940505+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://nppd.gov.lk/index.php?lang=si",
       "source": "https://nppd.gov.lk/index.php?lang=si",
-      "observed_at": "2026-09-30T09:05:55.666708+05:30"
+      "observed_at": "2026-10-02T09:20:40.940507+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
+      "detail": "Probe 6: HTTP 200 at https://nppd.gov.lk/index.php?lang=ta",
+      "source": "https://nppd.gov.lk/index.php?lang=ta",
+      "observed_at": "2026-10-02T09:20:40.940509+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
       "source": "https://nppd.gov.lk/index.php",
-      "observed_at": "2026-09-30T09:05:55.666711+05:30"
+      "observed_at": "2026-10-02T09:20:40.940512+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
+      "detail": "Probe 8: HTTP 200 at https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
       "source": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "observed_at": "2026-09-30T09:05:55.666714+05:30"
+      "observed_at": "2026-10-02T09:20:40.940514+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "detail": "Probe 9: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "source": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-09-30T09:05:55.666717+05:30"
+      "observed_at": "2026-10-02T09:20:40.940516+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
+      "detail": "Probe 10: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
       "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "observed_at": "2026-09-30T09:05:55.666719+05:30"
+      "observed_at": "2026-10-02T09:20:40.940518+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
+      "detail": "Probe 11: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
       "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "observed_at": "2026-09-30T09:05:55.666722+05:30"
+      "observed_at": "2026-10-02T09:20:40.940520+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
+      "detail": "Probe 12: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
       "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "observed_at": "2026-09-30T09:05:55.666725+05:30"
+      "observed_at": "2026-10-02T09:20:40.940523+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
+      "detail": "Probe 13: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
       "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "observed_at": "2026-09-30T09:05:55.666728+05:30"
+      "observed_at": "2026-10-02T09:20:40.940525+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
+      "detail": "Probe 14: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
       "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "observed_at": "2026-09-30T09:05:55.666731+05:30"
+      "observed_at": "2026-10-02T09:20:40.940527+05:30"
     },
     {
-      "check": "http",
+      "check": "phone",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "observed_at": "2026-09-30T09:05:55.666733+05:30"
+      "detail": "Published phone: +94 11 207 7180",
+      "source": "https://nppd.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 207 7180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 207 7180 ",
+      "source": "https://nppd.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 207 7180 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nppd.gov.lk",
+      "source": "https://nppd.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@nppd.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
+      "source": "https://nppd.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://nppd.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "department"
+      }
     },
     {
       "check": "phone",
@@ -314,6 +367,42 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 11 207 7180",
+      "source": "https://nppd.gov.lk/index.php?lang=ta",
+      "data": {
+        "value": "+94 11 207 7180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 207 7180 ",
+      "source": "https://nppd.gov.lk/index.php?lang=ta",
+      "data": {
+        "value": "+94 11 207 7180 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nppd.gov.lk",
+      "source": "https://nppd.gov.lk/index.php?lang=ta",
+      "data": {
+        "value": "info@nppd.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://nppd.gov.lk/index.php?lang=ta",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 207 7180",
       "source": "https://nppd.gov.lk/index.php?lang=en",
       "data": {
         "value": "+94 11 207 7180"
@@ -416,15 +505,6 @@
       "source": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "data": {
         "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0052351558",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "0052351558"
       }
     },
     {
@@ -716,63 +796,9 @@
       }
     },
     {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 September 2026",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "data": {
-        "value": "08 September 2026"
-      }
-    },
-    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 5014 visible characters across 13 pages",
+      "detail": "Substantive page content: 5545 visible characters across 14 pages",
       "source": "https://nppd.gov.lk/"
     }
   ],
@@ -793,10 +819,10 @@
     },
     {
       "host": "nppd.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-12-16T17:35:41+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://nppd.gov.lk/",
@@ -805,7 +831,7 @@
       "redirects": [
         "https://nppd.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 1625,
+      "elapsed_ms": 1110,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -817,7 +843,7 @@
         "https://nppd.gov.lk/",
         "https://nppd.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 1152,
+      "elapsed_ms": 1372,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -828,25 +854,37 @@
       "redirects": [
         "https://nppd.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 1704,
+      "elapsed_ms": 1257,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://nppd.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://nppd.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://nppd.gov.lk/",
+        "https://nppd.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 1140,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "https://nppd.gov.lk/index.php?lang=si",
       "status_code": 200,
       "final_url": "https://nppd.gov.lk/index.php?lang=si",
       "redirects": [],
-      "elapsed_ms": 1140,
+      "elapsed_ms": 1113,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nppd.gov.lk/index.php?lang=ta",
+      "status_code": 200,
+      "final_url": "https://nppd.gov.lk/index.php?lang=ta",
+      "redirects": [],
+      "elapsed_ms": 1087,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -857,7 +895,7 @@
       "redirects": [
         "https://nppd.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 21291,
+      "elapsed_ms": 1138,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -866,7 +904,7 @@
       "status_code": 200,
       "final_url": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
       "redirects": [],
-      "elapsed_ms": 803,
+      "elapsed_ms": 788,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -875,7 +913,7 @@
       "status_code": 200,
       "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "redirects": [],
-      "elapsed_ms": 1161,
+      "elapsed_ms": 20767,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -884,7 +922,7 @@
       "status_code": 200,
       "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
       "redirects": [],
-      "elapsed_ms": 823,
+      "elapsed_ms": 919,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -893,7 +931,7 @@
       "status_code": 200,
       "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
       "redirects": [],
-      "elapsed_ms": 870,
+      "elapsed_ms": 794,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -902,7 +940,7 @@
       "status_code": 200,
       "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
       "redirects": [],
-      "elapsed_ms": 827,
+      "elapsed_ms": 1069,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -911,7 +949,7 @@
       "status_code": 200,
       "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
       "redirects": [],
-      "elapsed_ms": 790,
+      "elapsed_ms": 1103,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -920,16 +958,7 @@
       "status_code": 200,
       "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
       "redirects": [],
-      "elapsed_ms": 1085,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1075,
+      "elapsed_ms": 20892,
       "content_type": "text/html; charset=utf-8",
       "error": null
     }
@@ -937,81 +966,87 @@
   "snapshots": [
     {
       "url": "https://nppd.gov.lk/index.php?lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-01-9ed480b54590.html",
-      "sha256": "9ed480b54590df4bb5ca7073cff449678b1a5f06dedd59d829d619ba5137a97e",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-01-49c57a8d2b6c.html",
+      "sha256": "49c57a8d2b6c35750bc1a2e7c297a67033f7043d5e6c48eaeaef0ff3cdc44292",
       "bytes": 63867
     },
     {
       "url": "https://nppd.gov.lk/index.php?lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-02-e4d02852f7de.html",
-      "sha256": "e4d02852f7de0ed38b18c1e6c1dca0d0cbc241f44057a082dc3955d956bd6203",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-02-3b07e1bc5e04.html",
+      "sha256": "3b07e1bc5e0453377bc460409c105f6eae143db9930ecd9d7bbb14a15b2ece78",
       "bytes": 63867
     },
     {
       "url": "https://nppd.gov.lk/index.php?lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-03-d4cb15705452.html",
-      "sha256": "d4cb15705452b5703adb8902e0277a4ca15842b83e830ec8de076891b6c63c5d",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-03-26d77a8c2add.html",
+      "sha256": "26d77a8c2adde8ea0e6e895c46e471523b899b69ab6c02b1b15f16910f708b8c",
+      "bytes": 63867
+    },
+    {
+      "url": "https://nppd.gov.lk/index.php?lang=en",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-04-b8ab61cf457a.html",
+      "sha256": "b8ab61cf457a357c697d6700ad42eb7311c94c7e2347edea7626825e36aca05b",
       "bytes": 63867
     },
     {
       "url": "https://nppd.gov.lk/index.php?lang=si",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-04-464f65cb54cf.html",
-      "sha256": "464f65cb54cf7ec7a7911c2fbb9d49c0f2eec80aa1ea1aa767b9b440bd9c95b0",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-05-66e80dcc6b4f.html",
+      "sha256": "66e80dcc6b4fb44c2e176c8c3b82e6b535d83f7e254f6b20b8515ec07735d8be",
       "bytes": 72679
     },
     {
+      "url": "https://nppd.gov.lk/index.php?lang=ta",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-06-6c24a7526634.html",
+      "sha256": "6c24a7526634b8f86df0f471004cdbe4fd27d8adba3e968375be7e9298e5214e",
+      "bytes": 70616
+    },
+    {
       "url": "https://nppd.gov.lk/index.php?lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-05-fde7431f539f.html",
-      "sha256": "fde7431f539fa6c32a69af1227fe3d7264b14b428822997cd655384f0084809d",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-07-be042569f6db.html",
+      "sha256": "be042569f6db5b43a60475b07312e1efef58f03745a62e384327a2b059d245c6",
       "bytes": 63867
     },
     {
       "url": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-06-d44e4cce1e99.html",
-      "sha256": "d44e4cce1e99593a14d1e1aa97a3b43183945bcf2ecf571453ab14973c218a5a",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-08-550062fcc674.html",
+      "sha256": "550062fcc674084d5e6a2e6ca35d0b7069833d3a4fec5c219d72c87f820f0ccc",
       "bytes": 24929
     },
     {
       "url": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-07-354f350440fa.html",
-      "sha256": "354f350440fae6423d776e40ad070c7a5282d5e23cda835be5618a203c663de9",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-09-b496ede0e843.html",
+      "sha256": "b496ede0e843fe81941b0fb8ab944071bd9dfb08850667523423375cebf92aed",
       "bytes": 64331
     },
     {
       "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-08-83a13df6b843.html",
-      "sha256": "83a13df6b843e0eedbad399b7fdccf921920201d07c8d2c7c16509d45b2b9b63",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-10-23658b07f6e3.html",
+      "sha256": "23658b07f6e3390d8166fbb69f58254d78f3d135841ae898f9887ec493d0c3e8",
       "bytes": 26270
     },
     {
       "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-09-10d23dbb955b.html",
-      "sha256": "10d23dbb955b725942c464d23d1153283ff200743d5c11d6b6931de95869c004",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-11-7aed76fbf9d8.html",
+      "sha256": "7aed76fbf9d87d2dc975c9cbe3e3203e476a5c43f10eff811c08c3191b54bbb7",
       "bytes": 28281
     },
     {
       "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-10-2b10a5108f3b.html",
-      "sha256": "2b10a5108f3bc04b3f6fa2fbfe434176f69a9a14374086a90f917a01c3b8a075",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-12-05f90c6cc15a.html",
+      "sha256": "05f90c6cc15ad98e07d738cbcc58197f3ef60e69624c6b57f835e2372468970f",
       "bytes": 23057
     },
     {
       "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-11-a0a75ef76931.html",
-      "sha256": "a0a75ef76931b31ae2b3b2e43d85aba658b0d49e3aeb53f05c58ce85add6b25a",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-13-3b577a6a321c.html",
+      "sha256": "3b577a6a321c383e1e3be78c55ea158b00e3e34171ab6a7fadfa3794373ba4d1",
       "bytes": 33444
     },
     {
       "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-12-c04aa128f35d.html",
-      "sha256": "c04aa128f35da81559bb0f43d9860ebeeccd0b6030adfd4a0b18d3dee04d457a",
+      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-14-aebc168002c7.html",
+      "sha256": "aebc168002c7ff56d94832225d5e51d9ba8132042c551917d7a97f5b94c4e0b1",
       "bytes": 25715
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=255&lang=en",
-      "path": "audit.output/nppd.gov.lk/20260930.0904/snapshots/page-13-7d2ae758db3a.html",
-      "sha256": "7d2ae758db3aec35fa28942065a98b3ccb1f84e4e13bca3e2e8047413bfad200",
-      "bytes": 23173
     }
   ],
   "reviewer_decisions": [],
@@ -1027,8 +1062,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -1065,7 +1100,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://nppd.gov.lk/: Probe 4: timed out"
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -1082,32 +1117,94 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic; Phone: +94 11 207 7180; Email: info@nppd.gov.lk; Published named responsibility: department",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 11 207 7180; Email: info@nppd.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published published update date: 08 September 2026"
+        }
+      ]
     },
     {
       "level": 4,
@@ -1127,7 +1224,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.109.38.51",
+    "egress_ip": "48.217.140.96",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

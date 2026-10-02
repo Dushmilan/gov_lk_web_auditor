@@ -1,8 +1,8 @@
 # Website Audit: https://www.plc.lk/
 
-- Completed: 2026-09-30 08:35
+- Completed: 2026-10-02 08:40
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

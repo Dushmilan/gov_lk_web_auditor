@@ -1,8 +1,8 @@
 # Website Audit: https://www.stc.lk/
 
-- Completed: 2026-09-30 09:03
+- Completed: 2026-10-02 09:18
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 011 2447970 (81 phone numbers found); Email: anura@stc.lk (21 email addresses found); Published named responsibility: officer in charge
+Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 0112447970 (68 phone numbers found); Email: stcanuradhapura@gmail.com (18 email addresses found); Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St |
-| reachable_contacts | ✅ | Phone: 011 2447970 (81 phone numbers found); Email: anura@stc.lk (21 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112447970 (68 phone numbers found); Email: stcanuradhapura@gmail.com (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs6 |
 | legal_basis | ✅ | Published legal basis: gazette |
-| processing_time | ✅ | Published processing time: 6months |
-| downloadable_form | ✅ | Published downloadable form: https://www.stc.lk/wp-content/uploads/2025/08/DEALER-APPOINTMENT-APPLICATION-FORM.pdf |
-| published_update_date | ✅ | Published published update date: 19/11/2025 |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ✅ | Published published update date: 30 September 2026 |

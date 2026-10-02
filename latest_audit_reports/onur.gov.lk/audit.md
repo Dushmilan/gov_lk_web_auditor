@@ -1,8 +1,8 @@
 # Website Audit: https://onur.gov.lk/
 
-- Completed: 2026-09-30 08:56
+- Completed: 2026-10-02 09:00
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: { display: none; } .post-type-archive-tribe_events .tribe-events-calendar-list .tribe-common-g-row .tribe-events-calenda; Phone: 0000008180 (12 phone numbers found); Email: info@onur.gov.lk; Published named responsibility: division
+Published postal address: { display: none; } .post-type-archive-tribe_events .tribe-events-calendar-list .tribe-common-g-row .tribe-events-calenda; Phone: 0000000000 (12 phone numbers found); Email: info@onur.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: { display: none; } .post-type-archive-tribe_events .tribe-events-calendar-list .tribe-common-g-row .tribe-events-calenda |
-| reachable_contacts | ✅ | Phone: 0000008180 (12 phone numbers found); Email: info@onur.gov.lk |
+| reachable_contacts | ✅ | Phone: 0000000000 (12 phone numbers found); Email: info@onur.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: gazette |
-| processing_time | ❓ | No passing processing time evidence found |
+| processing_time | ✅ | Published processing time: 1 month |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://emb-stockholm.gov.lk/
 
-- Completed: 2026-09-30 08:46
+- Completed: 2026-10-02 08:50
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.38.51 (US, github-actions)
+- Vantage: 48.217.140.96 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: PO BOX 24055 SE- 114 56 , Stockholm Phone Numbers: +46 (8) 663 65 23 , +46 (8) 663 65 25 Email: slemb.stockholm@mfa.gov.; Phone: +4686636523 (14 phone numbers found); Email: john@example.com (5 email addresses found); Published named responsibility: director
+Published postal address: PO BOX 24055 SE- 114 56 , Stockholm Phone Numbers: +46 (8) 663 65 23 , +46 (8) 663 65 25 Email: slemb.stockholm@mfa.gov.; Phone: 0259-3499-46 (16 phone numbers found); Email: john@example.com (5 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: PO BOX 24055 SE- 114 56 , Stockholm Phone Numbers: +46 (8) 663 65 23 , +46 (8) 663 65 25 Email: slemb.stockholm@mfa.gov. |
-| reachable_contacts | ✅ | Phone: +4686636523 (14 phone numbers found); Email: john@example.com (5 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| reachable_contacts | ✅ | Phone: 0259-3499-46 (16 phone numbers found); Email: john@example.com (5 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
@@ -51,7 +51,7 @@ No passing downloadable form evidence found; No passing published update date ev
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
+| fees_and_payment | ✅ | Published fees and payment: RS, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 3 working days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
