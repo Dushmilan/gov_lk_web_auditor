@@ -1,8 +1,8 @@
 # Website Audit: https://emb-berlin.gov.lk/
 
-- Completed: 2026-10-02 08:49
+- Completed: 2026-10-03 08:36
 - Overall result: 🟠 Level 2
-- Vantage: 48.217.140.96 (US, github-actions)
+- Vantage: 172.214.155.181 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)30809749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquires ; Phone: 0.810958509 (40 phone numbers found); Email: consular.berlin@mfa.gov.lk (15 email addresses found); Published named responsibility: division
+Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)3080909749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquire; Phone: +490300909749 (44 phone numbers found); Email: slemb.berlin@mfa.gov.lk (9 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)30809749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquires  |
-| reachable_contacts | ✅ | Phone: 0.810958509 (40 phone numbers found); Email: consular.berlin@mfa.gov.lk (15 email addresses found) |
+| postal_address | ✅ | Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)3080909749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquire |
+| reachable_contacts | ✅ | Phone: +490300909749 (44 phone numbers found); Email: slemb.berlin@mfa.gov.lk (9 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❌
@@ -51,7 +51,7 @@ Published published update date: 1 January 2018
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: Free of charge |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 03 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

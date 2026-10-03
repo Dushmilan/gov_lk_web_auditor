@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "483976bf-2ed8-415d-90ee-13d9adab46a8",
+  "audit_id": "af2e29be-a3c9-471a-9d7a-83191b7e7f3b",
   "url": "https://nppd.gov.lk/",
   "normalized_url": "https://nppd.gov.lk/",
-  "started_at": "2026-10-02T09:19:35.379127+05:30",
-  "completed_at": "2026-10-02T09:20:41.443487+05:30",
+  "started_at": "2026-10-03T08:56:14.849907+05:30",
+  "completed_at": "2026-10-03T08:58:27.074057+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,780 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-02T09:19:35.659825+05:30"
+      "observed_at": "2026-10-03T08:56:15.461774+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-02T09:19:35.659844+05:30"
+      "observed_at": "2026-10-03T08:56:15.461793+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-02T09:19:36.397834+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-03T08:56:25.717346+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://nppd.gov.lk/",
-      "observed_at": "2026-10-02T09:20:40.940478+05:30"
+      "observed_at": "2026-10-03T08:58:27.073900+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://nppd.gov.lk/",
-      "observed_at": "2026-10-02T09:20:40.940499+05:30"
+      "observed_at": "2026-10-03T08:58:27.073922+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://nppd.gov.lk/",
-      "observed_at": "2026-10-02T09:20:40.940503+05:30"
+      "observed_at": "2026-10-03T08:58:27.073926+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://nppd.gov.lk/",
-      "observed_at": "2026-10-02T09:20:40.940505+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://nppd.gov.lk/index.php?lang=si",
-      "source": "https://nppd.gov.lk/index.php?lang=si",
-      "observed_at": "2026-10-02T09:20:40.940507+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://nppd.gov.lk/index.php?lang=ta",
-      "source": "https://nppd.gov.lk/index.php?lang=ta",
-      "observed_at": "2026-10-02T09:20:40.940509+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://nppd.gov.lk/index.php?lang=en",
-      "source": "https://nppd.gov.lk/index.php",
-      "observed_at": "2026-10-02T09:20:40.940512+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "source": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "observed_at": "2026-10-02T09:20:40.940514+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-10-02T09:20:40.940516+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "observed_at": "2026-10-02T09:20:40.940518+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "observed_at": "2026-10-02T09:20:40.940520+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "observed_at": "2026-10-02T09:20:40.940523+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "observed_at": "2026-10-02T09:20:40.940525+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "observed_at": "2026-10-02T09:20:40.940527+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?lang=si",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?lang=si",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?lang=si",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view... Read More... !function ($) { $(function(){ $('#",
-      "source": "https://nppd.gov.lk/index.php?lang=si",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view... Read More... !function ($) { $(function(){ $('#"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?lang=si",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?lang=ta",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?lang=ta",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?lang=ta",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?lang=ta",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 September 2026",
-      "source": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "data": {
-        "value": "08 September 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 September 2026",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "data": {
-        "value": "08 September 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 September 2026",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "data": {
-        "value": "08 September 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "data": {
-        "value": "+94 11 207 7180"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 207 7180 ",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "data": {
-        "value": "+94 11 207 7180 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nppd.gov.lk",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "data": {
-        "value": "info@nppd.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "data": {
-        "value": "5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 September 2026",
-      "source": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "data": {
-        "value": "08 September 2026"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 5545 visible characters across 14 pages",
-      "source": "https://nppd.gov.lk/"
+      "observed_at": "2026-10-03T08:58:27.073929+05:30"
     }
   ],
   "observations": [
@@ -819,236 +85,49 @@
     },
     {
       "host": "nppd.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-16T17:35:41+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://nppd.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://nppd.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1110,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://nppd.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://nppd.gov.lk/",
-        "https://nppd.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1372,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://nppd.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://nppd.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1257,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://nppd.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://nppd.gov.lk/",
-        "https://nppd.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1140,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?lang=si",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1113,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?lang=ta",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?lang=ta",
-      "redirects": [],
-      "elapsed_ms": 1087,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://nppd.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1138,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "redirects": [],
-      "elapsed_ms": 788,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "redirects": [],
-      "elapsed_ms": 20767,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "redirects": [],
-      "elapsed_ms": 919,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "redirects": [],
-      "elapsed_ms": 794,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1069,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1103,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "status_code": 200,
-      "final_url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "redirects": [],
-      "elapsed_ms": 20892,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://nppd.gov.lk/index.php?lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-01-49c57a8d2b6c.html",
-      "sha256": "49c57a8d2b6c35750bc1a2e7c297a67033f7043d5e6c48eaeaef0ff3cdc44292",
-      "bytes": 63867
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-02-3b07e1bc5e04.html",
-      "sha256": "3b07e1bc5e0453377bc460409c105f6eae143db9930ecd9d7bbb14a15b2ece78",
-      "bytes": 63867
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-03-26d77a8c2add.html",
-      "sha256": "26d77a8c2adde8ea0e6e895c46e471523b899b69ab6c02b1b15f16910f708b8c",
-      "bytes": 63867
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-04-b8ab61cf457a.html",
-      "sha256": "b8ab61cf457a357c697d6700ad42eb7311c94c7e2347edea7626825e36aca05b",
-      "bytes": 63867
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?lang=si",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-05-66e80dcc6b4f.html",
-      "sha256": "66e80dcc6b4fb44c2e176c8c3b82e6b535d83f7e254f6b20b8515ec07735d8be",
-      "bytes": 72679
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?lang=ta",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-06-6c24a7526634.html",
-      "sha256": "6c24a7526634b8f86df0f471004cdbe4fd27d8adba3e968375be7e9298e5214e",
-      "bytes": 70616
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-07-be042569f6db.html",
-      "sha256": "be042569f6db5b43a60475b07312e1efef58f03745a62e384327a2b059d245c6",
-      "bytes": 63867
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_search&view=search&Itemid=238&lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-08-550062fcc674.html",
-      "sha256": "550062fcc674084d5e6a2e6ca35d0b7069833d3a4fec5c219d72c87f820f0ccc",
-      "bytes": 24929
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-09-b496ede0e843.html",
-      "sha256": "b496ede0e843fe81941b0fb8ab944071bd9dfb08850667523423375cebf92aed",
-      "bytes": 64331
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=114&lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-10-23658b07f6e3.html",
-      "sha256": "23658b07f6e3390d8166fbb69f58254d78f3d135841ae898f9887ec493d0c3e8",
-      "bytes": 26270
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=105&Itemid=253&lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-11-7aed76fbf9d8.html",
-      "sha256": "7aed76fbf9d87d2dc975c9cbe3e3203e476a5c43f10eff811c08c3191b54bbb7",
-      "bytes": 28281
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=116&lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-12-05f90c6cc15a.html",
-      "sha256": "05f90c6cc15ad98e07d738cbcc58197f3ef60e69624c6b57f835e2372468970f",
-      "bytes": 23057
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=115&lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-13-3b577a6a321c.html",
-      "sha256": "3b577a6a321c383e1e3be78c55ea158b00e3e34171ab6a7fadfa3794373ba4d1",
-      "bytes": 33444
-    },
-    {
-      "url": "https://nppd.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=254&lang=en",
-      "path": "audit.output/nppd.gov.lk/20261002.0919/snapshots/page-14-aebc168002c7.html",
-      "sha256": "aebc168002c7ff56d94832225d5e51d9ba8132042c551917d7a97f5b94c4e0b1",
-      "bytes": 25715
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1062,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -1075,136 +154,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic; Phone: +94 11 207 7180; Email: info@nppd.gov.lk; Published named responsibility: department",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 11 207 7180; Email: info@nppd.gov.lk"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing fees and payment evidence found"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing legal basis evidence found"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published published update date: 08 September 2026"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1224,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "48.217.140.96",
+    "egress_ip": "172.214.155.181",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

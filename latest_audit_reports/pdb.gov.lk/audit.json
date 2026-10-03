@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "9e6e359d-091c-4d84-823d-9dde33aaa16e",
+  "audit_id": "24d3661e-1e68-4408-8244-f69882d876f2",
   "url": "https://pdb.gov.lk/",
   "normalized_url": "https://pdb.gov.lk/",
-  "started_at": "2026-10-02T09:02:53.585387+05:30",
-  "completed_at": "2026-10-02T09:36:55.971522+05:30",
+  "started_at": "2026-10-03T08:46:51.594877+05:30",
+  "completed_at": "2026-10-03T08:52:35.878680+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,83 +26,125 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-02T09:02:53.857632+05:30"
+      "observed_at": "2026-10-03T08:46:51.961756+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-02T09:02:53.857649+05:30"
+      "observed_at": "2026-10-03T08:46:51.961774+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-02T09:03:04.106408+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-03T08:46:52.941579+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://pdb.gov.lk/",
       "source": "https://pdb.gov.lk/",
-      "observed_at": "2026-10-02T09:36:55.727910+05:30"
+      "observed_at": "2026-10-03T08:52:34.738786+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://pdb.gov.lk/",
       "source": "http://pdb.gov.lk/",
-      "observed_at": "2026-10-02T09:36:55.727935+05:30"
+      "observed_at": "2026-10-03T08:52:34.738810+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://pdb.gov.lk/",
       "source": "https://pdb.gov.lk/",
-      "observed_at": "2026-10-02T09:36:55.727939+05:30"
+      "observed_at": "2026-10-03T08:52:34.738815+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://pdb.gov.lk/",
       "source": "http://pdb.gov.lk/",
-      "observed_at": "2026-10-02T09:36:55.727942+05:30"
+      "observed_at": "2026-10-03T08:52:34.738819+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://pdb.gov.lk/marketing/",
-      "source": "https://pdb.gov.lk/marketing/",
-      "observed_at": "2026-10-02T09:36:55.727945+05:30"
+      "detail": "Probe 5: HTTP 200 at https://pdb.gov.lk/divisions/",
+      "source": "https://pdb.gov.lk/divisions/",
+      "observed_at": "2026-10-03T08:52:34.738822+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://pdb.gov.lk/photo-gallery/",
+      "detail": "Probe 6: HTTP 200 at https://pdb.gov.lk/media-release/",
+      "source": "https://pdb.gov.lk/media-release/",
+      "observed_at": "2026-10-03T08:52:34.738826+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://pdb.gov.lk/key-members/",
+      "source": "https://pdb.gov.lk/key-members/",
+      "observed_at": "2026-10-03T08:52:34.738830+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://pdb.gov.lk/members-2/",
+      "source": "https://pdb.gov.lk/members-2/",
+      "observed_at": "2026-10-03T08:52:34.738833+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://pdb.gov.lk/development-2/",
+      "source": "https://pdb.gov.lk/development-2/",
+      "observed_at": "2026-10-03T08:52:34.738836+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://pdb.gov.lk/palmyra-research-institute/",
+      "source": "https://pdb.gov.lk/palmyra-research-institute/",
+      "observed_at": "2026-10-03T08:52:34.738840+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://pdb.gov.lk/photo-gallery/",
       "source": "https://pdb.gov.lk/photo-gallery/",
-      "observed_at": "2026-10-02T09:36:55.727948+05:30"
+      "observed_at": "2026-10-03T08:52:34.738843+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://pdb.gov.lk/author/palmyrah/",
-      "source": "https://pdb.gov.lk/author/palmyrah/",
-      "observed_at": "2026-10-02T09:36:55.727950+05:30"
+      "detail": "Probe 12: HTTP 200 at https://pdb.gov.lk/video-gallery/",
+      "source": "https://pdb.gov.lk/video-gallery/",
+      "observed_at": "2026-10-03T08:52:34.738847+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
-      "source": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
-      "observed_at": "2026-10-02T09:36:55.727952+05:30"
+      "detail": "Probe 13: HTTP 200 at https://pdb.gov.lk/events/",
+      "source": "https://pdb.gov.lk/events/",
+      "observed_at": "2026-10-03T08:52:34.738850+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "observed_at": "2026-10-03T08:52:34.738854+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 21 222 4134 ",
+      "detail": "Published phone: +94 21 222 4154 ",
       "source": "https://pdb.gov.lk/",
       "data": {
-        "value": "+94 21 222 4134 "
+        "value": "+94 21 222 4154 "
       }
     },
     {
@@ -109,10 +159,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 21 222 4154 ",
+      "detail": "Published phone: +94 21 222 4134 ",
       "source": "https://pdb.gov.lk/",
       "data": {
-        "value": "+94 21 222 4154 "
+        "value": "+94 21 222 4134 "
       }
     },
     {
@@ -145,17 +195,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 21 222 2034 ",
-      "source": "https://pdb.gov.lk/marketing/",
-      "data": {
-        "value": "+94 21 222 2034 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94 21 222 4154 ",
-      "source": "https://pdb.gov.lk/marketing/",
+      "source": "https://pdb.gov.lk/",
       "data": {
         "value": "+94 21 222 4154 "
       }
@@ -163,35 +204,314 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 021 2215018 ",
-      "source": "https://pdb.gov.lk/marketing/",
+      "detail": "Published phone: +94 21 222 2034 ",
+      "source": "https://pdb.gov.lk/",
       "data": {
-        "value": "021 2215018 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 6178166 ",
-      "source": "https://pdb.gov.lk/marketing/",
-      "data": {
-        "value": "076 6178166 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 9444795 ",
-      "source": "https://pdb.gov.lk/marketing/",
-      "data": {
-        "value": "077 9444795 "
+        "value": "+94 21 222 2034 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 21 222 4134 ",
-      "source": "https://pdb.gov.lk/marketing/",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "+94 21 222 4134 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slpdbho@yahoo.com",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "slpdbho@yahoo.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "+94 21 222 4154 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 2034 ",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "+94 21 222 2034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "+94 21 222 4134 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slpdbho@yahoo.com",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "slpdbho@yahoo.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "+94 21 222 4154 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 2034 ",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "+94 21 222 2034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "+94 21 222 4134 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slpdbho@yahoo.com",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "slpdbho@yahoo.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf",
+      "source": "https://pdb.gov.lk/",
+      "data": {
+        "value": "https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/divisions/",
+      "data": {
+        "value": "+94 21 222 4154 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 2034 ",
+      "source": "https://pdb.gov.lk/divisions/",
+      "data": {
+        "value": "+94 21 222 2034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/divisions/",
+      "data": {
+        "value": "+94 21 222 4134 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slpdbho@yahoo.com",
+      "source": "https://pdb.gov.lk/divisions/",
+      "data": {
+        "value": "slpdbho@yahoo.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://pdb.gov.lk/divisions/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/media-release/",
+      "data": {
+        "value": "+94 21 222 4154 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 2034 ",
+      "source": "https://pdb.gov.lk/media-release/",
+      "data": {
+        "value": "+94 21 222 2034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/media-release/",
+      "data": {
+        "value": "+94 21 222 4134 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slpdbho@yahoo.com",
+      "source": "https://pdb.gov.lk/media-release/",
+      "data": {
+        "value": "slpdbho@yahoo.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://pdb.gov.lk/media-release/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://pdb.gov.lk/wp-content/uploads/2025/01/Application-for-Palmyrah-Land-Registration-ENG.pdf",
+      "source": "https://pdb.gov.lk/media-release/",
+      "data": {
+        "value": "https://pdb.gov.lk/wp-content/uploads/2025/01/Application-for-Palmyrah-Land-Registration-ENG.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 186 093 ",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "+94 112 186 093 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 187 258 ",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "+94 112 187 258 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 186 258 ",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "+94 112 186 258 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "+94 21 222 4154 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 186 015 ",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "+94 112 186 015 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 2034 ",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "+94 21 222 2034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/key-members/",
       "data": {
         "value": "+94 21 222 4134 "
       }
@@ -199,26 +519,332 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 06. 011 23644",
-      "source": "https://pdb.gov.lk/marketing/",
+      "detail": "Published phone: +94 112 186 017 ",
+      "source": "https://pdb.gov.lk/key-members/",
       "data": {
-        "value": "06. 011 23644"
+        "value": "+94 112 186 017 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 071 3178845 ",
-      "source": "https://pdb.gov.lk/marketing/",
+      "detail": "Published phone: +94 112 186 016 ",
+      "source": "https://pdb.gov.lk/key-members/",
       "data": {
-        "value": "071 3178845 "
+        "value": "+94 112 186 016 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: minister@plantation.gov.lk",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "minister@plantation.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: rasar60@gmail.com",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "rasar60@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@plantation.gov.lk",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "secretary@plantation.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: deputyminister@plantation.gov.lk",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "deputyminister@plantation.gov.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: slpdbho@yahoo.com",
-      "source": "https://pdb.gov.lk/marketing/",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "slpdbho@yahoo.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://pdb.gov.lk/key-members/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 21 222 4154 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 378 7380 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 378 7380 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 76 601 2061 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 76 601 2061 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 75 414 9820 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 75 414 9820 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 21 222 4134 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 889 9949 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 889 9949 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 70 440 0641 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 70 440 0641 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 76 023 3301 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 76 023 3301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 412 1420 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 412 1420 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 70 569 4361 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 70 569 4361 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 76 308 2491 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 76 308 2491 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 232 1051 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 232 1051 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 70 772 1334 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 70 772 1334 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 744 6324 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 744 6324 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 435 2468 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 435 2468 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 70 660 1113 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 70 660 1113 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 370 5896 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 370 5896 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 772 1334",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 772 1334"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 943 7792 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 943 7792 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 76 665 8876 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 76 665 8876 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 244 4030 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 244 4030 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 2034 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 21 222 2034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 805 9817 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 805 9817 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 386 8588 ",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 386 8588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 440 0641",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "+94 77 440 0641"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: rasar60@gmail.com",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "rasar60@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sjasinthan1988@gmail.com",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "sjasinthan1988@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sureshacct76@gmail.com",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "sureshacct76@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slpdbho@yahoo.com",
+      "source": "https://pdb.gov.lk/members-2/",
       "data": {
         "value": "slpdbho@yahoo.com"
       }
@@ -226,26 +852,188 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: slpdbmarketing@gmail.com",
-      "source": "https://pdb.gov.lk/marketing/",
+      "detail": "Published email: srthlyn@yahoo.com",
+      "source": "https://pdb.gov.lk/members-2/",
       "data": {
-        "value": "slpdbmarketing@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Jaffna Nallur Super Centre No 499, Point Pedro Road, Nallur. Jaffna. 021 2215018 Ariyakulam Katpaham Ariyakulam ",
-      "source": "https://pdb.gov.lk/marketing/",
-      "data": {
-        "value": "Contact Jaffna Nallur Super Centre No 499, Point Pedro Road, Nallur. Jaffna. 021 2215018 Ariyakulam Katpaham Ariyakulam "
+        "value": "srthlyn@yahoo.com"
       }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: division",
-      "source": "https://pdb.gov.lk/marketing/",
+      "source": "https://pdb.gov.lk/members-2/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "+94 21 222 4154 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 019 2020 202",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "019 2020 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 2034 ",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "+94 21 222 2034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "+94 21 222 4134 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 2222034 ",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "021 2222034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212224154 ",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "0212224154 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slpdbho@gmail.com",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "slpdbho@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slpdbho@yahoo.com",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "slpdbho@yahoo.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf",
+      "source": "https://pdb.gov.lk/development-2/",
+      "data": {
+        "value": "https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/palmyra-research-institute/",
+      "data": {
+        "value": "+94 21 222 4154 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/palmyra-research-institute/",
+      "data": {
+        "value": "+94 21 222 4134 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 222 2034 ",
+      "source": "https://pdb.gov.lk/palmyra-research-institute/",
+      "data": {
+        "value": "+94 21 222 2034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 2057066 ",
+      "source": "https://pdb.gov.lk/palmyra-research-institute/",
+      "data": {
+        "value": "+94 21 2057066 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 21 205 7065 ",
+      "source": "https://pdb.gov.lk/palmyra-research-institute/",
+      "data": {
+        "value": "+94 21 205 7065 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slpdbho@yahoo.com",
+      "source": "https://pdb.gov.lk/palmyra-research-institute/",
+      "data": {
+        "value": "slpdbho@yahoo.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://pdb.gov.lk/palmyra-research-institute/",
       "data": {
         "value": "division"
       }
@@ -253,19 +1041,19 @@
     {
       "check": "legal_basis",
       "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://pdb.gov.lk/marketing/",
+      "detail": "Published legal basis: gazette",
+      "source": "https://pdb.gov.lk/palmyra-research-institute/",
       "data": {
-        "value": "regulations"
+        "value": "gazette"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 21 222 4134 ",
+      "detail": "Published phone: +94 21 222 4154 ",
       "source": "https://pdb.gov.lk/photo-gallery/",
       "data": {
-        "value": "+94 21 222 4134 "
+        "value": "+94 21 222 4154 "
       }
     },
     {
@@ -280,10 +1068,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 21 222 4154 ",
+      "detail": "Published phone: +94 21 222 4134 ",
       "source": "https://pdb.gov.lk/photo-gallery/",
       "data": {
-        "value": "+94 21 222 4154 "
+        "value": "+94 21 222 4134 "
       }
     },
     {
@@ -307,17 +1095,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 21 222 4134 ",
-      "source": "https://pdb.gov.lk/author/palmyrah/",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/video-gallery/",
       "data": {
-        "value": "+94 21 222 4134 "
+        "value": "+94 21 222 4154 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 21 222 2034 ",
-      "source": "https://pdb.gov.lk/author/palmyrah/",
+      "source": "https://pdb.gov.lk/video-gallery/",
       "data": {
         "value": "+94 21 222 2034 "
       }
@@ -325,17 +1113,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 21 222 4154 ",
-      "source": "https://pdb.gov.lk/author/palmyrah/",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/video-gallery/",
       "data": {
-        "value": "+94 21 222 4154 "
+        "value": "+94 21 222 4134 "
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: slpdbho@yahoo.com",
-      "source": "https://pdb.gov.lk/author/palmyrah/",
+      "source": "https://pdb.gov.lk/video-gallery/",
       "data": {
         "value": "slpdbho@yahoo.com"
       }
@@ -344,7 +1132,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: division",
-      "source": "https://pdb.gov.lk/author/palmyrah/",
+      "source": "https://pdb.gov.lk/video-gallery/",
       "data": {
         "value": "division"
       }
@@ -352,26 +1140,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0274764734",
-      "source": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
+      "detail": "Published phone: +94 21 222 4154 ",
+      "source": "https://pdb.gov.lk/events/",
       "data": {
-        "value": "0274764734"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 21 222 4134 ",
-      "source": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
-      "data": {
-        "value": "+94 21 222 4134 "
+        "value": "+94 21 222 4154 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 21 222 2034 ",
-      "source": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
+      "source": "https://pdb.gov.lk/events/",
       "data": {
         "value": "+94 21 222 2034 "
       }
@@ -379,34 +1158,511 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 21 222 4154 ",
-      "source": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
+      "detail": "Published phone: +94 21 222 4134 ",
+      "source": "https://pdb.gov.lk/events/",
       "data": {
-        "value": "+94 21 222 4154 "
+        "value": "+94 21 222 4134 "
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: slpdbho@yahoo.com",
-      "source": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
+      "source": "https://pdb.gov.lk/events/",
       "data": {
         "value": "slpdbho@yahoo.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Municipal Council Ground, Vavuniya",
+      "source": "https://pdb.gov.lk/events/",
+      "data": {
+        "value": "Municipal Council Ground, Vavuniya"
       }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: division",
-      "source": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
+      "source": "https://pdb.gov.lk/events/",
       "data": {
         "value": "division"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-10-03",
+      "source": "https://pdb.gov.lk/events/",
+      "data": {
+        "value": "2026-10-03"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000009 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000000009 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000058 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000000058 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000199937 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000199937 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000083272 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000083272 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000382827 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000382827 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000082998 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000082998 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000416029 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000416029 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000149755 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000149755 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000432931 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000432931 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000382743 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000382743 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000233303 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000233303 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000149563 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000149563 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000329 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000000329 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000466542 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000466542 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000083189 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000083189 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000116280 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000116280 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000182846 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000182846 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000233220 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000233220 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000416113 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000416113 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000199745 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000199745 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000449833 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000449833 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000149838 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000149838 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000299787 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000299787 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000382550 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000382550 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000349264 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000349264 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000349457 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000349457 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000200020 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000200020 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000299594 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000299594 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000116555 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000116555 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000432738 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000432738 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000449640 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000449640 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000483444 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000483444 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000049720 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000049720 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000349541 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000349541 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000466819 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000466819 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000433015 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000433015 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000183121 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000183121 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000299871 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000299871 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 51 0000000",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0 51 0000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000049991 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000049991 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000266503 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000266503 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000449917 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000449917 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000247 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000000247 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000049909 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000049909 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000266586 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000266586 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000183038 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000183038 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000415836 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000415836 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000466735 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000466735 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000116472 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000116472 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000266311 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000266311 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000233028 ",
+      "source": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "data": {
+        "value": "0000233028 "
       }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 7446 visible characters across 5 pages",
+      "detail": "Substantive page content: 267963 visible characters across 14 pages",
       "source": "https://pdb.gov.lk/"
     }
   ],
@@ -427,53 +1683,102 @@
     },
     {
       "host": "pdb.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-10-21T04:19:24+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://pdb.gov.lk/",
       "status_code": 200,
       "final_url": "https://pdb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 21697,
+      "elapsed_ms": 2652,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://pdb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://pdb.gov.lk/",
+      "redirects": [
+        "https://pdb.gov.lk/"
+      ],
+      "elapsed_ms": 21736,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://pdb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://pdb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1937,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://pdb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://pdb.gov.lk/",
+      "redirects": [
+        "https://pdb.gov.lk/"
+      ],
+      "elapsed_ms": 1961,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
-      "url": "https://pdb.gov.lk/marketing/",
+      "url": "https://pdb.gov.lk/divisions/",
       "status_code": 200,
-      "final_url": "https://pdb.gov.lk/marketing/",
+      "final_url": "https://pdb.gov.lk/divisions/",
       "redirects": [],
-      "elapsed_ms": 2986,
+      "elapsed_ms": 21831,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pdb.gov.lk/media-release/",
+      "status_code": 200,
+      "final_url": "https://pdb.gov.lk/media-release/",
+      "redirects": [],
+      "elapsed_ms": 1897,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pdb.gov.lk/key-members/",
+      "status_code": 200,
+      "final_url": "https://pdb.gov.lk/key-members/",
+      "redirects": [],
+      "elapsed_ms": 2871,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pdb.gov.lk/members-2/",
+      "status_code": 200,
+      "final_url": "https://pdb.gov.lk/members-2/",
+      "redirects": [],
+      "elapsed_ms": 1627,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pdb.gov.lk/development-2/",
+      "status_code": 200,
+      "final_url": "https://pdb.gov.lk/development-2/",
+      "redirects": [],
+      "elapsed_ms": 1756,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pdb.gov.lk/palmyra-research-institute/",
+      "status_code": 200,
+      "final_url": "https://pdb.gov.lk/palmyra-research-institute/",
+      "redirects": [],
+      "elapsed_ms": 1736,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -482,59 +1787,122 @@
       "status_code": 200,
       "final_url": "https://pdb.gov.lk/photo-gallery/",
       "redirects": [],
-      "elapsed_ms": 21988,
+      "elapsed_ms": 2079,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://pdb.gov.lk/author/palmyrah/",
+      "url": "https://pdb.gov.lk/video-gallery/",
       "status_code": 200,
-      "final_url": "https://pdb.gov.lk/author/palmyrah/",
+      "final_url": "https://pdb.gov.lk/video-gallery/",
       "redirects": [],
-      "elapsed_ms": 1886,
+      "elapsed_ms": 21725,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
+      "url": "https://pdb.gov.lk/events/",
       "status_code": 200,
-      "final_url": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
+      "final_url": "https://pdb.gov.lk/events/",
       "redirects": [],
-      "elapsed_ms": 1696,
+      "elapsed_ms": 1683,
       "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "status_code": 200,
+      "final_url": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "redirects": [],
+      "elapsed_ms": 22617,
+      "content_type": "application/pdf",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://pdb.gov.lk/",
-      "path": "audit.output/pdb.gov.lk/20261002.0902/snapshots/page-01-4712140a773d.html",
-      "sha256": "4712140a773d9a4def5e34ab0fcaaa2779bc1919d4ce7212f30843fb3dca2bef",
-      "bytes": 220893
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-01-538cc71b0ee6.html",
+      "sha256": "538cc71b0ee6a179d61303cc8e34858c417314edc31faf51d1c7f1af48e042b9",
+      "bytes": 221000
     },
     {
-      "url": "https://pdb.gov.lk/marketing/",
-      "path": "audit.output/pdb.gov.lk/20261002.0902/snapshots/page-02-c4eba98952ac.html",
-      "sha256": "c4eba98952acaed47256f9e3bbb1f8e467b6a09b38dcfbbc37419fbfd1a7b3f7",
-      "bytes": 157517
+      "url": "https://pdb.gov.lk/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-02-169d96472a22.html",
+      "sha256": "169d96472a2268fd92bc3ebe2bca56c78326de5512db2093ea1c84f19cb677a9",
+      "bytes": 221000
+    },
+    {
+      "url": "https://pdb.gov.lk/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-03-b4b38b58d9f8.html",
+      "sha256": "b4b38b58d9f8b23d572753bbfb85476a3bd73294a7403b2eb5eee116562c3258",
+      "bytes": 221000
+    },
+    {
+      "url": "https://pdb.gov.lk/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-04-b31a7505b14d.html",
+      "sha256": "b31a7505b14d6d798396f730fd0b61522825ce8181fc5e0fdb9419e4eebb1641",
+      "bytes": 221000
+    },
+    {
+      "url": "https://pdb.gov.lk/divisions/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-05-16f84c0d605a.html",
+      "sha256": "16f84c0d605a2abe200ce84abf7c653e126da4befc3d26eb92c34472a7f3ec3d",
+      "bytes": 103885
+    },
+    {
+      "url": "https://pdb.gov.lk/media-release/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-06-11863940a967.html",
+      "sha256": "11863940a967f480c6ad66e18e1ad753719b7037bbefd180df88d1dc69aeadd4",
+      "bytes": 187279
+    },
+    {
+      "url": "https://pdb.gov.lk/key-members/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-07-fa47b998de3c.html",
+      "sha256": "fa47b998de3c41e716037b4dbf1d4492a06806b2e550d13ba1c8c8df7dffc4f2",
+      "bytes": 116171
+    },
+    {
+      "url": "https://pdb.gov.lk/members-2/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-08-aa91071c7b1d.html",
+      "sha256": "aa91071c7b1d39632df914bf2119ae6f9949d7739ee2e702c789168683a98ca4",
+      "bytes": 129485
+    },
+    {
+      "url": "https://pdb.gov.lk/development-2/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-09-a3769baeae43.html",
+      "sha256": "a3769baeae43b1a4aee6438cb0cdbd7fee8ab69e46d0a1de16a03f546be06570",
+      "bytes": 191664
+    },
+    {
+      "url": "https://pdb.gov.lk/palmyra-research-institute/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-10-ab35400cfa6a.html",
+      "sha256": "ab35400cfa6a622af628528886d10eceb917783d5082bc67be1e8cc044bd57d6",
+      "bytes": 231434
     },
     {
       "url": "https://pdb.gov.lk/photo-gallery/",
-      "path": "audit.output/pdb.gov.lk/20261002.0902/snapshots/page-03-42a323764d43.html",
-      "sha256": "42a323764d434be97afc9d9d35cabd067e7cb226f6436c166fb29f7905435654",
-      "bytes": 276483
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-11-b9e768ebe4d7.html",
+      "sha256": "b9e768ebe4d7b57afad770f4bdbb81e7c97285a4484211991dc5f58bb7b7fc19",
+      "bytes": 276590
     },
     {
-      "url": "https://pdb.gov.lk/author/palmyrah/",
-      "path": "audit.output/pdb.gov.lk/20261002.0902/snapshots/page-04-0c9f62da14d2.html",
-      "sha256": "0c9f62da14d2f9dbe13c95a0d81b49ae7845f6c0af05078ddd64eff68979cedc",
-      "bytes": 118262
+      "url": "https://pdb.gov.lk/video-gallery/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-12-1d4b54611dee.html",
+      "sha256": "1d4b54611dee36931571258d5b3111d8a8ee168ada5888f00ff78bc26601327d",
+      "bytes": 118911
     },
     {
-      "url": "https://pdb.gov.lk/2026/08/08/palmyrah-is-the-tree-of-life-and-the-prosperity-of-the-nation-deputy-minister-joins-the-second-day-of-the-national-exhibition-2026/",
-      "path": "audit.output/pdb.gov.lk/20261002.0902/snapshots/page-05-6c795bb79920.html",
-      "sha256": "6c795bb799200ccc0e8c4cd8f8e5dd53c8223f4e2e4ba6708026c3347b985b35",
-      "bytes": 119971
+      "url": "https://pdb.gov.lk/events/",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-13-cae2e3aa8b69.html",
+      "sha256": "cae2e3aa8b697606d7716e9cc514b61b74ffc8a375d4024adcf708a4f83cc300",
+      "bytes": 147556
+    },
+    {
+      "url": "https://pdb.gov.lk/wp-content/uploads/2026/09/Annual-Internal-Transfer-2026-for-PDB.pdf",
+      "path": "audit.output/pdb.gov.lk/20261003.0846/snapshots/page-14-75f7495227bd.html",
+      "sha256": "75f7495227bd4e4f6f9053e9526d596590d272861412f8524ac426913a5ec93d",
+      "bytes": 992255
     }
   ],
   "reviewer_decisions": [],
@@ -550,8 +1918,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -588,7 +1956,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://pdb.gov.lk/: Probe 2: timed out; https://pdb.gov.lk/: Probe 3: timed out; http://pdb.gov.lk/: Probe 4: timed out"
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -605,32 +1973,94 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Municipal Council Ground, Vavuniya; Phone: +94 21 222 4154 (88 phone numbers found); Email: slpdbho@yahoo.com (9 email addresses found); Published named responsibility: division",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Municipal Council Ground, Vavuniya"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 21 222 4154 (88 phone numbers found); Email: slpdbho@yahoo.com (9 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: rs,"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: gazette"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published downloadable form: https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published published update date: 2026-10-03"
+        }
+      ]
     },
     {
       "level": 4,
@@ -650,7 +2080,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "48.217.140.96",
+    "egress_ip": "172.214.155.181",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

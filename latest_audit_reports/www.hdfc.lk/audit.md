@@ -1,8 +1,8 @@
 # Website Audit: https://www.hdfc.lk/
 
-- Completed: 2026-10-02 08:43
+- Completed: 2026-10-03 08:29
 - Overall result: 🔴 Level 1
-- Vantage: 48.217.140.96 (US, github-actions)
+- Vantage: 172.214.155.181 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 011 2447354 (23 phone numbers found); Email: info@hdfc.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 2356800 (23 phone numbers found); Email: info@hdfc.lk (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

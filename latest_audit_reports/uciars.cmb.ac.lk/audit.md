@@ -1,8 +1,8 @@
 # Website Audit: https://uciars.cmb.ac.lk/
 
-- Completed: 2026-10-02 08:35
+- Completed: 2026-10-03 08:20
 - Overall result: 🟠 Level 2
-- Vantage: 48.217.140.96 (US, github-actions)
+- Vantage: 172.214.155.181 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town ; Phone: 0000140622 (26 phone numbers found); Email: Ilmi@uciars.cmb.ac.lk (26 email addresses found); Published named responsibility: director
+Published postal address: Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town ; Phone: +94 778175176 (26 phone numbers found); Email: rifnas@uciars.cmb.ac.lk (26 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town  |
-| reachable_contacts | ✅ | Phone: 0000140622 (26 phone numbers found); Email: Ilmi@uciars.cmb.ac.lk (26 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 778175176 (26 phone numbers found); Email: rifnas@uciars.cmb.ac.lk (26 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: http://www.prisons.gov.lk/
 
-- Completed: 2026-10-02 09:00
+- Completed: 2026-10-03 08:45
 - Overall result: ⚫ Level 0
-- Vantage: 48.217.140.96 (US, github-actions)
+- Vantage: 172.214.155.181 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

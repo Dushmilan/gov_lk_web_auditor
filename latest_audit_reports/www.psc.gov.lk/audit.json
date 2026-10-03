@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "ad02f0f3-5155-4c8c-ac7a-d40892a7de24",
+  "audit_id": "6062b6bc-c8f8-44ef-ade8-39a3dbc5716f",
   "url": "https://www.psc.gov.lk/",
   "normalized_url": "https://www.psc.gov.lk/",
-  "started_at": "2026-10-02T09:30:37.812553+05:30",
-  "completed_at": "2026-10-02T09:59:26.043365+05:30",
+  "started_at": "2026-10-03T09:08:13.942314+05:30",
+  "completed_at": "2026-10-03T09:09:58.111217+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,62 +26,125 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-02T09:30:38.351995+05:30"
+      "observed_at": "2026-10-03T09:08:14.299806+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-02T09:30:38.352015+05:30"
+      "observed_at": "2026-10-03T09:08:14.299826+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-02T09:30:48.621155+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-03T09:08:15.044196+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://psc.gov.lk/index.php?lang=en",
       "source": "https://www.psc.gov.lk/",
-      "observed_at": "2026-10-02T09:59:25.977916+05:30"
+      "observed_at": "2026-10-03T09:09:57.567656+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://psc.gov.lk/index.php?lang=en",
       "source": "http://www.psc.gov.lk/",
-      "observed_at": "2026-10-02T09:59:25.977938+05:30"
+      "observed_at": "2026-10-03T09:09:57.567676+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://psc.gov.lk/index.php?lang=en",
       "source": "https://www.psc.gov.lk/",
-      "observed_at": "2026-10-02T09:59:25.977942+05:30"
+      "observed_at": "2026-10-03T09:09:57.567679+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://psc.gov.lk/index.php?lang=en",
       "source": "http://www.psc.gov.lk/",
-      "observed_at": "2026-10-02T09:59:25.977945+05:30"
+      "observed_at": "2026-10-03T09:09:57.567682+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "detail": "Probe 5: HTTP 200 at https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "observed_at": "2026-10-03T09:09:57.567684+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "observed_at": "2026-10-03T09:09:57.567686+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "observed_at": "2026-10-03T09:09:57.567689+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
       "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
-      "observed_at": "2026-10-02T09:59:25.977948+05:30"
+      "observed_at": "2026-10-03T09:09:57.567691+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "observed_at": "2026-10-03T09:09:57.567693+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "observed_at": "2026-10-03T09:09:57.567695+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "observed_at": "2026-10-03T09:09:57.567698+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "observed_at": "2026-10-03T09:09:57.567700+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "observed_at": "2026-10-03T09:09:57.567703+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "observed_at": "2026-10-03T09:09:57.567705+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2 87 6181 ",
+      "detail": "Published phone: 021 2021.07.2",
       "source": "https://psc.gov.lk/index.php?lang=en",
       "data": {
-        "value": "+94 11 2 87 6181 "
+        "value": "021 2021.07.2"
       }
     },
     {
@@ -97,19 +168,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 021 2021.07.2",
+      "detail": "Published phone: 0890334430 ",
       "source": "https://psc.gov.lk/index.php?lang=en",
       "data": {
-        "value": "021 2021.07.2"
+        "value": "0890334430 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0890334430 ",
+      "detail": "Published phone: +94 11 2 87 6181 ",
       "source": "https://psc.gov.lk/index.php?lang=en",
       "data": {
-        "value": "0890334430 "
+        "value": "+94 11 2 87 6181 "
       }
     },
     {
@@ -160,6 +231,1365 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 021 2021.07.2",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "021 2021.07.2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-10-02",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "2026-10-02"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 2021.07.2",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "021 2021.07.2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-10-02",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "2026-10-02"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 2021.07.2",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "021 2021.07.2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-10-02",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "2026-10-02"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000017 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000017 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000044300 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000044300 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000005032 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000005032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000053 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000053 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000052 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000052 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000002780 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000002780 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000029 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000029 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000063 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000063 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000046 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000046 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000085179 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000085179 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000043 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000043 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000034 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000059 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000059 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000070 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000070 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 50",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003464 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000003464 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000030 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000030 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 500 500 0 0 0 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 500 500 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000064 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000064 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000035 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000035 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000061 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000061 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000032 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003074 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000003074 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000040 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 722 722 0 0 0 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 722 722 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 722 556 667 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 722 556 667 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003797 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000003797 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000082044 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000082044 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 500 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000028 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000028 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000069 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000069 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 333 250 0 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 0 333 250 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003969 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000003969 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004792 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000004792 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 722 611 889 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 722 611 889 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000049 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000049 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 667 944 72",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 667 944 72"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003538 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000003538 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003021 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000003021 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004623 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000004623 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000166 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000166 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000051 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000051 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000067 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000067 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000068 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000068 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000033 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000033 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003127 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000003127 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000023 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000023 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000036 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000036 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003266 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000003266 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000044 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000044 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000072 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000072 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000057 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000057 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000044233 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000044233 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000038 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000038 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000062537 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000062537 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 500 0 0 0 0 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 0 500 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000026 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000026 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 722 66",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 0 0 0 722 66"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000043666 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000043666 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000222 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000222 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 0 0 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000027 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000027 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000006207 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000006207 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000085224 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000085224 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000060 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000060 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000024 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000024 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 500 5",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 500 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000525 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000525 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000055 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000055 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000025 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000025 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000066 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000066 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000006641 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000006641 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004206 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000004206 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000056 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000056 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000058 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000058 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000062 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000062 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 722 6",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 722 6"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 722 611 0 72",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 722 611 0 72"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000048 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000048 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000065 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000065 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000071 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000071 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000022 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000022 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000050 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000050 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000045 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000045 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000043986 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000043986 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 500 50",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "00 500 500 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000002604 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000002604 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 0 0 0 50",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "00 500 0 0 0 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000062564 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000062564 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 85 0000000",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 85 0000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000041 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000041 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 667 556 0 72",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 667 556 0 72"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000047 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000047 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000054 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000054 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000039 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000039 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004379 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000004379 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000037 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000037 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000044487 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000044487 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000042 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000042 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 33",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 33"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000031 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000000031 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003296 ",
+      "source": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "data": {
+        "value": "0000003296 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 2021.07.2",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "021 2021.07.2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-10-02",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "2026-10-02"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 21 September 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "21 September 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94 11 2 13 6600 ",
       "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
       "data": {
@@ -169,19 +1599,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2 87 6181 ",
+      "detail": "Published phone: 0890334430 ",
       "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
       "data": {
-        "value": "+94 11 2 87 6181 "
+        "value": "0890334430 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0890334430 ",
+      "detail": "Published phone: +94 11 2 87 6181 ",
       "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
       "data": {
-        "value": "0890334430 "
+        "value": "+94 11 2 87 6181 "
       }
     },
     {
@@ -230,9 +1660,450 @@
       }
     },
     {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 21 September 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "21 September 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 21 September 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "21 September 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 21 September 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "21 September 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 02 working days",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "02 working days"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 21 September 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "21 September 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 21 September 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "21 September 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 21 September 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "21 September 2026"
+      }
+    },
+    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 9083 visible characters across 2 pages",
+      "detail": "Substantive page content: 41740 visible characters across 14 pages",
       "source": "https://www.psc.gov.lk/"
     }
   ],
@@ -253,37 +2124,22 @@
     },
     {
       "host": "www.psc.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-11-01T11:27:01+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.psc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
-    },
-    {
-      "url": "http://www.psc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
-    },
-    {
-      "url": "https://www.psc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://psc.gov.lk/",
+        "https://psc.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 2067,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://www.psc.gov.lk/",
@@ -293,7 +2149,58 @@
         "https://psc.gov.lk/",
         "https://psc.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 22026,
+      "elapsed_ms": 1850,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.psc.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://psc.gov.lk/",
+        "https://psc.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 2050,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.psc.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://psc.gov.lk/",
+        "https://psc.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 2042,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "redirects": [],
+      "elapsed_ms": 1227,
+      "content_type": "application/pdf",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1861,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1525,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -302,7 +2209,61 @@
       "status_code": 200,
       "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
       "redirects": [],
-      "elapsed_ms": 1528,
+      "elapsed_ms": 1548,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1531,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1512,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1509,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1546,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1539,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1555,
       "content_type": "text/html; charset=utf-8",
       "error": null
     }
@@ -310,15 +2271,87 @@
   "snapshots": [
     {
       "url": "https://psc.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.psc.gov.lk/20261002.0930/snapshots/page-01-7940cebcb39b.html",
-      "sha256": "7940cebcb39b96e03a62337f52f4ae7cd316adcf4e7a4396eaf6891d18fa47c7",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-01-654b14830cf8.html",
+      "sha256": "654b14830cf88eff69874eb7cdc5ed7aee5ffe97b639327a216b6b989dbf5889",
       "bytes": 133616
     },
     {
+      "url": "https://psc.gov.lk/index.php?lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-02-a8b3e18fe9f1.html",
+      "sha256": "a8b3e18fe9f1a10a499675ee69a4e12011d2c278578b1f9c5696b5d52cd05df7",
+      "bytes": 133616
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-03-e2a16b47dc98.html",
+      "sha256": "e2a16b47dc989cbb6358bea2895b51f3af346b536cc8cafc3b288c0ad0cd724d",
+      "bytes": 133616
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-04-43a16e697d51.html",
+      "sha256": "43a16e697d519a26ea09e873b6137cbe298bb9ac6416f009eacf213c28d0640a",
+      "bytes": 133616
+    },
+    {
+      "url": "https://psc.gov.lk/images/latest_document/psc_announcements/2026/1789723381-Open-Recruitment-to-Sri-Lanka-Education-Administrative--Service-Grade-III---2021-----03rd-ROUND.pdf",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-05-9a917cbd7eb1.html",
+      "sha256": "9a917cbd7eb13853b0461ff07f8a684225c22b5ed476f923af81bdcc019afe1a",
+      "bytes": 151196
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-06-548ff537011e.html",
+      "sha256": "548ff537011ef8a529c2f53d37e242e0d4fc49d9239041c38addd447a0b28326",
+      "bytes": 133816
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-07-a0d1bedeb3fa.html",
+      "sha256": "a0d1bedeb3fac51222fc591567a9626507a9c9d53ec327e852ef1858886b905e",
+      "bytes": 99444
+    },
+    {
       "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
-      "path": "audit.output/www.psc.gov.lk/20261002.0930/snapshots/page-02-75ecb8bfe8d6.html",
-      "sha256": "75ecb8bfe8d660ebe80773376d80b5fd48e43da3644f0786dcc3d2bb7a3a2aa6",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-08-8b26386f3ca4.html",
+      "sha256": "8b26386f3ca47e732bbd90229b801a85e9fd7b90834854db48ce404997a43593",
       "bytes": 104182
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-09-89300941b148.html",
+      "sha256": "89300941b1488022476741d2c7200123c6f7f38ac41380a0ae5ebf43fb14b7c8",
+      "bytes": 98093
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-10-027ed9ecd0cf.html",
+      "sha256": "027ed9ecd0cfe52627ab51ff1bdf68ce1d05fef21aadbb1ec26d277c7c78fadf",
+      "bytes": 104605
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-11-8ba94b07d6f2.html",
+      "sha256": "8ba94b07d6f2a510caa69339bcca8d24ef70922bbb4d956b26be497a9a654d91",
+      "bytes": 102232
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-12-731ddb116d84.html",
+      "sha256": "731ddb116d8460471b2ac3ec359b97784df50c40836bae84a500b57fdf3d1ab5",
+      "bytes": 102489
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-13-db0d4a21e6f6.html",
+      "sha256": "db0d4a21e6f654d5a393c78a21ab4770c9ceac92b5b2846064886036cbd115b6",
+      "bytes": 99909
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261003.0908/snapshots/page-14-73a67f836fa1.html",
+      "sha256": "73a67f836fa1d0f3f769cf34a203f38bae5421de50e288af4b7a29af4884a5b3",
+      "bytes": 98886
     }
   ],
   "reviewer_decisions": [],
@@ -334,8 +2367,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -372,7 +2405,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: https://www.psc.gov.lk/: Probe 1: [Errno 111] Connection refused; http://www.psc.gov.lk/: Probe 2: [Errno 111] Connection refused; https://www.psc.gov.lk/: Probe 3: timed out"
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -389,14 +2422,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -404,9 +2437,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 021 2021.07.2 (107 phone numbers found); Email: info@psc.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -434,7 +2486,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "48.217.140.96",
+    "egress_ip": "172.214.155.181",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
