@@ -1,8 +1,8 @@
 # Website Audit: https://www.slbc.lk/
 
-- Completed: 2026-10-03 08:42
-- Overall result: ⚫ Level 0
-- Vantage: 172.214.155.181 (US, github-actions)
+- Completed: 2026-10-04 09:16
+- Overall result: 🔴 Level 1
+- Vantage: 20.161.30.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ✅
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-_ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,14 +26,20 @@ _ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operati
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | _ssl.c:993: The handshake operation timed out |
-| tls_hostname_matches | ❓ | _ssl.c:993: The handshake operation timed out |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |
 
 ## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Not run because 🔴 Level 1 did not pass
+No passing named responsibility evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ✅ | Published postal address: SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka |
+| reachable_contacts | ✅ | Phone: 011 267 5650 (9 phone numbers found); Email: chairman@slbcmail.lk (2 email addresses found) |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 

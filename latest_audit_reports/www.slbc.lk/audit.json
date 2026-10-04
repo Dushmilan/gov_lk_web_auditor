@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b2a7c83f-fd10-480e-929e-0693bacfa226",
+  "audit_id": "da337c97-969f-41cd-b49f-755763a77858",
   "url": "https://www.slbc.lk/",
   "normalized_url": "https://www.slbc.lk/",
-  "started_at": "2026-10-03T08:41:33.771944+05:30",
-  "completed_at": "2026-10-03T08:42:05.011094+05:30",
+  "started_at": "2026-10-04T09:16:40.450103+05:30",
+  "completed_at": "2026-10-04T09:16:56.588242+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: _ssl.c:993: The handshake operation timed out",
-      "tls_hostname_matches: _ssl.c:993: The handshake operation timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,117 +26,135 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-03T08:41:34.455861+05:30"
+      "observed_at": "2026-10-04T09:16:40.753861+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-03T08:41:34.455881+05:30"
+      "observed_at": "2026-10-04T09:16:40.753886+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "_ssl.c:993: The handshake operation timed out",
-      "observed_at": "2026-10-03T08:41:44.479135+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-04T09:16:40.813063+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://www.slbc.lk/",
       "source": "https://www.slbc.lk/",
-      "observed_at": "2026-10-03T08:42:04.756254+05:30"
+      "observed_at": "2026-10-04T09:16:55.454306+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at http://www.slbc.lk/",
       "source": "http://www.slbc.lk/",
-      "observed_at": "2026-10-03T08:42:04.756272+05:30"
+      "observed_at": "2026-10-04T09:16:55.454326+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://www.slbc.lk/",
       "source": "https://www.slbc.lk/",
-      "observed_at": "2026-10-03T08:42:04.756276+05:30"
+      "observed_at": "2026-10-04T09:16:55.454331+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at http://www.slbc.lk/",
       "source": "http://www.slbc.lk/",
-      "observed_at": "2026-10-03T08:42:04.756278+05:30"
+      "observed_at": "2026-10-04T09:16:55.454334+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://www.slbc.lk/world-heritage-sites/middle-east-service",
       "source": "https://www.slbc.lk/world-heritage-sites/middle-east-service",
-      "observed_at": "2026-10-03T08:42:04.756280+05:30"
+      "observed_at": "2026-10-04T09:16:55.454338+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 6: HTTP 200 at https://www.slbc.lk/world-heritage-sites/asia-service",
       "source": "https://www.slbc.lk/world-heritage-sites/asia-service",
-      "observed_at": "2026-10-03T08:42:04.756283+05:30"
+      "observed_at": "2026-10-04T09:16:55.454341+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 7: HTTP 200 at https://www.slbc.lk/contact-us",
       "source": "https://www.slbc.lk/contact-us",
-      "observed_at": "2026-10-03T08:42:04.756285+05:30"
+      "observed_at": "2026-10-04T09:16:55.454343+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 8: HTTP 200 at https://www.slbc.lk/unesco-background",
       "source": "https://www.slbc.lk/unesco-background",
-      "observed_at": "2026-10-03T08:42:04.756287+05:30"
+      "observed_at": "2026-10-04T09:16:55.454346+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 9: HTTP 200 at https://www.slbc.lk/overview",
       "source": "https://www.slbc.lk/overview",
-      "observed_at": "2026-10-03T08:42:04.756289+05:30"
+      "observed_at": "2026-10-04T09:16:55.454348+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 10: HTTP 200 at https://www.slbc.lk/unesco-functions",
       "source": "https://www.slbc.lk/unesco-functions",
-      "observed_at": "2026-10-03T08:42:04.756291+05:30"
+      "observed_at": "2026-10-04T09:16:55.454351+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 11: HTTP 200 at https://www.slbc.lk/world-heritage-sites/dambana-radio",
       "source": "https://www.slbc.lk/world-heritage-sites/dambana-radio",
-      "observed_at": "2026-10-03T08:42:04.756293+05:30"
+      "observed_at": "2026-10-04T09:16:55.454354+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 12: HTTP 200 at https://www.slbc.lk/world-heritage-sites/cir",
       "source": "https://www.slbc.lk/world-heritage-sites/cir",
-      "observed_at": "2026-10-03T08:42:04.756295+05:30"
+      "observed_at": "2026-10-04T09:16:55.454357+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 13: HTTP 200 at https://www.slbc.lk/world-heritage-sites/welenda-sevaya",
       "source": "https://www.slbc.lk/world-heritage-sites/welenda-sevaya",
-      "observed_at": "2026-10-03T08:42:04.756297+05:30"
+      "observed_at": "2026-10-04T09:16:55.454360+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 14: HTTP 200 at https://www.slbc.lk/world-heritage-sites/pirei-fm",
       "source": "https://www.slbc.lk/world-heritage-sites/pirei-fm",
-      "observed_at": "2026-10-03T08:42:04.756299+05:30"
+      "observed_at": "2026-10-04T09:16:55.454362+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 267 5650",
+      "source": "https://www.slbc.lk/",
+      "data": {
+        "value": "011 267 5650"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 307 1082 ",
+      "source": "https://www.slbc.lk/",
+      "data": {
+        "value": "011 307 1082 "
+      }
     },
     {
       "check": "phone",
@@ -146,15 +172,6 @@
       "source": "https://www.slbc.lk/",
       "data": {
         "value": "+94 11 269 7491-"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 267 5650",
-      "source": "https://www.slbc.lk/",
-      "data": {
-        "value": "011 267 5650"
       }
     },
     {
@@ -169,15 +186,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 2 69 71 40 ",
-      "source": "https://www.slbc.lk/",
-      "data": {
-        "value": "011 2 69 71 40 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0112696417 ",
       "source": "https://www.slbc.lk/",
       "data": {
@@ -187,19 +195,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 307 1082 ",
+      "detail": "Published phone: 011 2 69 71 40 ",
       "source": "https://www.slbc.lk/",
       "data": {
-        "value": "011 307 1082 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@slbcmail.lk",
-      "source": "https://www.slbc.lk/",
-      "data": {
-        "value": "info@slbcmail.lk"
+        "value": "011 2 69 71 40 "
       }
     },
     {
@@ -212,30 +211,21 @@
       }
     },
     {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@slbcmail.lk",
+      "source": "https://www.slbc.lk/",
+      "data": {
+        "value": "info@slbcmail.lk"
+      }
+    },
+    {
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka",
       "source": "https://www.slbc.lk/",
       "data": {
         "value": "SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
-      "source": "http://www.slbc.lk/",
-      "data": {
-        "value": "+94 112 689427 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
-      "source": "http://www.slbc.lk/",
-      "data": {
-        "value": "+94 11 269 7491-"
       }
     },
     {
@@ -250,19 +240,37 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 076 0 11 22 33 ",
+      "detail": "Published phone: 011 307 1082 ",
       "source": "http://www.slbc.lk/",
       "data": {
-        "value": "076 0 11 22 33 "
+        "value": "011 307 1082 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 2 69 71 40 ",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "http://www.slbc.lk/",
       "data": {
-        "value": "011 2 69 71 40 "
+        "value": "+94 112 689427 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 7491-",
+      "source": "http://www.slbc.lk/",
+      "data": {
+        "value": "+94 11 269 7491-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 0 11 22 33 ",
+      "source": "http://www.slbc.lk/",
+      "data": {
+        "value": "076 0 11 22 33 "
       }
     },
     {
@@ -277,19 +285,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 307 1082 ",
+      "detail": "Published phone: 011 2 69 71 40 ",
       "source": "http://www.slbc.lk/",
       "data": {
-        "value": "011 307 1082 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@slbcmail.lk",
-      "source": "http://www.slbc.lk/",
-      "data": {
-        "value": "info@slbcmail.lk"
+        "value": "011 2 69 71 40 "
       }
     },
     {
@@ -302,30 +301,21 @@
       }
     },
     {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@slbcmail.lk",
+      "source": "http://www.slbc.lk/",
+      "data": {
+        "value": "info@slbcmail.lk"
+      }
+    },
+    {
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka",
       "source": "http://www.slbc.lk/",
       "data": {
         "value": "SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
-      "source": "https://www.slbc.lk/",
-      "data": {
-        "value": "+94 112 689427 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
-      "source": "https://www.slbc.lk/",
-      "data": {
-        "value": "+94 11 269 7491-"
       }
     },
     {
@@ -340,19 +330,37 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 076 0 11 22 33 ",
+      "detail": "Published phone: 011 307 1082 ",
       "source": "https://www.slbc.lk/",
       "data": {
-        "value": "076 0 11 22 33 "
+        "value": "011 307 1082 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 2 69 71 40 ",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "https://www.slbc.lk/",
       "data": {
-        "value": "011 2 69 71 40 "
+        "value": "+94 112 689427 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 7491-",
+      "source": "https://www.slbc.lk/",
+      "data": {
+        "value": "+94 11 269 7491-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 0 11 22 33 ",
+      "source": "https://www.slbc.lk/",
+      "data": {
+        "value": "076 0 11 22 33 "
       }
     },
     {
@@ -367,19 +375,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 307 1082 ",
+      "detail": "Published phone: 011 2 69 71 40 ",
       "source": "https://www.slbc.lk/",
       "data": {
-        "value": "011 307 1082 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@slbcmail.lk",
-      "source": "https://www.slbc.lk/",
-      "data": {
-        "value": "info@slbcmail.lk"
+        "value": "011 2 69 71 40 "
       }
     },
     {
@@ -392,30 +391,21 @@
       }
     },
     {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@slbcmail.lk",
+      "source": "https://www.slbc.lk/",
+      "data": {
+        "value": "info@slbcmail.lk"
+      }
+    },
+    {
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka",
       "source": "https://www.slbc.lk/",
       "data": {
         "value": "SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
-      "source": "http://www.slbc.lk/",
-      "data": {
-        "value": "+94 112 689427 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
-      "source": "http://www.slbc.lk/",
-      "data": {
-        "value": "+94 11 269 7491-"
       }
     },
     {
@@ -430,19 +420,37 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 076 0 11 22 33 ",
+      "detail": "Published phone: 011 307 1082 ",
       "source": "http://www.slbc.lk/",
       "data": {
-        "value": "076 0 11 22 33 "
+        "value": "011 307 1082 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 2 69 71 40 ",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "http://www.slbc.lk/",
       "data": {
-        "value": "011 2 69 71 40 "
+        "value": "+94 112 689427 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 7491-",
+      "source": "http://www.slbc.lk/",
+      "data": {
+        "value": "+94 11 269 7491-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 0 11 22 33 ",
+      "source": "http://www.slbc.lk/",
+      "data": {
+        "value": "076 0 11 22 33 "
       }
     },
     {
@@ -457,19 +465,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 307 1082 ",
+      "detail": "Published phone: 011 2 69 71 40 ",
       "source": "http://www.slbc.lk/",
       "data": {
-        "value": "011 307 1082 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@slbcmail.lk",
-      "source": "http://www.slbc.lk/",
-      "data": {
-        "value": "info@slbcmail.lk"
+        "value": "011 2 69 71 40 "
       }
     },
     {
@@ -482,6 +481,15 @@
       }
     },
     {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@slbcmail.lk",
+      "source": "http://www.slbc.lk/",
+      "data": {
+        "value": "info@slbcmail.lk"
+      }
+    },
+    {
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka",
@@ -493,19 +501,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
+      "detail": "Published phone: +94 11 269 7491-",
       "source": "https://www.slbc.lk/world-heritage-sites/middle-east-service",
       "data": {
-        "value": "+94 112 689427 "
+        "value": "+94 11 269 7491-"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "https://www.slbc.lk/world-heritage-sites/middle-east-service",
       "data": {
-        "value": "+94 11 269 7491-"
+        "value": "+94 112 689427 "
       }
     },
     {
@@ -524,15 +532,6 @@
       "source": "https://www.slbc.lk/world-heritage-sites/middle-east-service",
       "data": {
         "value": "SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
-      "source": "https://www.slbc.lk/world-heritage-sites/asia-service",
-      "data": {
-        "value": "+94 112 689427 "
       }
     },
     {
@@ -545,6 +544,15 @@
       }
     },
     {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 689427 ",
+      "source": "https://www.slbc.lk/world-heritage-sites/asia-service",
+      "data": {
+        "value": "+94 112 689427 "
+      }
+    },
+    {
       "check": "email",
       "status": "pass",
       "detail": "Published email: info@slbcmail.lk",
@@ -565,19 +573,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
+      "detail": "Published phone: +94 11 269 7491-",
       "source": "https://www.slbc.lk/contact-us",
       "data": {
-        "value": "+94 112 689427 "
+        "value": "+94 11 269 7491-"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "https://www.slbc.lk/contact-us",
       "data": {
-        "value": "+94 11 269 7491-"
+        "value": "+94 112 689427 "
       }
     },
     {
@@ -596,15 +604,6 @@
       "source": "https://www.slbc.lk/contact-us",
       "data": {
         "value": "SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
-      "source": "https://www.slbc.lk/unesco-background",
-      "data": {
-        "value": "+94 112 689427 "
       }
     },
     {
@@ -617,6 +616,15 @@
       }
     },
     {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 689427 ",
+      "source": "https://www.slbc.lk/unesco-background",
+      "data": {
+        "value": "+94 112 689427 "
+      }
+    },
+    {
       "check": "email",
       "status": "pass",
       "detail": "Published email: info@slbcmail.lk",
@@ -637,19 +645,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
+      "detail": "Published phone: +94 11 269 7491-",
       "source": "https://www.slbc.lk/overview",
       "data": {
-        "value": "+94 112 689427 "
+        "value": "+94 11 269 7491-"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "https://www.slbc.lk/overview",
       "data": {
-        "value": "+94 11 269 7491-"
+        "value": "+94 112 689427 "
       }
     },
     {
@@ -673,19 +681,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
+      "detail": "Published phone: +94 11 269 7491-",
       "source": "https://www.slbc.lk/unesco-functions",
       "data": {
-        "value": "+94 112 689427 "
+        "value": "+94 11 269 7491-"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "https://www.slbc.lk/unesco-functions",
       "data": {
-        "value": "+94 11 269 7491-"
+        "value": "+94 112 689427 "
       }
     },
     {
@@ -709,19 +717,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
+      "detail": "Published phone: +94 11 269 7491-",
       "source": "https://www.slbc.lk/world-heritage-sites/dambana-radio",
       "data": {
-        "value": "+94 112 689427 "
+        "value": "+94 11 269 7491-"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "https://www.slbc.lk/world-heritage-sites/dambana-radio",
       "data": {
-        "value": "+94 11 269 7491-"
+        "value": "+94 112 689427 "
       }
     },
     {
@@ -745,10 +753,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.247.234.207",
+      "detail": "Published phone: +94 11 269 7491-",
       "source": "https://www.slbc.lk/world-heritage-sites/cir",
       "data": {
-        "value": "0.247.234.207"
+        "value": "+94 11 269 7491-"
       }
     },
     {
@@ -763,19 +771,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
+      "detail": "Published phone: 0.247.234.207",
       "source": "https://www.slbc.lk/world-heritage-sites/cir",
       "data": {
-        "value": "+94 112 689427 "
+        "value": "0.247.234.207"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "https://www.slbc.lk/world-heritage-sites/cir",
       "data": {
-        "value": "+94 11 269 7491-"
+        "value": "+94 112 689427 "
       }
     },
     {
@@ -799,19 +807,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
+      "detail": "Published phone: +94 11 269 7491-",
       "source": "https://www.slbc.lk/world-heritage-sites/welenda-sevaya",
       "data": {
-        "value": "+94 112 689427 "
+        "value": "+94 11 269 7491-"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "https://www.slbc.lk/world-heritage-sites/welenda-sevaya",
       "data": {
-        "value": "+94 11 269 7491-"
+        "value": "+94 112 689427 "
       }
     },
     {
@@ -835,19 +843,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 689427 ",
+      "detail": "Published phone: +94 11 269 7491-",
       "source": "https://www.slbc.lk/world-heritage-sites/pirei-fm",
       "data": {
-        "value": "+94 112 689427 "
+        "value": "+94 11 269 7491-"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 7491-",
+      "detail": "Published phone: +94 112 689427 ",
       "source": "https://www.slbc.lk/world-heritage-sites/pirei-fm",
       "data": {
-        "value": "+94 11 269 7491-"
+        "value": "+94 112 689427 "
       }
     },
     {
@@ -892,17 +900,17 @@
     },
     {
       "host": "www.slbc.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "_ssl.c:993: The handshake operation timed out"
+      "status": "valid",
+      "expires_at": "2026-12-06T22:23:30+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.slbc.lk/",
       "status_code": 200,
       "final_url": "https://www.slbc.lk/",
       "redirects": [],
-      "elapsed_ms": 6420,
+      "elapsed_ms": 468,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -911,7 +919,7 @@
       "status_code": 200,
       "final_url": "http://www.slbc.lk/",
       "redirects": [],
-      "elapsed_ms": 1066,
+      "elapsed_ms": 260,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -920,7 +928,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/",
       "redirects": [],
-      "elapsed_ms": 405,
+      "elapsed_ms": 535,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -929,7 +937,7 @@
       "status_code": 200,
       "final_url": "http://www.slbc.lk/",
       "redirects": [],
-      "elapsed_ms": 255,
+      "elapsed_ms": 214,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -938,7 +946,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/world-heritage-sites/middle-east-service",
       "redirects": [],
-      "elapsed_ms": 413,
+      "elapsed_ms": 303,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -947,7 +955,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/world-heritage-sites/asia-service",
       "redirects": [],
-      "elapsed_ms": 203,
+      "elapsed_ms": 363,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -956,7 +964,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/contact-us",
       "redirects": [],
-      "elapsed_ms": 173,
+      "elapsed_ms": 262,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -965,7 +973,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/unesco-background",
       "redirects": [],
-      "elapsed_ms": 143,
+      "elapsed_ms": 167,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -974,7 +982,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/overview",
       "redirects": [],
-      "elapsed_ms": 164,
+      "elapsed_ms": 206,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -983,7 +991,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/unesco-functions",
       "redirects": [],
-      "elapsed_ms": 492,
+      "elapsed_ms": 304,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -992,7 +1000,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/world-heritage-sites/dambana-radio",
       "redirects": [],
-      "elapsed_ms": 197,
+      "elapsed_ms": 175,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1001,7 +1009,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/world-heritage-sites/cir",
       "redirects": [],
-      "elapsed_ms": 230,
+      "elapsed_ms": 193,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1010,7 +1018,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/world-heritage-sites/welenda-sevaya",
       "redirects": [],
-      "elapsed_ms": 191,
+      "elapsed_ms": 322,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1019,7 +1027,7 @@
       "status_code": 200,
       "final_url": "https://www.slbc.lk/world-heritage-sites/pirei-fm",
       "redirects": [],
-      "elapsed_ms": 150,
+      "elapsed_ms": 255,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -1027,86 +1035,86 @@
   "snapshots": [
     {
       "url": "https://www.slbc.lk/",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-01-60ea9b36b55d.html",
-      "sha256": "60ea9b36b55dbb3aadd2493093f3bac87b86f2fa85204262b7db94b9a2ac4e80",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-01-29025bb05460.html",
+      "sha256": "29025bb0546093ff8b537c8b07689b27299adeec84201a12d9e91bac15f8750b",
       "bytes": 150554
     },
     {
       "url": "http://www.slbc.lk/",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-02-94f0aadeccfb.html",
-      "sha256": "94f0aadeccfb139c374cda3e2dd0e646ab87ffae5f5e804b0aceaf9f9437faa9",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-02-c02b2bf5010d.html",
+      "sha256": "c02b2bf5010dc79a936ec877c354ea0561ffd8ad8dbf4ec071f7fb6fbb284812",
       "bytes": 150523
     },
     {
       "url": "https://www.slbc.lk/",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-03-f379e4d88740.html",
-      "sha256": "f379e4d8874003017401c164afa8acb00404e803bff7f46c7115d1a5ea71386d",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-03-32f840e7e000.html",
+      "sha256": "32f840e7e000e06d15258a4a36d7fe0eef9c97ed2aabb01697e80ac216b4d381",
       "bytes": 150554
     },
     {
       "url": "http://www.slbc.lk/",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-04-3e9d3be1165e.html",
-      "sha256": "3e9d3be1165e087b8b9fdeea464757e5dadd56b56843ede4e5fa27cf373bed96",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-04-83ae7546bd56.html",
+      "sha256": "83ae7546bd56e98452aa70d6f77ea23b342f980ab027731b5c9f90334999d3b6",
       "bytes": 150523
     },
     {
       "url": "https://www.slbc.lk/world-heritage-sites/middle-east-service",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-05-d0969e749f31.html",
-      "sha256": "d0969e749f31a29ff5b00c9391c513f4305f31ee5b3958602fee1948b4925fc6",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-05-1fe6a4d53e50.html",
+      "sha256": "1fe6a4d53e50ce3e7f9a1340a5eec80c05da3499d704180cd80163a0bd93c899",
       "bytes": 42465
     },
     {
       "url": "https://www.slbc.lk/world-heritage-sites/asia-service",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-06-935cdfdbbab4.html",
-      "sha256": "935cdfdbbab42f9c4b2e6464d63e600fa669bb49dcc1dfb0d82d3adf0eb27c93",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-06-bf0efdea5f96.html",
+      "sha256": "bf0efdea5f96b3b98f0058faaceb5b2b06131fa22ce31a5f089b5457990f11c7",
       "bytes": 209503
     },
     {
       "url": "https://www.slbc.lk/contact-us",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-07-dba5ba53b744.html",
-      "sha256": "dba5ba53b7448fdaf872ad4dc805d4dd39239f96af02cf610cf6234898aabfbe",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-07-6d350b0badaf.html",
+      "sha256": "6d350b0badaf4d35a5fc74559a8e63c82e5c38a2617d9ad88b2cb226e329b4f9",
       "bytes": 45391
     },
     {
       "url": "https://www.slbc.lk/unesco-background",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-08-517f760e7fc3.html",
-      "sha256": "517f760e7fc3eb3fe47cd381a4f7d345e44a44962c7850e126e8f2168486d7b3",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-08-c02d06df5476.html",
+      "sha256": "c02d06df54767a1df2d5e21ba0c46fc274a860a9a90a5d4dd3bf6ab5485c0ee3",
       "bytes": 45140
     },
     {
       "url": "https://www.slbc.lk/overview",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-09-11b8fd337ff4.html",
-      "sha256": "11b8fd337ff41b70df8e64fa622cc18868db13d150cd7d7626611076c7a9340b",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-09-ec6e45702cfc.html",
+      "sha256": "ec6e45702cfccd11740901f5aa384f0f49eab12e5e63181b955bd4e7953e5e5f",
       "bytes": 48667
     },
     {
       "url": "https://www.slbc.lk/unesco-functions",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-10-d30adeb15aa1.html",
-      "sha256": "d30adeb15aa1e5b5b54f4c294883145e7b13a281e478cfe59613113959c5f0c8",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-10-2c0553d6233a.html",
+      "sha256": "2c0553d6233ac91c3f4a564e2b3b4b213dc19b34cfeb9b7351d4a9596d97f4fb",
       "bytes": 42104
     },
     {
       "url": "https://www.slbc.lk/world-heritage-sites/dambana-radio",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-11-37a5e93d3160.html",
-      "sha256": "37a5e93d3160fc4a84e1454160c85b3aca9affe9d9e8d7705371c23cd1908f13",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-11-7c6b55909b04.html",
+      "sha256": "7c6b55909b04f7f3603d9e1ba9ff00a4e502c9be8ef02c3f8ebe70fd25d7f3d9",
       "bytes": 42444
     },
     {
       "url": "https://www.slbc.lk/world-heritage-sites/cir",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-12-fbe32c2f51ca.html",
-      "sha256": "fbe32c2f51ca5abc0bf70cd98180e52877d2de158a54c5795a5e118c8b8be979",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-12-ac90c2aa8d9f.html",
+      "sha256": "ac90c2aa8d9ff5b4d3fcbd67530d5ce0da3ecf374e0dd4fead939ba2ed58bf54",
       "bytes": 42677
     },
     {
       "url": "https://www.slbc.lk/world-heritage-sites/welenda-sevaya",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-13-0d86ecd4eea9.html",
-      "sha256": "0d86ecd4eea9d1df0122bac5e939d30bd238726f34230ae60cd4af735ed1cb31",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-13-95c5306674e8.html",
+      "sha256": "95c5306674e86273e3d1625409a0f872d852785b1f76ce578e89885e440444b6",
       "bytes": 328933
     },
     {
       "url": "https://www.slbc.lk/world-heritage-sites/pirei-fm",
-      "path": "audit.output/www.slbc.lk/20261003.0841/snapshots/page-14-5e17c43da805.html",
-      "sha256": "5e17c43da8050645e36d5cd58c9f84e805f89260467b3c451d4a9154497de36e",
+      "path": "audit.output/www.slbc.lk/20261004.0916/snapshots/page-14-6fa0a30ffb55.html",
+      "sha256": "6fa0a30ffb55332d7838cf1c9c3ce4562da5c506a798effe1f03a0b6184e7358",
       "bytes": 78407
     }
   ],
@@ -1123,8 +1131,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "_ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -1178,14 +1186,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -1193,9 +1201,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing named responsibility evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 011 267 5650 (9 phone numbers found); Email: chairman@slbcmail.lk (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing named responsibility evidence found"
+        }
+      ]
     },
     {
       "level": 3,
@@ -1223,7 +1250,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.214.155.181",
+    "egress_ip": "20.161.30.50",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

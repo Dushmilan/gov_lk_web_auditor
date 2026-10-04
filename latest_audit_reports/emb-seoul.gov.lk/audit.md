@@ -1,8 +1,8 @@
 # Website Audit: https://emb-seoul.gov.lk/
 
-- Completed: 2026-10-03 08:33
+- Completed: 2026-10-04 09:09
 - Overall result: 🟠 Level 2
-- Vantage: 172.214.155.181 (US, github-actions)
+- Vantage: 20.161.30.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794-; Phone: 0473349-278 (15 phone numbers found); Email: john@example.com (5 email addresses found); Published named responsibility: director
+Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794-; Phone: +82027352967 (15 phone numbers found); Email: mission@slembkr.org (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794- |
-| reachable_contacts | ✅ | Phone: 0473349-278 (15 phone numbers found); Email: john@example.com (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: +82027352967 (15 phone numbers found); Email: mission@slembkr.org (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

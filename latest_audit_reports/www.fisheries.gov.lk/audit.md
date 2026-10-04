@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-10-03 09:02
+- Completed: 2026-10-04 09:40
 - Overall result: 🟠 Level 2
-- Vantage: 172.214.155.181 (US, github-actions)
+- Vantage: 20.161.30.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Development Board Ministry of Fisheries, New Secretariat, Maligawatta, Colombo 10, Sri Lanka; Phone: 01 5 9.5 5 14 7.0 (9 phone numbers found); Email: info@fisheries.gov.lk; Published named responsibility: division
+Published postal address: Development Board Ministry of Fisheries, New Secretariat, Maligawatta, Colombo 10, Sri Lanka; Phone: 0 3.09-.59 4.23-1. (9 phone numbers found); Email: info@fisheries.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Development Board Ministry of Fisheries, New Secretariat, Maligawatta, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 01 5 9.5 5 14 7.0 (9 phone numbers found); Email: info@fisheries.gov.lk |
+| reachable_contacts | ✅ | Phone: 0 3.09-.59 4.23-1. (9 phone numbers found); Email: info@fisheries.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

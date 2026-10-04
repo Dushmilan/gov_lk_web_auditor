@@ -1,8 +1,8 @@
 # Website Audit: https://cea.lk/
 
-- Completed: 2026-10-03 08:24
+- Completed: 2026-10-04 08:58
 - Overall result: 🟠 Level 2
-- Vantage: 172.214.155.181 (US, github-actions)
+- Vantage: 20.161.30.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,14 +33,14 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa; Phone: 011-2872278 (9 phone numbers found); Email: <script type='text/javascript'>
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa; Phone: 011-2872419 (9 phone numbers found); Email: <script type='text/javascript'>
  <!--
  var prefix = 'ma' + 'il' + 'to';
  var path = 'hr' + 'ef' + '=';
- var addy73018 = 'wmpg' + '@';
- addy73018 = addy73018 + 'cea' + '.' + 'lk';
- document.write('<a ' + path + '\'' + prefix + ':' + addy73018 + '\'>');
- document.write(addy73018);
+ var addy72506 = 'wmpg' + '@';
+ addy72506 = addy72506 + 'cea' + '.' + 'lk';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy72506 + '\'>');
+ document.write(addy72506);
  document.write('<\/a>');
  //-->\n </script><script type='text/javascript'>
  <!--
@@ -57,7 +57,7 @@ Published postal address: is being protected from spambots. You need JavaScript 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa |
-| reachable_contacts | ✅ | Phone: 011-2872278 (9 phone numbers found); Email: <script type='text/javascript'>  <!--  var prefix = 'ma' + 'il' + 'to';  var path = 'hr' + 'ef' + '=';  var addy73018 = 'wmpg' + '@';  addy73018 = addy73018 + 'cea' + '.' + 'lk';  document.write('<a ' + path + '\'' + prefix + ':' + addy73018 + '\'>');  document.write(addy73018);  document.write('<\/a>');  //-->\n </script><script type='text/javascript'>  <!--  document.write('<span style=\'display: none;\'>');  //-->  </script>This email address is being protected from spambots. You need JavaScript enabled to view it.  <script type='text/javascript'>  <!--  document.write('</');  document.write('span>');  //-->  </script> |
+| reachable_contacts | ✅ | Phone: 011-2872419 (9 phone numbers found); Email: <script type='text/javascript'>  <!--  var prefix = 'ma' + 'il' + 'to';  var path = 'hr' + 'ef' + '=';  var addy72506 = 'wmpg' + '@';  addy72506 = addy72506 + 'cea' + '.' + 'lk';  document.write('<a ' + path + '\'' + prefix + ':' + addy72506 + '\'>');  document.write(addy72506);  document.write('<\/a>');  //-->\n </script><script type='text/javascript'>  <!--  document.write('<span style=\'display: none;\'>');  //-->  </script>This email address is being protected from spambots. You need JavaScript enabled to view it.  <script type='text/javascript'>  <!--  document.write('</');  document.write('span>');  //-->  </script> |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
