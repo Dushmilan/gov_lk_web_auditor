@@ -1,8 +1,8 @@
 # Website Audit: https://srilankateaboard.lk/
 
-- Completed: 2026-10-04 09:29
+- Completed: 2026-10-05 09:00
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.50 (US, github-actions)
+- Vantage: 68.220.58.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://srilankateaboard.lk/: Probe 2: timed out; http://srilankateaboard.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://srilankateaboard.lk/: Probe 2: timed out; http://srilankateaboard.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.; Phone: +94) 112 123 456 (18 phone numbers found); Email: sltbhelp@pureceylontea.com (39 email addresses found); Published named responsibility: director
+Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.; Phone: +94) 112 58 78 14 ( (18 phone numbers found); Email: sltbhelp@pureceylontea.com (39 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 574, Galle Road, Colombo 3, Sri Lanka. |
-| reachable_contacts | ✅ | Phone: +94) 112 123 456 (18 phone numbers found); Email: sltbhelp@pureceylontea.com (39 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 112 58 78 14 ( (18 phone numbers found); Email: sltbhelp@pureceylontea.com (39 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing processing time evide
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: rs 094 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://srilankateaboard.lk/wp-content/uploads/2026/06/APPLICATION-FOR-TESTING-TEA-SAMPLES.pdf |

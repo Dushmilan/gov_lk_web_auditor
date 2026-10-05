@@ -1,8 +1,8 @@
 # Website Audit: https://ceypetco.gov.lk/
 
-- Completed: 2026-10-04 08:57
+- Completed: 2026-10-05 08:34
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.50 (US, github-actions)
+- Vantage: 68.220.58.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 609, Dr. Danister de Silvea Mawatha, Colombo 09, Sri Lanka E-mail secretariat[at]ceypetco.gov.lk Telephone +94 117 2; Phone: +94117296100 (87 phone numbers found); Email: # (46 email addresses found); Published named responsibility: director
+Published postal address: No. 609, Dr. Danister de Silvea Mawatha, Colombo 09, Sri Lanka E-mail secretariat[at]ceypetco.gov.lk Telephone +94 117 2; Phone: 0925895917- (78 phone numbers found); Email: # (37 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 609, Dr. Danister de Silvea Mawatha, Colombo 09, Sri Lanka E-mail secretariat[at]ceypetco.gov.lk Telephone +94 117 2 |
-| reachable_contacts | ✅ | Phone: +94117296100 (87 phone numbers found); Email: # (46 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0925895917- (78 phone numbers found); Email: # (37 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://ceypetco.gov.lk/wp-content/uploads/2026/07/Annex-1-Application-Form1.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

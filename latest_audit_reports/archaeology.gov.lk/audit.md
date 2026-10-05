@@ -1,8 +1,8 @@
 # Website Audit: https://archaeology.gov.lk/
 
-- Completed: 2026-10-04 08:44
+- Completed: 2026-10-05 08:19
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.50 (US, github-actions)
+- Vantage: 68.220.58.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Department of Archaeology Sir Marcus Fernando Mawatha, Colombo - 07, Sri Lanka. Email Address info@archaeology.gov.lk Ph; Phone: +94 11 2696250 (30 phone numbers found); Email: sysupdateko1po@evil.example (5 email addresses found); Published named responsibility: director
+Published postal address: Department of Archaeology Sir Marcus Fernando Mawatha, Colombo - 07, Sri Lanka. Email Address info@archaeology.gov.lk Ph; Phone: 0602067290 (30 phone numbers found); Email: sysupdateko1po@evil.example (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Department of Archaeology Sir Marcus Fernando Mawatha, Colombo - 07, Sri Lanka. Email Address info@archaeology.gov.lk Ph |
-| reachable_contacts | ✅ | Phone: +94 11 2696250 (30 phone numbers found); Email: sysupdateko1po@evil.example (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0602067290 (30 phone numbers found); Email: sysupdateko1po@evil.example (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

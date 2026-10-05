@@ -1,8 +1,8 @@
 # Website Audit: https://emb-beijing.gov.lk/
 
-- Completed: 2026-10-04 09:08
+- Completed: 2026-10-05 08:41
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.50 (US, github-actions)
+- Vantage: 68.220.58.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 03, Jian Hua Lu, Beijing, 100600, China Tel: +86 10 65321861 , +86 10 65321862 Fax: +86 10 65325426 Email: slemb.bei; Phone: 005067-8271- (21 phone numbers found); Email: cgguangzhou@mfa.gov.lk (10 email addresses found); Published named responsibility: director
+Published postal address: No. 03, Jian Hua Lu, Beijing, 100600, China Tel: +86 10 65321861 , +86 10 65321862 Fax: +86 10 65325426 Email: slemb.bei; Phone: 0558865167 (21 phone numbers found); Email: john@example.com (10 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 03, Jian Hua Lu, Beijing, 100600, China Tel: +86 10 65321861 , +86 10 65321862 Fax: +86 10 65325426 Email: slemb.bei |
-| reachable_contacts | ✅ | Phone: 005067-8271- (21 phone numbers found); Email: cgguangzhou@mfa.gov.lk (10 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0558865167 (21 phone numbers found); Email: john@example.com (10 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

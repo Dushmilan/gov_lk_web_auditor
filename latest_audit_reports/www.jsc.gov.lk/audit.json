@@ -1,15 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "82be79ec-f1a4-4bfd-b6c1-3e053ab94a08",
+  "audit_id": "10153151-70b5-486d-9e1c-e1b9edf8c192",
   "url": "https://www.jsc.gov.lk/",
   "normalized_url": "https://www.jsc.gov.lk/",
-  "started_at": "2026-10-04T09:44:55.079972+05:30",
-  "completed_at": "2026-10-04T09:46:39.877155+05:30",
+  "started_at": "2026-10-05T09:19:57.986506+05:30",
+  "completed_at": "2026-10-05T09:22:02.456051+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.jsc.gov.lk'. (_ssl.c:1010)"
+      "tls_hostname_matches: TLS certificate does not match the hostname"
     ]
   },
   "evidence": [
@@ -17,47 +17,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-04T09:44:55.493268+05:30"
+      "observed_at": "2026-10-05T09:19:58.454977+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-04T09:44:55.493290+05:30"
+      "observed_at": "2026-10-05T09:19:58.454992+05:30"
     },
     {
-      "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-04T09:45:05.733917+05:30"
-    },
-    {
-      "check": "tls_browser_error",
+      "check": "tls_hostname",
       "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.jsc.gov.lk'. (_ssl.c:1010)",
+      "detail": "TLS certificate does not match the hostname",
+      "observed_at": "2026-10-05T09:19:59.207128+05:30"
+    },
+    {
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.jsc.gov.lk/",
-      "observed_at": "2026-10-04T09:46:39.876918+05:30"
+      "observed_at": "2026-10-05T09:22:02.455859+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://www.jsc.gov.lk/",
-      "observed_at": "2026-10-04T09:46:39.876955+05:30"
+      "observed_at": "2026-10-05T09:22:02.455882+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: timed out",
       "source": "https://www.jsc.gov.lk/",
-      "observed_at": "2026-10-04T09:46:39.876962+05:30"
+      "observed_at": "2026-10-05T09:22:02.455887+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://www.jsc.gov.lk/",
-      "observed_at": "2026-10-04T09:46:39.876966+05:30"
+      "observed_at": "2026-10-05T09:22:02.455891+05:30"
     }
   ],
   "observations": [
@@ -77,10 +77,10 @@
     },
     {
       "host": "www.jsc.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "hostname_error",
+      "expires_at": "2026-11-07T13:06:17+05:30",
+      "hostname_valid": false,
+      "detail": "TLS certificate does not match the hostname"
     },
     {
       "url": "https://www.jsc.gov.lk/",
@@ -89,7 +89,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.jsc.gov.lk'. (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "http://www.jsc.gov.lk/",
@@ -134,7 +134,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.jsc.gov.lk'. (_ssl.c:1010)",
+      "reason": "TLS certificate does not match the hostname",
       "executed": true,
       "checks": [
         {
@@ -182,20 +182,20 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.jsc.gov.lk'. (_ssl.c:1010)"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "TLS expiry check did not run"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "fail",
+          "reason": "TLS certificate does not match the hostname"
         }
       ]
     },
@@ -233,7 +233,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.30.50",
+    "egress_ip": "68.220.58.241",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

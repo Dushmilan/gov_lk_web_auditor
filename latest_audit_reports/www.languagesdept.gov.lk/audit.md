@@ -1,8 +1,8 @@
 # Website Audit: https://www.languagesdept.gov.lk/
 
-- Completed: 2026-10-04 09:21
+- Completed: 2026-10-05 08:54
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.50 (US, github-actions)
+- Vantage: 68.220.58.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: “Bhasha Mandiraya”, No 341/7, Kotte Road, Rajagiriya, Sri Lanka. Phone & Email +94 112 888 934 languages.dept.ad04@gmail; Phone: +94 112 888 935 (4 phone numbers found); Email: languages.dept.ad04@gmail.com; Published named responsibility: department
+Published postal address: “Bhasha Mandiraya”, No 341/7, Kotte Road, Rajagiriya, Sri Lanka. Phone & Email +94 112 888 934 languages.dept.ad04@gmail; Phone: 026 2025 202 (4 phone numbers found); Email: languages.dept.ad04@gmail.com; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: “Bhasha Mandiraya”, No 341/7, Kotte Road, Rajagiriya, Sri Lanka. Phone & Email +94 112 888 934 languages.dept.ad04@gmail |
-| reachable_contacts | ✅ | Phone: +94 112 888 935 (4 phone numbers found); Email: languages.dept.ad04@gmail.com |
+| reachable_contacts | ✅ | Phone: 026 2025 202 (4 phone numbers found); Email: languages.dept.ad04@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

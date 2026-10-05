@@ -1,8 +1,8 @@
 # Website Audit: https://ngja.gov.lk/
 
-- Completed: 2026-10-04 09:20
+- Completed: 2026-10-05 08:53
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.50 (US, github-actions)
+- Vantage: 68.220.58.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Authority No 260,RTFC & WMC Building, Lake Drive, Colombo 05, Sri Lanka; Phone: +94) 112 390 649( (10 phone numbers found); Email: info@ngja.gov.lk; Published named responsibility: director
+Published postal address: Authority No 260,RTFC & WMC Building, Lake Drive, Colombo 05, Sri Lanka; Phone: +94112390645 (10 phone numbers found); Email: info@ngja.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Authority No 260,RTFC & WMC Building, Lake Drive, Colombo 05, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94) 112 390 649( (10 phone numbers found); Email: info@ngja.gov.lk |
+| reachable_contacts | ✅ | Phone: +94112390645 (10 phone numbers found); Email: info@ngja.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
