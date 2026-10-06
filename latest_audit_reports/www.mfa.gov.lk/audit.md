@@ -1,8 +1,8 @@
 # Website Audit: https://www.mfa.gov.lk/
 
-- Completed: 2026-10-05 09:12
+- Completed: 2026-10-06 09:57
 - Overall result: 🟠 Level 2
-- Vantage: 68.220.58.241 (US, github-actions)
+- Vantage: 52.173.221.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 1, Sri Lanka; Phone: +94 112 207 200 (110 phone numbers found); Email: cypher@mfa.gov.lk (51 email addresses found); Published named responsibility: director
+Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 1, Sri Lanka; Phone: +94 112 321 222 (110 phone numbers found); Email: cypher@mfa.gov.lk (51 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 1, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 112 207 200 (110 phone numbers found); Email: cypher@mfa.gov.lk (51 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 321 222 (110 phone numbers found); Email: cypher@mfa.gov.lk (51 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

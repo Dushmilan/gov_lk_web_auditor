@@ -1,23 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "046c69da-4126-4f91-bba8-a1d0d2acdf98",
+  "audit_id": "2685faf7-b967-47c1-b40f-bf976e62b5bb",
   "url": "https://gic.gov.lk/",
   "normalized_url": "https://gic.gov.lk/",
-  "started_at": "2026-10-05T08:23:34.443575+05:30",
-  "completed_at": "2026-10-05T08:25:46.634259+05:30",
+  "started_at": "2026-10-06T09:13:31.990423+05:30",
+  "completed_at": "2026-10-06T09:13:40.801419+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "http_available: Every repeated HTTP probe failed: [502, 502, 502, 502]"
     ]
   },
   "evidence": [
@@ -25,47 +17,59 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-05T08:23:34.714067+05:30"
+      "observed_at": "2026-10-06T09:13:32.412400+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-05T08:23:34.714085+05:30"
+      "observed_at": "2026-10-06T09:13:32.412422+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-05T08:23:44.926429+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-06T09:13:32.920309+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 502 at https://gic.gov.lk/",
       "source": "https://gic.gov.lk/",
-      "observed_at": "2026-10-05T08:25:46.634071+05:30"
+      "observed_at": "2026-10-06T09:13:40.800509+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 502 at https://gic.gov.lk/",
       "source": "http://gic.gov.lk/",
-      "observed_at": "2026-10-05T08:25:46.634089+05:30"
+      "observed_at": "2026-10-06T09:13:40.800525+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 502 at https://gic.gov.lk/",
       "source": "https://gic.gov.lk/",
-      "observed_at": "2026-10-05T08:25:46.634094+05:30"
+      "observed_at": "2026-10-06T09:13:40.800528+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 502 at https://gic.gov.lk/",
       "source": "http://gic.gov.lk/",
-      "observed_at": "2026-10-05T08:25:46.634097+05:30"
+      "observed_at": "2026-10-06T09:13:40.800530+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 37 visible characters across 4 pages; below substance threshold 200",
+      "source": "https://gic.gov.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [502, 502, 502, 502]",
+      "observed_at": "2026-10-06T09:13:40.800990+05:30"
     }
   ],
   "observations": [
@@ -85,49 +89,78 @@
     },
     {
       "host": "gic.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-12-05T09:47:06+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://gic.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 502,
+      "final_url": "https://gic.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 954,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://gic.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 502,
+      "final_url": "https://gic.gov.lk/",
+      "redirects": [
+        "https://gic.gov.lk/"
+      ],
+      "elapsed_ms": 969,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "https://gic.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 502,
+      "final_url": "https://gic.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 974,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://gic.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 502,
+      "final_url": "https://gic.gov.lk/",
+      "redirects": [
+        "https://gic.gov.lk/"
+      ],
+      "elapsed_ms": 1974,
+      "content_type": "text/html",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://gic.gov.lk/",
+      "path": "audit.output/gic.gov.lk/20261006.0913/snapshots/page-01-61b30d408583.html",
+      "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+      "bytes": 150
+    },
+    {
+      "url": "https://gic.gov.lk/",
+      "path": "audit.output/gic.gov.lk/20261006.0913/snapshots/page-02-61b30d408583.html",
+      "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+      "bytes": 150
+    },
+    {
+      "url": "https://gic.gov.lk/",
+      "path": "audit.output/gic.gov.lk/20261006.0913/snapshots/page-03-61b30d408583.html",
+      "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+      "bytes": 150
+    },
+    {
+      "url": "https://gic.gov.lk/",
+      "path": "audit.output/gic.gov.lk/20261006.0913/snapshots/page-04-61b30d408583.html",
+      "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+      "bytes": 150
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +174,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [502, 502, 502, 502]",
       "executed": true,
       "checks": [
         {
@@ -155,31 +188,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 37 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 37 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 37 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 37 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [502, 502, 502, 502]"
         },
         {
           "name": "redirect_related",
@@ -196,14 +229,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -241,7 +274,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "68.220.58.241",
+    "egress_ip": "52.173.221.35",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

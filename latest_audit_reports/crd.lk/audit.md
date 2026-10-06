@@ -1,8 +1,8 @@
 # Website Audit: https://crd.lk/
 
-- Completed: 2026-10-05 08:21
+- Completed: 2026-10-06 09:11
 - Overall result: 🔴 Level 1
-- Vantage: 68.220.58.241 (US, github-actions)
+- Vantage: 52.173.221.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

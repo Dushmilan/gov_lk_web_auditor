@@ -1,8 +1,8 @@
 # Website Audit: https://dea.gov.lk/
 
-- Completed: 2026-10-05 08:19
+- Completed: 2026-10-06 09:09
 - Overall result: ⚫ Level 0
-- Vantage: 68.220.58.241 (US, github-actions)
+- Vantage: 52.173.221.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

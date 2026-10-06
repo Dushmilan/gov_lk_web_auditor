@@ -1,24 +1,18 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "a910eb93-894a-4f1f-95f5-13d95b6b0373",
+  "audit_id": "1beebaf6-bb54-4b2f-8000-0d8cf415ee9a",
   "url": "https://caa.gov.lk/",
   "normalized_url": "https://caa.gov.lk/",
-  "started_at": "2026-10-05T09:02:16.287100+05:30",
-  "completed_at": "2026-10-05T09:17:06.715637+05:30",
+  "started_at": "2026-10-06T09:50:58.324572+05:30",
+  "completed_at": "2026-10-06T09:52:12.145931+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTPS probes passed; failing variants: http://caa.gov.lk/: Probe 2: timed out; http://caa.gov.lk/: Probe 4: timed out",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200"
     ]
   },
   "evidence": [
@@ -26,410 +20,52 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-05T09:02:16.988449+05:30"
+      "observed_at": "2026-10-06T09:50:59.394285+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-05T09:02:16.988464+05:30"
+      "observed_at": "2026-10-06T09:50:59.394297+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-05T09:02:18.147110+05:30"
+      "observed_at": "2026-10-06T09:51:00.608709+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://caa.gov.lk/",
       "source": "https://caa.gov.lk/",
-      "observed_at": "2026-10-05T09:17:06.483206+05:30"
+      "observed_at": "2026-10-06T09:52:12.144248+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://caa.gov.lk/",
-      "observed_at": "2026-10-05T09:17:06.483225+05:30"
+      "observed_at": "2026-10-06T09:52:12.144265+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://caa.gov.lk/",
       "source": "https://caa.gov.lk/",
-      "observed_at": "2026-10-05T09:17:06.483230+05:30"
+      "observed_at": "2026-10-06T09:52:12.144269+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 4: timed out",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://caa.gov.lk/",
-      "observed_at": "2026-10-05T09:17:06.483234+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://caa.gov.lk/web/",
-      "source": "https://caa.gov.lk/web",
-      "observed_at": "2026-10-05T09:17:06.483236+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://caa.gov.lk/web/index.php",
-      "source": "https://caa.gov.lk/web/index.php",
-      "observed_at": "2026-10-05T09:17:06.483239+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://caa.gov.lk/web/index.php?option=com_content&view=article&id=92&Itemid=569",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=92&Itemid=569",
-      "observed_at": "2026-10-05T09:17:06.483242+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "observed_at": "2026-10-05T09:17:06.483245+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://caa.gov.lk/web/index.php?option=com_xmap&view=html&id=0&Itemid=444",
-      "source": "https://caa.gov.lk/web/index.php?option=com_xmap&view=html&id=0&Itemid=444",
-      "observed_at": "2026-10-05T09:17:06.483248+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://caa.gov.lk/web/index.php?option=com_content&view=featured&Itemid=435&lang=en",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=featured&Itemid=435&lang=en",
-      "observed_at": "2026-10-05T09:17:06.483250+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://caa.gov.lk/web/index.php?option=com_content&view=article&id=78&Itemid=507&lang=en",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=78&Itemid=507&lang=en",
-      "observed_at": "2026-10-05T09:17:06.483253+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://caa.gov.lk/web/index.php?option=com_content&view=category&layout=blog&id=100&Itemid=570&lang=en",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=category&layout=blog&id=100&Itemid=570&lang=en",
-      "observed_at": "2026-10-05T09:17:06.483256+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://caa.gov.lk/web/index.php?option=com_content&view=article&id=967:supplier-2026&catid=100:latest-news&Itemid=570&lang=en",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=967:supplier-2026&catid=100:latest-news&Itemid=570&lang=en",
-      "observed_at": "2026-10-05T09:17:06.483259+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://caa.gov.lk/web/index.php?option=com_content&view=article&id=120&Itemid=685",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=120&Itemid=685",
-      "observed_at": "2026-10-05T09:17:06.483261+05:30"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://caa.gov.lk/web/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://caa.gov.lk/web/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://caa.gov.lk/web/index.php",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://caa.gov.lk/web/index.php",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=92&Itemid=569",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=92&Itemid=569",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11-2391618 ",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "+94 11-2391618 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11-7755456",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "+94 11-7755456"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11-2399149 ",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "+94 11-2399149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11-2399148 ",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "+94 11-2399148 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11-2432253 ",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "+94 11-2432253 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11-2399146 ",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "+94 11-2399146 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11-2302981 ",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "+94 11-2302981 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "required_documents",
-      "status": "pass",
-      "detail": "Published required documents: supporting documents",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "supporting documents"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: under the act",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "under the act"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs 2026",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "rs 2026"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 3 months",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "data": {
-        "value": "3 months"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://caa.gov.lk/web/index.php?option=com_xmap&view=html&id=0&Itemid=444",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://caa.gov.lk/web/index.php?option=com_xmap&view=html&id=0&Itemid=444",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=featured&Itemid=435&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=featured&Itemid=435&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=78&Itemid=507&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=78&Itemid=507&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=category&layout=blog&id=100&Itemid=570&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=category&layout=blog&id=100&Itemid=570&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=967:supplier-2026&catid=100:latest-news&Itemid=570&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=967:supplier-2026&catid=100:latest-news&Itemid=570&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=120&Itemid=685",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=120&Itemid=685",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs 2026",
-      "source": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=120&Itemid=685",
-      "data": {
-        "value": "rs 2026"
-      }
+      "observed_at": "2026-10-06T09:52:12.144271+05:30"
     },
     {
       "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 14376 visible characters across 12 pages",
+      "status": "fail",
+      "detail": "Only 26 visible characters across 2 pages; below substance threshold 200",
       "source": "https://caa.gov.lk/"
     }
   ],
@@ -460,7 +96,7 @@
       "status_code": 200,
       "final_url": "https://caa.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 755,
+      "elapsed_ms": 1221,
       "content_type": "text/html",
       "error": null
     },
@@ -478,7 +114,7 @@
       "status_code": 200,
       "final_url": "https://caa.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 761,
+      "elapsed_ms": 1461,
       "content_type": "text/html",
       "error": null
     },
@@ -489,173 +125,21 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
-    },
-    {
-      "url": "https://caa.gov.lk/web",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/",
-      "redirects": [
-        "https://caa.gov.lk/web/"
-      ],
-      "elapsed_ms": 1057,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/index.php",
-      "redirects": [],
-      "elapsed_ms": 1740,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=92&Itemid=569",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=92&Itemid=569",
-      "redirects": [],
-      "elapsed_ms": 1763,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "redirects": [],
-      "elapsed_ms": 1127,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_xmap&view=html&id=0&Itemid=444",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/index.php?option=com_xmap&view=html&id=0&Itemid=444",
-      "redirects": [],
-      "elapsed_ms": 1041,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=featured&Itemid=435&lang=en",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/index.php?option=com_content&view=featured&Itemid=435&lang=en",
-      "redirects": [],
-      "elapsed_ms": 2711,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=78&Itemid=507&lang=en",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=78&Itemid=507&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1346,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=category&layout=blog&id=100&Itemid=570&lang=en",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/index.php?option=com_content&view=category&layout=blog&id=100&Itemid=570&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1359,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=967:supplier-2026&catid=100:latest-news&Itemid=570&lang=en",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=967:supplier-2026&catid=100:latest-news&Itemid=570&lang=en",
-      "redirects": [],
-      "elapsed_ms": 2271,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=120&Itemid=685",
-      "status_code": 200,
-      "final_url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=120&Itemid=685",
-      "redirects": [],
-      "elapsed_ms": 1363,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "error": "[Errno 111] Connection refused"
     }
   ],
   "snapshots": [
     {
       "url": "https://caa.gov.lk/",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-01-a7604f2e1382.html",
+      "path": "audit.output/caa.gov.lk/20261006.0950/snapshots/page-01-a7604f2e1382.html",
       "sha256": "a7604f2e13828b156a56650023eac256d592e41e197839eabe83bdb68761d6da",
       "bytes": 2271
     },
     {
       "url": "https://caa.gov.lk/",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-02-a7604f2e1382.html",
+      "path": "audit.output/caa.gov.lk/20261006.0950/snapshots/page-02-a7604f2e1382.html",
       "sha256": "a7604f2e13828b156a56650023eac256d592e41e197839eabe83bdb68761d6da",
       "bytes": 2271
-    },
-    {
-      "url": "https://caa.gov.lk/web/",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-03-1f4fa917060f.html",
-      "sha256": "1f4fa917060f49515beda069dec1b096f800770859823741c53215b3c05b74ee",
-      "bytes": 41569
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-04-1f4fa917060f.html",
-      "sha256": "1f4fa917060f49515beda069dec1b096f800770859823741c53215b3c05b74ee",
-      "bytes": 41569
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=92&Itemid=569",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-05-28f246a7671b.html",
-      "sha256": "28f246a7671b42cf4a6bbbcc4d68537883569a5ed3e7fe3288fa0262463a853c",
-      "bytes": 41329
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=75&Itemid=496",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-06-6285d3143532.html",
-      "sha256": "6285d31435329ea48ad71ffe54f8237971798a041654c48ca81297ff10586541",
-      "bytes": 53335
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_xmap&view=html&id=0&Itemid=444",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-07-d520ee5b8c2c.html",
-      "sha256": "d520ee5b8c2c7fdb0a6eaa553cbe6c58b962ca8c9d29d2bcf572da667e355407",
-      "bytes": 39905
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=featured&Itemid=435&lang=en",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-08-6b48ff78441a.html",
-      "sha256": "6b48ff78441affa1a9200f7f4f7ed851e7df564e4a03a9cdae3c8a87c44ae70b",
-      "bytes": 41938
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=78&Itemid=507&lang=en",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-09-b50b5a09acdb.html",
-      "sha256": "b50b5a09acdb21ee8c62dcc58d6b37a5b8060930ff17e62b243591e2478af421",
-      "bytes": 36686
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=category&layout=blog&id=100&Itemid=570&lang=en",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-10-62fead292ded.html",
-      "sha256": "62fead292ded89cb3b24c98722ec4ce36fdf0369311c82597bbcc3c8c48a17bb",
-      "bytes": 39112
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=967:supplier-2026&catid=100:latest-news&Itemid=570&lang=en",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-11-e2e5bc88136d.html",
-      "sha256": "e2e5bc88136da9d7b7b679787e81299f1b2515ee1907aca2cb1df3acf5ca1c40",
-      "bytes": 36042
-    },
-    {
-      "url": "https://caa.gov.lk/web/index.php?option=com_content&view=article&id=120&Itemid=685",
-      "path": "audit.output/caa.gov.lk/20261005.0902/snapshots/page-12-2df9bdcb5f4e.html",
-      "sha256": "2df9bdcb5f4e03d5e9aabddab1b7bc27d97051fb92c783c355b7720b896ed98f",
-      "bytes": 50454
     }
   ],
   "reviewer_decisions": [],
@@ -671,8 +155,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://caa.gov.lk/: Probe 2: timed out; http://caa.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200",
       "executed": true,
       "checks": [
         {
@@ -684,32 +168,32 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://caa.gov.lk/: Probe 2: timed out; http://caa.gov.lk/: Probe 4: timed out"
+          "reason": "HTTPS probes passed; failing variants: http://caa.gov.lk/: Probe 2: timed out; http://caa.gov.lk/: Probe 4: [Errno 111] Connection refused"
         },
         {
           "name": "redirect_related",
@@ -741,28 +225,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No email evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -790,7 +255,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "68.220.58.241",
+    "egress_ip": "52.173.221.35",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

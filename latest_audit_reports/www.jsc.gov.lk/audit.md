@@ -1,8 +1,8 @@
 # Website Audit: https://www.jsc.gov.lk/
 
-- Completed: 2026-10-05 09:22
+- Completed: 2026-10-06 10:07
 - Overall result: ⚫ Level 0
-- Vantage: 68.220.58.241 (US, github-actions)
+- Vantage: 52.173.221.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-TLS certificate does not match the hostname
+Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.jsc.gov.lk'. (_ssl.c:1010)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,6 +25,6 @@ TLS certificate does not match the hostname
 | hosting_configured | ❓ | No usable page was inspected |
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ❓ | TLS expiry check did not run |
-| tls_hostname_matches | ❌ | TLS certificate does not match the hostname |
+| tls_browser_trusted | ❌ | Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.jsc.gov.lk'. (_ssl.c:1010) |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |

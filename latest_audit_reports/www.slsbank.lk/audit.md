@@ -1,8 +1,8 @@
 # Website Audit: https://www.slsbank.lk/
 
-- Completed: 2026-10-05 08:35
+- Completed: 2026-10-06 09:28
 - Overall result: 🔴 Level 1
-- Vantage: 68.220.58.241 (US, github-actions)
+- Vantage: 52.173.221.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2 674 700 - (3 phone numbers found); Email: info@slsbl.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2 674 700 (3 phone numbers found); Email: info@slsbl.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
