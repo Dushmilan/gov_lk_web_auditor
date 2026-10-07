@@ -1,8 +1,8 @@
 # Website Audit: https://tourismmin.gov.lk/
 
-- Completed: 2026-10-06 09:58
+- Completed: 2026-10-07 09:28
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.221.35 (US, github-actions)
+- Vantage: 20.186.238.6 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 01, Sri Lanka; Phone: +94 11 232 1222 (72 phone numbers found); Email: admin@tourismmin.gov.lk (2 email addresses found); Published named responsibility: division
+Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 01, Sri Lanka; Phone: +94 71 538 0071 (73 phone numbers found); Email: deputyminister@tourismmin.gov.lk (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 01, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 232 1222 (72 phone numbers found); Email: admin@tourismmin.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 71 538 0071 (73 phone numbers found); Email: deputyminister@tourismmin.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

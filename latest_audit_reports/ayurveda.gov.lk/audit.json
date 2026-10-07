@@ -1,24 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "0b89cee8-2442-4ec8-beaf-1b8354b130d0",
+  "audit_id": "0daf8af7-cac3-4fca-a933-8f41a99f6c5c",
   "url": "https://ayurveda.gov.lk/",
   "normalized_url": "https://ayurveda.gov.lk/",
-  "started_at": "2026-10-06T09:40:44.097752+05:30",
-  "completed_at": "2026-10-06T09:41:08.395516+05:30",
+  "started_at": "2026-10-07T09:07:46.555699+05:30",
+  "completed_at": "2026-10-07T09:07:53.075563+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "tls_not_expired: TLS certificate has expired"
     ]
   },
   "evidence": [
@@ -26,735 +18,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-06T09:40:44.446523+05:30"
+      "observed_at": "2026-10-07T09:07:47.253725+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-06T09:40:44.446540+05:30"
+      "observed_at": "2026-10-07T09:07:47.253744+05:30"
     },
     {
-      "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-06T09:40:44.832818+05:30"
+      "check": "tls_expired",
+      "status": "fail",
+      "detail": "TLS certificate has expired",
+      "observed_at": "2026-10-07T09:07:47.716214+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://ayurveda.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "https://ayurveda.gov.lk/",
-      "observed_at": "2026-10-06T09:41:07.826801+05:30"
+      "observed_at": "2026-10-07T09:07:53.075399+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://ayurveda.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "http://ayurveda.gov.lk/",
-      "observed_at": "2026-10-06T09:41:07.826822+05:30"
+      "observed_at": "2026-10-07T09:07:53.075418+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://ayurveda.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "https://ayurveda.gov.lk/",
-      "observed_at": "2026-10-06T09:41:07.826825+05:30"
+      "observed_at": "2026-10-07T09:07:53.075423+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://ayurveda.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "http://ayurveda.gov.lk/",
-      "observed_at": "2026-10-06T09:41:07.826827+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://ayurveda.gov.lk/services/",
-      "source": "https://ayurveda.gov.lk/services/",
-      "observed_at": "2026-10-06T09:41:07.826829+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://ayurveda.gov.lk/contact-us/",
-      "source": "https://ayurveda.gov.lk/contact-us/",
-      "observed_at": "2026-10-06T09:41:07.826831+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://ayurveda.gov.lk/provincial-department-of-ayurveda/",
-      "source": "https://ayurveda.gov.lk/provincial-department-of-ayurveda/",
-      "observed_at": "2026-10-06T09:41:07.826832+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://ayurveda.gov.lk/location-map/",
-      "source": "http://ayurveda.gov.lk/location-map/",
-      "observed_at": "2026-10-06T09:41:07.826834+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://ayurveda.gov.lk/privacy-policy/",
-      "source": "http://ayurveda.gov.lk/privacy-policy/",
-      "observed_at": "2026-10-06T09:41:07.826835+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://ayurveda.gov.lk/about-us/",
-      "source": "https://ayurveda.gov.lk/about-us/",
-      "observed_at": "2026-10-06T09:41:07.826837+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://ayurveda.gov.lk/announcements/",
-      "source": "https://ayurveda.gov.lk/announcements/",
-      "observed_at": "2026-10-06T09:41:07.826839+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://ayurveda.gov.lk/hospitals/",
-      "source": "https://ayurveda.gov.lk/hospitals/",
-      "observed_at": "2026-10-06T09:41:07.826840+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://ayurveda.gov.lk/nitm/",
-      "source": "https://ayurveda.gov.lk/nitm/",
-      "observed_at": "2026-10-06T09:41:07.826842+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://ayurveda.gov.lk/bmari/",
-      "source": "https://ayurveda.gov.lk/bmari/",
-      "observed_at": "2026-10-06T09:41:07.826843+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.2025 27.10.2",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0.2025 27.10.2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112088675 ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0112088675 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0706665522 ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0706665522 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iau@ayurveda.gov.lk",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "iau@ayurveda.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.2025 27.10.2",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0.2025 27.10.2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112088675 ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0112088675 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0706665522 ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0706665522 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iau@ayurveda.gov.lk",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "iau@ayurveda.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.2025 27.10.2",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0.2025 27.10.2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112088675 ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0112088675 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0706665522 ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0706665522 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iau@ayurveda.gov.lk",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "iau@ayurveda.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.2025 27.10.2",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0.2025 27.10.2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112088675 ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0112088675 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0706665522 ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "0706665522 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iau@ayurveda.gov.lk",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "iau@ayurveda.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs ",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/services/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/services/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: your specific health needs and guide you on a path to holistic wellness. Discover the transformative power of Ayurveda a",
-      "source": "https://ayurveda.gov.lk/services/",
-      "data": {
-        "value": "your specific health needs and guide you on a path to holistic wellness. Discover the transformative power of Ayurveda a"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://ayurveda.gov.lk/services/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://ayurveda.gov.lk/services/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/contact-us/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/contact-us/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: departmentofayurveda@gmail.com",
-      "source": "https://ayurveda.gov.lk/contact-us/",
-      "data": {
-        "value": "departmentofayurveda@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/contact-us/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/provincial-department-of-ayurveda/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/provincial-department-of-ayurveda/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/provincial-department-of-ayurveda/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/location-map/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/location-map/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/location-map/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/privacy-policy/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/privacy-policy/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: tmpolicy02@gmail.com",
-      "source": "https://ayurveda.gov.lk/privacy-policy/",
-      "data": {
-        "value": "tmpolicy02@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/privacy-policy/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 14 days",
-      "source": "https://ayurveda.gov.lk/privacy-policy/",
-      "data": {
-        "value": "14 days"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/about-us/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/about-us/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/about-us/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/announcements/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/announcements/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/announcements/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/hospitals/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/hospitals/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/hospitals/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/nitm/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 023-04-20-102",
-      "source": "https://ayurveda.gov.lk/nitm/",
-      "data": {
-        "value": "023-04-20-102"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/nitm/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/nitm/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896911",
-      "source": "https://ayurveda.gov.lk/bmari/",
-      "data": {
-        "value": "+94) 11 2896911"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2896912",
-      "source": "https://ayurveda.gov.lk/bmari/",
-      "data": {
-        "value": "+94) 11 2896912"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://ayurveda.gov.lk/bmari/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 6860 visible characters across 14 pages",
-      "source": "https://ayurveda.gov.lk/"
+      "observed_at": "2026-10-07T09:07:53.075426+05:30"
     }
   ],
   "observations": [
@@ -774,232 +78,49 @@
     },
     {
       "host": "ayurveda.gov.lk",
-      "status": "valid",
+      "status": "expired",
       "expires_at": "2026-10-06T17:40:23+05:30",
       "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "detail": "TLS certificate has expired"
     },
     {
       "url": "https://ayurveda.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1466,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
     },
     {
       "url": "http://ayurveda.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/",
-      "redirects": [
-        "https://ayurveda.gov.lk/"
-      ],
-      "elapsed_ms": 1662,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
     },
     {
       "url": "https://ayurveda.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1488,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
     },
     {
       "url": "http://ayurveda.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/",
-      "redirects": [
-        "https://ayurveda.gov.lk/"
-      ],
-      "elapsed_ms": 1159,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ayurveda.gov.lk/services/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/services/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 980,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ayurveda.gov.lk/contact-us/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/contact-us/",
-      "redirects": [],
-      "elapsed_ms": 1068,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ayurveda.gov.lk/provincial-department-of-ayurveda/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/provincial-department-of-ayurveda/",
-      "redirects": [],
-      "elapsed_ms": 769,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://ayurveda.gov.lk/location-map/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/location-map/",
-      "redirects": [
-        "https://ayurveda.gov.lk/location-map/"
-      ],
-      "elapsed_ms": 915,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://ayurveda.gov.lk/privacy-policy/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/privacy-policy/",
-      "redirects": [
-        "https://ayurveda.gov.lk/privacy-policy/"
-      ],
-      "elapsed_ms": 3109,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ayurveda.gov.lk/about-us/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/about-us/",
-      "redirects": [],
-      "elapsed_ms": 794,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ayurveda.gov.lk/announcements/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/announcements/",
-      "redirects": [],
-      "elapsed_ms": 936,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ayurveda.gov.lk/hospitals/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/hospitals/",
-      "redirects": [],
-      "elapsed_ms": 1004,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ayurveda.gov.lk/nitm/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/nitm/",
-      "redirects": [],
-      "elapsed_ms": 1028,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ayurveda.gov.lk/bmari/",
-      "status_code": 200,
-      "final_url": "https://ayurveda.gov.lk/bmari/",
-      "redirects": [],
-      "elapsed_ms": 887,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://ayurveda.gov.lk/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-01-9bc3b596fcdd.html",
-      "sha256": "9bc3b596fcdd5356cbac46ddc2c9859db90c58da4b7f31b96b1ff001c71fb21b",
-      "bytes": 154916
-    },
-    {
-      "url": "https://ayurveda.gov.lk/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-02-9bc3b596fcdd.html",
-      "sha256": "9bc3b596fcdd5356cbac46ddc2c9859db90c58da4b7f31b96b1ff001c71fb21b",
-      "bytes": 154916
-    },
-    {
-      "url": "https://ayurveda.gov.lk/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-03-9bc3b596fcdd.html",
-      "sha256": "9bc3b596fcdd5356cbac46ddc2c9859db90c58da4b7f31b96b1ff001c71fb21b",
-      "bytes": 154916
-    },
-    {
-      "url": "https://ayurveda.gov.lk/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-04-9bc3b596fcdd.html",
-      "sha256": "9bc3b596fcdd5356cbac46ddc2c9859db90c58da4b7f31b96b1ff001c71fb21b",
-      "bytes": 154916
-    },
-    {
-      "url": "https://ayurveda.gov.lk/services/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-05-3ffee733125e.html",
-      "sha256": "3ffee733125e25b277b9bca1b5f2b3bf79c09a792c8ef7088d9ebc63015e1219",
-      "bytes": 88790
-    },
-    {
-      "url": "https://ayurveda.gov.lk/contact-us/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-06-1080103e86be.html",
-      "sha256": "1080103e86beae3ca8a2fcac5e2cccd7b931372c061f13c257fd5de768c222a3",
-      "bytes": 97072
-    },
-    {
-      "url": "https://ayurveda.gov.lk/provincial-department-of-ayurveda/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-07-14671f203c0e.html",
-      "sha256": "14671f203c0e9e608ba82e8b5f007f39f5ce1e6e780dafa1dcb618071c4e5a8d",
-      "bytes": 93892
-    },
-    {
-      "url": "https://ayurveda.gov.lk/location-map/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-08-bf00644724bd.html",
-      "sha256": "bf00644724bd7c3d442c263f76e56d88c55e3f276ffcc72744064f37df4ac4a4",
-      "bytes": 97938
-    },
-    {
-      "url": "https://ayurveda.gov.lk/privacy-policy/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-09-c24a4f2a7519.html",
-      "sha256": "c24a4f2a7519e64b2afbcac72a4672ce0caecbf2ee6eec5eb04854495204c00f",
-      "bytes": 95109
-    },
-    {
-      "url": "https://ayurveda.gov.lk/about-us/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-10-e7ec6c0f6298.html",
-      "sha256": "e7ec6c0f6298c52e8130347bb7dd9ab6e571f08fa573f69374ce8cd802909636",
-      "bytes": 101589
-    },
-    {
-      "url": "https://ayurveda.gov.lk/announcements/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-11-fbf7e9e99472.html",
-      "sha256": "fbf7e9e99472a7cdb88ca5ef6e762e09c72c339f6fca8aec7c77b8b51d550574",
-      "bytes": 83944
-    },
-    {
-      "url": "https://ayurveda.gov.lk/hospitals/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-12-68338d0a1c0b.html",
-      "sha256": "68338d0a1c0be92facb9857f23d3b4c2d8e72ffa4ea25129db630b51a0feb522",
-      "bytes": 74701
-    },
-    {
-      "url": "https://ayurveda.gov.lk/nitm/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-13-61d2665f9e6c.html",
-      "sha256": "61d2665f9e6cf77713b538f9957821bea41ed0252829ce7880b9b69382a931b4",
-      "bytes": 83161
-    },
-    {
-      "url": "https://ayurveda.gov.lk/bmari/",
-      "path": "audit.output/ayurveda.gov.lk/20261006.0940/snapshots/page-14-e982d9567fb3.html",
-      "sha256": "e982d9567fb3cf05f6ddb74b8bf703df2d56b76e5a403aebee1ba3fec1ab0f60",
-      "bytes": 82461
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1013,8 +134,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
       "executed": true,
       "checks": [
         {
@@ -1026,136 +147,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "HTTP checks did not run"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "fail",
+          "reason": "TLS certificate has expired"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "TLS hostname check did not run"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs ; Phone: 0.2025 27.10.2 (6 phone numbers found); Email: iau@ayurveda.gov.lk (3 email addresses found); Published named responsibility: department",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs "
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 0.2025 27.10.2 (6 phone numbers found); Email: iau@ayurveda.gov.lk (3 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing fees and payment evidence found"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: regulations"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published processing time: 14 days"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1175,7 +234,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.173.221.35",
+    "egress_ip": "20.186.238.6",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

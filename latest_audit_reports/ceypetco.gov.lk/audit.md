@@ -1,8 +1,8 @@
 # Website Audit: https://ceypetco.gov.lk/
 
-- Completed: 2026-10-06 09:25
+- Completed: 2026-10-07 08:50
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.221.35 (US, github-actions)
+- Vantage: 20.186.238.6 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 609, Dr. Danister de Silvea Mawatha, Colombo 09, Sri Lanka E-mail secretariat[at]ceypetco.gov.lk Telephone +94 117 2; Phone: 0 25 11 13 12 1 (40 phone numbers found); Email: # (16 email addresses found); Published named responsibility: department
+Published postal address: No. 609, Dr. Danister de Silvea Mawatha, Colombo 09, Sri Lanka E-mail secretariat[at]ceypetco.gov.lk Telephone +94 117 2; Phone: 0925895917- (85 phone numbers found); Email: # (46 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 609, Dr. Danister de Silvea Mawatha, Colombo 09, Sri Lanka E-mail secretariat[at]ceypetco.gov.lk Telephone +94 117 2 |
-| reachable_contacts | ✅ | Phone: 0 25 11 13 12 1 (40 phone numbers found); Email: # (16 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: department |
+| reachable_contacts | ✅ | Phone: 0925895917- (85 phone numbers found); Email: # (46 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 

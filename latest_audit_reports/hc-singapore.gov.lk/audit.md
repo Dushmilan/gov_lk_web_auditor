@@ -1,8 +1,8 @@
 # Website Audit: https://hc-singapore.gov.lk/
 
-- Completed: 2026-10-06 09:35
+- Completed: 2026-10-07 09:01
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.221.35 (US, github-actions)
+- Vantage: 20.186.238.6 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu; Phone: 0735366072 (18 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found); Published named responsibility: division
+Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu; Phone: 0736802587 (18 phone numbers found); Email: slemb.singapore@mfa.gov.lk (5 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu |
-| reachable_contacts | ✅ | Phone: 0735366072 (18 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0736802587 (18 phone numbers found); Email: slemb.singapore@mfa.gov.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.railway.gov.lk/
 
-- Completed: 2026-10-06 10:05
+- Completed: 2026-10-07 09:29
 - Overall result: ⚫ Level 0
-- Vantage: 52.173.221.35 (US, github-actions)
+- Vantage: 20.186.238.6 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❌
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Detected generic hosting marker: back soon
+timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -22,9 +22,21 @@ Detected generic hosting marker: back soon
 | domain_not_parked | ✅ | No parked-domain marker found |
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ❌ | Detected generic hosting marker: back soon |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://www.railway.gov.lk/: Probe 2: timed out; https://www.railway.gov.lk/: Probe 3: [Errno 111] Connection refused |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |
 | tls_hostname_matches | ❓ | timed out |
+
+## 🟠 Level 2: ❓
+
+To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
+
+Not run because 🔴 Level 1 did not pass
+
+## 🟢 Level 3: ❓
+
+To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
+
+Not run because 🟠 Level 2 did not pass

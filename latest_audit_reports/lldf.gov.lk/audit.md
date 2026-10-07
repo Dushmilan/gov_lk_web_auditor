@@ -1,8 +1,8 @@
 # Website Audit: https://lldf.gov.lk/
 
-- Completed: 2026-10-06 09:47
+- Completed: 2026-10-07 09:16
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.221.35 (US, github-actions)
+- Vantage: 20.186.238.6 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,7 +45,7 @@ Published postal address: lldf1916@gmail.com Fax : 0112691261 Downloads Loan App
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing processing time evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing legal basis evidence 
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://lldf.gov.lk/wp-content/uploads/2025/07/Loan-Application-English.pdf |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 2026-09-30 |

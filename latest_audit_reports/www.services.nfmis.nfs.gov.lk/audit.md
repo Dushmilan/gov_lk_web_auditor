@@ -1,8 +1,8 @@
 # Website Audit: https://www.services.nfmis.nfs.gov.lk/
 
-- Completed: 2026-10-06 09:08
+- Completed: 2026-10-07 08:34
 - Overall result: ⚫ Level 0
-- Vantage: 52.173.221.35 (US, github-actions)
+- Vantage: 20.186.238.6 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

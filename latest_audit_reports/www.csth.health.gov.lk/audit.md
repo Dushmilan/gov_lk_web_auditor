@@ -1,8 +1,8 @@
 # Website Audit: https://www.csth.health.gov.lk/
 
-- Completed: 2026-10-06 09:40
+- Completed: 2026-10-07 09:07
 - Overall result: 🔴 Level 1
-- Vantage: 52.173.221.35 (US, github-actions)
+- Vantage: 20.186.238.6 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

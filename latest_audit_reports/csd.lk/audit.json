@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "e3d3dddd-b454-4e30-870c-ba6feac678ad",
+  "audit_id": "d8536186-254a-4252-ba87-3a28e7ad0df5",
   "url": "https://csd.lk/",
   "normalized_url": "https://csd.lk/",
-  "started_at": "2026-10-06T09:47:52.585993+05:30",
-  "completed_at": "2026-10-06T09:48:09.361551+05:30",
+  "started_at": "2026-10-07T09:16:49.598108+05:30",
+  "completed_at": "2026-10-07T09:17:16.209084+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [523, 523, 523, 523]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,59 +26,411 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-06T09:47:52.792319+05:30"
+      "observed_at": "2026-10-07T09:16:53.456283+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-06T09:47:52.792337+05:30"
+      "observed_at": "2026-10-07T09:16:53.456302+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-06T09:47:52.816069+05:30"
+      "observed_at": "2026-10-07T09:16:53.482234+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 523 at https://csd.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://csd.lk/",
       "source": "https://csd.lk/",
-      "observed_at": "2026-10-06T09:48:09.353817+05:30"
+      "observed_at": "2026-10-07T09:17:15.544955+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 523 at http://csd.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://csd.lk/",
       "source": "http://csd.lk/",
-      "observed_at": "2026-10-06T09:48:09.353829+05:30"
+      "observed_at": "2026-10-07T09:17:15.544974+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 523 at https://csd.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://csd.lk/",
       "source": "https://csd.lk/",
-      "observed_at": "2026-10-06T09:48:09.353832+05:30"
+      "observed_at": "2026-10-07T09:17:15.544978+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 523 at http://csd.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://csd.lk/",
       "source": "http://csd.lk/",
-      "observed_at": "2026-10-06T09:48:09.353834+05:30"
+      "observed_at": "2026-10-07T09:17:15.544981+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://csd.lk/en/home/",
+      "source": "https://csd.lk/en/home/",
+      "observed_at": "2026-10-07T09:17:15.544984+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://csd.lk/ta/%e0%ae%ae%e0%af%81%e0%ae%95%e0%ae%aa%e0%af%8d%e0%ae%aa%e0%af%81/",
+      "source": "https://csd.lk/ta/%e0%ae%ae%e0%af%81%e0%ae%95%e0%ae%aa%e0%af%8d%e0%ae%aa%e0%af%81/",
+      "observed_at": "2026-10-07T09:17:15.544988+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://csd.lk/%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "source": "https://csd.lk/%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "observed_at": "2026-10-07T09:17:15.544990+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://csd.lk/%e0%b6%85%e0%b6%ad%e0%b7%92%e0%b6%bb%e0%b7%9a%e0%b6%9a-%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "source": "https://csd.lk/%e0%b6%85%e0%b6%ad%e0%b7%92%e0%b6%bb%e0%b7%9a%e0%b6%9a-%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "observed_at": "2026-10-07T09:17:15.544993+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://csd.lk/%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b7%8f-%e0%b7%80%e0%b6%b1%e0%b7%92%e0%b6%ad%e0%b7%8f-%e0%b6%92%e0%b6%9a%e0%b6%9a%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b6%b7%e0%b7%8f%e0%b6%b4%e0%b6%ad%e0%b7%92/",
+      "source": "https://csd.lk/%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b7%8f-%e0%b7%80%e0%b6%b1%e0%b7%92%e0%b6%ad%e0%b7%8f-%e0%b6%92%e0%b6%9a%e0%b6%9a%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b6%b7%e0%b7%8f%e0%b6%b4%e0%b6%ad%e0%b7%92/",
+      "observed_at": "2026-10-07T09:17:15.544996+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://csd.lk/%e0%b6%af%e0%b7%90%e0%b6%9a%e0%b7%8a%e0%b6%b8/",
+      "source": "https://csd.lk/%e0%b6%af%e0%b7%90%e0%b6%9a%e0%b7%8a%e0%b6%b8/",
+      "observed_at": "2026-10-07T09:17:15.544999+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://csd.lk/%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%94%e0%b7%84%e0%b6%ba/",
+      "source": "https://csd.lk/%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%94%e0%b7%84%e0%b6%ba/",
+      "observed_at": "2026-10-07T09:17:15.545002+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://csd.lk/csd%e0%b6%b0%e0%b6%a2%e0%b6%ba-%e0%b6%bd%e0%b7%8f%e0%b6%82%e0%b6%a1%e0%b6%b1%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%ba%e0%b7%94%e0%b6%b0-%e0%b7%80%e0%b7%93%e0%b6%bb%e0%b6%ba%e0%b6%b1%e0%b7%8a%e0%b6%9c/",
+      "source": "https://csd.lk/csd%e0%b6%b0%e0%b6%a2%e0%b6%ba-%e0%b6%bd%e0%b7%8f%e0%b6%82%e0%b6%a1%e0%b6%b1%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%ba%e0%b7%94%e0%b6%b0-%e0%b7%80%e0%b7%93%e0%b6%bb%e0%b6%ba%e0%b6%b1%e0%b7%8a%e0%b6%9c/",
+      "observed_at": "2026-10-07T09:17:15.545005+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://csd.lk/csd-%e0%b6%9c%e0%b7%93%e0%b6%ad%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%b4%e0%b6%af-%e0%b6%bb%e0%b6%a0%e0%b6%b1%e0%b6%ba/",
+      "source": "https://csd.lk/csd-%e0%b6%9c%e0%b7%93%e0%b6%ad%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%b4%e0%b6%af-%e0%b6%bb%e0%b6%a0%e0%b6%b1%e0%b6%ba/",
+      "observed_at": "2026-10-07T09:17:15.545008+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://csd.lk/csd-%e0%b6%89%e0%b6%ad%e0%b7%92%e0%b7%84%e0%b7%8f%e0%b7%83%e0%b6%ba/",
+      "source": "https://csd.lk/csd-%e0%b6%89%e0%b6%ad%e0%b7%92%e0%b7%84%e0%b7%8f%e0%b7%83%e0%b6%ba/",
+      "observed_at": "2026-10-07T09:17:15.545010+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 29 28 27 26 2",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "0 29 28 27 26 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 29 28 27 26 2",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "0 29 28 27 26 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 29 28 27 26 2",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "0 29 28 27 26 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 29 28 27 26 2",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "0 29 28 27 26 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/en/home/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://csd.lk/en/home/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/ta/%e0%ae%ae%e0%af%81%e0%ae%95%e0%ae%aa%e0%af%8d%e0%ae%aa%e0%af%81/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/ta/%e0%ae%ae%e0%af%81%e0%ae%95%e0%ae%aa%e0%af%8d%e0%ae%aa%e0%af%81/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/%e0%b6%85%e0%b6%ad%e0%b7%92%e0%b6%bb%e0%b7%9a%e0%b6%9a-%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/%e0%b6%85%e0%b6%ad%e0%b7%92%e0%b6%bb%e0%b7%9a%e0%b6%9a-%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b7%8f-%e0%b7%80%e0%b6%b1%e0%b7%92%e0%b6%ad%e0%b7%8f-%e0%b6%92%e0%b6%9a%e0%b6%9a%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b6%b7%e0%b7%8f%e0%b6%b4%e0%b6%ad%e0%b7%92/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b7%8f-%e0%b7%80%e0%b6%b1%e0%b7%92%e0%b6%ad%e0%b7%8f-%e0%b6%92%e0%b6%9a%e0%b6%9a%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b6%b7%e0%b7%8f%e0%b6%b4%e0%b6%ad%e0%b7%92/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/%e0%b6%af%e0%b7%90%e0%b6%9a%e0%b7%8a%e0%b6%b8/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/%e0%b6%af%e0%b7%90%e0%b6%9a%e0%b7%8a%e0%b6%b8/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%94%e0%b7%84%e0%b6%ba/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%94%e0%b7%84%e0%b6%ba/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/csd%e0%b6%b0%e0%b6%a2%e0%b6%ba-%e0%b6%bd%e0%b7%8f%e0%b6%82%e0%b6%a1%e0%b6%b1%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%ba%e0%b7%94%e0%b6%b0-%e0%b7%80%e0%b7%93%e0%b6%bb%e0%b6%ba%e0%b6%b1%e0%b7%8a%e0%b6%9c/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/csd%e0%b6%b0%e0%b6%a2%e0%b6%ba-%e0%b6%bd%e0%b7%8f%e0%b6%82%e0%b6%a1%e0%b6%b1%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%ba%e0%b7%94%e0%b6%b0-%e0%b7%80%e0%b7%93%e0%b6%bb%e0%b6%ba%e0%b6%b1%e0%b7%8a%e0%b6%9c/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/csd-%e0%b6%9c%e0%b7%93%e0%b6%ad%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%b4%e0%b6%af-%e0%b6%bb%e0%b6%a0%e0%b6%b1%e0%b6%ba/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/csd-%e0%b6%9c%e0%b7%93%e0%b6%ad%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%b4%e0%b6%af-%e0%b6%bb%e0%b6%a0%e0%b6%b1%e0%b6%ba/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 044 860 ",
+      "source": "https://csd.lk/csd-%e0%b6%89%e0%b6%ad%e0%b7%92%e0%b7%84%e0%b7%8f%e0%b7%83%e0%b6%ba/",
+      "data": {
+        "value": "+94 112 044 860 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://csd.lk/csd-%e0%b6%89%e0%b6%ad%e0%b7%92%e0%b7%84%e0%b7%8f%e0%b7%83%e0%b6%ba/",
+      "data": {
+        "value": "department"
+      }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 871 visible characters across 4 pages",
+      "detail": "Substantive page content: 7741 visible characters across 14 pages",
       "source": "https://csd.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [523, 523, 523, 523]",
-      "observed_at": "2026-10-06T09:48:09.361089+05:30"
     }
   ],
   "observations": [
@@ -99,37 +460,131 @@
     },
     {
       "url": "https://csd.lk/",
-      "status_code": 523,
+      "status_code": 200,
       "final_url": "https://csd.lk/",
       "redirects": [],
-      "elapsed_ms": 3330,
+      "elapsed_ms": 2020,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://csd.lk/",
-      "status_code": 523,
-      "final_url": "http://csd.lk/",
-      "redirects": [],
-      "elapsed_ms": 3111,
+      "status_code": 200,
+      "final_url": "https://csd.lk/",
+      "redirects": [
+        "https://csd.lk/"
+      ],
+      "elapsed_ms": 1141,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://csd.lk/",
-      "status_code": 523,
+      "status_code": 200,
       "final_url": "https://csd.lk/",
       "redirects": [],
-      "elapsed_ms": 4066,
+      "elapsed_ms": 896,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://csd.lk/",
-      "status_code": 523,
-      "final_url": "http://csd.lk/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/",
+      "redirects": [
+        "https://csd.lk/"
+      ],
+      "elapsed_ms": 1915,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/en/home/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/en/home/",
       "redirects": [],
-      "elapsed_ms": 4794,
+      "elapsed_ms": 1814,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/ta/%e0%ae%ae%e0%af%81%e0%ae%95%e0%ae%aa%e0%af%8d%e0%ae%aa%e0%af%81/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/ta/%e0%ae%ae%e0%af%81%e0%ae%95%e0%ae%aa%e0%af%8d%e0%ae%aa%e0%af%81/",
+      "redirects": [],
+      "elapsed_ms": 2179,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "redirects": [],
+      "elapsed_ms": 857,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/%e0%b6%85%e0%b6%ad%e0%b7%92%e0%b6%bb%e0%b7%9a%e0%b6%9a-%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/%e0%b6%85%e0%b6%ad%e0%b7%92%e0%b6%bb%e0%b7%9a%e0%b6%9a-%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "redirects": [],
+      "elapsed_ms": 1304,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b7%8f-%e0%b7%80%e0%b6%b1%e0%b7%92%e0%b6%ad%e0%b7%8f-%e0%b6%92%e0%b6%9a%e0%b6%9a%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b6%b7%e0%b7%8f%e0%b6%b4%e0%b6%ad%e0%b7%92/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b7%8f-%e0%b7%80%e0%b6%b1%e0%b7%92%e0%b6%ad%e0%b7%8f-%e0%b6%92%e0%b6%9a%e0%b6%9a%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b6%b7%e0%b7%8f%e0%b6%b4%e0%b6%ad%e0%b7%92/",
+      "redirects": [],
+      "elapsed_ms": 1109,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/%e0%b6%af%e0%b7%90%e0%b6%9a%e0%b7%8a%e0%b6%b8/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/%e0%b6%af%e0%b7%90%e0%b6%9a%e0%b7%8a%e0%b6%b8/",
+      "redirects": [],
+      "elapsed_ms": 1683,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%94%e0%b7%84%e0%b6%ba/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%94%e0%b7%84%e0%b6%ba/",
+      "redirects": [],
+      "elapsed_ms": 1391,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/csd%e0%b6%b0%e0%b6%a2%e0%b6%ba-%e0%b6%bd%e0%b7%8f%e0%b6%82%e0%b6%a1%e0%b6%b1%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%ba%e0%b7%94%e0%b6%b0-%e0%b7%80%e0%b7%93%e0%b6%bb%e0%b6%ba%e0%b6%b1%e0%b7%8a%e0%b6%9c/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/csd%e0%b6%b0%e0%b6%a2%e0%b6%ba-%e0%b6%bd%e0%b7%8f%e0%b6%82%e0%b6%a1%e0%b6%b1%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%ba%e0%b7%94%e0%b6%b0-%e0%b7%80%e0%b7%93%e0%b6%bb%e0%b6%ba%e0%b6%b1%e0%b7%8a%e0%b6%9c/",
+      "redirects": [],
+      "elapsed_ms": 845,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/csd-%e0%b6%9c%e0%b7%93%e0%b6%ad%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%b4%e0%b6%af-%e0%b6%bb%e0%b6%a0%e0%b6%b1%e0%b6%ba/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/csd-%e0%b6%9c%e0%b7%93%e0%b6%ad%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%b4%e0%b6%af-%e0%b6%bb%e0%b6%a0%e0%b6%b1%e0%b6%ba/",
+      "redirects": [],
+      "elapsed_ms": 1662,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://csd.lk/csd-%e0%b6%89%e0%b6%ad%e0%b7%92%e0%b7%84%e0%b7%8f%e0%b7%83%e0%b6%ba/",
+      "status_code": 200,
+      "final_url": "https://csd.lk/csd-%e0%b6%89%e0%b6%ad%e0%b7%92%e0%b7%84%e0%b7%8f%e0%b7%83%e0%b6%ba/",
+      "redirects": [],
+      "elapsed_ms": 579,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -137,27 +592,87 @@
   "snapshots": [
     {
       "url": "https://csd.lk/",
-      "path": "audit.output/csd.lk/20261006.0947/snapshots/page-01-eab0aec668ff.html",
-      "sha256": "eab0aec668ffaf3b6df038ef995cb62f6486c93333a420f142bcec226ecec978",
-      "bytes": 7139
-    },
-    {
-      "url": "http://csd.lk/",
-      "path": "audit.output/csd.lk/20261006.0947/snapshots/page-02-51873e8d96e7.html",
-      "sha256": "51873e8d96e70b043913a169aa32266bd925f7c3d1bd2bcf3ce70524bfa52be7",
-      "bytes": 7143
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-01-93904fe6257a.html",
+      "sha256": "93904fe6257a63cf43b4c1b653786eda71cf5f6c4dad34ed91bd00b5a825461a",
+      "bytes": 173566
     },
     {
       "url": "https://csd.lk/",
-      "path": "audit.output/csd.lk/20261006.0947/snapshots/page-03-344d2af090c3.html",
-      "sha256": "344d2af090c30c276437c6246dbfd57adf10caec19ce90f8a53415365764ec71",
-      "bytes": 7139
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-02-5a2b135c1a39.html",
+      "sha256": "5a2b135c1a3986c3411792ea6342a905d6a21646d70c740c40a93c646ed1100e",
+      "bytes": 173566
     },
     {
-      "url": "http://csd.lk/",
-      "path": "audit.output/csd.lk/20261006.0947/snapshots/page-04-a08ae339577a.html",
-      "sha256": "a08ae339577a4dd18b71ac452b2b8ee183d358d2a1a77be719890739e38819cc",
-      "bytes": 7143
+      "url": "https://csd.lk/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-03-6b089acfeaf0.html",
+      "sha256": "6b089acfeaf0b0bc5d82f76e337cae9a9aadde7565abfd59a6716ec86428d285",
+      "bytes": 173566
+    },
+    {
+      "url": "https://csd.lk/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-04-2106c0d6d67b.html",
+      "sha256": "2106c0d6d67b98691fe80385e6567bd9fd6fe41a3c39422497c3d9decf4c73a0",
+      "bytes": 173566
+    },
+    {
+      "url": "https://csd.lk/en/home/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-05-b84fc147fa61.html",
+      "sha256": "b84fc147fa61ba801f63338fe61f4ccd6c4c693fcdc9e556693c9ca71cc49af8",
+      "bytes": 154373
+    },
+    {
+      "url": "https://csd.lk/ta/%e0%ae%ae%e0%af%81%e0%ae%95%e0%ae%aa%e0%af%8d%e0%ae%aa%e0%af%81/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-06-580a5e91b0ae.html",
+      "sha256": "580a5e91b0ae529a4325e9e2ee6836f4048e06e003e42ac4c8cb09d3b98a0a2c",
+      "bytes": 169858
+    },
+    {
+      "url": "https://csd.lk/%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-07-3780fc100267.html",
+      "sha256": "3780fc100267087e702b2355959f26b0087bea9dc239adf82a530c0589caf641",
+      "bytes": 122647
+    },
+    {
+      "url": "https://csd.lk/%e0%b6%85%e0%b6%ad%e0%b7%92%e0%b6%bb%e0%b7%9a%e0%b6%9a-%e0%b6%85%e0%b6%b0%e0%b7%8a%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b7%82-%e0%b6%a2%e0%b6%b1%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-08-aab4ee227b2d.html",
+      "sha256": "aab4ee227b2d776e91575fa079bd7ab08e104b4ae928b8cd00bd84d23c199078",
+      "bytes": 124924
+    },
+    {
+      "url": "https://csd.lk/%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b7%8f-%e0%b7%80%e0%b6%b1%e0%b7%92%e0%b6%ad%e0%b7%8f-%e0%b6%92%e0%b6%9a%e0%b6%9a%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b6%b7%e0%b7%8f%e0%b6%b4%e0%b6%ad%e0%b7%92/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-09-d63f55422a29.html",
+      "sha256": "d63f55422a29f92fc60930812db72ac7fac5b540df567b59d3319c0dacd2a2f3",
+      "bytes": 110342
+    },
+    {
+      "url": "https://csd.lk/%e0%b6%af%e0%b7%90%e0%b6%9a%e0%b7%8a%e0%b6%b8/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-10-6c16c8c40856.html",
+      "sha256": "6c16c8c40856ec250455f4a95fe3e0373b4edb4e4191e3fcad18e95b5a34c258",
+      "bytes": 108636
+    },
+    {
+      "url": "https://csd.lk/%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%94%e0%b7%84%e0%b6%ba/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-11-ce05c01dec0b.html",
+      "sha256": "ce05c01dec0bcde1b40fda5af91ea3e5c71d925902e290667ec2432c73cd82e2",
+      "bytes": 109065
+    },
+    {
+      "url": "https://csd.lk/csd%e0%b6%b0%e0%b6%a2%e0%b6%ba-%e0%b6%bd%e0%b7%8f%e0%b6%82%e0%b6%a1%e0%b6%b1%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%ba%e0%b7%94%e0%b6%b0-%e0%b7%80%e0%b7%93%e0%b6%bb%e0%b6%ba%e0%b6%b1%e0%b7%8a%e0%b6%9c/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-12-921876892bc2.html",
+      "sha256": "921876892bc2c64c3d4059fa4760131897bdae3507b7b9e6c81398350de2fbef",
+      "bytes": 123953
+    },
+    {
+      "url": "https://csd.lk/csd-%e0%b6%9c%e0%b7%93%e0%b6%ad%e0%b6%ba-%e0%b7%83%e0%b7%84-%e0%b6%b4%e0%b6%af-%e0%b6%bb%e0%b6%a0%e0%b6%b1%e0%b6%ba/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-13-cf6bf01d2ca9.html",
+      "sha256": "cf6bf01d2ca93f8b406d5fdd9fcc9b193f275a2bcd169db0d81b8761933383d9",
+      "bytes": 107973
+    },
+    {
+      "url": "https://csd.lk/csd-%e0%b6%89%e0%b6%ad%e0%b7%92%e0%b7%84%e0%b7%8f%e0%b7%83%e0%b6%ba/",
+      "path": "audit.output/csd.lk/20261007.0916/snapshots/page-14-66f05ecea053.html",
+      "sha256": "66f05ecea05314c6e00f72e1545c56fc6e3a4770927d5159e920d4dc2044f9df",
+      "bytes": 112016
     }
   ],
   "reviewer_decisions": [],
@@ -173,8 +688,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [523, 523, 523, 523]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -186,44 +701,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [523, 523, 523, 523]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -243,9 +758,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found; No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
@@ -273,7 +807,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.173.221.35",
+    "egress_ip": "20.186.238.6",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

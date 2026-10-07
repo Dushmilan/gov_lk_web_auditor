@@ -1,8 +1,8 @@
 # Website Audit: https://nilis.cmb.ac.lk/home/
 
-- Completed: 2026-10-06 09:20
-- Overall result: 🔴 Level 1
-- Vantage: 52.173.221.35 (US, github-actions)
+- Completed: 2026-10-07 08:46
+- Overall result: 🟠 Level 2
+- Vantage: 20.186.238.6 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No phone evidence found
+Published postal address: NILIS, University of Colombo, Sri Lanka; Phone: +94 11 255 92 85 (7 phone numbers found); Email: Published email: (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: NILIS, University of Colombo, Sri Lanka |
-| reachable_contacts | ❓ | No phone evidence found |
+| reachable_contacts | ✅ | Phone: +94 11 255 92 85 (7 phone numbers found); Email: Published email: (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing published update date evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| legal_basis | ✅ | Published legal basis: circular |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://nilis.cmb.ac.lk/wp-content/uploads/2017/07/NILIS-MLS-By-law-Revised-2022-Approved-by-University.pdf |
+| published_update_date | ❓ | No passing published update date evidence found |

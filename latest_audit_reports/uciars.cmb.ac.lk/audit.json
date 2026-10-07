@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "55bdbe0d-04e0-4603-8f04-36138393a4b7",
+  "audit_id": "c12288fe-5555-4617-bf21-4a4f7a70cd4f",
   "url": "https://uciars.cmb.ac.lk/",
   "normalized_url": "https://uciars.cmb.ac.lk/",
-  "started_at": "2026-10-06T09:18:47.218971+05:30",
-  "completed_at": "2026-10-06T09:22:26.573404+05:30",
+  "started_at": "2026-10-07T08:46:19.790414+05:30",
+  "completed_at": "2026-10-07T08:47:14.689433+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: _ssl.c:993: The handshake operation timed out",
-      "tls_hostname_matches: _ssl.c:993: The handshake operation timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,117 +26,135 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-06T09:18:47.510734+05:30"
+      "observed_at": "2026-10-07T08:46:21.824124+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-06T09:18:47.510750+05:30"
+      "observed_at": "2026-10-07T08:46:21.824143+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "_ssl.c:993: The handshake operation timed out",
-      "observed_at": "2026-10-06T09:18:59.804263+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-07T08:46:22.832046+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: _ssl.c:993: The handshake operation timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://uciars.cmb.ac.lk/",
       "source": "https://uciars.cmb.ac.lk/",
-      "observed_at": "2026-10-06T09:22:26.271215+05:30"
+      "observed_at": "2026-10-07T08:47:13.800942+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://uciars.cmb.ac.lk/",
       "source": "http://uciars.cmb.ac.lk/",
-      "observed_at": "2026-10-06T09:22:26.271233+05:30"
+      "observed_at": "2026-10-07T08:47:13.800967+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://uciars.cmb.ac.lk/",
       "source": "https://uciars.cmb.ac.lk/",
-      "observed_at": "2026-10-06T09:22:26.271236+05:30"
+      "observed_at": "2026-10-07T08:47:13.800972+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: _ssl.c:993: The handshake operation timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://uciars.cmb.ac.lk/",
       "source": "http://uciars.cmb.ac.lk/",
-      "observed_at": "2026-10-06T09:22:26.271238+05:30"
+      "observed_at": "2026-10-07T08:47:13.800976+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://uciars.cmb.ac.lk/department-of-food-technology/",
+      "detail": "Probe 5: HTTP 200 at https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "observed_at": "2026-10-07T08:47:13.800979+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://uciars.cmb.ac.lk/department-of-food-technology/",
       "source": "https://uciars.cmb.ac.lk/department-of-food-technology/",
-      "observed_at": "2026-10-06T09:22:26.271240+05:30"
+      "observed_at": "2026-10-07T08:47:13.800982+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://uciars.cmb.ac.lk/contact/",
+      "detail": "Probe 7: HTTP 200 at https://uciars.cmb.ac.lk/contact/",
       "source": "https://uciars.cmb.ac.lk/contact/",
-      "observed_at": "2026-10-06T09:22:26.271242+05:30"
+      "observed_at": "2026-10-07T08:47:13.800985+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://uciars.cmb.ac.lk/security-services-2026/",
+      "detail": "Probe 8: HTTP 200 at https://uciars.cmb.ac.lk/security-services-2026/",
       "source": "https://uciars.cmb.ac.lk/security-services-2026/",
-      "observed_at": "2026-10-06T09:22:26.271243+05:30"
+      "observed_at": "2026-10-07T08:47:13.800988+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://uciars.cmb.ac.lk/bidding-document-maintenance-services-2025/",
+      "detail": "Probe 9: HTTP 200 at https://uciars.cmb.ac.lk/bidding-document-maintenance-services-2025/",
       "source": "https://uciars.cmb.ac.lk/bidding-document-maintenance-services-2025/",
-      "observed_at": "2026-10-06T09:22:26.271245+05:30"
+      "observed_at": "2026-10-07T08:47:13.800991+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://uciars.cmb.ac.lk/isatrs/",
+      "detail": "Probe 10: HTTP 200 at https://uciars.cmb.ac.lk/bidding-document-security-services/",
+      "source": "https://uciars.cmb.ac.lk/bidding-document-security-services/",
+      "observed_at": "2026-10-07T08:47:13.800995+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://uciars.cmb.ac.lk/isatrs/",
       "source": "https://uciars.cmb.ac.lk/isatrs/",
-      "observed_at": "2026-10-06T09:22:26.271246+05:30"
+      "observed_at": "2026-10-07T08:47:13.800998+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://uciars.cmb.ac.lk/atrs-journal/",
+      "detail": "Probe 12: HTTP 200 at https://uciars.cmb.ac.lk/atrs-journal/",
       "source": "https://uciars.cmb.ac.lk/atrs-journal/",
-      "observed_at": "2026-10-06T09:22:26.271248+05:30"
+      "observed_at": "2026-10-07T08:47:13.801001+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://uciars.cmb.ac.lk/category/research-articles/",
+      "detail": "Probe 13: HTTP 200 at https://uciars.cmb.ac.lk/category/research-articles/",
       "source": "https://uciars.cmb.ac.lk/category/research-articles/",
-      "observed_at": "2026-10-06T09:22:26.271250+05:30"
+      "observed_at": "2026-10-07T08:47:13.801004+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://uciars.cmb.ac.lk/category/monograph/",
+      "detail": "Probe 14: HTTP 200 at https://uciars.cmb.ac.lk/category/monograph/",
       "source": "https://uciars.cmb.ac.lk/category/monograph/",
-      "observed_at": "2026-10-06T09:22:26.271252+05:30"
+      "observed_at": "2026-10-07T08:47:13.801007+05:30"
     },
     {
-      "check": "http",
+      "check": "named_responsibility",
       "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://uciars.cmb.ac.lk/category/procurement-notice/",
-      "source": "https://uciars.cmb.ac.lk/category/procurement-notice/",
-      "observed_at": "2026-10-06T09:22:26.271253+05:30"
+      "detail": "Published named responsibility: director",
+      "source": "https://uciars.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
     },
     {
-      "check": "http",
+      "check": "named_responsibility",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://uciars.cmb.ac.lk/download-documents/",
-      "source": "https://uciars.cmb.ac.lk/download-documents/",
-      "observed_at": "2026-10-06T09:22:26.271254+05:30"
+      "detail": "Published named responsibility: director",
+      "source": "https://uciars.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
     },
     {
       "check": "named_responsibility",
@@ -151,10 +177,226 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 711210838 ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "+94 711210838 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 710334694 ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "+94 710334694 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 701256247 ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "+94 701256247 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000140622",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "0000140622"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 711212329 ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "+94 711212329 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 707630872 ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "+94 707630872 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 711050716 ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "+94 711050716 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 71 743 3965 ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "+94 71 743 3965 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 778175176 ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "+94 778175176 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 710446466 ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "+94 710446466 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: gayathri@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "gayathri@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: prathibhani@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "prathibhani@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: buddika@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "buddika@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: chathura@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "chathura@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: supun@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "supun@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: rifnas@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "rifnas@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: Ilmi@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "Ilmi@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: kevin@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "kevin@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nisansala@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "nisansala@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: hasanaka@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "hasanaka@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nelka@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "nelka@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town ",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94 715954578 ",
       "source": "https://uciars.cmb.ac.lk/department-of-food-technology/",
       "data": {
         "value": "+94 715954578 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000140622",
+      "source": "https://uciars.cmb.ac.lk/department-of-food-technology/",
+      "data": {
+        "value": "0000140622"
       }
     },
     {
@@ -187,15 +429,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0000140622",
-      "source": "https://uciars.cmb.ac.lk/department-of-food-technology/",
-      "data": {
-        "value": "0000140622"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94 769270457 ",
       "source": "https://uciars.cmb.ac.lk/department-of-food-technology/",
       "data": {
@@ -205,10 +438,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: chathuri@uciars.cmb.ac.lk",
+      "detail": "Published email: weerarathna@uciars.cmb.ac.lk",
       "source": "https://uciars.cmb.ac.lk/department-of-food-technology/",
       "data": {
-        "value": "chathuri@uciars.cmb.ac.lk"
+        "value": "weerarathna@uciars.cmb.ac.lk"
       }
     },
     {
@@ -232,10 +465,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: weerarathna@uciars.cmb.ac.lk",
+      "detail": "Published email: chathuri@uciars.cmb.ac.lk",
       "source": "https://uciars.cmb.ac.lk/department-of-food-technology/",
       "data": {
-        "value": "weerarathna@uciars.cmb.ac.lk"
+        "value": "chathuri@uciars.cmb.ac.lk"
       }
     },
     {
@@ -250,19 +483,19 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: hasanjana@uciars.cmb.ac.lk",
+      "detail": "Published email: rushanthi@uciars.cmb.ac.lk",
       "source": "https://uciars.cmb.ac.lk/department-of-food-technology/",
       "data": {
-        "value": "hasanjana@uciars.cmb.ac.lk"
+        "value": "rushanthi@uciars.cmb.ac.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: rushanthi@uciars.cmb.ac.lk",
+      "detail": "Published email: hasanjana@uciars.cmb.ac.lk",
       "source": "https://uciars.cmb.ac.lk/department-of-food-technology/",
       "data": {
-        "value": "rushanthi@uciars.cmb.ac.lk"
+        "value": "hasanjana@uciars.cmb.ac.lk"
       }
     },
     {
@@ -286,51 +519,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 703111105 ",
-      "source": "https://uciars.cmb.ac.lk/contact/",
-      "data": {
-        "value": "+94 703111105 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 472034209(",
-      "source": "https://uciars.cmb.ac.lk/contact/",
-      "data": {
-        "value": "+94 472034209("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 472034201 ",
-      "source": "https://uciars.cmb.ac.lk/contact/",
-      "data": {
-        "value": "+94 472034201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 472034207 ",
-      "source": "https://uciars.cmb.ac.lk/contact/",
-      "data": {
-        "value": "+94 472034207 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 047 222 0055 ",
-      "source": "https://uciars.cmb.ac.lk/contact/",
-      "data": {
-        "value": "047 222 0055 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94 472034208 ",
       "source": "https://uciars.cmb.ac.lk/contact/",
       "data": {
@@ -349,10 +537,55 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 703111105 ",
+      "source": "https://uciars.cmb.ac.lk/contact/",
+      "data": {
+        "value": "+94 703111105 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 047 222 0055 ",
+      "source": "https://uciars.cmb.ac.lk/contact/",
+      "data": {
+        "value": "047 222 0055 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 472034207 ",
+      "source": "https://uciars.cmb.ac.lk/contact/",
+      "data": {
+        "value": "+94 472034207 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 472034201 ",
+      "source": "https://uciars.cmb.ac.lk/contact/",
+      "data": {
+        "value": "+94 472034201 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94 472034211 (",
       "source": "https://uciars.cmb.ac.lk/contact/",
       "data": {
         "value": "+94 472034211 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 472034209(",
+      "source": "https://uciars.cmb.ac.lk/contact/",
+      "data": {
+        "value": "+94 472034209("
       }
     },
     {
@@ -367,19 +600,19 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: sar@uciars.cmb.ac.lk",
+      "detail": "Published email: sab@uciars.cmb.ac.lk",
       "source": "https://uciars.cmb.ac.lk/contact/",
       "data": {
-        "value": "sar@uciars.cmb.ac.lk"
+        "value": "sab@uciars.cmb.ac.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: sab@uciars.cmb.ac.lk",
+      "detail": "Published email: sar@uciars.cmb.ac.lk",
       "source": "https://uciars.cmb.ac.lk/contact/",
       "data": {
-        "value": "sab@uciars.cmb.ac.lk"
+        "value": "sar@uciars.cmb.ac.lk"
       }
     },
     {
@@ -428,12 +661,21 @@
       }
     },
     {
-      "check": "phone",
+      "check": "email",
       "status": "pass",
-      "detail": "Published phone: 007 200 160 0",
-      "source": "https://uciars.cmb.ac.lk/isatrs/",
+      "detail": "Published email: ",
+      "source": "https://uciars.cmb.ac.lk/bidding-document-security-services/",
       "data": {
-        "value": "007 200 160 0"
+        "value": ""
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://uciars.cmb.ac.lk/bidding-document-security-services/",
+      "data": {
+        "value": "department"
       }
     },
     {
@@ -448,10 +690,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0150670603",
+      "detail": "Published phone: 0679749108",
       "source": "https://uciars.cmb.ac.lk/isatrs/",
       "data": {
-        "value": "0150670603"
+        "value": "0679749108"
       }
     },
     {
@@ -466,19 +708,37 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0679749108",
+      "detail": "Published phone: 0150670603",
       "source": "https://uciars.cmb.ac.lk/isatrs/",
       "data": {
-        "value": "0679749108"
+        "value": "0150670603"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 007 200 160 0",
+      "source": "https://uciars.cmb.ac.lk/isatrs/",
+      "data": {
+        "value": "007 200 160 0"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: dr@uciars.cmb.ac.lk",
+      "detail": "Published email: gayathri@uciars.cmb.ac.lk",
       "source": "https://uciars.cmb.ac.lk/isatrs/",
       "data": {
-        "value": "dr@uciars.cmb.ac.lk"
+        "value": "gayathri@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sab@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/isatrs/",
+      "data": {
+        "value": "sab@uciars.cmb.ac.lk"
       }
     },
     {
@@ -502,15 +762,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: nisansala@uciars.cmb.ac.lk",
-      "source": "https://uciars.cmb.ac.lk/isatrs/",
-      "data": {
-        "value": "nisansala@uciars.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: isatrs@uciars.cmb.ac.lk",
       "source": "https://uciars.cmb.ac.lk/isatrs/",
       "data": {
@@ -520,10 +771,19 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: gayathri@uciars.cmb.ac.lk",
+      "detail": "Published email: dr@uciars.cmb.ac.lk",
       "source": "https://uciars.cmb.ac.lk/isatrs/",
       "data": {
-        "value": "gayathri@uciars.cmb.ac.lk"
+        "value": "dr@uciars.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nisansala@uciars.cmb.ac.lk",
+      "source": "https://uciars.cmb.ac.lk/isatrs/",
+      "data": {
+        "value": "nisansala@uciars.cmb.ac.lk"
       }
     },
     {
@@ -533,15 +793,6 @@
       "source": "https://uciars.cmb.ac.lk/isatrs/",
       "data": {
         "value": "buddhika@uciars.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sab@uciars.cmb.ac.lk",
-      "source": "https://uciars.cmb.ac.lk/isatrs/",
-      "data": {
-        "value": "sab@uciars.cmb.ac.lk"
       }
     },
     {
@@ -662,36 +913,9 @@
       }
     },
     {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://uciars.cmb.ac.lk/category/procurement-notice/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://uciars.cmb.ac.lk/download-documents/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://uciars.cmb.ac.lk/wp-content/uploads/2023/12/Medical-Report-Submission-Form.pdf",
-      "source": "https://uciars.cmb.ac.lk/download-documents/",
-      "data": {
-        "value": "https://uciars.cmb.ac.lk/wp-content/uploads/2023/12/Medical-Report-Submission-Form.pdf"
-      }
-    },
-    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 16410 visible characters across 12 pages",
+      "detail": "Substantive page content: 16410 visible characters across 14 pages",
       "source": "https://uciars.cmb.ac.lk/"
     }
   ],
@@ -712,19 +936,19 @@
     },
     {
       "host": "uciars.cmb.ac.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "_ssl.c:993: The handshake operation timed out"
+      "status": "valid",
+      "expires_at": "2026-11-26T22:11:01+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://uciars.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://uciars.cmb.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "_ssl.c:993: The handshake operation timed out"
+      "elapsed_ms": 4664,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://uciars.cmb.ac.lk/",
@@ -733,7 +957,7 @@
       "redirects": [
         "https://uciars.cmb.ac.lk/"
       ],
-      "elapsed_ms": 4707,
+      "elapsed_ms": 1993,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -742,25 +966,36 @@
       "status_code": 200,
       "final_url": "https://uciars.cmb.ac.lk/",
       "redirects": [],
-      "elapsed_ms": 2258,
+      "elapsed_ms": 2233,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://uciars.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://uciars.cmb.ac.lk/",
+      "redirects": [
+        "https://uciars.cmb.ac.lk/"
+      ],
+      "elapsed_ms": 1912,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "status_code": 200,
+      "final_url": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "_ssl.c:993: The handshake operation timed out"
+      "elapsed_ms": 1781,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://uciars.cmb.ac.lk/department-of-food-technology/",
       "status_code": 200,
       "final_url": "https://uciars.cmb.ac.lk/department-of-food-technology/",
       "redirects": [],
-      "elapsed_ms": 2235,
+      "elapsed_ms": 1848,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -769,7 +1004,7 @@
       "status_code": 200,
       "final_url": "https://uciars.cmb.ac.lk/contact/",
       "redirects": [],
-      "elapsed_ms": 1716,
+      "elapsed_ms": 1566,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -778,7 +1013,7 @@
       "status_code": 200,
       "final_url": "https://uciars.cmb.ac.lk/security-services-2026/",
       "redirects": [],
-      "elapsed_ms": 2908,
+      "elapsed_ms": 1324,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -787,7 +1022,16 @@
       "status_code": 200,
       "final_url": "https://uciars.cmb.ac.lk/bidding-document-maintenance-services-2025/",
       "redirects": [],
-      "elapsed_ms": 1620,
+      "elapsed_ms": 1287,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://uciars.cmb.ac.lk/bidding-document-security-services/",
+      "status_code": 200,
+      "final_url": "https://uciars.cmb.ac.lk/bidding-document-security-services/",
+      "redirects": [],
+      "elapsed_ms": 1343,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -796,7 +1040,7 @@
       "status_code": 200,
       "final_url": "https://uciars.cmb.ac.lk/isatrs/",
       "redirects": [],
-      "elapsed_ms": 1695,
+      "elapsed_ms": 4773,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -805,7 +1049,7 @@
       "status_code": 200,
       "final_url": "https://uciars.cmb.ac.lk/atrs-journal/",
       "redirects": [],
-      "elapsed_ms": 2275,
+      "elapsed_ms": 7914,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -814,7 +1058,7 @@
       "status_code": 200,
       "final_url": "https://uciars.cmb.ac.lk/category/research-articles/",
       "redirects": [],
-      "elapsed_ms": 1818,
+      "elapsed_ms": 8795,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -823,25 +1067,7 @@
       "status_code": 200,
       "final_url": "https://uciars.cmb.ac.lk/category/monograph/",
       "redirects": [],
-      "elapsed_ms": 1643,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://uciars.cmb.ac.lk/category/procurement-notice/",
-      "status_code": 200,
-      "final_url": "https://uciars.cmb.ac.lk/category/procurement-notice/",
-      "redirects": [],
-      "elapsed_ms": 1639,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://uciars.cmb.ac.lk/download-documents/",
-      "status_code": 200,
-      "final_url": "https://uciars.cmb.ac.lk/download-documents/",
-      "redirects": [],
-      "elapsed_ms": 1620,
+      "elapsed_ms": 1288,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -849,75 +1075,87 @@
   "snapshots": [
     {
       "url": "https://uciars.cmb.ac.lk/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-01-6a2a51af05d9.html",
-      "sha256": "6a2a51af05d9b6044f855f4f1a4e3c8c4a162ae5c7ac1db2c7ad548edf9a9569",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-01-1d3f434751b0.html",
+      "sha256": "1d3f434751b05d3339ade67b771be6a37e041c37ca3e67e106e5baf73e05fa49",
       "bytes": 122072
     },
     {
       "url": "https://uciars.cmb.ac.lk/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-02-6a2a51af05d9.html",
-      "sha256": "6a2a51af05d9b6044f855f4f1a4e3c8c4a162ae5c7ac1db2c7ad548edf9a9569",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-02-1d3f434751b0.html",
+      "sha256": "1d3f434751b05d3339ade67b771be6a37e041c37ca3e67e106e5baf73e05fa49",
       "bytes": 122072
     },
     {
+      "url": "https://uciars.cmb.ac.lk/",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-03-1d3f434751b0.html",
+      "sha256": "1d3f434751b05d3339ade67b771be6a37e041c37ca3e67e106e5baf73e05fa49",
+      "bytes": 122072
+    },
+    {
+      "url": "https://uciars.cmb.ac.lk/",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-04-1d3f434751b0.html",
+      "sha256": "1d3f434751b05d3339ade67b771be6a37e041c37ca3e67e106e5baf73e05fa49",
+      "bytes": 122072
+    },
+    {
+      "url": "https://uciars.cmb.ac.lk/department-of-agro-technology/",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-05-5c8bf9c9a626.html",
+      "sha256": "5c8bf9c9a626fa34b923c8ea64f0da88d7981e5ad88ca5d67411fef260649493",
+      "bytes": 61836
+    },
+    {
       "url": "https://uciars.cmb.ac.lk/department-of-food-technology/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-03-a9c597b7d132.html",
-      "sha256": "a9c597b7d132c9f15cfaac61969e1d61194ad465fa387b3c1e2ca75c7d726038",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-06-17f8c1d9abbe.html",
+      "sha256": "17f8c1d9abbe2bfa43b6637f7110bf15dd68f6d37301ded22c89db202280b261",
       "bytes": 56863
     },
     {
       "url": "https://uciars.cmb.ac.lk/contact/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-04-0ec94dd7fd23.html",
-      "sha256": "0ec94dd7fd2320c0ebd8a0a29442fcb67fd7bf379a31efd37ec2c911f80cad57",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-07-fafbef7d582f.html",
+      "sha256": "fafbef7d582f5f877b3822f17ecef8e4a0c8a7aebd0c216fc7cdfb2cb9611a79",
       "bytes": 49360
     },
     {
       "url": "https://uciars.cmb.ac.lk/security-services-2026/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-05-f64b45a52279.html",
-      "sha256": "f64b45a5227960d0f64911224b425d9564806f9fd58daa27e0784669e834f2cb",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-08-dfecc7d15522.html",
+      "sha256": "dfecc7d15522d440fe3574a75528771c3658ceb3d6605b5a57815e8964081908",
       "bytes": 47154
     },
     {
       "url": "https://uciars.cmb.ac.lk/bidding-document-maintenance-services-2025/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-06-489530a25295.html",
-      "sha256": "489530a252952eeb5bc1db1648c8b4d2edc92983dc4c6042b4a511a9bb091876",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-09-d8cb55844431.html",
+      "sha256": "d8cb558444314aac4b60b6d54f407b1062bff024bc18c94e077ceaf08fe90b1a",
       "bytes": 49039
     },
     {
+      "url": "https://uciars.cmb.ac.lk/bidding-document-security-services/",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-10-a9698970480b.html",
+      "sha256": "a9698970480b7d2099e57f9fe7bb7af2d91ac7b1bd438ae9cdd6b414a6e95472",
+      "bytes": 45276
+    },
+    {
       "url": "https://uciars.cmb.ac.lk/isatrs/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-07-0743238f7acc.html",
-      "sha256": "0743238f7acc174fd589cd3e89c943f71d65c473b7d88d120e7ad96b91b368a6",
-      "bytes": 104305
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-11-7830a84dff7e.html",
+      "sha256": "7830a84dff7e799e56c270608a4bd69d4b1a549806f1f092336f3cebe0f61b70",
+      "bytes": 104306
     },
     {
       "url": "https://uciars.cmb.ac.lk/atrs-journal/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-08-0651df84cac1.html",
-      "sha256": "0651df84cac159296563fa188af0d62100ad437ad4a3198533bdfad03ff18d54",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-12-a6ff9558957d.html",
+      "sha256": "a6ff9558957d621e43ebe6aef82c2293ceca6f62bdc7f89e773e4b63245502c8",
       "bytes": 66609
     },
     {
       "url": "https://uciars.cmb.ac.lk/category/research-articles/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-09-39b05ae31016.html",
-      "sha256": "39b05ae31016a5e74f005064d073f03a1fb9e7d48b359db900e7f0f121fb4a1b",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-13-e25a9e5b0c99.html",
+      "sha256": "e25a9e5b0c99852da5ed0ffae6ca70c6efb8c7e2e6bb40dab5938567f8c4da05",
       "bytes": 54150
     },
     {
       "url": "https://uciars.cmb.ac.lk/category/monograph/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-10-121ac1fee794.html",
-      "sha256": "121ac1fee794df72139eee55de53506ffc401fb63cb74edc0fb54a5de157d8fd",
+      "path": "audit.output/uciars.cmb.ac.lk/20261007.0846/snapshots/page-14-a3ae2e8b8e4c.html",
+      "sha256": "a3ae2e8b8e4cda141b51c7a45baa0e2ceb67b267e7f47894441bc4a88c7f8424",
       "bytes": 42434
-    },
-    {
-      "url": "https://uciars.cmb.ac.lk/category/procurement-notice/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-11-a448c9c792d7.html",
-      "sha256": "a448c9c792d71993a66e4705a1804e160e9b107dae9f07b73727fc775c683037",
-      "bytes": 64846
-    },
-    {
-      "url": "https://uciars.cmb.ac.lk/download-documents/",
-      "path": "audit.output/uciars.cmb.ac.lk/20261006.0918/snapshots/page-12-080e6babe2ec.html",
-      "sha256": "080e6babe2ec0f6ad86de36c930e1762702bf23ae4421e2cd747e99f11ddad79",
-      "bytes": 38805
     }
   ],
   "reviewer_decisions": [],
@@ -933,8 +1171,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "_ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -971,7 +1209,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: https://uciars.cmb.ac.lk/: Probe 1: _ssl.c:993: The handshake operation timed out; http://uciars.cmb.ac.lk/: Probe 4: _ssl.c:993: The handshake operation timed out"
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -988,32 +1226,94 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town ; Phone: +94 711210838 (26 phone numbers found); Email: gayathri@uciars.cmb.ac.lk (26 email addresses found); Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town "
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 711210838 (26 phone numbers found); Email: gayathri@uciars.cmb.ac.lk (26 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: RS 2026"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published processing time: 25 days"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published downloadable form: https://uciars.cmb.ac.lk/wp-content/uploads/2017/06/Author-Declaration-Form-1.docx"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -1033,7 +1333,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.173.221.35",
+    "egress_ip": "20.186.238.6",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
