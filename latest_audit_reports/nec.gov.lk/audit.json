@@ -1,24 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "e1ca29f9-55b5-4741-97f2-a12d85281daa",
+  "audit_id": "67655110-dee0-4cd0-b0e5-fefe4032dfea",
   "url": "https://nec.gov.lk",
   "normalized_url": "https://nec.gov.lk/",
-  "started_at": "2026-10-07T08:48:48.809225+05:30",
-  "completed_at": "2026-10-07T08:49:16.878128+05:30",
+  "started_at": "2026-10-08T09:02:55.779813+05:30",
+  "completed_at": "2026-10-08T09:03:01.695589+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "tls_not_expired: TLS certificate has expired"
     ]
   },
   "evidence": [
@@ -26,735 +18,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-07T08:48:49.204927+05:30"
+      "observed_at": "2026-10-08T09:02:56.152971+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-07T08:48:49.204942+05:30"
+      "observed_at": "2026-10-08T09:02:56.152989+05:30"
     },
     {
-      "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-07T08:48:49.580233+05:30"
+      "check": "tls_expired",
+      "status": "fail",
+      "detail": "TLS certificate has expired",
+      "observed_at": "2026-10-08T09:02:56.416085+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://nec.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "https://nec.gov.lk/",
-      "observed_at": "2026-10-07T08:49:16.074428+05:30"
+      "observed_at": "2026-10-08T09:03:01.695427+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://nec.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "http://nec.gov.lk/",
-      "observed_at": "2026-10-07T08:49:16.074448+05:30"
+      "observed_at": "2026-10-08T09:03:01.695445+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://nec.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "https://nec.gov.lk/",
-      "observed_at": "2026-10-07T08:49:16.074452+05:30"
+      "observed_at": "2026-10-08T09:03:01.695449+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://nec.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "http://nec.gov.lk/",
-      "observed_at": "2026-10-07T08:49:16.074456+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://nec.gov.lk/contact-us-2/",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "observed_at": "2026-10-07T08:49:16.074458+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://nec.gov.lk/",
-      "source": "http://nec.gov.lk/",
-      "observed_at": "2026-10-07T08:49:16.074461+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://nec.gov.lk/about-us/overview/",
-      "source": "https://nec.gov.lk/about-us/overview/",
-      "observed_at": "2026-10-07T08:49:16.074464+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://nec.gov.lk/act/",
-      "source": "https://nec.gov.lk/act/",
-      "observed_at": "2026-10-07T08:49:16.074467+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://nec.gov.lk/about-us/organization-structure/",
-      "source": "https://nec.gov.lk/about-us/organization-structure/",
-      "observed_at": "2026-10-07T08:49:16.074470+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "source": "https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "observed_at": "2026-10-07T08:49:16.074473+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "source": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "observed_at": "2026-10-07T08:49:16.074476+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://nec.gov.lk/standing-comitees/",
-      "source": "https://nec.gov.lk/standing-comitees/",
-      "observed_at": "2026-10-07T08:49:16.074479+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://nec.gov.lk/about-us/chairman/",
-      "source": "https://nec.gov.lk/about-us/chairman/",
-      "observed_at": "2026-10-07T08:49:16.074481+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://nec.gov.lk/about-us/vice-chairman/policy/",
-      "source": "https://nec.gov.lk/about-us/vice-chairman/policy/",
-      "observed_at": "2026-10-07T08:49:16.074484+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112662032 ",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "+94 112662032 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112662019 ",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "+94 112662019 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112662057 ",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "+94 112662057 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112662047 ",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "+94 112662047 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112662034 ",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "+94 112662034 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112662059 ",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "+94 112662059 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112662049 ",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "+94 112662049 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: achalanec2021@gmail.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "achalanec2021@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nisantaprem78@gmail.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "nisantaprem78@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: vcplnec@slt.lk",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "vcplnec@slt.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: hiranthi72@gmail.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "hiranthi72@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: suranga.lakmal91@gmail.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "suranga.lakmal91@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dumznec@gmail.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "dumznec@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rajika.ranasinghe@gmail.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "rajika.ranasinghe@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: vcpolicynec@slt.lk",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "vcpolicynec@slt.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: vranawaka@hotmail.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "vranawaka@hotmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chnec2018@gmail.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "chnec2018@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nilmi_59@yahoo.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "nilmi_59@yahoo.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kaushi.geethamali@gmail.com",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "kaushi.geethamali@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: secnec@slt.lk",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "secnec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7 ,Sri Lanka",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7 ,Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://nec.gov.lk/contact-us-2/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/about-us/overview/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/about-us/overview/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/about-us/overview/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/act/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/act/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/act/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/about-us/organization-structure/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/about-us/organization-structure/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/about-us/organization-structure/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 024.05.03- 202",
-      "source": "https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "data": {
-        "value": "024.05.03- 202"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: vcpolicynec@slt.lk",
-      "source": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "data": {
-        "value": "vcpolicynec@slt.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chnec2018@gmail.com",
-      "source": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "data": {
-        "value": "chnec2018@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/standing-comitees/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/standing-comitees/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/standing-comitees/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/about-us/chairman/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/about-us/chairman/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/about-us/chairman/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2662064 ",
-      "source": "https://nec.gov.lk/about-us/vice-chairman/policy/",
-      "data": {
-        "value": "+94 11 2662064 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sponec@slt.lk",
-      "source": "https://nec.gov.lk/about-us/vice-chairman/policy/",
-      "data": {
-        "value": "sponec@slt.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka",
-      "source": "https://nec.gov.lk/about-us/vice-chairman/policy/",
-      "data": {
-        "value": ", Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 12285 visible characters across 14 pages",
-      "source": "https://nec.gov.lk/"
+      "observed_at": "2026-10-08T09:03:01.695453+05:30"
     }
   ],
   "observations": [
@@ -774,230 +78,49 @@
     },
     {
       "host": "nec.gov.lk",
-      "status": "valid",
+      "status": "expired",
       "expires_at": "2026-10-08T05:29:59+05:30",
       "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "detail": "TLS certificate has expired"
     },
     {
       "url": "https://nec.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1782,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
     },
     {
       "url": "http://nec.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/",
-      "redirects": [
-        "https://nec.gov.lk/"
-      ],
-      "elapsed_ms": 1679,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
     },
     {
       "url": "https://nec.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1730,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
     },
     {
       "url": "http://nec.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/",
-      "redirects": [
-        "https://nec.gov.lk/"
-      ],
-      "elapsed_ms": 1771,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nec.gov.lk/contact-us-2/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/contact-us-2/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1369,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://nec.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/",
-      "redirects": [
-        "https://nec.gov.lk/"
-      ],
-      "elapsed_ms": 1561,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/overview/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/about-us/overview/",
-      "redirects": [],
-      "elapsed_ms": 1416,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nec.gov.lk/act/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/act/",
-      "redirects": [],
-      "elapsed_ms": 1435,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/organization-structure/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/about-us/organization-structure/",
-      "redirects": [],
-      "elapsed_ms": 1219,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "redirects": [],
-      "elapsed_ms": 1195,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "redirects": [],
-      "elapsed_ms": 1573,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nec.gov.lk/standing-comitees/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/standing-comitees/",
-      "redirects": [],
-      "elapsed_ms": 1222,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/chairman/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/about-us/chairman/",
-      "redirects": [],
-      "elapsed_ms": 1797,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/vice-chairman/policy/",
-      "status_code": 200,
-      "final_url": "https://nec.gov.lk/about-us/vice-chairman/policy/",
-      "redirects": [],
-      "elapsed_ms": 1150,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://nec.gov.lk/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-01-26961bcdd54b.html",
-      "sha256": "26961bcdd54b7f5a7b305cec94f2d9f252cf0f856440840b53d329b77fd84a51",
-      "bytes": 161121
-    },
-    {
-      "url": "https://nec.gov.lk/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-02-94e3d093d299.html",
-      "sha256": "94e3d093d299f75b535a58ef4448e5ebd84a1998576a7aeb38598e6b610d923d",
-      "bytes": 161121
-    },
-    {
-      "url": "https://nec.gov.lk/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-03-ff20400dcc3b.html",
-      "sha256": "ff20400dcc3b3ee551769789ff3739f7460dd8d8d16661025cf973ad8f4f82e1",
-      "bytes": 161121
-    },
-    {
-      "url": "https://nec.gov.lk/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-04-5bf951ba40ab.html",
-      "sha256": "5bf951ba40abffd965582bc9179a8a4629089878f4e8ff97d2ffb507a9b0127b",
-      "bytes": 161121
-    },
-    {
-      "url": "https://nec.gov.lk/contact-us-2/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-05-00bce675668d.html",
-      "sha256": "00bce675668d8a7c03228e909cd50b7aaa90fb84bd24a11563da4bae393aa54c",
-      "bytes": 138922
-    },
-    {
-      "url": "https://nec.gov.lk/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-06-13c8c3d6eab2.html",
-      "sha256": "13c8c3d6eab214c0e2dcf54162c1b9d082a07a5b0ed8dc895e415d5fde8b4387",
-      "bytes": 161121
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/overview/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-07-5d237ba2facd.html",
-      "sha256": "5d237ba2facd3dcdbc777c46426b6f80efc4759f1b759d6c8b7caab23370ee77",
-      "bytes": 136806
-    },
-    {
-      "url": "https://nec.gov.lk/act/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-08-29a77d488a1d.html",
-      "sha256": "29a77d488a1debb3e63df6e28261c26b50e682e2d6ca4146c8401051592aeb1a",
-      "bytes": 108413
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/organization-structure/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-09-d7d13e3190cb.html",
-      "sha256": "d7d13e3190cbbefffbae03e156e1736a47b05b250f2f9931beb3e029de0d0f12",
-      "bytes": 127567
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/commissions-2/previous-commissions/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-10-e978c1c588be.html",
-      "sha256": "e978c1c588be619e86f1b2d1b342318f021bfd7f4a3f34c2c4228028ed04a8b2",
-      "bytes": 150763
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/commissions-2/present-commission-2/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-11-7048a83e68f1.html",
-      "sha256": "7048a83e68f1c1b77ff6f1b74c394c1a2472d0ab6ef5ac60c12357628c122bbd",
-      "bytes": 189052
-    },
-    {
-      "url": "https://nec.gov.lk/standing-comitees/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-12-71cfa0a312aa.html",
-      "sha256": "71cfa0a312aad245fca069bfa17ed340d565d1e1643ec295036303940e4b4896",
-      "bytes": 130429
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/chairman/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-13-7d4242d6ed13.html",
-      "sha256": "7d4242d6ed13cd6fc462773d80cba178eeb4f3250c217f6a65e8086ce3b1e391",
-      "bytes": 129295
-    },
-    {
-      "url": "https://nec.gov.lk/about-us/vice-chairman/policy/",
-      "path": "audit.output/nec.gov.lk/20261007.0848/snapshots/page-14-e76d493fef7d.html",
-      "sha256": "e76d493fef7db19036f4fded9a8e497abf138e2af7e9d1d44d626db5d96e6598",
-      "bytes": 125727
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1011,8 +134,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
       "executed": true,
       "checks": [
         {
@@ -1024,136 +147,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "HTTP checks did not run"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "fail",
+          "reason": "TLS certificate has expired"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "TLS hostname check did not run"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka; Phone: +94 11 2662064 (9 phone numbers found); Email: sponec@slt.lk (14 email addresses found); Published named responsibility: division",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: , Bauddhaloka Mawatha, Colombo 7, Sri Lanka"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 11 2662064 (9 phone numbers found); Email: sponec@slt.lk (14 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing fees and payment evidence found"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing legal basis evidence found"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1173,7 +234,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.186.238.6",
+    "egress_ip": "20.169.58.2",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

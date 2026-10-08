@@ -1,24 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "9014b471-d315-4394-8160-9e35099dd937",
+  "audit_id": "d633a454-cb52-4ee5-a9af-bb3e79170ae3",
   "url": "https://drc.gov.lk/",
   "normalized_url": "https://drc.gov.lk/",
-  "started_at": "2026-10-07T09:20:35.341996+05:30",
-  "completed_at": "2026-10-07T09:25:14.987822+05:30",
+  "started_at": "2026-10-08T09:35:46.429499+05:30",
+  "completed_at": "2026-10-08T09:53:38.560515+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,117 +18,117 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-07T09:20:37.133294+05:30"
+      "observed_at": "2026-10-08T09:35:47.890168+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-07T09:20:37.133314+05:30"
+      "observed_at": "2026-10-08T09:35:47.890189+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-07T09:20:38.349845+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-08T09:35:58.666597+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://drc.gov.lk/intro/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://drc.gov.lk/",
-      "observed_at": "2026-10-07T09:25:14.675657+05:30"
+      "observed_at": "2026-10-08T09:53:38.270505+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://drc.gov.lk/intro/",
       "source": "http://drc.gov.lk/",
-      "observed_at": "2026-10-07T09:25:14.675677+05:30"
+      "observed_at": "2026-10-08T09:53:38.270522+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://drc.gov.lk/intro/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://drc.gov.lk/",
-      "observed_at": "2026-10-07T09:25:14.675681+05:30"
+      "observed_at": "2026-10-08T09:53:38.270525+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://drc.gov.lk/intro/",
       "source": "http://drc.gov.lk/",
-      "observed_at": "2026-10-07T09:25:14.675685+05:30"
+      "observed_at": "2026-10-08T09:53:38.270528+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://drc.gov.lk/en/",
       "source": "http://www.drc.gov.lk/en/",
-      "observed_at": "2026-10-07T09:25:14.675688+05:30"
+      "observed_at": "2026-10-08T09:53:38.270531+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 6: HTTP 200 at https://drc.gov.lk/intro/",
       "source": "https://drc.gov.lk/",
-      "observed_at": "2026-10-07T09:25:14.675691+05:30"
+      "observed_at": "2026-10-08T09:53:38.270534+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 7: HTTP 200 at https://drc.gov.lk/en/?page_id=1594",
       "source": "https://drc.gov.lk/en/?page_id=1594",
-      "observed_at": "2026-10-07T09:25:14.675694+05:30"
+      "observed_at": "2026-10-08T09:53:38.270537+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://drc.gov.lk/en/?page_id=2251",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "observed_at": "2026-10-07T09:25:14.675696+05:30"
+      "detail": "Probe 8: HTTP 200 at https://drc.gov.lk/en/?page_id=1921",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "observed_at": "2026-10-08T09:53:38.270539+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://drc.gov.lk/en/?page_id=4901",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "observed_at": "2026-10-07T09:25:14.675699+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://drc.gov.lk/en/?page_id=4905",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "observed_at": "2026-10-07T09:25:14.675702+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://drc.gov.lk/en/?p=2487",
-      "source": "https://www.drc.gov.lk/en/?p=2487",
-      "observed_at": "2026-10-07T09:25:14.675705+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://drc.gov.lk/en/?page_id=2741",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "observed_at": "2026-10-07T09:25:14.675708+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://drc.gov.lk/en/?page_id=2604",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "observed_at": "2026-10-07T09:25:14.675711+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://drc.gov.lk/en/?page_id=3177",
+      "detail": "Probe 9: HTTP 200 at https://drc.gov.lk/en/?page_id=3177",
       "source": "https://drc.gov.lk/en/?page_id=3177",
-      "observed_at": "2026-10-07T09:25:14.675713+05:30"
+      "observed_at": "2026-10-08T09:53:38.270542+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://drc.gov.lk/en/?page_id=4607",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "observed_at": "2026-10-08T09:53:38.270544+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://drc.gov.lk/en/?page_id=1933",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "observed_at": "2026-10-08T09:53:38.270547+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://drc.gov.lk/en/?page_id=4866",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "observed_at": "2026-10-08T09:53:38.270549+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://drc.gov.lk/en/",
+      "source": "https://drc.gov.lk/en/",
+      "observed_at": "2026-10-08T09:53:38.270552+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://drc.gov.lk/en/?p=4207",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "observed_at": "2026-10-08T09:53:38.270554+05:30"
     },
     {
       "check": "named_responsibility",
@@ -157,21 +149,66 @@
       }
     },
     {
-      "check": "named_responsibility",
+      "check": "phone",
       "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://drc.gov.lk/intro/",
+      "detail": "Published phone: 0.666666666",
+      "source": "https://drc.gov.lk/en/",
       "data": {
-        "value": "department"
+        "value": "0.666666666"
       }
     },
     {
-      "check": "named_responsibility",
+      "check": "phone",
       "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://drc.gov.lk/intro/",
+      "detail": "Published phone: 0.333333333",
+      "source": "https://drc.gov.lk/en/",
       "data": {
-        "value": "department"
+        "value": "0.333333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.583333333",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.583333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.916666666",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.916666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689209 ",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "011 2689209 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.416666666",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.416666666"
       }
     },
     {
@@ -195,37 +232,19 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 011 2222 950 ",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "011 2222 950 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 011 2689208 ",
       "source": "https://drc.gov.lk/en/",
       "data": {
         "value": "011 2689208 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0364540235",
-      "source": "https://drc.gov.lk/en/",
-      "data": {
-        "value": "0364540235"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689209 ",
-      "source": "https://drc.gov.lk/en/",
-      "data": {
-        "value": "011 2689209 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.916666666",
-      "source": "https://drc.gov.lk/en/",
-      "data": {
-        "value": "0.916666666"
       }
     },
     {
@@ -240,55 +259,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 2222 950 ",
+      "detail": "Published phone: 011 2222 980 ",
       "source": "https://drc.gov.lk/en/",
       "data": {
-        "value": "011 2222 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.583333333",
-      "source": "https://drc.gov.lk/en/",
-      "data": {
-        "value": "0.583333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.666666666",
-      "source": "https://drc.gov.lk/en/",
-      "data": {
-        "value": "0.666666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://drc.gov.lk/en/",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0689857636",
-      "source": "https://drc.gov.lk/en/",
-      "data": {
-        "value": "0689857636"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.333333333",
-      "source": "https://drc.gov.lk/en/",
-      "data": {
-        "value": "0.333333333"
+        "value": "011 2222 980 "
       }
     },
     {
@@ -303,6 +277,15 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0689857636",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0689857636"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0.166666666",
       "source": "https://drc.gov.lk/en/",
       "data": {
@@ -312,19 +295,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.416666666",
+      "detail": "Published phone: 0364540235",
       "source": "https://drc.gov.lk/en/",
       "data": {
-        "value": "0.416666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 980 ",
-      "source": "https://drc.gov.lk/en/",
-      "data": {
-        "value": "011 2222 980 "
+        "value": "0364540235"
       }
     },
     {
@@ -366,6 +340,69 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0.666666666",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "0.666666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.333333333",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "0.333333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.583333333",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "0.583333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.916666666",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "0.916666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 268 9208",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "011 268 9208"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.416666666",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "0.416666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0.083333333",
       "source": "https://drc.gov.lk/en/?page_id=1594",
       "data": {
@@ -384,10 +421,28 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 011 2222 950 ",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "011 2222 950 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 011 2689208 ",
       "source": "https://drc.gov.lk/en/?page_id=1594",
       "data": {
         "value": "011 2689208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 980 ",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "011 2222 980 "
       }
     },
     {
@@ -402,69 +457,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.916666666",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "0.916666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 950 ",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "011 2222 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 268 9208",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "011 268 9208"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.583333333",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "0.583333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.666666666",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "0.666666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.333333333",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "0.333333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0.166666666",
       "source": "https://drc.gov.lk/en/?page_id=1594",
       "data": {
@@ -472,30 +464,12 @@
       }
     },
     {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.416666666",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "0.416666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 980 ",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "011 2222 980 "
-      }
-    },
-    {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: support@drc.gov.lk",
+      "detail": "Published email: tenders@drc.gov.lk",
       "source": "https://drc.gov.lk/en/?page_id=1594",
       "data": {
-        "value": "support@drc.gov.lk"
+        "value": "tenders@drc.gov.lk"
       }
     },
     {
@@ -510,15 +484,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: societies@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=1594",
-      "data": {
-        "value": "societies@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: info@drc.gov.lk",
       "source": "https://drc.gov.lk/en/?page_id=1594",
       "data": {
@@ -528,10 +493,19 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: tenders@drc.gov.lk",
+      "detail": "Published email: support@drc.gov.lk",
       "source": "https://drc.gov.lk/en/?page_id=1594",
       "data": {
-        "value": "tenders@drc.gov.lk"
+        "value": "support@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: societies@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=1594",
+      "data": {
+        "value": "societies@drc.gov.lk"
       }
     },
     {
@@ -564,134 +538,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 2689615 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011 2689615 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689208 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011 2689208 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2684180 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2684180 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.583333333",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "0.583333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 268 9208",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011 268 9208"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689207 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689207 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689214 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689214 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689205 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689205 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 980 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011 2222 980 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.083333333",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "0.083333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2684147 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2684147 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2684455 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2684455 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689209 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011 2689209 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689211 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689211 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0.666666666",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
         "value": "0.666666666"
       }
@@ -699,134 +547,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011-2689870 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689870 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689206 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689206 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.166666666",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "0.166666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2684443 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2684443 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689212 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689212 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689215 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689215 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2684146 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2684146 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0719804610 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "0719804610 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689202 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689202 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2684442 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2684442 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.916666666",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "0.916666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 950 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011 2222 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689204 ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "011-2689204 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0.333333333",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
         "value": "0.333333333"
       }
@@ -834,62 +556,125 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0.583333333",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "0.583333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.916666666",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "0.916666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 268 9208",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "011 268 9208"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0.416666666",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
         "value": "0.416666666"
       }
     },
     {
-      "check": "email",
+      "check": "phone",
       "status": "pass",
-      "detail": "Published email: support@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "detail": "Published phone: 0.083333333",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
-        "value": "support@drc.gov.lk"
+        "value": "0.083333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689615 ",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "011 2689615 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 950 ",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "011 2222 950 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689208 ",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "011 2689208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 980 ",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "011 2222 980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689209 ",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "011 2689209 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.166666666",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
+      "data": {
+        "value": "0.166666666"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: dir_ict@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "detail": "Published email: tenders@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
-        "value": "dir_ict@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "info@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: accountant@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "accountant@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: heshan@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "heshan@drc.gov.lk"
+        "value": "tenders@drc.gov.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: erocaccess@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
         "value": "erocaccess@drc.gov.lk"
       }
@@ -897,107 +682,35 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: dananjik@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "detail": "Published email: info@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
-        "value": "dananjik@drc.gov.lk"
+        "value": "info@drc.gov.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: sumithrathnayake7@gmail.com",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "detail": "Published email: support@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
-        "value": "sumithrathnayake7@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: tharanga@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "tharanga@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: registrar@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "registrar@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: shyamah@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "shyamah@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: shane@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "shane@drc.gov.lk"
+        "value": "support@drc.gov.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: societies@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
         "value": "societies@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sunethra@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "sunethra@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sanjeewa.perera@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "sanjeewa.perera@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: harshishyama7@gmail.com",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "harshishyama7@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: tenders@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
-      "data": {
-        "value": "tenders@drc.gov.lk"
       }
     },
     {
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, ",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
         "value": "No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, "
       }
@@ -1006,7 +719,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
         "value": "director"
       }
@@ -1015,7 +728,7 @@
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: gazette",
-      "source": "https://drc.gov.lk/en/?page_id=2251",
+      "source": "https://drc.gov.lk/en/?page_id=1921",
       "data": {
         "value": "gazette"
       }
@@ -1023,8 +736,71 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0.666666666",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
+      "data": {
+        "value": "0.666666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.333333333",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
+      "data": {
+        "value": "0.333333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.583333333",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
+      "data": {
+        "value": "0.583333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.916666666",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
+      "data": {
+        "value": "0.916666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 268 9208",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
+      "data": {
+        "value": "011 268 9208"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.416666666",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
+      "data": {
+        "value": "0.416666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0.083333333",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
         "value": "0.083333333"
       }
@@ -1033,7 +809,7 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 011 2689615 ",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
         "value": "011 2689615 "
       }
@@ -1041,35 +817,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 2689208 ",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "011 2689208 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689209 ",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "011 2689209 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.916666666",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "0.916666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 011 2222 950 ",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
         "value": "011 2222 950 "
       }
@@ -1077,71 +826,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011 268 9208",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
+      "detail": "Published phone: 011 2689208 ",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
-        "value": "011 268 9208"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.583333333",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "0.583333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.666666666",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "0.666666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.333333333",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "0.333333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.166666666",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "0.166666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.416666666",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "0.416666666"
+        "value": "011 2689208 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 011 2222 980 ",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
         "value": "011 2222 980 "
       }
@@ -1149,35 +844,35 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112669429 ",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
+      "detail": "Published phone: 011 2689209 ",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
-        "value": "0112669429 "
+        "value": "011 2689209 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.166666666",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
+      "data": {
+        "value": "0.166666666"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: iau@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
+      "detail": "Published email: tenders@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
-        "value": "iau@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: support@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "support@drc.gov.lk"
+        "value": "tenders@drc.gov.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: erocaccess@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
         "value": "erocaccess@drc.gov.lk"
       }
@@ -1185,17 +880,8 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: societies@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "societies@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: info@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
+      "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
         "value": "info@drc.gov.lk"
       }
@@ -1203,1063 +889,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: tenders@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "tenders@drc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://drc.gov.lk/en/?page_id=4901",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.083333333",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "0.083333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689615 ",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "011 2689615 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689208 ",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "011 2689208 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689209 ",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "011 2689209 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.916666666",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "0.916666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 950 ",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "011 2222 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 268 9208",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "011 268 9208"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.583333333",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "0.583333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.666666666",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "0.666666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.333333333",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "0.333333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.166666666",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "0.166666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.416666666",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "0.416666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 980 ",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "011 2222 980 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: support@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "support@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: erocaccess@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "erocaccess@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: societies@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "societies@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "info@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: tenders@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "tenders@drc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, ",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://drc.gov.lk/en/wp-content/uploads/2026/08/%E0%B6%9A%E0%B7%8F%E0%B6%BB%E0%B7%8A%E0%B6%BA%E0%B7%83%E0%B7%8F%E0%B6%B0%E0%B6%B1%20%E0%B7%80%E0%B7%8F%E0%B6%BB%E0%B7%8A%E0%B6%AD%E0%B7%8F%E0%B7%80%202024%20(Scanned)_compressed.pdf",
-      "source": "https://drc.gov.lk/en/?page_id=4905",
-      "data": {
-        "value": "https://drc.gov.lk/en/wp-content/uploads/2026/08/%E0%B6%9A%E0%B7%8F%E0%B6%BB%E0%B7%8A%E0%B6%BA%E0%B7%83%E0%B7%8F%E0%B6%B0%E0%B6%B1%20%E0%B7%80%E0%B7%8F%E0%B6%BB%E0%B7%8A%E0%B6%AD%E0%B7%8F%E0%B7%80%202024%20(Scanned)_compressed.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.083333333",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "0.083333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689615 ",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "011 2689615 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689208 ",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "011 2689208 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689209 ",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "011 2689209 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.916666666",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "0.916666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 950 ",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "011 2222 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689211 ",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "011-2689211 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.583333333",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "0.583333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.666666666",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "0.666666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 268 9208",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "011 268 9208"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.333333333",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "0.333333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.166666666",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "0.166666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.416666666",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "0.416666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 980 ",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "011 2222 980 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2689202 ",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "011-2689202 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: support@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "support@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: erocaccess@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "erocaccess@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: societies@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "societies@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "info@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: tenders@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "tenders@drc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: for the tender registration process. After complete this application form you need to send it back to ROC by fax no 011-",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "for the tender registration process. After complete this application form you need to send it back to ROC by fax no 011-"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: http://www.drc.gov.lk/en/wp-content/uploads/2020/01/Application-for-the-Request-to-Avail-Logging-Facility-for-Tender-Publishing.pdf",
-      "source": "https://drc.gov.lk/en/?p=2487",
-      "data": {
-        "value": "http://www.drc.gov.lk/en/wp-content/uploads/2020/01/Application-for-the-Request-to-Avail-Logging-Facility-for-Tender-Publishing.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.083333333",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "0.083333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689615 ",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "011 2689615 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689208 ",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "011 2689208 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689209 ",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "011 2689209 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.916666666",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "0.916666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 950 ",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "011 2222 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 268 9208",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "011 268 9208"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.583333333",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "0.583333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.666666666",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "0.666666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.333333333",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "0.333333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.166666666",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "0.166666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.416666666",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "0.416666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 980 ",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "011 2222 980 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: support@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "support@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: erocaccess@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "erocaccess@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: societies@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "societies@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "info@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: tenders@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "tenders@drc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, ",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://drc.gov.lk/en/?page_id=2741",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689615 ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "011 2689615 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689208 ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "011 2689208 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112689239 ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0112689239 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 268 9208",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "011 268 9208"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.583333333",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0.583333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 980 ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "011 2222 980 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.083333333",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0.083333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112689616 ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0112689616 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689209 ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "011 2689209 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112689208",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0112689208"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.666666666",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0.666666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.166666666",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0.166666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112689215 ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0112689215 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112689615",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0112689615"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112689615 ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0112689615 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.916666666",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0.916666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 950 ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "011 2222 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.333333333",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0.333333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.416666666",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "0.416666666"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: support@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "support@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: erocaccess@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "erocaccess@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: societies@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "societies@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "info@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: tenders@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "tenders@drc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, ",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: RS 22",
-      "source": "https://drc.gov.lk/en/?page_id=2604",
-      "data": {
-        "value": "RS 22"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.083333333",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "0.083333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689615 ",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "011 2689615 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689208 ",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "011 2689208 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2689209 ",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "011 2689209 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.916666666",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "0.916666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 950 ",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "011 2222 950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 268 9208",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "011 268 9208"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.583333333",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "0.583333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.666666666",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "0.666666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.333333333",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "0.333333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.166666666",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "0.166666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.416666666",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "0.416666666"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2222 980 ",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "011 2222 980 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: support@drc.gov.lk",
       "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
         "value": "support@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: erocaccess@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "erocaccess@drc.gov.lk"
       }
     },
     {
@@ -2278,24 +911,6 @@
       "source": "https://drc.gov.lk/en/?page_id=3177",
       "data": {
         "value": "upport@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "info@drc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: tenders@drc.gov.lk",
-      "source": "https://drc.gov.lk/en/?page_id=3177",
-      "data": {
-        "value": "tenders@drc.gov.lk"
       }
     },
     {
@@ -2326,9 +941,1071 @@
       }
     },
     {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.666666666",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "0.666666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.333333333",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "0.333333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.583333333",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "0.583333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.916666666",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "0.916666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 268 9208",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "011 268 9208"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.416666666",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "0.416666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.083333333",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "0.083333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689615 ",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "011 2689615 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 950 ",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "011 2222 950 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689208 ",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "011 2689208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 444 333 ",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "011 2 444 333 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 980 ",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "011 2222 980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689209 ",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "011 2689209 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.166666666",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "0.166666666"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: bo.support@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "bo.support@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: erocaccess@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "erocaccess@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: registrar@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "registrar@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tenders@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "tenders@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "info@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: support@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "support@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: societies@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "societies@drc.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, ",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://drc.gov.lk/en/wp-content/uploads/2026/08/New-BO-System-Public-Authority-user-Account-Request.pdf",
+      "source": "https://drc.gov.lk/en/?page_id=4607",
+      "data": {
+        "value": "https://drc.gov.lk/en/wp-content/uploads/2026/08/New-BO-System-Public-Authority-user-Account-Request.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.666666666",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "0.666666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.333333333",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "0.333333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.583333333",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "0.583333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.916666666",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "0.916666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 268 9208",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "011 268 9208"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.416666666",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "0.416666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.083333333",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "0.083333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689615 ",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "011 2689615 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 950 ",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "011 2222 950 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689208 ",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "011 2689208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 980 ",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "011 2222 980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689209 ",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "011 2689209 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.166666666",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "0.166666666"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tenders@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "tenders@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: erocaccess@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "erocaccess@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "info@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: support@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "support@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: societies@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "societies@drc.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, ",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://drc.gov.lk/en/?page_id=1933",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.666666666",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "0.666666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.333333333",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "0.333333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.583333333",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "0.583333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 268 9215 ",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "011 268 9215 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.916666666",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "0.916666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2689212 ",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "011-2689212 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2689215 ",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "011-2689215 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 268 9208",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "011 268 9208"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.416666666",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "0.416666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.083333333",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "0.083333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689615 ",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "011 2689615 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 950 ",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "011 2222 950 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689208 ",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "011 2689208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 980 ",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "011 2222 980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689209 ",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "011 2689209 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.166666666",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "0.166666666"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: shyamah@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "shyamah@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tenders@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "tenders@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: erocaccess@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "erocaccess@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: registrar@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "registrar@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "info@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: support@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "support@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: societies@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "societies@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: harshishyama7@gmail.com",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "harshishyama7@gmail.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No. 400, D. R. Wijewardana Mawatha, Colombo 10 Website : www.drc.gov.lk Telephone : 011 268 9215 Ministry : Ministry of ",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "No. 400, D. R. Wijewardana Mawatha, Colombo 10 Website : www.drc.gov.lk Telephone : 011 268 9215 Ministry : Ministry of "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://drc.gov.lk/en/?page_id=4866",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.666666666",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.666666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.333333333",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.333333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.583333333",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.583333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.916666666",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.916666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689209 ",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "011 2689209 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.416666666",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.416666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.083333333",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.083333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689615 ",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "011 2689615 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 950 ",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "011 2222 950 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689208 ",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "011 2689208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 444 333 ",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0112 444 333 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 980 ",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "011 2222 980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0689853022",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0689853022"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0689857636",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0689857636"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.166666666",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0.166666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0364540235",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "0364540235"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://drc.gov.lk/en/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.666666666",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "0.666666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.333333333",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "0.333333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.583333333",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "0.583333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.916666666",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "0.916666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 268 9208",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "011 268 9208"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.416666666",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "0.416666666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.083333333",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "0.083333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689615 ",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "011 2689615 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 950 ",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "011 2222 950 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689208 ",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "011 2689208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2222 980 ",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "011 2222 980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2689209 ",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "011 2689209 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.166666666",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "0.166666666"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tenders@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "tenders@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: erocaccess@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "erocaccess@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "info@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: support@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "support@drc.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: societies@drc.gov.lk",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "societies@drc.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, ",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "No. 400, \"Samagam Medura\", D R Wijewardena Mawatha , Colombo 10, Sri Lanka. Business hours: Mon - Fri: 9.00AM - 3.30PM, "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://drc.gov.lk/en/?p=4207",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 9381 visible characters across 14 pages",
+      "detail": "Substantive page content: 9381 visible characters across 12 pages",
       "source": "https://drc.gov.lk/"
     }
   ],
@@ -2349,22 +2026,19 @@
     },
     {
       "host": "drc.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-11-15T04:17:53+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://drc.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://drc.gov.lk/intro/",
-      "redirects": [
-        "http://www.drc.gov.lk/intro/",
-        "https://drc.gov.lk/intro/"
-      ],
-      "elapsed_ms": 21424,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://drc.gov.lk/",
@@ -2375,21 +2049,18 @@
         "http://www.drc.gov.lk/intro/",
         "https://drc.gov.lk/intro/"
       ],
-      "elapsed_ms": 2143,
+      "elapsed_ms": 1923,
       "content_type": "text/html",
       "error": null
     },
     {
       "url": "https://drc.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://drc.gov.lk/intro/",
-      "redirects": [
-        "http://www.drc.gov.lk/intro/",
-        "https://drc.gov.lk/intro/"
-      ],
-      "elapsed_ms": 998,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://drc.gov.lk/",
@@ -2400,7 +2071,7 @@
         "http://www.drc.gov.lk/intro/",
         "https://drc.gov.lk/intro/"
       ],
-      "elapsed_ms": 19700,
+      "elapsed_ms": 21911,
       "content_type": "text/html",
       "error": null
     },
@@ -2411,7 +2082,7 @@
       "redirects": [
         "https://drc.gov.lk/en/"
       ],
-      "elapsed_ms": 3145,
+      "elapsed_ms": 2654,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2423,7 +2094,7 @@
         "http://www.drc.gov.lk/intro/",
         "https://drc.gov.lk/intro/"
       ],
-      "elapsed_ms": 2127,
+      "elapsed_ms": 20989,
       "content_type": "text/html",
       "error": null
     },
@@ -2432,63 +2103,16 @@
       "status_code": 200,
       "final_url": "https://drc.gov.lk/en/?page_id=1594",
       "redirects": [],
-      "elapsed_ms": 21370,
+      "elapsed_ms": 2142,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://drc.gov.lk/en/?page_id=2251",
+      "url": "https://drc.gov.lk/en/?page_id=1921",
       "status_code": 200,
-      "final_url": "https://drc.gov.lk/en/?page_id=2251",
+      "final_url": "https://drc.gov.lk/en/?page_id=1921",
       "redirects": [],
-      "elapsed_ms": 1390,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://drc.gov.lk/en/?page_id=4901",
-      "status_code": 200,
-      "final_url": "https://drc.gov.lk/en/?page_id=4901",
-      "redirects": [],
-      "elapsed_ms": 20485,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://drc.gov.lk/en/?page_id=4905",
-      "status_code": 200,
-      "final_url": "https://drc.gov.lk/en/?page_id=4905",
-      "redirects": [],
-      "elapsed_ms": 21106,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.drc.gov.lk/en/?p=2487",
-      "status_code": 200,
-      "final_url": "https://drc.gov.lk/en/?p=2487",
-      "redirects": [
-        "https://drc.gov.lk/en/?p=2487"
-      ],
-      "elapsed_ms": 20426,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://drc.gov.lk/en/?page_id=2741",
-      "status_code": 200,
-      "final_url": "https://drc.gov.lk/en/?page_id=2741",
-      "redirects": [],
-      "elapsed_ms": 20629,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://drc.gov.lk/en/?page_id=2604",
-      "status_code": 200,
-      "final_url": "https://drc.gov.lk/en/?page_id=2604",
-      "redirects": [],
-      "elapsed_ms": 21240,
+      "elapsed_ms": 22000,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2497,7 +2121,52 @@
       "status_code": 200,
       "final_url": "https://drc.gov.lk/en/?page_id=3177",
       "redirects": [],
-      "elapsed_ms": 20369,
+      "elapsed_ms": 21317,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://drc.gov.lk/en/?page_id=4607",
+      "status_code": 200,
+      "final_url": "https://drc.gov.lk/en/?page_id=4607",
+      "redirects": [],
+      "elapsed_ms": 21765,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://drc.gov.lk/en/?page_id=1933",
+      "status_code": 200,
+      "final_url": "https://drc.gov.lk/en/?page_id=1933",
+      "redirects": [],
+      "elapsed_ms": 22746,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://drc.gov.lk/en/?page_id=4866",
+      "status_code": 200,
+      "final_url": "https://drc.gov.lk/en/?page_id=4866",
+      "redirects": [],
+      "elapsed_ms": 23313,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://drc.gov.lk/en/",
+      "status_code": 200,
+      "final_url": "https://drc.gov.lk/en/",
+      "redirects": [],
+      "elapsed_ms": 20971,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://drc.gov.lk/en/?p=4207",
+      "status_code": 200,
+      "final_url": "https://drc.gov.lk/en/?p=4207",
+      "redirects": [],
+      "elapsed_ms": 22596,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -2505,87 +2174,75 @@
   "snapshots": [
     {
       "url": "https://drc.gov.lk/intro/",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-01-1713c1a0514c.html",
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-01-1713c1a0514c.html",
       "sha256": "1713c1a0514c4be29dd124f0e9befde496b58d141c674a429341ee59072a0586",
       "bytes": 2066
     },
     {
       "url": "https://drc.gov.lk/intro/",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-02-1713c1a0514c.html",
-      "sha256": "1713c1a0514c4be29dd124f0e9befde496b58d141c674a429341ee59072a0586",
-      "bytes": 2066
-    },
-    {
-      "url": "https://drc.gov.lk/intro/",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-03-1713c1a0514c.html",
-      "sha256": "1713c1a0514c4be29dd124f0e9befde496b58d141c674a429341ee59072a0586",
-      "bytes": 2066
-    },
-    {
-      "url": "https://drc.gov.lk/intro/",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-04-1713c1a0514c.html",
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-02-1713c1a0514c.html",
       "sha256": "1713c1a0514c4be29dd124f0e9befde496b58d141c674a429341ee59072a0586",
       "bytes": 2066
     },
     {
       "url": "https://drc.gov.lk/en/",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-05-16d1420dcb63.html",
-      "sha256": "16d1420dcb63bf32d18a1eeb58bee45355c02caaa652a19338bf4ab55e1b7ac5",
-      "bytes": 113202
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-03-5286e437cce1.html",
+      "sha256": "5286e437cce1bf02985748c3a73aa6ace21d0f9a0f092e11abe1ff714eec49c7",
+      "bytes": 113199
     },
     {
       "url": "https://drc.gov.lk/intro/",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-06-1713c1a0514c.html",
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-04-1713c1a0514c.html",
       "sha256": "1713c1a0514c4be29dd124f0e9befde496b58d141c674a429341ee59072a0586",
       "bytes": 2066
     },
     {
       "url": "https://drc.gov.lk/en/?page_id=1594",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-07-2484bb71319d.html",
-      "sha256": "2484bb71319dc391cf4bae08d111cd7ade5b33b91159f0ce42115e1caecdce52",
-      "bytes": 86499
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-05-e645e425e42c.html",
+      "sha256": "e645e425e42cb9055044220ca62a8024e04225e7c8058c13e918f2bca27908db",
+      "bytes": 86494
     },
     {
-      "url": "https://drc.gov.lk/en/?page_id=2251",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-08-a3e7b6915bb5.html",
-      "sha256": "a3e7b6915bb5de1cf514945793663d5c5cd1382ea9ce3969f095b301104548bf",
-      "bytes": 86817
-    },
-    {
-      "url": "https://drc.gov.lk/en/?page_id=4901",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-09-87dde5356c87.html",
-      "sha256": "87dde5356c871435ea29ef3c6a06ce7d97a96f4e93d959ebea6f2a9e35f5f993",
-      "bytes": 88948
-    },
-    {
-      "url": "https://drc.gov.lk/en/?page_id=4905",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-10-80044ca93bd4.html",
-      "sha256": "80044ca93bd4c256673bbffadeb6838dbe2fbe8d13d9421b7f95c48702068338",
-      "bytes": 83809
-    },
-    {
-      "url": "https://drc.gov.lk/en/?p=2487",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-11-f7257cad5d17.html",
-      "sha256": "f7257cad5d1799b1404fb1f7c5c3eb44eeb8c773560327cc4480a1aaf39268fd",
-      "bytes": 103845
-    },
-    {
-      "url": "https://drc.gov.lk/en/?page_id=2741",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-12-572428117acf.html",
-      "sha256": "572428117acf80cc0f78350f4b7319f525bb57ab56cd3fe59bc697c2b8cb2147",
-      "bytes": 89099
-    },
-    {
-      "url": "https://drc.gov.lk/en/?page_id=2604",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-13-18f03b7815a0.html",
-      "sha256": "18f03b7815a0febc2acd132029b2a53337eb920adfc4f1c24c717fdb6cfa46e4",
-      "bytes": 85979
+      "url": "https://drc.gov.lk/en/?page_id=1921",
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-06-d4dc6d10e89a.html",
+      "sha256": "d4dc6d10e89a3093b729791f97b8d3b83d54fa51e93895166893b29aa3a2a0d7",
+      "bytes": 80889
     },
     {
       "url": "https://drc.gov.lk/en/?page_id=3177",
-      "path": "audit.output/drc.gov.lk/20261007.0920/snapshots/page-14-0ed5a42a6144.html",
-      "sha256": "0ed5a42a61444aaa679ae36e22692a5e5bd134d6350bede4b7ac683e4da7d75e",
-      "bytes": 93791
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-07-a4c729ff3866.html",
+      "sha256": "a4c729ff386683d87422bdeb268566960e8d8715212d8d572b4afa534354a0fb",
+      "bytes": 93794
+    },
+    {
+      "url": "https://drc.gov.lk/en/?page_id=4607",
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-08-71a154bf5d6f.html",
+      "sha256": "71a154bf5d6fc227ab4a50c9f25bf1fb319ea935d96a9ff440994a9a8b1e5d64",
+      "bytes": 81768
+    },
+    {
+      "url": "https://drc.gov.lk/en/?page_id=1933",
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-09-276d691c9c89.html",
+      "sha256": "276d691c9c8907284436b64d6667ca8be288501a6d6515ca4790bf1a3a75057b",
+      "bytes": 83671
+    },
+    {
+      "url": "https://drc.gov.lk/en/?page_id=4866",
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-10-b533f5cacb8e.html",
+      "sha256": "b533f5cacb8e46a00ab3201df97d29b383a01f48823f32080dea85c04a3d6280",
+      "bytes": 86087
+    },
+    {
+      "url": "https://drc.gov.lk/en/",
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-11-7d1d783a2c70.html",
+      "sha256": "7d1d783a2c70a7ad80062c4ffda69a9da27650aa8cdc61a3c6c0c925e84becbc",
+      "bytes": 113208
+    },
+    {
+      "url": "https://drc.gov.lk/en/?p=4207",
+      "path": "audit.output/drc.gov.lk/20261008.0935/snapshots/page-12-6b2e50d96472.html",
+      "sha256": "6b2e50d96472e35ca5a5ab00011acba1fe5931c6d0eebe9a6afa43a44c849526",
+      "bytes": 97643
     }
   ],
   "reviewer_decisions": [],
@@ -2601,8 +2258,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -2639,7 +2296,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "reason": "HTTPS probes passed; failing variants: https://drc.gov.lk/: Probe 1: timed out; https://drc.gov.lk/: Probe 3: timed out"
         },
         {
           "name": "redirect_related",
@@ -2656,94 +2313,32 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: 011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka; Phone: 0.083333333 (41 phone numbers found); Email: support@drc.gov.lk (19 email addresses found); Published named responsibility: department",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: 011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 0.083333333 (41 phone numbers found); Email: support@drc.gov.lk (19 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: RS 22"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: gazette"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published downloadable form: https://drc.gov.lk/en/wp-content/uploads/2026/08/%E0%B6%9A%E0%B7%8F%E0%B6%BB%E0%B7%8A%E0%B6%BA%E0%B7%83%E0%B7%8F%E0%B6%B0%E0%B6%B1%20%E0%B7%80%E0%B7%8F%E0%B6%BB%E0%B7%8A%E0%B6%AD%E0%B7%8F%E0%B7%80%202024%20(Scanned)_compressed.pdf"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -2763,7 +2358,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.186.238.6",
+    "egress_ip": "20.169.58.2",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

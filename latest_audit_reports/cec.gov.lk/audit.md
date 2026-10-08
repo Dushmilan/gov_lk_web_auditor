@@ -1,8 +1,8 @@
 # Website Audit: https://cec.gov.lk/
 
-- Completed: 2026-10-07 09:20
+- Completed: 2026-10-08 09:35
 - Overall result: 🔴 Level 1
-- Vantage: 20.186.238.6 (US, github-actions)
+- Vantage: 20.169.58.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0.186.238.6 20 (6 phone numbers found); Email: cec.gov1@gmail.com |
+| reachable_contacts | ✅ | Phone: 0.169.58.2 202 (16 phone numbers found); Email: cec.gov1@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.defence.lk/
 
-- Completed: 2026-10-07 09:27
+- Completed: 2026-10-08 09:55
 - Overall result: 🟠 Level 2
-- Vantage: 20.186.238.6 (US, github-actions)
+- Vantage: 20.169.58.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Cyber Scam Operations and Trafficking for Forced Criminality October 06, 2026 Defence Secretary Attends Reception to Mar; Phone: +94 11 2340340 (2 phone numbers found); Email: knilupul@yahoo.com (18 email addresses found); Published named responsibility: director
+Published postal address: Cyber Scam Operations and Trafficking for Forced Criminality October 06, 2026 Defence Secretary Attends Reception to Mar; Phone: +94 11 2354354 (2 phone numbers found); Email: adlsecparliment@defence.lk (18 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Cyber Scam Operations and Trafficking for Forced Criminality October 06, 2026 Defence Secretary Attends Reception to Mar |
-| reachable_contacts | ✅ | Phone: +94 11 2340340 (2 phone numbers found); Email: knilupul@yahoo.com (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2354354 (2 phone numbers found); Email: adlsecparliment@defence.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

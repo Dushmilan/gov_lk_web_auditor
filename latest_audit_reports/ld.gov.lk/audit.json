@@ -1,24 +1,21 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "d54ec4f0-c055-464b-bcaa-5f7d381d26d1",
+  "audit_id": "6ab2a859-d847-41df-a16a-423eb4d61892",
   "url": "https://ld.gov.lk/",
   "normalized_url": "https://ld.gov.lk/",
-  "started_at": "2026-10-07T09:12:36.546197+05:30",
-  "completed_at": "2026-10-07T09:15:05.782622+05:30",
+  "started_at": "2026-10-08T09:24:52.183799+05:30",
+  "completed_at": "2026-10-08T09:27:02.585458+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTPS probes passed; failing variants: http://ld.gov.lk/: Probe 4: timed out",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete"
     ]
   },
   "evidence": [
@@ -26,609 +23,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-07T09:12:37.325404+05:30"
+      "observed_at": "2026-10-08T09:24:53.064722+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-07T09:12:37.325424+05:30"
+      "observed_at": "2026-10-08T09:24:53.064744+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-07T09:12:38.527600+05:30"
+      "observed_at": "2026-10-08T09:24:54.508480+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://ld.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://ld.gov.lk/",
-      "observed_at": "2026-10-07T09:15:05.576368+05:30"
+      "observed_at": "2026-10-08T09:27:02.585273+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://ld.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://ld.gov.lk/",
-      "observed_at": "2026-10-07T09:15:05.576388+05:30"
+      "observed_at": "2026-10-08T09:27:02.585293+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://ld.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://ld.gov.lk/",
-      "observed_at": "2026-10-07T09:15:05.576393+05:30"
+      "observed_at": "2026-10-08T09:27:02.585297+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://ld.gov.lk/",
-      "observed_at": "2026-10-07T09:15:05.576396+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://ld.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576400+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://ld.gov.lk/index.php?option=com_content&view=article&id=4&Itemid=126&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=4&Itemid=126&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576403+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://ld.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576406+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://ld.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=129&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=129&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576409+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://ld.gov.lk/index.php?option=com_content&view=article&id=2&Itemid=103&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=2&Itemid=103&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576412+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://ld.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576415+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576418+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576421+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576424+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://ld.gov.lk/index.php?option=com_xmap&view=html&Itemid=105&lang=en",
-      "source": "https://ld.gov.lk/index.php?option=com_xmap&view=html&Itemid=105&lang=en",
-      "observed_at": "2026-10-07T09:15:05.576426+05:30"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://ld.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "fail",
-      "detail": "Published published update date: 03 July 2021",
-      "source": "https://ld.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "03 July 2021"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://ld.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "fail",
-      "detail": "Published published update date: 03 July 2021",
-      "source": "https://ld.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "03 July 2021"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://ld.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "fail",
-      "detail": "Published published update date: 03 July 2021",
-      "source": "https://ld.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "03 July 2021"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "fail",
-      "detail": "Published published update date: 03 July 2021",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "03 July 2021"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=4&Itemid=126&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=4&Itemid=126&lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 December 2025",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=4&Itemid=126&lang=en",
-      "data": {
-        "value": "08 December 2025"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 December 2025",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "data": {
-        "value": "08 December 2025"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=129&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=129&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 December 2025",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=129&lang=en",
-      "data": {
-        "value": "08 December 2025"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=2&Itemid=103&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=2&Itemid=103&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 December 2025",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=2&Itemid=103&lang=en",
-      "data": {
-        "value": "08 December 2025"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 14 days",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "14 days"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 December 2025",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "08 December 2025"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 243 3530 ",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "data": {
-        "value": "+94) 11 243 3530 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 242 1024 ",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "data": {
-        "value": "+94) 11 242 1024 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 243 5935 ",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "data": {
-        "value": "+94) 11 243 5935 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakfff78ca018c2e22e",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakfff78ca018c2e22e"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://www.rticommission.lk/web/images/pdf/act/rti-act-en-13122018.pdf",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "data": {
-        "value": "https://www.rticommission.lk/web/images/pdf/act/rti-act-en-13122018.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 421 039 ",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "data": {
-        "value": "+94 112 421 039 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 421 587 ",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "data": {
-        "value": "+94 112 421 587 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 333 394 ",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "data": {
-        "value": "+94 112 333 394 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 325 185 ",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "data": {
-        "value": "+94 112 325 185 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 333 395 ",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "data": {
-        "value": "+94 112 333 395 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak9917a198cff85b79",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak9917a198cff85b79"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 December 2025",
-      "source": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "data": {
-        "value": "08 December 2025"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 101 23845",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "data": {
-        "value": "00 101 23845"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 102 243593",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "data": {
-        "value": "0 102 243593"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0299772751",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "data": {
-        "value": "0299772751"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak124865e0b241d3b5",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak124865e0b241d3b5"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 December 2025",
-      "source": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "data": {
-        "value": "08 December 2025"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ld.gov.lk/index.php?option=com_xmap&view=html&Itemid=105&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://ld.gov.lk/index.php?option=com_xmap&view=html&Itemid=105&lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 08 December 2025",
-      "source": "https://ld.gov.lk/index.php?option=com_xmap&view=html&Itemid=105&lang=en",
-      "data": {
-        "value": "08 December 2025"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 8911 visible characters across 13 pages",
-      "source": "https://ld.gov.lk/"
+      "observed_at": "2026-10-08T09:27:02.585301+05:30"
     }
   ],
   "observations": [
@@ -655,37 +90,12 @@
     },
     {
       "url": "https://ld.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://ld.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1553,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "http://ld.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://ld.gov.lk/",
-        "https://ld.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1756,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://ld.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://ld.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 20703,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://ld.gov.lk/",
@@ -697,176 +107,25 @@
       "error": "timed out"
     },
     {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "url": "https://ld.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 2127,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=4&Itemid=126&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=4&Itemid=126&lang=en",
+      "url": "http://ld.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 2642,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "redirects": [],
-      "elapsed_ms": 21306,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=129&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=129&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1133,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=2&Itemid=103&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=2&Itemid=103&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1838,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1744,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1775,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1072,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1869,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_xmap&view=html&Itemid=105&lang=en",
-      "status_code": 200,
-      "final_url": "https://ld.gov.lk/index.php?option=com_xmap&view=html&Itemid=105&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1090,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://ld.gov.lk/index.php?lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-01-6ffc9119a7ec.html",
-      "sha256": "6ffc9119a7ec5fdbeb2693df7fdbfe4b43b40a2c01dbab6b25d26515404d7867",
-      "bytes": 24162
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-02-6ffc9119a7ec.html",
-      "sha256": "6ffc9119a7ec5fdbeb2693df7fdbfe4b43b40a2c01dbab6b25d26515404d7867",
-      "bytes": 24162
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-03-6ffc9119a7ec.html",
-      "sha256": "6ffc9119a7ec5fdbeb2693df7fdbfe4b43b40a2c01dbab6b25d26515404d7867",
-      "bytes": 24162
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-04-b7b7eceba92a.html",
-      "sha256": "b7b7eceba92a255969947791eb4c3db9c9d4823a3531fd3db46a053627d43025",
-      "bytes": 24612
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=4&Itemid=126&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-05-2fc9114fa9ab.html",
-      "sha256": "2fc9114fa9abcaefbf0dabed43965e2ae659bd1f75c07a025852ce06e894c0c1",
-      "bytes": 18756
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-06-d82eaf4db513.html",
-      "sha256": "d82eaf4db513d2cd79f906e732c58837bc91f7975c82ea7f787618d5627b3d2a",
-      "bytes": 19122
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=129&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-07-370c150d6506.html",
-      "sha256": "370c150d65063cb12a8e1b7963ff4d949575da57515059e51abf0a54c07326a6",
-      "bytes": 22750
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=2&Itemid=103&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-08-af80ef8c6f41.html",
-      "sha256": "af80ef8c6f41e5852aedcbf45af1f0c57bbbfc50e0f9f34df02544b8b8c5d61f",
-      "bytes": 19419
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-09-aed732215e7d.html",
-      "sha256": "aed732215e7d122cbc70033cefa28f6ff97f367e1176c10629d2fc93e4d0822a",
-      "bytes": 27450
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=147&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-10-7930e4f8f959.html",
-      "sha256": "7930e4f8f95916d2cd7628ee94582e24c96e4f20919a96ef96d6e0ee608f1e47",
-      "bytes": 25807
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=104&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-11-95ee42f3dd64.html",
-      "sha256": "95ee42f3dd64cb28cbbcd67552fc1e672da769e85e1c7369f73cb00da8050f57",
-      "bytes": 27020
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=149&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-12-a66f24433bc0.html",
-      "sha256": "a66f24433bc017810fe1aea5642209046d4bc213ffed08a79998e94da8653c59",
-      "bytes": 72763
-    },
-    {
-      "url": "https://ld.gov.lk/index.php?option=com_xmap&view=html&Itemid=105&lang=en",
-      "path": "audit.output/ld.gov.lk/20261007.0912/snapshots/page-13-4bd20d4e58af.html",
-      "sha256": "4bd20d4e58afc62d58f1171a35237395c86c1523ed60d567c256916e526c283d",
-      "bytes": 18682
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -880,8 +139,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://ld.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
       "executed": true,
       "checks": [
         {
@@ -893,44 +152,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://ld.gov.lk/: Probe 4: timed out"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -950,28 +209,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No email evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakfff78ca018c2e22e"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -999,7 +239,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.186.238.6",
+    "egress_ip": "20.169.58.2",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

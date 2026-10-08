@@ -1,8 +1,8 @@
 # Website Audit: https://www.dgi.gov.lk/
 
-- Completed: 2026-10-07 09:08
+- Completed: 2026-10-08 09:20
 - Overall result: 🔴 Level 1
-- Vantage: 20.186.238.6 (US, github-actions)
+- Vantage: 20.169.58.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0 0 66.666667 (103 phone numbers found); Email: info@dgi.gov.lk (13 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 0 33.333333 (102 phone numbers found); Email: info@dgi.gov.lk (13 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

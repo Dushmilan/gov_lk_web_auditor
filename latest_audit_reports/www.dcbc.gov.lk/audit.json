@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "5b5e6e3a-4ee9-405f-be8e-96e1821fbf2e",
+  "audit_id": "960e7316-7949-42ec-a315-6d7276d594e9",
   "url": "http://www.dcbc.gov.lk",
   "normalized_url": "http://www.dcbc.gov.lk/",
-  "started_at": "2026-10-07T09:12:07.996544+05:30",
-  "completed_at": "2026-10-07T09:12:55.285324+05:30",
+  "started_at": "2026-10-08T09:24:25.252586+05:30",
+  "completed_at": "2026-10-08T09:25:02.534252+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
@@ -18,47 +18,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-07T09:12:08.312539+05:30"
+      "observed_at": "2026-10-08T09:24:25.664861+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-07T09:12:08.312565+05:30"
+      "observed_at": "2026-10-08T09:24:25.664892+05:30"
     },
     {
       "check": "tls",
       "status": "error",
       "detail": "timed out",
-      "observed_at": "2026-10-07T09:12:18.558380+05:30"
+      "observed_at": "2026-10-08T09:24:35.891439+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://www.dcbc.gov.lk/",
       "source": "https://www.dcbc.gov.lk/",
-      "observed_at": "2026-10-07T09:12:55.285096+05:30"
+      "observed_at": "2026-10-08T09:25:02.534063+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://dcbc.gov.lk/",
       "source": "http://www.dcbc.gov.lk/",
-      "observed_at": "2026-10-07T09:12:55.285119+05:30"
+      "observed_at": "2026-10-08T09:25:02.534084+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.dcbc.gov.lk/",
       "source": "https://www.dcbc.gov.lk/",
-      "observed_at": "2026-10-07T09:12:55.285129+05:30"
+      "observed_at": "2026-10-08T09:25:02.534088+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://dcbc.gov.lk/",
       "source": "http://www.dcbc.gov.lk/",
-      "observed_at": "2026-10-07T09:12:55.285135+05:30"
+      "observed_at": "2026-10-08T09:25:02.534092+05:30"
     }
   ],
   "observations": [
@@ -88,7 +88,7 @@
       "status_code": 200,
       "final_url": "https://www.dcbc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 1221,
+      "elapsed_ms": 1076,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -99,18 +99,18 @@
       "redirects": [
         "https://dcbc.gov.lk/"
       ],
-      "elapsed_ms": 1219,
+      "elapsed_ms": 20790,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://www.dcbc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.dcbc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1197,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.dcbc.gov.lk/",
@@ -119,7 +119,7 @@
       "redirects": [
         "https://dcbc.gov.lk/"
       ],
-      "elapsed_ms": 1262,
+      "elapsed_ms": 1195,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -176,7 +176,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: https://www.dcbc.gov.lk/: Probe 3: timed out"
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -238,7 +238,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.186.238.6",
+    "egress_ip": "20.169.58.2",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
