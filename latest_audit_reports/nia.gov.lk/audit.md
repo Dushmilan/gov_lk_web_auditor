@@ -1,8 +1,8 @@
 # Website Audit: https://nia.gov.lk/
 
-- Completed: 2026-10-08 09:33
+- Completed: 2026-10-09 09:35
 - Overall result: 🔴 Level 1
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94112879254 (8 phone numbers found); Email: contact@nia.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94113661201 (8 phone numbers found); Email: prabhathhemasiri@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

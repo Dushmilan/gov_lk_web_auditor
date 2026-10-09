@@ -1,8 +1,8 @@
 # Website Audit: http://www.ihra.cmb.ac.lk/
 
-- Completed: 2026-10-08 09:02
+- Completed: 2026-10-09 09:08
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe; Phone: +94 11 250 3393 (20 phone numbers found); Email: aradmin@ihra.cmb.ac.lk (22 email addresses found); Published named responsibility: director
+Published postal address: the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe; Phone: +94 11 250 3393 (19 phone numbers found); Email: aradmin@ihra.cmb.ac.lk (25 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe |
-| reachable_contacts | ✅ | Phone: +94 11 250 3393 (20 phone numbers found); Email: aradmin@ihra.cmb.ac.lk (22 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 250 3393 (19 phone numbers found); Email: aradmin@ihra.cmb.ac.lk (25 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 15 Months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 01 October 2026 |

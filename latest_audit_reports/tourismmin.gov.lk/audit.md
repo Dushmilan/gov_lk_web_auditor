@@ -1,8 +1,8 @@
 # Website Audit: https://tourismmin.gov.lk/
 
-- Completed: 2026-10-08 10:08
+- Completed: 2026-10-09 09:44
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 01, Sri Lanka; Phone: +94912275554 (74 phone numbers found); Email: admin@tourismmin.gov.lk (2 email addresses found); Published named responsibility: division
+Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 01, Sri Lanka; Phone: +94912275554 (72 phone numbers found); Email: deputyminister@tourismmin.gov.lk (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 01, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94912275554 (74 phone numbers found); Email: admin@tourismmin.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94912275554 (72 phone numbers found); Email: deputyminister@tourismmin.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://tourismmin.gov.lk/web/images/procuments/EOI_information_sheet.pdf |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

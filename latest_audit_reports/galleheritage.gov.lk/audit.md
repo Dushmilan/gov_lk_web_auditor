@@ -1,8 +1,8 @@
 # Website Audit: https://galleheritage.gov.lk/
 
-- Completed: 2026-10-08 08:53
+- Completed: 2026-10-09 08:58
 - Overall result: 🔴 Level 1
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0000008180 (13 phone numbers found); Email: herifo@sltnet.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0000000000 (13 phone numbers found); Email: herifo@sltnet.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: http://www.ncas.ac.lk/
 
-- Completed: 2026-10-08 09:01
+- Completed: 2026-10-09 09:08
 - Overall result: 🔴 Level 1
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 011 269 397 (5 phone numbers found); Email: info@ncas.ac.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 018 2017 201 (5 phone numbers found); Email: info@ncas.ac.lk (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

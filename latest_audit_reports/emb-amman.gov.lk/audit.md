@@ -1,8 +1,8 @@
 # Website Audit: https://emb-amman.gov.lk/
 
-- Completed: 2026-10-08 09:17
+- Completed: 2026-10-09 09:23
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777; Phone: +96265820611 (8 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
+Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777; Phone: 0-4597-9949-3 (8 phone numbers found); Email: slemb.amman@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777 |
-| reachable_contacts | ✅ | Phone: +96265820611 (8 phone numbers found); Email: john@example.com (2 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| reachable_contacts | ✅ | Phone: 0-4597-9949-3 (8 phone numbers found); Email: slemb.amman@mfa.gov.lk (2 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found; No passing published update date evidence found
+No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing downloadable form evidence found; No passing published update date ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 90 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 10/08/2026 |

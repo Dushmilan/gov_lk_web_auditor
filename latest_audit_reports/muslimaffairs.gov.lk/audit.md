@@ -1,8 +1,8 @@
 # Website Audit: https://muslimaffairs.gov.lk/
 
-- Completed: 2026-10-08 08:54
+- Completed: 2026-10-09 09:00
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -53,6 +53,6 @@ Published published update date: 26-03-2024
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs 2027 |
 | legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 6 days |
+| processing_time | ✅ | Published processing time: 7 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❌ | Published published update date: 26-03-2024 |

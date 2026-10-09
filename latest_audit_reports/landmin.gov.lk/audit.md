@@ -1,8 +1,8 @@
 # Website Audit: https://landmin.gov.lk/
 
-- Completed: 2026-10-08 09:58
+- Completed: 2026-10-09 09:46
 - Overall result: 🔴 Level 1
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 011-2797520 (57 phone numbers found); Email: project@landmin.gov.lk (44 email addresses found) |
+| reachable_contacts | ✅ | Phone: 071-7229024 (57 phone numbers found); Email: admin@landmin.gov.lk (44 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

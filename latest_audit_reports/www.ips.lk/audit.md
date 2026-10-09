@@ -1,8 +1,8 @@
 # Website Audit: https://www.ips.lk/
 
-- Completed: 2026-10-08 09:09
+- Completed: 2026-10-09 09:16
 - Overall result: 🔴 Level 1
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Policy Studies of Sri Lanka 100/20, Independence Avenue, Colombo 07 Sri Lanka |
+| postal_address | ✅ | Published postal address: 94-11-2143100 Visit Us 100/20, Independence Avenue, Colombo 07, Sri Lanka |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

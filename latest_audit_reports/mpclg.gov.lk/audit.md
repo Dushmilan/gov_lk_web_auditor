@@ -1,8 +1,8 @@
 # Website Audit: https://mpclg.gov.lk/
 
-- Completed: 2026-10-08 10:01
+- Completed: 2026-10-09 09:48
 - Overall result: ⚫ Level 0
-- Vantage: 20.169.58.2 (US, github-actions)
+- Vantage: 52.165.213.236 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,16 +14,16 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 97 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 97 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 97 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 97 visible characters across 2 pages; below substance threshold 200
+Insufficient substantive page content: Only 97 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 97 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 97 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 97 visible characters across 1 pages; below substance threshold 200; An HTTP probe was transient
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 97 visible characters across 2 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 97 visible characters across 2 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 97 visible characters across 2 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 97 visible characters across 2 pages; below substance threshold 200 |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://mpclg.gov.lk/: Probe 3: timed out; http://mpclg.gov.lk/: Probe 4: timed out |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 97 visible characters across 1 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 97 visible characters across 1 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 97 visible characters across 1 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 97 visible characters across 1 pages; below substance threshold 200 |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |

@@ -1,21 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "97bf8803-73e2-4610-9982-b196bcd5310b",
+  "audit_id": "f6ea2b45-541d-4660-8082-3559e78d721f",
   "url": "https://www.ncisl.health.gov.lk/",
   "normalized_url": "https://www.ncisl.health.gov.lk/",
-  "started_at": "2026-10-08T09:19:11.583738+05:30",
-  "completed_at": "2026-10-08T09:19:17.731924+05:30",
+  "started_at": "2026-10-09T09:25:09.859812+05:30",
+  "completed_at": "2026-10-09T09:25:34.650219+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -23,47 +26,501 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-08T09:19:11.873409+05:30"
+      "observed_at": "2026-10-09T09:25:10.211229+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-08T09:19:11.873428+05:30"
+      "observed_at": "2026-10-09T09:25:10.211247+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-08T09:19:11.905056+05:30"
+      "observed_at": "2026-10-09T09:25:10.280627+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: Server disconnected without sending a response.",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.ncisl.health.gov.lk/",
       "source": "https://www.ncisl.health.gov.lk/",
-      "observed_at": "2026-10-08T09:19:17.731736+05:30"
+      "observed_at": "2026-10-09T09:25:34.457158+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: Server disconnected without sending a response.",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://www.ncisl.health.gov.lk/",
       "source": "http://www.ncisl.health.gov.lk/",
-      "observed_at": "2026-10-08T09:19:17.731757+05:30"
+      "observed_at": "2026-10-09T09:25:34.457178+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: Server disconnected without sending a response.",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.ncisl.health.gov.lk/",
       "source": "https://www.ncisl.health.gov.lk/",
-      "observed_at": "2026-10-08T09:19:17.731761+05:30"
+      "observed_at": "2026-10-09T09:25:34.457181+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: Server disconnected without sending a response.",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://www.ncisl.health.gov.lk/",
       "source": "http://www.ncisl.health.gov.lk/",
-      "observed_at": "2026-10-08T09:19:17.731765+05:30"
+      "observed_at": "2026-10-09T09:25:34.457184+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=45",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=45",
+      "observed_at": "2026-10-09T09:25:34.457185+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=61",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=61",
+      "observed_at": "2026-10-09T09:25:34.457187+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=63",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=63",
+      "observed_at": "2026-10-09T09:25:34.457189+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=64",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=64",
+      "observed_at": "2026-10-09T09:25:34.457191+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=65",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "observed_at": "2026-10-09T09:25:34.457193+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=1356",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1356",
+      "observed_at": "2026-10-09T09:25:34.457195+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=66",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=66",
+      "observed_at": "2026-10-09T09:25:34.457197+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=297",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=297",
+      "observed_at": "2026-10-09T09:25:34.457199+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=1188",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "observed_at": "2026-10-09T09:25:34.457200+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.ncisl.health.gov.lk/?page_id=77",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=77",
+      "observed_at": "2026-10-09T09:25:34.457202+05:30"
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ncisl.health.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ncisl.health.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ncisl.health.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ncisl.health.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=61",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: individual treatment needs. If you would like further information about your treatment, please discuss with your individ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=63",
+      "data": {
+        "value": "individual treatment needs. If you would like further information about your treatment, please discuss with your individ"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=64",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=64",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2844459 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "data": {
+        "value": "011 2844459 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cansoc@sltnet.lk",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "data": {
+        "value": "cansoc@sltnet.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: pals_ncisrilanka@yahoo.com",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "data": {
+        "value": "pals_ncisrilanka@yahoo.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: their psychological, mental and spiritual needs. There are a number of additional support services to address patient ne",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "data": {
+        "value": "their psychological, mental and spiritual needs. There are a number of additional support services to address patient ne"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: free of charge",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "data": {
+        "value": "free of charge"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 777284172 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1356",
+      "data": {
+        "value": "+94 777284172 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: palscarencim@gmail.com",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1356",
+      "data": {
+        "value": "palscarencim@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=66",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664875 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664875 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664715 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664715 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664833 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664833 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664780 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664780 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664767 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664860 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664860 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664729 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664729 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664739 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664739 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664869 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664869 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664871 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664871 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664725 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664725 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664873 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664873 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664876 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664876 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664712 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664712 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664878 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664878 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664864 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664864 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664847 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664847 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664718 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664718 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664863 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664863 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664720 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664720 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664737 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664737 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664714 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664714 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664862 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664862 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664874 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664874 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0701664786 ",
+      "source": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "data": {
+        "value": "0701664786 "
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 8567 visible characters across 14 pages",
+      "source": "https://www.ncisl.health.gov.lk/"
     }
   ],
   "observations": [
@@ -90,42 +547,223 @@
     },
     {
       "url": "https://www.ncisl.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "Server disconnected without sending a response."
+      "elapsed_ms": 1853,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.ncisl.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "Server disconnected without sending a response."
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/",
+      "redirects": [
+        "https://www.ncisl.health.gov.lk/"
+      ],
+      "elapsed_ms": 1948,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.ncisl.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "Server disconnected without sending a response."
+      "elapsed_ms": 1925,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.ncisl.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/",
+      "redirects": [
+        "https://www.ncisl.health.gov.lk/"
+      ],
+      "elapsed_ms": 1233,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=45",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=45",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "Server disconnected without sending a response."
+      "elapsed_ms": 970,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=61",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=61",
+      "redirects": [],
+      "elapsed_ms": 1859,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=63",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=63",
+      "redirects": [],
+      "elapsed_ms": 1776,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=64",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=64",
+      "redirects": [],
+      "elapsed_ms": 1360,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "redirects": [],
+      "elapsed_ms": 1304,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=1356",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=1356",
+      "redirects": [],
+      "elapsed_ms": 1989,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=66",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=66",
+      "redirects": [
+        "https://www.ncisl.health.gov.lk/?page_id=66"
+      ],
+      "elapsed_ms": 1395,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=297",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=297",
+      "redirects": [],
+      "elapsed_ms": 1078,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "redirects": [],
+      "elapsed_ms": 1148,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=77",
+      "status_code": 200,
+      "final_url": "https://www.ncisl.health.gov.lk/?page_id=77",
+      "redirects": [],
+      "elapsed_ms": 1014,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.ncisl.health.gov.lk/",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-01-69055f98d11e.html",
+      "sha256": "69055f98d11ee3fcc0a9eacc33215ab1dc85b5fff6ccc9b571b385c837fe873f",
+      "bytes": 44920
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-02-0edc6054d1b1.html",
+      "sha256": "0edc6054d1b1ff00b49ba14ee75c3e0d32de1e929eaac17c33cebaa720dfd8e0",
+      "bytes": 44920
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-03-2427c0f54751.html",
+      "sha256": "2427c0f5475160ad86d3ae00fe7f14fca5351fdc3d95af05301613203459bb46",
+      "bytes": 44921
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-04-d1eb2796fc7d.html",
+      "sha256": "d1eb2796fc7d7eed41c6b4cc1ec986ed19db649fa987eba1c0a266c46ea4aa4d",
+      "bytes": 44921
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=45",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-05-1026677149f4.html",
+      "sha256": "1026677149f4d019b0bea6f03daeaa8274eca8a823ae1a19e6a5c2df8b56a6cd",
+      "bytes": 33836
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=61",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-06-e81fd74bc023.html",
+      "sha256": "e81fd74bc023f533cf5ca87b697eb8dbad7793ead08851a2f998845760753509",
+      "bytes": 48873
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=63",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-07-d17f8d5d63a1.html",
+      "sha256": "d17f8d5d63a1896a6dcfe97a93a982b76edeaecac26839d15d46397b49c70ef9",
+      "bytes": 45676
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=64",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-08-e3e1e2783c5d.html",
+      "sha256": "e3e1e2783c5d6b43e9ce3261779bce0a94000f80927b3e6a9d878f792ba0648e",
+      "bytes": 57188
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=65",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-09-039d5d031afd.html",
+      "sha256": "039d5d031afda848016327b901a1d80d019d8d967e31f4b64ce0d06e5e533c15",
+      "bytes": 52565
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=1356",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-10-9e7082fa8c84.html",
+      "sha256": "9e7082fa8c84957ce485c64af8373b1551c741aa7ac61242833000842db29dd1",
+      "bytes": 302747
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=66",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-11-67ebd26e0a9d.html",
+      "sha256": "67ebd26e0a9d8d30188d1470d32bf574f845496ac0e4edd3d7485e2d0c09c220",
+      "bytes": 28161
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=297",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-12-82537494c6a4.html",
+      "sha256": "82537494c6a42727f07856f461916df06a520f09eea83407f025d74b1c9fbae5",
+      "bytes": 39506
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=1188",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-13-973794d10466.html",
+      "sha256": "973794d10466f7b6eed5373b1bc98f75ed3096ec9dd84eb9b9827ce7c4f3cff0",
+      "bytes": 31391
+    },
+    {
+      "url": "https://www.ncisl.health.gov.lk/?page_id=77",
+      "path": "audit.output/www.ncisl.health.gov.lk/20261009.0925/snapshots/page-14-95e014ec7cb9.html",
+      "sha256": "95e014ec7cb906341d8cfc5368f9cacdd79d844fc8f21b378bdc1f46e38a9b3f",
+      "bytes": 29470
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -139,8 +777,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -152,44 +790,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -208,18 +846,80 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: individual treatment needs. If you would like further information about your treatment, please discuss with your individ; Phone: 011 2844459 (27 phone numbers found); Email: cansoc@sltnet.lk (3 email addresses found); Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: individual treatment needs. If you would like further information about your treatment, please discuss with your individ"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 011 2844459 (27 phone numbers found); Email: cansoc@sltnet.lk (3 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: rs,"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -239,7 +939,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.169.58.2",
+    "egress_ip": "52.165.213.236",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
