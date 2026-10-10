@@ -1,8 +1,8 @@
 # Website Audit: https://wijayakmhospital.com/
 
-- Completed: 2026-10-09 09:27
+- Completed: 2026-10-10 09:08
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.213.236 (US, github-actions)
+- Vantage: 20.118.29.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Wijaya Kumaratunga Memorial Hospital, Seeduwa. Telephone 011 225 8862 - 64 E - Mail wkmhinfo@gmail.com Facebook Facebook; Phone: 0585208101 (19 phone numbers found); Email: wkmhinfo@gmail.com (2 email addresses found); Published named responsibility: director
+Published postal address: Wijaya Kumaratunga Memorial Hospital, Seeduwa. Telephone 011 225 8862 - 64 E - Mail wkmhinfo@gmail.com Facebook Facebook; Phone: 011 225 8862 - (19 phone numbers found); Email: wkmhinfo@gmail.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Wijaya Kumaratunga Memorial Hospital, Seeduwa. Telephone 011 225 8862 - 64 E - Mail wkmhinfo@gmail.com Facebook Facebook |
-| reachable_contacts | ✅ | Phone: 0585208101 (19 phone numbers found); Email: wkmhinfo@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 225 8862 - (19 phone numbers found); Email: wkmhinfo@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+Published published update date: 2024-10-09
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2024-10-09 |
+| published_update_date | ❌ | Published published update date: 2024-10-09 |

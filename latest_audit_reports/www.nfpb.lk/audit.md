@@ -1,8 +1,8 @@
 # Website Audit: https://www.nfpb.lk/
 
-- Completed: 2026-10-09 08:56
+- Completed: 2026-10-10 08:36
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.213.236 (US, github-actions)
+- Vantage: 20.118.29.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Telephone Fax Department of Agriculture P.O.Box 1, Peradeniya 081-2388331 081-2388333 Department of Agrarian Development; Phone: 0113085383. (124 phone numbers found); Email: Published email: (8 email addresses found); Published named responsibility: director
+Published postal address: Telephone Fax Department of Agriculture P.O.Box 1, Peradeniya 081-2388331 081-2388333 Department of Agrarian Development; Phone: 0113085383. (124 phone numbers found); Email: malasamanthi@gmail.com (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Telephone Fax Department of Agriculture P.O.Box 1, Peradeniya 081-2388331 081-2388333 Department of Agrarian Development |
-| reachable_contacts | ✅ | Phone: 0113085383. (124 phone numbers found); Email: Published email: (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0113085383. (124 phone numbers found); Email: malasamanthi@gmail.com (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://nibm.ac.lk/
 
-- Completed: 2026-10-09 09:09
+- Completed: 2026-10-10 08:49
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.213.236 (US, github-actions)
+- Vantage: 20.118.29.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Mawatha, Colombo 07, Sri Lanka; Phone: 070 562 1604 (85 phone numbers found); Email: pavithra@nibm.lk (38 email addresses found); Published named responsibility: director
+Published postal address: Mawatha, Colombo 07, Sri Lanka; Phone: 0.224034540 (85 phone numbers found); Email: shamalka@nibm.lk (38 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Mawatha, Colombo 07, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 070 562 1604 (85 phone numbers found); Email: pavithra@nibm.lk (38 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.224034540 (85 phone numbers found); Email: shamalka@nibm.lk (38 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

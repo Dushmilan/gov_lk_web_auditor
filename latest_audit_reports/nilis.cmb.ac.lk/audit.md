@@ -1,8 +1,8 @@
 # Website Audit: https://nilis.cmb.ac.lk/home/
 
-- Completed: 2026-10-09 09:07
+- Completed: 2026-10-10 08:47
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.213.236 (US, github-actions)
+- Vantage: 20.118.29.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

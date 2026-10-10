@@ -1,8 +1,8 @@
 # Website Audit: https://cadet.lk/
 
-- Completed: 2026-10-09 09:00
+- Completed: 2026-10-10 08:40
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.213.236 (US, github-actions)
+- Vantage: 20.118.29.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-10-03 |
+| published_update_date | ✅ | Published published update date: 05 October 2026 |

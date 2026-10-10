@@ -1,8 +1,8 @@
 # Website Audit: https://emb-stockholm.gov.lk/
 
-- Completed: 2026-10-09 09:22
+- Completed: 2026-10-10 09:02
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.213.236 (US, github-actions)
+- Vantage: 20.118.29.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: PO BOX 24055 SE- 114 56 , Stockholm Phone Numbers: +46 (8) 663 65 23 , +46 (8) 663 65 25 Email: slemb.stockholm@mfa.gov.; Phone: 0259-3499-46 (17 phone numbers found); Email: consular.stockholm@mfa.gov.lk (5 email addresses found); Published named responsibility: division
+Published postal address: PO BOX 24055 SE- 114 56 , Stockholm Phone Numbers: +46 (8) 663 65 23 , +46 (8) 663 65 25 Email: slemb.stockholm@mfa.gov.; Phone: 0259-3499-46 (13 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: PO BOX 24055 SE- 114 56 , Stockholm Phone Numbers: +46 (8) 663 65 23 , +46 (8) 663 65 25 Email: slemb.stockholm@mfa.gov. |
-| reachable_contacts | ✅ | Phone: 0259-3499-46 (17 phone numbers found); Email: consular.stockholm@mfa.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0259-3499-46 (13 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found; No passing published update date evidence found
+No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: RS, |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 3 working days |
+| legal_basis | ❓ | No passing legal basis evidence found |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

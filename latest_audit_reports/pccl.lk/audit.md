@@ -1,8 +1,8 @@
 # Website Audit: https://pccl.lk/
 
-- Completed: 2026-10-09 09:29
+- Completed: 2026-10-10 09:11
 - Overall result: 🔴 Level 1
-- Vantage: 52.165.213.236 (US, github-actions)
+- Vantage: 20.118.29.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

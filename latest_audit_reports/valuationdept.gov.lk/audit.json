@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "2d7dfbd0-09f5-48ca-afb2-f077e72d3595",
+  "audit_id": "a02636e8-76d5-4c28-b2cf-f9fd56fb6a09",
   "url": "https://valuationdept.gov.lk/",
   "normalized_url": "https://valuationdept.gov.lk/",
-  "started_at": "2026-10-09T09:15:05.869302+05:30",
-  "completed_at": "2026-10-09T09:19:02.133511+05:30",
+  "started_at": "2026-10-10T08:55:41.860479+05:30",
+  "completed_at": "2026-10-10T08:57:05.956856+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: https://valuationdept.gov.lk/: Probe 3: timed out",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,125 +26,125 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-09T09:15:06.631008+05:30"
+      "observed_at": "2026-10-10T08:55:42.149727+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-09T09:15:06.631029+05:30"
+      "observed_at": "2026-10-10T08:55:42.149747+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-09T09:15:17.023748+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-10T08:55:43.122253+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://valuationdept.gov.lk/index.php?lang=en",
       "source": "https://valuationdept.gov.lk/",
-      "observed_at": "2026-10-09T09:19:01.896339+05:30"
+      "observed_at": "2026-10-10T08:57:05.538093+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://valuationdept.gov.lk/index.php?lang=en",
       "source": "http://valuationdept.gov.lk/",
-      "observed_at": "2026-10-09T09:19:01.896355+05:30"
+      "observed_at": "2026-10-10T08:57:05.538110+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: timed out",
       "source": "https://valuationdept.gov.lk/",
-      "observed_at": "2026-10-09T09:19:01.896358+05:30"
+      "observed_at": "2026-10-10T08:57:05.538115+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://valuationdept.gov.lk/index.php?lang=en",
       "source": "http://valuationdept.gov.lk/",
-      "observed_at": "2026-10-09T09:19:01.896361+05:30"
+      "observed_at": "2026-10-10T08:57:05.538118+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://valuationdept.gov.lk/index.php?lang=en",
+      "detail": "Probe 5: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=",
+      "observed_at": "2026-10-10T08:57:05.538121+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://valuationdept.gov.lk/index.php?lang=en",
       "source": "https://valuationdept.gov.lk/",
-      "observed_at": "2026-10-09T09:19:01.896363+05:30"
+      "observed_at": "2026-10-10T08:57:05.538124+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://valuationdept.gov.lk/index.php?lang=si",
+      "detail": "Probe 7: HTTP 200 at https://valuationdept.gov.lk/index.php?lang=si",
       "source": "https://valuationdept.gov.lk/index.php?lang=si",
-      "observed_at": "2026-10-09T09:19:01.896364+05:30"
+      "observed_at": "2026-10-10T08:57:05.538127+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://valuationdept.gov.lk/index.php?lang=ta",
+      "detail": "Probe 8: HTTP 200 at https://valuationdept.gov.lk/index.php?lang=ta",
       "source": "https://valuationdept.gov.lk/index.php?lang=ta",
-      "observed_at": "2026-10-09T09:19:01.896366+05:30"
+      "observed_at": "2026-10-10T08:57:05.538130+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "detail": "Probe 9: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-10-09T09:19:01.896367+05:30"
+      "observed_at": "2026-10-10T08:57:05.538133+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=33&Itemid=131&lang=en",
+      "detail": "Probe 10: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=33&Itemid=131&lang=en",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=33&Itemid=131&lang=en",
-      "observed_at": "2026-10-09T09:19:01.896369+05:30"
+      "observed_at": "2026-10-10T08:57:05.538135+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=138&lang=en",
+      "detail": "Probe 11: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=138&lang=en",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=138&lang=en",
-      "observed_at": "2026-10-09T09:19:01.896371+05:30"
+      "observed_at": "2026-10-10T08:57:05.538138+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=45&Itemid=132&lang=en",
+      "detail": "Probe 12: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=45&Itemid=132&lang=en",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=45&Itemid=132&lang=en",
-      "observed_at": "2026-10-09T09:19:01.896373+05:30"
+      "observed_at": "2026-10-10T08:57:05.538141+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=286&lang=en",
+      "detail": "Probe 13: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=286&lang=en",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=286&lang=en",
-      "observed_at": "2026-10-09T09:19:01.896374+05:30"
+      "observed_at": "2026-10-10T08:57:05.538143+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=57&Itemid=287&lang=en",
+      "detail": "Probe 14: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=57&Itemid=287&lang=en",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=57&Itemid=287&lang=en",
-      "observed_at": "2026-10-09T09:19:01.896376+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "observed_at": "2026-10-09T09:19:01.896377+05:30"
+      "observed_at": "2026-10-10T08:57:05.538146+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
+      "detail": "Published phone: 0179483167",
       "source": "https://valuationdept.gov.lk/index.php?lang=en",
       "data": {
-        "value": "+94 11 269 4381 "
+        "value": "0179483167"
       }
     },
     {
@@ -151,6 +159,15 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0 21 22 23 24 2",
       "source": "https://valuationdept.gov.lk/index.php?lang=en",
       "data": {
@@ -160,10 +177,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0 11 12 13 14 1",
+      "detail": "Published phone: +94 11 269 4381 ",
       "source": "https://valuationdept.gov.lk/index.php?lang=en",
       "data": {
-        "value": "0 11 12 13 14 1"
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -205,19 +222,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
+      "detail": "Published phone: 0 11 12 13 14 1",
       "source": "https://valuationdept.gov.lk/index.php?lang=en",
       "data": {
-        "value": "+94 11 269 4381 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 269 4383 ",
-      "source": "https://valuationdept.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 269 4383 "
+        "value": "0 11 12 13 14 1"
       }
     },
     {
@@ -232,10 +240,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0 11 12 13 14 1",
+      "detail": "Published phone: +94 11 269 4383 ",
       "source": "https://valuationdept.gov.lk/index.php?lang=en",
       "data": {
-        "value": "0 11 12 13 14 1"
+        "value": "+94 11 269 4383 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4381 ",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -277,19 +294,253 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
-      "source": "https://valuationdept.gov.lk/index.php?lang=si",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
       "data": {
-        "value": "+94 11 269 4381 "
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0 21 22 23 24 2"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 11 269 4383 ",
-      "source": "https://valuationdept.gov.lk/index.php?lang=si",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
       "data": {
         "value": "+94 11 269 4383 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4381 ",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 269 4381 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cv@valuationdept.gov.lk",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "cv@valuationdept.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "748, Maradana Road, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 269 4381 ",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "011 269 4381 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 269 4382 ",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "011 269 4382 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 269 4383",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "011 269 4383"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 269 4383 ",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "011 269 4383 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4383 ",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "+94 11 269 4383 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 269 4382",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "011 269 4382"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4381 ",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "+94 11 269 4381 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cv@valuationdept.gov.lk",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "cv@valuationdept.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Government Valuation Department # 748, Maradana Road, Colombo 10, Sri Lanka Phone: 011 269 4381 / 011 269 4382 Fax: 011 ",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "Government Valuation Department # 748, Maradana Road, Colombo 10, Sri Lanka Phone: 011 269 4381 / 011 269 4382 Fax: 011 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4383 ",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 269 4383 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4381 ",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 269 4381 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cv@valuationdept.gov.lk",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "cv@valuationdept.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "748, Maradana Road, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://valuationdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://valuationdept.gov.lk/index.php?lang=si",
+      "data": {
+        "value": "0 11 12 13 14 1"
       }
     },
     {
@@ -304,10 +555,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0 11 12 13 14 1",
+      "detail": "Published phone: +94 11 269 4383 ",
       "source": "https://valuationdept.gov.lk/index.php?lang=si",
       "data": {
-        "value": "0 11 12 13 14 1"
+        "value": "+94 11 269 4383 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4381 ",
+      "source": "https://valuationdept.gov.lk/index.php?lang=si",
+      "data": {
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -331,15 +591,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0 11 12 13 14 1",
-      "source": "https://valuationdept.gov.lk/index.php?lang=ta",
-      "data": {
-        "value": "0 11 12 13 14 1"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94 11 269 4383 ",
       "source": "https://valuationdept.gov.lk/index.php?lang=ta",
       "data": {
@@ -349,10 +600,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
+      "detail": "Published phone: 0 11 12 13 14 1",
       "source": "https://valuationdept.gov.lk/index.php?lang=ta",
       "data": {
-        "value": "+94 11 269 4381 "
+        "value": "0 11 12 13 14 1"
       }
     },
     {
@@ -362,6 +613,15 @@
       "source": "https://valuationdept.gov.lk/index.php?lang=ta",
       "data": {
         "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4381 ",
+      "source": "https://valuationdept.gov.lk/index.php?lang=ta",
+      "data": {
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -385,19 +645,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
+      "detail": "Published phone: 0 11 12 13 14 1",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "data": {
-        "value": "+94 11 269 4381 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 269 4383 ",
-      "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 11 269 4383 "
+        "value": "0 11 12 13 14 1"
       }
     },
     {
@@ -412,10 +663,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0 11 12 13 14 1",
+      "detail": "Published phone: +94 11 269 4383 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "data": {
-        "value": "0 11 12 13 14 1"
+        "value": "+94 11 269 4383 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4381 ",
+      "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -457,19 +717,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
+      "detail": "Published phone: +94 11 269 4383 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=33&Itemid=131&lang=en",
       "data": {
-        "value": "+94 11 269 4381 "
+        "value": "+94 11 269 4383 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4383 ",
+      "detail": "Published phone: +94 11 269 4381 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=33&Itemid=131&lang=en",
       "data": {
-        "value": "+94 11 269 4383 "
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -511,19 +771,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
+      "detail": "Published phone: +94 11 269 4383 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=138&lang=en",
       "data": {
-        "value": "+94 11 269 4381 "
+        "value": "+94 11 269 4383 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4383 ",
+      "detail": "Published phone: +94 11 269 4381 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=138&lang=en",
       "data": {
-        "value": "+94 11 269 4383 "
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -565,19 +825,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
+      "detail": "Published phone: +94 11 269 4383 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=45&Itemid=132&lang=en",
       "data": {
-        "value": "+94 11 269 4381 "
+        "value": "+94 11 269 4383 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4383 ",
+      "detail": "Published phone: +94 11 269 4381 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=45&Itemid=132&lang=en",
       "data": {
-        "value": "+94 11 269 4383 "
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -619,19 +879,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
+      "detail": "Published phone: +94 11 269 4383 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=286&lang=en",
       "data": {
-        "value": "+94 11 269 4381 "
+        "value": "+94 11 269 4383 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4383 ",
+      "detail": "Published phone: +94 11 269 4381 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=286&lang=en",
       "data": {
-        "value": "+94 11 269 4383 "
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -673,19 +933,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
+      "detail": "Published phone: +94 11 269 4383 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=57&Itemid=287&lang=en",
       "data": {
-        "value": "+94 11 269 4381 "
+        "value": "+94 11 269 4383 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 269 4383 ",
+      "detail": "Published phone: +94 11 269 4381 ",
       "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=57&Itemid=287&lang=en",
       "data": {
-        "value": "+94 11 269 4383 "
+        "value": "+94 11 269 4381 "
       }
     },
     {
@@ -725,63 +985,9 @@
       }
     },
     {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 269 4381 ",
-      "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "data": {
-        "value": "+94 11 269 4381 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 269 4383 ",
-      "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "data": {
-        "value": "+94 11 269 4383 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: cv@valuationdept.gov.lk",
-      "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "data": {
-        "value": "cv@valuationdept.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka",
-      "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "data": {
-        "value": "748, Maradana Road, Colombo 10, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 5036 visible characters across 11 pages",
+      "detail": "Substantive page content: 5036 visible characters across 13 pages",
       "source": "https://valuationdept.gov.lk/"
     }
   ],
@@ -802,28 +1008,33 @@
     },
     {
       "host": "valuationdept.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-11-09T04:17:29+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://valuationdept.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://valuationdept.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://valuationdept.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 1895,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://valuationdept.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://valuationdept.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://valuationdept.gov.lk/",
+        "https://valuationdept.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 1604,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "https://valuationdept.gov.lk/",
@@ -842,7 +1053,18 @@
         "https://valuationdept.gov.lk/",
         "https://valuationdept.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 22030,
+      "elapsed_ms": 1809,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=",
+      "status_code": 200,
+      "final_url": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "redirects": [
+        "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en"
+      ],
+      "elapsed_ms": 1372,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -853,7 +1075,7 @@
       "redirects": [
         "https://valuationdept.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 1655,
+      "elapsed_ms": 1650,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -862,7 +1084,7 @@
       "status_code": 200,
       "final_url": "https://valuationdept.gov.lk/index.php?lang=si",
       "redirects": [],
-      "elapsed_ms": 1946,
+      "elapsed_ms": 1650,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -871,7 +1093,7 @@
       "status_code": 200,
       "final_url": "https://valuationdept.gov.lk/index.php?lang=ta",
       "redirects": [],
-      "elapsed_ms": 1720,
+      "elapsed_ms": 2026,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -880,7 +1102,7 @@
       "status_code": 200,
       "final_url": "https://valuationdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "redirects": [],
-      "elapsed_ms": 1644,
+      "elapsed_ms": 1648,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -889,7 +1111,7 @@
       "status_code": 200,
       "final_url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=33&Itemid=131&lang=en",
       "redirects": [],
-      "elapsed_ms": 1740,
+      "elapsed_ms": 1526,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -898,7 +1120,7 @@
       "status_code": 200,
       "final_url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=138&lang=en",
       "redirects": [],
-      "elapsed_ms": 21237,
+      "elapsed_ms": 1375,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -907,7 +1129,7 @@
       "status_code": 200,
       "final_url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=45&Itemid=132&lang=en",
       "redirects": [],
-      "elapsed_ms": 1426,
+      "elapsed_ms": 1488,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -916,7 +1138,7 @@
       "status_code": 200,
       "final_url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=286&lang=en",
       "redirects": [],
-      "elapsed_ms": 21294,
+      "elapsed_ms": 1483,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -925,16 +1147,7 @@
       "status_code": 200,
       "final_url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=57&Itemid=287&lang=en",
       "redirects": [],
-      "elapsed_ms": 1646,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "status_code": 200,
-      "final_url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1503,
+      "elapsed_ms": 1376,
       "content_type": "text/html; charset=utf-8",
       "error": null
     }
@@ -942,69 +1155,81 @@
   "snapshots": [
     {
       "url": "https://valuationdept.gov.lk/index.php?lang=en",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-01-fae71d36ab31.html",
-      "sha256": "fae71d36ab31b6ab5f0ca7764d8c50955090e8ab9f9cc34aa806c3853c4aec79",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-01-49abaab7a367.html",
+      "sha256": "49abaab7a3678e88fe10b24db2f3ff0752c24d929e9b1c23f171da75087bcd31",
       "bytes": 89217
     },
     {
       "url": "https://valuationdept.gov.lk/index.php?lang=en",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-02-be9420cc4073.html",
-      "sha256": "be9420cc4073197906202f8396b420f3d55df56a856bf3eab23a349b5012625c",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-02-b650e68cdec8.html",
+      "sha256": "b650e68cdec83507bf904757075b9d9a40a0c7d505fd4d09d25f0559305b261c",
+      "bytes": 89217
+    },
+    {
+      "url": "https://valuationdept.gov.lk/index.php?lang=en",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-03-fc66c0eda77c.html",
+      "sha256": "fc66c0eda77c64e19cace1d16875b95a364f03e943fbbe95799137ac364a3582",
+      "bytes": 89217
+    },
+    {
+      "url": "https://valuationdept.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=140&lang=en",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-04-02f82d5c973f.html",
+      "sha256": "02f82d5c973fe00376c9f8627e87979e63fbf831d3a37caa475462e842d92353",
+      "bytes": 60076
+    },
+    {
+      "url": "https://valuationdept.gov.lk/index.php?lang=en",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-05-12c730ad72c0.html",
+      "sha256": "12c730ad72c08ab0ce896992b21b2e747dd988f555bb67fdeaee08ee729d3a03",
       "bytes": 89217
     },
     {
       "url": "https://valuationdept.gov.lk/index.php?lang=si",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-03-90122b2e4a76.html",
-      "sha256": "90122b2e4a76c21413ea2a5671f0d4406d21a261d45ecfa49f40d4fc06160b32",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-06-b38827d483f0.html",
+      "sha256": "b38827d483f0b8124c5411cdc1a00206f9ea4190aa5407b3a3374b2525fdc2ee",
       "bytes": 94438
     },
     {
       "url": "https://valuationdept.gov.lk/index.php?lang=ta",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-04-ef14a6579603.html",
-      "sha256": "ef14a657960372f6bae570721f7648977c7236766042cfb95c19d4fcb1cdbb24",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-07-5fec5d28e6e7.html",
+      "sha256": "5fec5d28e6e74242e3edb8ee01f62023ee859d372c321864e9e8c4ff289990f5",
       "bytes": 90828
     },
     {
       "url": "https://valuationdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-05-1917c6ceeb33.html",
-      "sha256": "1917c6ceeb3382227ded6574fd68c018f7d4855ac1df8f408ca14b1f2a6e0ce9",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-08-3035886e98ea.html",
+      "sha256": "3035886e98eae33bc67ba719fb0901910a7e18d7ac814d99b5c906adfe156ad2",
       "bytes": 89437
     },
     {
       "url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=33&Itemid=131&lang=en",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-06-bc32849c8b75.html",
-      "sha256": "bc32849c8b750265bc6e07ed6b98c79e22c129470a3949537ebc15974a8469e9",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-09-04ceb2fd5c4b.html",
+      "sha256": "04ceb2fd5c4b17f2da5edc8746e8d98fca37fb27f9c3be3330d7e8556eb7e43f",
       "bytes": 55926
     },
     {
       "url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=138&lang=en",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-07-44e792826111.html",
-      "sha256": "44e79282611135883de1108e4a2f7691e5b80351bb94cb9723d9310e06623428",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-10-2bf183105112.html",
+      "sha256": "2bf1831051129f1329dcfa4c4d08ee56d3f065a479f0f0e277a0cba02574fc0b",
       "bytes": 57374
     },
     {
       "url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=45&Itemid=132&lang=en",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-08-726e803c5a44.html",
-      "sha256": "726e803c5a4430fc3e9e8c4b9cdadca437e36b43dbd19de145f978949bb8f495",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-11-8f3ea05a01c5.html",
+      "sha256": "8f3ea05a01c55386a48ca845092470dcc6ca81f6ca53b683b741cbcf8ba2d47f",
       "bytes": 55487
     },
     {
       "url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=286&lang=en",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-09-b37a11ea7000.html",
-      "sha256": "b37a11ea70008b0587e61aad7e1adde28106637b607c17eecdfbd823faa8b31b",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-12-e36fb8edf0d4.html",
+      "sha256": "e36fb8edf0d4cdce80d16536352a29945bb5d82553b4b806f6ff201b36b4cf4a",
       "bytes": 56743
     },
     {
       "url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=57&Itemid=287&lang=en",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-10-4584dd2ff96f.html",
-      "sha256": "4584dd2ff96f611e90ecf6b156977d986af425bd3044c8fdf9a44254b2541097",
+      "path": "audit.output/valuationdept.gov.lk/20261010.0855/snapshots/page-13-a7603180fbf7.html",
+      "sha256": "a7603180fbf70032f052c5505efda7d4c5427389d046f6d73154954f33a82d1d",
       "bytes": 55699
-    },
-    {
-      "url": "https://valuationdept.gov.lk/index.php?option=com_content&view=article&id=58&Itemid=288&lang=en",
-      "path": "audit.output/valuationdept.gov.lk/20261009.0915/snapshots/page-11-47091cf5aa51.html",
-      "sha256": "47091cf5aa517d9900718a3d6224f63165119e339478bca3cc05c23607fdb398",
-      "bytes": 57211
     }
   ],
   "reviewer_decisions": [],
@@ -1020,8 +1245,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://valuationdept.gov.lk/: Probe 3: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -1058,7 +1283,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: https://valuationdept.gov.lk/: Probe 1: timed out; http://valuationdept.gov.lk/: Probe 2: timed out; https://valuationdept.gov.lk/: Probe 3: timed out"
+          "reason": "HTTPS probes passed; failing variants: https://valuationdept.gov.lk/: Probe 3: timed out"
         },
         {
           "name": "redirect_related",
@@ -1075,32 +1300,94 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka; Phone: 0179483167 (9 phone numbers found); Email: cv@valuationdept.gov.lk; Published named responsibility: department",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0179483167 (9 phone numbers found); Email: cv@valuationdept.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: circular"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -1120,7 +1407,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.165.213.236",
+    "egress_ip": "20.118.29.31",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

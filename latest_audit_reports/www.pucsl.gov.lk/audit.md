@@ -1,8 +1,8 @@
 # Website Audit: https://www.pucsl.gov.lk/
 
-- Completed: 2026-10-09 09:17
+- Completed: 2026-10-10 08:58
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.213.236 (US, github-actions)
+- Vantage: 20.118.29.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

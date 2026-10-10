@@ -1,8 +1,8 @@
 # Website Audit: https://emb-telaviv.gov.lk/
 
-- Completed: 2026-10-09 09:23
+- Completed: 2026-10-10 09:04
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.213.236 (US, github-actions)
+- Vantage: 20.118.29.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,14 +45,14 @@ Published postal address: Line 2\",\"pagination_next\":\"Next\",\"passport_expir
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: supporting documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 180 DAYS |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ✅ | Published published update date: 08/12/2026 |
