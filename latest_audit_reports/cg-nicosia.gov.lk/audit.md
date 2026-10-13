@@ -1,8 +1,8 @@
 # Website Audit: https://cg-nicosia.gov.lk/
 
-- Completed: 2026-10-11 08:39
+- Completed: 2026-10-13 10:16
 - Overall result: 🔴 Level 1
-- Vantage: 52.154.132.177 (US, github-actions)
+- Vantage: 4.242.196.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Ayiou Georgiou No 4, Egkomi 2411. Telephone : +357 22720333 Email: consular.cyprus@mfa.gov.lk Opening Hours for Consular |
-| reachable_contacts | ✅ | Phone: +911123010201 (29 phone numbers found); Email: consular.cyprus@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0593987158 (29 phone numbers found); Email: slcg.cyprus@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

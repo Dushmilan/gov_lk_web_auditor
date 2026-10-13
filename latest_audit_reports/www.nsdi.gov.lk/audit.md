@@ -1,8 +1,8 @@
 # Website Audit: https://www.nsdi.gov.lk/
 
-- Completed: 2026-10-11 08:14
+- Completed: 2026-10-13 09:53
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.132.177 (US, github-actions)
+- Vantage: 4.242.196.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

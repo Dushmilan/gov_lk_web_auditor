@@ -1,8 +1,8 @@
 # Website Audit: https://www.stc.lk/
 
-- Completed: 2026-10-11 08:57
+- Completed: 2026-10-13 10:34
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.132.177 (US, github-actions)
+- Vantage: 4.242.196.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 070 259 0358 (68 phone numbers found); Email: chandika@stc.lk (18 email addresses found); Published named responsibility: officer in charge
+Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 065 22 29 253 (68 phone numbers found); Email: hiran@stc.lk (18 email addresses found); Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St |
-| reachable_contacts | ✅ | Phone: 070 259 0358 (68 phone numbers found); Email: chandika@stc.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 065 22 29 253 (68 phone numbers found); Email: hiran@stc.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 06 October 2026 |
+| published_update_date | ✅ | Published published update date: 12 October 2026 |

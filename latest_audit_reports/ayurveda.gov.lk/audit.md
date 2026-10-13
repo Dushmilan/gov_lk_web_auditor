@@ -1,8 +1,8 @@
 # Website Audit: https://ayurveda.gov.lk/
 
-- Completed: 2026-10-11 08:42
+- Completed: 2026-10-13 10:19
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.132.177 (US, github-actions)
+- Vantage: 4.242.196.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs ; Phone: 0112088675 (6 phone numbers found); Email: iau@ayurveda.gov.lk (3 email addresses found); Published named responsibility: department
+Published postal address: corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs ; Phone: +94) 11 2896911 (6 phone numbers found); Email: iau@ayurveda.gov.lk (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: corruption, misconduct, and unethical practices among Ayurvedic officers and administrative staff. The Internal Affairs  |
-| reachable_contacts | ✅ | Phone: 0112088675 (6 phone numbers found); Email: iau@ayurveda.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 11 2896911 (6 phone numbers found); Email: iau@ayurveda.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://emb-yangon.gov.lk/
 
-- Completed: 2026-10-11 08:36
+- Completed: 2026-10-13 10:13
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.132.177 (US, github-actions)
+- Vantage: 4.242.196.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,7 +45,7 @@ Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel:
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing legal basis evidence 
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 28 September 2026 |
+| published_update_date | ❓ | No passing published update date evidence found |

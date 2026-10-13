@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "f502f7d2-d35b-4857-b0b1-fcd940da8e46",
+  "audit_id": "9fe31fea-cb1f-4d84-a70b-eb3bbb71851b",
   "url": "https://slaasmb.gov.lk/",
   "normalized_url": "https://slaasmb.gov.lk/",
-  "started_at": "2026-10-11T08:31:02.793718+05:30",
-  "completed_at": "2026-10-11T08:35:19.252411+05:30",
+  "started_at": "2026-10-13T10:10:17.150086+05:30",
+  "completed_at": "2026-10-13T10:11:55.159682+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,117 +26,117 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-11T08:31:03.475786+05:30"
+      "observed_at": "2026-10-13T10:10:18.046590+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-11T08:31:03.475807+05:30"
+      "observed_at": "2026-10-13T10:10:18.046608+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-11T08:31:13.488354+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-13T10:10:19.014597+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://slaasmb.gov.lk/",
       "source": "https://slaasmb.gov.lk/",
-      "observed_at": "2026-10-11T08:35:18.851231+05:30"
+      "observed_at": "2026-10-13T10:11:54.689112+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://slaasmb.gov.lk/",
       "source": "http://slaasmb.gov.lk/",
-      "observed_at": "2026-10-11T08:35:18.851249+05:30"
+      "observed_at": "2026-10-13T10:11:54.689131+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://slaasmb.gov.lk/",
       "source": "https://slaasmb.gov.lk/",
-      "observed_at": "2026-10-11T08:35:18.851254+05:30"
+      "observed_at": "2026-10-13T10:11:54.689134+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://slaasmb.gov.lk/",
       "source": "http://slaasmb.gov.lk/",
-      "observed_at": "2026-10-11T08:35:18.851257+05:30"
+      "observed_at": "2026-10-13T10:11:54.689137+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://slaasmb.gov.lk/office-directory/",
       "source": "https://slaasmb.gov.lk/office-directory/",
-      "observed_at": "2026-10-11T08:35:18.851260+05:30"
+      "observed_at": "2026-10-13T10:11:54.689139+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://slaasmb.gov.lk/si/",
+      "detail": "Probe 6: HTTP 200 at https://slaasmb.gov.lk/contact-us/",
+      "source": "https://slaasmb.gov.lk/contact-us/",
+      "observed_at": "2026-10-13T10:11:54.689141+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://slaasmb.gov.lk/si/",
       "source": "https://slaasmb.gov.lk/si/",
-      "observed_at": "2026-10-11T08:35:18.851263+05:30"
+      "observed_at": "2026-10-13T10:11:54.689143+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://slaasmb.gov.lk/ta/",
+      "detail": "Probe 8: HTTP 200 at https://slaasmb.gov.lk/",
+      "source": "https://slaasmb.gov.lk/en/",
+      "observed_at": "2026-10-13T10:11:54.689145+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://slaasmb.gov.lk/ta/",
       "source": "https://slaasmb.gov.lk/ta/",
-      "observed_at": "2026-10-11T08:35:18.851265+05:30"
+      "observed_at": "2026-10-13T10:11:54.689147+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://slaasmb.gov.lk/overview-2/",
+      "detail": "Probe 10: HTTP 200 at https://slaasmb.gov.lk/",
+      "source": "http://slaasmb.gov.lk",
+      "observed_at": "2026-10-13T10:11:54.689150+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://slaasmb.gov.lk/overview-2/",
       "source": "https://slaasmb.gov.lk/overview-2/",
-      "observed_at": "2026-10-11T08:35:18.851268+05:30"
+      "observed_at": "2026-10-13T10:11:54.689152+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://slaasmb.gov.lk/members-of-the-board/",
+      "detail": "Probe 12: HTTP 200 at https://slaasmb.gov.lk/members-of-the-board/",
       "source": "https://slaasmb.gov.lk/members-of-the-board/",
-      "observed_at": "2026-10-11T08:35:18.851271+05:30"
+      "observed_at": "2026-10-13T10:11:54.689154+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://slaasmb.gov.lk/careers/",
+      "detail": "Probe 13: HTTP 200 at https://slaasmb.gov.lk/careers/",
       "source": "https://slaasmb.gov.lk/careers/",
-      "observed_at": "2026-10-11T08:35:18.851273+05:30"
+      "observed_at": "2026-10-13T10:11:54.689156+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://slaasmb.gov.lk/regulations/",
+      "detail": "Probe 14: HTTP 200 at https://slaasmb.gov.lk/regulations/",
       "source": "https://slaasmb.gov.lk/regulations/",
-      "observed_at": "2026-10-11T08:35:18.851276+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://slaasmb.gov.lk/mous-with-other-regulators/",
-      "source": "https://slaasmb.gov.lk/mous-with-other-regulators/",
-      "observed_at": "2026-10-11T08:35:18.851279+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://slaasmb.gov.lk/investigative-powers-of-the-board/",
-      "source": "https://slaasmb.gov.lk/investigative-powers-of-the-board/",
-      "observed_at": "2026-10-11T08:35:18.851282+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "source": "https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "observed_at": "2026-10-11T08:35:18.851284+05:30"
+      "observed_at": "2026-10-13T10:11:54.689158+05:30"
     },
     {
       "check": "phone",
@@ -223,19 +231,91 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112301211 ",
-      "source": "https://slaasmb.gov.lk/office-directory/",
+      "detail": "Published phone: 01210 94-11-2",
+      "source": "https://slaasmb.gov.lk/",
       "data": {
-        "value": "0112301211 "
+        "value": "01210 94-11-2"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: RS 9,",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "RS 9,"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 01210 94-11-2",
-      "source": "https://slaasmb.gov.lk/office-directory/",
+      "source": "https://slaasmb.gov.lk/",
       "data": {
         "value": "01210 94-11-2"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: RS 9,",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "RS 9,"
       }
     },
     {
@@ -248,12 +328,48 @@
       }
     },
     {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01210 94-11-2",
+      "source": "https://slaasmb.gov.lk/office-directory/",
+      "data": {
+        "value": "01210 94-11-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112301211 ",
+      "source": "https://slaasmb.gov.lk/office-directory/",
+      "data": {
+        "value": "0112301211 "
+      }
+    },
+    {
       "check": "email",
       "status": "pass",
       "detail": "Published email: randimas@slaasmb.gov.lk",
       "source": "https://slaasmb.gov.lk/office-directory/",
       "data": {
         "value": "randimas@slaasmb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: shiromia@slaasmb.gov.lk",
+      "source": "https://slaasmb.gov.lk/office-directory/",
+      "data": {
+        "value": "shiromia@slaasmb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: maheshd@slaasmb.gov.lk",
+      "source": "https://slaasmb.gov.lk/office-directory/",
+      "data": {
+        "value": "maheshd@slaasmb.gov.lk"
       }
     },
     {
@@ -277,37 +393,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: maheshd@slaasmb.gov.lk",
-      "source": "https://slaasmb.gov.lk/office-directory/",
-      "data": {
-        "value": "maheshd@slaasmb.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: shiromia@slaasmb.gov.lk",
-      "source": "https://slaasmb.gov.lk/office-directory/",
-      "data": {
-        "value": "shiromia@slaasmb.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: shanthahalloluwa@slaasmb.gov.lk",
       "source": "https://slaasmb.gov.lk/office-directory/",
       "data": {
         "value": "shanthahalloluwa@slaasmb.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kalanish@slaasmb.gov.lk",
-      "source": "https://slaasmb.gov.lk/office-directory/",
-      "data": {
-        "value": "kalanish@slaasmb.gov.lk"
       }
     },
     {
@@ -340,6 +429,78 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 011 2301211 ",
+      "source": "https://slaasmb.gov.lk/contact-us/",
+      "data": {
+        "value": "011 2301211 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01210 94-11-2",
+      "source": "https://slaasmb.gov.lk/contact-us/",
+      "data": {
+        "value": "01210 94-11-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2301210 ",
+      "source": "https://slaasmb.gov.lk/contact-us/",
+      "data": {
+        "value": "011 2301210 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: shiromia@slaasmb.gov.lk",
+      "source": "https://slaasmb.gov.lk/contact-us/",
+      "data": {
+        "value": "shiromia@slaasmb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: inquiry@slaasmb.gov.lk",
+      "source": "https://slaasmb.gov.lk/contact-us/",
+      "data": {
+        "value": "inquiry@slaasmb.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 3rd Floor, Bible House Building, 293, Galle Road, Colombo 3, Sri Lanka",
+      "source": "https://slaasmb.gov.lk/contact-us/",
+      "data": {
+        "value": "3rd Floor, Bible House Building, 293, Galle Road, Colombo 3, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://slaasmb.gov.lk/contact-us/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://slaasmb.gov.lk/contact-us/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 01210 94-1-23",
       "source": "https://slaasmb.gov.lk/si/",
       "data": {
@@ -360,6 +521,51 @@
       "status": "pass",
       "detail": "Published fees and payment: RS 9,",
       "source": "https://slaasmb.gov.lk/si/",
+      "data": {
+        "value": "RS 9,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01210 94-11-2",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "01210 94-11-2"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: RS 9,",
+      "source": "https://slaasmb.gov.lk/",
       "data": {
         "value": "RS 9,"
       }
@@ -396,6 +602,51 @@
       "status": "pass",
       "detail": "Published fees and payment: RS 9,",
       "source": "https://slaasmb.gov.lk/ta/",
+      "data": {
+        "value": "RS 9,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01210 94-11-2",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "01210 94-11-2"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://slaasmb.gov.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: RS 9,",
+      "source": "https://slaasmb.gov.lk/",
       "data": {
         "value": "RS 9,"
       }
@@ -563,126 +814,9 @@
       }
     },
     {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01210 94-11-2",
-      "source": "https://slaasmb.gov.lk/mous-with-other-regulators/",
-      "data": {
-        "value": "01210 94-11-2"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka",
-      "source": "https://slaasmb.gov.lk/mous-with-other-regulators/",
-      "data": {
-        "value": "3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slaasmb.gov.lk/mous-with-other-regulators/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slaasmb.gov.lk/mous-with-other-regulators/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01210 94-11-2",
-      "source": "https://slaasmb.gov.lk/investigative-powers-of-the-board/",
-      "data": {
-        "value": "01210 94-11-2"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka",
-      "source": "https://slaasmb.gov.lk/investigative-powers-of-the-board/",
-      "data": {
-        "value": "3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slaasmb.gov.lk/investigative-powers-of-the-board/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slaasmb.gov.lk/investigative-powers-of-the-board/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01210 94-11-2",
-      "source": "https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "data": {
-        "value": "01210 94-11-2"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka",
-      "source": "https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "data": {
-        "value": "3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: RS 9,",
-      "source": "https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "data": {
-        "value": "RS 9,"
-      }
-    },
-    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 5364 visible characters across 12 pages",
+      "detail": "Substantive page content: 5364 visible characters across 14 pages",
       "source": "https://slaasmb.gov.lk/"
     }
   ],
@@ -703,19 +837,19 @@
     },
     {
       "host": "slaasmb.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-12-16T08:19:39+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://slaasmb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://slaasmb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 25491,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://slaasmb.gov.lk/",
@@ -724,7 +858,7 @@
       "redirects": [
         "https://slaasmb.gov.lk/"
       ],
-      "elapsed_ms": 13337,
+      "elapsed_ms": 21461,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -733,25 +867,36 @@
       "status_code": 200,
       "final_url": "https://slaasmb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 1362,
+      "elapsed_ms": 1357,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://slaasmb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://slaasmb.gov.lk/",
+      "redirects": [
+        "https://slaasmb.gov.lk/"
+      ],
+      "elapsed_ms": 1921,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://slaasmb.gov.lk/office-directory/",
       "status_code": 200,
       "final_url": "https://slaasmb.gov.lk/office-directory/",
       "redirects": [],
-      "elapsed_ms": 1076,
+      "elapsed_ms": 1533,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://slaasmb.gov.lk/contact-us/",
+      "status_code": 200,
+      "final_url": "https://slaasmb.gov.lk/contact-us/",
+      "redirects": [],
+      "elapsed_ms": 2118,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -760,7 +905,18 @@
       "status_code": 200,
       "final_url": "https://slaasmb.gov.lk/si/",
       "redirects": [],
-      "elapsed_ms": 2321,
+      "elapsed_ms": 1348,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://slaasmb.gov.lk/en/",
+      "status_code": 200,
+      "final_url": "https://slaasmb.gov.lk/",
+      "redirects": [
+        "https://slaasmb.gov.lk/"
+      ],
+      "elapsed_ms": 1341,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -769,7 +925,18 @@
       "status_code": 200,
       "final_url": "https://slaasmb.gov.lk/ta/",
       "redirects": [],
-      "elapsed_ms": 1367,
+      "elapsed_ms": 1347,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://slaasmb.gov.lk",
+      "status_code": 200,
+      "final_url": "https://slaasmb.gov.lk/",
+      "redirects": [
+        "https://slaasmb.gov.lk/"
+      ],
+      "elapsed_ms": 22319,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -778,7 +945,7 @@
       "status_code": 200,
       "final_url": "https://slaasmb.gov.lk/overview-2/",
       "redirects": [],
-      "elapsed_ms": 21388,
+      "elapsed_ms": 1445,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -787,7 +954,7 @@
       "status_code": 200,
       "final_url": "https://slaasmb.gov.lk/members-of-the-board/",
       "redirects": [],
-      "elapsed_ms": 1793,
+      "elapsed_ms": 2488,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -796,7 +963,7 @@
       "status_code": 200,
       "final_url": "https://slaasmb.gov.lk/careers/",
       "redirects": [],
-      "elapsed_ms": 20455,
+      "elapsed_ms": 2296,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -805,34 +972,7 @@
       "status_code": 200,
       "final_url": "https://slaasmb.gov.lk/regulations/",
       "redirects": [],
-      "elapsed_ms": 1594,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://slaasmb.gov.lk/mous-with-other-regulators/",
-      "status_code": 200,
-      "final_url": "https://slaasmb.gov.lk/mous-with-other-regulators/",
-      "redirects": [],
-      "elapsed_ms": 20493,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://slaasmb.gov.lk/investigative-powers-of-the-board/",
-      "status_code": 200,
-      "final_url": "https://slaasmb.gov.lk/investigative-powers-of-the-board/",
-      "redirects": [],
-      "elapsed_ms": 1330,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "status_code": 200,
-      "final_url": "https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "redirects": [],
-      "elapsed_ms": 1333,
+      "elapsed_ms": 1575,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -840,75 +980,87 @@
   "snapshots": [
     {
       "url": "https://slaasmb.gov.lk/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-01-ac9a082b6424.html",
-      "sha256": "ac9a082b64240b0ecd9ede13c5f65f16860bec741636ea8a2afd7eb1d415048f",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-01-0e1a9a9edcf0.html",
+      "sha256": "0e1a9a9edcf00d8419fb195043555ffedda3becd59162ac9e6b9e167be6363dc",
       "bytes": 62472
     },
     {
       "url": "https://slaasmb.gov.lk/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-02-e4b284dfeccc.html",
-      "sha256": "e4b284dfeccc32bc4e48b0abe258833579f507c1427f1694900570f8ac6b167b",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-02-d60988c6a1f0.html",
+      "sha256": "d60988c6a1f0f7faf82153545dfbd52544b84f57ba00ef388fe99f045d602b87",
+      "bytes": 62472
+    },
+    {
+      "url": "https://slaasmb.gov.lk/",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-03-fd5b616fc47c.html",
+      "sha256": "fd5b616fc47ca6f81d68dcbbaacd9f804ed9c9c956c15203d7f99d31b1bd9b2f",
+      "bytes": 62472
+    },
+    {
+      "url": "https://slaasmb.gov.lk/",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-04-e85d3d5da4be.html",
+      "sha256": "e85d3d5da4bedcad91e3323243941e3165a43c208ee50f28b24514389a2affa4",
       "bytes": 62472
     },
     {
       "url": "https://slaasmb.gov.lk/office-directory/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-03-6d11ffe963c4.html",
-      "sha256": "6d11ffe963c49df03e482d8cb103a98f3b4f5ed25fd5917a778b05dc8d6a11ce",
-      "bytes": 58722
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-05-ad0e19bb88a5.html",
+      "sha256": "ad0e19bb88a5763d93c04487f4f537c025a9b5dbf22a15ea671ddb0487b665dc",
+      "bytes": 58649
+    },
+    {
+      "url": "https://slaasmb.gov.lk/contact-us/",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-06-9f50acba46fd.html",
+      "sha256": "9f50acba46fd36ca24775d840b5e4d22ca7fe583e0d2e44ad01ea9367faaf50e",
+      "bytes": 56801
     },
     {
       "url": "https://slaasmb.gov.lk/si/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-04-3998cc2acae7.html",
-      "sha256": "3998cc2acae76355d7a9d99d7c962a2c42aa4230ee36eba73536f55222055324",
-      "bytes": 64686
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-07-b7ae19703562.html",
+      "sha256": "b7ae19703562395fd0a4936f89cd1025c2cb8942bc163fa1d898d736995fd763",
+      "bytes": 64685
+    },
+    {
+      "url": "https://slaasmb.gov.lk/",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-08-33114c1bbb1f.html",
+      "sha256": "33114c1bbb1f28e9ed295484fb2216aad6f7c806c7bdf5f6760218b8eaf124d4",
+      "bytes": 62472
     },
     {
       "url": "https://slaasmb.gov.lk/ta/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-05-60132a5d8de4.html",
-      "sha256": "60132a5d8de4d27e028aec263183ddec02ee26b98a67c57cad0abb45775fcfce",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-09-f949b888ed17.html",
+      "sha256": "f949b888ed17af7d0a55e9c21b0814546a3f0090dc66e9f6d0ed9465fffa5eae",
       "bytes": 64810
     },
     {
+      "url": "https://slaasmb.gov.lk/",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-10-57f6160a3972.html",
+      "sha256": "57f6160a397270d7fc80d59e55a6bd334507307222b40108166093d794d61580",
+      "bytes": 62472
+    },
+    {
       "url": "https://slaasmb.gov.lk/overview-2/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-06-f7c6dc0e65e9.html",
-      "sha256": "f7c6dc0e65e92fad8cb73aad01c44deb026f639d3d869791ce380192ae34331d",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-11-9f3b06a9cf66.html",
+      "sha256": "9f3b06a9cf66b5a3e52fbc8206d69f1f00a55bf2a5848d62399e086413e5b6ba",
       "bytes": 54838
     },
     {
       "url": "https://slaasmb.gov.lk/members-of-the-board/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-07-00501802bb87.html",
-      "sha256": "00501802bb870026413e7b0b9a66ef201f9bc226ea9941ef720aeb7ed8caad7d",
-      "bytes": 71626
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-12-c743328f7a4e.html",
+      "sha256": "c743328f7a4e2d4897823d0dcfdba4a749678adf743be164395537770460819d",
+      "bytes": 71627
     },
     {
       "url": "https://slaasmb.gov.lk/careers/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-08-06a918547d21.html",
-      "sha256": "06a918547d210e05b267233059cfc3b6d416b8e1a4490a9ac1794f530cc926fe",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-13-5a96402ff354.html",
+      "sha256": "5a96402ff354acc8d7dfe4a7b5fadbba532bf620e038f24d00be986f34f47c84",
       "bytes": 58864
     },
     {
       "url": "https://slaasmb.gov.lk/regulations/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-09-d785a7ee20b1.html",
-      "sha256": "d785a7ee20b134f06c06c948305a9c1fab25e03bc803887f51a1d03713fee0b8",
+      "path": "audit.output/slaasmb.gov.lk/20261013.1010/snapshots/page-14-a4d4dc7ecc75.html",
+      "sha256": "a4d4dc7ecc7532d56fbc88ef47a8e9b83b90ebb962f0a54bf1d3a022dd417af0",
       "bytes": 64981
-    },
-    {
-      "url": "https://slaasmb.gov.lk/mous-with-other-regulators/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-10-2aa1a3bc6aaa.html",
-      "sha256": "2aa1a3bc6aaadff8f8aaac43c350985988044440451abcae42df9335f5ad3eb6",
-      "bytes": 57465
-    },
-    {
-      "url": "https://slaasmb.gov.lk/investigative-powers-of-the-board/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-11-e154f7bf5264.html",
-      "sha256": "e154f7bf52644ff09c7827295981fa82a44b4c61ecc6148be9493d6a2f862a9e",
-      "bytes": 54508
-    },
-    {
-      "url": "https://slaasmb.gov.lk/penalties-and-other-implications/",
-      "path": "audit.output/slaasmb.gov.lk/20261011.0831/snapshots/page-12-acd36d73eefe.html",
-      "sha256": "acd36d73eefe4d9dd38c6844618f97f9be12ecefeff871ffddd33858179af25e",
-      "bytes": 55346
     }
   ],
   "reviewer_decisions": [],
@@ -924,8 +1076,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -962,7 +1114,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: https://slaasmb.gov.lk/: Probe 1: timed out; http://slaasmb.gov.lk/: Probe 4: timed out"
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -979,32 +1131,94 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka; Phone: 01210 94-11-2 (6 phone numbers found); Email: randimas@slaasmb.gov.lk (7 email addresses found); Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 01210 94-11-2 (6 phone numbers found); Email: randimas@slaasmb.gov.lk (7 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: RS 9,"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -1024,7 +1238,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.154.132.177",
+    "egress_ip": "4.242.196.77",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: https://www.moudh.gov.lk/
 
-- Completed: 2026-10-11 09:09
+- Completed: 2026-10-13 10:46
 - Overall result: ⚫ Level 0
-- Vantage: 52.154.132.177 (US, github-actions)
+- Vantage: 4.242.196.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

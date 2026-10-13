@@ -1,8 +1,8 @@
 # Website Audit: https://www.natlib.lk/
 
-- Completed: 2026-10-11 08:11
+- Completed: 2026-10-13 09:50
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.132.177 (US, github-actions)
+- Vantage: 4.242.196.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: & Documentation Services Board, No 14, Independence Avenue, Colombo 07, Sri Lanka; Phone: +94 11 2698847 (28 phone numbers found); Email: editornlr@mail.natlib.lk (20 email addresses found); Published named responsibility: director
+Published postal address: & Documentation Services Board, No 14, Independence Avenue, Colombo 07, Sri Lanka; Phone: +94 11 2698847 (28 phone numbers found); Email: info@mail.natlib.lk (20 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: & Documentation Services Board, No 14, Independence Avenue, Colombo 07, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2698847 (28 phone numbers found); Email: editornlr@mail.natlib.lk (20 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2698847 (28 phone numbers found); Email: info@mail.natlib.lk (20 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://www.natlib.lk/NLDSB/wp-content/uploads/2026/08/Grading-Application-New.pdf |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://lal.lk/
 
-- Completed: 2026-10-11 08:45
+- Completed: 2026-10-13 10:22
 - Overall result: 🔴 Level 1
-- Vantage: 52.154.132.177 (US, github-actions)
+- Vantage: 4.242.196.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0.833333333 (49 phone numbers found); Email: mktinfo@lal.lk |
+| reachable_contacts | ✅ | Phone: +94742000790 (49 phone numbers found); Email: mktinfo@lal.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

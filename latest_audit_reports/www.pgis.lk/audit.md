@@ -1,8 +1,8 @@
 # Website Audit: http://www.pgis.lk/
 
-- Completed: 2026-10-11 08:19
+- Completed: 2026-10-13 09:59
 - Overall result: 🔴 Level 1
-- Vantage: 52.154.132.177 (US, github-actions)
+- Vantage: 4.242.196.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 81 2385669 ( (5 phone numbers found); Email: info@pgis.lk |
+| reachable_contacts | ✅ | Phone: +94 81 2389026 (5 phone numbers found); Email: info@pgis.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

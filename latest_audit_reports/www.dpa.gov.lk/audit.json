@@ -1,24 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c5b8069a-8e5f-4ed6-9ea5-58b2c599641c",
+  "audit_id": "e44503db-06a1-4c6f-9af8-466af7359fa1",
   "url": "https://www.dpa.gov.lk/",
   "normalized_url": "https://www.dpa.gov.lk/",
-  "started_at": "2026-10-11T08:13:09.600263+05:30",
-  "completed_at": "2026-10-11T08:13:29.636764+05:30",
+  "started_at": "2026-10-13T09:52:34.775903+05:30",
+  "completed_at": "2026-10-13T10:03:26.110307+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "hosting_configured: Detected generic hosting marker: under construction"
     ]
   },
   "evidence": [
@@ -26,134 +17,125 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-11T08:13:09.990656+05:30"
+      "observed_at": "2026-10-13T09:52:35.463481+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-11T08:13:09.990675+05:30"
+      "observed_at": "2026-10-13T09:52:35.463501+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-11T08:13:10.732962+05:30"
+      "status": "error",
+      "detail": "_ssl.c:993: The handshake operation timed out",
+      "observed_at": "2026-10-13T09:52:45.964939+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://www.dpa.gov.lk/",
       "source": "https://www.dpa.gov.lk/",
-      "observed_at": "2026-10-11T08:13:29.451579+05:30"
+      "observed_at": "2026-10-13T10:03:26.027370+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://www.dpa.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.dpa.gov.lk/",
-      "observed_at": "2026-10-11T08:13:29.451601+05:30"
+      "observed_at": "2026-10-13T10:03:26.027389+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.dpa.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: _ssl.c:993: The handshake operation timed out",
       "source": "https://www.dpa.gov.lk/",
-      "observed_at": "2026-10-11T08:13:29.451608+05:30"
+      "observed_at": "2026-10-13T10:03:26.027392+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://www.dpa.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.dpa.gov.lk/",
-      "observed_at": "2026-10-11T08:13:29.451614+05:30"
+      "observed_at": "2026-10-13T10:03:26.027395+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://www.dpa.gov.lk/contact1.php",
       "source": "https://www.dpa.gov.lk/contact1.php",
-      "observed_at": "2026-10-11T08:13:29.451620+05:30"
+      "observed_at": "2026-10-13T10:03:26.027397+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 6: HTTP 200 at https://www.dpa.gov.lk/index.php",
       "source": "https://www.dpa.gov.lk/index.php",
-      "observed_at": "2026-10-11T08:13:29.451625+05:30"
+      "observed_at": "2026-10-13T10:03:26.027400+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 7: HTTP 200 at https://www.dpa.gov.lk/DPA.php",
       "source": "https://www.dpa.gov.lk/DPA.php",
-      "observed_at": "2026-10-11T08:13:29.451631+05:30"
+      "observed_at": "2026-10-13T10:03:26.027402+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 8: HTTP 200 at https://www.dpa.gov.lk/directornewl.php",
       "source": "https://www.dpa.gov.lk/directornewl.php",
-      "observed_at": "2026-10-11T08:13:29.451636+05:30"
+      "observed_at": "2026-10-13T10:03:26.027404+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 9: HTTP 200 at https://www.dpa.gov.lk/director.php",
       "source": "https://www.dpa.gov.lk/director.php",
-      "observed_at": "2026-10-11T08:13:29.451641+05:30"
+      "observed_at": "2026-10-13T10:03:26.027407+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 10: HTTP 200 at https://www.dpa.gov.lk/mandate.php",
       "source": "https://www.dpa.gov.lk/mandate.php",
-      "observed_at": "2026-10-11T08:13:29.451646+05:30"
+      "observed_at": "2026-10-13T10:03:26.027409+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.dpa.gov.lk/values.php",
-      "source": "https://www.dpa.gov.lk/values.php",
-      "observed_at": "2026-10-11T08:13:29.451651+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.dpa.gov.lk/Background.php",
+      "detail": "Probe 11: HTTP 200 at https://www.dpa.gov.lk/Background.php",
       "source": "https://www.dpa.gov.lk/Background.php",
-      "observed_at": "2026-10-11T08:13:29.451656+05:30"
+      "observed_at": "2026-10-13T10:03:26.027411+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.dpa.gov.lk/guidelines.php",
+      "detail": "Probe 12: HTTP 200 at https://www.dpa.gov.lk/guidelines.php",
       "source": "https://www.dpa.gov.lk/guidelines.php",
-      "observed_at": "2026-10-11T08:13:29.451661+05:30"
+      "observed_at": "2026-10-13T10:03:26.027413+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.dpa.gov.lk/Procurement.php",
+      "detail": "Probe 13: HTTP 200 at https://www.dpa.gov.lk/Procurement.php",
       "source": "https://www.dpa.gov.lk/Procurement.php",
-      "observed_at": "2026-10-11T08:13:29.451666+05:30"
+      "observed_at": "2026-10-13T10:03:26.027415+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.dpa.gov.lk/faq1.php",
+      "source": "https://www.dpa.gov.lk/faq1.php",
+      "observed_at": "2026-10-13T10:03:26.027417+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
+      "detail": "Published phone: +940112697237",
       "source": "https://www.dpa.gov.lk/",
       "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/",
-      "data": {
-        "value": "+940112697241"
+        "value": "+940112697237"
       }
     },
     {
@@ -168,10 +150,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +940112697241",
       "source": "https://www.dpa.gov.lk/",
       "data": {
-        "value": "+940112697237"
+        "value": "+940112697241"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 (0)11269723",
+      "source": "https://www.dpa.gov.lk/",
+      "data": {
+        "value": "+94 (0)11269723"
       }
     },
     {
@@ -213,235 +204,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "+940112697241"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0)11269724",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "+94 (0)11269724"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +940112697237",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "+940112697237"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@dpa.gov.lk",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "info@dpa.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
-      "source": "https://www.dpa.gov.lk/",
-      "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/",
-      "data": {
-        "value": "+940112697241"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0)11269724",
-      "source": "https://www.dpa.gov.lk/",
-      "data": {
-        "value": "+94 (0)11269724"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697237",
-      "source": "https://www.dpa.gov.lk/",
-      "data": {
-        "value": "+940112697237"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@dpa.gov.lk",
-      "source": "https://www.dpa.gov.lk/",
-      "data": {
-        "value": "info@dpa.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement",
-      "source": "https://www.dpa.gov.lk/",
-      "data": {
-        "value": "Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.dpa.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.dpa.gov.lk/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "+940112697241"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0)11269724",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "+94 (0)11269724"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697237",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "+940112697237"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@dpa.gov.lk",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "info@dpa.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "http://www.dpa.gov.lk/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
       "source": "https://www.dpa.gov.lk/contact1.php",
       "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/contact1.php",
-      "data": {
-        "value": "+940112697241"
+        "value": "+940112697237"
       }
     },
     {
@@ -456,10 +222,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +940112697241",
       "source": "https://www.dpa.gov.lk/contact1.php",
       "data": {
-        "value": "+940112697237"
+        "value": "+940112697241"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 (0)11269723",
+      "source": "https://www.dpa.gov.lk/contact1.php",
+      "data": {
+        "value": "+94 (0)11269723"
       }
     },
     {
@@ -492,19 +267,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
+      "detail": "Published phone: +940112697237",
       "source": "https://www.dpa.gov.lk/index.php",
       "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/index.php",
-      "data": {
-        "value": "+940112697241"
+        "value": "+940112697237"
       }
     },
     {
@@ -519,10 +285,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +940112697241",
       "source": "https://www.dpa.gov.lk/index.php",
       "data": {
-        "value": "+940112697237"
+        "value": "+940112697241"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 (0)11269723",
+      "source": "https://www.dpa.gov.lk/index.php",
+      "data": {
+        "value": "+94 (0)11269723"
       }
     },
     {
@@ -564,19 +339,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
+      "detail": "Published phone: +940112697237",
       "source": "https://www.dpa.gov.lk/DPA.php",
       "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/DPA.php",
-      "data": {
-        "value": "+940112697241"
+        "value": "+940112697237"
       }
     },
     {
@@ -591,10 +357,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +940112697241",
       "source": "https://www.dpa.gov.lk/DPA.php",
       "data": {
-        "value": "+940112697237"
+        "value": "+940112697241"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 (0)11269723",
+      "source": "https://www.dpa.gov.lk/DPA.php",
+      "data": {
+        "value": "+94 (0)11269723"
       }
     },
     {
@@ -636,19 +411,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
+      "detail": "Published phone: +940112697237",
       "source": "https://www.dpa.gov.lk/directornewl.php",
       "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/directornewl.php",
-      "data": {
-        "value": "+940112697241"
+        "value": "+940112697237"
       }
     },
     {
@@ -663,10 +429,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +940112697241",
       "source": "https://www.dpa.gov.lk/directornewl.php",
       "data": {
-        "value": "+940112697237"
+        "value": "+940112697241"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 (0)11269723",
+      "source": "https://www.dpa.gov.lk/directornewl.php",
+      "data": {
+        "value": "+94 (0)11269723"
       }
     },
     {
@@ -699,19 +474,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
+      "detail": "Published phone: +940112697237",
       "source": "https://www.dpa.gov.lk/director.php",
       "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/director.php",
-      "data": {
-        "value": "+940112697241"
+        "value": "+940112697237"
       }
     },
     {
@@ -726,10 +492,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +940112697241",
       "source": "https://www.dpa.gov.lk/director.php",
       "data": {
-        "value": "+940112697237"
+        "value": "+940112697241"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 (0)11269723",
+      "source": "https://www.dpa.gov.lk/director.php",
+      "data": {
+        "value": "+94 (0)11269723"
       }
     },
     {
@@ -762,19 +537,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
+      "detail": "Published phone: +940112697237",
       "source": "https://www.dpa.gov.lk/mandate.php",
       "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/mandate.php",
-      "data": {
-        "value": "+940112697241"
+        "value": "+940112697237"
       }
     },
     {
@@ -789,10 +555,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +940112697241",
       "source": "https://www.dpa.gov.lk/mandate.php",
       "data": {
-        "value": "+940112697237"
+        "value": "+940112697241"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 (0)11269723",
+      "source": "https://www.dpa.gov.lk/mandate.php",
+      "data": {
+        "value": "+94 (0)11269723"
       }
     },
     {
@@ -825,82 +600,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
-      "source": "https://www.dpa.gov.lk/values.php",
-      "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/values.php",
-      "data": {
-        "value": "+940112697241"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0)11269724",
-      "source": "https://www.dpa.gov.lk/values.php",
-      "data": {
-        "value": "+94 (0)11269724"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +940112697237",
-      "source": "https://www.dpa.gov.lk/values.php",
+      "source": "https://www.dpa.gov.lk/Background.php",
       "data": {
         "value": "+940112697237"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@dpa.gov.lk",
-      "source": "https://www.dpa.gov.lk/values.php",
-      "data": {
-        "value": "info@dpa.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement",
-      "source": "https://www.dpa.gov.lk/values.php",
-      "data": {
-        "value": "Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.dpa.gov.lk/values.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
-      "source": "https://www.dpa.gov.lk/Background.php",
-      "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/Background.php",
-      "data": {
-        "value": "+940112697241"
       }
     },
     {
@@ -915,10 +618,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +940112697241",
       "source": "https://www.dpa.gov.lk/Background.php",
       "data": {
-        "value": "+940112697237"
+        "value": "+940112697241"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 (0)11269723",
+      "source": "https://www.dpa.gov.lk/Background.php",
+      "data": {
+        "value": "+94 (0)11269723"
       }
     },
     {
@@ -951,19 +663,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +94 (0)11269724",
       "source": "https://www.dpa.gov.lk/guidelines.php",
       "data": {
-        "value": "+940112697237"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
-      "source": "https://www.dpa.gov.lk/guidelines.php",
-      "data": {
-        "value": "+94 (0)11269723"
+        "value": "+94 (0)11269724"
       }
     },
     {
@@ -978,19 +681,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697241",
+      "detail": "Published phone: +940112697237",
       "source": "https://www.dpa.gov.lk/guidelines.php",
       "data": {
-        "value": "+940112697241"
+        "value": "+940112697237"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269724",
+      "detail": "Published phone: +94 (0)11269723",
       "source": "https://www.dpa.gov.lk/guidelines.php",
       "data": {
-        "value": "+94 (0)11269724"
+        "value": "+94 (0)11269723"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +940112697241",
+      "source": "https://www.dpa.gov.lk/guidelines.php",
+      "data": {
+        "value": "+940112697241"
       }
     },
     {
@@ -1032,19 +744,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 (0)11269723",
+      "detail": "Published phone: +940112697237",
       "source": "https://www.dpa.gov.lk/Procurement.php",
       "data": {
-        "value": "+94 (0)11269723"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +940112697241",
-      "source": "https://www.dpa.gov.lk/Procurement.php",
-      "data": {
-        "value": "+940112697241"
+        "value": "+940112697237"
       }
     },
     {
@@ -1059,10 +762,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +940112697237",
+      "detail": "Published phone: +940112697241",
       "source": "https://www.dpa.gov.lk/Procurement.php",
       "data": {
-        "value": "+940112697237"
+        "value": "+940112697241"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 (0)11269723",
+      "source": "https://www.dpa.gov.lk/Procurement.php",
+      "data": {
+        "value": "+94 (0)11269723"
       }
     },
     {
@@ -1093,9 +805,24 @@
       }
     },
     {
+      "check": "generic_hosting",
+      "status": "fail",
+      "detail": "Detected generic hosting marker: under construction",
+      "source": "https://www.dpa.gov.lk/faq1.php"
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.dpa.gov.lk/faq1.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 11312 visible characters across 14 pages",
+      "detail": "Substantive page content: 5709 visible characters across 11 pages",
       "source": "https://www.dpa.gov.lk/"
     }
   ],
@@ -1116,53 +843,53 @@
     },
     {
       "host": "www.dpa.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-01T09:01:42+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "_ssl.c:993: The handshake operation timed out"
     },
     {
       "url": "https://www.dpa.gov.lk/",
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 1443,
+      "elapsed_ms": 54024,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://www.dpa.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://www.dpa.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 944,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.dpa.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.dpa.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1486,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "_ssl.c:993: The handshake operation timed out"
     },
     {
       "url": "http://www.dpa.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://www.dpa.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 852,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.dpa.gov.lk/contact1.php",
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/contact1.php",
       "redirects": [],
-      "elapsed_ms": 1271,
+      "elapsed_ms": 36295,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1171,7 +898,7 @@
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/index.php",
       "redirects": [],
-      "elapsed_ms": 1474,
+      "elapsed_ms": 41619,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1180,7 +907,7 @@
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/DPA.php",
       "redirects": [],
-      "elapsed_ms": 1003,
+      "elapsed_ms": 32248,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1189,7 +916,7 @@
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/directornewl.php",
       "redirects": [],
-      "elapsed_ms": 1056,
+      "elapsed_ms": 51520,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1198,7 +925,7 @@
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/director.php",
       "redirects": [],
-      "elapsed_ms": 1075,
+      "elapsed_ms": 48790,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1207,16 +934,7 @@
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/mandate.php",
       "redirects": [],
-      "elapsed_ms": 1301,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.dpa.gov.lk/values.php",
-      "status_code": 200,
-      "final_url": "https://www.dpa.gov.lk/values.php",
-      "redirects": [],
-      "elapsed_ms": 1532,
+      "elapsed_ms": 52534,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1225,7 +943,7 @@
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/Background.php",
       "redirects": [],
-      "elapsed_ms": 1017,
+      "elapsed_ms": 37538,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1234,7 +952,7 @@
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/guidelines.php",
       "redirects": [],
-      "elapsed_ms": 1069,
+      "elapsed_ms": 58123,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1243,7 +961,16 @@
       "status_code": 200,
       "final_url": "https://www.dpa.gov.lk/Procurement.php",
       "redirects": [],
-      "elapsed_ms": 984,
+      "elapsed_ms": 38874,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.dpa.gov.lk/faq1.php",
+      "status_code": 200,
+      "final_url": "https://www.dpa.gov.lk/faq1.php",
+      "redirects": [],
+      "elapsed_ms": 20488,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -1251,87 +978,69 @@
   "snapshots": [
     {
       "url": "https://www.dpa.gov.lk/",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-01-4a7b95465f27.html",
-      "sha256": "4a7b95465f2759e881219599da67107863fc504395407a2d982b2b895f2ef317",
-      "bytes": 39590
-    },
-    {
-      "url": "http://www.dpa.gov.lk/",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-02-4a7b95465f27.html",
-      "sha256": "4a7b95465f2759e881219599da67107863fc504395407a2d982b2b895f2ef317",
-      "bytes": 39590
-    },
-    {
-      "url": "https://www.dpa.gov.lk/",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-03-4a7b95465f27.html",
-      "sha256": "4a7b95465f2759e881219599da67107863fc504395407a2d982b2b895f2ef317",
-      "bytes": 39590
-    },
-    {
-      "url": "http://www.dpa.gov.lk/",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-04-4a7b95465f27.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-01-4a7b95465f27.html",
       "sha256": "4a7b95465f2759e881219599da67107863fc504395407a2d982b2b895f2ef317",
       "bytes": 39590
     },
     {
       "url": "https://www.dpa.gov.lk/contact1.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-05-d99c222e42a2.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-02-d99c222e42a2.html",
       "sha256": "d99c222e42a28037324d0e113f0101596356b2c9aa454fb89f9a9d9ef279bc2c",
       "bytes": 17611
     },
     {
       "url": "https://www.dpa.gov.lk/index.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-06-4a7b95465f27.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-03-4a7b95465f27.html",
       "sha256": "4a7b95465f2759e881219599da67107863fc504395407a2d982b2b895f2ef317",
       "bytes": 39590
     },
     {
       "url": "https://www.dpa.gov.lk/DPA.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-07-74876ab57ef3.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-04-74876ab57ef3.html",
       "sha256": "74876ab57ef3a8284f39d456f2249a2314c364f9bc1bca84df4472c8914a6ef3",
       "bytes": 16211
     },
     {
       "url": "https://www.dpa.gov.lk/directornewl.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-08-4504e0b18d53.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-05-4504e0b18d53.html",
       "sha256": "4504e0b18d5333d864c43cf8932e7ef76747262c1d259cb93a6c29940e32bbb3",
       "bytes": 35364
     },
     {
       "url": "https://www.dpa.gov.lk/director.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-09-64c063626171.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-06-64c063626171.html",
       "sha256": "64c063626171faa3c41785e40cbeac6adf47b0c6957b6e7de3918bb3adf00b9e",
       "bytes": 34312
     },
     {
       "url": "https://www.dpa.gov.lk/mandate.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-10-e0b4786d7f40.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-07-e0b4786d7f40.html",
       "sha256": "e0b4786d7f404d3125553b7544054efd27d65b4ae59fda323133187f43a84286",
       "bytes": 23299
     },
     {
-      "url": "https://www.dpa.gov.lk/values.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-11-5d82edaed9ca.html",
-      "sha256": "5d82edaed9caca19cf488801f0bde231abb3273419f513452178f8ffe9c53baa",
-      "bytes": 52863
-    },
-    {
       "url": "https://www.dpa.gov.lk/Background.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-12-682793f6f2c1.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-08-682793f6f2c1.html",
       "sha256": "682793f6f2c131bd0eedcbfb85019d3d1321fe2a35f3a990f1835be634ee7ec4",
       "bytes": 14345
     },
     {
       "url": "https://www.dpa.gov.lk/guidelines.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-13-1d2a384fd521.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-09-1d2a384fd521.html",
       "sha256": "1d2a384fd521d3beb09900ce261b1b57e34e480870c7b98c592e918f1bd8cb51",
       "bytes": 33459
     },
     {
       "url": "https://www.dpa.gov.lk/Procurement.php",
-      "path": "audit.output/www.dpa.gov.lk/20261011.0813/snapshots/page-14-73f256eb9c5a.html",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-10-73f256eb9c5a.html",
       "sha256": "73f256eb9c5a8925f6a38b0d878ee552fee247233b026188143ba7c4f3fafcd5",
       "bytes": 19640
+    },
+    {
+      "url": "https://www.dpa.gov.lk/faq1.php",
+      "path": "audit.output/www.dpa.gov.lk/20261013.0952/snapshots/page-11-08dfff45db7e.html",
+      "sha256": "08dfff45db7e376462c3c97b6376f3bdc06a3f400d0dd8017e36523071ebc0e8",
+      "bytes": 8439
     }
   ],
   "reviewer_decisions": [],
@@ -1347,8 +1056,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Detected generic hosting marker: under construction",
       "executed": true,
       "checks": [
         {
@@ -1378,14 +1087,14 @@
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "fail",
+          "reason": "Detected generic hosting marker: under construction"
         },
         {
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "reason": "HTTPS probes passed; failing variants: http://www.dpa.gov.lk/: Probe 2: timed out; https://www.dpa.gov.lk/: Probe 3: _ssl.c:993: The handshake operation timed out; http://www.dpa.gov.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
@@ -1402,94 +1111,32 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "_ssl.c:993: The handshake operation timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "_ssl.c:993: The handshake operation timed out"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement; Phone: +94 (0)11269723 (5 phone numbers found); Email: info@dpa.gov.lk; Published named responsibility: director",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Phone: +94 (0)112697237 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 (0)11269723 (5 phone numbers found); Email: info@dpa.gov.lk"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing fees and payment evidence found"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: regulations"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1509,7 +1156,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.154.132.177",
+    "egress_ip": "4.242.196.77",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
