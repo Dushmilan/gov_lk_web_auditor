@@ -1,8 +1,8 @@
 # Website Audit: https://emb-amman.gov.lk/
 
-- Completed: 2026-10-13 10:16
+- Completed: 2026-10-14 08:24
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.196.77 (US, github-actions)
+- Vantage: 13.87.231.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777; Phone: 0322003687 (8 phone numbers found); Email: slemb.amman@mfa.gov.lk (2 email addresses found); Published named responsibility: department
+Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777; Phone: 0322003687 (8 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777 |
-| reachable_contacts | ✅ | Phone: 0322003687 (8 phone numbers found); Email: slemb.amman@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0322003687 (8 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 10/08/2026 |
+| published_update_date | ❓ | No passing published update date evidence found |

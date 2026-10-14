@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "ddf144a6-a386-4b2d-8a0f-1992698eb938",
+  "audit_id": "4975b19b-5e69-41e4-9150-e03d09b18a84",
   "url": "https://mcb.gov.lk/",
   "normalized_url": "https://mcb.gov.lk/",
-  "started_at": "2026-10-13T09:47:04.422348+05:30",
-  "completed_at": "2026-10-13T09:47:12.751264+05:30",
+  "started_at": "2026-10-14T07:59:02.962894+05:30",
+  "completed_at": "2026-10-14T07:59:23.889304+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
-      "tls_not_expired: TLS certificate has expired"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,47 +26,420 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-13T09:47:07.204302+05:30"
+      "observed_at": "2026-10-14T07:59:03.604980+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-13T09:47:07.204323+05:30"
+      "observed_at": "2026-10-14T07:59:03.605001+05:30"
     },
     {
-      "check": "tls_expired",
-      "status": "fail",
-      "detail": "TLS certificate has expired",
-      "observed_at": "2026-10-13T09:47:07.469739+05:30"
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-14T07:59:03.897363+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://mcb.gov.lk/",
       "source": "https://mcb.gov.lk/",
-      "observed_at": "2026-10-13T09:47:12.751109+05:30"
+      "observed_at": "2026-10-14T07:59:21.568235+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://mcb.gov.lk/",
       "source": "http://mcb.gov.lk/",
-      "observed_at": "2026-10-13T09:47:12.751126+05:30"
+      "observed_at": "2026-10-14T07:59:21.568255+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://mcb.gov.lk/",
       "source": "https://mcb.gov.lk/",
-      "observed_at": "2026-10-13T09:47:12.751130+05:30"
+      "observed_at": "2026-10-14T07:59:21.568260+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://mcb.gov.lk/",
       "source": "http://mcb.gov.lk/",
-      "observed_at": "2026-10-13T09:47:12.751133+05:30"
+      "observed_at": "2026-10-14T07:59:21.568263+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://mcb.gov.lk/services/",
+      "source": "https://mcb.gov.lk/services/",
+      "observed_at": "2026-10-14T07:59:21.568266+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://mcb.gov.lk/procurement-of-consultancy-services-for-training-and-coordination-of-meteorological-observations-and-forecasting/",
+      "source": "https://mcb.gov.lk/procurement-of-consultancy-services-for-training-and-coordination-of-meteorological-observations-and-forecasting/",
+      "observed_at": "2026-10-14T07:59:21.568269+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://mcb.gov.lk/consultancy-service-for-thalpitigala/",
+      "source": "https://mcb.gov.lk/consultancy-service-for-thalpitigala/",
+      "observed_at": "2026-10-14T07:59:21.568272+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://mcb.gov.lk/contact/",
+      "source": "https://mcb.gov.lk/contact/",
+      "observed_at": "2026-10-14T07:59:21.568275+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://mcb.gov.lk/",
+      "source": "https://mcb.gov.lk/home/",
+      "observed_at": "2026-10-14T07:59:21.568277+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://mcb.gov.lk/work-with-us/",
+      "source": "https://mcb.gov.lk/work-with-us/",
+      "observed_at": "2026-10-14T07:59:21.568280+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://mcb.gov.lk/career-page/",
+      "source": "https://mcb.gov.lk/career-page/",
+      "observed_at": "2026-10-14T07:59:21.568283+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://mcb.gov.lk/partners/",
+      "source": "https://mcb.gov.lk/partners/",
+      "observed_at": "2026-10-14T07:59:21.568286+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://mcb.gov.lk/international/",
+      "source": "https://mcb.gov.lk/international/",
+      "observed_at": "2026-10-14T07:59:21.568288+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://mcb.gov.lk/government/",
+      "source": "https://mcb.gov.lk/government/",
+      "observed_at": "2026-10-14T07:59:21.568291+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/services/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/services/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/procurement-of-consultancy-services-for-training-and-coordination-of-meteorological-observations-and-forecasting/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/procurement-of-consultancy-services-for-training-and-coordination-of-meteorological-observations-and-forecasting/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://mcb.gov.lk/procurement-of-consultancy-services-for-training-and-coordination-of-meteorological-observations-and-forecasting/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/consultancy-service-for-thalpitigala/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/consultancy-service-for-thalpitigala/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: displacement impacts, provide fair compensation, restore livelihoods, and ensure community participation. The RAP will a",
+      "source": "https://mcb.gov.lk/consultancy-service-for-thalpitigala/",
+      "data": {
+        "value": "displacement impacts, provide fair compensation, restore livelihoods, and ensure community participation. The RAP will a"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://mcb.gov.lk/consultancy-service-for-thalpitigala/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/contact/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/contact/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/work-with-us/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/work-with-us/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/career-page/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/career-page/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/partners/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/partners/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: critical issues like water management, rural development, and climate adaptation, bringing tangible benefits to communit",
+      "source": "https://mcb.gov.lk/partners/",
+      "data": {
+        "value": "critical issues like water management, rural development, and climate adaptation, bringing tangible benefits to communit"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/international/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/international/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://mcb.gov.lk/international/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 739 7135 ",
+      "source": "https://mcb.gov.lk/government/",
+      "data": {
+        "value": "+94 77 739 7135 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@mcb.gov.lk",
+      "source": "https://mcb.gov.lk/government/",
+      "data": {
+        "value": "info@mcb.gov.lk"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 17165 visible characters across 14 pages",
+      "source": "https://mcb.gov.lk/"
     }
   ],
   "observations": [
@@ -78,49 +459,230 @@
     },
     {
       "host": "mcb.gov.lk",
-      "status": "expired",
-      "expires_at": "2026-10-10T05:29:59+05:30",
+      "status": "valid",
+      "expires_at": "2027-04-30T06:00:55+05:30",
       "hostname_valid": true,
-      "detail": "TLS certificate has expired"
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://mcb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 101,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://mcb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/",
+      "redirects": [
+        "https://mcb.gov.lk/"
+      ],
+      "elapsed_ms": 1330,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://mcb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 1341,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://mcb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/",
+      "redirects": [
+        "https://mcb.gov.lk/"
+      ],
+      "elapsed_ms": 225,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/services/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/services/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 240,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/procurement-of-consultancy-services-for-training-and-coordination-of-meteorological-observations-and-forecasting/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/procurement-of-consultancy-services-for-training-and-coordination-of-meteorological-observations-and-forecasting/",
+      "redirects": [],
+      "elapsed_ms": 306,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/consultancy-service-for-thalpitigala/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/consultancy-service-for-thalpitigala/",
+      "redirects": [],
+      "elapsed_ms": 387,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/contact/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/contact/",
+      "redirects": [],
+      "elapsed_ms": 180,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/home/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/",
+      "redirects": [
+        "https://mcb.gov.lk/"
+      ],
+      "elapsed_ms": 231,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/work-with-us/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/work-with-us/",
+      "redirects": [],
+      "elapsed_ms": 177,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/career-page/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/career-page/",
+      "redirects": [],
+      "elapsed_ms": 105,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/partners/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/partners/",
+      "redirects": [],
+      "elapsed_ms": 227,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/international/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/international/",
+      "redirects": [],
+      "elapsed_ms": 221,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mcb.gov.lk/government/",
+      "status_code": 200,
+      "final_url": "https://mcb.gov.lk/government/",
+      "redirects": [],
+      "elapsed_ms": 84,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://mcb.gov.lk/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-01-a128c0696397.html",
+      "sha256": "a128c06963976ff7da0bf62a03c969d6224f50f4643e3208699128dfbecebe17",
+      "bytes": 274606
+    },
+    {
+      "url": "https://mcb.gov.lk/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-02-a128c0696397.html",
+      "sha256": "a128c06963976ff7da0bf62a03c969d6224f50f4643e3208699128dfbecebe17",
+      "bytes": 274606
+    },
+    {
+      "url": "https://mcb.gov.lk/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-03-a128c0696397.html",
+      "sha256": "a128c06963976ff7da0bf62a03c969d6224f50f4643e3208699128dfbecebe17",
+      "bytes": 274606
+    },
+    {
+      "url": "https://mcb.gov.lk/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-04-a128c0696397.html",
+      "sha256": "a128c06963976ff7da0bf62a03c969d6224f50f4643e3208699128dfbecebe17",
+      "bytes": 274606
+    },
+    {
+      "url": "https://mcb.gov.lk/services/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-05-5939abee1018.html",
+      "sha256": "5939abee1018b5cf8ff83c0df886744726f5879f796a494f9b0e7f7511272436",
+      "bytes": 423309
+    },
+    {
+      "url": "https://mcb.gov.lk/procurement-of-consultancy-services-for-training-and-coordination-of-meteorological-observations-and-forecasting/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-06-796a4ed183c0.html",
+      "sha256": "796a4ed183c0ae642a6d2bf77b96ba3011d98b5a46da61e4b1af24da665fc382",
+      "bytes": 214119
+    },
+    {
+      "url": "https://mcb.gov.lk/consultancy-service-for-thalpitigala/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-07-a647d80468e5.html",
+      "sha256": "a647d80468e5481df0934a75893402b98231dd311bdbc4ef697c940c05f98284",
+      "bytes": 220596
+    },
+    {
+      "url": "https://mcb.gov.lk/contact/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-08-018f83df5d40.html",
+      "sha256": "018f83df5d406d1c2cdb59b843f34ee29917e970988cc091647b97985158950e",
+      "bytes": 222574
+    },
+    {
+      "url": "https://mcb.gov.lk/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-09-a128c0696397.html",
+      "sha256": "a128c06963976ff7da0bf62a03c969d6224f50f4643e3208699128dfbecebe17",
+      "bytes": 274606
+    },
+    {
+      "url": "https://mcb.gov.lk/work-with-us/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-10-5aa8f76107cb.html",
+      "sha256": "5aa8f76107cb34e725b2e91afc7730439f53af14084b64a04286de31c2403371",
+      "bytes": 216347
+    },
+    {
+      "url": "https://mcb.gov.lk/career-page/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-11-a9ab4121dadc.html",
+      "sha256": "a9ab4121dadc312d0d3adea7ce1176f94fa06945c86e7eed701d201f2b341e42",
+      "bytes": 235576
+    },
+    {
+      "url": "https://mcb.gov.lk/partners/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-12-2b96823649ba.html",
+      "sha256": "2b96823649bab1e79a1ee0464e3c02ea4fbe0725bac1b4e73bc1e2d22256e15e",
+      "bytes": 237150
+    },
+    {
+      "url": "https://mcb.gov.lk/international/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-13-b67a7c0bd45a.html",
+      "sha256": "b67a7c0bd45a16ea8de09ae7bbb35dd2798a61f5a1387da1ef0c375c257440d5",
+      "bytes": 237781
+    },
+    {
+      "url": "https://mcb.gov.lk/government/",
+      "path": "audit.output/mcb.gov.lk/20261014.0759/snapshots/page-14-8ec9aa30f4cf.html",
+      "sha256": "8ec9aa30f4cfad96329020e1a46ca43df8486795643c19e7bb3536f6ff6c62e9",
+      "bytes": 221183
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -134,8 +696,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -147,74 +709,136 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "HTTP checks did not run"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate has expired"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: displacement impacts, provide fair compensation, restore livelihoods, and ensure community participation. The RAP will a; Phone: +94 77 739 7135; Email: info@mcb.gov.lk; Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: displacement impacts, provide fair compensation, restore livelihoods, and ensure community participation. The RAP will a"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 77 739 7135; Email: info@mcb.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -234,7 +858,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.242.196.77",
+    "egress_ip": "13.87.231.98",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

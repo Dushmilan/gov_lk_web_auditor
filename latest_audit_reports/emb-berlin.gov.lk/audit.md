@@ -1,8 +1,8 @@
 # Website Audit: https://emb-berlin.gov.lk/
 
-- Completed: 2026-10-13 10:14
+- Completed: 2026-10-14 08:22
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.196.77 (US, github-actions)
+- Vantage: 13.87.231.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)3080909749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquire; Phone: +490300909749 (46 phone numbers found); Email: Slemb.berlin@mfa.gov.lk (9 email addresses found); Published named responsibility: division
+Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)3080909749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquire; Phone: +49030809749 (12 phone numbers found); Email: consular.berlin@mfa.gov.lk (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)3080909749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquire |
-| reachable_contacts | ✅ | Phone: +490300909749 (46 phone numbers found); Email: Slemb.berlin@mfa.gov.lk (9 email addresses found) |
+| reachable_contacts | ✅ | Phone: +49030809749 (12 phone numbers found); Email: consular.berlin@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
-## 🟢 Level 3: ❌
+## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 1 January 2018
+No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: required documents |
+| required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: regulations |
+| legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 03 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❌ | Published published update date: 1 January 2018 |
+| published_update_date | ❓ | No passing published update date evidence found |

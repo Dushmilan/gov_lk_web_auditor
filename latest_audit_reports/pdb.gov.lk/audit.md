@@ -1,8 +1,8 @@
 # Website Audit: https://pdb.gov.lk/
 
-- Completed: 2026-10-13 10:26
+- Completed: 2026-10-14 08:36
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.196.77 (US, github-actions)
+- Vantage: 13.87.231.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Mr. R. Raveenthiran Chairman, PDB +94 77 386 8588 / rasar60@gmail.com Mr. K.B.S.Fernando Board of Director suradewa@gmai; Phone: +94 21 222 4154 (61 phone numbers found); Email: slpdbho@yahoo.com (23 email addresses found); Published named responsibility: division
+Published postal address: Mr. R. Raveenthiran Chairman, PDB +94 77 386 8588 / rasar60@gmail.com Mr. K.B.S.Fernando Board of Director suradewa@gmai; Phone: +94 21 222 2034 (42 phone numbers found); Email: slpdbho@yahoo.com (20 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Mr. R. Raveenthiran Chairman, PDB +94 77 386 8588 / rasar60@gmail.com Mr. K.B.S.Fernando Board of Director suradewa@gmai |
-| reachable_contacts | ✅ | Phone: +94 21 222 4154 (61 phone numbers found); Email: slpdbho@yahoo.com (23 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 21 222 2034 (42 phone numbers found); Email: slpdbho@yahoo.com (20 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs 2 |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://pdb.gov.lk/wp-content/uploads/2026/02/Tappers_ID_Form.pdf |

@@ -1,23 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "2b413107-ad27-46e4-8f45-2ccbd581f346",
+  "audit_id": "3b394bc8-1fb5-41c8-99ad-9b3e9b4d2142",
   "url": "https://www.forestdept.gov.lk",
   "normalized_url": "https://www.forestdept.gov.lk/",
-  "started_at": "2026-10-13T10:05:12.095644+05:30",
-  "completed_at": "2026-10-13T10:07:24.732220+05:30",
+  "started_at": "2026-10-14T08:12:39.115761+05:30",
+  "completed_at": "2026-10-14T08:12:58.844209+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "tls_not_expired: TLS certificate has expired"
     ]
   },
   "evidence": [
@@ -25,47 +18,294 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-13T10:05:12.787756+05:30"
+      "observed_at": "2026-10-14T08:12:39.742553+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-13T10:05:12.787774+05:30"
+      "observed_at": "2026-10-14T08:12:39.742576+05:30"
     },
     {
-      "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-13T10:05:23.012907+05:30"
+      "check": "tls_expired",
+      "status": "fail",
+      "detail": "TLS certificate has expired",
+      "observed_at": "2026-10-14T08:12:40.437253+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "source": "https://www.forestdept.gov.lk/",
-      "observed_at": "2026-10-13T10:07:24.732045+05:30"
+      "observed_at": "2026-10-14T08:12:58.220224+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.forestdept.gov.lk/index.php/en/",
       "source": "http://www.forestdept.gov.lk/",
-      "observed_at": "2026-10-13T10:07:24.732066+05:30"
+      "observed_at": "2026-10-14T08:12:58.220247+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "source": "https://www.forestdept.gov.lk/",
-      "observed_at": "2026-10-13T10:07:24.732069+05:30"
+      "observed_at": "2026-10-14T08:12:58.220253+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.forestdept.gov.lk/index.php/en/",
       "source": "http://www.forestdept.gov.lk/",
-      "observed_at": "2026-10-13T10:07:24.732072+05:30"
+      "observed_at": "2026-10-14T08:12:58.220258+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at http://www.forestdept.gov.lk/index.php/en/contact-us",
+      "source": "http://www.forestdept.gov.lk/index.php/en/contact-us",
+      "observed_at": "2026-10-14T08:12:58.220263+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at http://www.forestdept.gov.lk/index.php/en/",
+      "source": "http://www.forestdept.gov.lk/",
+      "observed_at": "2026-10-14T08:12:58.220267+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at http://www.forestdept.gov.lk/index.php/en/notices",
+      "source": "http://www.forestdept.gov.lk/index.php/en/notices",
+      "observed_at": "2026-10-14T08:12:58.220271+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at http://www.forestdept.gov.lk/index.php/en/",
+      "source": "http://www.forestdept.gov.lk/index.php",
+      "observed_at": "2026-10-14T08:12:58.220276+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at http://www.forestdept.gov.lk/index.php/ta/",
+      "source": "http://www.forestdept.gov.lk/index.php/ta/",
+      "observed_at": "2026-10-14T08:12:58.220280+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at http://www.forestdept.gov.lk/index.php/si/",
+      "source": "http://www.forestdept.gov.lk/index.php/si/",
+      "observed_at": "2026-10-14T08:12:58.220285+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at http://www.forestdept.gov.lk/index.php/ta/contact-us",
+      "source": "http://www.forestdept.gov.lk/index.php/ta/contact-us",
+      "observed_at": "2026-10-14T08:12:58.220289+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at http://www.forestdept.gov.lk/index.php/si/contact-us",
+      "source": "http://www.forestdept.gov.lk/index.php/si/contact-us",
+      "observed_at": "2026-10-14T08:12:58.220293+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at http://www.forestdept.gov.lk/index.php/ta/notices",
+      "source": "http://www.forestdept.gov.lk/index.php/ta/notices",
+      "observed_at": "2026-10-14T08:12:58.220298+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at http://www.forestdept.gov.lk/index.php/si/notices",
+      "source": "http://www.forestdept.gov.lk/index.php/si/notices",
+      "observed_at": "2026-10-14T08:12:58.220302+05:30"
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/en/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/en/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 633 ",
+      "source": "http://www.forestdept.gov.lk/index.php/en/contact-us",
+      "data": {
+        "value": "+94 112 866 633 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 616 ",
+      "source": "http://www.forestdept.gov.lk/index.php/en/contact-us",
+      "data": {
+        "value": "+94 112 866 616 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/en/contact-us",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/en/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak9e87981f264997fa",
+      "source": "http://www.forestdept.gov.lk/index.php/en/notices",
+      "data": {
+        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak9e87981f264997fa"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/en/notices",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/en/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/ta/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/si/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 633 ",
+      "source": "http://www.forestdept.gov.lk/index.php/ta/contact-us",
+      "data": {
+        "value": "+94 112 866 633 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 616 ",
+      "source": "http://www.forestdept.gov.lk/index.php/ta/contact-us",
+      "data": {
+        "value": "+94 112 866 616 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/ta/contact-us",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 633 ",
+      "source": "http://www.forestdept.gov.lk/index.php/si/contact-us",
+      "data": {
+        "value": "+94 112 866 633 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 616 ",
+      "source": "http://www.forestdept.gov.lk/index.php/si/contact-us",
+      "data": {
+        "value": "+94 112 866 616 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/ta/notices",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloake2a29911d2f933ac",
+      "source": "http://www.forestdept.gov.lk/index.php/si/notices",
+      "data": {
+        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloake2a29911d2f933ac"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.forestdept.gov.lk/index.php/si/notices",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 3524 visible characters across 12 pages",
+      "source": "https://www.forestdept.gov.lk/"
     }
   ],
   "observations": [
@@ -85,10 +325,10 @@
     },
     {
       "host": "www.forestdept.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "expired",
+      "expires_at": "2020-10-29T14:22:35+05:30",
+      "hostname_valid": false,
+      "detail": "TLS certificate has expired"
     },
     {
       "url": "https://www.forestdept.gov.lk/",
@@ -97,16 +337,18 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     },
     {
       "url": "http://www.forestdept.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/en/",
+      "redirects": [
+        "http://www.forestdept.gov.lk/index.php/en/"
+      ],
+      "elapsed_ms": 753,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "https://www.forestdept.gov.lk/",
@@ -115,19 +357,188 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     },
     {
       "url": "http://www.forestdept.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/en/",
+      "redirects": [
+        "http://www.forestdept.gov.lk/index.php/en/"
+      ],
+      "elapsed_ms": 753,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/en/contact-us",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/en/contact-us",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 768,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/en/",
+      "redirects": [
+        "http://www.forestdept.gov.lk/index.php/en/"
+      ],
+      "elapsed_ms": 749,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/en/notices",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/en/notices",
+      "redirects": [],
+      "elapsed_ms": 550,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/en/",
+      "redirects": [
+        "http://www.forestdept.gov.lk/index.php/en/"
+      ],
+      "elapsed_ms": 534,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/ta/",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/ta/",
+      "redirects": [],
+      "elapsed_ms": 561,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/si/",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/si/",
+      "redirects": [],
+      "elapsed_ms": 549,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/ta/contact-us",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/ta/contact-us",
+      "redirects": [],
+      "elapsed_ms": 551,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/si/contact-us",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/si/contact-us",
+      "redirects": [],
+      "elapsed_ms": 568,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/ta/notices",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/ta/notices",
+      "redirects": [],
+      "elapsed_ms": 555,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/si/notices",
+      "status_code": 200,
+      "final_url": "http://www.forestdept.gov.lk/index.php/si/notices",
+      "redirects": [],
+      "elapsed_ms": 553,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/en/",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-01-3957c311281c.html",
+      "sha256": "3957c311281cef8b1598e609ff70ad4000cc9b220a7f90a5bdf02caea642288e",
+      "bytes": 31375
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/en/",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-02-3957c311281c.html",
+      "sha256": "3957c311281cef8b1598e609ff70ad4000cc9b220a7f90a5bdf02caea642288e",
+      "bytes": 31375
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/en/contact-us",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-03-03c5517c39b4.html",
+      "sha256": "03c5517c39b44a4f9ef592f047cb1178a4909fdc3b0b0cc24244a7f85a9b19d0",
+      "bytes": 33715
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/en/",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-04-3957c311281c.html",
+      "sha256": "3957c311281cef8b1598e609ff70ad4000cc9b220a7f90a5bdf02caea642288e",
+      "bytes": 31375
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/en/notices",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-05-b58d9097bd40.html",
+      "sha256": "b58d9097bd40b8c4d79716402a366a686367e7d0b7cbf0197124e0b7107c7df6",
+      "bytes": 43408
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/en/",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-06-3957c311281c.html",
+      "sha256": "3957c311281cef8b1598e609ff70ad4000cc9b220a7f90a5bdf02caea642288e",
+      "bytes": 31375
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/ta/",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-07-24b58e23d51b.html",
+      "sha256": "24b58e23d51b8355b0b91b83a1cbfc42c50b0382ef71182386263ee008c0dd0c",
+      "bytes": 31952
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/si/",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-08-81149f2540c9.html",
+      "sha256": "81149f2540c9d8d46c10efb37e11b9faf5c29a7adcf9a2d24ae14296a3e46f9d",
+      "bytes": 32065
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/ta/contact-us",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-09-bf280631b48a.html",
+      "sha256": "bf280631b48ae84ef6db8778d7ea6a4e8d1b773d973ad15bf1f6f9e3af9a2c6d",
+      "bytes": 35047
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/si/contact-us",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-10-9fe68fbcd5d2.html",
+      "sha256": "9fe68fbcd5d2ea59280da4f7ef65f5c3aa7ab725d4e3824f74750d116eb696a5",
+      "bytes": 35425
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/ta/notices",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-11-c5ca1fcca087.html",
+      "sha256": "c5ca1fcca087a8811c32c89ff1c7efc959662fb8b9316b63ae2ad7d5b551274e",
+      "bytes": 44094
+    },
+    {
+      "url": "http://www.forestdept.gov.lk/index.php/si/notices",
+      "path": "audit.output/www.forestdept.gov.lk/20261014.0812/snapshots/page-12-65a539dad9fc.html",
+      "sha256": "65a539dad9fc52af350a9115b5412bb2d339144fa8db12ad9bd0dd9b43d752d8",
+      "bytes": 44012
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +552,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010); TLS certificate has expired",
       "executed": true,
       "checks": [
         {
@@ -154,56 +565,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "fail",
+          "reason": "TLS certificate has expired"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "TLS hostname check did not run"
         }
       ]
     },
@@ -241,7 +652,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.242.196.77",
+    "egress_ip": "13.87.231.98",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

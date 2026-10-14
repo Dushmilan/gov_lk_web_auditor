@@ -1,8 +1,8 @@
 # Website Audit: https://emb-vienna.gov.lk/
 
-- Completed: 2026-10-13 10:14
+- Completed: 2026-10-14 08:22
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.196.77 (US, github-actions)
+- Vantage: 13.87.231.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Weyringergasse 33-35, 1040, Vienna, Austria Tel . +43 1 503 79 88 Email : slemb.vienna@mfa.gov.lk Office Hours: Monday –; Phone: +38631380555 (19 phone numbers found); Email: aprebil_consulate@outlook.com (11 email addresses found); Published named responsibility: director
+Published postal address: Weyringergasse 33-35, 1040, Vienna, Austria Tel . +43 1 503 79 88 Email : slemb.vienna@mfa.gov.lk Office Hours: Monday –; Phone: 0241055832 (19 phone numbers found); Email: srilankaconsulate@live.com (11 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Weyringergasse 33-35, 1040, Vienna, Austria Tel . +43 1 503 79 88 Email : slemb.vienna@mfa.gov.lk Office Hours: Monday – |
-| reachable_contacts | ✅ | Phone: +38631380555 (19 phone numbers found); Email: aprebil_consulate@outlook.com (11 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0241055832 (19 phone numbers found); Email: srilankaconsulate@live.com (11 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing legal basis evidence found; No passing processing time evidence found
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 10/12/2026 |
