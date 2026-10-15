@@ -1,8 +1,8 @@
 # Website Audit: https://emb-bucharest.gov.lk/
 
-- Completed: 2026-10-14 08:22
+- Completed: 2026-10-15 08:06
 - Overall result: 🟠 Level 2
-- Vantage: 13.87.231.98 (US, github-actions)
+- Vantage: 20.109.39.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Strada General Constantin Budișteanu 28, 030167 București, Romania Email: consular.bucharest@mfa.gov.lk Facebook : https; Phone: 05880-6046-4 (18 phone numbers found); Email: consular.bucharest@mfa.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: Strada General Constantin Budișteanu 28, 030167 București, Romania Email: consular.bucharest@mfa.gov.lk Facebook : https; Phone: 0410571790 (18 phone numbers found); Email: consular.bucharest@mfa.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Strada General Constantin Budișteanu 28, 030167 București, Romania Email: consular.bucharest@mfa.gov.lk Facebook : https |
-| reachable_contacts | ✅ | Phone: 05880-6046-4 (18 phone numbers found); Email: consular.bucharest@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0410571790 (18 phone numbers found); Email: consular.bucharest@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

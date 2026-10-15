@@ -1,8 +1,8 @@
 # Website Audit: https://emb-rome.gov.lk/
 
-- Completed: 2026-10-14 08:22
+- Completed: 2026-10-15 08:05
 - Overall result: 🟠 Level 2
-- Vantage: 13.87.231.98 (US, github-actions)
+- Vantage: 20.109.39.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Via Adige, 2 - 00198 Rome, Italy City/country: Rome, Italy Contact number: Telephone: +39 06 884 0801 WhatsApp: +39 340 ; Phone: +393403718117 (2 phone numbers found); Email: slemb.rome@mfa.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: Via Adige, 2 - 00198 Rome, Italy City/country: Rome, Italy Contact number: Telephone: +39 06 884 0801 WhatsApp: +39 340 ; Phone: +39068840801 (4 phone numbers found); Email: slemb.rome@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Via Adige, 2 - 00198 Rome, Italy City/country: Rome, Italy Contact number: Telephone: +39 06 884 0801 WhatsApp: +39 340  |
-| reachable_contacts | ✅ | Phone: +393403718117 (2 phone numbers found); Email: slemb.rome@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +39068840801 (4 phone numbers found); Email: slemb.rome@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing downloadable form evidence found
+No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ✅ | Published required documents: required documents |
+| fees_and_payment | ✅ | Published fees and payment: free of charge |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

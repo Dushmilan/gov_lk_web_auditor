@@ -1,8 +1,8 @@
 # Website Audit: https://www.ciaboc.gov.lk/
 
-- Completed: 2026-10-14 08:50
+- Completed: 2026-10-15 08:47
 - Overall result: 🟠 Level 2
-- Vantage: 13.87.231.98 (US, github-actions)
+- Vantage: 20.109.39.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 2.2 District 2.3 Province 3.0 3.1 Gender 3.2 National Identity Card Number 4.0 4.1 Mobile Telephone No./WhatsApp No. 4.2; Phone: 0112 587287 (10 phone numbers found); Email: da@ciaboc.gov.lk; Published named responsibility: division
+Published postal address: 2.2 District 2.3 Province 3.0 3.1 Gender 3.2 National Identity Card Number 4.0 4.1 Mobile Telephone No./WhatsApp No. 4.2; Phone: 0112587287 (10 phone numbers found); Email: da@ciaboc.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2.2 District 2.3 Province 3.0 3.1 Gender 3.2 National Identity Card Number 4.0 4.1 Mobile Telephone No./WhatsApp No. 4.2 |
-| reachable_contacts | ✅ | Phone: 0112 587287 (10 phone numbers found); Email: da@ciaboc.gov.lk |
+| reachable_contacts | ✅ | Phone: 0112587287 (10 phone numbers found); Email: da@ciaboc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

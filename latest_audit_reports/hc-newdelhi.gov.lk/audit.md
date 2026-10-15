@@ -1,8 +1,8 @@
 # Website Audit: https://hc-newdelhi.gov.lk/
 
-- Completed: 2026-10-14 08:19
+- Completed: 2026-10-15 08:02
 - Overall result: 🟠 Level 2
-- Vantage: 13.87.231.98 (US, github-actions)
+- Vantage: 20.109.39.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

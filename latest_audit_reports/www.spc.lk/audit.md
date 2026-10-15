@@ -1,8 +1,8 @@
 # Website Audit: https://www.spc.lk/
 
-- Completed: 2026-10-14 08:28
+- Completed: 2026-10-15 08:12
 - Overall result: 🟠 Level 2
-- Vantage: 13.87.231.98 (US, github-actions)
+- Vantage: 20.109.39.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: recent news reports concerning the procurement of 38,000 units of Dinoprostone... Read More Celebrating a Legacy: "Tribu; Phone: +94 (0)11 232035 (309 phone numbers found); Email: marketing@spc.lk (66 email addresses found); Published named responsibility: division
+Published postal address: recent news reports concerning the procurement of 38,000 units of Dinoprostone... Read More Celebrating a Legacy: "Tribu; Phone: +94 (0)11 232035 (309 phone numbers found); Email: md@spc.lk (66 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: recent news reports concerning the procurement of 38,000 units of Dinoprostone... Read More Celebrating a Legacy: "Tribu |
-| reachable_contacts | ✅ | Phone: +94 (0)11 232035 (309 phone numbers found); Email: marketing@spc.lk (66 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 (0)11 232035 (309 phone numbers found); Email: md@spc.lk (66 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://muslimaffairs.gov.lk/
 
-- Completed: 2026-10-14 08:02
-- Overall result: 🟠 Level 2
-- Vantage: 13.87.231.98 (US, github-actions)
+- Completed: 2026-10-15 07:43
+- Overall result: 🔴 Level 1
+- Vantage: 20.109.39.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per ; Phone: 0.800000000 (12 phone numbers found); Email: Published email:; Published named responsibility: director
+No passing postal address evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per  |
-| reachable_contacts | ✅ | Phone: 0.800000000 (12 phone numbers found); Email: Published email: |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: 0000000444 (15 phone numbers found); Email: ajax-loader@2x.gif (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
-## 🟢 Level 3: ❌
+## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 26-03-2024
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs 2027 |
-| legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 10 hours |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❌ | Published published update date: 26-03-2024 |
+Not run because 🟠 Level 2 did not pass
