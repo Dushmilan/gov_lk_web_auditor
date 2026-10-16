@@ -1,8 +1,8 @@
 # Website Audit: https://www.dgi.gov.lk/
 
-- Completed: 2026-10-15 08:11
+- Completed: 2026-10-16 08:02
 - Overall result: 🔴 Level 1
-- Vantage: 20.109.39.50 (US, github-actions)
+- Vantage: 74.235.133.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

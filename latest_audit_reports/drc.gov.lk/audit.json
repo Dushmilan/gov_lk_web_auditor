@@ -1,21 +1,18 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "d291b5b0-a955-46c6-9266-76e0ac4b1af9",
+  "audit_id": "6b1c6d9a-489d-4fab-85bd-6bc8a4617088",
   "url": "https://drc.gov.lk/",
   "normalized_url": "https://drc.gov.lk/",
-  "started_at": "2026-10-15T08:26:17.651780+05:30",
-  "completed_at": "2026-10-15T08:28:36.761264+05:30",
+  "started_at": "2026-10-16T08:17:32.828883+05:30",
+  "completed_at": "2026-10-16T08:19:33.910647+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
+      "domain_not_parked: Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200",
       "tls_not_expired: timed out",
       "tls_hostname_matches: timed out"
     ]
@@ -25,47 +22,71 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-15T08:26:18.299065+05:30"
+      "observed_at": "2026-10-16T08:17:33.878955+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-15T08:26:18.299087+05:30"
+      "observed_at": "2026-10-16T08:17:33.878968+05:30"
     },
     {
       "check": "tls",
       "status": "error",
       "detail": "timed out",
-      "observed_at": "2026-10-15T08:26:28.822294+05:30"
+      "observed_at": "2026-10-16T08:17:44.872695+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://drc.gov.lk/intro/",
       "source": "https://drc.gov.lk/",
-      "observed_at": "2026-10-15T08:28:36.761091+05:30"
+      "observed_at": "2026-10-16T08:19:33.908214+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://drc.gov.lk/intro/",
       "source": "http://drc.gov.lk/",
-      "observed_at": "2026-10-15T08:28:36.761109+05:30"
+      "observed_at": "2026-10-16T08:19:33.908230+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: timed out",
       "source": "https://drc.gov.lk/",
-      "observed_at": "2026-10-15T08:28:36.761113+05:30"
+      "observed_at": "2026-10-16T08:19:33.908235+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://drc.gov.lk/",
-      "observed_at": "2026-10-15T08:28:36.761116+05:30"
+      "observed_at": "2026-10-16T08:19:33.908238+05:30"
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://drc.gov.lk/intro/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://drc.gov.lk/intro/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 56 visible characters across 2 pages; below substance threshold 200",
+      "source": "https://drc.gov.lk/"
     }
   ],
   "observations": [
@@ -92,21 +113,28 @@
     },
     {
       "url": "https://drc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://drc.gov.lk/intro/",
+      "redirects": [
+        "http://www.drc.gov.lk/intro/",
+        "https://drc.gov.lk/intro/"
+      ],
+      "elapsed_ms": 1468,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://drc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://drc.gov.lk/intro/",
+      "redirects": [
+        "https://drc.gov.lk/",
+        "http://www.drc.gov.lk/intro/",
+        "https://drc.gov.lk/intro/"
+      ],
+      "elapsed_ms": 1464,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "https://drc.gov.lk/",
@@ -127,7 +155,20 @@
       "error": "timed out"
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://drc.gov.lk/intro/",
+      "path": "audit.output/drc.gov.lk/20261016.0817/snapshots/page-01-1713c1a0514c.html",
+      "sha256": "1713c1a0514c4be29dd124f0e9befde496b58d141c674a429341ee59072a0586",
+      "bytes": 2066
+    },
+    {
+      "url": "https://drc.gov.lk/intro/",
+      "path": "audit.output/drc.gov.lk/20261016.0817/snapshots/page-02-1713c1a0514c.html",
+      "sha256": "1713c1a0514c4be29dd124f0e9befde496b58d141c674a429341ee59072a0586",
+      "bytes": 2066
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,7 +183,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "reason": "Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -155,43 +196,43 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: https://drc.gov.lk/: Probe 3: timed out; http://drc.gov.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -241,7 +282,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.109.39.50",
+    "egress_ip": "74.235.133.211",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: https://pccl.lk/
 
-- Completed: 2026-10-15 08:15
+- Completed: 2026-10-16 08:08
 - Overall result: 🔴 Level 1
-- Vantage: 20.109.39.50 (US, github-actions)
+- Vantage: 74.235.133.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 76 195 2077 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 634 634 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

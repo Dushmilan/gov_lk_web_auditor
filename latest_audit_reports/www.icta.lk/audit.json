@@ -1,16 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "841cd201-9349-4a67-bf28-b1feafa79552",
+  "audit_id": "7589aaa1-cf6d-4860-9f2a-3d4fe09af0ec",
   "url": "https://www.icta.lk/",
   "normalized_url": "https://www.icta.lk/",
-  "started_at": "2026-10-15T07:45:50.684494+05:30",
-  "completed_at": "2026-10-15T07:46:08.123412+05:30",
+  "started_at": "2026-10-16T07:35:55.238308+05:30",
+  "completed_at": "2026-10-16T07:36:13.774223+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
-      "tls_not_expired: TLS certificate has expired"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     ]
   },
   "evidence": [
@@ -18,47 +17,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-15T07:45:52.963412+05:30"
+      "observed_at": "2026-10-16T07:35:55.822975+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-15T07:45:52.963429+05:30"
+      "observed_at": "2026-10-16T07:35:55.822994+05:30"
     },
     {
-      "check": "tls_expired",
-      "status": "fail",
-      "detail": "TLS certificate has expired",
-      "observed_at": "2026-10-15T07:45:53.705099+05:30"
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-16T07:35:56.649821+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "source": "https://www.icta.lk/",
-      "observed_at": "2026-10-15T07:46:08.123253+05:30"
+      "observed_at": "2026-10-16T07:36:13.774016+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
-      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "source": "http://www.icta.lk/",
-      "observed_at": "2026-10-15T07:46:08.123269+05:30"
+      "observed_at": "2026-10-16T07:36:13.774033+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "source": "https://www.icta.lk/",
-      "observed_at": "2026-10-15T07:46:08.123274+05:30"
+      "observed_at": "2026-10-16T07:36:13.774038+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
-      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "source": "http://www.icta.lk/",
-      "observed_at": "2026-10-15T07:46:08.123278+05:30"
+      "observed_at": "2026-10-16T07:36:13.774041+05:30"
     }
   ],
   "observations": [
@@ -78,10 +77,10 @@
     },
     {
       "host": "www.icta.lk",
-      "status": "expired",
-      "expires_at": "2025-08-16T05:29:59+05:30",
+      "status": "valid",
+      "expires_at": "2027-04-02T05:29:59+05:30",
       "hostname_valid": true,
-      "detail": "TLS certificate has expired"
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.icta.lk/",
@@ -90,7 +89,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     },
     {
       "url": "http://www.icta.lk/",
@@ -99,7 +98,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     },
     {
       "url": "https://www.icta.lk/",
@@ -108,7 +107,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     },
     {
       "url": "http://www.icta.lk/",
@@ -117,7 +116,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     }
   ],
   "snapshots": [],
@@ -135,7 +134,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "executed": true,
       "checks": [
         {
@@ -184,19 +183,19 @@
           "name": "tls_browser_trusted",
           "level": 1,
           "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate has expired"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -234,7 +233,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.109.39.50",
+    "egress_ip": "74.235.133.211",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

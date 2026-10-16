@@ -1,8 +1,8 @@
 # Website Audit: https://www.peoplesbank.lk/
 
-- Completed: 2026-10-15 07:58
+- Completed: 2026-10-16 07:48
 - Overall result: 🟠 Level 2
-- Vantage: 20.109.39.50 (US, github-actions)
+- Vantage: 74.235.133.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
