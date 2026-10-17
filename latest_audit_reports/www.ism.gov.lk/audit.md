@@ -1,8 +1,8 @@
 # Website Audit: https://www.ism.gov.lk/
 
-- Completed: 2026-10-16 08:22
+- Completed: 2026-10-17 08:20
 - Overall result: 🟠 Level 2
-- Vantage: 74.235.133.211 (US, github-actions)
+- Vantage: 74.159.123.176 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

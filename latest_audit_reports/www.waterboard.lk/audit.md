@@ -1,8 +1,8 @@
 # Website Audit: https://www.waterboard.lk/
 
-- Completed: 2026-10-16 08:06
+- Completed: 2026-10-17 08:01
 - Overall result: 🟠 Level 2
-- Vantage: 74.235.133.211 (US, github-actions)
+- Vantage: 74.159.123.176 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: National Water Supply and Drainage Board Galle Road, Ratmalana, Sri Lanka. Government of Sri Lanka Last update : October; Phone: 06 1.46351 0.8 (68 phone numbers found); Email: support@waterboard.lk (24 email addresses found); Published named responsibility: division
+Published postal address: National Water Supply and Drainage Board Galle Road, Ratmalana, Sri Lanka. Government of Sri Lanka Last update : October; Phone: 06 3.21063 -2.0 (68 phone numbers found); Email: support@waterboard.lk (24 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: National Water Supply and Drainage Board Galle Road, Ratmalana, Sri Lanka. Government of Sri Lanka Last update : October |
-| reachable_contacts | ✅ | Phone: 06 1.46351 0.8 (68 phone numbers found); Email: support@waterboard.lk (24 email addresses found) |
+| reachable_contacts | ✅ | Phone: 06 3.21063 -2.0 (68 phone numbers found); Email: support@waterboard.lk (24 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: Rs. 14 |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 1 week |
+| processing_time | ✅ | Published processing time: 2 weeks |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

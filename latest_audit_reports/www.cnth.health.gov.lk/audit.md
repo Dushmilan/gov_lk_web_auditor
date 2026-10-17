@@ -1,8 +1,8 @@
 # Website Audit: https://www.cnth.health.gov.lk/
 
-- Completed: 2026-10-16 08:01
+- Completed: 2026-10-17 07:57
 - Overall result: 🟠 Level 2
-- Vantage: 74.235.133.211 (US, github-actions)
+- Vantage: 74.159.123.176 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

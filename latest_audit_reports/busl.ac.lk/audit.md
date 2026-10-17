@@ -1,8 +1,8 @@
 # Website Audit: https://busl.ac.lk/
 
-- Completed: 2026-10-16 07:42
+- Completed: 2026-10-17 07:35
 - Overall result: 🟠 Level 2
-- Vantage: 74.235.133.211 (US, github-actions)
+- Vantage: 74.159.123.176 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: to comment Enter your website URL (optional) Save my name, email, and website in this browser for the next time I commen; Phone: +94 252 057 978 (12 phone numbers found); Email: upedec@busl.ac.lk (7 email addresses found); Published named responsibility: director
+Published postal address: to comment Enter your website URL (optional) Save my name, email, and website in this browser for the next time I commen; Phone: +94 714 474 510 (12 phone numbers found); Email: upedec@busl.ac.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: to comment Enter your website URL (optional) Save my name, email, and website in this browser for the next time I commen |
-| reachable_contacts | ✅ | Phone: +94 252 057 978 (12 phone numbers found); Email: upedec@busl.ac.lk (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 714 474 510 (12 phone numbers found); Email: upedec@busl.ac.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

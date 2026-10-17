@@ -1,8 +1,8 @@
 # Website Audit: https://www.psc.gov.lk/
 
-- Completed: 2026-10-16 08:31
+- Completed: 2026-10-17 08:39
 - Overall result: ⚫ Level 0
-- Vantage: 74.235.133.211 (US, github-actions)
+- Vantage: 74.159.123.176 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://www.psc.gov.lk/: Probe 3: timed out; http://www.psc.gov.lk/: Probe 4: timed out |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://www.psc.gov.lk/: Probe 2: timed out; https://www.psc.gov.lk/: Probe 3: timed out; http://www.psc.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

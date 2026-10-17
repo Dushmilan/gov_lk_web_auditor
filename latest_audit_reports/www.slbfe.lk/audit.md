@@ -1,8 +1,8 @@
 # Website Audit: https://www.slbfe.lk/
 
-- Completed: 2026-10-16 08:01
+- Completed: 2026-10-17 07:56
 - Overall result: 🟠 Level 2
-- Vantage: 74.235.133.211 (US, github-actions)
+- Vantage: 74.159.123.176 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing processing time evide
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs 10 |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

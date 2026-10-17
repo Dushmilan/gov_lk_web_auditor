@@ -1,8 +1,8 @@
 # Website Audit: https://www.treasury.gov.lk/
 
-- Completed: 2026-10-16 07:49
+- Completed: 2026-10-17 07:43
 - Overall result: 🟠 Level 2
-- Vantage: 74.235.133.211 (US, github-actions)
+- Vantage: 74.159.123.176 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: u003eThe Secretariat, Colombo 01, Sri Lanka; Phone: 0069167000 (281 phone numbers found); Email: kumari.dms@fpd.treasury.gov.lk (221 email addresses found); Published named responsibility: department
+Published postal address: u003eThe Secretariat, Colombo 01, Sri Lanka; Phone: 0069167000 (281 phone numbers found); Email: kumaraguru.ps@fpd.treasury.gov.lk (221 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: u003eThe Secretariat, Colombo 01, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0069167000 (281 phone numbers found); Email: kumari.dms@fpd.treasury.gov.lk (221 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0069167000 (281 phone numbers found); Email: kumaraguru.ps@fpd.treasury.gov.lk (221 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
