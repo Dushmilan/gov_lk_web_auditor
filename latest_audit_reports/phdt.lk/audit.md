@@ -1,8 +1,8 @@
 # Website Audit: https://phdt.lk/
 
-- Completed: 2026-10-17 08:05
+- Completed: 2026-10-18 07:59
 - Overall result: 🟠 Level 2
-- Vantage: 74.159.123.176 (US, github-actions)
+- Vantage: 134.33.103.203 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and an overview of the objectives by Dr. Sarath Amunugama, Director – Health, PHDT. The ILO Country Director, Ms. Joni S; Phone: +94) 112 887 476 (5 phone numbers found); Email: info@phdt.lk; Published named responsibility: director
+Published postal address: and an overview of the objectives by Dr. Sarath Amunugama, Director – Health, PHDT. The ILO Country Director, Ms. Joni S; Phone: +94 112887497 (5 phone numbers found); Email: info@phdt.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and an overview of the objectives by Dr. Sarath Amunugama, Director – Health, PHDT. The ILO Country Director, Ms. Joni S |
-| reachable_contacts | ✅ | Phone: +94) 112 887 476 (5 phone numbers found); Email: info@phdt.lk |
+| reachable_contacts | ✅ | Phone: +94 112887497 (5 phone numbers found); Email: info@phdt.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

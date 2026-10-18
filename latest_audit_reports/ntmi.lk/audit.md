@@ -1,8 +1,8 @@
 # Website Audit: https://ntmi.lk/
 
-- Completed: 2026-10-17 08:18
+- Completed: 2026-10-18 08:12
 - Overall result: 🟠 Level 2
-- Vantage: 74.159.123.176 (US, github-actions)
+- Vantage: 134.33.103.203 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is not valid! Please provide a valid email."],"stop_words":"a,able,about,above,abst,accordance,according,accordingly,acr; Phone: +94-(112) 852-868 (22 phone numbers found); Email: ntmi@sltnet.lk; Published named responsibility: division
+Published postal address: is not valid! Please provide a valid email."],"stop_words":"a,able,about,above,abst,accordance,according,accordingly,acr; Phone: 0.883-3.531-0.8 (22 phone numbers found); Email: ntmi@sltnet.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: is not valid! Please provide a valid email."],"stop_words":"a,able,about,above,abst,accordance,according,accordingly,acr |
-| reachable_contacts | ✅ | Phone: +94-(112) 852-868 (22 phone numbers found); Email: ntmi@sltnet.lk |
+| reachable_contacts | ✅ | Phone: 0.883-3.531-0.8 (22 phone numbers found); Email: ntmi@sltnet.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

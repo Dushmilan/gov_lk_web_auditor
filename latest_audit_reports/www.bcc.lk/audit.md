@@ -1,8 +1,8 @@
 # Website Audit: https://www.bcc.lk/
 
-- Completed: 2026-10-17 08:00
+- Completed: 2026-10-18 07:54
 - Overall result: 🟠 Level 2
-- Vantage: 74.159.123.176 (US, github-actions)
+- Vantage: 134.33.103.203 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /; Phone: 0112435195 (24 phone numbers found); Email: bcclankaltd@gmail.com; Published named responsibility: director
+Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /; Phone: 011 2422111 (24 phone numbers found); Email: bcclankaltd@gmail.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 / |
-| reachable_contacts | ✅ | Phone: 0112435195 (24 phone numbers found); Email: bcclankaltd@gmail.com |
+| reachable_contacts | ✅ | Phone: 011 2422111 (24 phone numbers found); Email: bcclankaltd@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

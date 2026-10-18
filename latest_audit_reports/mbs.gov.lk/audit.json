@@ -1,21 +1,18 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "66b57cc1-7a54-4354-90a0-84bb545ec4a5",
+  "audit_id": "47c4717b-57f6-4c8c-9db1-489b65ee7674",
   "url": "https://mbs.gov.lk/",
   "normalized_url": "https://mbs.gov.lk/",
-  "started_at": "2026-10-17T08:22:53.867583+05:30",
-  "completed_at": "2026-10-17T08:25:07.965587+05:30",
+  "started_at": "2026-10-18T08:20:27.273044+05:30",
+  "completed_at": "2026-10-18T08:23:42.997779+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
+      "domain_not_parked: Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200",
       "tls_not_expired: timed out",
       "tls_hostname_matches: timed out"
     ]
@@ -25,47 +22,53 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-17T08:22:54.247804+05:30"
+      "observed_at": "2026-10-18T08:20:27.776370+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-17T08:22:54.247827+05:30"
+      "observed_at": "2026-10-18T08:20:27.776388+05:30"
     },
     {
       "check": "tls",
       "status": "error",
       "detail": "timed out",
-      "observed_at": "2026-10-17T08:23:04.485264+05:30"
+      "observed_at": "2026-10-18T08:20:37.993986+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://mbs.gov.lk/",
       "source": "https://mbs.gov.lk/",
-      "observed_at": "2026-10-17T08:25:07.965406+05:30"
+      "observed_at": "2026-10-18T08:23:42.994063+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://mbs.gov.lk/",
-      "observed_at": "2026-10-17T08:25:07.965430+05:30"
+      "observed_at": "2026-10-18T08:23:42.994086+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: timed out",
       "source": "https://mbs.gov.lk/",
-      "observed_at": "2026-10-17T08:25:07.965435+05:30"
+      "observed_at": "2026-10-18T08:23:42.994090+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://mbs.gov.lk/",
-      "observed_at": "2026-10-17T08:25:07.965439+05:30"
+      "observed_at": "2026-10-18T08:23:42.994093+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 76 visible characters across 1 pages; below substance threshold 200",
+      "source": "https://mbs.gov.lk/"
     }
   ],
   "observations": [
@@ -92,12 +95,12 @@
     },
     {
       "url": "https://mbs.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://mbs.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1237,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://mbs.gov.lk/",
@@ -127,7 +130,14 @@
       "error": "timed out"
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://mbs.gov.lk/",
+      "path": "audit.output/mbs.gov.lk/20261018.0820/snapshots/page-01-e9317d0a0238.html",
+      "sha256": "e9317d0a02386684cd2f02de7bacf54ab118494facf0927d4d9bc84a32a16c86",
+      "bytes": 5732
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,7 +152,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -155,43 +165,43 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: http://mbs.gov.lk/: Probe 2: timed out; https://mbs.gov.lk/: Probe 3: timed out; http://mbs.gov.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -241,7 +251,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "74.159.123.176",
+    "egress_ip": "134.33.103.203",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
