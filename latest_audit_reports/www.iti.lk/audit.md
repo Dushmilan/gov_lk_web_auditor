@@ -1,8 +1,8 @@
 # Website Audit: https://www.iti.lk/
 
-- Completed: 2026-10-18 08:05
+- Completed: 2026-10-19 08:24
 - Overall result: 🟠 Level 2
-- Vantage: 134.33.103.203 (US, github-actions)
+- Vantage: 52.165.101.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: { flex-direction: column; display: flex; width: 90%; margin: auto; text-align: center; justify-content: space-between; a; Phone: +94 11 237 9950 (10 phone numbers found); Email: 94-11-2686567 (7 email addresses found); Published named responsibility: director
+Published postal address: { flex-direction: column; display: flex; width: 90%; margin: auto; text-align: center; justify-content: space-between; a; Phone: +94-11-2379802 (10 phone numbers found); Email: clo@iti.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: { flex-direction: column; display: flex; width: 90%; margin: auto; text-align: center; justify-content: space-between; a |
-| reachable_contacts | ✅ | Phone: +94 11 237 9950 (10 phone numbers found); Email: 94-11-2686567 (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94-11-2379802 (10 phone numbers found); Email: clo@iti.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

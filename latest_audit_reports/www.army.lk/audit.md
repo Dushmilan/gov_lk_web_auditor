@@ -1,8 +1,8 @@
 # Website Audit: https://www.army.lk/
 
-- Completed: 2026-10-18 07:28
+- Completed: 2026-10-19 07:45
 - Overall result: 🟠 Level 2
-- Vantage: 134.33.103.203 (US, github-actions)
+- Vantage: 52.165.101.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Needs of Perehettiya Ranaviru Village 2026-10-14 Under the guidance and directives of the Commander of the Army, Lieuten; Phone: +94 11 243 2682 - (18 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Needs of Perehettiya Ranaviru Village 2026-10-14 Under the guidance and directives of the Commander of the Army, Lieuten; Phone: +94 76 690 7749 (18 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Needs of Perehettiya Ranaviru Village 2026-10-14 Under the guidance and directives of the Commander of the Army, Lieuten |
-| reachable_contacts | ✅ | Phone: +94 11 243 2682 - (18 phone numbers found); Email: info@army.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 76 690 7749 (18 phone numbers found); Email: info@army.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

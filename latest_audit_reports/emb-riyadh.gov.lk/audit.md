@@ -1,8 +1,8 @@
 # Website Audit: https://emb-riyadh.gov.lk/
 
-- Completed: 2026-10-18 07:50
+- Completed: 2026-10-19 08:08
 - Overall result: 🟠 Level 2
-- Vantage: 134.33.103.203 (US, github-actions)
+- Vantage: 52.165.101.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

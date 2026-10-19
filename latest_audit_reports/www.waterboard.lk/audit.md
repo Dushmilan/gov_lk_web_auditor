@@ -1,8 +1,8 @@
 # Website Audit: https://www.waterboard.lk/
 
-- Completed: 2026-10-18 07:55
+- Completed: 2026-10-19 08:12
 - Overall result: 🟠 Level 2
-- Vantage: 134.33.103.203 (US, github-actions)
+- Vantage: 52.165.101.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: National Water Supply and Drainage Board Galle Road, Ratmalana, Sri Lanka. Government of Sri Lanka Last update : October; Phone: 0.665231 1.11 (68 phone numbers found); Email: support@waterboard.lk (24 email addresses found); Published named responsibility: division
+Published postal address: National Water Supply and Drainage Board Galle Road, Ratmalana, Sri Lanka. Government of Sri Lanka Last update : October; Phone: 0.1 11.6637 -0.1 (68 phone numbers found); Email: support@waterboard.lk (24 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: National Water Supply and Drainage Board Galle Road, Ratmalana, Sri Lanka. Government of Sri Lanka Last update : October |
-| reachable_contacts | ✅ | Phone: 0.665231 1.11 (68 phone numbers found); Email: support@waterboard.lk (24 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.1 11.6637 -0.1 (68 phone numbers found); Email: support@waterboard.lk (24 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

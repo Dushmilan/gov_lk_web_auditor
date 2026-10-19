@@ -1,8 +1,8 @@
 # Website Audit: https://www.dba.gov.lk/
 
-- Completed: 2026-10-18 07:25
+- Completed: 2026-10-19 07:42
 - Overall result: 🔴 Level 1
-- Vantage: 134.33.103.203 (US, github-actions)
+- Vantage: 52.165.101.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0.9 7.8-16.7 4.3-1 (113 phone numbers found); Email: dba.gov.lk@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 9.7 3.3 11.4 8.1 (113 phone numbers found); Email: dba.gov.lk@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

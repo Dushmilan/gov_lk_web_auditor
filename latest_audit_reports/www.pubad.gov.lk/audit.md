@@ -1,8 +1,8 @@
 # Website Audit: https://www.pubad.gov.lk/
 
-- Completed: 2026-10-18 08:26
+- Completed: 2026-10-19 08:41
 - Overall result: ⚫ Level 0
-- Vantage: 134.33.103.203 (US, github-actions)
+- Vantage: 52.165.101.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; An HTTP probe was transient
+Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,11 +23,11 @@ Insufficient substantive page content: Only 101 visible characters across 1 page
 | site_not_defaced | ❓ | Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200 |
 | content_relevant | ❓ | Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200 |
 | hosting_configured | ❓ | Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200 |
-| http_available | ❓ | An HTTP probe was transient |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://www.pubad.gov.lk/: Probe 2: timed out; https://www.pubad.gov.lk/: Probe 3: timed out; http://www.pubad.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
 ## 🟠 Level 2: ❓
 

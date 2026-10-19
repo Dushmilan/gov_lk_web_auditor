@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "7d835573-b456-4f78-8f55-786c84987c3c",
+  "audit_id": "b86d5376-2b10-4d2e-be72-e60b9cac4a13",
   "url": "https://www.ibmbb.cmb.ac.lk/",
   "normalized_url": "https://www.ibmbb.cmb.ac.lk/",
-  "started_at": "2026-10-18T07:33:54.209091+05:30",
-  "completed_at": "2026-10-18T07:36:06.669537+05:30",
+  "started_at": "2026-10-19T07:50:56.573790+05:30",
+  "completed_at": "2026-10-19T07:51:36.579370+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,897 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-18T07:33:54.511143+05:30"
+      "observed_at": "2026-10-19T07:50:58.896691+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-18T07:33:54.511160+05:30"
+      "observed_at": "2026-10-19T07:50:58.896711+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-18T07:34:04.777083+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-19T07:51:00.696154+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.ibmbb.cmb.ac.lk/",
       "source": "https://www.ibmbb.cmb.ac.lk/",
-      "observed_at": "2026-10-18T07:36:06.669378+05:30"
+      "observed_at": "2026-10-19T07:51:35.320362+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://www.ibmbb.cmb.ac.lk/",
       "source": "http://www.ibmbb.cmb.ac.lk/",
-      "observed_at": "2026-10-18T07:36:06.669400+05:30"
+      "observed_at": "2026-10-19T07:51:35.320385+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.ibmbb.cmb.ac.lk/",
       "source": "https://www.ibmbb.cmb.ac.lk/",
-      "observed_at": "2026-10-18T07:36:06.669404+05:30"
+      "observed_at": "2026-10-19T07:51:35.320388+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://www.ibmbb.cmb.ac.lk/",
       "source": "http://www.ibmbb.cmb.ac.lk/",
-      "observed_at": "2026-10-18T07:36:06.669407+05:30"
+      "observed_at": "2026-10-19T07:51:35.320390+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.ibmbb.cmb.ac.lk/?page_id=3397",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=3397",
+      "observed_at": "2026-10-19T07:51:35.320392+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "observed_at": "2026-10-19T07:51:35.320411+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.ibmbb.cmb.ac.lk",
+      "source": "https://www.ibmbb.cmb.ac.lk",
+      "observed_at": "2026-10-19T07:51:35.320414+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.ibmbb.cmb.ac.lk/?page_id=44",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=44",
+      "observed_at": "2026-10-19T07:51:35.320416+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.ibmbb.cmb.ac.lk/?page_id=51",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=51",
+      "observed_at": "2026-10-19T07:51:35.320418+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.ibmbb.cmb.ac.lk/?page_id=61",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=61",
+      "observed_at": "2026-10-19T07:51:35.320420+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.ibmbb.cmb.ac.lk/?page_id=67",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=67",
+      "observed_at": "2026-10-19T07:51:35.320421+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.ibmbb.cmb.ac.lk/?page_id=5779",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=5779",
+      "observed_at": "2026-10-19T07:51:35.320423+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.ibmbb.cmb.ac.lk/?page_id=75",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=75",
+      "observed_at": "2026-10-19T07:51:35.320425+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "observed_at": "2026-10-19T07:51:35.320427+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=3397",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=3397",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=3397",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=3397",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Permission to work after hours For Staff Claim for fees payable for examination services Application for email address C",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "data": {
+        "value": "Permission to work after hours For Staff Claim for fees payable for examination services Application for email address C"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.ibmbb.cmb.ac.lk/wp-content/uploads/2021/01/Form-of-entry-for-examination-MPhilPhD.pdf",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "data": {
+        "value": "http://www.ibmbb.cmb.ac.lk/wp-content/uploads/2021/01/Form-of-entry-for-examination-MPhilPhD.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=44",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=44",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=44",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=44",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=51",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=51",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=51",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=51",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=61",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=61",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=61",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=61",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=67",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=67",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=67",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=67",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=5779",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=5779",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=5779",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=5779",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=75",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 1 12 0 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=75",
+      "data": {
+        "value": "0 1 1 12 0 6 6 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1 0 0 12 6 6 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=75",
+      "data": {
+        "value": "0 1 0 0 12 6 6 0 0 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ibmbb.cmb.ac.lk/?page_id=75",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 230 799 525 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 230 799 525 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 349 391 335 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 349 391 335 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 556 0 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 0 556 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 556 444 55",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "00 556 444 55"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 722 500 50",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "00 722 500 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 423 525 498 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 423 525 498 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 333 250 278 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 333 250 278 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 778 667 94",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "00 778 667 94"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 556 556 44",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "00 556 556 44"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 556 0 556 0 5",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 556 0 556 0 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 855 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 855 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 500 5",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 500 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 500 33",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "00 500 500 33"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 000 0 722 667 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "000 0 722 667 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 556 278 33",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "00 556 278 33"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 667 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 0 0 667 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 500 500 500 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 500 500 500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 278 0 0 278 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 278 0 0 278 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 333 333 0 0 2",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 333 333 0 0 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 1000 8",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 0 0 1000 8"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 222 0 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 0 222 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00 500 500 50",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "00 500 500 50"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 611 611 0 0 3",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 611 611 0 0 3"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 579 0 0 0 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 579 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 05 471 0 230 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "05 471 0 230 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 278 0 0 61",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 278 0 0 61"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 570 0 0 72",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 570 0 0 72"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 722 0 66",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 0 0 0 722 0 66"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 517 0 0 0 0 0 0 ",
+      "source": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "data": {
+        "value": "0 517 0 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 486317 visible characters across 14 pages",
+      "source": "https://www.ibmbb.cmb.ac.lk/"
     }
   ],
   "observations": [
@@ -85,49 +936,228 @@
     },
     {
       "host": "www.ibmbb.cmb.ac.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-11-19T17:09:00+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.ibmbb.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 4337,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.ibmbb.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/",
+      "redirects": [
+        "https://www.ibmbb.cmb.ac.lk/"
+      ],
+      "elapsed_ms": 1820,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.ibmbb.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1978,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.ibmbb.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/",
+      "redirects": [
+        "https://www.ibmbb.cmb.ac.lk/"
+      ],
+      "elapsed_ms": 1799,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=3397",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/?page_id=3397",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1781,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "redirects": [],
+      "elapsed_ms": 1612,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk",
+      "redirects": [],
+      "elapsed_ms": 2094,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=44",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/?page_id=44",
+      "redirects": [],
+      "elapsed_ms": 1818,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=51",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/?page_id=51",
+      "redirects": [],
+      "elapsed_ms": 1338,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=61",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/?page_id=61",
+      "redirects": [],
+      "elapsed_ms": 1607,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=67",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/?page_id=67",
+      "redirects": [],
+      "elapsed_ms": 1363,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=5779",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/?page_id=5779",
+      "redirects": [],
+      "elapsed_ms": 1378,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=75",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/?page_id=75",
+      "redirects": [],
+      "elapsed_ms": 1434,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "status_code": 200,
+      "final_url": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "redirects": [],
+      "elapsed_ms": 2691,
+      "content_type": "application/pdf",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-01-e702400d10f2.html",
+      "sha256": "e702400d10f226ddd24b7fd78ea69852a1e5adad2d155987c93fd2604b0e0d8d",
+      "bytes": 223304
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-02-03f191c17a83.html",
+      "sha256": "03f191c17a836dbef9bb3b2f7c8463f49276e316efb88d95a049ad99e1103ad5",
+      "bytes": 223304
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-03-e235c8aa8dd3.html",
+      "sha256": "e235c8aa8dd3a52ba41bd3b941a6f0142826819a8f10d11665c9d2649576927a",
+      "bytes": 223304
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-04-05bdc1a25e60.html",
+      "sha256": "05bdc1a25e60f7a29822e38d80975a30f6c9af7a0ce856572fbe53aa48999bca",
+      "bytes": 223304
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=3397",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-05-e246d47c176c.html",
+      "sha256": "e246d47c176cbbdcc039048d64f1beb8e0a338fdecf05108ddcea30ec115d256",
+      "bytes": 173011
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=6403",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-06-eac72b689874.html",
+      "sha256": "eac72b68987424bedaf249422538d10c8735ed9171b3a6f2a3271b3f43e98eb1",
+      "bytes": 166934
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-07-b075b6f2e806.html",
+      "sha256": "b075b6f2e806cd99c362587c95b989e77c89269a0eb5e2a8871b2a88e4a8aa4f",
+      "bytes": 223304
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=44",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-08-f9383c474110.html",
+      "sha256": "f9383c4741101f22b19220133ee599b3f790ba4bbd7f09dfe262210a316d57cd",
+      "bytes": 156893
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=51",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-09-fb01ebb526e0.html",
+      "sha256": "fb01ebb526e0551fe99cccafc89563015f0549913a73d00227fb59398b31363c",
+      "bytes": 153902
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=61",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-10-ae808da69ae7.html",
+      "sha256": "ae808da69ae70ffc3d6f465db7ff9d4a7cc99cc363d3d9776d121bd1f07b4d87",
+      "bytes": 151792
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=67",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-11-0280b27c72db.html",
+      "sha256": "0280b27c72dbacd86b5536429641126bd12f5ba5de977ba2723d17ed83e7f4b6",
+      "bytes": 162434
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=5779",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-12-43fd5949539a.html",
+      "sha256": "43fd5949539ab87b62dfc101f6fdc74fff21a215e92670383420f5e035b05d50",
+      "bytes": 154764
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/?page_id=75",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-13-8ae177037094.html",
+      "sha256": "8ae177037094ab3e48afae62400d411dd693985b117f4dac76d629c2c0397f16",
+      "bytes": 156621
+    },
+    {
+      "url": "https://www.ibmbb.cmb.ac.lk/wp-content/uploads/2025/08/SM-Plan-2025-2029-Submitted-to-the-Ministry-on-24.02.2025.pdf",
+      "path": "audit.output/www.ibmbb.cmb.ac.lk/20261019.0750/snapshots/page-14-4f883d8954f5.html",
+      "sha256": "4f883d8954f5fb497ba83264fcbcc03c5408fb1531ca642a6e2a75a3b7e1c88b",
+      "bytes": 1788905
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1171,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +1184,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +1241,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Permission to work after hours For Staff Claim for fees payable for examination services Application for email address C"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +1290,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "134.33.103.203",
+    "egress_ip": "52.165.101.48",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

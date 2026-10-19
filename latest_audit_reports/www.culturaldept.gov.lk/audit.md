@@ -1,8 +1,8 @@
 # Website Audit: https://www.culturaldept.gov.lk/
 
-- Completed: 2026-10-18 07:25
+- Completed: 2026-10-19 07:42
 - Overall result: 🔴 Level 1
-- Vantage: 134.33.103.203 (US, github-actions)
+- Vantage: 52.165.101.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

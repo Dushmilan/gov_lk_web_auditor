@@ -1,8 +1,8 @@
 # Website Audit: https://www.mahapola.lk/
 
-- Completed: 2026-10-18 08:08
+- Completed: 2026-10-19 08:27
 - Overall result: 🟠 Level 2
-- Vantage: 134.33.103.203 (US, github-actions)
+- Vantage: 52.165.101.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 8th Floor, CWE Secretariat Building 27, Vauxhall Street, Colombo 02, Sri Lanka; Phone: 078 180 0888 ( (12 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found); Published named responsibility: department
+Published postal address: 8th Floor, CWE Secretariat Building 27, Vauxhall Street, Colombo 02, Sri Lanka; Phone: 011 268 5548 (11 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 8th Floor, CWE Secretariat Building 27, Vauxhall Street, Colombo 02, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 078 180 0888 ( (12 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 268 5548 (11 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing required documents evidence found; No passing legal basis evidence fo
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://www.mahapola.lk/images/pdf/2026/Payment_Status/Sep2026/UVPA_SEP_2026.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |
