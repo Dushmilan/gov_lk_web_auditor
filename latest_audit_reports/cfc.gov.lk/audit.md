@@ -1,8 +1,8 @@
 # Website Audit: https://cfc.gov.lk/
 
-- Completed: 2026-10-19 08:01
+- Completed: 2026-10-20 08:16
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.101.48 (US, github-actions)
+- Vantage: 172.171.12.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

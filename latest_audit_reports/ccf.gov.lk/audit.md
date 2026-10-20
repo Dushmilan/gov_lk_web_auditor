@@ -1,8 +1,8 @@
 # Website Audit: https://ccf.gov.lk/
 
-- Completed: 2026-10-19 07:42
+- Completed: 2026-10-20 07:58
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.101.48 (US, github-actions)
+- Vantage: 172.171.12.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://ccf.gov.lk/: Probe 1: [Errno 111] Connection refused; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://ccf.gov.lk/: Probe 1: [Errno 111] Connection refused |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -45,14 +45,14 @@ Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinfor
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ❓ | No passing legal basis evidence found |
+| legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 15 working days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

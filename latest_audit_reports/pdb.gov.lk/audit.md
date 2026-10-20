@@ -1,8 +1,8 @@
 # Website Audit: https://pdb.gov.lk/
 
-- Completed: 2026-10-19 08:30
+- Completed: 2026-10-20 08:36
 - Overall result: ⚫ Level 0
-- Vantage: 52.165.101.48 (US, github-actions)
+- Vantage: 172.171.12.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://pdb.gov.lk/: Probe 2: timed out; https://pdb.gov.lk/: Probe 3: timed out |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

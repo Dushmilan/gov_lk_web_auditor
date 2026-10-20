@@ -1,8 +1,8 @@
 # Website Audit: https://emb-berlin.gov.lk/
 
-- Completed: 2026-10-19 08:05
+- Completed: 2026-10-20 08:20
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.101.48 (US, github-actions)
+- Vantage: 172.171.12.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)3080909749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquire; Phone: 0857623541 (46 phone numbers found); Email: slemb.berlin@mfa.gov.lk (9 email addresses found); Published named responsibility: division
+Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)3080909749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquire; Phone: 0857623541 (46 phone numbers found); Email: Slemb.berlin@mfa.gov.lk (9 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)3080909749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquire |
-| reachable_contacts | ✅ | Phone: 0857623541 (46 phone numbers found); Email: slemb.berlin@mfa.gov.lk (9 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0857623541 (46 phone numbers found); Email: Slemb.berlin@mfa.gov.lk (9 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❌
@@ -53,6 +53,6 @@ Published published update date: 1 January 2018
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 03 months |
+| processing_time | ✅ | Published processing time: 2 working days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❌ | Published published update date: 1 January 2018 |

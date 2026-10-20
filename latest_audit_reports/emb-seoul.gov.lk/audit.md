@@ -1,8 +1,8 @@
 # Website Audit: https://emb-seoul.gov.lk/
 
-- Completed: 2026-10-19 08:04
+- Completed: 2026-10-20 08:19
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.101.48 (US, github-actions)
+- Vantage: 172.171.12.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://emb-seoul.gov.lk/: Probe 3: [Errno 104] Connection reset by peer; http://emb-seoul.gov.lk/: Probe 4: [Errno 104] Connection reset by peer; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://emb-seoul.gov.lk/: Probe 3: [Errno 104] Connection reset by peer; http://emb-seoul.gov.lk/: Probe 4: [Errno 104] Connection reset by peer |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794-; Phone: +82027352966 (15 phone numbers found); Email: slemb.seoul@mfa.gov.lk (5 email addresses found); Published named responsibility: director
+Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794-; Phone: 0473349-278 (15 phone numbers found); Email: john@example.com (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794- |
-| reachable_contacts | ✅ | Phone: +82027352966 (15 phone numbers found); Email: slemb.seoul@mfa.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0473349-278 (15 phone numbers found); Email: john@example.com (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

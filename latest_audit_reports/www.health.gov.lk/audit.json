@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b7890088-1c0c-4d6e-9713-f46fe8cc9415",
+  "audit_id": "aaa726a3-9330-4021-a3c9-818d2f0c89ed",
   "url": "https://www.health.gov.lk",
   "normalized_url": "https://www.health.gov.lk/",
-  "started_at": "2026-10-19T08:09:53.895121+05:30",
-  "completed_at": "2026-10-19T08:09:58.933906+05:30",
+  "started_at": "2026-10-20T08:24:48.237875+05:30",
+  "completed_at": "2026-10-20T08:25:31.571677+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
-      "tls_not_expired: TLS certificate has expired"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: http://www.health.gov.lk/: Probe 2: Server disconnected without sending a response.; http://www.health.gov.lk/: Probe 4: Server disconnected without sending a response.",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,47 +26,969 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-19T08:09:54.215064+05:30"
+      "observed_at": "2026-10-20T08:24:48.798483+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-19T08:09:54.215082+05:30"
+      "observed_at": "2026-10-20T08:24:48.798499+05:30"
     },
     {
-      "check": "tls_expired",
-      "status": "fail",
-      "detail": "TLS certificate has expired",
-      "observed_at": "2026-10-19T08:09:55.167374+05:30"
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-20T08:24:49.745936+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.health.gov.lk/",
       "source": "https://www.health.gov.lk/",
-      "observed_at": "2026-10-19T08:09:58.933719+05:30"
+      "observed_at": "2026-10-20T08:25:30.899136+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: Server disconnected without sending a response.",
       "source": "http://www.health.gov.lk/",
-      "observed_at": "2026-10-19T08:09:58.933741+05:30"
+      "observed_at": "2026-10-20T08:25:30.899155+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.health.gov.lk/",
       "source": "https://www.health.gov.lk/",
-      "observed_at": "2026-10-19T08:09:58.933746+05:30"
+      "observed_at": "2026-10-20T08:25:30.899158+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: Server disconnected without sending a response.",
       "source": "http://www.health.gov.lk/",
-      "observed_at": "2026-10-19T08:09:58.933750+05:30"
+      "observed_at": "2026-10-20T08:25:30.899160+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.health.gov.lk/home/",
+      "source": "https://www.health.gov.lk/home/",
+      "observed_at": "2026-10-20T08:25:30.899162+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.health.gov.lk/public-health-services/",
+      "source": "https://www.health.gov.lk/public-health-services/ ",
+      "observed_at": "2026-10-20T08:25:30.899163+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.health.gov.lk/contact-us/",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "observed_at": "2026-10-20T08:25:30.899165+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.health.gov.lk/health-services-at-ports-airports/",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "observed_at": "2026-10-20T08:25:30.899167+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.health.gov.lk/wp-content/uploads/2025/04/Mental-Health-Service-Providers-Directory-2023.pdf",
+      "source": "https://www.health.gov.lk/wp-content/uploads/2025/04/Mental-Health-Service-Providers-Directory-2023.pdf",
+      "observed_at": "2026-10-20T08:25:30.899169+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "observed_at": "2026-10-20T08:25:30.899170+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "observed_at": "2026-10-20T08:25:30.899172+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "observed_at": "2026-10-20T08:25:30.899174+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "observed_at": "2026-10-20T08:25:30.899176+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "observed_at": "2026-10-20T08:25:30.899178+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 (94) 112 67",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "033 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 (94) 112 67",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "011 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 693493",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "(94) 112 693493"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675011",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "(94) 112 675011"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 694033",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "(94) 112 694033"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675449",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "(94) 112 675449"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf",
+      "source": "https://www.health.gov.lk/home/",
+      "data": {
+        "value": "https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 (94) 112 67",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "033 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 (94) 112 67",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "011 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 693493",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "(94) 112 693493"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675011",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "(94) 112 675011"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 694033",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "(94) 112 694033"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675449",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "(94) 112 675449"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf",
+      "source": "https://www.health.gov.lk/public-health-services/",
+      "data": {
+        "value": "https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675280",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "(94) 112 675280"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 (94) 112 67",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "033 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 (94) 112 67",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "011 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 (94) 112 6691",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "0 (94) 112 6691"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 693493",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "(94) 112 693493"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675011",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "(94) 112 675011"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 694033",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "(94) 112 694033"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 669192",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "(94) 112 669192"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675449",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "(94) 112 675449"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: or phone number. Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka. (94) 112 694033",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "or phone number. Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka. (94) 112 694033"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf",
+      "source": "https://www.health.gov.lk/contact-us/",
+      "data": {
+        "value": "https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 (94) 112 67",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "033 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 (94) 112 67",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "011 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 693493",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "(94) 112 693493"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675011",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "(94) 112 675011"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 694033",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "(94) 112 694033"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675449",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "(94) 112 675449"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf",
+      "source": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "data": {
+        "value": "https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 841.89 595.2",
+      "source": "https://www.health.gov.lk/wp-content/uploads/2025/04/Mental-Health-Service-Providers-Directory-2023.pdf",
+      "data": {
+        "value": "0 841.89 595.2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 (94) 112 67",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "033 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 (94) 112 67",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "011 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 693493",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "(94) 112 693493"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675011",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "(94) 112 675011"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 694033",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "(94) 112 694033"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675449",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "(94) 112 675449"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf",
+      "source": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "data": {
+        "value": "https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 (94) 112 67",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "033 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 (94) 112 67",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "011 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 693493",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "(94) 112 693493"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675011",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "(94) 112 675011"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 694033",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "(94) 112 694033"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675449",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "(94) 112 675449"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "data": {
+        "value": "https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 (94) 112 67",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "033 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 (94) 112 67",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "011 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 693493",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "(94) 112 693493"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675011",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "(94) 112 675011"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 694033",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "(94) 112 694033"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675449",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "(94) 112 675449"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf",
+      "source": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "data": {
+        "value": "https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 (94) 112 67",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "033 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 (94) 112 67",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "011 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 693493",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "(94) 112 693493"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675011",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "(94) 112 675011"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 694033",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "(94) 112 694033"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675449",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "(94) 112 675449"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "data": {
+        "value": "https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 (94) 112 67",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "033 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 (94) 112 67",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "011 (94) 112 67"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 693493",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "(94) 112 693493"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675011",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "(94) 112 675011"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 694033",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "(94) 112 694033"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (94) 112 675449",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "(94) 112 675449"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf",
+      "source": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "data": {
+        "value": "https://www.health.gov.lk/wp-content/uploads/2026/10/New-Web-Submission-Form.pdf"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 479805 visible characters across 12 pages",
+      "source": "https://www.health.gov.lk/"
     }
   ],
   "observations": [
@@ -78,19 +1008,19 @@
     },
     {
       "host": "www.health.gov.lk",
-      "status": "expired",
-      "expires_at": "2026-10-19T05:29:59+05:30",
+      "status": "valid",
+      "expires_at": "2027-05-05T05:29:59+05:30",
       "hostname_valid": true,
-      "detail": "TLS certificate has expired"
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 3102,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.health.gov.lk/",
@@ -103,12 +1033,12 @@
     },
     {
       "url": "https://www.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 2069,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.health.gov.lk/",
@@ -118,9 +1048,174 @@
       "elapsed_ms": null,
       "content_type": null,
       "error": "Server disconnected without sending a response."
+    },
+    {
+      "url": "https://www.health.gov.lk/home/",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/home/",
+      "redirects": [],
+      "elapsed_ms": 2808,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.health.gov.lk/public-health-services/ ",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/public-health-services/",
+      "redirects": [
+        "https://www.health.gov.lk/public-health-services/"
+      ],
+      "elapsed_ms": 2488,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.health.gov.lk/contact-us/",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/contact-us/",
+      "redirects": [],
+      "elapsed_ms": 3100,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "redirects": [],
+      "elapsed_ms": 2629,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.health.gov.lk/wp-content/uploads/2025/04/Mental-Health-Service-Providers-Directory-2023.pdf",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/wp-content/uploads/2025/04/Mental-Health-Service-Providers-Directory-2023.pdf",
+      "redirects": [],
+      "elapsed_ms": 4012,
+      "content_type": "application/pdf",
+      "error": null
+    },
+    {
+      "url": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "redirects": [],
+      "elapsed_ms": 2716,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "redirects": [],
+      "elapsed_ms": 2781,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "redirects": [],
+      "elapsed_ms": 2545,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "redirects": [],
+      "elapsed_ms": 2542,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "status_code": 200,
+      "final_url": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "redirects": [],
+      "elapsed_ms": 2446,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.health.gov.lk/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-01-a344d16fa2fb.html",
+      "sha256": "a344d16fa2fb368819b46def78f5d93125b7bd41a5a404af510a771fcfdd003b",
+      "bytes": 15410
+    },
+    {
+      "url": "https://www.health.gov.lk/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-02-6c62a9560f2e.html",
+      "sha256": "6c62a9560f2e9b65bfdb204731223370c186f1148104e3a8c6043e3b3f9ee090",
+      "bytes": 15410
+    },
+    {
+      "url": "https://www.health.gov.lk/home/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-03-5aafd97a299d.html",
+      "sha256": "5aafd97a299dd2984603c1dc944bce0c628e3990985fa77b3b5f97a98dde6c05",
+      "bytes": 221063
+    },
+    {
+      "url": "https://www.health.gov.lk/public-health-services/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-04-6c353519c438.html",
+      "sha256": "6c353519c43857bd18019fed19492a78f53f2b133c07e8f1ebbe13622b656607",
+      "bytes": 167396
+    },
+    {
+      "url": "https://www.health.gov.lk/contact-us/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-05-40ac950e9ee8.html",
+      "sha256": "40ac950e9ee884fcf7680fe45aec553f9fd8ba4981cdf0150b3f61707a9c56d9",
+      "bytes": 184098
+    },
+    {
+      "url": "https://www.health.gov.lk/health-services-at-ports-airports/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-06-a2c0f48a3358.html",
+      "sha256": "a2c0f48a3358b042d020215c4a0ae71106b82975a17f9385a5a2b84a612606d7",
+      "bytes": 165738
+    },
+    {
+      "url": "https://www.health.gov.lk/wp-content/uploads/2025/04/Mental-Health-Service-Providers-Directory-2023.pdf",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-07-d0ebb8ecfbdc.html",
+      "sha256": "d0ebb8ecfbdce403cf886dff143722e8b66575372fa7e7813ebe574e22223af2",
+      "bytes": 1802456
+    },
+    {
+      "url": "https://www.health.gov.lk/sub_projects/health-medical-service-improvement-project-jica-gosl/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-08-95a6cb534d37.html",
+      "sha256": "95a6cb534d3733bfa31f7fa3db0315a0cc583c7bd466a2da79a85c19cba44847",
+      "bytes": 163162
+    },
+    {
+      "url": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-internship/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-09-abae94f678d9.html",
+      "sha256": "abae94f678d925169341922bc6927d59aeaaaec9b6391b02885117c29c053b82",
+      "bytes": 217571
+    },
+    {
+      "url": "https://www.health.gov.lk/moh-pages/appointments-medical-officer-specialist-grade-medical-officers/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-10-e23a64aac193.html",
+      "sha256": "e23a64aac19356bea534eb4896b183ba68cf9d214616418642fedebc6d631bf9",
+      "bytes": 171999
+    },
+    {
+      "url": "https://www.health.gov.lk/moh-pages/nursing-officer-grade-03/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-11-60a060e99673.html",
+      "sha256": "60a060e9967305a78b452b94eceb71c64ed87203723d8a70799d2d3ad9c3c6f8",
+      "bytes": 185068
+    },
+    {
+      "url": "https://www.health.gov.lk/moh-pages/nursing-officer-super/",
+      "path": "audit.output/www.health.gov.lk/20261020.0824/snapshots/page-12-52a50028bf83.html",
+      "sha256": "52a50028bf83b24b5332fb7a7641aa374e480f510fddd26ef99b602c5d8cfc50",
+      "bytes": 171395
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -134,8 +1229,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.health.gov.lk/: Probe 2: Server disconnected without sending a response.; http://www.health.gov.lk/: Probe 4: Server disconnected without sending a response.; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -147,56 +1242,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: http://www.health.gov.lk/: Probe 2: Server disconnected without sending a response.; http://www.health.gov.lk/: Probe 4: Server disconnected without sending a response."
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate has expired"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -204,9 +1299,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Suwasiripaya, No. 385, Rev. Baddegama Wimalawansa Thero Mawatha, Colombo 10, Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -234,7 +1348,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.165.101.48",
+    "egress_ip": "172.171.12.199",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

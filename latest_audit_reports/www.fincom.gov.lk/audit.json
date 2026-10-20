@@ -1,24 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "f6842e0b-549f-4c5a-ace6-f9999cacce33",
+  "audit_id": "061c8adc-1e0a-4617-9cfa-015b2bee26d2",
   "url": "https://www.fincom.gov.lk/",
   "normalized_url": "https://www.fincom.gov.lk/",
-  "started_at": "2026-10-19T08:43:42.387355+05:30",
-  "completed_at": "2026-10-19T08:46:42.115638+05:30",
+  "started_at": "2026-10-20T08:53:01.398900+05:30",
+  "completed_at": "2026-10-20T08:59:32.330242+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,126 +18,117 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-19T08:43:43.523181+05:30"
+      "observed_at": "2026-10-20T08:53:02.362673+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-19T08:43:43.523207+05:30"
+      "observed_at": "2026-10-20T08:53:02.362686+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-19T08:43:44.740731+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-20T08:53:13.080308+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://fincom.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.fincom.gov.lk/",
-      "observed_at": "2026-10-19T08:46:41.689397+05:30"
+      "observed_at": "2026-10-20T08:59:31.968960+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://fincom.gov.lk/",
       "source": "http://www.fincom.gov.lk/",
-      "observed_at": "2026-10-19T08:46:41.689423+05:30"
+      "observed_at": "2026-10-20T08:59:31.968978+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://fincom.gov.lk/",
       "source": "https://www.fincom.gov.lk/",
-      "observed_at": "2026-10-19T08:46:41.689426+05:30"
+      "observed_at": "2026-10-20T08:59:31.968981+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://fincom.gov.lk/",
       "source": "http://www.fincom.gov.lk/",
-      "observed_at": "2026-10-19T08:46:41.689428+05:30"
+      "observed_at": "2026-10-20T08:59:31.968984+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://fincom.gov.lk/contact-us/",
       "source": "https://fincom.gov.lk/contact-us/",
-      "observed_at": "2026-10-19T08:46:41.689430+05:30"
+      "observed_at": "2026-10-20T08:59:31.968986+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 6: HTTP 200 at https://fincom.gov.lk/?lang=si",
       "source": "http://fincom.gov.lk/?lang=si",
-      "observed_at": "2026-10-19T08:46:41.689433+05:30"
+      "observed_at": "2026-10-20T08:59:31.968988+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://fincom.gov.lk/?lang=ta",
-      "source": "http://fincom.gov.lk/?lang=ta",
-      "observed_at": "2026-10-19T08:46:41.689435+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://fincom.gov.lk/",
-      "source": "http://fincom.gov.lk/",
-      "observed_at": "2026-10-19T08:46:41.689437+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://fincom.gov.lk/about-us/members/",
-      "source": "https://fincom.gov.lk/about-us/members/",
-      "observed_at": "2026-10-19T08:46:41.689439+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://fincom.gov.lk/about-us/overview/",
-      "source": "https://fincom.gov.lk/about-us/overview/",
-      "observed_at": "2026-10-19T08:46:41.689441+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://fincom.gov.lk/about-us/staff/",
-      "source": "https://fincom.gov.lk/about-us/staff/",
-      "observed_at": "2026-10-19T08:46:41.689443+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://fincom.gov.lk/about-us/organization-structure/",
-      "source": "https://fincom.gov.lk/about-us/organization-structure/",
-      "observed_at": "2026-10-19T08:46:41.689445+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://fincom.gov.lk/about-us/theme-song-2/",
+      "detail": "Probe 7: HTTP 200 at https://fincom.gov.lk/about-us/theme-song-2/",
       "source": "https://fincom.gov.lk/about-us/theme-song-2/",
-      "observed_at": "2026-10-19T08:46:41.689446+05:30"
+      "observed_at": "2026-10-20T08:59:31.968990+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://fincom.gov.lk/news-events/",
+      "detail": "Probe 8: HTTP 200 at https://fincom.gov.lk/news-events/",
       "source": "https://fincom.gov.lk/news-events/",
-      "observed_at": "2026-10-19T08:46:41.689448+05:30"
+      "observed_at": "2026-10-20T08:59:31.968995+05:30"
     },
     {
-      "check": "phone",
+      "check": "http",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
-      "source": "https://fincom.gov.lk/",
-      "data": {
-        "value": "+94-11-2866679 "
-      }
+      "detail": "Probe 9: HTTP 200 at https://fincom.gov.lk/downloads/",
+      "source": "https://fincom.gov.lk/downloads/",
+      "observed_at": "2026-10-20T08:59:31.968999+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://fincom.gov.lk/articles/",
+      "source": "https://fincom.gov.lk/articles/",
+      "observed_at": "2026-10-20T08:59:31.969002+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://fincom.gov.lk/vacancies/",
+      "source": "https://fincom.gov.lk/vacancies/",
+      "observed_at": "2026-10-20T08:59:31.969005+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://fincom.gov.lk/inquiry/",
+      "source": "https://fincom.gov.lk/inquiry/",
+      "observed_at": "2026-10-20T08:59:31.969007+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://fincom.gov.lk/sustainable-development-goals-sdgs/",
+      "source": "http://fincom.gov.lk/sustainable-development-goals-sdgs/",
+      "observed_at": "2026-10-20T08:59:31.969010+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
+      "source": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
+      "observed_at": "2026-10-20T08:59:31.969013+05:30"
     },
     {
       "check": "phone",
@@ -154,6 +137,15 @@
       "source": "https://fincom.gov.lk/",
       "data": {
         "value": "+94-11-2866747 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866679 ",
+      "source": "https://fincom.gov.lk/",
+      "data": {
+        "value": "+94-11-2866679 "
       }
     },
     {
@@ -186,19 +178,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
+      "detail": "Published phone: +94-11-2866747 ",
       "source": "https://fincom.gov.lk/",
       "data": {
-        "value": "+94-11-2866679 "
+        "value": "+94-11-2866747 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
+      "detail": "Published phone: +94-11-2866679 ",
       "source": "https://fincom.gov.lk/",
       "data": {
-        "value": "+94-11-2866747 "
+        "value": "+94-11-2866679 "
       }
     },
     {
@@ -231,19 +223,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
+      "detail": "Published phone: +94-11-2866747 ",
       "source": "https://fincom.gov.lk/",
       "data": {
-        "value": "+94-11-2866679 "
+        "value": "+94-11-2866747 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
+      "detail": "Published phone: +94-11-2866679 ",
       "source": "https://fincom.gov.lk/",
       "data": {
-        "value": "+94-11-2866747 "
+        "value": "+94-11-2866679 "
       }
     },
     {
@@ -276,46 +268,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
-      "source": "https://fincom.gov.lk/",
+      "detail": "Published phone: 0112866760 ",
+      "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "+94-11-2866679 "
+        "value": "0112866760 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
-      "source": "https://fincom.gov.lk/",
+      "detail": "Published phone: 0112866684 ",
+      "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "+94-11-2866747 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/",
-      "data": {
-        "value": "info@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri",
-      "source": "https://fincom.gov.lk/",
-      "data": {
-        "value": "will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://fincom.gov.lk/",
-      "data": {
-        "value": "circular"
+        "value": "0112866684 "
       }
     },
     {
@@ -330,24 +295,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112794765 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0112794765 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0714177553",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0714177553"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0716146386 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
@@ -357,19 +304,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112866773 ",
+      "detail": "Published phone: 0713544219 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "0112866773 "
+        "value": "0713544219 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
+      "detail": "Published phone: 0714967331 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "+94-11-2866679 "
+        "value": "0714967331 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112866747 ",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "0112866747 "
       }
     },
     {
@@ -393,10 +349,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0716290599 ",
+      "detail": "Published phone: +94-11-2866679 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "0716290599 "
+        "value": "+94-11-2866679 "
       }
     },
     {
@@ -411,19 +367,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112866737 ",
+      "detail": "Published phone: +94-11-2866747 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "0112866737 "
+        "value": "+94-11-2866747 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0714967331 ",
+      "detail": "Published phone: 0112866773 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "0714967331 "
+        "value": "0112866773 "
       }
     },
     {
@@ -433,60 +389,6 @@
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
         "value": "0772548885 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0713544219 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0713544219 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0763312306 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0763312306 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112866671 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0112866671 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112866760 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0112866760 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112866747 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0112866747 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112866779 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0112866779 "
       }
     },
     {
@@ -510,10 +412,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112866698 ",
+      "detail": "Published phone: 0772833314 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "0112866698 "
+        "value": "0772833314 "
       }
     },
     {
@@ -528,6 +430,60 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0763312306 ",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "0763312306 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0714177553",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "0714177553"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112866671 ",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "0112866671 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112866779 ",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "0112866779 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112866698 ",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "0112866698 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112866737 ",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "0112866737 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0112866717 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
@@ -537,19 +493,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
+      "detail": "Published phone: 0716290599 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "+94-11-2866747 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112866724 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0112866724 "
+        "value": "0716290599 "
       }
     },
     {
@@ -564,24 +511,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112866684 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0112866684 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0113461440 ",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "0113461440 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0773826568 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
@@ -591,145 +520,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0772833314 ",
+      "detail": "Published phone: 0112866724 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "0772833314 "
+        "value": "0112866724 "
       }
     },
     {
-      "check": "email",
+      "check": "phone",
       "status": "pass",
-      "detail": "Published email: inauditor@fincom.gov.lk",
+      "detail": "Published phone: 0112794765 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "inauditor@fincom.gov.lk"
+        "value": "0112794765 "
       }
     },
     {
-      "check": "email",
+      "check": "phone",
       "status": "pass",
-      "detail": "Published email: admin@fincom.gov.lk",
+      "detail": "Published phone: 0113461440 ",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "admin@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: deepthi.moppea@gmail.com",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "deepthi.moppea@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ca@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "ca@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: thilokaml@gmail.com",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "thilokaml@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: renuoshadee@gmail.com",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "renuoshadee@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sandyakum76@gmail.com",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "sandyakum76@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: vinayagamoorthisripavithra@gmail.com",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "vinayagamoorthisripavithra@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: addsec101@gmail.com",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "addsec101@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: manojaifad@yahoo.com",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "manojaifad@yahoo.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: it@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "it@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "info@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ruwaniudeshika@gmail.com",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "ruwaniudeshika@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wijesinghespp@gmail.com",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "wijesinghespp@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: policy@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/contact-us/",
-      "data": {
-        "value": "policy@fincom.gov.lk"
+        "value": "0113461440 "
       }
     },
     {
@@ -744,6 +556,15 @@
     {
       "check": "email",
       "status": "pass",
+      "detail": "Published email: handunpathirana@gmail.com",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "handunpathirana@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
       "detail": "Published email: nsujeewa64@gmail.com",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
@@ -753,10 +574,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: handunpathirana@gmail.com",
+      "detail": "Published email: manojaifad@yahoo.com",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
-        "value": "handunpathirana@gmail.com"
+        "value": "manojaifad@yahoo.com"
       }
     },
     {
@@ -771,10 +592,136 @@
     {
       "check": "email",
       "status": "pass",
+      "detail": "Published email: wijesinghespp@gmail.com",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "wijesinghespp@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: deepthi.moppea@gmail.com",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "deepthi.moppea@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: inauditor@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "inauditor@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: it@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "it@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: renuoshadee@gmail.com",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "renuoshadee@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: policy@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "policy@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: addsec101@gmail.com",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "addsec101@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sandyakum76@gmail.com",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "sandyakum76@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ca@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "ca@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "info@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: vinayagamoorthisripavithra@gmail.com",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "vinayagamoorthisripavithra@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
       "detail": "Published email: nilusikasanjeevanie9@gmail.com",
       "source": "https://fincom.gov.lk/contact-us/",
       "data": {
         "value": "nilusikasanjeevanie9@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ruwaniudeshika@gmail.com",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "ruwaniudeshika@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: thilokaml@gmail.com",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "thilokaml@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: admin@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/contact-us/",
+      "data": {
+        "value": "admin@fincom.gov.lk"
       }
     },
     {
@@ -807,19 +754,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
+      "detail": "Published phone: +94-11-2866747 ",
       "source": "https://fincom.gov.lk/?lang=si",
       "data": {
-        "value": "+94-11-2866679 "
+        "value": "+94-11-2866747 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
+      "detail": "Published phone: +94-11-2866679 ",
       "source": "https://fincom.gov.lk/?lang=si",
       "data": {
-        "value": "+94-11-2866747 "
+        "value": "+94-11-2866679 "
       }
     },
     {
@@ -841,10 +788,253 @@
       }
     },
     {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866747 ",
+      "source": "https://fincom.gov.lk/about-us/theme-song-2/",
+      "data": {
+        "value": "+94-11-2866747 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866679 ",
+      "source": "https://fincom.gov.lk/about-us/theme-song-2/",
+      "data": {
+        "value": "+94-11-2866679 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/about-us/theme-song-2/",
+      "data": {
+        "value": "info@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://fincom.gov.lk/about-us/theme-song-2/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866747 ",
+      "source": "https://fincom.gov.lk/news-events/",
+      "data": {
+        "value": "+94-11-2866747 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866679 ",
+      "source": "https://fincom.gov.lk/news-events/",
+      "data": {
+        "value": "+94-11-2866679 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/news-events/",
+      "data": {
+        "value": "info@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://fincom.gov.lk/news-events/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://fincom.gov.lk/news-events/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2015 201",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "014 2015 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2021 202",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "020 2021 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866679 ",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "+94-11-2866679 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2012 201",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "011 2012 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866747 ",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "+94-11-2866747 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2023 202",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "022 2023 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2025 202",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "025 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2018 201",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "017 2018 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "info@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://fincom.gov.lk/downloads/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866747 ",
+      "source": "https://fincom.gov.lk/articles/",
+      "data": {
+        "value": "+94-11-2866747 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866679 ",
+      "source": "https://fincom.gov.lk/articles/",
+      "data": {
+        "value": "+94-11-2866679 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/articles/",
+      "data": {
+        "value": "info@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://fincom.gov.lk/articles/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://fincom.gov.lk/articles/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866747 ",
+      "source": "https://fincom.gov.lk/vacancies/",
+      "data": {
+        "value": "+94-11-2866747 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866679 ",
+      "source": "https://fincom.gov.lk/vacancies/",
+      "data": {
+        "value": "+94-11-2866679 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/vacancies/",
+      "data": {
+        "value": "info@fincom.gov.lk"
+      }
+    },
+    {
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri",
-      "source": "https://fincom.gov.lk/?lang=ta",
+      "source": "https://fincom.gov.lk/vacancies/",
       "data": {
         "value": "will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri"
       }
@@ -853,7 +1043,7 @@
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: circular",
-      "source": "https://fincom.gov.lk/?lang=ta",
+      "source": "https://fincom.gov.lk/vacancies/",
       "data": {
         "value": "circular"
       }
@@ -861,26 +1051,26 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
-      "source": "https://fincom.gov.lk/",
+      "detail": "Published phone: +94-11-2866747 ",
+      "source": "https://fincom.gov.lk/inquiry/",
       "data": {
-        "value": "+94-11-2866679 "
+        "value": "+94-11-2866747 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
-      "source": "https://fincom.gov.lk/",
+      "detail": "Published phone: +94-11-2866679 ",
+      "source": "https://fincom.gov.lk/inquiry/",
       "data": {
-        "value": "+94-11-2866747 "
+        "value": "+94-11-2866679 "
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: info@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/",
+      "source": "https://fincom.gov.lk/inquiry/",
       "data": {
         "value": "info@fincom.gov.lk"
       }
@@ -889,7 +1079,7 @@
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri",
-      "source": "https://fincom.gov.lk/",
+      "source": "https://fincom.gov.lk/inquiry/",
       "data": {
         "value": "will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri"
       }
@@ -898,7 +1088,7 @@
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: circular",
-      "source": "https://fincom.gov.lk/",
+      "source": "https://fincom.gov.lk/inquiry/",
       "data": {
         "value": "circular"
       }
@@ -906,286 +1096,97 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
-      "source": "https://fincom.gov.lk/about-us/members/",
+      "detail": "Published phone: +94-11-2866747 ",
+      "source": "https://fincom.gov.lk/sustainable-development-goals-sdgs/",
       "data": {
-        "value": "+94-11-2866679 "
+        "value": "+94-11-2866747 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
-      "source": "https://fincom.gov.lk/about-us/members/",
+      "detail": "Published phone: +94-11-2866679 ",
+      "source": "https://fincom.gov.lk/sustainable-development-goals-sdgs/",
       "data": {
-        "value": "+94-11-2866747 "
+        "value": "+94-11-2866679 "
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: info@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/about-us/members/",
+      "source": "https://fincom.gov.lk/sustainable-development-goals-sdgs/",
       "data": {
         "value": "info@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://fincom.gov.lk/sustainable-development-goals-sdgs/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866747 ",
+      "source": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
+      "data": {
+        "value": "+94-11-2866747 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2866679 ",
+      "source": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
+      "data": {
+        "value": "+94-11-2866679 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@fincom.gov.lk",
+      "source": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
+      "data": {
+        "value": "info@fincom.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri",
+      "source": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
+      "data": {
+        "value": "will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri"
       }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://fincom.gov.lk/about-us/members/",
+      "detail": "Published named responsibility: department",
+      "source": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
       "data": {
-        "value": "director"
+        "value": "department"
       }
     },
     {
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: circular",
-      "source": "https://fincom.gov.lk/about-us/members/",
+      "source": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
       "data": {
         "value": "circular"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://fincom.gov.lk/about-us/members/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
-      "source": "https://fincom.gov.lk/about-us/overview/",
-      "data": {
-        "value": "+94-11-2866679 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
-      "source": "https://fincom.gov.lk/about-us/overview/",
-      "data": {
-        "value": "+94-11-2866747 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/about-us/overview/",
-      "data": {
-        "value": "info@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://fincom.gov.lk/about-us/overview/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://fincom.gov.lk/about-us/overview/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://fincom.gov.lk/about-us/overview/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
-      "source": "https://fincom.gov.lk/about-us/staff/",
-      "data": {
-        "value": "+94-11-2866679 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
-      "source": "https://fincom.gov.lk/about-us/staff/",
-      "data": {
-        "value": "+94-11-2866747 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/about-us/staff/",
-      "data": {
-        "value": "info@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://fincom.gov.lk/about-us/staff/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://fincom.gov.lk/about-us/staff/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://fincom.gov.lk/about-us/staff/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
-      "source": "https://fincom.gov.lk/about-us/organization-structure/",
-      "data": {
-        "value": "+94-11-2866679 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
-      "source": "https://fincom.gov.lk/about-us/organization-structure/",
-      "data": {
-        "value": "+94-11-2866747 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/about-us/organization-structure/",
-      "data": {
-        "value": "info@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://fincom.gov.lk/about-us/organization-structure/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
-      "source": "https://fincom.gov.lk/about-us/theme-song-2/",
-      "data": {
-        "value": "+94-11-2866679 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
-      "source": "https://fincom.gov.lk/about-us/theme-song-2/",
-      "data": {
-        "value": "+94-11-2866747 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/about-us/theme-song-2/",
-      "data": {
-        "value": "info@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://fincom.gov.lk/about-us/theme-song-2/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866679 ",
-      "source": "https://fincom.gov.lk/news-events/",
-      "data": {
-        "value": "+94-11-2866679 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-11-2866747 ",
-      "source": "https://fincom.gov.lk/news-events/",
-      "data": {
-        "value": "+94-11-2866747 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@fincom.gov.lk",
-      "source": "https://fincom.gov.lk/news-events/",
-      "data": {
-        "value": "info@fincom.gov.lk"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://fincom.gov.lk/news-events/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://fincom.gov.lk/news-events/",
-      "data": {
-        "value": "rs,"
       }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 13168 visible characters across 14 pages",
+      "detail": "Substantive page content: 7259 visible characters across 13 pages",
       "source": "https://www.fincom.gov.lk/"
     }
   ],
@@ -1206,10 +1207,30 @@
     },
     {
       "host": "www.fincom.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-03T09:47:06+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
+    },
+    {
+      "url": "https://www.fincom.gov.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
+    },
+    {
+      "url": "http://www.fincom.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://fincom.gov.lk/",
+      "redirects": [
+        "https://fincom.gov.lk/"
+      ],
+      "elapsed_ms": 2734,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.fincom.gov.lk/",
@@ -1218,7 +1239,7 @@
       "redirects": [
         "https://fincom.gov.lk/"
       ],
-      "elapsed_ms": 4862,
+      "elapsed_ms": 22428,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1229,29 +1250,7 @@
       "redirects": [
         "https://fincom.gov.lk/"
       ],
-      "elapsed_ms": 2155,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.fincom.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://fincom.gov.lk/",
-      "redirects": [
-        "https://fincom.gov.lk/"
-      ],
-      "elapsed_ms": 5475,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://www.fincom.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://fincom.gov.lk/",
-      "redirects": [
-        "https://fincom.gov.lk/"
-      ],
-      "elapsed_ms": 2712,
+      "elapsed_ms": 2414,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1260,7 +1259,7 @@
       "status_code": 200,
       "final_url": "https://fincom.gov.lk/contact-us/",
       "redirects": [],
-      "elapsed_ms": 3319,
+      "elapsed_ms": 2378,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1271,65 +1270,7 @@
       "redirects": [
         "https://fincom.gov.lk/?lang=si"
       ],
-      "elapsed_ms": 1868,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://fincom.gov.lk/?lang=ta",
-      "status_code": 200,
-      "final_url": "https://fincom.gov.lk/?lang=ta",
-      "redirects": [
-        "https://fincom.gov.lk/?lang=ta"
-      ],
-      "elapsed_ms": 22499,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://fincom.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://fincom.gov.lk/",
-      "redirects": [
-        "https://fincom.gov.lk/"
-      ],
-      "elapsed_ms": 2236,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://fincom.gov.lk/about-us/members/",
-      "status_code": 200,
-      "final_url": "https://fincom.gov.lk/about-us/members/",
-      "redirects": [],
-      "elapsed_ms": 22071,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://fincom.gov.lk/about-us/overview/",
-      "status_code": 200,
-      "final_url": "https://fincom.gov.lk/about-us/overview/",
-      "redirects": [],
-      "elapsed_ms": 24119,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://fincom.gov.lk/about-us/staff/",
-      "status_code": 200,
-      "final_url": "https://fincom.gov.lk/about-us/staff/",
-      "redirects": [],
-      "elapsed_ms": 2695,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://fincom.gov.lk/about-us/organization-structure/",
-      "status_code": 200,
-      "final_url": "https://fincom.gov.lk/about-us/organization-structure/",
-      "redirects": [],
-      "elapsed_ms": 22831,
+      "elapsed_ms": 1958,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1338,7 +1279,7 @@
       "status_code": 200,
       "final_url": "https://fincom.gov.lk/about-us/theme-song-2/",
       "redirects": [],
-      "elapsed_ms": 1634,
+      "elapsed_ms": 22201,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1347,7 +1288,63 @@
       "status_code": 200,
       "final_url": "https://fincom.gov.lk/news-events/",
       "redirects": [],
-      "elapsed_ms": 22242,
+      "elapsed_ms": 22346,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://fincom.gov.lk/downloads/",
+      "status_code": 200,
+      "final_url": "https://fincom.gov.lk/downloads/",
+      "redirects": [],
+      "elapsed_ms": 21832,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://fincom.gov.lk/articles/",
+      "status_code": 200,
+      "final_url": "https://fincom.gov.lk/articles/",
+      "redirects": [],
+      "elapsed_ms": 23084,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://fincom.gov.lk/vacancies/",
+      "status_code": 200,
+      "final_url": "https://fincom.gov.lk/vacancies/",
+      "redirects": [],
+      "elapsed_ms": 2088,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://fincom.gov.lk/inquiry/",
+      "status_code": 200,
+      "final_url": "https://fincom.gov.lk/inquiry/",
+      "redirects": [],
+      "elapsed_ms": 1409,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://fincom.gov.lk/sustainable-development-goals-sdgs/",
+      "status_code": 200,
+      "final_url": "https://fincom.gov.lk/sustainable-development-goals-sdgs/",
+      "redirects": [
+        "https://fincom.gov.lk/sustainable-development-goals-sdgs/"
+      ],
+      "elapsed_ms": 21899,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
+      "status_code": 200,
+      "final_url": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
+      "redirects": [],
+      "elapsed_ms": 2148,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -1355,87 +1352,81 @@
   "snapshots": [
     {
       "url": "https://fincom.gov.lk/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-01-15ef8016479f.html",
-      "sha256": "15ef8016479f3dc8c3fbb8e8d15733320b23ca2d22b76322a46767062afc0285",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-01-5ec3d21ebf54.html",
+      "sha256": "5ec3d21ebf54bd1876f842bf921b33274fba3a4b5427347c6f761d634f1eeb04",
       "bytes": 83158
     },
     {
       "url": "https://fincom.gov.lk/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-02-b59ef5bbce4f.html",
-      "sha256": "b59ef5bbce4fdc770f1628ccda6bde2a504d75d7339f071e708d80dfc4e37b3c",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-02-2b91459fc37a.html",
+      "sha256": "2b91459fc37a93c62dff2ed105de3e25f8ad2f9f59b813c405a739b44af8429d",
       "bytes": 83158
     },
     {
       "url": "https://fincom.gov.lk/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-03-468248dc9475.html",
-      "sha256": "468248dc9475a3a63ae11d04191a2afdbd41be993fc587f48a020ca1c8d89720",
-      "bytes": 83158
-    },
-    {
-      "url": "https://fincom.gov.lk/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-04-da1c8a3fb7ac.html",
-      "sha256": "da1c8a3fb7ac47f61890cde3a0b3aa91f39c26c33acab975fbd50b892f2a94bd",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-03-fa49d360ef31.html",
+      "sha256": "fa49d360ef319a61bea6f1f8beace593d2d06fbd530e46d406f59d0f4f579350",
       "bytes": 83158
     },
     {
       "url": "https://fincom.gov.lk/contact-us/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-05-0b0e4eaa3e4b.html",
-      "sha256": "0b0e4eaa3e4b8af6186aaf2112ab4f9173690dceaa0b37b87a2ad4da5cdefaf6",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-04-a8dfb9473094.html",
+      "sha256": "a8dfb9473094ecee3975affad9cd783ac9391c5370fc5e67880b4f3b205034cf",
       "bytes": 76637
     },
     {
       "url": "https://fincom.gov.lk/?lang=si",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-06-1190c2110b7b.html",
-      "sha256": "1190c2110b7ba54218088823a8c5596e45eed9f94d5569f72c38930764b1a5a1",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-05-60ceb632ca24.html",
+      "sha256": "60ceb632ca242f4992ddf342920010ce9eaf67cf9c75d290659298340078de5f",
       "bytes": 85163
     },
     {
-      "url": "https://fincom.gov.lk/?lang=ta",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-07-56bd0c2d6176.html",
-      "sha256": "56bd0c2d61763c52b563e75c7467031bb1ed96b27869e49123159c8691891908",
-      "bytes": 74371
-    },
-    {
-      "url": "https://fincom.gov.lk/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-08-b07654e31083.html",
-      "sha256": "b07654e3108398a18ce3e809719d223c49ffcb7bdcd0f750c299668bda342459",
-      "bytes": 83158
-    },
-    {
-      "url": "https://fincom.gov.lk/about-us/members/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-09-ae4ff68a9942.html",
-      "sha256": "ae4ff68a99423114e7f6eaa85a8adbebf32326e7cdcbfafe6c8ad00079819091",
-      "bytes": 78240
-    },
-    {
-      "url": "https://fincom.gov.lk/about-us/overview/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-10-768d3f6a06ca.html",
-      "sha256": "768d3f6a06cad8697afa0bb493cf9ff2d63d096b823129875f7f520f51998021",
-      "bytes": 78097
-    },
-    {
-      "url": "https://fincom.gov.lk/about-us/staff/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-11-a51760a4bf55.html",
-      "sha256": "a51760a4bf559a1c3ceb1158c73b1b7b4bcb0665f419de1bf9df3777feb7bb07",
-      "bytes": 84850
-    },
-    {
-      "url": "https://fincom.gov.lk/about-us/organization-structure/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-12-645509e9d5db.html",
-      "sha256": "645509e9d5db48735b047f1e55ee9bcc4c74a43a2076020e0a2e96a23833818a",
-      "bytes": 68318
-    },
-    {
       "url": "https://fincom.gov.lk/about-us/theme-song-2/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-13-3e88ba4c4c6b.html",
-      "sha256": "3e88ba4c4c6b4ab3b7df3c0ac5f47c36b7158f3ff9130f18a2bb0da6353d3dcf",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-06-3fe21d6780a5.html",
+      "sha256": "3fe21d6780a585964efe209be445128d83ef47406ce6ea31dccc8864e996bfda",
       "bytes": 72405
     },
     {
       "url": "https://fincom.gov.lk/news-events/",
-      "path": "audit.output/www.fincom.gov.lk/20261019.0843/snapshots/page-14-ca44ebb07bcc.html",
-      "sha256": "ca44ebb07bcce7c57da540df9d359b74a52b771cf4fcada5d419e90842353d2a",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-07-4a8152fb93a7.html",
+      "sha256": "4a8152fb93a7ba7af72dfcc7bdc663b0736ec2c40ae483e3b99d67b17ad84194",
       "bytes": 96155
+    },
+    {
+      "url": "https://fincom.gov.lk/downloads/",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-08-c1c028ccdf47.html",
+      "sha256": "c1c028ccdf474ef50b3b76c836f0ec0142226568d61c2b3d23ac3e185128caff",
+      "bytes": 99806
+    },
+    {
+      "url": "https://fincom.gov.lk/articles/",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-09-61c296ab82d2.html",
+      "sha256": "61c296ab82d260ddc02abce550783e2cdc81d337c93ac140cd2948a45da4b6be",
+      "bytes": 80465
+    },
+    {
+      "url": "https://fincom.gov.lk/vacancies/",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-10-5ab89d1d7f16.html",
+      "sha256": "5ab89d1d7f16a92577711baf18568f57d5d5697a50a8417d3d1f75a5e3782098",
+      "bytes": 70245
+    },
+    {
+      "url": "https://fincom.gov.lk/inquiry/",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-11-25bd0c97f056.html",
+      "sha256": "25bd0c97f0560f85156189de6adaa8eae4aa49231acc18d5d93d2558a2d72db4",
+      "bytes": 69869
+    },
+    {
+      "url": "https://fincom.gov.lk/sustainable-development-goals-sdgs/",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-12-0a393057db10.html",
+      "sha256": "0a393057db10c25f5aebfe50ae7d2183df9dac55352fa4a774df996049a52491",
+      "bytes": 72808
+    },
+    {
+      "url": "https://fincom.gov.lk/discussion-on-ditwah-recovery-programme-in-uva-province/",
+      "path": "audit.output/www.fincom.gov.lk/20261020.0853/snapshots/page-13-53a99337ce54.html",
+      "sha256": "53a99337ce5442ef339a36a23361359118eb6e19f73d791f66d691387d3f8465",
+      "bytes": 73737
     }
   ],
   "reviewer_decisions": [],
@@ -1451,8 +1442,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -1489,7 +1480,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "reason": "HTTPS probes passed; failing variants: https://www.fincom.gov.lk/: Probe 1: timed out"
         },
         {
           "name": "redirect_related",
@@ -1506,94 +1497,32 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri; Phone: +94-11-2866679 (31 phone numbers found); Email: info@fincom.gov.lk (20 email addresses found); Published named responsibility: director",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94-11-2866679 (31 phone numbers found); Email: info@fincom.gov.lk (20 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: rs,"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: circular"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1613,7 +1542,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.165.101.48",
+    "egress_ip": "172.171.12.199",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

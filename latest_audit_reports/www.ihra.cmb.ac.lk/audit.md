@@ -1,8 +1,8 @@
 # Website Audit: http://www.ihra.cmb.ac.lk/
 
-- Completed: 2026-10-19 07:51
+- Completed: 2026-10-20 08:07
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.101.48 (US, github-actions)
+- Vantage: 172.171.12.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: Rs1 |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 15 Months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

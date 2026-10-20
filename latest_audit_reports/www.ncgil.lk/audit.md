@@ -1,8 +1,8 @@
 # Website Audit: https://www.ncgil.lk/
 
-- Completed: 2026-10-19 07:59
+- Completed: 2026-10-20 08:15
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.101.48 (US, github-actions)
+- Vantage: 172.171.12.199 (unknown, github-actions)
 
 ## ⚫ Level 0: ✅
 

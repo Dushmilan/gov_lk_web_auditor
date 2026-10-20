@@ -1,24 +1,21 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "eda920b9-2a1e-4e1b-aed7-0db1aad0ec0b",
+  "audit_id": "f31a6590-a5f4-42af-8993-0228ee0c4b77",
   "url": "http://gwu.ac.lk/",
   "normalized_url": "http://gwu.ac.lk/",
-  "started_at": "2026-10-19T07:48:55.844732+05:30",
-  "completed_at": "2026-10-19T07:49:15.109160+05:30",
+  "started_at": "2026-10-20T08:04:28.428901+05:30",
+  "completed_at": "2026-10-20T08:06:37.978564+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete"
     ]
   },
   "evidence": [
@@ -26,1122 +23,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-19T07:48:56.178290+05:30"
+      "observed_at": "2026-10-20T08:04:28.793098+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-19T07:48:56.178308+05:30"
+      "observed_at": "2026-10-20T08:04:28.793116+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-19T07:48:56.879330+05:30"
+      "observed_at": "2026-10-20T08:04:29.855539+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://gwu.ac.lk/",
+      "status": "error",
+      "detail": "Probe 1: The read operation timed out",
       "source": "https://gwu.ac.lk/",
-      "observed_at": "2026-10-19T07:49:14.665157+05:30"
+      "observed_at": "2026-10-20T08:06:37.978423+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://gwu.ac.lk/",
+      "status": "error",
+      "detail": "Probe 2: The read operation timed out",
       "source": "http://gwu.ac.lk/",
-      "observed_at": "2026-10-19T07:49:14.665181+05:30"
+      "observed_at": "2026-10-20T08:06:37.978442+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://gwu.ac.lk/",
+      "status": "error",
+      "detail": "Probe 3: The read operation timed out",
       "source": "https://gwu.ac.lk/",
-      "observed_at": "2026-10-19T07:49:14.665184+05:30"
+      "observed_at": "2026-10-20T08:06:37.978445+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://gwu.ac.lk/",
+      "status": "error",
+      "detail": "Probe 4: The read operation timed out",
       "source": "http://gwu.ac.lk/",
-      "observed_at": "2026-10-19T07:49:14.665186+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://gwu.ac.lk/index.php",
-      "source": "https://gwu.ac.lk/index.php",
-      "observed_at": "2026-10-19T07:49:14.665189+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://gwu.ac.lk/index.php/students",
-      "source": "https://gwu.ac.lk/index.php/students",
-      "observed_at": "2026-10-19T07:49:14.665191+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://gwu.ac.lk/index.php/faculty-staff",
-      "source": "https://gwu.ac.lk/index.php/faculty-staff",
-      "observed_at": "2026-10-19T07:49:14.665193+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://gwu.ac.lk/index.php/alumni",
-      "source": "https://gwu.ac.lk/index.php/alumni",
-      "observed_at": "2026-10-19T07:49:14.665194+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "observed_at": "2026-10-19T07:49:14.665196+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=54",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=54",
-      "observed_at": "2026-10-19T07:49:14.665198+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://gwu.ac.lk/library/",
-      "source": "https://gwu.ac.lk/library/",
-      "observed_at": "2026-10-19T07:49:14.665200+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=448",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=448",
-      "observed_at": "2026-10-19T07:49:14.665202+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=134",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=134",
-      "observed_at": "2026-10-19T07:49:14.665203+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=255",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=255",
-      "observed_at": "2026-10-19T07:49:14.665205+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284613 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284613 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 .",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284640 ."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452821 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0309452821 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284640 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452818 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0309452818 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772072 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0092772072 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506374 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0589506374 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772075 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0092772075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506377 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0589506377 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284613 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284613 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 .",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284640 ."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452821 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0309452821 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284640 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452818 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0309452818 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772072 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0092772072 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506374 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0589506374 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772075 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0092772075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506377 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0589506377 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284613 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284613 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 .",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284640 ."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452821 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0309452821 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284640 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452818 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0309452818 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772072 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0092772072 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506374 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0589506374 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772075 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0092772075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506377 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0589506377 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284613 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284613 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 .",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284640 ."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452821 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0309452821 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0931284640 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452818 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0309452818 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772072 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0092772072 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506374 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0589506374 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772075 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0092772075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506377 ",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "0589506377 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf",
-      "source": "https://gwu.ac.lk/",
-      "data": {
-        "value": "https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284613 ",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0931284613 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 .",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0931284640 ."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452821 ",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0309452821 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0931284640 ",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0931284640 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0309452818 ",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0309452818 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772072 ",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0092772072 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506374 ",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0589506374 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0092772075 ",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0092772075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0589506377 ",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "0589506377 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf",
-      "source": "https://gwu.ac.lk/index.php",
-      "data": {
-        "value": "https://gwu.ac.lk/images/Notices/Application_Form_Certificate_Course_in_Yoga_and_Relaxation_Techniques.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/index.php/students",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/index.php/students",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/index.php/students",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/index.php/faculty-staff",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/index.php/faculty-staff",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/index.php/faculty-staff",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/index.php/alumni",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/index.php/alumni",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/index.php/alumni",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0655221487 .",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0655221487 ."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0444572491",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0444572491"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0444849544",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0444849544"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0444856271",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0444856271"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0514997676 ",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0514997676 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0655221487.",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0655221487."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0655221487 ",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0655221487 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0444874354",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0444874354"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0655221492 ",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0655221492 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0655221492 .",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0655221492 ."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0444572492",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0444572492"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0514997676 .",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "0514997676 ."
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=54",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=54",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=54",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94332239010 ",
-      "source": "https://gwu.ac.lk/library/",
-      "data": {
-        "value": "+94332239010 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94332239010",
-      "source": "https://gwu.ac.lk/library/",
-      "data": {
-        "value": "+94332239010"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: librarian@gwu.ac.lk",
-      "source": "https://gwu.ac.lk/library/",
-      "data": {
-        "value": "librarian@gwu.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://gwu.ac.lk/library/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=448",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=448",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=448",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=134",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=134",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=134",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0418584592",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=255",
-      "data": {
-        "value": "0418584592"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9433 2 222 748 ",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=255",
-      "data": {
-        "value": "+9433 2 222 748 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0547676443",
-      "source": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=255",
-      "data": {
-        "value": "0547676443"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 3589 visible characters across 14 pages",
-      "source": "http://gwu.ac.lk/"
+      "observed_at": "2026-10-20T08:06:37.978447+05:30"
     }
   ],
   "observations": [
@@ -1168,221 +90,42 @@
     },
     {
       "url": "https://gwu.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1125,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "The read operation timed out"
     },
     {
       "url": "http://gwu.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/",
-      "redirects": [
-        "https://gwu.ac.lk/"
-      ],
-      "elapsed_ms": 1150,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "The read operation timed out"
     },
     {
       "url": "https://gwu.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1157,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "The read operation timed out"
     },
     {
       "url": "http://gwu.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/",
-      "redirects": [
-        "https://gwu.ac.lk/"
-      ],
-      "elapsed_ms": 923,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/index.php",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 906,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/students",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/index.php/students",
-      "redirects": [],
-      "elapsed_ms": 816,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/faculty-staff",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/index.php/faculty-staff",
-      "redirects": [],
-      "elapsed_ms": 872,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/alumni",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/index.php/alumni",
-      "redirects": [],
-      "elapsed_ms": 1125,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "redirects": [],
-      "elapsed_ms": 915,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=54",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=54",
-      "redirects": [],
-      "elapsed_ms": 787,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/library/",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/library/",
-      "redirects": [],
-      "elapsed_ms": 722,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=448",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=448",
-      "redirects": [],
-      "elapsed_ms": 890,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=134",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=134",
-      "redirects": [],
-      "elapsed_ms": 806,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=255",
-      "status_code": 200,
-      "final_url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=255",
-      "redirects": [],
-      "elapsed_ms": 781,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "The read operation timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://gwu.ac.lk/",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-01-adf4295e3025.html",
-      "sha256": "adf4295e30251a809483dd62b4c5f223cb392f029071aa3a2e6bade80fd5e58a",
-      "bytes": 119016
-    },
-    {
-      "url": "https://gwu.ac.lk/",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-02-a71bd8816c4a.html",
-      "sha256": "a71bd8816c4acb33220bfa7e71066f1a72f485cf869b4c14e5705bb201ee454f",
-      "bytes": 119016
-    },
-    {
-      "url": "https://gwu.ac.lk/",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-03-1572270955c8.html",
-      "sha256": "1572270955c87e4699851964828a1df4a23d84319d82e5afb4fbe222b72a7773",
-      "bytes": 119016
-    },
-    {
-      "url": "https://gwu.ac.lk/",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-04-d744a7ef92ae.html",
-      "sha256": "d744a7ef92ae00d5a90da70a6d83ac5b3049525c5d2d42e862cc624e06379ac3",
-      "bytes": 119016
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-05-5a71bdc252d9.html",
-      "sha256": "5a71bdc252d99af926a37ed6b15cf7faf55123ef69582621f71de60690a1bf74",
-      "bytes": 119043
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/students",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-06-e446d2a80eb6.html",
-      "sha256": "e446d2a80eb6f3082b34053cca7fbf2e1831de0fb7debf798a68a1667e91de6a",
-      "bytes": 56788
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/faculty-staff",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-07-53107119d745.html",
-      "sha256": "53107119d745936c9113b9ae417780bea8f7d06ce7b53d55b7738cf564130f39",
-      "bytes": 57919
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/alumni",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-08-951ae0be0b76.html",
-      "sha256": "951ae0be0b7625403a015cd249379f20dc1b85e77bec6d9cbf5458f68404b4d2",
-      "bytes": 56842
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=446",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-09-9a506af9fda5.html",
-      "sha256": "9a506af9fda55bc2b5c57271bc371579b9549730580ac86e394f257be2a6e9ee",
-      "bytes": 98965
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=54",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-10-3c6fcd5cf108.html",
-      "sha256": "3c6fcd5cf1086ee727ec88947a884ff281e7608cf4285ffd0831e867bea19ef8",
-      "bytes": 60671
-    },
-    {
-      "url": "https://gwu.ac.lk/library/",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-11-9ec629bc604d.html",
-      "sha256": "9ec629bc604dfe81d42379fb877effa59f146b09741b839c2c7603820d64c09e",
-      "bytes": 29376
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=448",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-12-e7fd65b5dcf7.html",
-      "sha256": "e7fd65b5dcf7da44fbcb1db2262e52507a1235287ed5e66525ded6c6f9bac260",
-      "bytes": 55430
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=134",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-13-7d7c16cf343b.html",
-      "sha256": "7d7c16cf343b2b489c742ba6f4b5d3791f60d56310ef0531f4093efc9a5f8d77",
-      "bytes": 52745
-    },
-    {
-      "url": "https://gwu.ac.lk/index.php/component/sppagebuilder/?view=page&id=255",
-      "path": "audit.output/gwu.ac.lk/20261019.0748/snapshots/page-14-5e2607e81a74.html",
-      "sha256": "5e2607e81a74a1dcc8a4d7a7a102a992feb115db71727de778f5f60e6e893538",
-      "bytes": 55506
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1396,8 +139,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
       "executed": true,
       "checks": [
         {
@@ -1409,44 +152,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -1466,28 +209,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 0931284613 (25 phone numbers found); Email: librarian@gwu.ac.lk"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -1515,7 +239,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.165.101.48",
+    "egress_ip": "172.171.12.199",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: https://emb-manila.gov.lk/
 
-- Completed: 2026-10-19 08:04
+- Completed: 2026-10-20 08:19
 - Overall result: ⚫ Level 0
-- Vantage: 52.165.101.48 (US, github-actions)
+- Vantage: 172.171.12.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Detected generic hosting marker: under construction
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ❌ | Detected generic hosting marker: under construction |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://emb-manila.gov.lk/: Probe 4: [Errno 104] Connection reset by peer |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |

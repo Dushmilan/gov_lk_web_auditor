@@ -1,8 +1,8 @@
 # Website Audit: https://emb-ankara.gov.lk/
 
-- Completed: 2026-10-19 08:06
+- Completed: 2026-10-20 08:21
 - Overall result: 🟠 Level 2
-- Vantage: 52.165.101.48 (US, github-actions)
+- Vantage: 172.171.12.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Gaziosmanpaşa, Kırlangıç Sk. No:41, Çankaya, Ankara, 06700 Türkiye Fax: +90 312 427 10 26 General Contact Numbers: +90 3; Phone: 0006415356 (23 phone numbers found); Email: slemb.ankara@mfa.gov.lk (2 email addresses found); Published named responsibility: division
+Published postal address: Gaziosmanpaşa, Kırlangıç Sk. No:41, Çankaya, Ankara, 06700 Türkiye Fax: +90 312 427 10 26 General Contact Numbers: +90 3; Phone: 0 312 427 10 3 (23 phone numbers found); Email: slemb.ankara@mfa.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Gaziosmanpaşa, Kırlangıç Sk. No:41, Çankaya, Ankara, 06700 Türkiye Fax: +90 312 427 10 26 General Contact Numbers: +90 3 |
-| reachable_contacts | ✅ | Phone: 0006415356 (23 phone numbers found); Email: slemb.ankara@mfa.gov.lk (2 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: division |
+| reachable_contacts | ✅ | Phone: 0 312 427 10 3 (23 phone numbers found); Email: slemb.ankara@mfa.gov.lk (2 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
@@ -55,4 +55,4 @@ No passing downloadable form evidence found
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 10/12/2026 |
+| published_update_date | ✅ | Published published update date: 25 May 2026 |
