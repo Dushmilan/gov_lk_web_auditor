@@ -1,8 +1,8 @@
 # Website Audit: https://www.parliament.lk/
 
-- Completed: 2026-10-20 08:54
+- Completed: 2026-10-21 08:46
 - Overall result: 🟠 Level 2
-- Vantage: 172.171.12.199 (US, github-actions)
+- Vantage: 172.212.206.129 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-10-09 |
+| published_update_date | ✅ | Published published update date: 2026-10-20 |

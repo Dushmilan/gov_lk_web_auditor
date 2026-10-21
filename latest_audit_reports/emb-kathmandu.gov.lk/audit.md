@@ -1,8 +1,8 @@
 # Website Audit: https://emb-kathmandu.gov.lk/
 
-- Completed: 2026-10-20 08:17
+- Completed: 2026-10-21 08:11
 - Overall result: 🟠 Level 2
-- Vantage: 172.171.12.199 (US, github-actions)
+- Vantage: 172.212.206.129 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://emb-kathmandu.gov.lk/: Probe 1: [Errno 104] Connection reset by peer; https://emb-kathmandu.gov.lk/: Probe 3: [Errno 104] Connection reset by peer; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://emb-kathmandu.gov.lk/: Probe 1: [Errno 104] Connection reset by peer; https://emb-kathmandu.gov.lk/: Probe 3: [Errno 104] Connection reset by peer |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: in Sri Lanka\",\"cancel_button\":\"Cancel\",\"contact_subject_placeholder\":\"How can we help you?\",\"validation_email_; Phone: +9779851048653 (12 phone numbers found); Email: slemb.kathmandu@mfa.gov.lk (4 email addresses found); Published named responsibility: division
+Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a; Phone: 0-1630-4339-8 (12 phone numbers found); Email: hmandu@mfa.gov.lk (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: in Sri Lanka\",\"cancel_button\":\"Cancel\",\"contact_subject_placeholder\":\"How can we help you?\",\"validation_email_ |
-| reachable_contacts | ✅ | Phone: +9779851048653 (12 phone numbers found); Email: slemb.kathmandu@mfa.gov.lk (4 email addresses found) |
+| postal_address | ✅ | Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a |
+| reachable_contacts | ✅ | Phone: 0-1630-4339-8 (12 phone numbers found); Email: hmandu@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

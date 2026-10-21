@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-10-20 08:03
+- Completed: 2026-10-21 07:56
 - Overall result: 🔴 Level 1
-- Vantage: 172.171.12.199 (US, github-actions)
+- Vantage: 172.212.206.129 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0670396207 (179 phone numbers found); Email: dba.gov.lk@gmail.com (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0219400044 (180 phone numbers found); Email: eservices@elections.gov.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

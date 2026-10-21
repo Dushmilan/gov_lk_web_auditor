@@ -1,8 +1,8 @@
 # Website Audit: https://daph.gov.lk/
 
-- Completed: 2026-10-20 07:56
+- Completed: 2026-10-21 07:49
 - Overall result: 🟠 Level 2
-- Vantage: 172.171.12.199 (US, github-actions)
+- Vantage: 172.212.206.129 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Department of Animal Production and Health, Gatambe, Peradeniya. Phone: 081-2388195 E-mail: dgdaph@sltnet.lk The Departm; Phone: 0094262225 (95 phone numbers found); Email: daph.centralprovince@gmail.com (51 email addresses found); Published named responsibility: director
+Published postal address: Department of Animal Production and Health, Gatambe, Peradeniya. Phone: 081-2388195 E-mail: dgdaph@sltnet.lk The Departm; Phone: 0094812386 (95 phone numbers found); Email: daphuva@gmail.com (51 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Department of Animal Production and Health, Gatambe, Peradeniya. Phone: 081-2388195 E-mail: dgdaph@sltnet.lk The Departm |
-| reachable_contacts | ✅ | Phone: 0094262225 (95 phone numbers found); Email: daph.centralprovince@gmail.com (51 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0094812386 (95 phone numbers found); Email: daphuva@gmail.com (51 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

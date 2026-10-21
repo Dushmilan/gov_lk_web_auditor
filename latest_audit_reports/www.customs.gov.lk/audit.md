@@ -1,8 +1,8 @@
 # Website Audit: https://www.customs.gov.lk/
 
-- Completed: 2026-10-20 08:16
+- Completed: 2026-10-21 08:10
 - Overall result: 🟠 Level 2
-- Vantage: 172.171.12.199 (US, github-actions)
+- Vantage: 172.212.206.129 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Us Sri Lanka Customs, No. 40, Main Street, Colombo 11, Sri Lanka; Phone: +94 11 2221602- (15 phone numbers found); Email: info@customs.gov.lk (4 email addresses found); Published named responsibility: director
+Published postal address: Us Sri Lanka Customs, No. 40, Main Street, Colombo 11, Sri Lanka; Phone: +94 11 2221607 (14 phone numbers found); Email: dgc@customs.gov.lk (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Us Sri Lanka Customs, No. 40, Main Street, Colombo 11, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2221602- (15 phone numbers found); Email: info@customs.gov.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2221607 (14 phone numbers found); Email: dgc@customs.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

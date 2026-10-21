@@ -1,8 +1,8 @@
 # Website Audit: https://www.presidentsoffice.gov.lk/
 
-- Completed: 2026-10-20 08:52
+- Completed: 2026-10-21 08:44
 - Overall result: 🟠 Level 2
-- Vantage: 172.171.12.199 (US, github-actions)
+- Vantage: 172.212.206.129 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: President's Office Presidential Secretariat, Galle Face, Colombo 01, Sri Lanka; Phone: +94-11-2-340-340 (4 phone numbers found); Email: ps@presidentsoffice.lk; Published named responsibility: division
+Published postal address: Presidential Secretariat, Galle Face, Colombo 00100, Sri Lanka; Phone: +94-11-2-354-354 (17 phone numbers found); Email: ps@presidentsoffice.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: President's Office Presidential Secretariat, Galle Face, Colombo 01, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94-11-2-340-340 (4 phone numbers found); Email: ps@presidentsoffice.lk |
+| postal_address | ✅ | Published postal address: Presidential Secretariat, Galle Face, Colombo 00100, Sri Lanka |
+| reachable_contacts | ✅ | Phone: +94-11-2-354-354 (17 phone numbers found); Email: ps@presidentsoffice.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| fees_and_payment | ✅ | Published fees and payment: Rs.237,120 |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

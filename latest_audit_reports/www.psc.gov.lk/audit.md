@@ -1,8 +1,8 @@
 # Website Audit: https://www.psc.gov.lk/
 
-- Completed: 2026-10-20 09:00
+- Completed: 2026-10-21 08:45
 - Overall result: 🔴 Level 1
-- Vantage: 172.171.12.199 (US, github-actions)
+- Vantage: 172.212.206.129 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0890334430 (151 phone numbers found); Email: info@psc.gov.lk |
+| reachable_contacts | ✅ | Phone: 0890334430 (212 phone numbers found); Email: info@psc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://jaffnancoe.lk/
 
-- Completed: 2026-10-20 08:07
+- Completed: 2026-10-21 08:01
 - Overall result: 🔴 Level 1
-- Vantage: 172.171.12.199 (US, github-actions)
+- Vantage: 172.212.206.129 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 021 223 0036 (7 phone numbers found); Email: thilaganathanak@gmail.com (37 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.04.2026 202 (7 phone numbers found); Email: ilakiya2003@gmail.com (37 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

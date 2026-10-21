@@ -1,8 +1,8 @@
 # Website Audit: https://emb-moscow.gov.lk/
 
-- Completed: 2026-10-20 08:20
+- Completed: 2026-10-21 08:15
 - Overall result: 🟠 Level 2
-- Vantage: 172.171.12.199 (US, github-actions)
+- Vantage: 172.212.206.129 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 098-8729840 (10 phone numbers found); Email: slemb.moscow@mfa.gov.lk (2 email addresses found); Published named responsibility: division
+Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 0924779566 (10 phone numbers found); Email: slemb.moscow@mfa.gov.lk (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: 098-8729840 (10 phone numbers found); Email: slemb.moscow@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0924779566 (10 phone numbers found); Email: slemb.moscow@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
