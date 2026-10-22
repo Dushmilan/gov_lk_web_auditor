@@ -1,8 +1,8 @@
 # Website Audit: https://cg-melbourne.gov.lk/
 
-- Completed: 2026-10-21 08:12
+- Completed: 2026-10-22 08:07
 - Overall result: 🟠 Level 2
-- Vantage: 172.212.206.129 (US, github-actions)
+- Vantage: 40.74.231.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 432, Level 9, St Kilda Road, Melbourne VIC 3004 Telephone: +61 3 9290 4200 Email: mail@slcgmel.org Website: www.cg-melbo; Phone: 0664947963 (44 phone numbers found); Email: mail@slcgmel.org (7 email addresses found); Published named responsibility: director
+Published postal address: 432, Level 9, St Kilda Road, Melbourne VIC 3004 Telephone: +61 3 9290 4200 Email: mail@slcgmel.org Website: www.cg-melbo; Phone: 0664301305 (44 phone numbers found); Email: mail@slcgmel.org (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 432, Level 9, St Kilda Road, Melbourne VIC 3004 Telephone: +61 3 9290 4200 Email: mail@slcgmel.org Website: www.cg-melbo |
-| reachable_contacts | ✅ | Phone: 0664947963 (44 phone numbers found); Email: mail@slcgmel.org (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0664301305 (44 phone numbers found); Email: mail@slcgmel.org (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

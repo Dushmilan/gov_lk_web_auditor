@@ -1,8 +1,8 @@
 # Website Audit: https://emb-manila.gov.lk/
 
-- Completed: 2026-10-21 08:13
+- Completed: 2026-10-22 08:08
 - Overall result: ⚫ Level 0
-- Vantage: 172.212.206.129 (US, github-actions)
+- Vantage: 40.74.231.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

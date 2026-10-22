@@ -1,8 +1,8 @@
 # Website Audit: https://www.npc.gov.lk/
 
-- Completed: 2026-10-21 08:51
+- Completed: 2026-10-22 08:45
 - Overall result: ⚫ Level 0
-- Vantage: 172.212.206.129 (US, github-actions)
+- Vantage: 40.74.231.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://www.npc.gov.lk/: Probe 1: [Errno 111] Connection refused; https://www.npc.gov.lk/: Probe 3: [Errno 111] Connection refused |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://www.npc.gov.lk/: Probe 1: timed out; http://www.npc.gov.lk/: Probe 2: timed out; https://www.npc.gov.lk/: Probe 3: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

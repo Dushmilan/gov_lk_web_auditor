@@ -1,8 +1,8 @@
 # Website Audit: https://www.nitf.lk/
 
-- Completed: 2026-10-21 08:09
+- Completed: 2026-10-22 08:04
 - Overall result: 🟠 Level 2
-- Vantage: 172.212.206.129 (US, github-actions)
+- Vantage: 40.74.231.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: customer complaints and ensure a resolution at the earliest. Discover More Quick Links About Us Downloads News Help & FA; Phone: +94 71 178 4552 (12 phone numbers found); Email: awp@nitf.lk (2 email addresses found); Published named responsibility: director
+Published postal address: customer complaints and ensure a resolution at the earliest. Discover More Quick Links About Us Downloads News Help & FA; Phone: +94 71 022 4121 (12 phone numbers found); Email: awp@nitf.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: customer complaints and ensure a resolution at the earliest. Discover More Quick Links About Us Downloads News Help & FA |
-| reachable_contacts | ✅ | Phone: +94 71 178 4552 (12 phone numbers found); Email: awp@nitf.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 71 022 4121 (12 phone numbers found); Email: awp@nitf.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
