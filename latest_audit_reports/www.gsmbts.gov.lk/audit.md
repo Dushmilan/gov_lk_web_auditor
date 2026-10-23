@@ -1,8 +1,8 @@
 # Website Audit: https://www.gsmbts.gov.lk/
 
-- Completed: 2026-10-22 08:15
+- Completed: 2026-10-23 08:20
 - Overall result: 🟠 Level 2
-- Vantage: 40.74.231.17 (US, github-actions)
+- Vantage: 52.173.179.36 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Geological Survey and Mines Bureau 569, Epitamulla Road, Pitakotte. E-Mail chairman@gsmb.gov.lk CEO Office Mr J.P.W Guna; Phone: +0332228222 (47 phone numbers found); Email: gsmbtsmarketing@gmail.com (14 email addresses found); Published named responsibility: director
+Published postal address: Geological Survey and Mines Bureau 569, Epitamulla Road, Pitakotte. E-Mail chairman@gsmb.gov.lk CEO Office Mr J.P.W Guna; Phone: 027 312 6858 (47 phone numbers found); Email: chairman@gsmb.gov.lk (14 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Geological Survey and Mines Bureau 569, Epitamulla Road, Pitakotte. E-Mail chairman@gsmb.gov.lk CEO Office Mr J.P.W Guna |
-| reachable_contacts | ✅ | Phone: +0332228222 (47 phone numbers found); Email: gsmbtsmarketing@gmail.com (14 email addresses found) |
+| reachable_contacts | ✅ | Phone: 027 312 6858 (47 phone numbers found); Email: chairman@gsmb.gov.lk (14 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

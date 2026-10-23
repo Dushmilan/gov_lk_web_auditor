@@ -1,8 +1,8 @@
 # Website Audit: https://cinnamon.gov.lk/
 
-- Completed: 2026-10-22 07:43
+- Completed: 2026-10-23 07:49
 - Overall result: 🟠 Level 2
-- Vantage: 40.74.231.17 (US, github-actions)
+- Vantage: 52.173.179.36 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Gunarathna Weerakoon Mawatha, Borakanda, Karandeniya /*! elementor - v3.22.0 - 26-06-2024 */ .elementor-widget-google_ma; Phone: +94 112 034 300 (14 phone numbers found); Email: cinnamondept@gmail.com (10 email addresses found); Published named responsibility: department
+Published postal address: Gunarathna Weerakoon Mawatha, Borakanda, Karandeniya /*! elementor - v3.22.0 - 26-06-2024 */ .elementor-widget-google_ma; Phone: +94 714 484 490 (14 phone numbers found); Email: info.cinnamontraining@gmail.com (10 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Gunarathna Weerakoon Mawatha, Borakanda, Karandeniya /*! elementor - v3.22.0 - 26-06-2024 */ .elementor-widget-google_ma |
-| reachable_contacts | ✅ | Phone: +94 112 034 300 (14 phone numbers found); Email: cinnamondept@gmail.com (10 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 714 484 490 (14 phone numbers found); Email: info.cinnamontraining@gmail.com (10 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❌

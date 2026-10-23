@@ -1,8 +1,8 @@
 # Website Audit: https://ld.gov.lk/
 
-- Completed: 2026-10-22 08:18
+- Completed: 2026-10-23 08:22
 - Overall result: 🔴 Level 1
-- Vantage: 40.74.231.17 (US, github-actions)
+- Vantage: 52.173.179.36 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakeb6c5da0e9e22d97 |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakf44d91eb27adf0ad |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

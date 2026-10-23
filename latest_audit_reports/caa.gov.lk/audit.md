@@ -1,8 +1,8 @@
 # Website Audit: https://caa.gov.lk/
 
-- Completed: 2026-10-22 08:26
-- Overall result: 🔴 Level 1
-- Vantage: 40.74.231.17 (US, github-actions)
+- Completed: 2026-10-23 08:35
+- Overall result: 🟠 Level 2
+- Vantage: 52.173.179.36 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,49 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No email evidence found
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa; Phone: +94 11-2302981 (146 phone numbers found); Email: %<script type='text/javascript'>
+ <!--
+ var prefix = 'ma' + 'il' + 'to';
+ var path = 'hr' + 'ef' + '=';
+ var addy66626 = '20mahesh9910' + '@';
+ addy66626 = addy66626 + 'gmail' + '.' + 'com';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy66626 + '\'>');
+ document.write(addy66626);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script> (5 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa |
-| reachable_contacts | ❓ | No email evidence found |
+| reachable_contacts | ✅ | Phone: +94 11-2302981 (146 phone numbers found); Email: %<script type='text/javascript'>  <!--  var prefix = 'ma' + 'il' + 'to';  var path = 'hr' + 'ef' + '=';  var addy66626 = '20mahesh9910' + '@';  addy66626 = addy66626 + 'gmail' + '.' + 'com';  document.write('<a ' + path + '\'' + prefix + ':' + addy66626 + '\'>');  document.write(addy66626);  document.write('<\/a>');  //-->\n </script><script type='text/javascript'>  <!--  document.write('<span style=\'display: none;\'>');  //-->  </script>This email address is being protected from spambots. You need JavaScript enabled to view it.  <script type='text/javascript'>  <!--  document.write('</');  document.write('span>');  //-->  </script> (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ✅ | Published required documents: supporting documents |
+| fees_and_payment | ✅ | Published fees and payment: rs 2026 |
+| legal_basis | ✅ | Published legal basis: regulations |
+| processing_time | ✅ | Published processing time: 3 months |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❓ | No passing published update date evidence found |

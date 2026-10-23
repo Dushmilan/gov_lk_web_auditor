@@ -1,8 +1,8 @@
 # Website Audit: https://hc-ottawa.gov.lk/
 
-- Completed: 2026-10-22 08:09
+- Completed: 2026-10-23 08:14
 - Overall result: 🟠 Level 2
-- Vantage: 40.74.231.17 (US, github-actions)
+- Vantage: 52.173.179.36 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 333, Laurier Avenue West, Suite 1204, Ottawa, Ontario. K1P 1C1. Google Map Tel: 613 233 8449 , 613 2337821 Fax : 613 238; Phone: 0003610802 (39 phone numbers found); Email: slhc.ottawa@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: 333, Laurier Avenue West, Suite 1204, Ottawa, Ontario. K1P 1C1. Google Map Tel: 613 233 8449 , 613 2337821 Fax : 613 238; Phone: 0045-4325-81 (39 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 333, Laurier Avenue West, Suite 1204, Ottawa, Ontario. K1P 1C1. Google Map Tel: 613 233 8449 , 613 2337821 Fax : 613 238 |
-| reachable_contacts | ✅ | Phone: 0003610802 (39 phone numbers found); Email: slhc.ottawa@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0045-4325-81 (39 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://lpl.lk/
 
-- Completed: 2026-10-22 08:45
+- Completed: 2026-10-23 08:43
 - Overall result: 🔴 Level 1
-- Vantage: 40.74.231.17 (US, github-actions)
+- Vantage: 52.173.179.36 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Contact E-mail Latest News Hiring of Heavy Machinery 27 September 2026 Bid Reference: LPL/SUP-HO/FI-BID/2026/03 Procurem |
+| postal_address | ✅ | Published postal address: Contact E-mail Latest News Award of Contract 15 July 2026 Award of Contract: Manufacturing/ Supply and Deliver of... Ope |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

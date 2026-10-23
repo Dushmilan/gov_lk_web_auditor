@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-10-22 07:51
+- Completed: 2026-10-23 07:56
 - Overall result: 🔴 Level 1
-- Vantage: 40.74.231.17 (US, github-actions)
+- Vantage: 52.173.179.36 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0670396207 (178 phone numbers found); Email: slsi@slsi.lk (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0670396207 (182 phone numbers found); Email: info@gsmb.gov.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

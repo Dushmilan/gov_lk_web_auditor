@@ -1,8 +1,8 @@
 # Website Audit: https://cg-milan.gov.lk/
 
-- Completed: 2026-10-22 08:08
+- Completed: 2026-10-23 08:13
 - Overall result: 🟠 Level 2
-- Vantage: 40.74.231.17 (US, github-actions)
+- Vantage: 52.173.179.36 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa.; Phone: +393275480615 (25 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa.; Phone: 0039-327548 (25 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa. |
-| reachable_contacts | ✅ | Phone: +393275480615 (25 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0039-327548 (25 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,186 +1,46 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b2210b8d-72a5-48bd-8b61-b5aec8db5688",
+  "audit_id": "b798a29d-b2af-4948-9f0b-07f87e1e154c",
   "url": "https://www.pdn.ac.lk/",
   "normalized_url": "https://www.pdn.ac.lk/",
-  "started_at": "2026-10-22T07:51:42.017367+05:30",
-  "completed_at": "2026-10-22T07:54:43.093945+05:30",
+  "started_at": "2026-10-23T07:57:17.563602+05:30",
+  "completed_at": "2026-10-23T07:57:17.916555+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTPS probes passed; failing variants: https://www.pdn.ac.lk/: Probe 3: timed out",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "dns_resolves: [Errno -5] No address associated with hostname"
     ]
   },
   "evidence": [
     {
-      "check": "dns",
-      "status": "pass",
-      "detail": "Public DNS resolved",
-      "observed_at": "2026-10-22T07:51:42.521212+05:30"
+      "check": "dns_absent",
+      "status": "fail",
+      "detail": "[Errno -5] No address associated with hostname",
+      "observed_at": "2026-10-23T07:57:17.916395+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-22T07:51:42.521229+05:30"
-    },
-    {
-      "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-22T07:51:44.580251+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.pdn.ac.lk/",
-      "source": "https://www.pdn.ac.lk/",
-      "observed_at": "2026-10-22T07:54:41.957999+05:30"
-    },
-    {
-      "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 400 at http://www.pdn.ac.lk/",
-      "source": "http://www.pdn.ac.lk/",
-      "observed_at": "2026-10-22T07:54:41.958016+05:30"
-    },
-    {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
-      "source": "https://www.pdn.ac.lk/",
-      "observed_at": "2026-10-22T07:54:41.958022+05:30"
-    },
-    {
-      "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 400 at http://www.pdn.ac.lk/",
-      "source": "http://www.pdn.ac.lk/",
-      "observed_at": "2026-10-22T07:54:41.958025+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 8301 ",
-      "source": "https://www.pdn.ac.lk/",
-      "data": {
-        "value": "+94 81 238 8301 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80",
-      "source": "http://www.pdn.ac.lk/",
-      "data": {
-        "value": "Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80",
-      "source": "http://www.pdn.ac.lk/",
-      "data": {
-        "value": "Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 272 visible characters across 3 pages",
-      "source": "https://www.pdn.ac.lk/"
+      "observed_at": "2026-10-23T07:57:17.916418+05:30"
     }
   ],
   "observations": [
     {
       "host": "www.pdn.ac.lk",
-      "addresses": [
-        "192.248.40.36"
-      ],
-      "status": "resolved",
-      "detail": "Public DNS resolved"
+      "addresses": [],
+      "status": "absent",
+      "detail": "[Errno -5] No address associated with hostname"
     },
     {
       "domain": "ac.lk",
       "status": "unknown",
       "expires_at": null,
       "detail": "Domain is absent from RDAP"
-    },
-    {
-      "host": "www.pdn.ac.lk",
-      "status": "valid",
-      "expires_at": "2026-12-15T16:55:31+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
-    },
-    {
-      "url": "https://www.pdn.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://www.pdn.ac.lk/",
-      "redirects": [],
-      "elapsed_ms": 2453,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://www.pdn.ac.lk/",
-      "status_code": 400,
-      "final_url": "http://www.pdn.ac.lk/",
-      "redirects": [],
-      "elapsed_ms": 20554,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
-    },
-    {
-      "url": "https://www.pdn.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
-    },
-    {
-      "url": "http://www.pdn.ac.lk/",
-      "status_code": 400,
-      "final_url": "http://www.pdn.ac.lk/",
-      "redirects": [],
-      "elapsed_ms": 888,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.pdn.ac.lk/",
-      "path": "audit.output/www.pdn.ac.lk/20261022.0751/snapshots/page-01-8a8d08caa7a2.html",
-      "sha256": "8a8d08caa7a261fd16d8ae8b4e95124bc80b3e06ed7888ad611280124040ed90",
-      "bytes": 3054
-    },
-    {
-      "url": "http://www.pdn.ac.lk/",
-      "path": "audit.output/www.pdn.ac.lk/20261022.0751/snapshots/page-02-bf4a27aec608.html",
-      "sha256": "bf4a27aec608ea07c93f789136cf529ecb8de7ea64c773f8e2be6f4cd2c06e36",
-      "bytes": 441
-    },
-    {
-      "url": "http://www.pdn.ac.lk/",
-      "path": "audit.output/www.pdn.ac.lk/20261022.0751/snapshots/page-03-bf4a27aec608.html",
-      "sha256": "bf4a27aec608ea07c93f789136cf529ecb8de7ea64c773f8e2be6f4cd2c06e36",
-      "bytes": 441
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -194,69 +54,69 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://www.pdn.ac.lk/: Probe 3: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "[Errno -5] No address associated with hostname",
       "executed": true,
       "checks": [
         {
           "name": "dns_resolves",
           "level": 1,
-          "status": "pass",
-          "reason": "Public DNS resolved"
+          "status": "fail",
+          "reason": "[Errno -5] No address associated with hostname"
         },
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: https://www.pdn.ac.lk/: Probe 3: timed out"
+          "status": "inconclusive",
+          "reason": "HTTP checks did not run"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "TLS expiry check did not run"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "TLS hostname check did not run"
         }
       ]
     },
@@ -264,28 +124,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No email evidence found; No passing named responsibility evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing named responsibility evidence found"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -313,7 +154,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "40.74.231.17",
+    "egress_ip": "52.173.179.36",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
