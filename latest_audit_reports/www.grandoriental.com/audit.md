@@ -1,8 +1,8 @@
 # Website Audit: https://www.grandoriental.com/
 
-- Completed: 2026-10-23 08:05
+- Completed: 2026-10-24 08:03
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.179.36 (US, github-actions)
+- Vantage: 20.120.156.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Grand Oriental Hotel Colombo - Hotels in Colombo Sri Lanka; Phone: +94 77 971 6932 (22 phone numbers found); Email: rdm@grandoriental.com; Published named responsibility: director
+Published postal address: Grand Oriental Hotel Colombo - Hotels in Colombo Sri Lanka; Phone: +94 77 770 7551 (22 phone numbers found); Email: rdm@grandoriental.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Grand Oriental Hotel Colombo - Hotels in Colombo Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 77 971 6932 (22 phone numbers found); Email: rdm@grandoriental.com |
+| reachable_contacts | ✅ | Phone: +94 77 770 7551 (22 phone numbers found); Email: rdm@grandoriental.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

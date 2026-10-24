@@ -1,8 +1,8 @@
 # Website Audit: https://cg-dubai.gov.lk/
 
-- Completed: 2026-10-23 08:16
+- Completed: 2026-10-24 08:14
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.179.36 (US, github-actions)
+- Vantage: 20.120.156.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

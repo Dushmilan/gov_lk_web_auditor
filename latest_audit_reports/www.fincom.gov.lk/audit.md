@@ -1,8 +1,8 @@
 # Website Audit: https://www.fincom.gov.lk/
 
-- Completed: 2026-10-23 08:56
+- Completed: 2026-10-24 08:40
 - Overall result: ⚫ Level 0
-- Vantage: 52.173.179.36 (US, github-actions)
+- Vantage: 20.120.156.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://www.fincom.gov.lk/: Probe 1: timed out; https://www.fincom.gov.lk/: Probe 3: timed out |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

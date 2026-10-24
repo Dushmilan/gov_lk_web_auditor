@@ -1,24 +1,18 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "556cddc8-c4d4-4430-b49e-104499780962",
+  "audit_id": "d2f75713-d33e-45e4-bb65-86bdabcecf96",
   "url": "https://www.aerc.gov.lk/",
   "normalized_url": "https://www.aerc.gov.lk/",
-  "started_at": "2026-10-23T08:29:05.305640+05:30",
-  "completed_at": "2026-10-23T08:29:11.915077+05:30",
+  "started_at": "2026-10-24T08:26:55.016247+05:30",
+  "completed_at": "2026-10-24T08:26:59.040074+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
     ]
   },
   "evidence": [
@@ -26,52 +20,88 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-23T08:29:05.929176+05:30"
+      "observed_at": "2026-10-24T08:26:55.397693+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-23T08:29:05.929201+05:30"
+      "observed_at": "2026-10-24T08:26:55.397711+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-23T08:29:06.266379+05:30"
+      "observed_at": "2026-10-24T08:26:55.774420+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://www.aerc.gov.lk/",
       "source": "https://www.aerc.gov.lk/",
-      "observed_at": "2026-10-23T08:29:11.910106+05:30"
+      "observed_at": "2026-10-24T08:26:59.016950+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.aerc.gov.lk/",
+      "detail": "Probe 2: HTTP 200 at http://www.aerc.gov.lk/",
       "source": "http://www.aerc.gov.lk/",
-      "observed_at": "2026-10-23T08:29:11.910126+05:30"
+      "observed_at": "2026-10-24T08:26:59.016965+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://www.aerc.gov.lk/",
       "source": "https://www.aerc.gov.lk/",
-      "observed_at": "2026-10-23T08:29:11.910130+05:30"
+      "observed_at": "2026-10-24T08:26:59.016970+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.aerc.gov.lk/",
+      "detail": "Probe 4: HTTP 200 at http://www.aerc.gov.lk/",
       "source": "http://www.aerc.gov.lk/",
-      "observed_at": "2026-10-23T08:29:11.910132+05:30"
+      "observed_at": "2026-10-24T08:26:59.016973+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0950635027",
+      "source": "https://www.aerc.gov.lk/",
+      "data": {
+        "value": "0950635027"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0950635027",
+      "source": "http://www.aerc.gov.lk/",
+      "data": {
+        "value": "0950635027"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0950635027",
+      "source": "https://www.aerc.gov.lk/",
+      "data": {
+        "value": "0950635027"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0950635027",
+      "source": "http://www.aerc.gov.lk/",
+      "data": {
+        "value": "0950635027"
+      }
     },
     {
       "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 401 visible characters across 4 pages",
+      "status": "fail",
+      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
       "source": "https://www.aerc.gov.lk/"
     }
   ],
@@ -102,18 +132,16 @@
       "status_code": 200,
       "final_url": "https://www.aerc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 400,
+      "elapsed_ms": 347,
       "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://www.aerc.gov.lk/",
       "status_code": 200,
-      "final_url": "https://www.aerc.gov.lk/",
-      "redirects": [
-        "https://www.aerc.gov.lk/"
-      ],
-      "elapsed_ms": 405,
+      "final_url": "http://www.aerc.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 370,
       "content_type": "text/html",
       "error": null
     },
@@ -122,18 +150,16 @@
       "status_code": 200,
       "final_url": "https://www.aerc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 384,
+      "elapsed_ms": 582,
       "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://www.aerc.gov.lk/",
       "status_code": 200,
-      "final_url": "https://www.aerc.gov.lk/",
-      "redirects": [
-        "https://www.aerc.gov.lk/"
-      ],
-      "elapsed_ms": 394,
+      "final_url": "http://www.aerc.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 227,
       "content_type": "text/html",
       "error": null
     }
@@ -141,27 +167,27 @@
   "snapshots": [
     {
       "url": "https://www.aerc.gov.lk/",
-      "path": "audit.output/www.aerc.gov.lk/20261023.0829/snapshots/page-01-b1ea1839e4d5.html",
-      "sha256": "b1ea1839e4d52495d6450c53872b9d805308e152ca92c419fd6fa6ff87e24833",
-      "bytes": 3871
+      "path": "audit.output/www.aerc.gov.lk/20261024.0826/snapshots/page-01-93f18f9d9730.html",
+      "sha256": "93f18f9d97303e463f45416f076614d87695976c3af0bd324521de12dfbce48a",
+      "bytes": 11996
+    },
+    {
+      "url": "http://www.aerc.gov.lk/",
+      "path": "audit.output/www.aerc.gov.lk/20261024.0826/snapshots/page-02-71548866ba6a.html",
+      "sha256": "71548866ba6af1ee6510a249314bfcfa3f9cf0375f6810a809ac04e623796c6a",
+      "bytes": 12086
     },
     {
       "url": "https://www.aerc.gov.lk/",
-      "path": "audit.output/www.aerc.gov.lk/20261023.0829/snapshots/page-02-b1ea1839e4d5.html",
-      "sha256": "b1ea1839e4d52495d6450c53872b9d805308e152ca92c419fd6fa6ff87e24833",
-      "bytes": 3871
+      "path": "audit.output/www.aerc.gov.lk/20261024.0826/snapshots/page-03-ae0d012820b5.html",
+      "sha256": "ae0d012820b5cab0aa89c47b12d2f600323296e54ad0eca12b63614c9c2ef527",
+      "bytes": 11899
     },
     {
-      "url": "https://www.aerc.gov.lk/",
-      "path": "audit.output/www.aerc.gov.lk/20261023.0829/snapshots/page-03-b1ea1839e4d5.html",
-      "sha256": "b1ea1839e4d52495d6450c53872b9d805308e152ca92c419fd6fa6ff87e24833",
-      "bytes": 3871
-    },
-    {
-      "url": "https://www.aerc.gov.lk/",
-      "path": "audit.output/www.aerc.gov.lk/20261023.0829/snapshots/page-04-b1ea1839e4d5.html",
-      "sha256": "b1ea1839e4d52495d6450c53872b9d805308e152ca92c419fd6fa6ff87e24833",
-      "bytes": 3871
+      "url": "http://www.aerc.gov.lk/",
+      "path": "audit.output/www.aerc.gov.lk/20261024.0826/snapshots/page-04-ec44d40dbc4f.html",
+      "sha256": "ec44d40dbc4f24d5d799d224b0f9abba3c63409552ce0f5be0b2bc6c96c60c6c",
+      "bytes": 11898
     }
   ],
   "reviewer_decisions": [],
@@ -177,8 +203,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
       "executed": true,
       "checks": [
         {
@@ -190,26 +216,26 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
@@ -247,28 +273,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No phone or email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing named responsibility evidence found"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -296,7 +303,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.173.179.36",
+    "egress_ip": "20.120.156.208",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: http://www.dcbc.gov.lk/
 
-- Completed: 2026-10-23 08:21
+- Completed: 2026-10-24 08:20
 - Overall result: 🔴 Level 1
-- Vantage: 52.173.179.36 (US, github-actions)
+- Vantage: 20.120.156.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
