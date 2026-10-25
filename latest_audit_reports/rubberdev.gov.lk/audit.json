@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "1d98ad23-81c8-4980-a9bf-9b6e89725618",
+  "audit_id": "34d72888-69ac-4c34-b473-6385c7b4ef96",
   "url": "https://rubberdev.gov.lk/",
   "normalized_url": "https://rubberdev.gov.lk/",
-  "started_at": "2026-10-24T08:21:58.648087+05:30",
-  "completed_at": "2026-10-24T08:22:31.741381+05:30",
+  "started_at": "2026-10-25T08:15:23.592125+05:30",
+  "completed_at": "2026-10-25T08:17:36.587457+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,717 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T08:21:59.093343+05:30"
+      "observed_at": "2026-10-25T08:15:24.001748+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T08:21:59.093361+05:30"
+      "observed_at": "2026-10-25T08:15:24.001771+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-24T08:21:59.961023+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-25T08:15:34.268616+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://rubberdev.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://rubberdev.gov.lk/",
-      "observed_at": "2026-10-24T08:22:30.932087+05:30"
+      "observed_at": "2026-10-25T08:17:36.587281+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://rubberdev.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://rubberdev.gov.lk/",
-      "observed_at": "2026-10-24T08:22:30.932105+05:30"
+      "observed_at": "2026-10-25T08:17:36.587293+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://rubberdev.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://rubberdev.gov.lk/",
-      "observed_at": "2026-10-24T08:22:30.932110+05:30"
+      "observed_at": "2026-10-25T08:17:36.587298+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://rubberdev.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://rubberdev.gov.lk/",
-      "observed_at": "2026-10-24T08:22:30.932113+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://rubberdev.gov.lk/index.php?lang=en",
-      "source": "https://rubberdev.gov.lk/",
-      "observed_at": "2026-10-24T08:22:30.932116+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://rubberdev.gov.lk/index.php?lang=si",
-      "source": "https://rubberdev.gov.lk/index.php?lang=si",
-      "observed_at": "2026-10-24T08:22:30.932119+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://rubberdev.gov.lk/index.php?lang=ta",
-      "source": "https://rubberdev.gov.lk/index.php?lang=ta",
-      "observed_at": "2026-10-24T08:22:30.932122+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-10-24T08:22:30.932124+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "observed_at": "2026-10-24T08:22:30.932127+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "observed_at": "2026-10-24T08:22:30.932130+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "observed_at": "2026-10-24T08:22:30.932133+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "observed_at": "2026-10-24T08:22:30.932136+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "observed_at": "2026-10-24T08:22:30.932138+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "observed_at": "2026-10-24T08:22:30.932141+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=si",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=si",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?lang=si",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=ta",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?lang=ta",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?lang=ta",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 453 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "data": {
-        "value": "+94 11 2 889 453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 889 479 ",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "data": {
-        "value": "+94 11 2 889 479 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rubbdev@gmail.com",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "data": {
-        "value": "rubbdev@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 13347 visible characters across 14 pages",
-      "source": "https://rubberdev.gov.lk/"
+      "observed_at": "2026-10-25T08:17:36.587301+05:30"
     }
   ],
   "observations": [
@@ -756,236 +85,49 @@
     },
     {
       "host": "rubberdev.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-01T23:13:04+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://rubberdev.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://rubberdev.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1831,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://rubberdev.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://rubberdev.gov.lk/",
-        "https://rubberdev.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 2074,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://rubberdev.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://rubberdev.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1432,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://rubberdev.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://rubberdev.gov.lk/",
-        "https://rubberdev.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1309,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://rubberdev.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1353,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?lang=si",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1570,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?lang=ta",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?lang=ta",
-      "redirects": [],
-      "elapsed_ms": 1398,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1534,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1093,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "redirects": [],
-      "elapsed_ms": 966,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1029,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1008,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "redirects": [],
-      "elapsed_ms": 967,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "status_code": 200,
-      "final_url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "redirects": [],
-      "elapsed_ms": 953,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-01-712568c00b5b.html",
-      "sha256": "712568c00b5bfe0619e4f9cf8295e2a111037b1a05a9e5ee6af6e091b7ebb103",
-      "bytes": 68240
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-02-5e4eebe3b864.html",
-      "sha256": "5e4eebe3b864e039ef189a1833c1581273cd704071e75f8cf8c4db35cb4d1d4c",
-      "bytes": 68240
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-03-7f3c230efa5f.html",
-      "sha256": "7f3c230efa5f714d54c187204fa00779cdae28a40fbb72465cd89191db2a8b71",
-      "bytes": 68240
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-04-77635887c6fd.html",
-      "sha256": "77635887c6fd8e2506784dafa37c5e25c996975ca18e66832fa4d043973589d0",
-      "bytes": 68240
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-05-e8254b19219f.html",
-      "sha256": "e8254b19219f7b1663753d1c257635b239c816749086e9af659f8bfc80dd6f8a",
-      "bytes": 68240
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?lang=si",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-06-cbe5c4bc8047.html",
-      "sha256": "cbe5c4bc8047cb87cacd071e549a150b178ba1a1cc50af56f2b15b7f67da6447",
-      "bytes": 72322
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?lang=ta",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-07-49d33d942c9e.html",
-      "sha256": "49d33d942c9ed8b95df877a948b277e62280c4e62201a6a07dd4819bab721bb3",
-      "bytes": 73315
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-08-86a7671fef48.html",
-      "sha256": "86a7671fef486aaab9c4207319d1081cc3689341668835b87c88fa0e7c198886",
-      "bytes": 68504
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=108&lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-09-46dc19dbb41f.html",
-      "sha256": "46dc19dbb41f173aa5b9fbe464e1a8566d64a987d6faaf07ee43d8b3758b1c6b",
-      "bytes": 39243
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=193&lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-10-77e4c1f5a7c0.html",
-      "sha256": "77e4c1f5a7c0c9f448945ea4969ed9f1cb647d78a95193ed3d38f388e9cdb3aa",
-      "bytes": 25459
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=194&lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-11-7c133591a61f.html",
-      "sha256": "7c133591a61fc4f01c380a275ba8c830b1aa368e2dcc7e8c63da30340145f485",
-      "bytes": 28806
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=195&lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-12-01a7334de137.html",
-      "sha256": "01a7334de137c5f11cc8b1017ecbf6062455f1464adb958d543bab0ac1d4597f",
-      "bytes": 29117
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=71&Itemid=226&lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-13-787e348ccf20.html",
-      "sha256": "787e348ccf203367b033e20cb13cfa98d2fee9a680026f52359770200593896c",
-      "bytes": 31461
-    },
-    {
-      "url": "https://rubberdev.gov.lk/index.php?option=com_content&view=article&id=56&Itemid=196&lang=en",
-      "path": "audit.output/rubberdev.gov.lk/20261024.0821/snapshots/page-14-b4f6560eaaae.html",
-      "sha256": "b4f6560eaaae35b3ee3bf8b348ffe9b4ed926fae70dee9e12eac34aba7977f26",
-      "bytes": 35384
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -999,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -1012,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -1069,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 11 2 889 453 (2 phone numbers found); Email: rubbdev@gmail.com"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -1118,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.156.208",
+    "egress_ip": "172.172.237.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

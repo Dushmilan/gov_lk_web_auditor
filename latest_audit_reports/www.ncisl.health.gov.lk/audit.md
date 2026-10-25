@@ -1,8 +1,8 @@
 # Website Audit: https://www.ncisl.health.gov.lk/
 
-- Completed: 2026-10-24 08:16
+- Completed: 2026-10-25 08:08
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.156.208 (US, github-actions)
+- Vantage: 172.172.237.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: individual treatment needs. If you would like further information about your treatment, please discuss with your individ; Phone: 011 2844459 (27 phone numbers found); Email: cansoc@sltnet.lk (3 email addresses found); Published named responsibility: director
+Published postal address: individual treatment needs. If you would like further information about your treatment, please discuss with your individ; Phone: 011 2844459 (27 phone numbers found); Email: pals_ncisrilanka@yahoo.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: individual treatment needs. If you would like further information about your treatment, please discuss with your individ |
-| reachable_contacts | ✅ | Phone: 011 2844459 (27 phone numbers found); Email: cansoc@sltnet.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 2844459 (27 phone numbers found); Email: pals_ncisrilanka@yahoo.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

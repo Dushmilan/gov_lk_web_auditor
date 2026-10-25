@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "a669c1df-7d44-4a29-8c2d-b05fb279978b",
+  "audit_id": "e96b12a2-734c-427b-a63e-38e2c698ef33",
   "url": "https://mpclg.gov.lk/",
   "normalized_url": "https://mpclg.gov.lk/",
-  "started_at": "2026-10-24T08:35:24.983111+05:30",
-  "completed_at": "2026-10-24T08:40:07.937870+05:30",
+  "started_at": "2026-10-25T08:34:23.500313+05:30",
+  "completed_at": "2026-10-25T08:36:36.214071+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTPS probes passed; failing variants: http://mpclg.gov.lk/: Probe 2: timed out; http://mpclg.gov.lk/: Probe 4: timed out",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,411 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T08:35:25.297418+05:30"
+      "observed_at": "2026-10-25T08:34:23.853117+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T08:35:25.297440+05:30"
+      "observed_at": "2026-10-25T08:34:23.853133+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-24T08:35:26.360957+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-25T08:34:34.111594+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://mpclg.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://mpclg.gov.lk/",
-      "observed_at": "2026-10-24T08:40:07.747353+05:30"
+      "observed_at": "2026-10-25T08:36:36.213817+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://mpclg.gov.lk/",
-      "observed_at": "2026-10-24T08:40:07.747369+05:30"
+      "observed_at": "2026-10-25T08:36:36.213840+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://mpclg.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://mpclg.gov.lk/",
-      "observed_at": "2026-10-24T08:40:07.747374+05:30"
+      "observed_at": "2026-10-25T08:36:36.213847+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://mpclg.gov.lk/",
-      "observed_at": "2026-10-24T08:40:07.747377+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://mpclg.gov.lk/web/index.php?lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?lang=si",
-      "observed_at": "2026-10-24T08:40:07.747380+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://mpclg.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "observed_at": "2026-10-24T08:40:07.747383+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=15&Itemid=103&lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=15&Itemid=103&lang=si",
-      "observed_at": "2026-10-24T08:40:07.747386+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=16&Itemid=104&lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=16&Itemid=104&lang=si",
-      "observed_at": "2026-10-24T08:40:07.747389+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=18&Itemid=117&lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=18&Itemid=117&lang=si",
-      "observed_at": "2026-10-24T08:40:07.747392+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=20&Itemid=119&lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=20&Itemid=119&lang=si",
-      "observed_at": "2026-10-24T08:40:07.747395+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "observed_at": "2026-10-24T08:40:07.747397+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "observed_at": "2026-10-24T08:40:07.747400+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "observed_at": "2026-10-24T08:40:07.747403+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "observed_at": "2026-10-24T08:40:07.747405+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2305326 ",
-      "source": "https://mpclg.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "+94 11 2305326 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2305326 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 11 2305326 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2699720 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=16&Itemid=104&lang=si",
-      "data": {
-        "value": "+94 11 2699720 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2674115 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=16&Itemid=104&lang=si",
-      "data": {
-        "value": "+94 11 2674115 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak96cf9506e03542b7",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=16&Itemid=104&lang=si",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak96cf9506e03542b7"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 399 735 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=18&Itemid=117&lang=si",
-      "data": {
-        "value": "+94 112 399 735 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 329 725 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=18&Itemid=117&lang=si",
-      "data": {
-        "value": "+94 112 329 725 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak65074e0599017b8e",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=18&Itemid=117&lang=si",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak65074e0599017b8e"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 347 528 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "data": {
-        "value": "+94 112 347 528 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 326 304 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "data": {
-        "value": "+94 112 326 304 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 347 533 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "data": {
-        "value": "+94 112 347 533 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 113 144 967 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "data": {
-        "value": "+94 113 144 967 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 347 529 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "data": {
-        "value": "+94 112 347 529 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak1d524a3c632594fd",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak1d524a3c632594fd"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 347 529 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "data": {
-        "value": "+94 112 347 529 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 347 528 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "data": {
-        "value": "+94 112 347 528 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 337 161 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "data": {
-        "value": "+94 112 337 161 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 302 720 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "data": {
-        "value": "+94 112 302 720 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakf24f6979716f8f11",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakf24f6979716f8f11"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 345 971 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "data": {
-        "value": "+94 112 345 971 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 326 106 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "data": {
-        "value": "+94 112 326 106 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 421 130 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "data": {
-        "value": "+94 112 421 130 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 454 122 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "data": {
-        "value": "+94 112 454 122 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 324 142 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "data": {
-        "value": "+94 112 324 142 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakbc028d336c58795d",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakbc028d336c58795d"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 326 106 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "data": {
-        "value": "+94 112 326 106 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 423 145 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "data": {
-        "value": "+94 112 423 145 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 347 535 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "data": {
-        "value": "+94 112 347 535 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 324 142 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "data": {
-        "value": "+94 112 324 142 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 305 087 ",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "data": {
-        "value": "+94 112 305 087 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakecb4a4e70f9d1323",
-      "source": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakecb4a4e70f9d1323"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 16275 visible characters across 12 pages",
-      "source": "https://mpclg.gov.lk/"
+      "observed_at": "2026-10-25T08:36:36.213852+05:30"
     }
   ],
   "observations": [
@@ -450,19 +85,19 @@
     },
     {
       "host": "mpclg.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-12T04:18:06+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://mpclg.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1148,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://mpclg.gov.lk/",
@@ -475,12 +110,12 @@
     },
     {
       "url": "https://mpclg.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1365,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://mpclg.gov.lk/",
@@ -490,172 +125,9 @@
       "elapsed_ms": null,
       "content_type": null,
       "error": "timed out"
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?lang=si",
-      "redirects": [],
-      "elapsed_ms": 1327,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "redirects": [],
-      "elapsed_ms": 1528,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=15&Itemid=103&lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=15&Itemid=103&lang=si",
-      "redirects": [],
-      "elapsed_ms": 20310,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=16&Itemid=104&lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=16&Itemid=104&lang=si",
-      "redirects": [],
-      "elapsed_ms": 1305,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=18&Itemid=117&lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=18&Itemid=117&lang=si",
-      "redirects": [],
-      "elapsed_ms": 1302,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=20&Itemid=119&lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=20&Itemid=119&lang=si",
-      "redirects": [],
-      "elapsed_ms": 1618,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "redirects": [],
-      "elapsed_ms": 1483,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "redirects": [],
-      "elapsed_ms": 1581,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "redirects": [],
-      "elapsed_ms": 1656,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "status_code": 200,
-      "final_url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "redirects": [],
-      "elapsed_ms": 1294,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://mpclg.gov.lk/",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-01-8418732b2418.html",
-      "sha256": "8418732b2418d6d33c2469debf3bbc20a29e19c5c1ea8f879214274076719ebf",
-      "bytes": 3613
-    },
-    {
-      "url": "https://mpclg.gov.lk/",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-02-8418732b2418.html",
-      "sha256": "8418732b2418d6d33c2469debf3bbc20a29e19c5c1ea8f879214274076719ebf",
-      "bytes": 3613
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-03-d26420026ed4.html",
-      "sha256": "d26420026ed41b2f32070d6174e1cd11886ecc110282a07dcdec5c301755b465",
-      "bytes": 50938
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-04-69e307826975.html",
-      "sha256": "69e30782697563220790f5033bfcf9c9212d6b1a964c0cf7e9e50dc9767157a2",
-      "bytes": 51278
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=15&Itemid=103&lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-05-a71760a173e4.html",
-      "sha256": "a71760a173e4e19a1756a9c29f41089ae06f65167710d92d593099acbe08a5e8",
-      "bytes": 47790
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=16&Itemid=104&lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-06-f37505a40d2b.html",
-      "sha256": "f37505a40d2ba84f6aa382298efa6c36f8d08688753d3fbc555ce1d9cac72f09",
-      "bytes": 40711
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=18&Itemid=117&lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-07-9e4c7e8d566f.html",
-      "sha256": "9e4c7e8d566fcbac7a250952dd9be3b38542a7263516cf4c7ef66f70d125d3b4",
-      "bytes": 40633
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=20&Itemid=119&lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-08-8f547bbf951a.html",
-      "sha256": "8f547bbf951adbf5ddb956f94b9bf5d110b7b068be5a51e0588dcc6c20082d9a",
-      "bytes": 38876
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=63&Itemid=182&lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-09-46e99fe4c8fd.html",
-      "sha256": "46e99fe4c8fd2ecc285d906397b0705da068cd81db9c653f951ec0db71a6fbc5",
-      "bytes": 51626
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=68&Itemid=187&lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-10-39f2d1cfaf49.html",
-      "sha256": "39f2d1cfaf496b6e819bb79653203d44977f64f56b31ad14033bd1ec7b850d1f",
-      "bytes": 117548
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=69&Itemid=188&lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-11-422444f3b53a.html",
-      "sha256": "422444f3b53a8ff3bfd11e839bf37bee1bb0d75594a663efbdd94219271bd788",
-      "bytes": 64431
-    },
-    {
-      "url": "https://mpclg.gov.lk/web/index.php?option=com_content&view=article&id=71&Itemid=190&lang=si",
-      "path": "audit.output/mpclg.gov.lk/20261024.0835/snapshots/page-12-16291d7ac7ab.html",
-      "sha256": "16291d7ac7ab98d5e8229f60655f25a7ff3733b3f77fce25cc7cefb0718b92c0",
-      "bytes": 59580
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -669,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://mpclg.gov.lk/: Probe 2: timed out; http://mpclg.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -682,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://mpclg.gov.lk/: Probe 2: timed out; http://mpclg.gov.lk/: Probe 4: timed out"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -739,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No email evidence found; No passing named responsibility evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak96cf9506e03542b7"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing named responsibility evidence found"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -788,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.156.208",
+    "egress_ip": "172.172.237.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

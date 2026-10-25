@@ -1,8 +1,8 @@
 # Website Audit: https://www.sliate.ac.lk/
 
-- Completed: 2026-10-24 08:01
+- Completed: 2026-10-25 07:51
 - Overall result: 🔴 Level 1
-- Vantage: 20.120.156.208 (US, github-actions)
+- Vantage: 172.172.237.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -39,7 +39,7 @@ No passing postal address evidence found; No email evidence found
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
 | reachable_contacts | ❓ | No email evidence found |
-| named_responsibility | ✅ | Published named responsibility: director |
+| named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 

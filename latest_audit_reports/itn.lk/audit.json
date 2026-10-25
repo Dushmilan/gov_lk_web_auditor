@@ -1,18 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "3881edde-4ad2-4dfc-b346-a620eec2ec6f",
+  "audit_id": "b8e8c2d2-e807-42a9-acff-0188cda56c4a",
   "url": "https://itn.lk/",
   "normalized_url": "https://itn.lk/",
-  "started_at": "2026-10-24T08:16:39.367795+05:30",
-  "completed_at": "2026-10-24T08:16:45.195753+05:30",
+  "started_at": "2026-10-25T08:08:39.718311+05:30",
+  "completed_at": "2026-10-25T08:09:01.814273+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -20,88 +26,743 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T08:16:39.720062+05:30"
+      "observed_at": "2026-10-25T08:08:40.290091+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T08:16:39.720079+05:30"
+      "observed_at": "2026-10-25T08:08:40.290102+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-24T08:16:39.738177+05:30"
+      "observed_at": "2026-10-25T08:08:40.302436+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://itn.lk/",
       "source": "https://itn.lk/",
-      "observed_at": "2026-10-24T08:16:45.173836+05:30"
+      "observed_at": "2026-10-25T08:08:59.636062+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://itn.lk/",
       "source": "http://itn.lk/",
-      "observed_at": "2026-10-24T08:16:45.173852+05:30"
+      "observed_at": "2026-10-25T08:08:59.636077+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://itn.lk/",
       "source": "https://itn.lk/",
-      "observed_at": "2026-10-24T08:16:45.173857+05:30"
+      "observed_at": "2026-10-25T08:08:59.636081+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://itn.lk/",
       "source": "http://itn.lk/",
-      "observed_at": "2026-10-24T08:16:45.173861+05:30"
+      "observed_at": "2026-10-25T08:08:59.636084+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://itn.lk/contact/",
+      "source": "https://itn.lk/contact/",
+      "observed_at": "2026-10-25T08:08:59.636087+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://itn.lk/shows/",
+      "source": "https://itn.lk/shows/",
+      "observed_at": "2026-10-25T08:08:59.636090+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://itn.lk/teledramas/",
+      "source": "https://itn.lk/teledramas/",
+      "observed_at": "2026-10-25T08:08:59.636093+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://itn.lk/schedule/",
+      "source": "https://itn.lk/schedule/",
+      "observed_at": "2026-10-25T08:08:59.636095+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://itn.lk/live/",
+      "source": "https://itn.lk/live/",
+      "observed_at": "2026-10-25T08:08:59.636098+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://itn.lk/videos/teledramas/visekari/",
+      "source": "https://itn.lk/videos/teledramas/visekari/",
+      "observed_at": "2026-10-25T08:08:59.636101+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://itn.lk/videos/teledramas/sihineka-thaniwela/",
+      "source": "https://itn.lk/videos/teledramas/sihineka-thaniwela/",
+      "observed_at": "2026-10-25T08:08:59.636104+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://itn.lk/watch/sanwaraya-episode-35-2026-10-24/",
+      "source": "https://itn.lk/watch/sanwaraya-episode-35-2026-10-24/",
+      "observed_at": "2026-10-25T08:08:59.636106+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "source": "https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "observed_at": "2026-10-25T08:08:59.636109+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://itn.lk/watch/asandhimitha-episode-33-2026-10-24/",
+      "source": "https://itn.lk/watch/asandhimitha-episode-33-2026-10-24/",
+      "observed_at": "2026-10-25T08:08:59.636111+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
+      "detail": "Published phone: +94112774424",
       "source": "https://itn.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 9 hours",
+      "source": "https://itn.lk/",
+      "data": {
+        "value": "9 hours"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
+      "detail": "Published phone: +94112774424",
       "source": "https://itn.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 9 hours",
+      "source": "https://itn.lk/",
+      "data": {
+        "value": "9 hours"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
+      "detail": "Published phone: +94112774424",
       "source": "https://itn.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 9 hours",
+      "source": "https://itn.lk/",
+      "data": {
+        "value": "9 hours"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
+      "detail": "Published phone: +94112774424",
       "source": "https://itn.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 9 hours",
+      "source": "https://itn.lk/",
+      "data": {
+        "value": "9 hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112796455",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0112796455"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 277 45 91 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "011 277 45 91 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 269 5448 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "011 269 5448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112695448",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0112695448"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112776933",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0112776933"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094-11-2773",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0094-11-2773"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112774595",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0112774595"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112774594",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0112774594"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 365 1280 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "077 365 1280 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 277 4420 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "011 277 4420 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 94112774424",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "94112774424"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094-11-2774",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0094-11-2774"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112774592",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0112774592"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112774420",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0112774420"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 94112774725",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "94112774725"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 94112773289",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "94112773289"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 277 4592 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "011 277 4592 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 279 6455 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "011 279 6455 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 277 4595 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "011 277 4595 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112775494",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0112775494"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 277 6933 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "011 277 6933 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 277 4594 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "011 277 4594 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773651280",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "0773651280"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 277 5494 ",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "011 277 5494 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: Emailinfo@itn.lk",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "Emailinfo@itn.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: Emailchairman@itn.lk",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "Emailchairman@itn.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Independent Television Network Ltd Wickramasinghepura Battaramulla 10120 Sri Lanka Phone Hotline: 94-11-2774424 Corporat",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "Independent Television Network Ltd Wickramasinghepura Battaramulla 10120 Sri Lanka Phone Hotline: 94-11-2774424 Corporat"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://itn.lk/contact/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/shows/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/shows/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/teledramas/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/teledramas/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/schedule/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/schedule/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/live/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/live/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/videos/teledramas/visekari/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/videos/teledramas/visekari/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 3 months",
+      "source": "https://itn.lk/videos/teledramas/visekari/",
+      "data": {
+        "value": "3 months"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/videos/teledramas/sihineka-thaniwela/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/videos/teledramas/sihineka-thaniwela/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 1 day",
+      "source": "https://itn.lk/videos/teledramas/sihineka-thaniwela/",
+      "data": {
+        "value": "1 day"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/watch/sanwaraya-episode-35-2026-10-24/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 013 2026-10-2",
+      "source": "https://itn.lk/watch/sanwaraya-episode-35-2026-10-24/",
+      "data": {
+        "value": "013 2026-10-2"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/watch/sanwaraya-episode-35-2026-10-24/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 6 days",
+      "source": "https://itn.lk/watch/sanwaraya-episode-35-2026-10-24/",
+      "data": {
+        "value": "6 days"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07-2026-10-24",
+      "source": "https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "data": {
+        "value": "07-2026-10-24"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 013 2026-10-2",
+      "source": "https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "data": {
+        "value": "013 2026-10-2"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 6 days",
+      "source": "https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "data": {
+        "value": "6 days"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112774424",
+      "source": "https://itn.lk/watch/asandhimitha-episode-33-2026-10-24/",
+      "data": {
+        "value": "+94112774424"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 013 2026-10-2",
+      "source": "https://itn.lk/watch/asandhimitha-episode-33-2026-10-24/",
+      "data": {
+        "value": "013 2026-10-2"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itn.lk",
+      "source": "https://itn.lk/watch/asandhimitha-episode-33-2026-10-24/",
+      "data": {
+        "value": "info@itn.lk"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 6 days",
+      "source": "https://itn.lk/watch/asandhimitha-episode-33-2026-10-24/",
+      "data": {
+        "value": "6 days"
       }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 2402 visible characters across 14 pages",
       "source": "https://itn.lk/"
     }
   ],
@@ -135,8 +796,8 @@
       "status_code": 200,
       "final_url": "https://itn.lk/",
       "redirects": [],
-      "elapsed_ms": 273,
-      "content_type": "text/html",
+      "elapsed_ms": 1303,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
@@ -146,8 +807,8 @@
       "redirects": [
         "https://itn.lk/"
       ],
-      "elapsed_ms": 265,
-      "content_type": "text/html",
+      "elapsed_ms": 586,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
@@ -155,8 +816,8 @@
       "status_code": 200,
       "final_url": "https://itn.lk/",
       "redirects": [],
-      "elapsed_ms": 669,
-      "content_type": "text/html",
+      "elapsed_ms": 1385,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
@@ -166,35 +827,185 @@
       "redirects": [
         "https://itn.lk/"
       ],
-      "elapsed_ms": 388,
-      "content_type": "text/html",
+      "elapsed_ms": 625,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/contact/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/contact/",
+      "redirects": [],
+      "elapsed_ms": 1304,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/shows/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/shows/",
+      "redirects": [],
+      "elapsed_ms": 1279,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/teledramas/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/teledramas/",
+      "redirects": [],
+      "elapsed_ms": 1287,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/schedule/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/schedule/",
+      "redirects": [],
+      "elapsed_ms": 636,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/live/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/live/",
+      "redirects": [],
+      "elapsed_ms": 1406,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/videos/teledramas/visekari/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/videos/teledramas/visekari/",
+      "redirects": [],
+      "elapsed_ms": 258,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/videos/teledramas/sihineka-thaniwela/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/videos/teledramas/sihineka-thaniwela/",
+      "redirects": [],
+      "elapsed_ms": 140,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/watch/sanwaraya-episode-35-2026-10-24/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/watch/sanwaraya-episode-35-2026-10-24/",
+      "redirects": [],
+      "elapsed_ms": 1540,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "redirects": [],
+      "elapsed_ms": 2307,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itn.lk/watch/asandhimitha-episode-33-2026-10-24/",
+      "status_code": 200,
+      "final_url": "https://itn.lk/watch/asandhimitha-episode-33-2026-10-24/",
+      "redirects": [],
+      "elapsed_ms": 312,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://itn.lk/",
-      "path": "audit.output/itn.lk/20261024.0816/snapshots/page-01-82582a02b077.html",
-      "sha256": "82582a02b07782a84989122f35875bdf63c9da0bfb4249910b76cd432d7b25cb",
-      "bytes": 12796
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-01-0d741fd08e2e.html",
+      "sha256": "0d741fd08e2e9a2c089fbd3eb7fe2c2f3a616442a579fbc4038061836faf68a6",
+      "bytes": 200412
     },
     {
       "url": "https://itn.lk/",
-      "path": "audit.output/itn.lk/20261024.0816/snapshots/page-02-9b2a2260e562.html",
-      "sha256": "9b2a2260e562e66f707512b62f3a1b25158019d602d4f5731a4ac619c99060fc",
-      "bytes": 12831
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-02-dd83dde2b377.html",
+      "sha256": "dd83dde2b377021e2da0085960505a9288529282d1a59dd1c4eeb435473768db",
+      "bytes": 200412
     },
     {
       "url": "https://itn.lk/",
-      "path": "audit.output/itn.lk/20261024.0816/snapshots/page-03-292eee347503.html",
-      "sha256": "292eee3475038e4bfc8308130cd9f9c970c199d42a3ec3bceb95eee9f0d0c5d6",
-      "bytes": 12817
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-03-2d687eaba6ae.html",
+      "sha256": "2d687eaba6ae388384f6d479ec5695d8a09f77812bcfca5df0ae8a6e857cf150",
+      "bytes": 200412
     },
     {
       "url": "https://itn.lk/",
-      "path": "audit.output/itn.lk/20261024.0816/snapshots/page-04-2877cdeea802.html",
-      "sha256": "2877cdeea802cea2e3c83980dba21c6cfa86c3960ca191948ae2f71f0348b217",
-      "bytes": 12776
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-04-f8ec49e222d3.html",
+      "sha256": "f8ec49e222d393309f5c175ead1d027370ad371b560bc5a4f384a7a78683bed4",
+      "bytes": 200412
+    },
+    {
+      "url": "https://itn.lk/contact/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-05-cbc7a8e76e1b.html",
+      "sha256": "cbc7a8e76e1b50085e21c1985d6b96b44c1b64ee5b47be600538022756edb3e0",
+      "bytes": 131708
+    },
+    {
+      "url": "https://itn.lk/shows/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-06-05925bf216c5.html",
+      "sha256": "05925bf216c5d3e20e8bcc4dcd38cc131e4bc52336ffa0733ab4544d5e60d194",
+      "bytes": 155127
+    },
+    {
+      "url": "https://itn.lk/teledramas/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-07-3e7fcbcb68cd.html",
+      "sha256": "3e7fcbcb68cd7695aa4383a04aaeaa5e55fab513e0907ad2fbe126a8d61dfee8",
+      "bytes": 153049
+    },
+    {
+      "url": "https://itn.lk/schedule/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-08-146d2cd59c4e.html",
+      "sha256": "146d2cd59c4eec71b2c2fb114d52eae17fac514497b5f9f435f64ef9cd46dfd3",
+      "bytes": 138941
+    },
+    {
+      "url": "https://itn.lk/live/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-09-02f6832d2dee.html",
+      "sha256": "02f6832d2deee5d72095b7485fdcd20f722294548359911d916355acfcd062b9",
+      "bytes": 104445
+    },
+    {
+      "url": "https://itn.lk/videos/teledramas/visekari/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-10-d595d5736358.html",
+      "sha256": "d595d573635854915ba6d6c976a323d87506ccde81ba66e82da57ea0979fad3f",
+      "bytes": 141060
+    },
+    {
+      "url": "https://itn.lk/videos/teledramas/sihineka-thaniwela/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-11-bc17cd7cca32.html",
+      "sha256": "bc17cd7cca32cca1f18a743fc5c7e6dd1a59f7c438aad818717652e608dd5a28",
+      "bytes": 138474
+    },
+    {
+      "url": "https://itn.lk/watch/sanwaraya-episode-35-2026-10-24/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-12-0d2446136792.html",
+      "sha256": "0d2446136792b39aeb0fb6cc4989bfc233f194413af84291b0fc74756be4eb43",
+      "bytes": 100388
+    },
+    {
+      "url": "https://itn.lk/watch/irthu-episode-07-2026-10-24/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-13-0cbd8480062b.html",
+      "sha256": "0cbd8480062be9a0542b729a0d6aee1cfcb5ea6520053331a8f79071e447ec62",
+      "bytes": 100168
+    },
+    {
+      "url": "https://itn.lk/watch/asandhimitha-episode-33-2026-10-24/",
+      "path": "audit.output/itn.lk/20261025.0808/snapshots/page-14-d4a2260b0ee5.html",
+      "sha256": "d4a2260b0ee5d24e962a8cd5906065be5a4136da1d35f74bb5a689d3ee97ff84",
+      "bytes": 100553
     }
   ],
   "reviewer_decisions": [],
@@ -210,8 +1021,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -223,26 +1034,26 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
@@ -279,18 +1090,80 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Independent Television Network Ltd Wickramasinghepura Battaramulla 10120 Sri Lanka Phone Hotline: 94-11-2774424 Corporat; Phone: +94112774424 (27 phone numbers found); Email: info@itn.lk (3 email addresses found); Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Independent Television Network Ltd Wickramasinghepura Battaramulla 10120 Sri Lanka Phone Hotline: 94-11-2774424 Corporat"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94112774424 (27 phone numbers found); Email: info@itn.lk (3 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published processing time: 9 hours"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -310,7 +1183,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.156.208",
+    "egress_ip": "172.172.237.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

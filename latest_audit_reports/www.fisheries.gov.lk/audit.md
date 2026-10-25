@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-10-24 08:34
+- Completed: 2026-10-25 08:33
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.156.208 (US, github-actions)
+- Vantage: 172.172.237.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Development Board Ministry of Fisheries, New Secretariat, Maligawatta, Colombo 10, Sri Lanka; Phone: +94 112 446 183 (6 phone numbers found); Email: info@fisheries.gov.lk; Published named responsibility: division
+Published postal address: Contact & Support New Secretariat, Maligawatta, Colombo 10, Sri Lanka; Phone: +94 112 327 060 (39 phone numbers found); Email: info@fisheries.gov.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Development Board Ministry of Fisheries, New Secretariat, Maligawatta, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 112 446 183 (6 phone numbers found); Email: info@fisheries.gov.lk |
-| named_responsibility | ✅ | Published named responsibility: division |
+| postal_address | ✅ | Published postal address: Contact & Support New Secretariat, Maligawatta, Colombo 10, Sri Lanka |
+| reachable_contacts | ✅ | Phone: +94 112 327 060 (39 phone numbers found); Email: info@fisheries.gov.lk (5 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ❓ | No passing legal basis evidence found |
+| legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 24 October 2026 |

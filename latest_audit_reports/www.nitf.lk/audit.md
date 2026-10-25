@@ -1,8 +1,8 @@
 # Website Audit: https://www.nitf.lk/
 
-- Completed: 2026-10-24 08:07
+- Completed: 2026-10-25 07:59
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.156.208 (US, github-actions)
+- Vantage: 172.172.237.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: customer complaints and ensure a resolution at the earliest. Discover More Quick Links About Us Downloads News Help & FA; Phone: +94 71 178 4547 (12 phone numbers found); Email: mail@nitf.lk (2 email addresses found); Published named responsibility: director
+Published postal address: customer complaints and ensure a resolution at the earliest. Discover More Quick Links About Us Downloads News Help & FA; Phone: 025 2024 202 (63 phone numbers found); Email: awp@nitf.lk (22 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: customer complaints and ensure a resolution at the earliest. Discover More Quick Links About Us Downloads News Help & FA |
-| reachable_contacts | ✅ | Phone: +94 71 178 4547 (12 phone numbers found); Email: mail@nitf.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 025 2024 202 (63 phone numbers found); Email: awp@nitf.lk (22 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ✅ | Published fees and payment: RS 17 |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 10 days |
-| downloadable_form | ✅ | Published downloadable form: https://www.nitf.lk/assets/doc/New Registration Form.pdf |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

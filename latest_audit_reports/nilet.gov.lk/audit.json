@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "8d186066-ca94-4cc6-b2a9-3e1e18f4ab40",
+  "audit_id": "d98f9eb2-857d-44d4-934a-a59380f6c7a8",
   "url": "https://nilet.gov.lk/",
   "normalized_url": "https://nilet.gov.lk/",
-  "started_at": "2026-10-24T08:21:09.598343+05:30",
-  "completed_at": "2026-10-24T08:21:28.741151+05:30",
+  "started_at": "2026-10-25T08:14:01.439978+05:30",
+  "completed_at": "2026-10-25T08:14:21.776537+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
-      "tls_not_expired: TLS certificate has expired"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,125 +26,188 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T08:21:09.993999+05:30"
+      "observed_at": "2026-10-25T08:14:02.073582+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T08:21:09.994016+05:30"
+      "observed_at": "2026-10-25T08:14:02.073600+05:30"
     },
     {
-      "check": "tls_expired",
-      "status": "fail",
-      "detail": "TLS certificate has expired",
-      "observed_at": "2026-10-24T08:21:10.358544+05:30"
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-25T08:14:02.331766+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://nilet.gov.lk/index.php/en/",
       "source": "https://nilet.gov.lk/",
-      "observed_at": "2026-10-24T08:21:27.870844+05:30"
+      "observed_at": "2026-10-25T08:14:20.750631+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at http://nilet.gov.lk/index.php/en/",
       "source": "http://nilet.gov.lk/",
-      "observed_at": "2026-10-24T08:21:27.870867+05:30"
+      "observed_at": "2026-10-25T08:14:20.750648+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://nilet.gov.lk/index.php/en/",
       "source": "https://nilet.gov.lk/",
-      "observed_at": "2026-10-24T08:21:27.870872+05:30"
+      "observed_at": "2026-10-25T08:14:20.750652+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at http://nilet.gov.lk/index.php/en/",
       "source": "http://nilet.gov.lk/",
-      "observed_at": "2026-10-24T08:21:27.870876+05:30"
+      "observed_at": "2026-10-25T08:14:20.750656+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at http://nilet.gov.lk/index.php/en/services",
-      "source": "http://nilet.gov.lk/index.php/en/services",
-      "observed_at": "2026-10-24T08:21:27.870879+05:30"
+      "detail": "Probe 5: HTTP 200 at https://nilet.gov.lk/index.php/en/services",
+      "source": "https://nilet.gov.lk/index.php/en/services",
+      "observed_at": "2026-10-25T08:14:20.750658+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at http://nilet.gov.lk/index.php/si/",
-      "source": "http://nilet.gov.lk/index.php/si/",
-      "observed_at": "2026-10-24T08:21:27.870882+05:30"
+      "detail": "Probe 6: HTTP 200 at https://nilet.gov.lk/index.php/en/contact-us-2",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "observed_at": "2026-10-25T08:14:20.750661+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at http://nilet.gov.lk/index.php/ta/",
-      "source": "http://nilet.gov.lk/index.php/ta/",
-      "observed_at": "2026-10-24T08:21:27.870921+05:30"
+      "detail": "Probe 7: HTTP 200 at https://nilet.gov.lk/index.php/si/",
+      "source": "https://nilet.gov.lk/index.php/si/",
+      "observed_at": "2026-10-25T08:14:20.750664+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at http://nilet.gov.lk/index.php/en/about-us/overview",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/overview",
-      "observed_at": "2026-10-24T08:21:27.870925+05:30"
+      "detail": "Probe 8: HTTP 200 at https://nilet.gov.lk/index.php/ta/",
+      "source": "https://nilet.gov.lk/index.php/ta/",
+      "observed_at": "2026-10-25T08:14:20.750666+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at http://nilet.gov.lk/index.php/en/about-us/board-of-management",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/board-of-management",
-      "observed_at": "2026-10-24T08:21:27.870928+05:30"
+      "detail": "Probe 9: HTTP 200 at https://nilet.gov.lk/index.php/en/",
+      "source": "https://nilet.gov.lk/",
+      "observed_at": "2026-10-25T08:14:20.750669+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at http://nilet.gov.lk/index.php/en/about-us/senior-management",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/senior-management",
-      "observed_at": "2026-10-24T08:21:27.870931+05:30"
+      "detail": "Probe 10: HTTP 200 at https://nilet.gov.lk/index.php/en/about-us/overview",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/overview",
+      "observed_at": "2026-10-25T08:14:20.750672+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 11: HTTP 200 at http://nilet.gov.lk/index.php/en/about-us/academic-board",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/academic-board",
-      "observed_at": "2026-10-24T08:21:27.870934+05:30"
+      "detail": "Probe 11: HTTP 200 at https://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "observed_at": "2026-10-25T08:14:20.750674+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 12: HTTP 200 at http://nilet.gov.lk/index.php/en/academic-programs",
-      "source": "http://nilet.gov.lk/index.php/en/academic-programs",
-      "observed_at": "2026-10-24T08:21:27.870937+05:30"
+      "detail": "Probe 12: HTTP 200 at https://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "observed_at": "2026-10-25T08:14:20.750677+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 13: HTTP 200 at http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "observed_at": "2026-10-24T08:21:27.870940+05:30"
+      "detail": "Probe 13: HTTP 200 at https://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "observed_at": "2026-10-25T08:14:20.750680+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "observed_at": "2026-10-24T08:21:27.870942+05:30"
+      "detail": "Probe 14: HTTP 200 at https://nilet.gov.lk/index.php/en/academic-programs",
+      "source": "https://nilet.gov.lk/index.php/en/academic-programs",
+      "observed_at": "2026-10-25T08:14:20.750682+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "+94 11 2172 800"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0113 309 291",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "0113 309 291"
+      }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/",
+      "source": "https://nilet.gov.lk/index.php/en/",
       "data": {
         "value": "0112 172 674"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nilet.languages@gmail.com",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "nilet.languages@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: Rs2",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "Rs2"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2025-07-22",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "2025-07-22"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "http://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "+94 11 2172 800"
       }
     },
     {
@@ -151,10 +222,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
+      "detail": "Published phone: 0112 172 674",
       "source": "http://nilet.gov.lk/index.php/en/",
       "data": {
-        "value": "+94 11 2172 800"
+        "value": "0112 172 674"
       }
     },
     {
@@ -196,19 +267,73 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0583562435",
-      "source": "http://nilet.gov.lk/index.php/en/",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/en/",
       "data": {
-        "value": "0583562435"
+        "value": "+94 11 2172 800"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0113 309 291",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "0113 309 291"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/",
+      "source": "https://nilet.gov.lk/index.php/en/",
       "data": {
         "value": "0112 172 674"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nilet.languages@gmail.com",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "nilet.languages@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: Rs2",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "Rs2"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2025-07-22",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "2025-07-22"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "http://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "+94 11 2172 800"
       }
     },
     {
@@ -223,10 +348,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
+      "detail": "Published phone: 0112 172 674",
       "source": "http://nilet.gov.lk/index.php/en/",
       "data": {
-        "value": "+94 11 2172 800"
+        "value": "0112 172 674"
       }
     },
     {
@@ -263,13 +388,31 @@
       "source": "http://nilet.gov.lk/index.php/en/",
       "data": {
         "value": "2025-07-22"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0113 309 291",
+      "source": "https://nilet.gov.lk/index.php/en/services",
+      "data": {
+        "value": "0113 309 291"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/en/services",
+      "data": {
+        "value": "+94 11 2172 800"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0250411085",
-      "source": "http://nilet.gov.lk/index.php/en/services",
+      "source": "https://nilet.gov.lk/index.php/en/services",
       "data": {
         "value": "0250411085"
       }
@@ -278,34 +421,16 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/services",
+      "source": "https://nilet.gov.lk/index.php/en/services",
       "data": {
         "value": "0112 172 674"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/en/services",
-      "data": {
-        "value": "0113 309 291"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/en/services",
-      "data": {
-        "value": "+94 11 2172 800"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/en/services",
+      "source": "https://nilet.gov.lk/index.php/en/services",
       "data": {
         "value": "nilet.languages@gmail.com"
       }
@@ -314,7 +439,7 @@
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: or an engaging workshop, our auditorium offers the perfect blend of comfort, functionality, and style to make your event",
-      "source": "http://nilet.gov.lk/index.php/en/services",
+      "source": "https://nilet.gov.lk/index.php/en/services",
       "data": {
         "value": "or an engaging workshop, our auditorium offers the perfect blend of comfort, functionality, and style to make your event"
       }
@@ -323,7 +448,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: department",
-      "source": "http://nilet.gov.lk/index.php/en/services",
+      "source": "https://nilet.gov.lk/index.php/en/services",
       "data": {
         "value": "department"
       }
@@ -331,8 +456,53 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94112172673",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "+94112172673"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-3092910 ",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "011-3092910 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "+94 11 2172 800"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112086420",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "+94112086420"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2172674 ",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "011-2172674 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/si/",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
       "data": {
         "value": "0112 172 674"
       }
@@ -340,8 +510,35 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 011-2172673 ",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "011-2172673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2086422 ",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "011-2086422 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94113092910",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "+94113092910"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/si/",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
       "data": {
         "value": "0113 309 291"
       }
@@ -349,17 +546,89 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/si/",
+      "detail": "Published phone: 011-2086420 ",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
       "data": {
-        "value": "+94 11 2172 800"
+        "value": "011-2086420 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112172674",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "+94112172674"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112086422",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "+94112086422"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/si/",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "nilet.languages@gmail.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. ප්‍රධාන කාර්යාලය දුරකතන අංකය : 011-2086420 ප්‍",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "is being protected from spambots. You need JavaScript enabled to view it. ප්‍රධාන කාර්යාලය දුරකතන අංකය : 011-2086420 ප්‍"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 11 2172 800"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0113 309 291",
+      "source": "https://nilet.gov.lk/index.php/si/",
+      "data": {
+        "value": "0113 309 291"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 172 674",
+      "source": "https://nilet.gov.lk/index.php/si/",
+      "data": {
+        "value": "0112 172 674"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nilet.languages@gmail.com",
+      "source": "https://nilet.gov.lk/index.php/si/",
       "data": {
         "value": "nilet.languages@gmail.com"
       }
@@ -368,7 +637,7 @@
       "check": "published_update_date",
       "status": "pass",
       "detail": "Published published update date: 2025-07-22",
-      "source": "http://nilet.gov.lk/index.php/si/",
+      "source": "https://nilet.gov.lk/index.php/si/",
       "data": {
         "value": "2025-07-22"
       }
@@ -376,17 +645,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/ta/",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/ta/",
       "data": {
-        "value": "0112 172 674"
+        "value": "+94 11 2172 800"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/ta/",
+      "source": "https://nilet.gov.lk/index.php/ta/",
       "data": {
         "value": "0113 309 291"
       }
@@ -394,17 +663,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/ta/",
+      "detail": "Published phone: 0112 172 674",
+      "source": "https://nilet.gov.lk/index.php/ta/",
       "data": {
-        "value": "+94 11 2172 800"
+        "value": "0112 172 674"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/ta/",
+      "source": "https://nilet.gov.lk/index.php/ta/",
       "data": {
         "value": "nilet.languages@gmail.com"
       }
@@ -412,17 +681,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/overview",
-      "data": {
-        "value": "0113 309 291"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/overview",
+      "source": "https://nilet.gov.lk/index.php/en/",
       "data": {
         "value": "+94 11 2172 800"
       }
@@ -430,17 +690,71 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0250411085",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/overview",
+      "detail": "Published phone: 0113 309 291",
+      "source": "https://nilet.gov.lk/index.php/en/",
       "data": {
-        "value": "0250411085"
+        "value": "0113 309 291"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 172 674",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "0112 172 674"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nilet.languages@gmail.com",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "nilet.languages@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: Rs2",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "Rs2"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2025-07-22",
+      "source": "https://nilet.gov.lk/index.php/en/",
+      "data": {
+        "value": "2025-07-22"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/overview",
+      "data": {
+        "value": "+94 11 2172 800"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0250411084",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/overview",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/overview",
       "data": {
         "value": "0250411084"
       }
@@ -449,16 +763,34 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/overview",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/overview",
       "data": {
         "value": "0112 172 674"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0250411085",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/overview",
+      "data": {
+        "value": "0250411085"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0113 309 291",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/overview",
+      "data": {
+        "value": "0113 309 291"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/overview",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/overview",
       "data": {
         "value": "nilet.languages@gmail.com"
       }
@@ -467,7 +799,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: department",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/overview",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/overview",
       "data": {
         "value": "department"
       }
@@ -475,17 +807,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/board-of-management",
       "data": {
-        "value": "0112 172 674"
+        "value": "+94 11 2172 800"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/board-of-management",
       "data": {
         "value": "0113 309 291"
       }
@@ -493,17 +825,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "detail": "Published phone: 0112 172 674",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/board-of-management",
       "data": {
-        "value": "+94 11 2172 800"
+        "value": "0112 172 674"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/board-of-management",
       "data": {
         "value": "nilet.languages@gmail.com"
       }
@@ -512,7 +844,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/board-of-management",
       "data": {
         "value": "director"
       }
@@ -520,17 +852,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/senior-management",
       "data": {
-        "value": "0112 172 674"
+        "value": "+94 11 2172 800"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/senior-management",
       "data": {
         "value": "0113 309 291"
       }
@@ -538,17 +870,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "detail": "Published phone: 0112 172 674",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/senior-management",
       "data": {
-        "value": "+94 11 2172 800"
+        "value": "0112 172 674"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/senior-management",
       "data": {
         "value": "nilet.languages@gmail.com"
       }
@@ -557,7 +889,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/senior-management",
       "data": {
         "value": "director"
       }
@@ -565,17 +897,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/academic-board",
       "data": {
-        "value": "0112 172 674"
+        "value": "+94 11 2172 800"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/academic-board",
       "data": {
         "value": "0113 309 291"
       }
@@ -583,17 +915,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "detail": "Published phone: 0112 172 674",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/academic-board",
       "data": {
-        "value": "+94 11 2172 800"
+        "value": "0112 172 674"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/academic-board",
       "data": {
         "value": "nilet.languages@gmail.com"
       }
@@ -602,7 +934,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: department",
-      "source": "http://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "source": "https://nilet.gov.lk/index.php/en/about-us/academic-board",
       "data": {
         "value": "department"
       }
@@ -610,17 +942,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/academic-programs",
+      "detail": "Published phone: +94 11 2172 800",
+      "source": "https://nilet.gov.lk/index.php/en/academic-programs",
       "data": {
-        "value": "0112 172 674"
+        "value": "+94 11 2172 800"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/en/academic-programs",
+      "source": "https://nilet.gov.lk/index.php/en/academic-programs",
       "data": {
         "value": "0113 309 291"
       }
@@ -628,17 +960,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/en/academic-programs",
+      "detail": "Published phone: 0112 172 674",
+      "source": "https://nilet.gov.lk/index.php/en/academic-programs",
       "data": {
-        "value": "+94 11 2172 800"
+        "value": "0112 172 674"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/en/academic-programs",
+      "source": "https://nilet.gov.lk/index.php/en/academic-programs",
       "data": {
         "value": "nilet.languages@gmail.com"
       }
@@ -647,7 +979,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: department",
-      "source": "http://nilet.gov.lk/index.php/en/academic-programs",
+      "source": "https://nilet.gov.lk/index.php/en/academic-programs",
       "data": {
         "value": "department"
       }
@@ -656,7 +988,7 @@
       "check": "fees_and_payment",
       "status": "pass",
       "detail": "Published fees and payment: Rs. 48,500",
-      "source": "http://nilet.gov.lk/index.php/en/academic-programs",
+      "source": "https://nilet.gov.lk/index.php/en/academic-programs",
       "data": {
         "value": "Rs. 48,500"
       }
@@ -665,591 +997,15 @@
       "check": "processing_time",
       "status": "pass",
       "detail": "Published processing time: 450 Hours",
-      "source": "http://nilet.gov.lk/index.php/en/academic-programs",
+      "source": "https://nilet.gov.lk/index.php/en/academic-programs",
       "data": {
         "value": "450 Hours"
       }
     },
     {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0740144479 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0740144479 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0705725010",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0705725010"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007114",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007114"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007129",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007129"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0704000019 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0704000019 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007130 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007130 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007123 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007123 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007101 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007101 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007124 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007124 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0112 172 674"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0704000019",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0704000019"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0740144479",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0740144479"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: >0742007116",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": ">0742007116"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718676025 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0718676025 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007120 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007120 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0705725010 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0705725010 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007114 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007114 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718676025",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0718676025"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007102 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007102 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "+94 11 2172 800"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007107",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007107"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0775787496 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0775787496 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007129 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007129 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007107 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007107 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007121",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007121"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007121 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0769483282",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0769483282"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0773622213",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0773622213"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007115 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007115 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007125 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007125 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0775787496",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0775787496"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007116 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007116 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007122 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007122 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007130",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007130"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007102",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007102"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0773622213 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0773622213 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007101",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007101"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718004843 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0718004843 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007126 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 074 200 7125",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "074 200 7125"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0769483282 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0769483282 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718004843",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0718004843"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 074 200 7126",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "074 200 7126"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0113 309 291"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0772870697 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0772870697 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007122",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007122"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007123",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007123"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007115",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007115"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007105 ",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007105 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007120",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007120"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0772870697",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0772870697"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 074 200 7124",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "074 200 7124"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0742007105",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "0742007105"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "nilet.languages@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0113 309 291",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "data": {
-        "value": "0113 309 291"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2172 800",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "data": {
-        "value": "+94 11 2172 800"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0016170353",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "data": {
-        "value": "0016170353"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0006611169",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "data": {
-        "value": "0006611169"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0005050142",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "data": {
-        "value": "0005050142"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0038321197",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "data": {
-        "value": "0038321197"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 172 674",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "data": {
-        "value": "0112 172 674"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nilet.languages@gmail.com",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "data": {
-        "value": "nilet.languages@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 36430 visible characters across 12 pages",
+      "detail": "Substantive page content: 36430 visible characters across 14 pages",
       "source": "https://nilet.gov.lk/"
     }
   ],
@@ -1270,19 +1026,21 @@
     },
     {
       "host": "nilet.gov.lk",
-      "status": "expired",
-      "expires_at": "2026-10-06T04:17:01+05:30",
+      "status": "valid",
+      "expires_at": "2027-01-22T14:14:26+05:30",
       "hostname_valid": true,
-      "detail": "TLS certificate has expired"
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://nilet.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "status_code": 200,
+      "final_url": "https://nilet.gov.lk/index.php/en/",
+      "redirects": [
+        "https://nilet.gov.lk/index.php/en/"
+      ],
+      "elapsed_ms": 364,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://nilet.gov.lk/",
@@ -1291,18 +1049,20 @@
       "redirects": [
         "http://nilet.gov.lk/index.php/en/"
       ],
-      "elapsed_ms": 561,
+      "elapsed_ms": 142,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "https://nilet.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "status_code": 200,
+      "final_url": "https://nilet.gov.lk/index.php/en/",
+      "redirects": [
+        "https://nilet.gov.lk/index.php/en/"
+      ],
+      "elapsed_ms": 345,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://nilet.gov.lk/",
@@ -1311,173 +1071,187 @@
       "redirects": [
         "http://nilet.gov.lk/index.php/en/"
       ],
-      "elapsed_ms": 267,
+      "elapsed_ms": 93,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/services",
+      "url": "https://nilet.gov.lk/index.php/en/services",
       "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/en/services",
+      "final_url": "https://nilet.gov.lk/index.php/en/services",
       "redirects": [],
-      "elapsed_ms": 420,
+      "elapsed_ms": 377,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
-      "url": "http://nilet.gov.lk/index.php/si/",
+      "url": "https://nilet.gov.lk/index.php/en/contact-us-2",
       "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/si/",
+      "final_url": "https://nilet.gov.lk/index.php/en/contact-us-2",
       "redirects": [],
-      "elapsed_ms": 318,
+      "elapsed_ms": 112,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
-      "url": "http://nilet.gov.lk/index.php/ta/",
+      "url": "https://nilet.gov.lk/index.php/si/",
       "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/ta/",
+      "final_url": "https://nilet.gov.lk/index.php/si/",
       "redirects": [],
-      "elapsed_ms": 291,
+      "elapsed_ms": 105,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/about-us/overview",
+      "url": "https://nilet.gov.lk/index.php/ta/",
       "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/en/about-us/overview",
+      "final_url": "https://nilet.gov.lk/index.php/ta/",
       "redirects": [],
-      "elapsed_ms": 343,
+      "elapsed_ms": 353,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "url": "https://nilet.gov.lk/",
       "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "final_url": "https://nilet.gov.lk/index.php/en/",
+      "redirects": [
+        "https://nilet.gov.lk/index.php/en/"
+      ],
+      "elapsed_ms": 89,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nilet.gov.lk/index.php/en/about-us/overview",
+      "status_code": 200,
+      "final_url": "https://nilet.gov.lk/index.php/en/about-us/overview",
+      "redirects": [],
+      "elapsed_ms": 101,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "status_code": 200,
+      "final_url": "https://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "redirects": [],
+      "elapsed_ms": 103,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "status_code": 200,
+      "final_url": "https://nilet.gov.lk/index.php/en/about-us/senior-management",
       "redirects": [],
       "elapsed_ms": 342,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "url": "https://nilet.gov.lk/index.php/en/about-us/academic-board",
       "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "final_url": "https://nilet.gov.lk/index.php/en/about-us/academic-board",
       "redirects": [],
-      "elapsed_ms": 497,
+      "elapsed_ms": 346,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "url": "https://nilet.gov.lk/index.php/en/academic-programs",
       "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "final_url": "https://nilet.gov.lk/index.php/en/academic-programs",
       "redirects": [],
-      "elapsed_ms": 307,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "http://nilet.gov.lk/index.php/en/academic-programs",
-      "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/en/academic-programs",
-      "redirects": [],
-      "elapsed_ms": 364,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "redirects": [],
-      "elapsed_ms": 259,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "status_code": 200,
-      "final_url": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "redirects": [],
-      "elapsed_ms": 274,
+      "elapsed_ms": 121,
       "content_type": "text/html; charset=utf-8",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "http://nilet.gov.lk/index.php/en/",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-01-c5f138a87f86.html",
-      "sha256": "c5f138a87f8605741fa5e236202b7fd925e1acf710011a2e11165186eef38a42",
-      "bytes": 109904
+      "url": "https://nilet.gov.lk/index.php/en/",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-01-41396b5f1e78.html",
+      "sha256": "41396b5f1e781e27195c8dfbccd741bb696ceaa173746883cdcce2b6ddda4cff",
+      "bytes": 109910
     },
     {
       "url": "http://nilet.gov.lk/index.php/en/",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-02-ad3af63e50ee.html",
-      "sha256": "ad3af63e50ee37b0374acda7d890478684b12d59af835f4de54d830a2c9b5e76",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-02-289680e5e7f1.html",
+      "sha256": "289680e5e7f12a1f741f8316b9a04599784586cbdfcd352de20b9517ace0c0ed",
       "bytes": 109904
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/services",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-03-2e7456702333.html",
-      "sha256": "2e7456702333073a0da00b66ed020fdb81200548acbed012f428c55596b7bb19",
-      "bytes": 215975
+      "url": "https://nilet.gov.lk/index.php/en/",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-03-bf56f34e7f9f.html",
+      "sha256": "bf56f34e7f9fd8bd77cc836fb1388c7994d0859cb7ba310b148a4798e6346f30",
+      "bytes": 109910
     },
     {
-      "url": "http://nilet.gov.lk/index.php/si/",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-04-79718d663fd2.html",
-      "sha256": "79718d663fd20db1a55a936588ccb1bc3d5ac55ed1f3519edf191a55507d3bcd",
-      "bytes": 118022
+      "url": "http://nilet.gov.lk/index.php/en/",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-04-d6d80571f0b2.html",
+      "sha256": "d6d80571f0b2de5e6b7bba9a4d6748531bb45aa3be5f4ac20c790dbe54dfb7c1",
+      "bytes": 109904
     },
     {
-      "url": "http://nilet.gov.lk/index.php/ta/",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-05-00405c56a75c.html",
-      "sha256": "00405c56a75c0a3878210135a8e19b555c234ccf2e9d89cce6f6860a62ad920c",
-      "bytes": 121039
+      "url": "https://nilet.gov.lk/index.php/en/services",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-05-cf1a7c29a467.html",
+      "sha256": "cf1a7c29a467548688be9428ffac47d0fe2738a05a36878cc5da55ba23544d3c",
+      "bytes": 215995
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/about-us/overview",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-06-ffab0fcaa0e7.html",
-      "sha256": "ffab0fcaa0e7d07e55ee85c6fc975127e39569c2e3a4c0b35b67a31b636dddb9",
-      "bytes": 103811
+      "url": "https://nilet.gov.lk/index.php/en/contact-us-2",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-06-021f8c8e14da.html",
+      "sha256": "021f8c8e14dab19d5afc4c9f728fd006cb4e121e5e9d84489dacfffb7f6540bb",
+      "bytes": 67229
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/about-us/board-of-management",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-07-e97ecba5a426.html",
-      "sha256": "e97ecba5a4267f3230822c70180a35773aa318acec1bfb3a8a6b2d69d49569ad",
-      "bytes": 62674
+      "url": "https://nilet.gov.lk/index.php/si/",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-07-4f6d98d49650.html",
+      "sha256": "4f6d98d49650e3b1948fe90cbd934a2bdda79e0de5019c754a577bd290a7c9d3",
+      "bytes": 118028
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/about-us/senior-management",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-08-29b14c3a0644.html",
-      "sha256": "29b14c3a06440d2dd77d5da428d83a180541dd3f8ccad6e7f5924f3722fd7e1a",
-      "bytes": 64848
+      "url": "https://nilet.gov.lk/index.php/ta/",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-08-1694e4a566c4.html",
+      "sha256": "1694e4a566c410599494b6beef1c5ad90754b50c472fb5ece0e3e8860ed22ff2",
+      "bytes": 121045
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/about-us/academic-board",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-09-8cfc553228b3.html",
-      "sha256": "8cfc553228b31819c43cfabfee5cc28fce50897e9e4b4ec7d0e832477f7eab7a",
-      "bytes": 62188
+      "url": "https://nilet.gov.lk/index.php/en/",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-09-56572f513a37.html",
+      "sha256": "56572f513a37b2797d818a0880fb53a709b60e80a57a072345287a6103c6e9fb",
+      "bytes": 109910
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/academic-programs",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-10-e8d95043c472.html",
-      "sha256": "e8d95043c472aab1cca614f5861ee75184360d09b244b5a484229619714badee",
-      "bytes": 130255
+      "url": "https://nilet.gov.lk/index.php/en/about-us/overview",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-10-204d190033e2.html",
+      "sha256": "204d190033e264baf8924a8470c7636baa7be9f592f7f899e77ecfbcdf14cd40",
+      "bytes": 103831
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/facilities-staff/staff",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-11-525cde176167.html",
-      "sha256": "525cde17616769037289c5b32e1916ad1d2df40b76e676f1cc572e4c620ff13b",
-      "bytes": 65124
+      "url": "https://nilet.gov.lk/index.php/en/about-us/board-of-management",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-11-4356fceac39c.html",
+      "sha256": "4356fceac39c1d7a2f16d6c2c138a8bdb7f4a7f1732b092c22c79656eaf21479",
+      "bytes": 62694
     },
     {
-      "url": "http://nilet.gov.lk/index.php/en/facilities-staff/resource-persons",
-      "path": "audit.output/nilet.gov.lk/20261024.0821/snapshots/page-12-21cb93752fd4.html",
-      "sha256": "21cb93752fd4c19c011f3c7b67985834b7417f984c154a600ee14e5567951881",
-      "bytes": 80362
+      "url": "https://nilet.gov.lk/index.php/en/about-us/senior-management",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-12-fa82dfb8c1b9.html",
+      "sha256": "fa82dfb8c1b957ef9aed8540705b95565c70ba5bfbef28f2cd176ebf31ea24f7",
+      "bytes": 64868
+    },
+    {
+      "url": "https://nilet.gov.lk/index.php/en/about-us/academic-board",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-13-e47c5fb9a229.html",
+      "sha256": "e47c5fb9a229ab26d561e0f34fd9a2468334055b92d5ee6370b081b6958926f0",
+      "bytes": 62208
+    },
+    {
+      "url": "https://nilet.gov.lk/index.php/en/academic-programs",
+      "path": "audit.output/nilet.gov.lk/20261025.0814/snapshots/page-14-fc83c350d479.html",
+      "sha256": "fc83c350d4790f88309be29bba1f3ebb5377d108ab373ecc87d959aa10c0104d",
+      "bytes": 130275
     }
   ],
   "reviewer_decisions": [],
@@ -1493,8 +1267,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -1542,38 +1316,100 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate has expired"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: or an engaging workshop, our auditorium offers the perfect blend of comfort, functionality, and style to make your event; Phone: +94 11 2172 800 (15 phone numbers found); Email: nilet.languages@gmail.com; Published named responsibility: department",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: or an engaging workshop, our auditorium offers the perfect blend of comfort, functionality, and style to make your event"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 11 2172 800 (15 phone numbers found); Email: nilet.languages@gmail.com"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: Rs2"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published processing time: 450 Hours"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published published update date: 2025-07-22"
+        }
+      ]
     },
     {
       "level": 4,
@@ -1593,7 +1429,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.156.208",
+    "egress_ip": "172.172.237.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

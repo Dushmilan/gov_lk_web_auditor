@@ -1,18 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "77ce0a32-f880-4b0c-8e19-6a41c734bd15",
+  "audit_id": "9b8afc7a-bd50-4aa1-95c0-f8d1fe955cf9",
   "url": "https://rticommission.lk/",
   "normalized_url": "https://rticommission.lk/",
-  "started_at": "2026-10-24T08:16:59.079080+05:30",
-  "completed_at": "2026-10-24T08:17:02.924171+05:30",
+  "started_at": "2026-10-25T08:09:11.176227+05:30",
+  "completed_at": "2026-10-25T08:09:41.300128+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -20,88 +26,716 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T08:16:59.598602+05:30"
+      "observed_at": "2026-10-25T08:09:11.837032+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T08:16:59.598615+05:30"
+      "observed_at": "2026-10-25T08:09:11.837048+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-24T08:16:59.615010+05:30"
+      "observed_at": "2026-10-25T08:09:11.847725+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://rticommission.lk/",
       "source": "https://rticommission.lk/",
-      "observed_at": "2026-10-24T08:17:02.902148+05:30"
+      "observed_at": "2026-10-25T08:09:39.648508+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at http://rticommission.lk/",
       "source": "http://rticommission.lk/",
-      "observed_at": "2026-10-24T08:17:02.902163+05:30"
+      "observed_at": "2026-10-25T08:09:39.648523+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://rticommission.lk/",
       "source": "https://rticommission.lk/",
-      "observed_at": "2026-10-24T08:17:02.902168+05:30"
+      "observed_at": "2026-10-25T08:09:39.648528+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at http://rticommission.lk/",
       "source": "http://rticommission.lk/",
-      "observed_at": "2026-10-24T08:17:02.902171+05:30"
+      "observed_at": "2026-10-25T08:09:39.648531+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at http://www.rticommission.lk/web/index.php?lang=si",
+      "source": "http://www.rticommission.lk/web/index.php?lang=si",
+      "observed_at": "2026-10-25T08:09:39.648534+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at http://www.rticommission.lk/web/index.php?lang=ta",
+      "source": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "observed_at": "2026-10-25T08:09:39.648537+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at http://www.rticommission.lk/web/index.php?lang=en",
+      "source": "http://www.rticommission.lk/web/index.php?lang=en",
+      "observed_at": "2026-10-25T08:09:39.648539+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "observed_at": "2026-10-25T08:09:39.648542+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "observed_at": "2026-10-25T08:09:39.648545+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "observed_at": "2026-10-25T08:09:39.648547+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "observed_at": "2026-10-25T08:09:39.648550+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "observed_at": "2026-10-25T08:09:39.648552+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "observed_at": "2026-10-25T08:09:39.648555+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "observed_at": "2026-10-25T08:09:39.648557+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://rticommission.lk/",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=si",
       "data": {
-        "value": "0950635027"
+        "value": "011 2691625 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://rticommission.lk/",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=si",
       "data": {
-        "value": "0950635027"
+        "value": "011 2678980 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://rticommission.lk/",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=si",
       "data": {
-        "value": "0950635027"
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?lang=si",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?lang=si",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://rticommission.lk/",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=ta",
       "data": {
-        "value": "0950635027"
+        "value": "011 2691625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "011 2678980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 08-12-2025) 08 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "08-12-2025) 08 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625",
+      "source": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "011 2691625"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.12.2021 - 31.0",
+      "source": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "0.12.2021 - 31.0"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625",
+      "source": "http://www.rticommission.lk/web/index.php?lang=en",
+      "data": {
+        "value": "011 2691625"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=en",
+      "data": {
+        "value": "011 2691625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=en",
+      "data": {
+        "value": "011 2678980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?lang=en",
+      "data": {
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "http://www.rticommission.lk/web/index.php?lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "http://www.rticommission.lk/web/index.php?lang=en",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?lang=en",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "data": {
+        "value": "011 2691625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "data": {
+        "value": "011 2678980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "data": {
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "011 2691625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "011 2678980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "data": {
+        "value": "011 2691625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "data": {
+        "value": "011 2678980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "data": {
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 007.11.01 - 201",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "007.11.01 - 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "011 2691625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "011 2678980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 05-10-2021 - 04-",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "05-10-2021 - 04-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 09.02.2010 - 20",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "09.02.2010 - 20"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 007.01.30-200",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "007.01.30-200"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 004.11.10 - 200",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "004.11.10 - 200"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 08.2020-02-04 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "08.2020-02-04 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 006.11.01 - 200",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "006.11.01 - 200"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 03-2019 - 11-12-",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "03-2019 - 11-12-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07. 2019.09.12 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "07. 2019.09.12 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: රු,",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "රු,"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "data": {
+        "value": "011 2691625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "data": {
+        "value": "011 2678980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "data": {
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "data": {
+        "value": "011 2691625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "data": {
+        "value": "011 2678980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "data": {
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2691625 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "data": {
+        "value": "011 2691625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2678980 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "data": {
+        "value": "011 2678980 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-07 - 2.42 ",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "data": {
+        "value": "026-04-07 - 2.42 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf",
+      "source": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "data": {
+        "value": "http://www.rticommission.lk/web/images/pdf/2024-2025---RTIC-NOTABLE-DEVELOPMENTS-2.pdf"
       }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 24864 visible characters across 14 pages",
       "source": "https://rticommission.lk/"
     }
   ],
@@ -135,7 +769,7 @@
       "status_code": 200,
       "final_url": "https://rticommission.lk/",
       "redirects": [],
-      "elapsed_ms": 1003,
+      "elapsed_ms": 997,
       "content_type": "text/html",
       "error": null
     },
@@ -144,7 +778,7 @@
       "status_code": 200,
       "final_url": "http://rticommission.lk/",
       "redirects": [],
-      "elapsed_ms": 507,
+      "elapsed_ms": 329,
       "content_type": "text/html",
       "error": null
     },
@@ -153,7 +787,7 @@
       "status_code": 200,
       "final_url": "https://rticommission.lk/",
       "redirects": [],
-      "elapsed_ms": 949,
+      "elapsed_ms": 1485,
       "content_type": "text/html",
       "error": null
     },
@@ -162,35 +796,185 @@
       "status_code": 200,
       "final_url": "http://rticommission.lk/",
       "redirects": [],
-      "elapsed_ms": 269,
+      "elapsed_ms": 969,
       "content_type": "text/html",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?lang=si",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?lang=si",
+      "redirects": [],
+      "elapsed_ms": 3265,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "redirects": [],
+      "elapsed_ms": 2511,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?lang=en",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?lang=en",
+      "redirects": [],
+      "elapsed_ms": 2144,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "redirects": [],
+      "elapsed_ms": 3541,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "redirects": [],
+      "elapsed_ms": 2447,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "redirects": [],
+      "elapsed_ms": 1782,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "redirects": [],
+      "elapsed_ms": 1500,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "redirects": [],
+      "elapsed_ms": 2113,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "redirects": [],
+      "elapsed_ms": 1758,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "status_code": 200,
+      "final_url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "redirects": [],
+      "elapsed_ms": 1728,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://rticommission.lk/",
-      "path": "audit.output/rticommission.lk/20261024.0816/snapshots/page-01-e95c97c6d5b8.html",
-      "sha256": "e95c97c6d5b8cccb728df4508876e9204adfffb30adc3de943c2a4670aa6ca6f",
-      "bytes": 11899
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-01-8e8231028d7b.html",
+      "sha256": "8e8231028d7bf2280c17d2c033ff9fe98d1916ce8686320bdbb51eb0abc76723",
+      "bytes": 1336
     },
     {
       "url": "http://rticommission.lk/",
-      "path": "audit.output/rticommission.lk/20261024.0816/snapshots/page-02-17e0dde879d8.html",
-      "sha256": "17e0dde879d8e1417200a00dc96f3294e55e8590c3a1c9481f331a6982d562e1",
-      "bytes": 11898
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-02-8e8231028d7b.html",
+      "sha256": "8e8231028d7bf2280c17d2c033ff9fe98d1916ce8686320bdbb51eb0abc76723",
+      "bytes": 1336
     },
     {
       "url": "https://rticommission.lk/",
-      "path": "audit.output/rticommission.lk/20261024.0816/snapshots/page-03-ab6ca9eb5f73.html",
-      "sha256": "ab6ca9eb5f7346bc42637011df324f80e5ba79c5e35d7f907df36af47de5ce1e",
-      "bytes": 11853
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-03-8e8231028d7b.html",
+      "sha256": "8e8231028d7bf2280c17d2c033ff9fe98d1916ce8686320bdbb51eb0abc76723",
+      "bytes": 1336
     },
     {
       "url": "http://rticommission.lk/",
-      "path": "audit.output/rticommission.lk/20261024.0816/snapshots/page-04-4775a86dc97d.html",
-      "sha256": "4775a86dc97d017834d1d4a9e906a5c5796b3b8f1dd94d789e7b0b4aaca40078",
-      "bytes": 11852
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-04-8e8231028d7b.html",
+      "sha256": "8e8231028d7bf2280c17d2c033ff9fe98d1916ce8686320bdbb51eb0abc76723",
+      "bytes": 1336
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?lang=si",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-05-feecaf421864.html",
+      "sha256": "feecaf421864b1dd1f3a2b05d0eec58813007a9b6c5e0fa50a937df277106add",
+      "bytes": 159847
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?lang=ta",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-06-2cc7affb7962.html",
+      "sha256": "2cc7affb7962b3711ea39900e9e43e0a0931e976b5d10c0c817517843041f090",
+      "bytes": 165802
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?lang=en",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-07-a885f56eb8cb.html",
+      "sha256": "a885f56eb8cb4ab2d37f8ec5ee128f6dcae5b9ccb18e16c2c6eb42a8ad0fcab7",
+      "bytes": 232434
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&lang=si&Itemid=101",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-08-7e4435d7a3ed.html",
+      "sha256": "7e4435d7a3ed0ad5f2667e964071115d370b7ebad3b5d3d98434250f3046099d",
+      "bytes": 160223
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-09-3d3c07d35318.html",
+      "sha256": "3d3c07d353187c5749164f19acbdc48ce8bd73bfb587be06d99ea231a69302d4",
+      "bytes": 160223
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=11&Itemid=142&lang=si",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-10-02d030dc4911.html",
+      "sha256": "02d030dc4911a79da4e7700e17a43ff0cecf1f2f77a7cbdcedf71ea5e4f6dd54",
+      "bytes": 137881
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=10&Itemid=141&lang=si",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-11-273e4cf0c56a.html",
+      "sha256": "273e4cf0c56ac6b2e33cc7e742790abcfbec5db74f3041f15fc7fdc78cba444b",
+      "bytes": 173546
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=44&Itemid=105&lang=si",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-12-75e73b86072a.html",
+      "sha256": "75e73b86072a9275ec206e49abc830cbfbd7b87fc544f073455bce8bb94c3f9a",
+      "bytes": 132921
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=3&Itemid=106&lang=si",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-13-e429513a629b.html",
+      "sha256": "e429513a629bfaa37abec5e590a19ff0b0962efa5834c3a75bc6f322276b98e2",
+      "bytes": 128982
+    },
+    {
+      "url": "http://www.rticommission.lk/web/index.php?option=com_content&view=article&id=14&Itemid=145&lang=si",
+      "path": "audit.output/rticommission.lk/20261025.0809/snapshots/page-14-c4b0fe71a05d.html",
+      "sha256": "c4b0fe71a05d79bd374f8fde04328b431227e7b52e24d935422c0db0556f623a",
+      "bytes": 129444
     }
   ],
   "reviewer_decisions": [],
@@ -206,8 +990,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -219,26 +1003,26 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
@@ -276,9 +1060,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found; No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -306,7 +1109,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.156.208",
+    "egress_ip": "172.172.237.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

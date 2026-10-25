@@ -1,18 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b81e58ef-d157-4113-9692-9aeab0b8d55a",
+  "audit_id": "b53d12a9-3bb6-43f4-ac6d-a37ee4e3bf23",
   "url": "https://dme.lk/",
   "normalized_url": "https://dme.lk/",
-  "started_at": "2026-10-24T08:21:36.215665+05:30",
-  "completed_at": "2026-10-24T08:21:41.983123+05:30",
+  "started_at": "2026-10-25T08:14:36.102046+05:30",
+  "completed_at": "2026-10-25T08:15:00.826532+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -20,88 +26,554 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T08:21:36.790253+05:30"
+      "observed_at": "2026-10-25T08:14:37.435694+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T08:21:36.790276+05:30"
+      "observed_at": "2026-10-25T08:14:37.435712+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-24T08:21:37.410955+05:30"
+      "observed_at": "2026-10-25T08:14:37.638468+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://dme.lk/",
+      "detail": "Probe 1: HTTP 200 at https://dme.lk/index.php?lang=en",
       "source": "https://dme.lk/",
-      "observed_at": "2026-10-24T08:21:41.960671+05:30"
+      "observed_at": "2026-10-25T08:15:00.287840+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://dme.lk/",
+      "detail": "Probe 2: HTTP 200 at http://dme.lk/index.php?lang=en",
       "source": "http://dme.lk/",
-      "observed_at": "2026-10-24T08:21:41.960689+05:30"
+      "observed_at": "2026-10-25T08:15:00.287856+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://dme.lk/",
+      "detail": "Probe 3: HTTP 200 at https://dme.lk/index.php?lang=en",
       "source": "https://dme.lk/",
-      "observed_at": "2026-10-24T08:21:41.960693+05:30"
+      "observed_at": "2026-10-25T08:15:00.287860+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://dme.lk/",
+      "detail": "Probe 4: HTTP 200 at http://dme.lk/index.php?lang=en",
       "source": "http://dme.lk/",
-      "observed_at": "2026-10-24T08:21:41.960696+05:30"
+      "observed_at": "2026-10-25T08:15:00.287864+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://dme.lk/index.php?lang=en",
+      "source": "https://dme.lk/",
+      "observed_at": "2026-10-25T08:15:00.287867+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://dme.lk/index.php?option=com_finder&view=search&Itemid=193&lang=en",
+      "source": "https://dme.lk/index.php?option=com_finder&view=search&Itemid=193&lang=en",
+      "observed_at": "2026-10-25T08:15:00.287869+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://dme.lk/index.php?lang=si",
+      "source": "https://dme.lk/index.php?lang=si",
+      "observed_at": "2026-10-25T08:15:00.287872+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://dme.lk/index.php?lang=ta",
+      "source": "https://dme.lk/index.php?lang=ta",
+      "observed_at": "2026-10-25T08:15:00.287890+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://dme.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "source": "https://dme.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "observed_at": "2026-10-25T08:15:00.287893+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://dme.lk/index.php?option=com_content&view=article&id=30&Itemid=161&lang=en",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=30&Itemid=161&lang=en",
+      "observed_at": "2026-10-25T08:15:00.287895+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://dme.lk/index.php?option=com_content&view=article&id=35&Itemid=162&lang=en",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=35&Itemid=162&lang=en",
+      "observed_at": "2026-10-25T08:15:00.287898+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://dme.lk/index.php?option=com_content&view=article&id=41&Itemid=163&lang=en",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=41&Itemid=163&lang=en",
+      "observed_at": "2026-10-25T08:15:00.287901+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://dme.lk/index.php?option=com_content&view=article&id=42&Itemid=164&lang=en",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=42&Itemid=164&lang=en",
+      "observed_at": "2026-10-25T08:15:00.287904+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://dme.lk/index.php?option=com_content&view=article&id=36&Itemid=165&lang=en",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=36&Itemid=165&lang=en",
+      "observed_at": "2026-10-25T08:15:00.287906+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://dme.lk/",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?lang=en",
       "data": {
-        "value": "0950635027"
+        "value": "076 654 8866 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://dme.lk/",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?lang=en",
       "data": {
-        "value": "0950635027"
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://dme.lk/",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "http://dme.lk/index.php?lang=en",
       "data": {
-        "value": "0950635027"
+        "value": "076 654 8866 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://dme.lk/",
+      "detail": "Published phone: +94766548866",
+      "source": "http://dme.lk/index.php?lang=en",
       "data": {
-        "value": "0950635027"
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "http://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "http://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "http://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "http://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://dme.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?option=com_finder&view=search&Itemid=193&lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?option=com_finder&view=search&Itemid=193&lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?option=com_finder&view=search&Itemid=193&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?lang=si",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?lang=si",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://dme.lk/index.php?lang=si",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?lang=ta",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?lang=ta",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?lang=ta",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://dme.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=30&Itemid=161&lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=30&Itemid=161&lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=30&Itemid=161&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=35&Itemid=162&lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=35&Itemid=162&lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=35&Itemid=162&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=41&Itemid=163&lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=41&Itemid=163&lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=41&Itemid=163&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=42&Itemid=164&lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=42&Itemid=164&lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=42&Itemid=164&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 654 8866 ",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=36&Itemid=165&lang=en",
+      "data": {
+        "value": "076 654 8866 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94766548866",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=36&Itemid=165&lang=en",
+      "data": {
+        "value": "+94766548866"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://dme.lk/index.php?option=com_content&view=article&id=36&Itemid=165&lang=en",
+      "data": {
+        "value": "director"
       }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 3851 visible characters across 14 pages",
       "source": "https://dme.lk/"
     }
   ],
@@ -130,64 +602,224 @@
     {
       "url": "https://dme.lk/",
       "status_code": 200,
-      "final_url": "https://dme.lk/",
-      "redirects": [],
-      "elapsed_ms": 560,
-      "content_type": "text/html",
+      "final_url": "https://dme.lk/index.php?lang=en",
+      "redirects": [
+        "https://dme.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 1048,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://dme.lk/",
       "status_code": 200,
-      "final_url": "http://dme.lk/",
-      "redirects": [],
-      "elapsed_ms": 837,
-      "content_type": "text/html",
+      "final_url": "http://dme.lk/index.php?lang=en",
+      "redirects": [
+        "http://dme.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 1969,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "https://dme.lk/",
       "status_code": 200,
-      "final_url": "https://dme.lk/",
-      "redirects": [],
-      "elapsed_ms": 537,
-      "content_type": "text/html",
+      "final_url": "https://dme.lk/index.php?lang=en",
+      "redirects": [
+        "https://dme.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 630,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://dme.lk/",
       "status_code": 200,
-      "final_url": "http://dme.lk/",
+      "final_url": "http://dme.lk/index.php?lang=en",
+      "redirects": [
+        "http://dme.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 1004,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?lang=en",
+      "redirects": [
+        "https://dme.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 939,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_finder&view=search&Itemid=193&lang=en",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?option=com_finder&view=search&Itemid=193&lang=en",
       "redirects": [],
-      "elapsed_ms": 171,
-      "content_type": "text/html",
+      "elapsed_ms": 569,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/index.php?lang=si",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?lang=si",
+      "redirects": [],
+      "elapsed_ms": 706,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/index.php?lang=ta",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?lang=ta",
+      "redirects": [],
+      "elapsed_ms": 699,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "redirects": [],
+      "elapsed_ms": 555,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=30&Itemid=161&lang=en",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?option=com_content&view=article&id=30&Itemid=161&lang=en",
+      "redirects": [],
+      "elapsed_ms": 477,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=35&Itemid=162&lang=en",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?option=com_content&view=article&id=35&Itemid=162&lang=en",
+      "redirects": [],
+      "elapsed_ms": 512,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=41&Itemid=163&lang=en",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?option=com_content&view=article&id=41&Itemid=163&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1023,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=42&Itemid=164&lang=en",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?option=com_content&view=article&id=42&Itemid=164&lang=en",
+      "redirects": [],
+      "elapsed_ms": 695,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=36&Itemid=165&lang=en",
+      "status_code": 200,
+      "final_url": "https://dme.lk/index.php?option=com_content&view=article&id=36&Itemid=165&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1085,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "https://dme.lk/",
-      "path": "audit.output/dme.lk/20261024.0821/snapshots/page-01-a57229024353.html",
-      "sha256": "a57229024353c356694b9ab63be19fa78fa0c9e04c4328ffa2bd7883f1a14721",
-      "bytes": 11963
+      "url": "https://dme.lk/index.php?lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-01-95529cde92a3.html",
+      "sha256": "95529cde92a38d5a846b54ead4702113e30f5b40cd0c25e5096aeb502c5ccfaa",
+      "bytes": 86316
     },
     {
-      "url": "http://dme.lk/",
-      "path": "audit.output/dme.lk/20261024.0821/snapshots/page-02-647ff7f18406.html",
-      "sha256": "647ff7f18406241168aaf1d6ebceaf014cf49024575b9dec967aaf6f0838a464",
-      "bytes": 12072
+      "url": "http://dme.lk/index.php?lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-02-472523c4ee06.html",
+      "sha256": "472523c4ee06463dea6ca078ece070aa6f7e0dd2719f087c0c5361aef9f067ea",
+      "bytes": 86295
     },
     {
-      "url": "https://dme.lk/",
-      "path": "audit.output/dme.lk/20261024.0821/snapshots/page-03-be48f92a5722.html",
-      "sha256": "be48f92a5722495f662b277ed9b4d046418a9dfdd6ed5346cbcd9b3e2ff60dca",
-      "bytes": 12087
+      "url": "https://dme.lk/index.php?lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-03-7383bcf98033.html",
+      "sha256": "7383bcf980339a5943504135cca949dd578aad1a4815b9ea318c70dd7531508f",
+      "bytes": 86316
     },
     {
-      "url": "http://dme.lk/",
-      "path": "audit.output/dme.lk/20261024.0821/snapshots/page-04-50ed0c6618f3.html",
-      "sha256": "50ed0c6618f37ee9e23600d91d0035bed4a10cf7309bd196d2d769e49d3d8f33",
-      "bytes": 12086
+      "url": "http://dme.lk/index.php?lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-04-4eef718ead28.html",
+      "sha256": "4eef718ead289044bb94a46f5e001b2bb66830d8d85ab9efebd57187c25b5da5",
+      "bytes": 86295
+    },
+    {
+      "url": "https://dme.lk/index.php?lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-05-e85c11c5899c.html",
+      "sha256": "e85c11c5899cd3a8e553f130b784386b11f27499c5b59d5f55b1c228fcd1b66e",
+      "bytes": 86316
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_finder&view=search&Itemid=193&lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-06-b26953c45f02.html",
+      "sha256": "b26953c45f0275c0888fd2b2ba69e1456e12b2b6f7a8b764817f0154b834b9c9",
+      "bytes": 92106
+    },
+    {
+      "url": "https://dme.lk/index.php?lang=si",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-07-6a1bbbd0d7a4.html",
+      "sha256": "6a1bbbd0d7a4a8b6954e1d3a225e043eaff8ad4d096e68c2ca110aab7f1a6192",
+      "bytes": 89520
+    },
+    {
+      "url": "https://dme.lk/index.php?lang=ta",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-08-d7800b87d82d.html",
+      "sha256": "d7800b87d82d42d7a3029ea5b256e3d8ea50dcb37c5f0513a110972753b18bc2",
+      "bytes": 91043
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-09-ce09fee5b63b.html",
+      "sha256": "ce09fee5b63b4703a7895e169ae214d74235fee33a3a1fa495a2cfc82ef79668",
+      "bytes": 86636
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=30&Itemid=161&lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-10-1d56627afe42.html",
+      "sha256": "1d56627afe42d61c900f0b96e3607a5680eb654ac05bd0e88a1cc75c0674556b",
+      "bytes": 87771
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=35&Itemid=162&lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-11-0ea1b645848c.html",
+      "sha256": "0ea1b645848cd8a8b2e06921932c317782488939b6eaa6d78aedd93a87ab26d5",
+      "bytes": 87353
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=41&Itemid=163&lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-12-861218b05741.html",
+      "sha256": "861218b057413e219be7fec26e593914b014857c2d0aee27b4dc1c11ae2c41db",
+      "bytes": 87481
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=42&Itemid=164&lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-13-88552768cb9c.html",
+      "sha256": "88552768cb9c528aa752b9da895e3c2ae2c67c4a3494effb299051d685a83d06",
+      "bytes": 87490
+    },
+    {
+      "url": "https://dme.lk/index.php?option=com_content&view=article&id=36&Itemid=165&lang=en",
+      "path": "audit.output/dme.lk/20261025.0814/snapshots/page-14-0f4eee7e11bc.html",
+      "sha256": "0f4eee7e11bc28573d3a40455e117870412ef0d08e37c100aeb1432fbb9a7c01",
+      "bytes": 88701
     }
   ],
   "reviewer_decisions": [],
@@ -203,8 +835,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -216,26 +848,26 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
@@ -273,9 +905,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found; No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -303,7 +954,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.156.208",
+    "egress_ip": "172.172.237.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

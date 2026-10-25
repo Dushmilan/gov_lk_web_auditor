@@ -1,8 +1,8 @@
 # Website Audit: https://hc-victoria.gov.lk/
 
-- Completed: 2026-10-24 08:15
+- Completed: 2026-10-25 08:07
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.156.208 (US, github-actions)
+- Vantage: 172.172.237.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: in Sri Lanka\",\"clean_form_button\":\"Clean Form\",\"name\":\"Name\",\"cancel_button\":\"Cancel\",\"terms_and_condition; Phone: 0037736842 (4 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
+Published postal address: in Sri Lanka\",\"clean_form_button\":\"Clean Form\",\"name\":\"Name\",\"cancel_button\":\"Cancel\",\"terms_and_condition; Phone: 0888474738 (4 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: in Sri Lanka\",\"clean_form_button\":\"Clean Form\",\"name\":\"Name\",\"cancel_button\":\"Cancel\",\"terms_and_condition |
-| reachable_contacts | ✅ | Phone: 0037736842 (4 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0888474738 (4 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

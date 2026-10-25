@@ -1,8 +1,8 @@
 # Website Audit: https://ngosec.gov.lk/
 
-- Completed: 2026-10-24 08:25
+- Completed: 2026-10-25 08:21
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.156.208 (US, github-actions)
+- Vantage: 172.172.237.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. 'OUR address' 14th Floor, Suhurupaya, Battaram; Phone: +94) 112877376 (3910 phone numbers found); Email: ngosecretariat.gov@gmail.com/ (1586 email addresses found); Published named responsibility: director
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. 'OUR address' 14th Floor, Suhurupaya, Battaram; Phone: +94) 112884612 (3908 phone numbers found); Email: ngosecretariat.gov@gmail.com/ (1586 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. 'OUR address' 14th Floor, Suhurupaya, Battaram |
-| reachable_contacts | ✅ | Phone: +94) 112877376 (3910 phone numbers found); Email: ngosecretariat.gov@gmail.com/ (1586 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 112884612 (3908 phone numbers found); Email: ngosecretariat.gov@gmail.com/ (1586 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

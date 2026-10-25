@@ -1,18 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "09b7ee3e-bb7b-4ae4-8716-87ecc6d0b009",
+  "audit_id": "3d42a8ee-a6df-42db-acc9-a7ec26f416ab",
   "url": "https://buildings.gov.lk/",
   "normalized_url": "https://buildings.gov.lk/",
-  "started_at": "2026-10-24T08:18:01.100814+05:30",
-  "completed_at": "2026-10-24T08:18:09.391630+05:30",
+  "started_at": "2026-10-25T08:10:18.905388+05:30",
+  "completed_at": "2026-10-25T08:11:29.230507+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -20,88 +26,545 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T08:18:01.802798+05:30"
+      "observed_at": "2026-10-25T08:10:19.960031+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T08:18:01.802822+05:30"
+      "observed_at": "2026-10-25T08:10:19.960056+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-24T08:18:02.328419+05:30"
+      "observed_at": "2026-10-25T08:10:21.224368+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://buildings.gov.lk/",
+      "detail": "Probe 1: HTTP 200 at https://buildings.gov.lk/index.php?lang=en",
       "source": "https://buildings.gov.lk/",
-      "observed_at": "2026-10-24T08:18:09.371165+05:30"
+      "observed_at": "2026-10-25T08:11:28.917946+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://buildings.gov.lk/",
+      "detail": "Probe 2: HTTP 200 at https://buildings.gov.lk/index.php?lang=en",
       "source": "http://buildings.gov.lk/",
-      "observed_at": "2026-10-24T08:18:09.371180+05:30"
+      "observed_at": "2026-10-25T08:11:28.917962+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://buildings.gov.lk/",
+      "detail": "Probe 3: HTTP 200 at https://buildings.gov.lk/index.php?lang=en",
       "source": "https://buildings.gov.lk/",
-      "observed_at": "2026-10-24T08:18:09.371184+05:30"
+      "observed_at": "2026-10-25T08:11:28.917967+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://buildings.gov.lk/",
+      "detail": "Probe 4: HTTP 200 at https://buildings.gov.lk/index.php?lang=en",
       "source": "http://buildings.gov.lk/",
-      "observed_at": "2026-10-24T08:18:09.371188+05:30"
+      "observed_at": "2026-10-25T08:11:28.917970+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917974+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=163&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=163&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917976+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=164&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=164&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917979+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=165&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=165&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917982+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=166&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=166&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917985+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=167&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=167&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917987+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=168&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=168&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917990+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=article&id=18&Itemid=169&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=18&Itemid=169&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917993+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=article&id=19&Itemid=170&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=19&Itemid=170&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917997+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://buildings.gov.lk/index.php?option=com_content&view=article&id=20&Itemid=171&lang=en",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=20&Itemid=171&lang=en",
+      "observed_at": "2026-10-25T08:11:28.917999+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://buildings.gov.lk/",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
       "data": {
-        "value": "0950635027"
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "department"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://buildings.gov.lk/",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
       "data": {
-        "value": "0950635027"
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "department"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://buildings.gov.lk/",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
       "data": {
-        "value": "0950635027"
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "department"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://buildings.gov.lk/",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
       "data": {
-        "value": "0950635027"
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=163&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=163&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=163&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=163&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=164&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=164&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=164&lang=en",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=164&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=165&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=165&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=165&lang=en",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=166&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=166&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=166&lang=en",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=166&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=167&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=167&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=167&lang=en",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=167&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=168&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=168&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=168&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=168&lang=en",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=18&Itemid=169&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=18&Itemid=169&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=18&Itemid=169&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=19&Itemid=170&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=19&Itemid=170&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=19&Itemid=170&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2861489 ",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=20&Itemid=171&lang=en",
+      "data": {
+        "value": "+94 11 2861489 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@buildingsdept.gov.lk",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=20&Itemid=171&lang=en",
+      "data": {
+        "value": "info@buildingsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=20&Itemid=171&lang=en",
+      "data": {
+        "value": "department"
       }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 5298 visible characters across 14 pages",
       "source": "https://buildings.gov.lk/"
     }
   ],
@@ -130,64 +593,224 @@
     {
       "url": "https://buildings.gov.lk/",
       "status_code": 200,
-      "final_url": "https://buildings.gov.lk/",
-      "redirects": [],
-      "elapsed_ms": 1664,
-      "content_type": "text/html",
+      "final_url": "https://buildings.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://buildings.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 3671,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://buildings.gov.lk/",
       "status_code": 200,
-      "final_url": "http://buildings.gov.lk/",
-      "redirects": [],
-      "elapsed_ms": 504,
-      "content_type": "text/html",
+      "final_url": "https://buildings.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://buildings.gov.lk/",
+        "https://buildings.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 5239,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://buildings.gov.lk/",
       "status_code": 200,
-      "final_url": "https://buildings.gov.lk/",
-      "redirects": [],
-      "elapsed_ms": 1716,
-      "content_type": "text/html",
+      "final_url": "https://buildings.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://buildings.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 5628,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://buildings.gov.lk/",
       "status_code": 200,
-      "final_url": "http://buildings.gov.lk/",
+      "final_url": "https://buildings.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://buildings.gov.lk/",
+        "https://buildings.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 3425,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "redirects": [],
-      "elapsed_ms": 1044,
-      "content_type": "text/html",
+      "elapsed_ms": 5173,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=163&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=163&lang=en",
+      "redirects": [],
+      "elapsed_ms": 4463,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=164&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=164&lang=en",
+      "redirects": [],
+      "elapsed_ms": 3788,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=165&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=165&lang=en",
+      "redirects": [],
+      "elapsed_ms": 2774,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=166&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=166&lang=en",
+      "redirects": [],
+      "elapsed_ms": 2562,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=167&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=167&lang=en",
+      "redirects": [],
+      "elapsed_ms": 3505,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=168&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=168&lang=en",
+      "redirects": [],
+      "elapsed_ms": 2874,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=18&Itemid=169&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=18&Itemid=169&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1783,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=19&Itemid=170&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=19&Itemid=170&lang=en",
+      "redirects": [],
+      "elapsed_ms": 2094,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=20&Itemid=171&lang=en",
+      "status_code": 200,
+      "final_url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=20&Itemid=171&lang=en",
+      "redirects": [],
+      "elapsed_ms": 2313,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "https://buildings.gov.lk/",
-      "path": "audit.output/buildings.gov.lk/20261024.0818/snapshots/page-01-8e7d44bd2cfc.html",
-      "sha256": "8e7d44bd2cfcbec83f60f4e4d2bf63dc794d09e81c9762a3a4d1b5c66f04ebc0",
-      "bytes": 11909
+      "url": "https://buildings.gov.lk/index.php?lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-01-9cde8bae3101.html",
+      "sha256": "9cde8bae31016b82fe5702e6e48f99b09c73cd6775eb8fa0cdc75580b93f099d",
+      "bytes": 64956
     },
     {
-      "url": "http://buildings.gov.lk/",
-      "path": "audit.output/buildings.gov.lk/20261024.0818/snapshots/page-02-27442a7e4151.html",
-      "sha256": "27442a7e4151d947bd78a1d5efc5d7593f2fb9b67e20565e8c4703e708ee299b",
-      "bytes": 11822
+      "url": "https://buildings.gov.lk/index.php?lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-02-561e273cfda3.html",
+      "sha256": "561e273cfda3fab26f2e9cbda3ff6758b635498569256210bfc4e1002acef79b",
+      "bytes": 64956
     },
     {
-      "url": "https://buildings.gov.lk/",
-      "path": "audit.output/buildings.gov.lk/20261024.0818/snapshots/page-03-1363f53a1deb.html",
-      "sha256": "1363f53a1deb4dbff92a9fdf1e0b5be7fe8fa898db9ebd9c66ec03f16cf631e1",
-      "bytes": 11974
+      "url": "https://buildings.gov.lk/index.php?lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-03-ec5587607985.html",
+      "sha256": "ec5587607985f0c1b4d754dd6fdf2fd0a05b9e2b44ab63eff324cf1ae5865c7a",
+      "bytes": 64956
     },
     {
-      "url": "http://buildings.gov.lk/",
-      "path": "audit.output/buildings.gov.lk/20261024.0818/snapshots/page-04-5e1a2fd2cbfc.html",
-      "sha256": "5e1a2fd2cbfcd3e00a16ed756c9a486e6e53a3f2856376e8473f35d88757d8c6",
-      "bytes": 11803
+      "url": "https://buildings.gov.lk/index.php?lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-04-511e3f4a5847.html",
+      "sha256": "511e3f4a584706d9b93b032f0b07208ed7e294fa5dc31dc299ddbd457e24b0a0",
+      "bytes": 64956
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-05-ca62bd824295.html",
+      "sha256": "ca62bd82429579fb0eb57186dedfc24bf1f5bca8a193e4eeaf3b3f220bad21ec",
+      "bytes": 65230
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=163&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-06-315788a96c40.html",
+      "sha256": "315788a96c4093cae8eb3e0997d62747fb8a0531399c8939523889621b4b962a",
+      "bytes": 36702
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=13&Itemid=164&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-07-a09e7b5c18bb.html",
+      "sha256": "a09e7b5c18bb9b27e41283620bedb83fecf36bc70fb06732f856b833dd6f4c28",
+      "bytes": 35031
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=165&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-08-46eee57b5aa1.html",
+      "sha256": "46eee57b5aa1ebd7d2d877e4eca0338efcbc773591eddf23564efbf28fb11010",
+      "bytes": 34456
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=166&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-09-d9405d108dab.html",
+      "sha256": "d9405d108dabb93303a84a49375c9b17eaf9a0374ecd060cb434a12838b2cad1",
+      "bytes": 34442
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=167&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-10-25cd2b7314ea.html",
+      "sha256": "25cd2b7314ea8fa40aa0d881e7a0a4c0ee2db00fc995ad6f53f0bfbd632a0485",
+      "bytes": 35094
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=17&Itemid=168&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-11-3d76a06e6bbd.html",
+      "sha256": "3d76a06e6bbd1c4735bb4572c90f226bf6c114f0ddd62715601020035aa674a4",
+      "bytes": 40438
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=18&Itemid=169&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-12-ca8254aa4fed.html",
+      "sha256": "ca8254aa4fedf8e7b454e71c3e88da779c33660bfc15d433a457be37769a4533",
+      "bytes": 37750
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=19&Itemid=170&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-13-320b4a13abf4.html",
+      "sha256": "320b4a13abf43d3677ad2b6e5eac8545e23a71aa4073dcdaec559532134228e3",
+      "bytes": 33850
+    },
+    {
+      "url": "https://buildings.gov.lk/index.php?option=com_content&view=article&id=20&Itemid=171&lang=en",
+      "path": "audit.output/buildings.gov.lk/20261025.0810/snapshots/page-14-33c325187c95.html",
+      "sha256": "33c325187c954b619689a1e982108be1c2a63dda857238d561a24534d7d105e5",
+      "bytes": 34588
     }
   ],
   "reviewer_decisions": [],
@@ -203,8 +826,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -216,26 +839,26 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
@@ -273,9 +896,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 11 2861489; Email: info@buildingsdept.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
@@ -303,7 +945,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.156.208",
+    "egress_ip": "172.172.237.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

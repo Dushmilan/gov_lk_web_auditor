@@ -1,18 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "d3311dd6-e912-4457-976d-dd36dacf2040",
+  "audit_id": "c93c3d3f-3b33-4e32-8960-09319479f49a",
   "url": "https://ceypetco.gov.lk/",
   "normalized_url": "https://ceypetco.gov.lk/",
-  "started_at": "2026-10-24T08:01:04.391140+05:30",
-  "completed_at": "2026-10-24T08:02:49.337014+05:30",
+  "started_at": "2026-10-25T07:51:50.429139+05:30",
+  "completed_at": "2026-10-25T07:54:03.003290+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -20,53 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T08:01:04.713278+05:30"
+      "observed_at": "2026-10-25T07:51:50.844751+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T08:01:04.713295+05:30"
+      "observed_at": "2026-10-25T07:51:50.844769+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-24T08:01:05.496702+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-25T07:52:01.115025+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: timed out",
       "source": "https://ceypetco.gov.lk/",
-      "observed_at": "2026-10-24T08:02:49.035980+05:30"
+      "observed_at": "2026-10-25T07:54:03.003102+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://ceypetco.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://ceypetco.gov.lk/",
-      "observed_at": "2026-10-24T08:02:49.035997+05:30"
+      "observed_at": "2026-10-25T07:54:03.003120+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://ceypetco.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://ceypetco.gov.lk/",
-      "observed_at": "2026-10-24T08:02:49.036001+05:30"
+      "observed_at": "2026-10-25T07:54:03.003125+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://ceypetco.gov.lk/",
-      "observed_at": "2026-10-24T08:02:49.036005+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 39 visible characters across 2 pages; below substance threshold 200",
-      "source": "https://ceypetco.gov.lk/"
+      "observed_at": "2026-10-25T07:54:03.003129+05:30"
     }
   ],
   "observations": [
@@ -86,10 +85,10 @@
     },
     {
       "host": "ceypetco.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-06T09:46:58+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://ceypetco.gov.lk/",
@@ -102,23 +101,21 @@
     },
     {
       "url": "http://ceypetco.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ceypetco.gov.lk/",
-      "redirects": [
-        "https://ceypetco.gov.lk/"
-      ],
-      "elapsed_ms": 20327,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://ceypetco.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ceypetco.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 19973,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://ceypetco.gov.lk/",
@@ -130,20 +127,7 @@
       "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://ceypetco.gov.lk/",
-      "path": "audit.output/ceypetco.gov.lk/20261024.0801/snapshots/page-01-9338371492c2.html",
-      "sha256": "9338371492c2d6d3c977b1cc84d57b17a3c8d673c86180f1bd0879716d96708b",
-      "bytes": 1365
-    },
-    {
-      "url": "https://ceypetco.gov.lk/",
-      "path": "audit.output/ceypetco.gov.lk/20261024.0801/snapshots/page-02-9338371492c2.html",
-      "sha256": "9338371492c2d6d3c977b1cc84d57b17a3c8d673c86180f1bd0879716d96708b",
-      "bytes": 1365
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -158,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -171,55 +155,55 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: https://ceypetco.gov.lk/: Probe 1: timed out; http://ceypetco.gov.lk/: Probe 4: timed out"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -257,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.156.208",
+    "egress_ip": "172.172.237.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
