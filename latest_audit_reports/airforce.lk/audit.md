@@ -1,8 +1,8 @@
 # Website Audit: https://airforce.lk/
 
-- Completed: 2026-10-25 07:42
+- Completed: 2026-10-26 07:42
 - Overall result: 🟠 Level 2
-- Vantage: 172.172.237.177 (US, github-actions)
+- Vantage: 172.203.30.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Defence Headquarters Complex, P.O Box 594, Sri Jayewardenepura Kotte, Sri Lanka; Phone: +94112441044 (29 phone numbers found); Email: afhq@airforce.lk (17 email addresses found); Published named responsibility: director
+Published postal address: Defence Headquarters Complex, P.O Box 594, Sri Jayewardenepura Kotte, Sri Lanka; Phone: +123-456-7890 (29 phone numbers found); Email: afhq@airforce.lk (17 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Defence Headquarters Complex, P.O Box 594, Sri Jayewardenepura Kotte, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94112441044 (29 phone numbers found); Email: afhq@airforce.lk (17 email addresses found) |
+| reachable_contacts | ✅ | Phone: +123-456-7890 (29 phone numbers found); Email: afhq@airforce.lk (17 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

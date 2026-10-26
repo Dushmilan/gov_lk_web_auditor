@@ -1,8 +1,8 @@
 # Website Audit: https://emb-manama.gov.lk/
 
-- Completed: 2026-10-25 08:05
+- Completed: 2026-10-26 08:05
 - Overall result: 🟢 Level 3
-- Vantage: 172.172.237.177 (US, github-actions)
+- Vantage: 172.203.30.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

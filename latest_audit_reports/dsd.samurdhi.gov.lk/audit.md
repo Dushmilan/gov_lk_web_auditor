@@ -1,8 +1,8 @@
 # Website Audit: https://dsd.samurdhi.gov.lk/
 
-- Completed: 2026-10-25 08:23
+- Completed: 2026-10-26 08:19
 - Overall result: 🟠 Level 2
-- Vantage: 172.172.237.177 (US, github-actions)
+- Vantage: 172.203.30.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 15 PM Head Office Colombo, Sri Lanka; Phone: 011- 2887722 (105 phone numbers found); Email: info@samurdhi.gov.lk (26 email addresses found); Published named responsibility: director
+Published postal address: 15 PM Head Office Colombo, Sri Lanka; Phone: 011- 2887722 (299 phone numbers found); Email: info@samurdhi.gov.lk (26 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 15 PM Head Office Colombo, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 011- 2887722 (105 phone numbers found); Email: info@samurdhi.gov.lk (26 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011- 2887722 (299 phone numbers found); Email: info@samurdhi.gov.lk (26 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

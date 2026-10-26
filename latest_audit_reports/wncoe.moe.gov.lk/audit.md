@@ -1,8 +1,8 @@
 # Website Audit: https://wncoe.moe.gov.lk/
 
-- Completed: 2026-10-25 07:50
+- Completed: 2026-10-26 07:51
 - Overall result: 🔴 Level 1
-- Vantage: 172.172.237.177 (US, github-actions)
+- Vantage: 172.203.30.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,24 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "fb4dee1c-d345-4433-8507-8b49ab89e19e",
+  "audit_id": "177a0ac5-584f-48aa-9e50-f3343386274e",
   "url": "https://www.lrc.gov.lk/",
   "normalized_url": "https://www.lrc.gov.lk/",
-  "started_at": "2026-10-25T07:35:48.409680+05:30",
-  "completed_at": "2026-10-25T07:36:08.645673+05:30",
+  "started_at": "2026-10-26T07:35:59.855867+05:30",
+  "completed_at": "2026-10-26T07:36:10.508484+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "http_available: Every repeated HTTP probe failed: [409, 409, 409, 409]"
     ]
   },
   "evidence": [
@@ -26,726 +17,59 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-25T07:35:48.807504+05:30"
+      "observed_at": "2026-10-26T07:36:00.274617+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-25T07:35:48.807525+05:30"
+      "observed_at": "2026-10-26T07:36:00.274635+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-25T07:35:49.070543+05:30"
+      "observed_at": "2026-10-26T07:36:00.546256+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.lrc.gov.lk/index.php?lang=en",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 409 at https://www.lrc.gov.lk/index.php?lang=en",
       "source": "https://www.lrc.gov.lk/",
-      "observed_at": "2026-10-25T07:36:08.401614+05:30"
+      "observed_at": "2026-10-26T07:36:10.182725+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.lrc.gov.lk/index.php?lang=en",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 409 at https://www.lrc.gov.lk/index.php?lang=en",
       "source": "http://www.lrc.gov.lk/",
-      "observed_at": "2026-10-25T07:36:08.401630+05:30"
+      "observed_at": "2026-10-26T07:36:10.182742+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.lrc.gov.lk/index.php?lang=en",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 409 at https://www.lrc.gov.lk/index.php?lang=en",
       "source": "https://www.lrc.gov.lk/",
-      "observed_at": "2026-10-25T07:36:08.401635+05:30"
+      "observed_at": "2026-10-26T07:36:10.182746+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.lrc.gov.lk/index.php?lang=en",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 409 at https://www.lrc.gov.lk/index.php?lang=en",
       "source": "http://www.lrc.gov.lk/",
-      "observed_at": "2026-10-25T07:36:08.401638+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri1.jpg",
-      "source": "https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri1.jpg",
-      "observed_at": "2026-10-25T07:36:08.401642+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri2.jpg",
-      "source": "https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri2.jpg",
-      "observed_at": "2026-10-25T07:36:08.401645+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-10-25T07:36:08.401648+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "observed_at": "2026-10-25T07:36:08.401651+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "observed_at": "2026-10-25T07:36:08.401654+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "observed_at": "2026-10-25T07:36:08.401657+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "observed_at": "2026-10-25T07:36:08.401660+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "observed_at": "2026-10-25T07:36:08.401663+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "observed_at": "2026-10-25T07:36:08.401665+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "observed_at": "2026-10-25T07:36:08.401668+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.lrc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0165076583",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "0165076583"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 795 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "+94 11 2144 795 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 878 052 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "+94 112 878 052 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2144 794 ",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "+94 11 2144 794 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@lrc.gov.lk",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "info@lrc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak317f14a42b6c31f2",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak317f14a42b6c31f2"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "data": {
-        "value": "director"
-      }
+      "observed_at": "2026-10-26T07:36:10.182749+05:30"
     },
     {
       "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 29815 visible characters across 14 pages",
+      "status": "fail",
+      "detail": "Only 0 visible characters across 4 pages; below substance threshold 200",
       "source": "https://www.lrc.gov.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [409, 409, 409, 409]",
+      "observed_at": "2026-10-26T07:36:10.183172+05:30"
     }
   ],
   "observations": [
@@ -772,225 +96,75 @@
     },
     {
       "url": "https://www.lrc.gov.lk/",
-      "status_code": 200,
+      "status_code": 409,
       "final_url": "https://www.lrc.gov.lk/index.php?lang=en",
       "redirects": [
         "https://www.lrc.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 623,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 329,
+      "content_type": "text/html; charset=iso-8859-1",
       "error": null
     },
     {
       "url": "http://www.lrc.gov.lk/",
-      "status_code": 200,
+      "status_code": 409,
       "final_url": "https://www.lrc.gov.lk/index.php?lang=en",
       "redirects": [
         "https://www.lrc.gov.lk/",
         "https://www.lrc.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 580,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 22,
+      "content_type": "text/html; charset=iso-8859-1",
       "error": null
     },
     {
       "url": "https://www.lrc.gov.lk/",
-      "status_code": 200,
+      "status_code": 409,
       "final_url": "https://www.lrc.gov.lk/index.php?lang=en",
       "redirects": [
         "https://www.lrc.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 611,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 24,
+      "content_type": "text/html; charset=iso-8859-1",
       "error": null
     },
     {
       "url": "http://www.lrc.gov.lk/",
-      "status_code": 200,
+      "status_code": 409,
       "final_url": "https://www.lrc.gov.lk/index.php?lang=en",
       "redirects": [
         "https://www.lrc.gov.lk/",
         "https://www.lrc.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 573,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri1.jpg",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri1.jpg",
-      "redirects": [],
-      "elapsed_ms": 271,
-      "content_type": "image/jpeg",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri2.jpg",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri2.jpg",
-      "redirects": [],
-      "elapsed_ms": 18,
-      "content_type": "image/jpeg",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "redirects": [],
-      "elapsed_ms": 344,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "redirects": [],
-      "elapsed_ms": 310,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "redirects": [],
-      "elapsed_ms": 55,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "redirects": [],
-      "elapsed_ms": 58,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "redirects": [],
-      "elapsed_ms": 57,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "redirects": [],
-      "elapsed_ms": 55,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "redirects": [],
-      "elapsed_ms": 53,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "status_code": 200,
-      "final_url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "redirects": [],
-      "elapsed_ms": 71,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 302,
+      "content_type": "text/html; charset=iso-8859-1",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://www.lrc.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-01-ee7a418b6c89.html",
-      "sha256": "ee7a418b6c89b486ecef6245ae75d7efc2adffdc51b4bfef1a9a062762e9bcd3",
-      "bytes": 52890
+      "path": "audit.output/www.lrc.gov.lk/20261026.0735/snapshots/page-01-769e8ab745a0.html",
+      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
+      "bytes": 83
     },
     {
       "url": "https://www.lrc.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-02-ee7a418b6c89.html",
-      "sha256": "ee7a418b6c89b486ecef6245ae75d7efc2adffdc51b4bfef1a9a062762e9bcd3",
-      "bytes": 52890
+      "path": "audit.output/www.lrc.gov.lk/20261026.0735/snapshots/page-02-769e8ab745a0.html",
+      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
+      "bytes": 83
     },
     {
       "url": "https://www.lrc.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-03-ee7a418b6c89.html",
-      "sha256": "ee7a418b6c89b486ecef6245ae75d7efc2adffdc51b4bfef1a9a062762e9bcd3",
-      "bytes": 52890
+      "path": "audit.output/www.lrc.gov.lk/20261026.0735/snapshots/page-03-769e8ab745a0.html",
+      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
+      "bytes": 83
     },
     {
       "url": "https://www.lrc.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-04-ee7a418b6c89.html",
-      "sha256": "ee7a418b6c89b486ecef6245ae75d7efc2adffdc51b4bfef1a9a062762e9bcd3",
-      "bytes": 52890
-    },
-    {
-      "url": "https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri1.jpg",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-05-1194b2f362b9.html",
-      "sha256": "1194b2f362b9a1537e24cf8900784be4d2165599681dc3776c7bf900d9934cdf",
-      "bytes": 118067
-    },
-    {
-      "url": "https://www.lrc.gov.lk/images/phocagallery/workshop_for_officers/thumbs/phoca_thumb_l_tri2.jpg",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-06-8e64aa976cbc.html",
-      "sha256": "8e64aa976cbc9cf041c111bf26c9978798b9cf6c57a5bf8b8cadd48cfc25a9a8",
-      "bytes": 83978
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-07-5f7cfbd257cc.html",
-      "sha256": "5f7cfbd257cca4f4a30e95630f467a206b5476de3fe1f2d47c9bd3d1f36f7542",
-      "bytes": 53315
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=5&Itemid=127&lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-08-2915bd6f199c.html",
-      "sha256": "2915bd6f199cf1b43fc775f2d104b5380e57fef272d30dc78e183bb0c1897c66",
-      "bytes": 36761
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=10&Itemid=131&lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-09-d32e7ea7903c.html",
-      "sha256": "d32e7ea7903c87e8fba0c9b878fd514dc96ceb64e1a981e0ec30e79ea555ce2c",
-      "bytes": 28734
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=148&lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-10-e5983d2f4fb3.html",
-      "sha256": "e5983d2f4fb373de226986151700d31dcc7cd1272eb861f531a46aab3009d538",
-      "bytes": 31627
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=149&lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-11-f95a04df178c.html",
-      "sha256": "f95a04df178cc95fcdddf92b5e03b668a1f9c19853c4c202a37cb606beb96b16",
-      "bytes": 30199
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=168&lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-12-0a2602ef27a2.html",
-      "sha256": "0a2602ef27a23827db8182234adfce8ed2a4bbb9cb8b2a18255479859c4035ee",
-      "bytes": 23965
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=60&Itemid=171&lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-13-97e12373bd97.html",
-      "sha256": "97e12373bd97ddef1c8b52b9001ab688e12ef10451fb70b6348b1ce50e4981d4",
-      "bytes": 30730
-    },
-    {
-      "url": "https://www.lrc.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=132&lang=en",
-      "path": "audit.output/www.lrc.gov.lk/20261025.0735/snapshots/page-14-b89de5a7d076.html",
-      "sha256": "b89de5a7d076d695ab843074eb3d6a1967884076cb4b41daf6d307d037a9d7f0",
-      "bytes": 67495
+      "path": "audit.output/www.lrc.gov.lk/20261026.0735/snapshots/page-04-769e8ab745a0.html",
+      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
+      "bytes": 83
     }
   ],
   "reviewer_decisions": [],
@@ -1006,8 +180,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [409, 409, 409, 409]",
       "executed": true,
       "checks": [
         {
@@ -1019,44 +193,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [409, 409, 409, 409]"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -1075,80 +249,18 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak317f14a42b6c31f2; Phone: +94 11 2144 794 (4 phone numbers found); Email: info@lrc.gov.lk; Published named responsibility: director",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak317f14a42b6c31f2"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 11 2144 794 (4 phone numbers found); Email: info@lrc.gov.lk"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: rs,"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing legal basis evidence found"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1168,7 +280,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.172.237.177",
+    "egress_ip": "172.203.30.211",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

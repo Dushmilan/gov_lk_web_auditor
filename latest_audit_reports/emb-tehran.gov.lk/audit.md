@@ -1,8 +1,8 @@
 # Website Audit: https://emb-tehran.gov.lk/
 
-- Completed: 2026-10-25 08:05
+- Completed: 2026-10-26 08:06
 - Overall result: 🟠 Level 2
-- Vantage: 172.172.237.177 (US, github-actions)
+- Vantage: 172.203.30.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Embassy of the Democratic Socialist Republic of Sri Lanka, No.72, Dr.Yadolah Samareh St., Africa Blvd., Tehran, Iran. Te; Phone: +982188656253 (7 phone numbers found); Email: slembiran@yahoo.com (3 email addresses found); Published named responsibility: director
+Published postal address: Embassy of the Democratic Socialist Republic of Sri Lanka, No.72, Dr.Yadolah Samareh St., Africa Blvd., Tehran, Iran. Te; Phone: +982188656329 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Embassy of the Democratic Socialist Republic of Sri Lanka, No.72, Dr.Yadolah Samareh St., Africa Blvd., Tehran, Iran. Te |
-| reachable_contacts | ✅ | Phone: +982188656253 (7 phone numbers found); Email: slembiran@yahoo.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +982188656329 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
