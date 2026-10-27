@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "ed469f24-a941-4d2b-84ff-ee0d3cf9fc51",
+  "audit_id": "5cda63b8-7802-4bb0-bff4-4aa1caa6a01f",
   "url": "https://rda.gov.lk/",
   "normalized_url": "https://rda.gov.lk/",
-  "started_at": "2026-10-26T08:25:20.822933+05:30",
-  "completed_at": "2026-10-26T08:27:11.293309+05:30",
+  "started_at": "2026-10-27T09:11:55.304406+05:30",
+  "completed_at": "2026-10-27T09:12:29.641487+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,117 +26,117 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-26T08:25:21.110483+05:30"
+      "observed_at": "2026-10-27T09:11:55.694108+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-26T08:25:21.110500+05:30"
+      "observed_at": "2026-10-27T09:11:55.694129+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-26T08:25:31.371843+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-27T09:11:56.665018+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://rda.gov.lk/index.php?lang=en",
       "source": "https://rda.gov.lk/",
-      "observed_at": "2026-10-26T08:27:10.912804+05:30"
+      "observed_at": "2026-10-27T09:12:29.245589+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://rda.gov.lk/index.php?lang=en",
       "source": "http://rda.gov.lk/",
-      "observed_at": "2026-10-26T08:27:10.912823+05:30"
+      "observed_at": "2026-10-27T09:12:29.245607+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://rda.gov.lk/index.php?lang=en",
       "source": "https://rda.gov.lk/",
-      "observed_at": "2026-10-26T08:27:10.912827+05:30"
+      "observed_at": "2026-10-27T09:12:29.245611+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://rda.gov.lk/index.php?lang=en",
       "source": "http://rda.gov.lk/",
-      "observed_at": "2026-10-26T08:27:10.912831+05:30"
+      "observed_at": "2026-10-27T09:12:29.245615+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "source": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-10-26T08:27:10.912833+05:30"
+      "observed_at": "2026-10-27T09:12:29.245617+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 6: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
       "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "observed_at": "2026-10-26T08:27:10.912836+05:30"
+      "observed_at": "2026-10-27T09:12:29.245620+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 7: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
       "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "observed_at": "2026-10-26T08:27:10.912839+05:30"
+      "observed_at": "2026-10-27T09:12:29.245623+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 8: HTTP 200 at https://rda.gov.lk/rda_project_new/map",
       "source": "https://rda.gov.lk/rda_project_new/map",
-      "observed_at": "2026-10-26T08:27:10.912842+05:30"
+      "observed_at": "2026-10-27T09:12:29.245626+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 9: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
       "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "observed_at": "2026-10-26T08:27:10.912844+05:30"
+      "observed_at": "2026-10-27T09:12:29.245628+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 10: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
       "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "observed_at": "2026-10-26T08:27:10.912847+05:30"
+      "observed_at": "2026-10-27T09:12:29.245631+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 11: HTTP 200 at https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
       "source": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "observed_at": "2026-10-26T08:27:10.912849+05:30"
+      "observed_at": "2026-10-27T09:12:29.245634+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 12: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
       "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "observed_at": "2026-10-26T08:27:10.912852+05:30"
+      "observed_at": "2026-10-27T09:12:29.245637+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 13: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
       "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "observed_at": "2026-10-26T08:27:10.912854+05:30"
+      "observed_at": "2026-10-27T09:12:29.245639+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=108&Itemid=193&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=108&Itemid=193&lang=en",
-      "observed_at": "2026-10-26T08:27:10.912857+05:30"
+      "detail": "Probe 14: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
+      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
+      "observed_at": "2026-10-27T09:12:29.245642+05:30"
     },
     {
       "check": "phone",
@@ -530,7 +538,7 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=108&Itemid=193&lang=en",
+      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
       "data": {
         "value": "+94 11 2 046200 "
       }
@@ -539,7 +547,7 @@
       "check": "email",
       "status": "pass",
       "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=108&Itemid=193&lang=en",
+      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
       "data": {
         "value": "1968@rda.gov.lk"
       }
@@ -548,7 +556,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=108&Itemid=193&lang=en",
+      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
       "data": {
         "value": "division"
       }
@@ -577,10 +585,10 @@
     },
     {
       "host": "rda.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-11-16T05:29:59+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://rda.gov.lk/",
@@ -589,7 +597,7 @@
       "redirects": [
         "https://rda.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 2642,
+      "elapsed_ms": 1855,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -601,7 +609,7 @@
         "https://rda.gov.lk/",
         "https://rda.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 2623,
+      "elapsed_ms": 1924,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -612,7 +620,7 @@
       "redirects": [
         "https://rda.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 2637,
+      "elapsed_ms": 1854,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -624,7 +632,7 @@
         "https://rda.gov.lk/",
         "https://rda.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 1587,
+      "elapsed_ms": 1879,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -633,7 +641,7 @@
       "status_code": 200,
       "final_url": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "redirects": [],
-      "elapsed_ms": 3889,
+      "elapsed_ms": 1596,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -642,7 +650,7 @@
       "status_code": 200,
       "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
       "redirects": [],
-      "elapsed_ms": 8900,
+      "elapsed_ms": 1297,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -651,7 +659,7 @@
       "status_code": 200,
       "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
       "redirects": [],
-      "elapsed_ms": 6496,
+      "elapsed_ms": 1889,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -660,7 +668,7 @@
       "status_code": 200,
       "final_url": "https://rda.gov.lk/rda_project_new/map",
       "redirects": [],
-      "elapsed_ms": 4794,
+      "elapsed_ms": 1444,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -669,7 +677,7 @@
       "status_code": 200,
       "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
       "redirects": [],
-      "elapsed_ms": 1602,
+      "elapsed_ms": 1326,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -678,7 +686,7 @@
       "status_code": 200,
       "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
       "redirects": [],
-      "elapsed_ms": 1294,
+      "elapsed_ms": 1292,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -687,7 +695,7 @@
       "status_code": 200,
       "final_url": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
       "redirects": [],
-      "elapsed_ms": 1728,
+      "elapsed_ms": 1316,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -696,7 +704,7 @@
       "status_code": 200,
       "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
       "redirects": [],
-      "elapsed_ms": 1588,
+      "elapsed_ms": 1280,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -705,16 +713,16 @@
       "status_code": 200,
       "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
       "redirects": [],
-      "elapsed_ms": 4235,
+      "elapsed_ms": 1648,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=108&Itemid=193&lang=en",
+      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
       "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=108&Itemid=193&lang=en",
+      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
       "redirects": [],
-      "elapsed_ms": 3615,
+      "elapsed_ms": 1257,
       "content_type": "text/html; charset=utf-8",
       "error": null
     }
@@ -722,87 +730,87 @@
   "snapshots": [
     {
       "url": "https://rda.gov.lk/index.php?lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-01-64328d8512e5.html",
-      "sha256": "64328d8512e5b8e3794c28cb8eda0249ea20501ad1accbd85ddc4701a5225b70",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-01-028383075a60.html",
+      "sha256": "028383075a604303bc1594f71faaa1ce4f5d26f924f9208c79ccfcc0001959c9",
       "bytes": 43571
     },
     {
       "url": "https://rda.gov.lk/index.php?lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-02-fbb6f08064d4.html",
-      "sha256": "fbb6f08064d467b94cadf2aaf831de860764e7c47a397a735d191cbad5bffe13",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-02-946dd48cbe97.html",
+      "sha256": "946dd48cbe9736b2f9ab445cdf802b085fa01c0a14c1415b972609cf48194914",
       "bytes": 43571
     },
     {
       "url": "https://rda.gov.lk/index.php?lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-03-e3843a107005.html",
-      "sha256": "e3843a107005594d324feb4914a5cb4e92eb73e33b78cd147164820460124ec4",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-03-d6a34488654e.html",
+      "sha256": "d6a34488654e6cf4228bcec9871382ad4ea3bde74b6b64950b449712d4fe48a5",
       "bytes": 43571
     },
     {
       "url": "https://rda.gov.lk/index.php?lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-04-9a2eb413edb3.html",
-      "sha256": "9a2eb413edb3d0a28c58c520fceb3415ebf703e246690de204ebac236904cf65",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-04-3db46f146f2d.html",
+      "sha256": "3db46f146f2dfcfe373d3b03d3193d68f23db77df4a7cd7e4f124328b0fcbe01",
       "bytes": 43571
     },
     {
       "url": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-05-1aabaf637b3a.html",
-      "sha256": "1aabaf637b3ace022e3467b5cc62738910179f0f25b97a1aa30cd2aa5bf7b071",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-05-95faba78507e.html",
+      "sha256": "95faba78507e15dea23b119f4d972c703800db963b7fc1ca1841b60d8a851122",
       "bytes": 44021
     },
     {
       "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-06-93e06d0db29c.html",
-      "sha256": "93e06d0db29cee812bb72b6bd5e6e8c881814e4ae4ce63b23b9d7b7c32f025f6",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-06-de9846042392.html",
+      "sha256": "de9846042392c3455a9a76297afbfdd42d68cdd37ffe16689b1433ec6c2121c8",
       "bytes": 39418
     },
     {
       "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-07-8bb84cfb62c3.html",
-      "sha256": "8bb84cfb62c348b81789ff8861ac7b5e603256c0795003552a585b9dc2d215eb",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-07-ea7c96a012c8.html",
+      "sha256": "ea7c96a012c85ec2289489a7d08b845e3768fd5cc81e178a8a04bfc0db1fae1b",
       "bytes": 118464
     },
     {
       "url": "https://rda.gov.lk/rda_project_new/map",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-08-9e81a9ca7003.html",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-08-9e81a9ca7003.html",
       "sha256": "9e81a9ca7003c2394e406c9f26dd90efbdee57f7b2017d759da018bd36167e9a",
       "bytes": 31057
     },
     {
       "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-09-6a0d11f68ed0.html",
-      "sha256": "6a0d11f68ed02ed2a3983845d3f29f8c9846f63a13e446b8405ae2cb4b783ca1",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-09-fc3e5c86b8be.html",
+      "sha256": "fc3e5c86b8be7a16f6131d0ea63570811273a0aa0e1c75473bc00781f7478831",
       "bytes": 25344
     },
     {
       "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-10-2918c4ea0eae.html",
-      "sha256": "2918c4ea0eae4ceeb3c1ae42776d5288ebd8e9aa5466fa80bd17e79b5f237632",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-10-cd988f202b3a.html",
+      "sha256": "cd988f202b3a38301f0f295941fed7ca2c0aee57458c0b06fe8ea9984354af94",
       "bytes": 27009
     },
     {
       "url": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-11-9ca6f2aa507f.html",
-      "sha256": "9ca6f2aa507fffeceef83380627c07d1fc4c798d5b2326e2f1479017c6093b68",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-11-6ead421a272f.html",
+      "sha256": "6ead421a272ffa7ccc46ab6ece3ae44e14e507dc763643c25749d380d3ff5af3",
       "bytes": 37849
     },
     {
       "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-12-514e03bec513.html",
-      "sha256": "514e03bec513c5ff66ffcee68ec5e1368384ce2a94bbe069ed909642476be5cd",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-12-b210c5188921.html",
+      "sha256": "b210c51889216fb865afa314cf394d2978209fedb66e566df2ae2ad22b6eb475",
       "bytes": 24696
     },
     {
       "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-13-c0dbabc880b8.html",
-      "sha256": "c0dbabc880b8b261cdacf0cb63eb36427f70bdf319c12f40a9b4b8a3a1a32e3e",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-13-25b2bc17dc1f.html",
+      "sha256": "25b2bc17dc1f1b45ea879e22673dea42c169dfa7fc0a0348ce56b5b971366bc5",
       "bytes": 83888
     },
     {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=108&Itemid=193&lang=en",
-      "path": "audit.output/rda.gov.lk/20261026.0825/snapshots/page-14-75c8a1b960db.html",
-      "sha256": "75c8a1b960db47f876300504ece32fa81ffb6c0e8738a23d8af69a7175a5dbc3",
-      "bytes": 35853
+      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
+      "path": "audit.output/rda.gov.lk/20261027.0911/snapshots/page-14-96b03892b92f.html",
+      "sha256": "96b03892b92f0244af941751751bc0bc3559a85e867d00863cf8ede2c5d9011d",
+      "bytes": 28417
     }
   ],
   "reviewer_decisions": [],
@@ -818,8 +826,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -873,14 +881,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -888,9 +896,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 11 2 046200; Email: 1968@rda.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -918,7 +945,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.203.30.211",
+    "egress_ip": "172.214.47.242",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

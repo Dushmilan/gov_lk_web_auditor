@@ -1,8 +1,8 @@
 # Website Audit: https://spc.cmb.ac.lk/
 
-- Completed: 2026-10-26 07:48
+- Completed: 2026-10-27 08:29
 - Overall result: 🟠 Level 2
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sri Palee Campus, University of Colombo, Wewala, Horana, Sri Lanka. Phone : +94 (34) 2261371, 2263616 Fax: +94 (34) 2265; Phone: +94)34-3744245 (11 phone numbers found); Email: dr@spc.cmb.ac.lk (12 email addresses found); Published named responsibility: division
+Published postal address: Sri Palee Campus, University of Colombo, Wewala, Horana, Sri Lanka. Phone : +94 (34) 2261371, 2263616 Fax: +94 (34) 2265; Phone: +94)342261372 (11 phone numbers found); Email: sab@spc.cmb.ac.lk (12 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sri Palee Campus, University of Colombo, Wewala, Horana, Sri Lanka. Phone : +94 (34) 2261371, 2263616 Fax: +94 (34) 2265 |
-| reachable_contacts | ✅ | Phone: +94)34-3744245 (11 phone numbers found); Email: dr@spc.cmb.ac.lk (12 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94)342261372 (11 phone numbers found); Email: sab@spc.cmb.ac.lk (12 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -52,7 +52,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ✅ | Published legal basis: gazette |
+| legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

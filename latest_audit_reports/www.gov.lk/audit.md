@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-10-26 07:44
+- Completed: 2026-10-27 08:22
 - Overall result: 🔴 Level 1
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0670396207 (184 phone numbers found); Email: hindudir@yahoo.com (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0670396207 (177 phone numbers found); Email: comments@airport.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

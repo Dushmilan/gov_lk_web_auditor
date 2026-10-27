@@ -1,8 +1,8 @@
 # Website Audit: https://museum.gov.lk/
 
-- Completed: 2026-10-26 07:39
+- Completed: 2026-10-27 08:16
 - Overall result: 🟠 Level 2
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka; Phone: 0006378944 (30 phone numbers found); Email: nmdep@slt.lk (12 email addresses found); Published named responsibility: division
+Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka; Phone: +94 11 2694767 (30 phone numbers found); Email: nmdep@slt.lk (12 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0006378944 (30 phone numbers found); Email: nmdep@slt.lk (12 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2694767 (30 phone numbers found); Email: nmdep@slt.lk (12 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

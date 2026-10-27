@@ -1,8 +1,8 @@
 # Website Audit: https://hc-nairobi.gov.lk/
 
-- Completed: 2026-10-26 08:07
+- Completed: 2026-10-27 08:49
 - Overall result: 🟠 Level 2
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

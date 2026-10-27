@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "d40e2299-bbfa-4001-84da-0fb308210c7e",
+  "audit_id": "3256fb4a-af84-4984-ab66-26dbc8d373d3",
   "url": "https://www.culturaldept.gov.lk/",
   "normalized_url": "https://www.culturaldept.gov.lk/",
-  "started_at": "2026-10-26T07:38:16.219752+05:30",
-  "completed_at": "2026-10-26T07:38:26.164732+05:30",
+  "started_at": "2026-10-27T08:15:42.956465+05:30",
+  "completed_at": "2026-10-27T08:16:04.096155+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [409, 409, 409, 409]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,59 +26,816 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-26T07:38:16.604377+05:30"
+      "observed_at": "2026-10-27T08:15:43.308428+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-26T07:38:16.604394+05:30"
+      "observed_at": "2026-10-27T08:15:43.308451+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-26T07:38:16.876211+05:30"
+      "observed_at": "2026-10-27T08:15:43.318498+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 409 at https://www.culturaldept.gov.lk/index.php?lang=en",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.culturaldept.gov.lk/index.php?lang=en",
       "source": "https://www.culturaldept.gov.lk/",
-      "observed_at": "2026-10-26T07:38:26.163626+05:30"
+      "observed_at": "2026-10-27T08:16:03.703102+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 409 at https://www.culturaldept.gov.lk/index.php?lang=en",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://www.culturaldept.gov.lk/index.php?lang=en",
       "source": "http://www.culturaldept.gov.lk/",
-      "observed_at": "2026-10-26T07:38:26.163641+05:30"
+      "observed_at": "2026-10-27T08:16:03.703117+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 409 at https://www.culturaldept.gov.lk/index.php?lang=en",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.culturaldept.gov.lk/index.php?lang=en",
       "source": "https://www.culturaldept.gov.lk/",
-      "observed_at": "2026-10-26T07:38:26.163645+05:30"
+      "observed_at": "2026-10-27T08:16:03.703122+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 409 at https://www.culturaldept.gov.lk/index.php?lang=en",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://www.culturaldept.gov.lk/index.php?lang=en",
       "source": "http://www.culturaldept.gov.lk/",
-      "observed_at": "2026-10-26T07:38:26.163648+05:30"
+      "observed_at": "2026-10-27T08:16:03.703125+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.culturaldept.gov.lk/index.php?lang=en",
+      "source": "https://www.culturaldept.gov.lk/index.php",
+      "observed_at": "2026-10-27T08:16:03.703128+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "observed_at": "2026-10-27T08:16:03.703130+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "observed_at": "2026-10-27T08:16:03.703133+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.culturaldept.gov.lk/index.php?option=com_search&view=search&lang=en",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_search&view=search&lang=en",
+      "observed_at": "2026-10-27T08:16:03.703135+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "observed_at": "2026-10-27T08:16:03.703138+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=124&lang=en",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=124&lang=en",
+      "observed_at": "2026-10-27T08:16:03.703141+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "observed_at": "2026-10-27T08:16:03.703144+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=125&lang=en",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=125&lang=en",
+      "observed_at": "2026-10-27T08:16:03.703146+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=99&Itemid=217&lang=en",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=99&Itemid=217&lang=en",
+      "observed_at": "2026-10-27T08:16:03.703149+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "observed_at": "2026-10-27T08:16:03.703151+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 031 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 872 031 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 018 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 882 018 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 731 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 731 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 732 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 732 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: culturaldept.info@gmail.com",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "culturaldept.info@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 031 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 872 031 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 018 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 882 018 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 731 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 731 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 732 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 732 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: culturaldept.info@gmail.com",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "culturaldept.info@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 031 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 872 031 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 018 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 882 018 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 731 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 731 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 732 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 732 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: culturaldept.info@gmail.com",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "culturaldept.info@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 031 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 872 031 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 018 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 882 018 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 731 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 731 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 732 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 732 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: culturaldept.info@gmail.com",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "culturaldept.info@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 031 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 872 031 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 018 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 882 018 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 731 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 731 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 732 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 112 866 732 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: culturaldept.info@gmail.com",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "culturaldept.info@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 031 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "+94 112 872 031 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 018 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "+94 112 882 018 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 731 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "+94 112 866 731 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 732 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "+94 112 866 732 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: culturaldept.info@gmail.com",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "culturaldept.info@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 031 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "data": {
+        "value": "+94 112 872 031 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 018 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "data": {
+        "value": "+94 112 882 018 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 731 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "data": {
+        "value": "+94 112 866 731 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 732 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "data": {
+        "value": "+94 112 866 732 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@culturaldept.gov.lk",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "data": {
+        "value": "info@culturaldept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_search&view=search&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_search&view=search&lang=en",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 031 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 112 872 031 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 018 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 112 882 018 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 731 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 112 866 731 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 866 732 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 112 866 732 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: culturaldept.info@gmail.com",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "culturaldept.info@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=124&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=124&lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 005.07.05 - 201",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "data": {
+        "value": "005.07.05 - 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 010.12.23 - 201",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "data": {
+        "value": "010.12.23 - 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023.07.27 - 202",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "data": {
+        "value": "023.07.27 - 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020.01.01 - 202",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "data": {
+        "value": "020.01.01 - 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 015.06.25 - 201",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "data": {
+        "value": "015.06.25 - 201"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=125&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=125&lang=en",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=99&Itemid=217&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=99&Itemid=217&lang=en",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 867 112 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "data": {
+        "value": "+94 112 867 112 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 592 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "data": {
+        "value": "+94 112 882 592 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 035 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "data": {
+        "value": "+94 112 872 035 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 776 114 255",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "data": {
+        "value": "+94 776 114 255"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 598 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "data": {
+        "value": "+94 112 882 598 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 867 116 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "data": {
+        "value": "+94 112 867 116 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 872 034 ",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "data": {
+        "value": "+94 112 872 034 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "data": {
+        "value": "circular"
+      }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 0 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 9470 visible characters across 14 pages",
       "source": "https://www.culturaldept.gov.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [409, 409, 409, 409]",
-      "observed_at": "2026-10-26T07:38:26.164121+05:30"
     }
   ],
   "observations": [
@@ -96,75 +862,227 @@
     },
     {
       "url": "https://www.culturaldept.gov.lk/",
-      "status_code": 409,
+      "status_code": 200,
       "final_url": "https://www.culturaldept.gov.lk/index.php?lang=en",
       "redirects": [
         "https://www.culturaldept.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 279,
-      "content_type": "text/html; charset=iso-8859-1",
+      "elapsed_ms": 578,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://www.culturaldept.gov.lk/",
-      "status_code": 409,
+      "status_code": 200,
       "final_url": "https://www.culturaldept.gov.lk/index.php?lang=en",
       "redirects": [
         "https://www.culturaldept.gov.lk/",
         "https://www.culturaldept.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 278,
-      "content_type": "text/html; charset=iso-8859-1",
+      "elapsed_ms": 256,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "https://www.culturaldept.gov.lk/",
-      "status_code": 409,
+      "status_code": 200,
       "final_url": "https://www.culturaldept.gov.lk/index.php?lang=en",
       "redirects": [
         "https://www.culturaldept.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 268,
-      "content_type": "text/html; charset=iso-8859-1",
+      "elapsed_ms": 446,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://www.culturaldept.gov.lk/",
-      "status_code": 409,
+      "status_code": 200,
       "final_url": "https://www.culturaldept.gov.lk/index.php?lang=en",
       "redirects": [
         "https://www.culturaldept.gov.lk/",
         "https://www.culturaldept.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 22,
-      "content_type": "text/html; charset=iso-8859-1",
+      "elapsed_ms": 506,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://www.culturaldept.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 516,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "redirects": [],
+      "elapsed_ms": 521,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "redirects": [],
+      "elapsed_ms": 519,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_search&view=search&lang=en",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?option=com_search&view=search&lang=en",
+      "redirects": [],
+      "elapsed_ms": 122,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "redirects": [],
+      "elapsed_ms": 595,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=124&lang=en",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=124&lang=en",
+      "redirects": [],
+      "elapsed_ms": 81,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "redirects": [],
+      "elapsed_ms": 77,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=125&lang=en",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=125&lang=en",
+      "redirects": [],
+      "elapsed_ms": 152,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=99&Itemid=217&lang=en",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=99&Itemid=217&lang=en",
+      "redirects": [],
+      "elapsed_ms": 96,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "status_code": 200,
+      "final_url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "redirects": [],
+      "elapsed_ms": 65,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://www.culturaldept.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.culturaldept.gov.lk/20261026.0738/snapshots/page-01-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-01-acfdf5d7b126.html",
+      "sha256": "acfdf5d7b12622b2440ae44145455b1e6e591cc2a82906ffe834dd6e661296e1",
+      "bytes": 62508
     },
     {
       "url": "https://www.culturaldept.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.culturaldept.gov.lk/20261026.0738/snapshots/page-02-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-02-c93091e0a10c.html",
+      "sha256": "c93091e0a10c08c07551b9b109468038a6ef25ccf57383d2023e2b860738edfd",
+      "bytes": 62508
     },
     {
       "url": "https://www.culturaldept.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.culturaldept.gov.lk/20261026.0738/snapshots/page-03-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-03-471644461b64.html",
+      "sha256": "471644461b647eb3c4f1b34d1f5946213a535f6d354a38132e04e129fba1059d",
+      "bytes": 62508
     },
     {
       "url": "https://www.culturaldept.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.culturaldept.gov.lk/20261026.0738/snapshots/page-04-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-04-cb3c34bba43c.html",
+      "sha256": "cb3c34bba43ce86e9a22b2fb0e809eb88fedb20244297693e8c545b59bd3dc64",
+      "bytes": 62508
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?lang=en",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-05-2151ea3b304d.html",
+      "sha256": "2151ea3b304de83c1ab41ca41d74955e36ee8332488a24ae1bc780da0d7a76fa",
+      "bytes": 62508
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-06-a2cfcca4c417.html",
+      "sha256": "a2cfcca4c417eb831f3f3bc614e7d88c3f4d3babd02da73ce8fc8e6d6f3cf9dc",
+      "bytes": 68438
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-07-0b01f43766ef.html",
+      "sha256": "0b01f43766efb51c905df4b1f998999c53198dcb19eb26c5b8a537cbddbfe0cf",
+      "bytes": 70484
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_search&view=search&lang=en",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-08-28cfc222ccd6.html",
+      "sha256": "28cfc222ccd616f846d3a06413c2b64172d0fdc62e796ae3fc7b5c00685b875e",
+      "bytes": 56875
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-09-2f3a088662a4.html",
+      "sha256": "2f3a088662a40c6cf9592ee25f87103e98f87347df28b0b67adfc698f70d4c93",
+      "bytes": 62708
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=12&Itemid=124&lang=en",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-10-0804235f580a.html",
+      "sha256": "0804235f580a069615ee8716ca74ec7e3039493230cd738fd9a6ba3070f1fb01",
+      "bytes": 58679
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=7&Itemid=119&lang=en",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-11-a758d68169c9.html",
+      "sha256": "a758d68169c9d046652028fc7607026e471a293a98ce3b0eda029a0c19ed5c92",
+      "bytes": 59184
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=125&lang=en",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-12-8bcc7f7f60cc.html",
+      "sha256": "8bcc7f7f60cc34f1c2602badbd4f68c15b6d89476133ddf3e9c009a14cf50fbe",
+      "bytes": 81248
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=99&Itemid=217&lang=en",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-13-32dd70eb4346.html",
+      "sha256": "32dd70eb43469cd8acfab4e7d8e98ea42e0be952c45861d9e4c266154514ec49",
+      "bytes": 55169
+    },
+    {
+      "url": "https://www.culturaldept.gov.lk/index.php?option=com_content&view=article&id=6&Itemid=118&lang=en",
+      "path": "audit.output/www.culturaldept.gov.lk/20261027.0815/snapshots/page-14-f65d0ca80d65.html",
+      "sha256": "f65d0ca80d655a91b85533c9df1013c2bbd6fbc7a06ba876e5228b58ec6a5935",
+      "bytes": 58321
     }
   ],
   "reviewer_decisions": [],
@@ -180,8 +1098,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [409, 409, 409, 409]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -193,44 +1111,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [409, 409, 409, 409]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -250,9 +1168,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 112 872 031 (16 phone numbers found); Email: culturaldept.info@gmail.com (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -280,7 +1217,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.203.30.211",
+    "egress_ip": "172.214.47.242",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

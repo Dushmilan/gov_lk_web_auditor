@@ -1,8 +1,8 @@
 # Website Audit: https://pmb.gov.lk/
 
-- Completed: 2026-10-26 07:37
+- Completed: 2026-10-27 08:15
 - Overall result: ⚫ Level 0
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010); TLS certificate has expired
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1011); TLS certificate does not match the hostname
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,6 +25,6 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | hosting_configured | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010) |
-| tls_not_expired | ❌ | TLS certificate has expired |
-| tls_hostname_matches | ❓ | TLS hostname check did not run |
+| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1011) |
+| tls_not_expired | ❓ | TLS expiry check did not run |
+| tls_hostname_matches | ❌ | TLS certificate does not match the hostname |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.peoplesbank.lk/
 
-- Completed: 2026-10-26 07:57
+- Completed: 2026-10-27 08:38
 - Overall result: 🟠 Level 2
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number; Phone: +94 (0)11 374074 (135 phone numbers found); Email: info@peoplesbank.lk (33 email addresses found); Published named responsibility: director
+Published postal address: is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number; Phone: +94 (0)11 374074 (137 phone numbers found); Email: info@peoplesbank.lk (33 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number |
-| reachable_contacts | ✅ | Phone: +94 (0)11 374074 (135 phone numbers found); Email: info@peoplesbank.lk (33 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 (0)11 374074 (137 phone numbers found); Email: info@peoplesbank.lk (33 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

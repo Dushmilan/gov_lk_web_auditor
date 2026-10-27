@@ -1,8 +1,8 @@
 # Website Audit: https://cg-nicosia.gov.lk/
 
-- Completed: 2026-10-26 08:05
+- Completed: 2026-10-27 08:48
 - Overall result: 🟠 Level 2
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Ayiou Georgiou No 4, Egkomi 2411. Telephone : +357 22720333 Email: consular.cyprus@mfa.gov.lk Opening Hours for Consular; Phone: 0969808038 (55 phone numbers found); Email: slcg.cyprus@mfa.gov.lk (37 email addresses found); Published named responsibility: division
+Published postal address: Ayiou Georgiou No 4, Egkomi 2411. Telephone : +357 22720333 Email: consular.cyprus@mfa.gov.lk Opening Hours for Consular; Phone: 05-4325-9899- (55 phone numbers found); Email: consular.cyprus@mfa.gov.lk (37 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Ayiou Georgiou No 4, Egkomi 2411. Telephone : +357 22720333 Email: consular.cyprus@mfa.gov.lk Opening Hours for Consular |
-| reachable_contacts | ✅ | Phone: 0969808038 (55 phone numbers found); Email: slcg.cyprus@mfa.gov.lk (37 email addresses found) |
+| reachable_contacts | ✅ | Phone: 05-4325-9899- (55 phone numbers found); Email: consular.cyprus@mfa.gov.lk (37 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

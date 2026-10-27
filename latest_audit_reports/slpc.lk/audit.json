@@ -1,23 +1,18 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "1df395b4-28cd-4a68-b0d4-c3033f496476",
+  "audit_id": "873c9df9-b5bd-459f-a45e-22179ef16604",
   "url": "https://slpc.lk/",
   "normalized_url": "https://slpc.lk/",
-  "started_at": "2026-10-26T08:09:48.463885+05:30",
-  "completed_at": "2026-10-26T08:11:12.142862+05:30",
+  "started_at": "2026-10-27T08:52:49.572385+05:30",
+  "completed_at": "2026-10-27T08:54:32.833997+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 104] Connection reset by peer",
-      "tls_hostname_matches: [Errno 104] Connection reset by peer"
+      "domain_not_parked: Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200"
     ]
   },
   "evidence": [
@@ -25,47 +20,53 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-26T08:09:49.024378+05:30"
+      "observed_at": "2026-10-27T08:52:50.317347+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-26T08:09:49.024386+05:30"
+      "observed_at": "2026-10-27T08:52:50.317366+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 104] Connection reset by peer",
-      "observed_at": "2026-10-26T08:09:49.599696+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-27T08:52:50.506832+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://slpc.lk/",
       "source": "https://slpc.lk/",
-      "observed_at": "2026-10-26T08:11:12.142658+05:30"
+      "observed_at": "2026-10-27T08:54:32.829241+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://slpc.lk/",
       "source": "http://slpc.lk/",
-      "observed_at": "2026-10-26T08:11:12.142681+05:30"
+      "observed_at": "2026-10-27T08:54:32.829260+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://slpc.lk/",
       "source": "https://slpc.lk/",
-      "observed_at": "2026-10-26T08:11:12.142686+05:30"
+      "observed_at": "2026-10-27T08:54:32.829265+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://slpc.lk/",
-      "observed_at": "2026-10-26T08:11:12.142690+05:30"
+      "observed_at": "2026-10-27T08:54:32.829269+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 15 visible characters across 3 pages; below substance threshold 200",
+      "source": "https://slpc.lk/"
     }
   ],
   "observations": [
@@ -85,37 +86,37 @@
     },
     {
       "host": "slpc.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 104] Connection reset by peer"
+      "status": "valid",
+      "expires_at": "2026-12-20T09:52:32+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://slpc.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://slpc.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 20622,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://slpc.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://slpc.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 22529,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://slpc.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://slpc.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 26895,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://slpc.lk/",
@@ -127,7 +128,26 @@
       "error": "timed out"
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://slpc.lk/",
+      "path": "audit.output/slpc.lk/20261027.0852/snapshots/page-01-c28450696922.html",
+      "sha256": "c28450696922dcfa91d777278d00bb2e4e6fb08ef9b5c841a937388ca916f639",
+      "bytes": 15
+    },
+    {
+      "url": "http://slpc.lk/",
+      "path": "audit.output/slpc.lk/20261027.0852/snapshots/page-02-c28450696922.html",
+      "sha256": "c28450696922dcfa91d777278d00bb2e4e6fb08ef9b5c841a937388ca916f639",
+      "bytes": 15
+    },
+    {
+      "url": "https://slpc.lk/",
+      "path": "audit.output/slpc.lk/20261027.0852/snapshots/page-03-c28450696922.html",
+      "sha256": "c28450696922dcfa91d777278d00bb2e4e6fb08ef9b5c841a937388ca916f639",
+      "bytes": 15
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,7 +162,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer",
+      "reason": "Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200",
       "executed": true,
       "checks": [
         {
@@ -155,55 +175,55 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 15 visible characters across 3 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: http://slpc.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 104] Connection reset by peer"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 104] Connection reset by peer"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -241,7 +261,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.203.30.211",
+    "egress_ip": "172.214.47.242",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

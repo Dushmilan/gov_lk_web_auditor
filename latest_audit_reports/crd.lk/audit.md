@@ -1,8 +1,8 @@
 # Website Audit: https://crd.lk/
 
-- Completed: 2026-10-26 07:41
+- Completed: 2026-10-27 08:18
 - Overall result: 🔴 Level 1
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD partici |
+| postal_address | ✅ | Published postal address: and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

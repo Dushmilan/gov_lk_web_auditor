@@ -1,8 +1,8 @@
 # Website Audit: http://govtfactory.gov.lk/
 
-- Completed: 2026-10-26 08:10
+- Completed: 2026-10-27 08:53
 - Overall result: ⚫ Level 0
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010); [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010)
+Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 92 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1011); [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1011)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ Insufficient substantive page content: Only 92 visible characters across 2 pages
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010) |
-| tls_hostname_matches | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1010) |
+| tls_not_expired | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1011) |
+| tls_hostname_matches | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1011) |
 
 ## 🟠 Level 2: ❓
 

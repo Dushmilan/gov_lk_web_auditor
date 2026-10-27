@@ -1,8 +1,8 @@
 # Website Audit: https://pgims.pdn.ac.lk/
 
-- Completed: 2026-10-26 07:48
+- Completed: 2026-10-27 08:34
 - Overall result: 🔴 Level 1
-- Vantage: 172.203.30.211 (US, github-actions)
+- Vantage: 172.214.47.242 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 81 238 9757; Email: pgimsoffice@pgims.pdn.ac.lk |
+| reachable_contacts | ✅ | Phone: +94 81 238 9757 (223 phone numbers found); Email: pgimsoffice@pgims.pdn.ac.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

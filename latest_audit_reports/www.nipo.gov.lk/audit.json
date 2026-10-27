@@ -1,18 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b032381c-f145-4d6e-b14a-4964cfb1a958",
+  "audit_id": "50651554-fc2d-4af8-a19a-f1e2c297fe2f",
   "url": "https://www.nipo.gov.lk/",
   "normalized_url": "https://www.nipo.gov.lk/",
-  "started_at": "2026-10-26T08:24:28.835021+05:30",
-  "completed_at": "2026-10-26T08:24:37.962822+05:30",
+  "started_at": "2026-10-27T09:10:28.047625+05:30",
+  "completed_at": "2026-10-27T09:12:40.905331+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -20,53 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-26T08:24:29.128158+05:30"
+      "observed_at": "2026-10-27T09:10:28.442044+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-26T08:24:29.128176+05:30"
+      "observed_at": "2026-10-27T09:10:28.442065+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-26T08:24:29.383277+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-27T09:10:38.706166+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.nipo.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.nipo.gov.lk/",
-      "observed_at": "2026-10-26T08:24:37.953980+05:30"
+      "observed_at": "2026-10-27T09:12:40.905151+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.nipo.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.nipo.gov.lk/",
-      "observed_at": "2026-10-26T08:24:37.954017+05:30"
+      "observed_at": "2026-10-27T09:12:40.905172+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.nipo.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.nipo.gov.lk/",
-      "observed_at": "2026-10-26T08:24:37.954022+05:30"
+      "observed_at": "2026-10-27T09:12:40.905177+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.nipo.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.nipo.gov.lk/",
-      "observed_at": "2026-10-26T08:24:37.954025+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 85 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://www.nipo.gov.lk/"
+      "observed_at": "2026-10-27T09:12:40.905180+05:30"
     }
   ],
   "observations": [
@@ -86,78 +85,49 @@
     },
     {
       "host": "www.nipo.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-02-21T05:29:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.nipo.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.nipo.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 430,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.nipo.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.nipo.gov.lk/",
-      "redirects": [
-        "https://www.nipo.gov.lk/"
-      ],
-      "elapsed_ms": 283,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.nipo.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.nipo.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 281,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.nipo.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.nipo.gov.lk/",
-      "redirects": [
-        "https://www.nipo.gov.lk/"
-      ],
-      "elapsed_ms": 295,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.nipo.gov.lk/",
-      "path": "audit.output/www.nipo.gov.lk/20261026.0824/snapshots/page-01-c23fcb7a7d31.html",
-      "sha256": "c23fcb7a7d319b44181dfa2b170bece04cd9d039d583dd6656ded77e54c11f8b",
-      "bytes": 4693
-    },
-    {
-      "url": "https://www.nipo.gov.lk/",
-      "path": "audit.output/www.nipo.gov.lk/20261026.0824/snapshots/page-02-c23fcb7a7d31.html",
-      "sha256": "c23fcb7a7d319b44181dfa2b170bece04cd9d039d583dd6656ded77e54c11f8b",
-      "bytes": 4693
-    },
-    {
-      "url": "https://www.nipo.gov.lk/",
-      "path": "audit.output/www.nipo.gov.lk/20261026.0824/snapshots/page-03-c23fcb7a7d31.html",
-      "sha256": "c23fcb7a7d319b44181dfa2b170bece04cd9d039d583dd6656ded77e54c11f8b",
-      "bytes": 4693
-    },
-    {
-      "url": "https://www.nipo.gov.lk/",
-      "path": "audit.output/www.nipo.gov.lk/20261026.0824/snapshots/page-04-c23fcb7a7d31.html",
-      "sha256": "c23fcb7a7d319b44181dfa2b170bece04cd9d039d583dd6656ded77e54c11f8b",
-      "bytes": 4693
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -172,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -185,55 +155,55 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -271,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.203.30.211",
+    "egress_ip": "172.214.47.242",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
