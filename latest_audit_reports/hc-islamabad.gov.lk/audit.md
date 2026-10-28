@@ -1,8 +1,8 @@
 # Website Audit: https://hc-islamabad.gov.lk/
 
-- Completed: 2026-10-27 08:44
+- Completed: 2026-10-28 08:49
 - Overall result: 🟠 Level 2
-- Vantage: 172.214.47.242 (US, github-actions)
+- Vantage: 20.168.103.3 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

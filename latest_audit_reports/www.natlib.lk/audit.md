@@ -1,8 +1,8 @@
 # Website Audit: https://www.natlib.lk/
 
-- Completed: 2026-10-27 08:18
+- Completed: 2026-10-28 08:28
 - Overall result: 🟠 Level 2
-- Vantage: 172.214.47.242 (US, github-actions)
+- Vantage: 20.168.103.3 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,12 +45,12 @@ Published postal address: & Documentation Services Board, No 14, Independence Av
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
+| required_documents | ✅ | Published required documents: supporting documents |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |

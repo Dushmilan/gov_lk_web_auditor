@@ -1,8 +1,8 @@
 # Website Audit: https://www.dpa.gov.lk/
 
-- Completed: 2026-10-27 08:20
+- Completed: 2026-10-28 08:30
 - Overall result: 🟠 Level 2
-- Vantage: 172.214.47.242 (US, github-actions)
+- Vantage: 20.168.103.3 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

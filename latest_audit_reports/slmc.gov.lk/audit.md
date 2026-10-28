@@ -1,8 +1,8 @@
 # Website Audit: https://slmc.gov.lk/
 
-- Completed: 2026-10-27 08:53
+- Completed: 2026-10-28 08:57
 - Overall result: 🟠 Level 2
-- Vantage: 172.214.47.242 (US, github-actions)
+- Vantage: 20.168.103.3 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -54,5 +54,5 @@ No passing published update date evidence found
 | fees_and_payment | ✅ | Published fees and payment: rs 2025 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 3 months |
-| downloadable_form | ✅ | Published downloadable form: https://slmc.gov.lk/applications/15URGENT_APPLICATION-FOR-CGS.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://slmc.gov.lk/website/applications/app-0006-6ae0216e6562f.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

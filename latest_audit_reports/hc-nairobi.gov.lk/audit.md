@@ -1,8 +1,8 @@
 # Website Audit: https://hc-nairobi.gov.lk/
 
-- Completed: 2026-10-27 08:49
+- Completed: 2026-10-28 08:55
 - Overall result: 🟠 Level 2
-- Vantage: 172.214.47.242 (US, github-actions)
+- Vantage: 20.168.103.3 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"validation_surname_required\":\"Surname is required\",\"subject_placeholder\":\"Enter subject\",\"choose_serv; Phone: 0006714358 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
+Published postal address: Line 2\",\"no_button\":\"No\",\"booking_details\":\"Booking Details\",\"appointment_on\":\"on\",\"cannot_submit_review_h; Phone: 0006714358 (7 phone numbers found); Email: slhc.nairobi@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Line 2\",\"validation_surname_required\":\"Surname is required\",\"subject_placeholder\":\"Enter subject\",\"choose_serv |
-| reachable_contacts | ✅ | Phone: 0006714358 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
+| postal_address | ✅ | Published postal address: Line 2\",\"no_button\":\"No\",\"booking_details\":\"Booking Details\",\"appointment_on\":\"on\",\"cannot_submit_review_h |
+| reachable_contacts | ✅ | Phone: 0006714358 (7 phone numbers found); Email: slhc.nairobi@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found; No passing downloadable form evidence found
+No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing legal basis evidence found; No passing downloadable form evidence fou
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 6 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 10/08/2026 |
+| published_update_date | ❓ | No passing published update date evidence found |

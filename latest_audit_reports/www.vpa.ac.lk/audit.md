@@ -1,8 +1,8 @@
 # Website Audit: http://www.vpa.ac.lk/
 
-- Completed: 2026-10-27 08:26
+- Completed: 2026-10-28 08:34
 - Overall result: ⚫ Level 0
-- Vantage: 172.214.47.242 (US, github-actions)
+- Vantage: 20.168.103.3 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | An HTTP probe was transient |
+| http_available | ❓ | HTTP checks did not run |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.vpa.ac.lk'. (_ssl.c:1011) |
 | tls_not_expired | ❓ | TLS expiry check did not run |

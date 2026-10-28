@@ -1,8 +1,8 @@
 # Website Audit: https://www.svias.esn.ac.lk/
 
-- Completed: 2026-10-27 08:31
+- Completed: 2026-10-28 08:36
 - Overall result: 🔴 Level 1
-- Vantage: 172.214.47.242 (US, github-actions)
+- Vantage: 20.168.103.3 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 75 808 7516 (5 phone numbers found); Email: ushanthyn@esn.ac.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 75 808 7516 (5 phone numbers found); Email: vaheesant@esn.ac.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

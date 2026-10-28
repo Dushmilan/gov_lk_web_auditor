@@ -1,8 +1,8 @@
 # Website Audit: https://uciars.cmb.ac.lk/
 
-- Completed: 2026-10-27 08:29
+- Completed: 2026-10-28 08:35
 - Overall result: 🟠 Level 2
-- Vantage: 172.214.47.242 (US, github-actions)
+- Vantage: 20.168.103.3 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town ; Phone: 0000140622 (21 phone numbers found); Email: hasanaka@uciars.cmb.ac.lk (23 email addresses found); Published named responsibility: director
+Published postal address: Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town ; Phone: +94 701256247 (26 phone numbers found); Email: supun@uciars.cmb.ac.lk (26 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Department of Agro-Technology Institute for Agro-Technology and Rural Sciences University of Colombo Weligatta-New Town  |
-| reachable_contacts | ✅ | Phone: 0000140622 (21 phone numbers found); Email: hasanaka@uciars.cmb.ac.lk (23 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 701256247 (26 phone numbers found); Email: supun@uciars.cmb.ac.lk (26 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| fees_and_payment | ✅ | Published fees and payment: RS 2026 |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 25 days |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://uciars.cmb.ac.lk/wp-content/uploads/2017/06/Author-Declaration-Form-1.docx |
 | published_update_date | ❓ | No passing published update date evidence found |
