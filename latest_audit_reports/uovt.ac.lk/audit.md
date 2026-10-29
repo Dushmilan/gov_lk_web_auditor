@@ -1,8 +1,8 @@
 # Website Audit: https://uovt.ac.lk/
 
-- Completed: 2026-10-28 08:38
+- Completed: 2026-10-29 09:00
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.103.3 (US, github-actions)
+- Vantage: 4.242.27.85 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: University of Vocational Technology, No.100, Kandawala, Ratmalana Get in Touch Choose how you'd like to connect with us.; Phone: 018-1.562 1.97 (176 phone numbers found); Email: director-finance@uovt.ac.lk (14 email addresses found); Published named responsibility: director
+Published postal address: University of Vocational Technology, No.100, Kandawala, Ratmalana Get in Touch Choose how you'd like to connect with us.; Phone: 0724479334 (176 phone numbers found); Email: ar-administration@uovt.ac.lk (14 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: University of Vocational Technology, No.100, Kandawala, Ratmalana Get in Touch Choose how you'd like to connect with us. |
-| reachable_contacts | ✅ | Phone: 018-1.562 1.97 (176 phone numbers found); Email: director-finance@uovt.ac.lk (14 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0724479334 (176 phone numbers found); Email: ar-administration@uovt.ac.lk (14 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing required documents evidence found; No passing downloadable form evide
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: Rs. 500 |
+| fees_and_payment | ✅ | Published fees and payment: rs3590 |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 3 working days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

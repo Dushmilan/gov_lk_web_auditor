@@ -1,8 +1,8 @@
 # Website Audit: https://www.slab.lk/
 
-- Completed: 2026-10-28 09:14
+- Completed: 2026-10-29 09:33
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.103.3 (US, github-actions)
+- Vantage: 4.242.27.85 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing fees and payment evid
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 27 October 2026 |
+| published_update_date | ✅ | Published published update date: 28 October 2026 |

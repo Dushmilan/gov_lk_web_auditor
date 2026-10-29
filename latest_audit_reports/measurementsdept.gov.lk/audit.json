@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c5bc819c-72c7-45aa-90c7-d16591bc19d2",
+  "audit_id": "2e12d318-3abb-4dc1-b7ec-50394baef2f7",
   "url": "https://measurementsdept.gov.lk/",
   "normalized_url": "https://measurementsdept.gov.lk/",
-  "started_at": "2026-10-28T09:11:46.503697+05:30",
-  "completed_at": "2026-10-28T09:13:59.156823+05:30",
+  "started_at": "2026-10-29T09:30:51.082900+05:30",
+  "completed_at": "2026-10-29T09:31:36.210261+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,735 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-28T09:11:47.048586+05:30"
+      "observed_at": "2026-10-29T09:30:51.459306+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-28T09:11:47.048607+05:30"
+      "observed_at": "2026-10-29T09:30:51.459329+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-28T09:11:57.265387+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-29T09:30:53.220487+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://measurementsdept.gov.lk/index.php?lang=en",
       "source": "https://measurementsdept.gov.lk/",
-      "observed_at": "2026-10-28T09:13:59.156661+05:30"
+      "observed_at": "2026-10-29T09:31:35.860244+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://measurementsdept.gov.lk/index.php?lang=en",
       "source": "http://measurementsdept.gov.lk/",
-      "observed_at": "2026-10-28T09:13:59.156683+05:30"
+      "observed_at": "2026-10-29T09:31:35.860264+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://measurementsdept.gov.lk/index.php?lang=en",
       "source": "https://measurementsdept.gov.lk/",
-      "observed_at": "2026-10-28T09:13:59.156686+05:30"
+      "observed_at": "2026-10-29T09:31:35.860268+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://measurementsdept.gov.lk/index.php?lang=en",
       "source": "http://measurementsdept.gov.lk/",
-      "observed_at": "2026-10-28T09:13:59.156689+05:30"
+      "observed_at": "2026-10-29T09:31:35.860271+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://measurementsdept.gov.lk/index.php?lang=en",
+      "source": "https://measurementsdept.gov.lk/index.php",
+      "observed_at": "2026-10-29T09:31:35.860274+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "observed_at": "2026-10-29T09:31:35.860276+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "observed_at": "2026-10-29T09:31:35.860279+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "observed_at": "2026-10-29T09:31:35.860282+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "observed_at": "2026-10-29T09:31:35.860284+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "observed_at": "2026-10-29T09:31:35.860287+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "observed_at": "2026-10-29T09:31:35.860290+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "observed_at": "2026-10-29T09:31:35.860293+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "observed_at": "2026-10-29T09:31:35.860296+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "observed_at": "2026-10-29T09:31:35.860299+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182250 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "data": {
+        "value": "+94-11-2182250 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2182259 ",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "data": {
+        "value": "+94-11-2182259 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@measurementsdept.gov.lk",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "data": {
+        "value": "info@measurementsdept.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 7861 visible characters across 14 pages",
+      "source": "https://measurementsdept.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +774,236 @@
     },
     {
       "host": "measurementsdept.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2027-01-03T14:59:58+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://measurementsdept.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://measurementsdept.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 20767,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://measurementsdept.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://measurementsdept.gov.lk/",
+        "https://measurementsdept.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 1733,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "https://measurementsdept.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://measurementsdept.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 1034,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://measurementsdept.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://measurementsdept.gov.lk/",
+        "https://measurementsdept.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 812,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://measurementsdept.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 815,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1061,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "redirects": [],
+      "elapsed_ms": 846,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "redirects": [],
+      "elapsed_ms": 834,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "redirects": [],
+      "elapsed_ms": 790,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "redirects": [],
+      "elapsed_ms": 790,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "redirects": [],
+      "elapsed_ms": 794,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "redirects": [],
+      "elapsed_ms": 773,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "redirects": [],
+      "elapsed_ms": 793,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "status_code": 200,
+      "final_url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "redirects": [],
+      "elapsed_ms": 792,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-01-5ba3874715d8.html",
+      "sha256": "5ba3874715d807417d484f4f7f3bb3583a5fb197b42601c374a9f3952e149843",
+      "bytes": 64317
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-02-7a0fbba50350.html",
+      "sha256": "7a0fbba50350040e66937610e66b4071c6f25347d2e64edb5a1d4c696d96d7be",
+      "bytes": 64317
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-03-4a0795ee3b67.html",
+      "sha256": "4a0795ee3b675dd6fad1c9b5526e9ea04de8198d039eb29f32f24f848771d50a",
+      "bytes": 64317
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-04-cb65fbb508cd.html",
+      "sha256": "cb65fbb508cd964642c23bb190023a8c9b3887a9584274bd932c9947fb362c22",
+      "bytes": 64317
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-05-04c72ad293d7.html",
+      "sha256": "04c72ad293d751b7e72f3ac1003ce838977e32361b02650b01ea40f8191ba185",
+      "bytes": 64317
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=si",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-06-b844c6f97ee6.html",
+      "sha256": "b844c6f97ee6de5d63afc155d231fc112f54d7dc5ac32712ed4b9adf167d3cbb",
+      "bytes": 69775
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-07-5a38b6f85ac6.html",
+      "sha256": "5a38b6f85ac6248003bcffc81f1cdbb8cdc31fce68b57c7bfe36da84fa874d6d",
+      "bytes": 70331
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-08-e39f1c5723a5.html",
+      "sha256": "e39f1c5723a5743eba0ce8e9467eb808e41906b99b94df509426e234cec22240",
+      "bytes": 64573
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=38&Itemid=171&lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-09-ab927180aee5.html",
+      "sha256": "ab927180aee5c71273f903f448333daccfa6a8b4fa339c08140902cc8993c277",
+      "bytes": 46100
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=39&Itemid=172&lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-10-4e28db7bff0c.html",
+      "sha256": "4e28db7bff0cc2bcf798456add6db22edda1da751afe93c6d0b1dd1c1f7047d2",
+      "bytes": 49013
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=40&Itemid=173&lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-11-215749da2f56.html",
+      "sha256": "215749da2f5682be04c5c9d53435de592098a81f32000d73ab28e89e0f7d510a",
+      "bytes": 33332
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=191&lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-12-d77f9bf2938e.html",
+      "sha256": "d77f9bf2938e9bd1680cbc71caaaa58fe25bfbfc588fe3b0ffef331ba6d973fc",
+      "bytes": 39208
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=54&Itemid=192&lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-13-9d547fa611d2.html",
+      "sha256": "9d547fa611d2fcad5a9021f29a605fb767649e0a179c02bc56158a5a2c7fb266",
+      "bytes": 35698
+    },
+    {
+      "url": "https://measurementsdept.gov.lk/index.php?option=com_content&view=article&id=55&Itemid=193&lang=en",
+      "path": "audit.output/measurementsdept.gov.lk/20261029.0930/snapshots/page-14-a5f0c266c058.html",
+      "sha256": "a5f0c266c05849038696f8d20c4dfa1063acb94aa5ac858f7d9cd221e839a101",
+      "bytes": 37872
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1017,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +1030,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +1087,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94-11-2182250 (2 phone numbers found); Email: info@measurementsdept.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +1136,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.168.103.3",
+    "egress_ip": "4.242.27.85",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

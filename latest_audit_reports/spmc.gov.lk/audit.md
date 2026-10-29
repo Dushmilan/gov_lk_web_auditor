@@ -1,8 +1,8 @@
 # Website Audit: https://spmc.gov.lk/
 
-- Completed: 2026-10-28 08:57
+- Completed: 2026-10-29 09:18
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.103.3 (US, github-actions)
+- Vantage: 4.242.27.85 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No.11, Sir John Kotelawala Mawatha, Kandawala Estate, Ratmalana, Sri Lanka.; Phone: (+94) 011 2636967 (14 phone numbers found); Email: info@spmc.gov.lk; Published named responsibility: director
+Published postal address: No.11, Sir John Kotelawala Mawatha, Kandawala Estate, Ratmalana, Sri Lanka.; Phone: (+94) 011 2637574 (14 phone numbers found); Email: info@spmc.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No.11, Sir John Kotelawala Mawatha, Kandawala Estate, Ratmalana, Sri Lanka. |
-| reachable_contacts | ✅ | Phone: (+94) 011 2636967 (14 phone numbers found); Email: info@spmc.gov.lk |
+| reachable_contacts | ✅ | Phone: (+94) 011 2637574 (14 phone numbers found); Email: info@spmc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-10-27 |
+| published_update_date | ✅ | Published published update date: 2026-10-28 |

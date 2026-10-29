@@ -1,8 +1,8 @@
 # Website Audit: https://npa.gov.lk/
 
-- Completed: 2026-10-28 09:08
+- Completed: 2026-10-29 09:27
 - Overall result: ⚫ Level 0
-- Vantage: 20.168.103.3 (US, github-actions)
+- Vantage: 4.242.27.85 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

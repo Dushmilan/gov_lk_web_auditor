@@ -1,8 +1,8 @@
 # Website Audit: https://lpl.lk/
 
-- Completed: 2026-10-28 09:27
+- Completed: 2026-10-29 09:21
 - Overall result: 🔴 Level 1
-- Vantage: 20.168.103.3 (US, github-actions)
+- Vantage: 4.242.27.85 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Contact E-mail Latest News Award of Contract 15 July 2026 Award of Contract: Manufacturing/ Supply and Deliver of... Ope |
+| postal_address | ✅ | Published postal address: Contact E-mail Latest News Won Commendation Award 27 October 2026 National Productivity Awards 2025/26 Lanka Phosphate L |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

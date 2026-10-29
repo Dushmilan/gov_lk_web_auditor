@@ -1,8 +1,8 @@
 # Website Audit: http://www.vau.ac.lk/
 
-- Completed: 2026-10-28 08:35
+- Completed: 2026-10-29 08:56
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.103.3 (US, github-actions)
+- Vantage: 4.242.27.85 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -41,11 +41,11 @@ Published postal address: by the Vice \u2013 Chancellor ,University of Vavuniya 
 | reachable_contacts | ✅ | Phone: 0069378401 (66 phone numbers found); Email: vc@vau.ac.lk (58 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
-## 🟢 Level 3: ❌
+## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 2021-10-08
+No passing eligibility criteria evidence found; No passing required documents evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ Published published update date: 2021-10-08
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 2 months |
 | downloadable_form | ✅ | Published downloadable form: https://www.vau.ac.lk/wp-content/uploads/2026/07/Application-Form-of-Category-01-Chinese-Ambassadors-Scholarship.pdf |
-| published_update_date | ❌ | Published published update date: 2021-10-08 |
+| published_update_date | ✅ | Published published update date: 19 October 2026 |
