@@ -1,8 +1,8 @@
 # Website Audit: https://neda.gov.lk/
 
-- Completed: 2026-10-29 09:20
+- Completed: 2026-10-30 09:33
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.27.85 (US, github-actions)
+- Vantage: 64.236.140.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Western Colombo Colombo District Secretariat Ms. C T J Jayaweera Chathya 0714491914 0714491914 chathyajayamanne@gmail.co; Phone: 0122359855 (338 phone numbers found); Email: info@neda.gov.lk (267 email addresses found); Published named responsibility: director
+Published postal address: the challenges faced by MSMEs, who are often isolated and struggling to scale up due to individual funding limitations. ; Phone: 0122359855 (5 phone numbers found); Email: info@neda.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Western Colombo Colombo District Secretariat Ms. C T J Jayaweera Chathya 0714491914 0714491914 chathyajayamanne@gmail.co |
-| reachable_contacts | ✅ | Phone: 0122359855 (338 phone numbers found); Email: info@neda.gov.lk (267 email addresses found) |
+| postal_address | ✅ | Published postal address: the challenges faced by MSMEs, who are often isolated and struggling to scale up due to individual funding limitations.  |
+| reachable_contacts | ✅ | Phone: 0122359855 (5 phone numbers found); Email: info@neda.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
-## 🟢 Level 3: ❌
+## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 26-05-2024
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ Published published update date: 26-05-2024
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❌ | Published published update date: 26-05-2024 |
+| downloadable_form | ✅ | Published downloadable form: https://neda.gov.lk/wp-content/uploads/2025/11/application-sinhala-2025-micro.pdf |
+| published_update_date | ❓ | No passing published update date evidence found |

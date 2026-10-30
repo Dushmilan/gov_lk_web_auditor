@@ -1,8 +1,8 @@
 # Website Audit: https://digitalfreelancer.gov.lk/
 
-- Completed: 2026-10-29 08:53
+- Completed: 2026-10-30 09:02
 - Overall result: 🔴 Level 1
-- Vantage: 4.242.27.85 (US, github-actions)
+- Vantage: 64.236.140.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found; No passing named responsibility eviden
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 112-369-099 (3 phone numbers found); Email: info@lightingdigital.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112-369-099; Email: info@lightingdigital.gov.lk |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

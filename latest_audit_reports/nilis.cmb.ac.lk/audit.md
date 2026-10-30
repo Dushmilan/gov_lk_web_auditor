@@ -1,8 +1,8 @@
 # Website Audit: https://nilis.cmb.ac.lk/home/
 
-- Completed: 2026-10-29 08:57
+- Completed: 2026-10-30 09:00
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.27.85 (US, github-actions)
+- Vantage: 64.236.140.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: NILIS, University of Colombo, Sri Lanka; Phone: +94 11 344 36 34 (7 phone numbers found); Email: Published email: (8 email addresses found); Published named responsibility: director
+Published postal address: NILIS, University of Colombo, Sri Lanka; Phone: +94 11 250 71 48 (7 phone numbers found); Email: Published email: (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: NILIS, University of Colombo, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 344 36 34 (7 phone numbers found); Email: Published email: (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 250 71 48 (7 phone numbers found); Email: Published email: (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

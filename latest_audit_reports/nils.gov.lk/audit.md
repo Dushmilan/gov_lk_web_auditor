@@ -1,8 +1,8 @@
 # Website Audit: https://nils.gov.lk/
 
-- Completed: 2026-10-29 09:23
+- Completed: 2026-10-30 09:27
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.27.85 (US, github-actions)
+- Vantage: 64.236.140.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the specific challenges faced by our clients. Our Services We provide the following consultancy services: Preparation of; Phone: 017-.034-.033-.0 (214 phone numbers found); Email: info@nils.lk; Published named responsibility: director
+Published postal address: National Institute of Labour Studies (NILS) 2nd Floor, Labour Secretariat, Narahenpita, Colombo 05, Sri Lanka General & ; Phone: 071 795 7777 (10 phone numbers found); Email: info@nils.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: the specific challenges faced by our clients. Our Services We provide the following consultancy services: Preparation of |
-| reachable_contacts | ✅ | Phone: 017-.034-.033-.0 (214 phone numbers found); Email: info@nils.lk |
+| postal_address | ✅ | Published postal address: National Institute of Labour Studies (NILS) 2nd Floor, Labour Secretariat, Narahenpita, Colombo 05, Sri Lanka General &  |
+| reachable_contacts | ✅ | Phone: 071 795 7777 (10 phone numbers found); Email: info@nils.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 4 Months |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

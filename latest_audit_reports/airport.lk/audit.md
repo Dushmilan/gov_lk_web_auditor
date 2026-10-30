@@ -1,8 +1,8 @@
 # Website Audit: https://airport.lk/
 
-- Completed: 2026-10-29 09:25
+- Completed: 2026-10-30 09:29
 - Overall result: ⚫ Level 0
-- Vantage: 4.242.27.85 (US, github-actions)
+- Vantage: 64.236.140.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to g
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | An HTTP probe was transient |
+| http_available | ❓ | HTTP checks did not run |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011) |
 | tls_not_expired | ✅ | TLS certificate valid |

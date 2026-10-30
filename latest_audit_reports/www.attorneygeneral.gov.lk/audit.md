@@ -1,8 +1,8 @@
 # Website Audit: https://www.attorneygeneral.gov.lk/
 
-- Completed: 2026-10-29 09:21
+- Completed: 2026-10-30 09:25
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.27.85 (US, github-actions)
+- Vantage: 64.236.140.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Old Building Attorney General’s Department P.O.BOX: 502 Colombo 12 New Building Attorney General’s Department No. 159, S; Phone: 0285207695 (24 phone numbers found); Email: administration@agd.gov.lk (5 email addresses found); Published named responsibility: division
+Published postal address: Old Building Attorney General’s Department P.O.BOX: 502 Colombo 12 New Building Attorney General’s Department No. 159, S; Phone: 0285173561 (24 phone numbers found); Email: administration@agd.gov.lk (5 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Old Building Attorney General’s Department P.O.BOX: 502 Colombo 12 New Building Attorney General’s Department No. 159, S |
-| reachable_contacts | ✅ | Phone: 0285207695 (24 phone numbers found); Email: administration@agd.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0285173561 (24 phone numbers found); Email: administration@agd.gov.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

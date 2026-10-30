@@ -1,8 +1,8 @@
 # Website Audit: https://peoplesinsurance.lk/
 
-- Completed: 2026-10-29 09:04
+- Completed: 2026-10-30 09:07
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.27.85 (US, github-actions)
+- Vantage: 64.236.140.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: * Phone Number * Do You Have An On Going Lease? * Select One Yes No Are You An Existing Customer? * Select One Yes No Ve; Phone: +94 11 2 206 306 (38 phone numbers found); Email: pilassist@peoplesinsurance.lk (2 email addresses found); Published named responsibility: director
+Published postal address: * Phone Number * Do You Have An On Going Lease? * Select One Yes No Are You An Existing Customer? * Select One Yes No Ve; Phone: 0112206306 (38 phone numbers found); Email: pilassist@peoplesinsurance.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: * Phone Number * Do You Have An On Going Lease? * Select One Yes No Are You An Existing Customer? * Select One Yes No Ve |
-| reachable_contacts | ✅ | Phone: +94 11 2 206 306 (38 phone numbers found); Email: pilassist@peoplesinsurance.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112206306 (38 phone numbers found); Email: pilassist@peoplesinsurance.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
