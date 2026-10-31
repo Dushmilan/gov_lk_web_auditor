@@ -1,8 +1,8 @@
 # Website Audit: https://wbb.gov.lk/
 
-- Completed: 2026-10-30 09:12
+- Completed: 2026-10-31 08:53
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.140.210 (US, github-actions)
+- Vantage: 13.71.232.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -54,5 +54,5 @@ No passing required documents evidence found; No passing processing time evidenc
 | fees_and_payment | ✅ | Published fees and payment: rs 04 |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: http://wbb.gov.lk/backend/assets/publications/01.Publication_of_Contract_Awards_Information_Kit_2024.02.08.pdf |
+| downloadable_form | ✅ | Published downloadable form: http://wbb.gov.lk/backend/assets/publications/web/20261030/01 හිමිකම්පෑම්, විරෝධතා ඉදිරිපත් කිරීමේ අයදුම්පත්_රය Final.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

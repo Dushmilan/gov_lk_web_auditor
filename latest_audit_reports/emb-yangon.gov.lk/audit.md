@@ -1,8 +1,8 @@
 # Website Audit: https://emb-yangon.gov.lk/
 
-- Completed: 2026-10-30 09:15
+- Completed: 2026-10-31 08:56
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.140.210 (US, github-actions)
+- Vantage: 13.71.232.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing legal basis evidence 
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 28 September 2026 |
+| published_update_date | ✅ | Published published update date: 25 August 2026 |

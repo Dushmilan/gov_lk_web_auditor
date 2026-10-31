@@ -1,8 +1,8 @@
 # Website Audit: https://nata.gov.lk/
 
-- Completed: 2026-10-30 09:21
+- Completed: 2026-10-31 09:02
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.140.210 (US, github-actions)
+- Vantage: 13.71.232.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

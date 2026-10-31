@@ -1,8 +1,8 @@
 # Website Audit: https://hc-male.gov.lk/
 
-- Completed: 2026-10-30 09:13
+- Completed: 2026-10-31 08:54
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.140.210 (US, github-actions)
+- Vantage: 13.71.232.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: H. Noomuraka, Hadheebee Magu, Male, Maldives Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you ; Phone: +9603321652 (12 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: director
+Published postal address: H. Noomuraka, Hadheebee Magu, Male, Maldives Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you ; Phone: 0006878519 (12 phone numbers found); Email: slhc.male@mfa.gov.lk (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: H. Noomuraka, Hadheebee Magu, Male, Maldives Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you  |
-| reachable_contacts | ✅ | Phone: +9603321652 (12 phone numbers found); Email: john@example.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0006878519 (12 phone numbers found); Email: slhc.male@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

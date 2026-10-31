@@ -1,8 +1,8 @@
 # Website Audit: https://www.pdn.ac.lk/
 
-- Completed: 2026-10-30 08:58
+- Completed: 2026-10-31 08:40
 - Overall result: 🔴 Level 1
-- Vantage: 64.236.140.210 (US, github-actions)
+- Vantage: 13.71.232.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

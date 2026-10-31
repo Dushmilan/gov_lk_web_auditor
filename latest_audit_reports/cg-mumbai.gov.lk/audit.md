@@ -1,8 +1,8 @@
 # Website Audit: https://cg-mumbai.gov.lk/
 
-- Completed: 2026-10-30 09:13
+- Completed: 2026-10-31 08:54
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.140.210 (US, github-actions)
+- Vantage: 13.71.232.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 34, Mulla House Homi Modi Street Fort, Mumbai 400 001 India Tel: (00-91-22) 22045861 , (00-91-22) 22048303 Email: slcg.m; Phone: 00912222048303 (10 phone numbers found); Email: slcg.mumbai@mfa.gov.lk (6 email addresses found); Published named responsibility: director
+Published postal address: 34, Mulla House Homi Modi Street Fort, Mumbai 400 001 India Tel: (00-91-22) 22045861 , (00-91-22) 22048303 Email: slcg.m; Phone: 095.9676513 (10 phone numbers found); Email: slcg.mumbai@mfa.gov.lk (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 34, Mulla House Homi Modi Street Fort, Mumbai 400 001 India Tel: (00-91-22) 22045861 , (00-91-22) 22048303 Email: slcg.m |
-| reachable_contacts | ✅ | Phone: 00912222048303 (10 phone numbers found); Email: slcg.mumbai@mfa.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: 095.9676513 (10 phone numbers found); Email: slcg.mumbai@mfa.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
