@@ -1,8 +1,8 @@
 # Website Audit: https://vncoe.edu.lk/
 
-- Completed: 2026-10-31 08:44
+- Completed: 2026-11-01 08:43
 - Overall result: 🔴 Level 1
-- Vantage: 13.71.232.145 (US, github-actions)
+- Vantage: 20.161.70.180 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://vncoe.edu.lk/: Probe 2: _ssl.c:994: The handshake operation timed out; https://vncoe.edu.lk/: Probe 3: _ssl.c:994: The handshake operation timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://vncoe.edu.lk/: Probe 2: _ssl.c:994: The handshake operation timed out; https://vncoe.edu.lk/: Probe 3: _ssl.c:994: The handshake operation timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |

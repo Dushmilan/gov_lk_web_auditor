@@ -1,8 +1,8 @@
 # Website Audit: https://www.labourmin.gov.lk/
 
-- Completed: 2026-10-31 09:24
+- Completed: 2026-11-01 09:22
 - Overall result: 🟠 Level 2
-- Vantage: 13.71.232.145 (US, github-actions)
+- Vantage: 20.161.70.180 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

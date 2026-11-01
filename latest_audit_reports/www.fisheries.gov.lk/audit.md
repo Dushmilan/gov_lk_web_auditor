@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-10-31 09:24
+- Completed: 2026-11-01 09:22
 - Overall result: 🟠 Level 2
-- Vantage: 13.71.232.145 (US, github-actions)
+- Vantage: 20.161.70.180 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: at the \"China–South Asian Countries Marine Cooperation Forum,\" held on September 17 and 18 in the Qingdao West Coast N; Phone: +94112446183+94112446184 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found); Published named responsibility: director
+Published postal address: at the \"China–South Asian Countries Marine Cooperation Forum,\" held on September 17 and 18 in the Qingdao West Coast N; Phone: 0 0 0 1.213-.303 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: at the \"China–South Asian Countries Marine Cooperation Forum,\" held on September 17 and 18 in the Qingdao West Coast N |
-| reachable_contacts | ✅ | Phone: +94112446183+94112446184 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 0 0 1.213-.303 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

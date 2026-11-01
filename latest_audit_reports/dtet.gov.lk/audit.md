@@ -1,8 +1,8 @@
 # Website Audit: https://dtet.gov.lk/
 
-- Completed: 2026-10-31 08:45
+- Completed: 2026-11-01 08:43
 - Overall result: ⚫ Level 0
-- Vantage: 13.71.232.145 (US, github-actions)
+- Vantage: 20.161.70.180 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,18 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "0ac2b812-e347-4572-84b7-a58b2cce6b9c",
+  "audit_id": "212d9c27-7a5a-48c1-bc79-18a9f96fc72b",
   "url": "https://muslimaffairs.gov.lk/",
   "normalized_url": "https://muslimaffairs.gov.lk/",
-  "started_at": "2026-10-31T08:33:27.172808+05:30",
-  "completed_at": "2026-10-31T08:33:31.226424+05:30",
+  "started_at": "2026-11-01T08:29:38.966741+05:30",
+  "completed_at": "2026-11-01T08:31:43.955466+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -20,88 +26,635 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-31T08:33:27.480757+05:30"
+      "observed_at": "2026-11-01T08:29:39.267619+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-31T08:33:27.480772+05:30"
+      "observed_at": "2026-11-01T08:29:39.267636+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-31T08:33:27.726532+05:30"
+      "observed_at": "2026-11-01T08:29:39.677274+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://muslimaffairs.gov.lk/",
       "source": "https://muslimaffairs.gov.lk/",
-      "observed_at": "2026-10-31T08:33:31.204940+05:30"
+      "observed_at": "2026-11-01T08:31:42.635842+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://muslimaffairs.gov.lk/",
+      "detail": "Probe 2: HTTP 200 at https://muslimaffairs.gov.lk/",
       "source": "http://muslimaffairs.gov.lk/",
-      "observed_at": "2026-10-31T08:33:31.204954+05:30"
+      "observed_at": "2026-11-01T08:31:42.635858+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://muslimaffairs.gov.lk/",
       "source": "https://muslimaffairs.gov.lk/",
-      "observed_at": "2026-10-31T08:33:31.204959+05:30"
+      "observed_at": "2026-11-01T08:31:42.635862+05:30"
+    },
+    {
+      "check": "http",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 429 at https://muslimaffairs.gov.lk/",
+      "source": "http://muslimaffairs.gov.lk/",
+      "observed_at": "2026-11-01T08:31:42.635866+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://muslimaffairs.gov.lk/",
-      "source": "http://muslimaffairs.gov.lk/",
-      "observed_at": "2026-10-31T08:33:31.204962+05:30"
+      "detail": "Probe 5: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0002.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0002.jpg",
+      "observed_at": "2026-11-01T08:31:42.635870+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0001.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0001.jpg",
+      "observed_at": "2026-11-01T08:31:42.635873+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0004.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0004.jpg",
+      "observed_at": "2026-11-01T08:31:42.635876+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0003.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0003.jpg",
+      "observed_at": "2026-11-01T08:31:42.635879+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0007.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0007.jpg",
+      "observed_at": "2026-11-01T08:31:42.635882+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0006.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0006.jpg",
+      "observed_at": "2026-11-01T08:31:42.635885+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0005.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0005.jpg",
+      "observed_at": "2026-11-01T08:31:42.635888+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0010.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0010.jpg",
+      "observed_at": "2026-11-01T08:31:42.635891+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0009.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0009.jpg",
+      "observed_at": "2026-11-01T08:31:42.635894+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0008.jpg",
+      "source": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0008.jpg",
+      "observed_at": "2026-11-01T08:31:42.635897+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
+      "detail": "Published phone: 0.0 - 26-03-2024 ",
       "source": "https://muslimaffairs.gov.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "0.0 - 26-03-2024 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://muslimaffairs.gov.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
+      "detail": "Published phone: +94 112 669 997 ",
       "source": "https://muslimaffairs.gov.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "+94 112 669 997 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://muslimaffairs.gov.lk/",
+      "detail": "Published phone: 0000000444",
+      "source": "https://muslimaffairs.gov.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "0000000444"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0547332763",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0547332763"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.800000000",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0.800000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0790149937",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0790149937"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0892098500",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0892098500"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 667 909 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "+94 112 667 909 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 30 11 1 12 2 1",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0 30 11 1 12 2 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.699999999",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0.699999999"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 21 11 22 1",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0 10 21 11 22 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 692 147 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "+94 112 692 147 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2023.11.0",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "023 2023.11.0"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2023.11.2",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "023 2023.11.2"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ajax-loader@2x.gif",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "ajax-loader@2x.gif"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: director@muslimaffairs.gov.lk",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "director@muslimaffairs.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "required_documents",
+      "status": "pass",
+      "detail": "Published required documents: required documents",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "required documents"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.0 - 26-03-2024 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0.0 - 26-03-2024 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 669 997 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "+94 112 669 997 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000444",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0000000444"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0547332763",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0547332763"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.800000000",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0.800000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0790149937",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0790149937"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0892098500",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0892098500"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 667 909 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "+94 112 667 909 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 30 11 1 12 2 1",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0 30 11 1 12 2 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.699999999",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0.699999999"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 21 11 22 1",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0 10 21 11 22 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 692 147 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "+94 112 692 147 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2023.11.0",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "023 2023.11.0"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2023.11.2",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "023 2023.11.2"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ajax-loader@2x.gif",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "ajax-loader@2x.gif"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: director@muslimaffairs.gov.lk",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "director@muslimaffairs.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "required_documents",
+      "status": "pass",
+      "detail": "Published required documents: required documents",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "required documents"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.0 - 26-03-2024 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0.0 - 26-03-2024 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 669 997 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "+94 112 669 997 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000444",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0000000444"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0547332763",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0547332763"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.800000000",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0.800000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0790149937",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0790149937"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0892098500",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0892098500"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 667 909 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "+94 112 667 909 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 30 11 1 12 2 1",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0 30 11 1 12 2 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.699999999",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0.699999999"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 21 11 22 1",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "0 10 21 11 22 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 692 147 ",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "+94 112 692 147 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2023.11.0",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "023 2023.11.0"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2023.11.2",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "023 2023.11.2"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ajax-loader@2x.gif",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "ajax-loader@2x.gif"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: director@muslimaffairs.gov.lk",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "director@muslimaffairs.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "required_documents",
+      "status": "pass",
+      "detail": "Published required documents: required documents",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "required documents"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://muslimaffairs.gov.lk/",
+      "data": {
+        "value": "circular"
       }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 170788 visible characters across 14 pages",
       "source": "https://muslimaffairs.gov.lk/"
     }
   ],
@@ -132,17 +685,19 @@
       "status_code": 200,
       "final_url": "https://muslimaffairs.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 756,
-      "content_type": "text/html",
+      "elapsed_ms": 6631,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://muslimaffairs.gov.lk/",
       "status_code": 200,
-      "final_url": "http://muslimaffairs.gov.lk/",
-      "redirects": [],
-      "elapsed_ms": 465,
-      "content_type": "text/html",
+      "final_url": "https://muslimaffairs.gov.lk/",
+      "redirects": [
+        "https://muslimaffairs.gov.lk/"
+      ],
+      "elapsed_ms": 1502,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
@@ -150,44 +705,196 @@
       "status_code": 200,
       "final_url": "https://muslimaffairs.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 491,
-      "content_type": "text/html",
+      "elapsed_ms": 1220,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://muslimaffairs.gov.lk/",
+      "status_code": 429,
+      "final_url": "https://muslimaffairs.gov.lk/",
+      "redirects": [
+        "https://muslimaffairs.gov.lk/"
+      ],
+      "elapsed_ms": 562,
+      "content_type": "text/plain; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0002.jpg",
       "status_code": 200,
-      "final_url": "http://muslimaffairs.gov.lk/",
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0002.jpg",
       "redirects": [],
-      "elapsed_ms": 469,
-      "content_type": "text/html",
+      "elapsed_ms": 620,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0001.jpg",
+      "status_code": 200,
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0001.jpg",
+      "redirects": [],
+      "elapsed_ms": 746,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0004.jpg",
+      "status_code": 200,
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0004.jpg",
+      "redirects": [],
+      "elapsed_ms": 729,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0003.jpg",
+      "status_code": 200,
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0003.jpg",
+      "redirects": [],
+      "elapsed_ms": 610,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0007.jpg",
+      "status_code": 200,
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0007.jpg",
+      "redirects": [],
+      "elapsed_ms": 438,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0006.jpg",
+      "status_code": 200,
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0006.jpg",
+      "redirects": [],
+      "elapsed_ms": 697,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0005.jpg",
+      "status_code": 200,
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0005.jpg",
+      "redirects": [],
+      "elapsed_ms": 614,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0010.jpg",
+      "status_code": 200,
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0010.jpg",
+      "redirects": [],
+      "elapsed_ms": 533,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0009.jpg",
+      "status_code": 200,
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0009.jpg",
+      "redirects": [],
+      "elapsed_ms": 441,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0008.jpg",
+      "status_code": 200,
+      "final_url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0008.jpg",
+      "redirects": [],
+      "elapsed_ms": 460,
+      "content_type": "image/jpeg",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://muslimaffairs.gov.lk/",
-      "path": "audit.output/muslimaffairs.gov.lk/20261031.0833/snapshots/page-01-f8dc9162adb0.html",
-      "sha256": "f8dc9162adb063ce53323ad07039b35b310f2e1d44dd505978757d21950a579d",
-      "bytes": 12071
-    },
-    {
-      "url": "http://muslimaffairs.gov.lk/",
-      "path": "audit.output/muslimaffairs.gov.lk/20261031.0833/snapshots/page-02-4f0e5fca1e0e.html",
-      "sha256": "4f0e5fca1e0e2db6202b609809f514119ed19338eadc71a3bfa4cfca707947be",
-      "bytes": 11940
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-01-85356879a6fd.html",
+      "sha256": "85356879a6fd15b8e441b4fb4b2061623c5c5e07d2d0a61e5c2bd1a62a6b2abb",
+      "bytes": 299123
     },
     {
       "url": "https://muslimaffairs.gov.lk/",
-      "path": "audit.output/muslimaffairs.gov.lk/20261031.0833/snapshots/page-03-8ff04a070e51.html",
-      "sha256": "8ff04a070e51d5c37d93357ac6d32b3ada15fb9ef705e1f1654c0775c7f518b3",
-      "bytes": 11886
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-02-2e61958ebffd.html",
+      "sha256": "2e61958ebffd8629e4fff54e814d8584df500908964467fdf3147b25ca0db0e3",
+      "bytes": 299123
     },
     {
-      "url": "http://muslimaffairs.gov.lk/",
-      "path": "audit.output/muslimaffairs.gov.lk/20261031.0833/snapshots/page-04-01d15a38be4f.html",
-      "sha256": "01d15a38be4f5a1e6f611daca212b35e8d9e7d0e252006d067d1f832c54af597",
-      "bytes": 11984
+      "url": "https://muslimaffairs.gov.lk/",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-03-688a7477dbf3.html",
+      "sha256": "688a7477dbf3118059444d2c8b2d5d4ad7bb9187799534c75ce502d2590ad1e3",
+      "bytes": 299123
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-04-068613b25f65.html",
+      "sha256": "068613b25f65dad069b7c1f0dc15f71fbc2a25302c9c5a6b812eb74a4226814c",
+      "bytes": 41
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0002.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-05-199c126b43c9.html",
+      "sha256": "199c126b43c96521cb72ce3b53281925df067c236619a47463a1772c5ccd05e6",
+      "bytes": 509823
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0001.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-06-f3d63f0127e6.html",
+      "sha256": "f3d63f0127e6c6b60fb7d415e2bd5196d2fbdd83d4194977a57fcc19de5b6ac5",
+      "bytes": 396154
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0004.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-07-1efe84d6999c.html",
+      "sha256": "1efe84d6999c24cd6a90cbf9400bf75ae90eeecc1eff990613246af45bab9e27",
+      "bytes": 501945
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0003.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-08-c1ad70953af9.html",
+      "sha256": "c1ad70953af91bafaec258cb08e297d168d82c33098b66c98b27e66dbce8541c",
+      "bytes": 375771
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0007.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-09-b2f6229cc116.html",
+      "sha256": "b2f6229cc116e7b1abaf665206005adaab116d01750516084ed46748f2900c7b",
+      "bytes": 169551
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0006.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-10-6663aa783ca1.html",
+      "sha256": "6663aa783ca19f3c421c57a2931feb4c7c47dcf05cf89687c3ea5023f2099f18",
+      "bytes": 593424
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0005.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-11-899f9d478f9f.html",
+      "sha256": "899f9d478f9f36f627db7cd651f65aa95e89deb3ebfe2a7ad03cb94c268aecad",
+      "bytes": 709572
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0010.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-12-0fddd3301dc8.html",
+      "sha256": "0fddd3301dc864cad832c7812dcb3f223d19f610d4b4ac4323d9f697eb728aeb",
+      "bytes": 219709
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0009.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-13-0ddca4634ebd.html",
+      "sha256": "0ddca4634ebdd73e8947235bb591bd7203b6378fc4ff8a17674d57b9fb0c70db",
+      "bytes": 107187
+    },
+    {
+      "url": "https://muslimaffairs.gov.lk/wp-content/uploads/2024/05/IMG-20240511-WA0008.jpg",
+      "path": "audit.output/muslimaffairs.gov.lk/20261101.0829/snapshots/page-14-a5a297928b14.html",
+      "sha256": "a5a297928b141a4e2b9a9128e2d0c23623d364bbc28231e359561d694ac3d120",
+      "bytes": 148827
     }
   ],
   "reviewer_decisions": [],
@@ -203,8 +910,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -216,26 +923,26 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
@@ -273,9 +980,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0.0 - 26-03-2024 (14 phone numbers found); Email: ajax-loader@2x.gif (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -303,7 +1029,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "13.71.232.145",
+    "egress_ip": "20.161.70.180",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

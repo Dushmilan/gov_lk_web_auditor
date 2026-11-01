@@ -1,8 +1,8 @@
 # Website Audit: https://dsd.samurdhi.gov.lk/
 
-- Completed: 2026-10-31 09:12
+- Completed: 2026-11-01 09:11
 - Overall result: 🟠 Level 2
-- Vantage: 13.71.232.145 (US, github-actions)
+- Vantage: 20.161.70.180 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
