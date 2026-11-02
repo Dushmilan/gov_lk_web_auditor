@@ -1,8 +1,8 @@
 # Website Audit: https://emb-kathmandu.gov.lk/
 
-- Completed: 2026-11-01 08:53
+- Completed: 2026-11-02 09:01
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.70.180 (US, github-actions)
+- Vantage: 132.196.39.133 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a; Phone: 00-977-1) 4720 (12 phone numbers found); Email: slemb.kathmandu@mfa.gov.lk (4 email addresses found); Published named responsibility: division
+Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a; Phone: 0097714721389 (12 phone numbers found); Email: slemb.kathmandu@mfa.gov.lk (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a |
-| reachable_contacts | ✅ | Phone: 00-977-1) 4720 (12 phone numbers found); Email: slemb.kathmandu@mfa.gov.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0097714721389 (12 phone numbers found); Email: slemb.kathmandu@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://busl.ac.lk/
 
-- Completed: 2026-11-01 08:41
+- Completed: 2026-11-02 08:49
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.70.180 (US, github-actions)
+- Vantage: 132.196.39.133 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ◎ Bhiksu University of Sri Lanka Puttalam Road, Anuradhapura 50000, Sri Lanka ☎ +94 25 223 6760 +94 25 223 6340 ✉ info@busl.ac.lk Search Our Website Search; Phone: +94 25 223 6340 (106 phone numbers found); Email: info@busl.ac.lk (6 email addresses found); Published named responsibility: director
+Published postal address: ◎ Bhiksu University of Sri Lanka Puttalam Road, Anuradhapura 50000, Sri Lanka ☎ +94 25 223 6760 +94 25 223 6340 ✉ info@busl.ac.lk Search Our Website Search; Phone: +94 25 223 6760 (106 phone numbers found); Email: info@busl.ac.lk (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: ◎ Bhiksu University of Sri Lanka Puttalam Road, Anuradhapura 50000, Sri Lanka ☎ +94 25 223 6760 +94 25 223 6340 ✉ info@busl.ac.lk Search Our Website Search |
-| reachable_contacts | ✅ | Phone: +94 25 223 6340 (106 phone numbers found); Email: info@busl.ac.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 25 223 6760 (106 phone numbers found); Email: info@busl.ac.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

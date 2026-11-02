@@ -1,8 +1,8 @@
 # Website Audit: https://neda.gov.lk/
 
-- Completed: 2026-11-01 09:05
+- Completed: 2026-11-02 09:13
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.70.180 (US, github-actions)
+- Vantage: 132.196.39.133 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: issues in the MSME sector and contribute to devising solutions. Facilitate advocacy and lobbying in order to bring MSME ; Phone: 0112370092 (5 phone numbers found); Email: info@neda.gov.lk (12 email addresses found); Published named responsibility: director
+Published postal address: Western Colombo Colombo District Secretariat Ms. C T J Jayaweera Chathya 0714491914 0714491914 chathyajayamanne@gmail.co; Phone: 0122359855 (338 phone numbers found); Email: info@neda.gov.lk (267 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: issues in the MSME sector and contribute to devising solutions. Facilitate advocacy and lobbying in order to bring MSME  |
-| reachable_contacts | ✅ | Phone: 0112370092 (5 phone numbers found); Email: info@neda.gov.lk (12 email addresses found) |
+| postal_address | ✅ | Published postal address: Western Colombo Colombo District Secretariat Ms. C T J Jayaweera Chathya 0714491914 0714491914 chathyajayamanne@gmail.co |
+| reachable_contacts | ✅ | Phone: 0122359855 (338 phone numbers found); Email: info@neda.gov.lk (267 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌
@@ -54,5 +54,5 @@ Published published update date: 26-05-2024
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://neda.gov.lk/wp-content/uploads/2025/11/application-sinhala-2025-micro.pdf |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❌ | Published published update date: 26-05-2024 |

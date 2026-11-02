@@ -1,8 +1,8 @@
 # Website Audit: https://wncoe.moe.gov.lk/
 
-- Completed: 2026-11-01 08:42
+- Completed: 2026-11-02 08:50
 - Overall result: 🔴 Level 1
-- Vantage: 20.161.70.180 (US, github-actions)
+- Vantage: 132.196.39.133 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0322246506 (7 phone numbers found); Email: ncoewayamba@gmail.com |
+| reachable_contacts | ✅ | Phone: 022-2024 202 (7 phone numbers found); Email: ncoewayamba@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

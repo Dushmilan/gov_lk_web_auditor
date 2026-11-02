@@ -1,8 +1,8 @@
 # Website Audit: https://www.skillsmin.gov.lk/
 
-- Completed: 2026-11-01 09:21
+- Completed: 2026-11-02 09:31
 - Overall result: 🔴 Level 1
-- Vantage: 20.161.70.180 (US, github-actions)
+- Vantage: 132.196.39.133 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

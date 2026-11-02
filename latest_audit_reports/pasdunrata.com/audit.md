@@ -1,8 +1,8 @@
 # Website Audit: https://pasdunrata.com/
 
-- Completed: 2026-11-01 08:43
+- Completed: 2026-11-02 08:51
 - Overall result: 🔴 Level 1
-- Vantage: 20.161.70.180 (US, github-actions)
+- Vantage: 132.196.39.133 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0342 237 545 (2 phone numbers found); Email: pncoe@gmail.com |
+| reachable_contacts | ✅ | Phone: 0342237545 (2 phone numbers found); Email: pncoe@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

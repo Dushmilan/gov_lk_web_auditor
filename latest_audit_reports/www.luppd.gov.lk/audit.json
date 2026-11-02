@@ -1,14 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "197b14e8-27a3-44d4-afdc-91b1f8a5cab9",
+  "audit_id": "4f34993b-fe22-4070-a2dd-e65783488c77",
   "url": "http://www.luppd.gov.lk/",
   "normalized_url": "http://www.luppd.gov.lk/",
-  "started_at": "2026-11-01T08:26:21.172482+05:30",
-  "completed_at": "2026-11-01T08:27:05.338815+05:30",
+  "started_at": "2026-11-02T08:34:33.687056+05:30",
+  "completed_at": "2026-11-02T08:35:08.218990+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
     "reasons": [
+      "hosting_configured: Detected generic hosting marker: under construction",
       "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)",
       "tls_not_expired: TLS certificate has expired"
     ]
@@ -18,52 +19,64 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-01T08:26:21.503493+05:30"
+      "observed_at": "2026-11-02T08:34:34.090129+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-01T08:26:21.503512+05:30"
+      "observed_at": "2026-11-02T08:34:34.090156+05:30"
     },
     {
       "check": "tls_expired",
       "status": "fail",
       "detail": "TLS certificate has expired",
-      "observed_at": "2026-11-01T08:26:31.800838+05:30"
+      "observed_at": "2026-11-02T08:34:34.513439+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)",
       "source": "https://www.luppd.gov.lk/",
-      "observed_at": "2026-11-01T08:27:05.337137+05:30"
+      "observed_at": "2026-11-02T08:35:08.218321+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 500 at http://www.luppd.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.luppd.gov.lk/",
       "source": "http://www.luppd.gov.lk/",
-      "observed_at": "2026-11-01T08:27:05.337156+05:30"
+      "observed_at": "2026-11-02T08:35:08.218342+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)",
       "source": "https://www.luppd.gov.lk/",
-      "observed_at": "2026-11-01T08:27:05.337163+05:30"
+      "observed_at": "2026-11-02T08:35:08.218348+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 500 at http://www.luppd.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.luppd.gov.lk/",
       "source": "http://www.luppd.gov.lk/",
-      "observed_at": "2026-11-01T08:27:05.337168+05:30"
+      "observed_at": "2026-11-02T08:35:08.218351+05:30"
+    },
+    {
+      "check": "generic_hosting",
+      "status": "fail",
+      "detail": "Detected generic hosting marker: under construction",
+      "source": "http://www.luppd.gov.lk/"
+    },
+    {
+      "check": "generic_hosting",
+      "status": "fail",
+      "detail": "Detected generic hosting marker: under construction",
+      "source": "http://www.luppd.gov.lk/"
     },
     {
       "check": "page_text",
       "status": "fail",
-      "detail": "Only 190 visible characters across 2 pages; below substance threshold 200",
+      "detail": "Only 26 visible characters across 2 pages; below substance threshold 200",
       "source": "http://www.luppd.gov.lk/"
     }
   ],
@@ -101,11 +114,11 @@
     },
     {
       "url": "http://www.luppd.gov.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "http://www.luppd.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 263,
-      "content_type": "text/html",
+      "elapsed_ms": 30857,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
@@ -119,26 +132,26 @@
     },
     {
       "url": "http://www.luppd.gov.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "http://www.luppd.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 30280,
-      "content_type": "text/html",
+      "elapsed_ms": 324,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "http://www.luppd.gov.lk/",
-      "path": "audit.output/www.luppd.gov.lk/20261101.0826/snapshots/page-01-a8a284f377cb.html",
-      "sha256": "a8a284f377cb9f21c53e5553234ecb693dc4c2c38f3306b6cde4aead5e05e913",
-      "bytes": 7309
+      "path": "audit.output/www.luppd.gov.lk/20261102.0834/snapshots/page-01-d12a9c71b6f4.html",
+      "sha256": "d12a9c71b6f413258e5870da62feb9b19122d90e522831129b6f8adbdec11ebc",
+      "bytes": 52
     },
     {
       "url": "http://www.luppd.gov.lk/",
-      "path": "audit.output/www.luppd.gov.lk/20261101.0826/snapshots/page-02-a8a284f377cb.html",
-      "sha256": "a8a284f377cb9f21c53e5553234ecb693dc4c2c38f3306b6cde4aead5e05e913",
-      "bytes": 7309
+      "path": "audit.output/www.luppd.gov.lk/20261102.0834/snapshots/page-02-d12a9c71b6f4.html",
+      "sha256": "d12a9c71b6f413258e5870da62feb9b19122d90e522831129b6f8adbdec11ebc",
+      "bytes": 52
     }
   ],
   "reviewer_decisions": [],
@@ -155,7 +168,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011); TLS certificate has expired",
+      "reason": "Detected generic hosting marker: under construction; Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011); TLS certificate has expired",
       "executed": true,
       "checks": [
         {
@@ -168,25 +181,25 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200"
+          "status": "fail",
+          "reason": "Detected generic hosting marker: under construction"
         },
         {
           "name": "http_available",
@@ -197,8 +210,8 @@
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
@@ -254,7 +267,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.70.180",
+    "egress_ip": "132.196.39.133",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
