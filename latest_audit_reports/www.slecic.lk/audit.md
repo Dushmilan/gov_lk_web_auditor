@@ -1,8 +1,8 @@
 # Website Audit: https://www.slecic.lk/
 
-- Completed: 2026-11-02 08:59
+- Completed: 2026-11-03 10:18
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.39.133 (US, github-actions)
+- Vantage: 52.155.39.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 🔵 Level 4, NDB-EDB Tower, No 42, Nawam Mawatha, Colombo 02, Sri Lanka; Phone: 0112 307 519 (4 phone numbers found); Email: inquiry@slecic.lk; Published named responsibility: director
+Published postal address: 🔵 Level 4, NDB-EDB Tower, No 42, Nawam Mawatha, Colombo 02, Sri Lanka; Phone: 0112 307 523 (4 phone numbers found); Email: inquiry@slecic.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Level 4, NDB-EDB Tower, No 42, Nawam Mawatha, Colombo 02, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0112 307 519 (4 phone numbers found); Email: inquiry@slecic.lk |
+| reachable_contacts | ✅ | Phone: 0112 307 523 (4 phone numbers found); Email: inquiry@slecic.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: LKR 3 |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 4 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

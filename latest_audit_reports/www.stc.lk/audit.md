@@ -1,8 +1,8 @@
 # Website Audit: https://www.stc.lk/
 
-- Completed: 2026-11-02 09:27
+- Completed: 2026-11-03 10:45
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.39.133 (US, github-actions)
+- Vantage: 52.155.39.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 070 164 6877 (68 phone numbers found); Email: lankagen@sltnet.lk (18 email addresses found); Published named responsibility: officer in charge
+Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 070 259 0357 (68 phone numbers found); Email: batticaloa@stc.lk (18 email addresses found); Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St |
-| reachable_contacts | ✅ | Phone: 070 164 6877 (68 phone numbers found); Email: lankagen@sltnet.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 070 259 0357 (68 phone numbers found); Email: batticaloa@stc.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓

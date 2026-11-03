@@ -1,8 +1,8 @@
 # Website Audit: https://hc-victoria.gov.lk/
 
-- Completed: 2026-11-02 09:07
+- Completed: 2026-11-03 10:26
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.39.133 (US, github-actions)
+- Vantage: 52.155.39.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: in Sri Lanka\",\"clean_form_button\":\"Clean Form\",\"name\":\"Name\",\"cancel_button\":\"Cancel\",\"terms_and_condition; Phone: 0037736842 (4 phone numbers found); Email: slhc.seychelles@mfa.gov.lk (2 email addresses found); Published named responsibility: department
+Published postal address: Line 2\",\"passport_issued_date_label\":\"Issued Date of the passport (Optional)\",\"retype_email_label\":\"Re-type Emai; Phone: 0888474738 (4 phone numbers found); Email: slhc.seychelles@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: in Sri Lanka\",\"clean_form_button\":\"Clean Form\",\"name\":\"Name\",\"cancel_button\":\"Cancel\",\"terms_and_condition |
-| reachable_contacts | ✅ | Phone: 0037736842 (4 phone numbers found); Email: slhc.seychelles@mfa.gov.lk (2 email addresses found) |
+| postal_address | ✅ | Published postal address: Line 2\",\"passport_issued_date_label\":\"Issued Date of the passport (Optional)\",\"retype_email_label\":\"Re-type Emai |
+| reachable_contacts | ✅ | Phone: 0888474738 (4 phone numbers found); Email: slhc.seychelles@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

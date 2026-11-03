@@ -1,8 +1,8 @@
 # Website Audit: https://nsbfmc.lk/
 
-- Completed: 2026-11-02 08:55
+- Completed: 2026-11-03 10:15
 - Overall result: 🔴 Level 1
-- Vantage: 132.196.39.133 (US, github-actions)
+- Vantage: 52.155.39.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

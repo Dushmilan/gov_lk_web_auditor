@@ -1,8 +1,8 @@
 # Website Audit: https://cg-guangzhou.gov.lk/
 
-- Completed: 2026-11-02 09:02
+- Completed: 2026-11-03 10:21
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.39.133 (US, github-actions)
+- Vantage: 52.155.39.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: M 02, The Garden Hotel, 368, Huanshi Dong Road, Yuexiu District, Guangzhou 510064 People’s Republic of China Tel : +86 2; Phone: 0-581722036 (81 phone numbers found); Email: cgguangzhou@mfa.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: M 02, The Garden Hotel, 368, Huanshi Dong Road, Yuexiu District, Guangzhou 510064 People’s Republic of China Tel : +86 2; Phone: 09983-1422-4 (81 phone numbers found); Email: cgguangzhou@mfa.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: M 02, The Garden Hotel, 368, Huanshi Dong Road, Yuexiu District, Guangzhou 510064 People’s Republic of China Tel : +86 2 |
-| reachable_contacts | ✅ | Phone: 0-581722036 (81 phone numbers found); Email: cgguangzhou@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 09983-1422-4 (81 phone numbers found); Email: cgguangzhou@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

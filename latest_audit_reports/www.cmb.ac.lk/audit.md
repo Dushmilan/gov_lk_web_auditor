@@ -1,8 +1,8 @@
 # Website Audit: http://www.cmb.ac.lk/
 
-- Completed: 2026-11-02 08:44
+- Completed: 2026-11-03 10:04
 - Overall result: ⚫ Level 0
-- Vantage: 132.196.39.133 (US, github-actions)
+- Vantage: 52.155.39.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://www.cmb.ac.lk/: Probe 3: _ssl.c:994: The handshake operation timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1011) |
 | tls_not_expired | ❓ | TLS expiry check did not run |

@@ -1,8 +1,8 @@
 # Website Audit: https://emb-vienna.gov.lk/
 
-- Completed: 2026-11-02 09:03
+- Completed: 2026-11-03 10:22
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.39.133 (US, github-actions)
+- Vantage: 52.155.39.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Weyringergasse 33-35, 1040, Vienna, Austria Tel . +43 1 503 79 88 Email : slemb.vienna@mfa.gov.lk Office Hours: Monday –; Phone: 0263754272 (16 phone numbers found); Email: petra.winzer@bio-nahrung.at (11 email addresses found); Published named responsibility: director
+Published postal address: Weyringergasse 33-35, 1040, Vienna, Austria Tel . +43 1 503 79 88 Email : slemb.vienna@mfa.gov.lk Office Hours: Monday –; Phone: 0263754272 (16 phone numbers found); Email: aprebil_consulate@outlook.com (11 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Weyringergasse 33-35, 1040, Vienna, Austria Tel . +43 1 503 79 88 Email : slemb.vienna@mfa.gov.lk Office Hours: Monday – |
-| reachable_contacts | ✅ | Phone: 0263754272 (16 phone numbers found); Email: petra.winzer@bio-nahrung.at (11 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0263754272 (16 phone numbers found); Email: aprebil_consulate@outlook.com (11 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

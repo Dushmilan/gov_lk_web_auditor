@@ -1,8 +1,8 @@
 # Website Audit: https://nbri.gov.lk/
 
-- Completed: 2026-11-02 08:40
+- Completed: 2026-11-03 09:59
 - Overall result: 🔴 Level 1
-- Vantage: 132.196.39.133 (US, github-actions)
+- Vantage: 52.155.39.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. //<!-- document.getElementById('cloak22710').i |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. //<!-- document.getElementById('cloak35431').i |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

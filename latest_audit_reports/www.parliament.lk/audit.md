@@ -1,8 +1,8 @@
 # Website Audit: https://www.parliament.lk/
 
-- Completed: 2026-11-02 09:39
+- Completed: 2026-11-03 10:58
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.39.133 (US, github-actions)
+- Vantage: 52.155.39.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
