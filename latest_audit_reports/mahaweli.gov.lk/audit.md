@@ -1,8 +1,8 @@
 # Website Audit: https://mahaweli.gov.lk/
 
-- Completed: 2026-11-03 09:56
+- Completed: 2026-11-04 09:14
 - Overall result: 🔴 Level 1
-- Vantage: 52.155.39.67 (US, github-actions)
+- Vantage: 4.242.195.32 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

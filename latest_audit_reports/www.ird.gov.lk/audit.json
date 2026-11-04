@@ -1,23 +1,21 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "a8d47026-8f46-427c-938c-b25e4cb22528",
+  "audit_id": "ac6ff14a-9f00-4353-8d3d-4bf07d218add",
   "url": "https://www.ird.gov.lk/",
   "normalized_url": "https://www.ird.gov.lk/",
-  "started_at": "2026-11-03T10:15:44.802179+05:30",
-  "completed_at": "2026-11-03T10:17:57.532307+05:30",
+  "started_at": "2026-11-04T09:33:42.744916+05:30",
+  "completed_at": "2026-11-04T09:34:55.383140+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
+      "domain_not_parked: Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200",
       "http_available: An HTTP probe was transient",
       "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "tls_browser_trusted: Browser TLS check did not complete"
     ]
   },
   "evidence": [
@@ -25,47 +23,53 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-03T10:15:45.107574+05:30"
+      "observed_at": "2026-11-04T09:33:43.294602+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-03T10:15:45.107593+05:30"
+      "observed_at": "2026-11-04T09:33:43.294623+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-03T10:15:55.325907+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-04T09:33:44.263939+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 503 at https://www.ird.gov.lk/",
       "source": "https://www.ird.gov.lk/",
-      "observed_at": "2026-11-03T10:17:57.532081+05:30"
+      "observed_at": "2026-11-04T09:34:55.382357+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://www.ird.gov.lk/",
-      "observed_at": "2026-11-03T10:17:57.532107+05:30"
+      "observed_at": "2026-11-04T09:34:55.382380+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: The read operation timed out",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 503 at https://www.ird.gov.lk/",
       "source": "https://www.ird.gov.lk/",
-      "observed_at": "2026-11-03T10:17:57.532113+05:30"
+      "observed_at": "2026-11-04T09:34:55.382384+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://www.ird.gov.lk/",
-      "observed_at": "2026-11-03T10:17:57.532118+05:30"
+      "observed_at": "2026-11-04T09:34:55.382387+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 27 visible characters across 2 pages; below substance threshold 200",
+      "source": "https://www.ird.gov.lk/"
     }
   ],
   "observations": [
@@ -85,19 +89,19 @@
     },
     {
       "host": "www.ird.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2027-02-14T05:29:59+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.ird.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 503,
+      "final_url": "https://www.ird.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 2587,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://www.ird.gov.lk/",
@@ -110,12 +114,12 @@
     },
     {
       "url": "https://www.ird.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 503,
+      "final_url": "https://www.ird.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "The read operation timed out"
+      "elapsed_ms": 7560,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://www.ird.gov.lk/",
@@ -127,7 +131,20 @@
       "error": "timed out"
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.ird.gov.lk/",
+      "path": "audit.output/www.ird.gov.lk/20261104.0933/snapshots/page-01-6468ac9f9bca.html",
+      "sha256": "6468ac9f9bca964f3910fc967b80781c1c8634300e36f95ae49056d91a2734bf",
+      "bytes": 27
+    },
+    {
+      "url": "https://www.ird.gov.lk/",
+      "path": "audit.output/www.ird.gov.lk/20261104.0933/snapshots/page-02-6468ac9f9bca.html",
+      "sha256": "6468ac9f9bca964f3910fc967b80781c1c8634300e36f95ae49056d91a2734bf",
+      "bytes": 27
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,7 +159,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
       "executed": true,
       "checks": [
         {
@@ -155,25 +172,25 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
@@ -196,14 +213,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -241,7 +258,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.155.39.67",
+    "egress_ip": "4.242.195.32",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

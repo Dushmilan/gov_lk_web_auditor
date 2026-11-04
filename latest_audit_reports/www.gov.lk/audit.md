@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-11-03 10:02
+- Completed: 2026-11-04 09:29
 - Overall result: 🔴 Level 1
-- Vantage: 52.155.39.67 (US, github-actions)
+- Vantage: 4.242.195.32 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0670396207 (178 phone numbers found); Email: info@meteo.gov.lk (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0670396207 (174 phone numbers found); Email: info@psc.gov.lk (76 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

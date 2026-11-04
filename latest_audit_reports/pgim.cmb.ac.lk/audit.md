@@ -1,8 +1,8 @@
 # Website Audit: https://pgim.cmb.ac.lk/
 
-- Completed: 2026-11-03 10:09
+- Completed: 2026-11-04 09:26
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.39.67 (US, github-actions)
+- Vantage: 4.242.195.32 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,23 +33,23 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 2016 Postgraduate Institute of Medicine, University of Colombo, Sri Lanka; Phone: 0730907450 (15 phone numbers found); Email: saradmin@pgim.cmb.ac.lk (24 email addresses found); Published named responsibility: director
+Published postal address: 2016 Postgraduate Institute of Medicine, University of Colombo, Sri Lanka; Phone: 0112696738 (16 phone numbers found); Email: aracademic@pgim.cmb.ac.lk (26 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2016 Postgraduate Institute of Medicine, University of Colombo, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0730907450 (15 phone numbers found); Email: saradmin@pgim.cmb.ac.lk (24 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112696738 (16 phone numbers found); Email: aracademic@pgim.cmb.ac.lk (26 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: RS 2025 |
 | legal_basis | ✅ | Published legal basis: regulations |
