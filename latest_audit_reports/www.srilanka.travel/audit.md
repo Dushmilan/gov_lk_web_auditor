@@ -1,8 +1,8 @@
 # Website Audit: https://www.srilanka.travel/
 
-- Completed: 2026-11-04 09:44
+- Completed: 2026-11-05 10:01
 - Overall result: 🟠 Level 2
-- Vantage: 4.242.195.32 (US, github-actions)
+- Vantage: 57.154.6.32 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: bar cleanly to prevent redirect loops if (history.pushState) { history.pushState(null, null, window.location.pathname + ; Phone: 0117548668 (24 phone numbers found); Email: shirani@srilanka.travel (29 email addresses found); Published named responsibility: director
+Published postal address: bar cleanly to prevent redirect loops if (history.pushState) { history.pushState(null, null, window.location.pathname + ; Phone: 0117548668 (24 phone numbers found); Email: chinthaka@srilanka.travel (29 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: bar cleanly to prevent redirect loops if (history.pushState) { history.pushState(null, null, window.location.pathname +  |
-| reachable_contacts | ✅ | Phone: 0117548668 (24 phone numbers found); Email: shirani@srilanka.travel (29 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0117548668 (24 phone numbers found); Email: chinthaka@srilanka.travel (29 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

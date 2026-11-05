@@ -1,18 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "4a8dedc0-38ee-4e13-a02b-1338b9bc9946",
+  "audit_id": "421cb4f8-0a23-45e1-9ec4-f8a2419817d3",
   "url": "https://www.nlb.lk/",
   "normalized_url": "https://www.nlb.lk/",
-  "started_at": "2026-11-04T09:35:50.632168+05:30",
-  "completed_at": "2026-11-04T09:35:56.577790+05:30",
+  "started_at": "2026-11-05T09:52:37.326101+05:30",
+  "completed_at": "2026-11-05T09:54:00.866620+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -20,53 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-04T09:35:51.048743+05:30"
+      "observed_at": "2026-11-05T09:52:37.572689+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-04T09:35:51.048765+05:30"
+      "observed_at": "2026-11-05T09:52:37.572711+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-04T09:35:51.256647+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-11-05T09:52:47.717952+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.nlb.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.nlb.lk/",
-      "observed_at": "2026-11-04T09:35:56.576402+05:30"
+      "observed_at": "2026-11-05T09:54:00.866453+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.nlb.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.nlb.lk/",
-      "observed_at": "2026-11-04T09:35:56.576420+05:30"
+      "observed_at": "2026-11-05T09:54:00.866473+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.nlb.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://www.nlb.lk/",
-      "observed_at": "2026-11-04T09:35:56.576424+05:30"
+      "observed_at": "2026-11-05T09:54:00.866477+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.nlb.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://www.nlb.lk/",
-      "observed_at": "2026-11-04T09:35:56.576427+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 0 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://www.nlb.lk/"
+      "observed_at": "2026-11-05T09:54:00.866480+05:30"
     }
   ],
   "observations": [
@@ -86,78 +85,49 @@
     },
     {
       "host": "www.nlb.lk",
-      "status": "valid",
-      "expires_at": "2026-12-05T04:57:40+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.nlb.lk/",
-      "status_code": 200,
-      "final_url": "https://www.nlb.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 310,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.nlb.lk/",
-      "status_code": 200,
-      "final_url": "https://www.nlb.lk/",
-      "redirects": [
-        "https://www.nlb.lk/"
-      ],
-      "elapsed_ms": 196,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.nlb.lk/",
-      "status_code": 200,
-      "final_url": "https://www.nlb.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 207,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.nlb.lk/",
-      "status_code": 200,
-      "final_url": "https://www.nlb.lk/",
-      "redirects": [
-        "https://www.nlb.lk/"
-      ],
-      "elapsed_ms": 196,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.nlb.lk/",
-      "path": "audit.output/www.nlb.lk/20261104.0935/snapshots/page-01-050c7421faf7.html",
-      "sha256": "050c7421faf70bccdd2faa3c47374b6ad4ae4dba516fb0008d819db5ca866ff2",
-      "bytes": 374
-    },
-    {
-      "url": "https://www.nlb.lk/",
-      "path": "audit.output/www.nlb.lk/20261104.0935/snapshots/page-02-050c7421faf7.html",
-      "sha256": "050c7421faf70bccdd2faa3c47374b6ad4ae4dba516fb0008d819db5ca866ff2",
-      "bytes": 374
-    },
-    {
-      "url": "https://www.nlb.lk/",
-      "path": "audit.output/www.nlb.lk/20261104.0935/snapshots/page-03-050c7421faf7.html",
-      "sha256": "050c7421faf70bccdd2faa3c47374b6ad4ae4dba516fb0008d819db5ca866ff2",
-      "bytes": 374
-    },
-    {
-      "url": "https://www.nlb.lk/",
-      "path": "audit.output/www.nlb.lk/20261104.0935/snapshots/page-04-050c7421faf7.html",
-      "sha256": "050c7421faf70bccdd2faa3c47374b6ad4ae4dba516fb0008d819db5ca866ff2",
-      "bytes": 374
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -172,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -185,55 +155,55 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -271,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.242.195.32",
+    "egress_ip": "57.154.6.32",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

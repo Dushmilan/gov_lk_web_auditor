@@ -1,21 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "ac6ff14a-9f00-4353-8d3d-4bf07d218add",
+  "audit_id": "ae999afb-ffa9-44df-81e9-f56e49fe42b6",
   "url": "https://www.ird.gov.lk/",
   "normalized_url": "https://www.ird.gov.lk/",
-  "started_at": "2026-11-04T09:33:42.744916+05:30",
-  "completed_at": "2026-11-04T09:34:55.383140+05:30",
+  "started_at": "2026-11-05T09:50:19.573645+05:30",
+  "completed_at": "2026-11-05T09:52:49.145132+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: http://www.ird.gov.lk/: Probe 2: timed out; http://www.ird.gov.lk/: Probe 4: timed out",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -23,52 +26,1202 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-04T09:33:43.294602+05:30"
+      "observed_at": "2026-11-05T09:50:20.120393+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-04T09:33:43.294623+05:30"
+      "observed_at": "2026-11-05T09:50:20.120413+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-04T09:33:44.263939+05:30"
+      "observed_at": "2026-11-05T09:50:22.124673+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 503 at https://www.ird.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.ird.gov.lk/SitePages/Default.aspx",
       "source": "https://www.ird.gov.lk/",
-      "observed_at": "2026-11-04T09:34:55.382357+05:30"
+      "observed_at": "2026-11-05T09:52:48.682464+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://www.ird.gov.lk/",
-      "observed_at": "2026-11-04T09:34:55.382380+05:30"
+      "observed_at": "2026-11-05T09:52:48.682485+05:30"
     },
     {
       "check": "http",
       "status": "fail",
       "detail": "Probe 3: HTTP 503 at https://www.ird.gov.lk/",
       "source": "https://www.ird.gov.lk/",
-      "observed_at": "2026-11-04T09:34:55.382384+05:30"
+      "observed_at": "2026-11-05T09:52:48.682489+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://www.ird.gov.lk/",
-      "observed_at": "2026-11-04T09:34:55.382387+05:30"
+      "observed_at": "2026-11-05T09:52:48.682491+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "source": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "observed_at": "2026-11-05T09:52:48.682494+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "source": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "observed_at": "2026-11-05T09:52:48.682497+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx",
+      "source": "https://www.ird.gov.lk/si/eServices/",
+      "observed_at": "2026-11-05T09:52:48.682499+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "observed_at": "2026-11-05T09:52:48.682501+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "source": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "observed_at": "2026-11-05T09:52:48.682503+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "observed_at": "2026-11-05T09:52:48.682506+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "observed_at": "2026-11-05T09:52:48.682508+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "observed_at": "2026-11-05T09:52:48.682511+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "observed_at": "2026-11-05T09:52:48.682513+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "observed_at": "2026-11-05T09:52:48.682515+05:30"
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.ird.gov.lk/SitePages/Default.aspx",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 06) 13-08-2026 ",
+      "source": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "data": {
+        "value": "06) 13-08-2026 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 06) 13-08-2026 ",
+      "source": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "data": {
+        "value": "06) 13-08-2026 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 26-06-202",
+      "source": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "data": {
+        "value": "025 26-06-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025-11-28 004",
+      "source": "https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx",
+      "data": {
+        "value": "025-11-28 004"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5135 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 5135 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 7777 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 7777 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5420",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 5420"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8977 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 8977 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 4400 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 4400 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5400 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 5400 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 4800 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 4800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 4320 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 4320 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 6644 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 6644 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8534 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 8534 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5401 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 5401 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8495 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 8495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8536 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 8536 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 4830 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 4830 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8574",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 8574"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 4400 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 4400 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 5958 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 5958 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0195648659",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "0195648659"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5402 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 5402 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5300 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 5300 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0796946450",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "0796946450"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-232 6686 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011-232 6686 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8637 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 8637 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5404 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 5404 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8925 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 233 8925 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5405 ",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "011 - 213 5405 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: fernando.rph@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "fernando.rph@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranasinghe.jd@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "ranasinghe.jd@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranasinghe.sp@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "ranasinghe.sp@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: thusithanjali.vka@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "thusithanjali.vka@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cgir@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "cgir@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: bandara.wmr@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "bandara.wmr@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dissanayaka.nta@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "dissanayaka.nta@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: rathnawardene.jmss@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "rathnawardene.jmss@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dissanayaka.dmnsb@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "dissanayaka.dmnsb@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: napana.nmakb@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "napana.nmakb@ird.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dharmawardene.kgpk@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "dharmawardene.kgpk@ird.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011.04.01 - 201",
+      "source": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "data": {
+        "value": "011.04.01 - 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8635 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 233 8635 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5443-",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5443-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8659 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 233 8659 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5412 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5412 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5413 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5413 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8570 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 233 8570 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5438 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5438 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5430 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5437-",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5437-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5411 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5411 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8543 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 233 8543 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5410 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5410 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5433-",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5433-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5431 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "011 - 213 5431 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretariat@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "secretariat@ird.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 233 8577 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "data": {
+        "value": "011 233 8577 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 213 5170 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "data": {
+        "value": "011 213 5170 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 213 5171 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "data": {
+        "value": "011 213 5171 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: stampduty@ird.gov.lk",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "data": {
+        "value": "stampduty@ird.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 233 8577 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "data": {
+        "value": "011 233 8577 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 213 5170 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "data": {
+        "value": "011 213 5170 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 213 5171 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "data": {
+        "value": "011 213 5171 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 213 4700 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "data": {
+        "value": "011 213 4700 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 213 5171 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "data": {
+        "value": "011 213 5171 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-0000-0000-",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "data": {
+        "value": "00-0000-0000-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 233 8659 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "data": {
+        "value": "011 - 233 8659 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.20326.2019",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "data": {
+        "value": "0.20326.2019"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 213 5150",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "data": {
+        "value": "011 213 5150"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 213 5410 ",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "data": {
+        "value": "011 - 213 5410 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00000000-00",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "data": {
+        "value": "00000000-00"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "data": {
+        "value": "director"
+      }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 27 visible characters across 2 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 8939 visible characters across 12 pages",
       "source": "https://www.ird.gov.lk/"
     }
   ],
@@ -96,11 +1249,13 @@
     },
     {
       "url": "https://www.ird.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://www.ird.gov.lk/",
-      "redirects": [],
-      "elapsed_ms": 2587,
-      "content_type": "text/html",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/SitePages/Default.aspx",
+      "redirects": [
+        "https://www.ird.gov.lk/SitePages/Default.aspx"
+      ],
+      "elapsed_ms": 3675,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
@@ -117,7 +1272,7 @@
       "status_code": 503,
       "final_url": "https://www.ird.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 7560,
+      "elapsed_ms": 4780,
       "content_type": "text/html",
       "error": null
     },
@@ -129,20 +1284,172 @@
       "elapsed_ms": null,
       "content_type": null,
       "error": "timed out"
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "redirects": [],
+      "elapsed_ms": 4482,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "redirects": [],
+      "elapsed_ms": 4758,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/eServices/",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx",
+      "redirects": [
+        "https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx"
+      ],
+      "elapsed_ms": 4656,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "redirects": [],
+      "elapsed_ms": 4157,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "redirects": [],
+      "elapsed_ms": 4984,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "redirects": [],
+      "elapsed_ms": 4788,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "redirects": [],
+      "elapsed_ms": 4916,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "redirects": [],
+      "elapsed_ms": 2110,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "redirects": [],
+      "elapsed_ms": 2363,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "status_code": 200,
+      "final_url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "redirects": [],
+      "elapsed_ms": 3367,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     }
   ],
   "snapshots": [
     {
+      "url": "https://www.ird.gov.lk/SitePages/Default.aspx",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-01-dd5c7daa8531.html",
+      "sha256": "dd5c7daa8531191cb56f561fbd17a4a0d2911839061122338a7b49e8cac49180",
+      "bytes": 4017
+    },
+    {
       "url": "https://www.ird.gov.lk/",
-      "path": "audit.output/www.ird.gov.lk/20261104.0933/snapshots/page-01-6468ac9f9bca.html",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-02-6468ac9f9bca.html",
       "sha256": "6468ac9f9bca964f3910fc967b80781c1c8634300e36f95ae49056d91a2734bf",
       "bytes": 27
     },
     {
-      "url": "https://www.ird.gov.lk/",
-      "path": "audit.output/www.ird.gov.lk/20261104.0933/snapshots/page-02-6468ac9f9bca.html",
-      "sha256": "6468ac9f9bca964f3910fc967b80781c1c8634300e36f95ae49056d91a2734bf",
-      "bytes": 27
+      "url": "https://www.ird.gov.lk/si/sitepages/default.aspx",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-03-256892407fb0.html",
+      "sha256": "256892407fb0e54cfe3ae88fe54145f8ab6935d414464e9b6893c5dcf8e7d742",
+      "bytes": 172699
+    },
+    {
+      "url": "https://www.ird.gov.lk/ta/sitepages/default.aspx",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-04-b528a14f9eb6.html",
+      "sha256": "b528a14f9eb6fc4b3e1c97ef3f0f67af43fcb49e2a0245555903850fd75bde83",
+      "bytes": 181644
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/eServices/SitePages/Home.aspx",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-05-3f7dea7b76a0.html",
+      "sha256": "3f7dea7b76a073da3272de5936eae1b2e6edbb2939cad0dd728a3d0fecfbe39f",
+      "bytes": 122405
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/SitePages/Contact%20Us.aspx",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-06-1ee644c8727d.html",
+      "sha256": "1ee644c8727d9926cb25bb96f6d9e7410e30a54fc31061f6aba91a32a3aaa4aa",
+      "bytes": 100095
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Type%20of%20Taxes/SitePages/Economic%20Service%20Charge%20(ESC).aspx?menuid=1215",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-07-f385159bf437.html",
+      "sha256": "f385159bf4372ffc7c7376465a08af431caa3d25adad0da32d1769950aa380e1",
+      "bytes": 120424
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Secretariat.aspx?menuid=1301",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-08-3de582e095b2.html",
+      "sha256": "3de582e095b2f1b54cb04101fa5edf346cb4ce35999e77a83602eed15ed19941",
+      "bytes": 98070
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Stamp%20Duty.aspx?menuid=1307",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-09-4d4955d30b45.html",
+      "sha256": "4d4955d30b45e505a69654d7b382443a6ed089fc6aa0c1e0eef746626d9238de",
+      "bytes": 93677
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Betting%20and%20Gaming%20Levy%20Unit.aspx?menuid=1308",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-10-60d71432697c.html",
+      "sha256": "60d71432697cc483aa3d69a5f1f362647d5d0ea7d69025145dee841f7cd15136",
+      "bytes": 93287
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Information%20Branch.aspx?menuid=1310",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-11-a6ad95190988.html",
+      "sha256": "a6ad9519098855fa2112af6d0545566125af3200afb41535d31bf094fa24d4bf",
+      "bytes": 93576
+    },
+    {
+      "url": "https://www.ird.gov.lk/si/Unit%20and%20Services/SitePages/Legal%20Branch.aspx?menuid=1311",
+      "path": "audit.output/www.ird.gov.lk/20261105.0950/snapshots/page-12-563a7b87c102.html",
+      "sha256": "563a7b87c10234b147c9c5b6b7f09f01fa8c730cff4466b49fa84e560eca6726",
+      "bytes": 94129
     }
   ],
   "reviewer_decisions": [],
@@ -158,8 +1465,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.ird.gov.lk/: Probe 2: timed out; http://www.ird.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -171,44 +1478,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: http://www.ird.gov.lk/: Probe 2: timed out; http://www.ird.gov.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -228,9 +1535,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 06) 13-08-2026 (53 phone numbers found); Email: fernando.rph@ird.gov.lk (13 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
@@ -258,7 +1584,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.242.195.32",
+    "egress_ip": "57.154.6.32",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

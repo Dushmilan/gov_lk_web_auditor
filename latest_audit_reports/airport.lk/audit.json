@@ -1,15 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "92e8a7e9-8a58-43bf-bdb3-ab3da170b72f",
+  "audit_id": "b92335d3-d9d3-49f6-ae25-4cc7ffc0666a",
   "url": "https://airport.lk",
   "normalized_url": "https://airport.lk/",
-  "started_at": "2026-11-04T09:52:41.749724+05:30",
-  "completed_at": "2026-11-04T09:53:46.564979+05:30",
+  "started_at": "2026-11-05T10:10:31.575558+05:30",
+  "completed_at": "2026-11-05T10:10:37.713234+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+      "tls_browser_trusted: Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
     ]
   },
   "evidence": [
@@ -17,47 +17,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-04T09:52:42.537670+05:30"
+      "observed_at": "2026-11-05T10:10:32.007413+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-04T09:52:42.537691+05:30"
+      "observed_at": "2026-11-05T10:10:32.007433+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-04T09:52:43.772480+05:30"
+      "status": "error",
+      "detail": "[Errno 104] Connection reset by peer",
+      "observed_at": "2026-11-05T10:10:32.776932+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 1: [Errno 104] Connection reset by peer",
       "source": "https://airport.lk/",
-      "observed_at": "2026-11-04T09:53:46.564810+05:30"
+      "observed_at": "2026-11-05T10:10:37.713066+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: [Errno 104] Connection reset by peer",
       "source": "http://airport.lk/",
-      "observed_at": "2026-11-04T09:53:46.564832+05:30"
+      "observed_at": "2026-11-05T10:10:37.713089+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)",
       "source": "https://airport.lk/",
-      "observed_at": "2026-11-04T09:53:46.564836+05:30"
+      "observed_at": "2026-11-05T10:10:37.713093+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: [Errno 104] Connection reset by peer",
       "source": "http://airport.lk/",
-      "observed_at": "2026-11-04T09:53:46.564840+05:30"
+      "observed_at": "2026-11-05T10:10:37.713097+05:30"
     }
   ],
   "observations": [
@@ -77,10 +77,10 @@
     },
     {
       "host": "airport.lk",
-      "status": "valid",
-      "expires_at": "2027-03-28T05:29:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 104] Connection reset by peer"
     },
     {
       "url": "https://airport.lk/",
@@ -89,7 +89,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+      "error": "[Errno 104] Connection reset by peer"
     },
     {
       "url": "http://airport.lk/",
@@ -134,7 +134,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)",
+      "reason": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)",
       "executed": true,
       "checks": [
         {
@@ -183,19 +183,19 @@
           "name": "tls_browser_trusted",
           "level": 1,
           "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+          "reason": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 104] Connection reset by peer"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 104] Connection reset by peer"
         }
       ]
     },
@@ -233,7 +233,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.242.195.32",
+    "egress_ip": "57.154.6.32",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
