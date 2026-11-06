@@ -1,8 +1,8 @@
 # Website Audit: https://emb-tehran.gov.lk/
 
-- Completed: 2026-11-05 09:59
+- Completed: 2026-11-06 10:01
 - Overall result: 🟠 Level 2
-- Vantage: 57.154.6.32 (US, github-actions)
+- Vantage: 20.118.245.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

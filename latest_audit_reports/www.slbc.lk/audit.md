@@ -1,8 +1,8 @@
 # Website Audit: https://www.slbc.lk/
 
-- Completed: 2026-11-05 10:03
+- Completed: 2026-11-06 10:05
 - Overall result: 🔴 Level 1
-- Vantage: 57.154.6.32 (US, github-actions)
+- Vantage: 20.118.245.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: SRI LANKA BRODCASTING CORPORATION No. 574, Torrington Square, Colombo 07,Sri Lanka |
-| reachable_contacts | ✅ | Phone: 076 0 11 22 33 (9 phone numbers found); Email: info@slbcmail.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 269 7491- (9 phone numbers found); Email: chairman@slbcmail.lk (2 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

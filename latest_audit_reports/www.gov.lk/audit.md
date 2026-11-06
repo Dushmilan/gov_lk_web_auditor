@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-11-05 09:39
+- Completed: 2026-11-06 09:38
 - Overall result: 🔴 Level 1
-- Vantage: 57.154.6.32 (US, github-actions)
+- Vantage: 20.118.245.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0670396207 (179 phone numbers found); Email: general@leco.lk (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0670396207 (178 phone numbers found); Email: gmr@railway.gov.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

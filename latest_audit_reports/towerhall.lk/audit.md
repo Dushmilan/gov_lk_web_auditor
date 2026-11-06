@@ -1,8 +1,8 @@
 # Website Audit: https://towerhall.lk/
 
-- Completed: 2026-11-05 09:35
+- Completed: 2026-11-06 09:34
 - Overall result: 🟠 Level 2
-- Vantage: 57.154.6.32 (US, github-actions)
+- Vantage: 20.118.245.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Tower Hall Theatre Foundation No. 123, Sausiripaya, Wijerama MWT, Colombo - 07, Sri Lanka. Call Now THF: +94 11 268 60 8; Phone: +94 11268 23 24 (76 phone numbers found); Email: towersl@sltnet.lk (15 email addresses found); Published named responsibility: director
+Published postal address: Tower Hall Theatre Foundation No. 123, Sausiripaya, Wijerama MWT, Colombo - 07, Sri Lanka. Call Now THF: +94 11 268 60 8; Phone: +94 11 268 60 88 (76 phone numbers found); Email: towersl@sltnet.lk (15 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Tower Hall Theatre Foundation No. 123, Sausiripaya, Wijerama MWT, Colombo - 07, Sri Lanka. Call Now THF: +94 11 268 60 8 |
-| reachable_contacts | ✅ | Phone: +94 11268 23 24 (76 phone numbers found); Email: towersl@sltnet.lk (15 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 268 60 88 (76 phone numbers found); Email: towersl@sltnet.lk (15 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
