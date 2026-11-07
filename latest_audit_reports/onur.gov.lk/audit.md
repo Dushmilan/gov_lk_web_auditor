@@ -1,8 +1,8 @@
 # Website Audit: https://onur.gov.lk/
 
-- Completed: 2026-11-06 10:10
+- Completed: 2026-11-07 09:41
 - Overall result: 🟠 Level 2
-- Vantage: 20.118.245.161 (US, github-actions)
+- Vantage: 132.196.20.194 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: { display: none; } .post-type-archive-tribe_events .tribe-events-calendar-list .tribe-common-g-row .tribe-events-calenda; Phone: 011 288 6978 (12 phone numbers found); Email: info@onur.gov.lk; Published named responsibility: division
+Published postal address: { display: none; } .post-type-archive-tribe_events .tribe-events-calendar-list .tribe-common-g-row .tribe-events-calenda; Phone: 0112887564 (12 phone numbers found); Email: info@onur.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: { display: none; } .post-type-archive-tribe_events .tribe-events-calendar-list .tribe-common-g-row .tribe-events-calenda |
-| reachable_contacts | ✅ | Phone: 011 288 6978 (12 phone numbers found); Email: info@onur.gov.lk |
+| reachable_contacts | ✅ | Phone: 0112887564 (12 phone numbers found); Email: info@onur.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

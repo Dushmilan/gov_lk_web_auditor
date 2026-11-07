@@ -1,8 +1,8 @@
 # Website Audit: https://www.moj.gov.lk/
 
-- Completed: 2026-11-06 10:29
+- Completed: 2026-11-07 09:58
 - Overall result: 🟠 Level 2
-- Vantage: 20.118.245.161 (US, github-actions)
+- Vantage: 132.196.20.194 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Integration Ministry of Justice 19 Sri Sangaraja Mawatha Colombo 10 Sri Lanka; Phone: +94112323022 (17 phone numbers found); Email: info@moj.gov.lk (6 email addresses found); Published named responsibility: division
+Published postal address: Integration Ministry of Justice 19 Sri Sangaraja Mawatha Colombo 10 Sri Lanka; Phone: +94 11 2323022 (16 phone numbers found); Email: info@moj.gov.lk (6 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Integration Ministry of Justice 19 Sri Sangaraja Mawatha Colombo 10 Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94112323022 (17 phone numbers found); Email: info@moj.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2323022 (16 phone numbers found); Email: info@moj.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

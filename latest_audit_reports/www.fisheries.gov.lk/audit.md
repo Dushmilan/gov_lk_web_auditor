@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-11-06 10:30
+- Completed: 2026-11-07 09:59
 - Overall result: 🟠 Level 2
-- Vantage: 20.118.245.161 (US, github-actions)
+- Vantage: 132.196.20.194 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: emergency disaster situations in the country. He assured that the government would take steps to promptly rectify these ; Phone: 0 0 0-1.594-1.59 (124 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found); Published named responsibility: director
+Published postal address: emergency disaster situations in the country. He assured that the government would take steps to promptly rectify these ; Phone: +94112446183+94112446184 (124 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: emergency disaster situations in the country. He assured that the government would take steps to promptly rectify these  |
-| reachable_contacts | ✅ | Phone: 0 0 0-1.594-1.59 (124 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112446183+94112446184 (124 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

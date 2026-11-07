@@ -1,8 +1,8 @@
 # Website Audit: https://navy.lk/
 
-- Completed: 2026-11-06 09:36
+- Completed: 2026-11-07 09:10
 - Overall result: 🔴 Level 1
-- Vantage: 20.118.245.161 (US, github-actions)
+- Vantage: 132.196.20.194 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 117 190 000 (18 phone numbers found); Email: info@navy.lk (9 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 117 192 000 (18 phone numbers found); Email: info@navy.lk (9 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

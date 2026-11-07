@@ -1,8 +1,8 @@
 # Website Audit: https://www.nastec.gov.lk/
 
-- Completed: 2026-11-06 10:19
+- Completed: 2026-11-07 09:49
 - Overall result: 🟠 Level 2
-- Vantage: 20.118.245.161 (US, github-actions)
+- Vantage: 132.196.20.194 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: HOST COUNTRY AGREEMENT TO OPERATIONALIZE TECHNOLOGY TRANSFER FACILITY COLOMBO, SRI LANKA; Phone: 011 - 2 186 713 (18 phone numbers found); Email: info@nastec.gov.lk (31 email addresses found); Published named responsibility: department
+Published postal address: HOST COUNTRY AGREEMENT TO OPERATIONALIZE TECHNOLOGY TRANSFER FACILITY COLOMBO, SRI LANKA; Phone: 011 - 2 186 711 (18 phone numbers found); Email: info@nastec.gov.lk (31 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: HOST COUNTRY AGREEMENT TO OPERATIONALIZE TECHNOLOGY TRANSFER FACILITY COLOMBO, SRI LANKA |
-| reachable_contacts | ✅ | Phone: 011 - 2 186 713 (18 phone numbers found); Email: info@nastec.gov.lk (31 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 - 2 186 711 (18 phone numbers found); Email: info@nastec.gov.lk (31 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

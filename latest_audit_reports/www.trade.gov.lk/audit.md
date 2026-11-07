@@ -1,8 +1,8 @@
 # Website Audit: https://www.trade.gov.lk/
 
-- Completed: 2026-11-06 10:31
+- Completed: 2026-11-07 09:59
 - Overall result: 🔴 Level 1
-- Vantage: 20.118.245.161 (US, github-actions)
+- Vantage: 132.196.20.194 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

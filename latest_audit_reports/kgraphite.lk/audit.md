@@ -1,8 +1,8 @@
 # Website Audit: https://kgraphite.lk/
 
-- Completed: 2026-11-06 10:14
+- Completed: 2026-11-07 09:39
 - Overall result: 🟠 Level 2
-- Vantage: 20.118.245.161 (US, github-actions)
+- Vantage: 132.196.20.194 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Kahatagaha Graphite Lanka Limited. 561/3, Elvitigala Mawatha, Narahenpita, Colombo 05, Sri Lanka; Phone: +94 112 368 737 (70 phone numbers found); Email: kgll@sltnet.lk; Published named responsibility: director
+Published postal address: Kahatagaha Graphite Lanka Limited. 561/3, Elvitigala Mawatha, Narahenpita, Colombo 05, Sri Lanka; Phone: +94 37 225 2015 (189 phone numbers found); Email: kgll@sltnet.lkWebsite (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Kahatagaha Graphite Lanka Limited. 561/3, Elvitigala Mawatha, Narahenpita, Colombo 05, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 112 368 737 (70 phone numbers found); Email: kgll@sltnet.lk |
+| reachable_contacts | ✅ | Phone: +94 37 225 2015 (189 phone numbers found); Email: kgll@sltnet.lkWebsite (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
