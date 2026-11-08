@@ -1,8 +1,8 @@
 # Website Audit: https://www.env.gov.lk/
 
-- Completed: 2026-11-07 10:03
+- Completed: 2026-11-08 09:13
 - Overall result: 🔴 Level 1
-- Vantage: 132.196.20.194 (US, github-actions)
+- Vantage: 20.98.135.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0385352498 (16 phone numbers found); Email: info@env.gov.lk |
+| reachable_contacts | ✅ | Phone: 0.788894997 (15 phone numbers found); Email: info@env.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://nationalzoo.gov.lk/
 
-- Completed: 2026-11-07 09:21
+- Completed: 2026-11-08 08:44
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.20.194 (US, github-actions)
+- Vantage: 20.98.135.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

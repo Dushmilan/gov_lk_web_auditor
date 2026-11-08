@@ -1,8 +1,8 @@
 # Website Audit: https://www.ombudsman.gov.lk/
 
-- Completed: 2026-11-07 10:07
+- Completed: 2026-11-08 09:16
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.20.194 (US, github-actions)
+- Vantage: 20.98.135.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

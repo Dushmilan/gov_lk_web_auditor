@@ -1,8 +1,8 @@
 # Website Audit: https://emb-ankara.gov.lk/
 
-- Completed: 2026-11-07 09:32
+- Completed: 2026-11-08 08:54
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.20.194 (US, github-actions)
+- Vantage: 20.98.135.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Gaziosmanpaşa, Kırlangıç Sk. No:41, Çankaya, Ankara, 06700 Türkiye Fax: +90 312 427 10 26 General Contact Numbers: +90 3; Phone: 050-9530-451 (21 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
+Published postal address: Gaziosmanpaşa, Kırlangıç Sk. No:41, Çankaya, Ankara, 06700 Türkiye Fax: +90 312 427 10 26 General Contact Numbers: +90 3; Phone: 0-2115-4064-8 (21 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Gaziosmanpaşa, Kırlangıç Sk. No:41, Çankaya, Ankara, 06700 Türkiye Fax: +90 312 427 10 26 General Contact Numbers: +90 3 |
-| reachable_contacts | ✅ | Phone: 050-9530-451 (21 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0-2115-4064-8 (21 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
