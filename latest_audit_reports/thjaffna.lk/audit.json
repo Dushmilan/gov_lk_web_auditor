@@ -1,24 +1,21 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b6389282-ec1e-41bc-8535-9aa8c819ce36",
+  "audit_id": "4873085f-b747-4aa9-96e1-0d55cf54920a",
   "url": "https://thjaffna.lk/",
   "normalized_url": "https://thjaffna.lk/",
-  "started_at": "2026-11-08T08:57:45.599230+05:30",
-  "completed_at": "2026-11-08T08:58:09.038443+05:30",
+  "started_at": "2026-11-09T09:22:07.744233+05:30",
+  "completed_at": "2026-11-09T09:24:09.652347+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete"
     ]
   },
   "evidence": [
@@ -26,322 +23,57 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-08T08:57:45.917556+05:30"
+      "observed_at": "2026-11-09T09:22:08.451778+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-08T08:57:45.917579+05:30"
+      "observed_at": "2026-11-09T09:22:08.451828+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-08T08:57:46.008204+05:30"
+      "observed_at": "2026-11-09T09:22:08.492065+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://thjaffna.lk/",
+      "status": "error",
+      "detail": "Probe 1: The read operation timed out",
       "source": "https://thjaffna.lk/",
-      "observed_at": "2026-11-08T08:58:08.757448+05:30"
+      "observed_at": "2026-11-09T09:24:09.652162+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://thjaffna.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://thjaffna.lk/",
-      "observed_at": "2026-11-08T08:58:08.757470+05:30"
+      "observed_at": "2026-11-09T09:24:09.652180+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://thjaffna.lk/",
+      "status": "error",
+      "detail": "Probe 3: The read operation timed out",
       "source": "https://thjaffna.lk/",
-      "observed_at": "2026-11-08T08:58:08.757474+05:30"
+      "observed_at": "2026-11-09T09:24:09.652184+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://thjaffna.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://thjaffna.lk/",
-      "observed_at": "2026-11-08T08:58:08.757477+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://thjaffna.lk/services/",
-      "source": "https://thjaffna.lk/services/",
-      "observed_at": "2026-11-08T08:58:08.757480+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://thjaffna.lk/contact/",
-      "source": "https://thjaffna.lk/contact/",
-      "observed_at": "2026-11-08T08:58:08.757483+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://thjaffna.lk/services/ophthalmology/",
-      "source": "https://thjaffna.lk/services/ophthalmology/",
-      "observed_at": "2026-11-08T08:58:08.757485+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://thjaffna.lk/services/physiotherapy/",
-      "source": "https://thjaffna.lk/services/physiotherapy/",
-      "observed_at": "2026-11-08T08:58:08.757488+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://thjaffna.lk/services/opd/",
-      "source": "https://thjaffna.lk/services/opd/",
-      "observed_at": "2026-11-08T08:58:08.757490+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://thjaffna.lk/services/icu/",
-      "source": "https://thjaffna.lk/services/icu/",
-      "observed_at": "2026-11-08T08:58:08.757493+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://thjaffna.lk/services/dermatology/",
-      "source": "https://thjaffna.lk/services/dermatology/",
-      "observed_at": "2026-11-08T08:58:08.757495+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://thjaffna.lk/services/nicu/",
-      "source": "https://thjaffna.lk/services/nicu/",
-      "observed_at": "2026-11-08T08:58:08.757498+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://thjaffna.lk/services/clinic/",
-      "source": "https://thjaffna.lk/services/clinic/",
-      "observed_at": "2026-11-08T08:58:08.757500+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://thjaffna.lk/services/wards/",
-      "source": "https://thjaffna.lk/services/wards/",
-      "observed_at": "2026-11-08T08:58:08.757503+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 071 2345 ",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "071 071 2345 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01.01.2025 - 31.",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "01.01.2025 - 31."
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 071 2345 ",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "071 071 2345 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01.01.2025 - 31.",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "01.01.2025 - 31."
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 071 2345 ",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "071 071 2345 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01.01.2025 - 31.",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "01.01.2025 - 31."
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 071 2345 ",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "071 071 2345 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01.01.2025 - 31.",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "01.01.2025 - 31."
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://thjaffna.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: * Phone Number * Service Interested In Select a service General Inquiries Cardiology Neurology Oncology Orthopedics Opht",
-      "source": "https://thjaffna.lk/contact/",
-      "data": {
-        "value": "* Phone Number * Service Interested In Select a service General Inquiries Cardiology Neurology Oncology Orthopedics Opht"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: evidence gaps, particularly in low- and middle-income countries. The following research activities are being carried out",
-      "source": "https://thjaffna.lk/services/ophthalmology/",
-      "data": {
-        "value": "evidence gaps, particularly in low- and middle-income countries. The following research activities are being carried out"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://thjaffna.lk/services/ophthalmology/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://thjaffna.lk/services/physiotherapy/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://thjaffna.lk/services/opd/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://thjaffna.lk/services/dermatology/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 27 weeks",
-      "source": "https://thjaffna.lk/services/nicu/",
-      "data": {
-        "value": "27 weeks"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://thjaffna.lk/services/clinic/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://thjaffna.lk/services/wards/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 4704 visible characters across 14 pages",
-      "source": "https://thjaffna.lk/"
+      "observed_at": "2026-11-09T09:24:09.652187+05:30"
     }
   ],
   "observations": [
     {
       "host": "thjaffna.lk",
       "addresses": [
-        "145.223.124.38",
-        "147.79.72.195",
-        "2a02:4780:4b:a7bb:e9bb:5ad7:58d9:fbea",
-        "2a02:4780:4c:50a6:775a:b6f:d841:fc9a"
+        "147.79.120.54",
+        "2a02:4780:4e:7694:7034:4c6:d01a:186a",
+        "2a02:4780:4f:9da1:1c27:2f51:284d:e119",
+        "92.112.198.244"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -361,221 +93,42 @@
     },
     {
       "url": "https://thjaffna.lk/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 328,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "The read operation timed out"
     },
     {
       "url": "http://thjaffna.lk/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/",
-      "redirects": [
-        "https://thjaffna.lk/"
-      ],
-      "elapsed_ms": 320,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://thjaffna.lk/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 311,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "The read operation timed out"
     },
     {
       "url": "http://thjaffna.lk/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/",
-      "redirects": [
-        "https://thjaffna.lk/"
-      ],
-      "elapsed_ms": 4525,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/services/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/services/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1604,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/contact/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/contact/",
-      "redirects": [],
-      "elapsed_ms": 374,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/services/ophthalmology/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/services/ophthalmology/",
-      "redirects": [],
-      "elapsed_ms": 332,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/services/physiotherapy/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/services/physiotherapy/",
-      "redirects": [],
-      "elapsed_ms": 304,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/services/opd/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/services/opd/",
-      "redirects": [],
-      "elapsed_ms": 319,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/services/icu/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/services/icu/",
-      "redirects": [],
-      "elapsed_ms": 320,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/services/dermatology/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/services/dermatology/",
-      "redirects": [],
-      "elapsed_ms": 306,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/services/nicu/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/services/nicu/",
-      "redirects": [],
-      "elapsed_ms": 298,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/services/clinic/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/services/clinic/",
-      "redirects": [],
-      "elapsed_ms": 319,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://thjaffna.lk/services/wards/",
-      "status_code": 200,
-      "final_url": "https://thjaffna.lk/services/wards/",
-      "redirects": [],
-      "elapsed_ms": 334,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://thjaffna.lk/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-01-465ccfe56632.html",
-      "sha256": "465ccfe56632e89cb877f2c6b00e3d100410a0da7380daa2375d6495a98420f3",
-      "bytes": 81842
-    },
-    {
-      "url": "https://thjaffna.lk/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-02-465ccfe56632.html",
-      "sha256": "465ccfe56632e89cb877f2c6b00e3d100410a0da7380daa2375d6495a98420f3",
-      "bytes": 81842
-    },
-    {
-      "url": "https://thjaffna.lk/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-03-465ccfe56632.html",
-      "sha256": "465ccfe56632e89cb877f2c6b00e3d100410a0da7380daa2375d6495a98420f3",
-      "bytes": 81842
-    },
-    {
-      "url": "https://thjaffna.lk/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-04-465ccfe56632.html",
-      "sha256": "465ccfe56632e89cb877f2c6b00e3d100410a0da7380daa2375d6495a98420f3",
-      "bytes": 81842
-    },
-    {
-      "url": "https://thjaffna.lk/services/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-05-4eb1294bc749.html",
-      "sha256": "4eb1294bc7496aa11819b53a88eb55705751fa1468eb0c9f25d91325698f6508",
-      "bytes": 51482
-    },
-    {
-      "url": "https://thjaffna.lk/contact/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-06-510af5ff867d.html",
-      "sha256": "510af5ff867d0405d37f89cbb27542c401606fae375fe6be1ac57cfca2b760a5",
-      "bytes": 32434
-    },
-    {
-      "url": "https://thjaffna.lk/services/ophthalmology/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-07-d57a38cd929f.html",
-      "sha256": "d57a38cd929fec2d17406614264f1ccb9bda3644cf6f775eff3c79abdaa0a3ab",
-      "bytes": 70525
-    },
-    {
-      "url": "https://thjaffna.lk/services/physiotherapy/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-08-255071c97d87.html",
-      "sha256": "255071c97d8780d4319ffe0432e7fc252700335856a559ba4c6aecaa598dab99",
-      "bytes": 34719
-    },
-    {
-      "url": "https://thjaffna.lk/services/opd/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-09-3ad817074fc7.html",
-      "sha256": "3ad817074fc73408232a69abf5f56420280de2f4637f4463a87035dcc5f121ca",
-      "bytes": 40225
-    },
-    {
-      "url": "https://thjaffna.lk/services/icu/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-10-61681ca1043e.html",
-      "sha256": "61681ca1043e560ea2ecf783984658dc61929d4c21a9a44c1fe2446cb5dde774",
-      "bytes": 33060
-    },
-    {
-      "url": "https://thjaffna.lk/services/dermatology/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-11-805c2676f055.html",
-      "sha256": "805c2676f0559ca99806d5292eed29df6fa5a97a48fac915c03c461e03f9ce73",
-      "bytes": 35495
-    },
-    {
-      "url": "https://thjaffna.lk/services/nicu/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-12-a797ea3d3b6d.html",
-      "sha256": "a797ea3d3b6d014b35f7fdf4ec151b705fc625a590fc806173e802aefbcf0c01",
-      "bytes": 35094
-    },
-    {
-      "url": "https://thjaffna.lk/services/clinic/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-13-719df4d6585b.html",
-      "sha256": "719df4d6585b9ca366979e5cf19b73ef75cfdfde9b1fa341fd94bf52e3b0a47b",
-      "bytes": 75413
-    },
-    {
-      "url": "https://thjaffna.lk/services/wards/",
-      "path": "audit.output/thjaffna.lk/20261108.0857/snapshots/page-14-f334f377f863.html",
-      "sha256": "f334f377f8632852dba40700fdbdb0f02d3d637cc9eec27d1c79b506b2ea0633",
-      "bytes": 49421
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -589,8 +142,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
       "executed": true,
       "checks": [
         {
@@ -602,44 +155,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -659,28 +212,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No email evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: * Phone Number * Service Interested In Select a service General Inquiries Cardiology Neurology Oncology Orthopedics Opht"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -708,7 +242,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.98.135.195",
+    "egress_ip": "20.168.139.40",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

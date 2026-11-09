@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "6fd974b6-c3d8-4dc7-9a23-c21c15cd86f5",
+  "audit_id": "f9d95234-766a-49be-bf5e-758240160c96",
   "url": "https://legalaid.gov.lk/",
   "normalized_url": "https://legalaid.gov.lk/",
-  "started_at": "2026-11-08T09:02:10.077422+05:30",
-  "completed_at": "2026-11-08T09:02:14.843607+05:30",
+  "started_at": "2026-11-09T09:26:58.130271+05:30",
+  "completed_at": "2026-11-09T09:27:17.741402+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 111] Connection refused",
-      "tls_hostname_matches: [Errno 111] Connection refused"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,546 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-08T09:02:10.796002+05:30"
+      "observed_at": "2026-11-09T09:26:58.464253+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-08T09:02:10.796026+05:30"
+      "observed_at": "2026-11-09T09:26:58.464274+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-11-08T09:02:11.306094+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-09T09:26:59.203497+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://legalaid.gov.lk/",
       "source": "https://legalaid.gov.lk/",
-      "observed_at": "2026-11-08T09:02:14.843441+05:30"
+      "observed_at": "2026-11-09T09:27:17.547851+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://legalaid.gov.lk/",
       "source": "http://legalaid.gov.lk/",
-      "observed_at": "2026-11-08T09:02:14.843460+05:30"
+      "observed_at": "2026-11-09T09:27:17.547871+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://legalaid.gov.lk/",
       "source": "https://legalaid.gov.lk/",
-      "observed_at": "2026-11-08T09:02:14.843463+05:30"
+      "observed_at": "2026-11-09T09:27:17.547875+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://legalaid.gov.lk/",
       "source": "http://legalaid.gov.lk/",
-      "observed_at": "2026-11-08T09:02:14.843465+05:30"
+      "observed_at": "2026-11-09T09:27:17.547878+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://legalaid.gov.lk/contact-us",
+      "source": "https://legalaid.gov.lk/contact-us",
+      "observed_at": "2026-11-09T09:27:17.547882+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "source": "https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "observed_at": "2026-11-09T09:27:17.547884+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://legalaid.gov.lk/service/index",
+      "source": "https://legalaid.gov.lk/service/index",
+      "observed_at": "2026-11-09T09:27:17.547887+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://legalaid.gov.lk/service/offered/services-legal-consultation",
+      "source": "https://legalaid.gov.lk/service/offered/services-legal-consultation",
+      "observed_at": "2026-11-09T09:27:17.547890+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://legalaid.gov.lk/service/offered/services-judicial-proceedings",
+      "source": "https://legalaid.gov.lk/service/offered/services-judicial-proceedings",
+      "observed_at": "2026-11-09T09:27:17.547892+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://legalaid.gov.lk/service/offered/services-public-engagement-activities",
+      "source": "https://legalaid.gov.lk/service/offered/services-public-engagement-activities",
+      "observed_at": "2026-11-09T09:27:17.547895+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://legalaid.gov.lk/service/offered/services-projects-for-enhancing-public-literacy",
+      "source": "https://legalaid.gov.lk/service/offered/services-projects-for-enhancing-public-literacy",
+      "observed_at": "2026-11-09T09:27:17.547898+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://legalaid.gov.lk/service/offered/services-development-oriented-law-assistance-programs-projects",
+      "source": "https://legalaid.gov.lk/service/offered/services-development-oriented-law-assistance-programs-projects",
+      "observed_at": "2026-11-09T09:27:17.547900+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://legalaid.gov.lk/service/offered/services-document-work",
+      "source": "https://legalaid.gov.lk/service/offered/services-document-work",
+      "observed_at": "2026-11-09T09:27:17.547903+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://legalaid.gov.lk/service/offered/services-publications-and-media-activities",
+      "source": "https://legalaid.gov.lk/service/offered/services-publications-and-media-activities",
+      "observed_at": "2026-11-09T09:27:17.547906+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/contact-us",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/contact-us",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-5655111",
+      "source": "https://legalaid.gov.lk/contact-us",
+      "data": {
+        "value": "+94-70-5655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-5655111 ",
+      "source": "https://legalaid.gov.lk/contact-us",
+      "data": {
+        "value": "+94-70-5655111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2433618 ",
+      "source": "https://legalaid.gov.lk/contact-us",
+      "data": {
+        "value": "+94-11-2433618 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/contact-us",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0774426342",
+      "source": "https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "data": {
+        "value": "0774426342"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: thusharilac@yahoo.com",
+      "source": "https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "data": {
+        "value": "thusharilac@yahoo.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/service/index",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/service/index",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/service/index",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/service/offered/services-legal-consultation",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/service/offered/services-legal-consultation",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/service/offered/services-legal-consultation",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/service/offered/services-judicial-proceedings",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/service/offered/services-judicial-proceedings",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/service/offered/services-judicial-proceedings",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/service/offered/services-public-engagement-activities",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/service/offered/services-public-engagement-activities",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/service/offered/services-public-engagement-activities",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/service/offered/services-projects-for-enhancing-public-literacy",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/service/offered/services-projects-for-enhancing-public-literacy",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/service/offered/services-projects-for-enhancing-public-literacy",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/service/offered/services-development-oriented-law-assistance-programs-projects",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/service/offered/services-development-oriented-law-assistance-programs-projects",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/service/offered/services-development-oriented-law-assistance-programs-projects",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/service/offered/services-document-work",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/service/offered/services-document-work",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/service/offered/services-document-work",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111",
+      "source": "https://legalaid.gov.lk/service/offered/services-publications-and-media-activities",
+      "data": {
+        "value": "+94-70-3655111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-70-3655111 ",
+      "source": "https://legalaid.gov.lk/service/offered/services-publications-and-media-activities",
+      "data": {
+        "value": "+94-70-3655111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalaidcommission1978@gmail.com",
+      "source": "https://legalaid.gov.lk/service/offered/services-publications-and-media-activities",
+      "data": {
+        "value": "legalaidcommission1978@gmail.com"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 10360 visible characters across 14 pages",
+      "source": "https://legalaid.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +585,228 @@
     },
     {
       "host": "legalaid.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "status": "valid",
+      "expires_at": "2027-01-12T02:39:49+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://legalaid.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1021,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://legalaid.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/",
+      "redirects": [
+        "https://legalaid.gov.lk/"
+      ],
+      "elapsed_ms": 1314,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://legalaid.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1010,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://legalaid.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/",
+      "redirects": [
+        "https://legalaid.gov.lk/"
+      ],
+      "elapsed_ms": 1023,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/contact-us",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/contact-us",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1091,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "redirects": [],
+      "elapsed_ms": 1082,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/index",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/service/index",
+      "redirects": [],
+      "elapsed_ms": 983,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-legal-consultation",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/service/offered/services-legal-consultation",
+      "redirects": [],
+      "elapsed_ms": 972,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-judicial-proceedings",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/service/offered/services-judicial-proceedings",
+      "redirects": [],
+      "elapsed_ms": 982,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-public-engagement-activities",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/service/offered/services-public-engagement-activities",
+      "redirects": [],
+      "elapsed_ms": 971,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-projects-for-enhancing-public-literacy",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/service/offered/services-projects-for-enhancing-public-literacy",
+      "redirects": [],
+      "elapsed_ms": 1214,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-development-oriented-law-assistance-programs-projects",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/service/offered/services-development-oriented-law-assistance-programs-projects",
+      "redirects": [],
+      "elapsed_ms": 1190,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-document-work",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/service/offered/services-document-work",
+      "redirects": [],
+      "elapsed_ms": 988,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-publications-and-media-activities",
+      "status_code": 200,
+      "final_url": "https://legalaid.gov.lk/service/offered/services-publications-and-media-activities",
+      "redirects": [],
+      "elapsed_ms": 971,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://legalaid.gov.lk/",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-01-aab01978fcc6.html",
+      "sha256": "aab01978fcc6a2c657a6009b14c30dd752a64b96aeaaec4b0fa6016d5e99a09e",
+      "bytes": 90513
+    },
+    {
+      "url": "https://legalaid.gov.lk/",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-02-23265cda77df.html",
+      "sha256": "23265cda77df8804acb70064fa961494c91362307095c644e763944b5c502197",
+      "bytes": 90513
+    },
+    {
+      "url": "https://legalaid.gov.lk/",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-03-15f869923c06.html",
+      "sha256": "15f869923c068656215d407830ec5b6422a1ec8a7cf0b90df43341c1de67a8c7",
+      "bytes": 90513
+    },
+    {
+      "url": "https://legalaid.gov.lk/",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-04-fd3be7ef5d6f.html",
+      "sha256": "fd3be7ef5d6f44285ba371e54a70bf0c4ed2b4f0893102866f1f8df9c3bdd911",
+      "bytes": 90513
+    },
+    {
+      "url": "https://legalaid.gov.lk/contact-us",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-05-6c766fbd7368.html",
+      "sha256": "6c766fbd7368282e0e0d2ea1c389e9eff81aaa87b6b9e365ed922577cdf417dd",
+      "bytes": 55234
+    },
+    {
+      "url": "https://legalaid.gov.lk/knowledge-hub/information-officer",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-06-eae22ee2a0e1.html",
+      "sha256": "eae22ee2a0e15f65d9ddce5458070d86da3a5ea4fa489aef9b835f31c9ddb34b",
+      "bytes": 38435
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/index",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-07-be4eef675c52.html",
+      "sha256": "be4eef675c52631dc82e154263293e4a38abaca682617e366f8881d6b98bad3c",
+      "bytes": 44486
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-legal-consultation",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-08-242fc11d6d97.html",
+      "sha256": "242fc11d6d9726260249d79fb89c2c7bd549ab958dbc9856fbabdc8fb0758134",
+      "bytes": 46782
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-judicial-proceedings",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-09-fb2655354db3.html",
+      "sha256": "fb2655354db3ee261f766d11a08a224e6c5bd0379c1469be9a816a17a4ca7a38",
+      "bytes": 51730
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-public-engagement-activities",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-10-a58beae6dde1.html",
+      "sha256": "a58beae6dde14cf969cd79e1fe59bb7b09e536fd32acf3d0690c38d63e3db330",
+      "bytes": 38944
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-projects-for-enhancing-public-literacy",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-11-70457e093bda.html",
+      "sha256": "70457e093bdac01c550dba5328e2d0cd4f0b2f80fe15b2ac80ca6ec67cec1ff0",
+      "bytes": 55006
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-development-oriented-law-assistance-programs-projects",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-12-d1760467b85c.html",
+      "sha256": "d1760467b85cab37ac2f655b581132a6c5e2ca3581abb4e714fd05f9e0c7f488",
+      "bytes": 46976
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-document-work",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-13-5118f62c068e.html",
+      "sha256": "5118f62c068e4b27d85083a8090616ea692477f7516ca33556eca45b6f306e00",
+      "bytes": 43463
+    },
+    {
+      "url": "https://legalaid.gov.lk/service/offered/services-publications-and-media-activities",
+      "path": "audit.output/legalaid.gov.lk/20261109.0926/snapshots/page-14-fcd857eb7fec.html",
+      "sha256": "fcd857eb7fec6fc6bd167e36452bf6db13f1bdedb09b1dd8b76aeb141b435272",
+      "bytes": 41114
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +820,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +833,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +890,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found; No passing named responsibility evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94-70-3655111 (4 phone numbers found); Email: legalaidcommission1978@gmail.com (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing named responsibility evidence found"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +939,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.98.135.195",
+    "egress_ip": "20.168.139.40",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

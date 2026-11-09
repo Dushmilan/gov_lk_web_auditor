@@ -1,8 +1,8 @@
 # Website Audit: https://edl.lk/
 
-- Completed: 2026-11-08 08:44
+- Completed: 2026-11-09 09:07
 - Overall result: 🟠 Level 2
-- Vantage: 20.98.135.195 (US, github-actions)
+- Vantage: 20.168.139.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka; Phone: 0.035971223 (383 phone numbers found); Email: cekalmunai@ceb.lk (88 email addresses found); Published named responsibility: division
+Published postal address: 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka; Phone: 1987 (383 phone numbers found); Email: clkembilipitiya@ceb.lk (88 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0.035971223 (383 phone numbers found); Email: cekalmunai@ceb.lk (88 email addresses found) |
+| reachable_contacts | ✅ | Phone: 1987 (383 phone numbers found); Email: clkembilipitiya@ceb.lk (88 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

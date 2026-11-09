@@ -1,8 +1,8 @@
 # Website Audit: https://hc-wellington.gov.lk/
 
-- Completed: 2026-11-08 08:53
+- Completed: 2026-11-09 09:17
 - Overall result: 🟠 Level 2
-- Vantage: 20.98.135.195 (US, github-actions)
+- Vantage: 20.168.139.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Floor 08, 38 Waring Taylor Street, Wellington Central, Wellington 6011, New Zealand. Postal Address High Commission of S; Phone: 0834910476 (10 phone numbers found); Email: slhc.wellington@mfa.gov.lk (5 email addresses found); Published named responsibility: director
+Published postal address: Floor 08, 38 Waring Taylor Street, Wellington Central, Wellington 6011, New Zealand. Postal Address High Commission of S; Phone: +64042420640 (10 phone numbers found); Email: consular.wellington@mfa.gov.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Floor 08, 38 Waring Taylor Street, Wellington Central, Wellington 6011, New Zealand. Postal Address High Commission of S |
-| reachable_contacts | ✅ | Phone: 0834910476 (10 phone numbers found); Email: slhc.wellington@mfa.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: +64042420640 (10 phone numbers found); Email: consular.wellington@mfa.gov.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

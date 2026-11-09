@@ -1,8 +1,8 @@
 # Website Audit: https://ngosec.gov.lk/
 
-- Completed: 2026-11-08 09:05
+- Completed: 2026-11-09 09:33
 - Overall result: 🟠 Level 2
-- Vantage: 20.98.135.195 (US, github-actions)
+- Vantage: 20.168.139.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

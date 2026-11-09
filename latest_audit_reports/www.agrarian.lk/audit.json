@@ -1,24 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "42a0735a-e9df-4c9a-bb71-c253d1d01685",
+  "audit_id": "de015d6d-24e5-4def-86aa-505a3e2c36d4",
   "url": "https://www.agrarian.lk/",
   "normalized_url": "https://www.agrarian.lk/",
-  "started_at": "2026-11-08T08:30:59.087159+05:30",
-  "completed_at": "2026-11-08T08:31:16.755231+05:30",
+  "started_at": "2026-11-09T08:54:29.769764+05:30",
+  "completed_at": "2026-11-09T08:54:35.739600+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "http_available: Every repeated HTTP probe failed: [521, 521, 521, 521]"
     ]
   },
   "evidence": [
@@ -26,849 +17,59 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-08T08:30:59.678512+05:30"
+      "observed_at": "2026-11-09T08:54:30.358429+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-08T08:30:59.678529+05:30"
+      "observed_at": "2026-11-09T08:54:30.358450+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-08T08:30:59.734970+05:30"
+      "observed_at": "2026-11-09T08:54:30.372885+05:30"
     },
     {
       "check": "http",
       "status": "fail",
       "detail": "Probe 1: HTTP 521 at https://www.agrarian.lk/",
       "source": "https://www.agrarian.lk/",
-      "observed_at": "2026-11-08T08:31:16.625905+05:30"
+      "observed_at": "2026-11-09T08:54:35.726147+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.agrarian.lk/",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 521 at https://www.agrarian.lk/",
       "source": "http://www.agrarian.lk/",
-      "observed_at": "2026-11-08T08:31:16.625926+05:30"
+      "observed_at": "2026-11-09T08:54:35.726169+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.agrarian.lk/",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 521 at https://www.agrarian.lk/",
       "source": "https://www.agrarian.lk/",
-      "observed_at": "2026-11-08T08:31:16.625931+05:30"
+      "observed_at": "2026-11-09T08:54:35.726175+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.agrarian.lk/",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 521 at https://www.agrarian.lk/",
       "source": "http://www.agrarian.lk/",
-      "observed_at": "2026-11-08T08:31:16.625934+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://agrarian.lk/about",
-      "source": "https://agrarian.lk/about",
-      "observed_at": "2026-11-08T08:31:16.625937+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://agrarian.lk/farmer-information",
-      "source": "https://agrarian.lk/farmer-information",
-      "observed_at": "2026-11-08T08:31:16.625939+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://agrarian.lk/login.php",
-      "source": "https://agrarian.lk/login.php",
-      "observed_at": "2026-11-08T08:31:16.625943+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://agrarian.lk/asc-information",
-      "source": "https://agrarian.lk/asc-information",
-      "observed_at": "2026-11-08T08:31:16.625945+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://agrarian.lk/marketing-information",
-      "source": "https://agrarian.lk/marketing-information",
-      "observed_at": "2026-11-08T08:31:16.625948+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://agrarian.lk/weather-information",
-      "source": "https://agrarian.lk/weather-information",
-      "observed_at": "2026-11-08T08:31:16.625950+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://agrarian.lk/",
-      "source": "https://agrarian.lk/",
-      "observed_at": "2026-11-08T08:31:16.625953+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694233 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694231",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694231"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694233",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694233"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694232 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694232 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694234",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694234"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694231 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694231 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694234 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694234 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694232",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694232"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694233 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694231",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694231"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694233",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694233"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694232 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694232 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694234",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694234"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694231 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694231 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694234 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694234 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694232",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694232"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694233 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694231",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694231"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694233",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694233"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694232 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694232 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694234",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694234"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694231 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694231 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694234 ",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "011 2694234 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694232",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "+94112694232"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.agrarian.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694233 ",
-      "source": "https://agrarian.lk/about",
-      "data": {
-        "value": "011 2694233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694231",
-      "source": "https://agrarian.lk/about",
-      "data": {
-        "value": "+94112694231"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694233",
-      "source": "https://agrarian.lk/about",
-      "data": {
-        "value": "+94112694233"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694232 ",
-      "source": "https://agrarian.lk/about",
-      "data": {
-        "value": "011 2694232 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694234",
-      "source": "https://agrarian.lk/about",
-      "data": {
-        "value": "+94112694234"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694231 ",
-      "source": "https://agrarian.lk/about",
-      "data": {
-        "value": "011 2694231 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694234 ",
-      "source": "https://agrarian.lk/about",
-      "data": {
-        "value": "011 2694234 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694232",
-      "source": "https://agrarian.lk/about",
-      "data": {
-        "value": "+94112694232"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://agrarian.lk/about",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694233 ",
-      "source": "https://agrarian.lk/farmer-information",
-      "data": {
-        "value": "011 2694233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694231",
-      "source": "https://agrarian.lk/farmer-information",
-      "data": {
-        "value": "+94112694231"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694233",
-      "source": "https://agrarian.lk/farmer-information",
-      "data": {
-        "value": "+94112694233"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694232 ",
-      "source": "https://agrarian.lk/farmer-information",
-      "data": {
-        "value": "011 2694232 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694234",
-      "source": "https://agrarian.lk/farmer-information",
-      "data": {
-        "value": "+94112694234"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694231 ",
-      "source": "https://agrarian.lk/farmer-information",
-      "data": {
-        "value": "011 2694231 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694234 ",
-      "source": "https://agrarian.lk/farmer-information",
-      "data": {
-        "value": "011 2694234 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694232",
-      "source": "https://agrarian.lk/farmer-information",
-      "data": {
-        "value": "+94112694232"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://agrarian.lk/farmer-information",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Password Remember me Login body { min-height: 100vh; background: linear-gradient(135deg, rgba(246, 249, 242, 0.96), rgba",
-      "source": "https://agrarian.lk/login.php",
-      "data": {
-        "value": "Password Remember me Login body { min-height: 100vh; background: linear-gradient(135deg, rgba(246, 249, 242, 0.96), rgba"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://agrarian.lk/login.php",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694233 ",
-      "source": "https://agrarian.lk/asc-information",
-      "data": {
-        "value": "011 2694233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694231",
-      "source": "https://agrarian.lk/asc-information",
-      "data": {
-        "value": "+94112694231"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694233",
-      "source": "https://agrarian.lk/asc-information",
-      "data": {
-        "value": "+94112694233"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694232 ",
-      "source": "https://agrarian.lk/asc-information",
-      "data": {
-        "value": "011 2694232 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694234",
-      "source": "https://agrarian.lk/asc-information",
-      "data": {
-        "value": "+94112694234"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694231 ",
-      "source": "https://agrarian.lk/asc-information",
-      "data": {
-        "value": "011 2694231 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694234 ",
-      "source": "https://agrarian.lk/asc-information",
-      "data": {
-        "value": "011 2694234 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694232",
-      "source": "https://agrarian.lk/asc-information",
-      "data": {
-        "value": "+94112694232"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://agrarian.lk/asc-information",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694233 ",
-      "source": "https://agrarian.lk/marketing-information",
-      "data": {
-        "value": "011 2694233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694231",
-      "source": "https://agrarian.lk/marketing-information",
-      "data": {
-        "value": "+94112694231"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694233",
-      "source": "https://agrarian.lk/marketing-information",
-      "data": {
-        "value": "+94112694233"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694232 ",
-      "source": "https://agrarian.lk/marketing-information",
-      "data": {
-        "value": "011 2694232 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694234",
-      "source": "https://agrarian.lk/marketing-information",
-      "data": {
-        "value": "+94112694234"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694231 ",
-      "source": "https://agrarian.lk/marketing-information",
-      "data": {
-        "value": "011 2694231 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694234 ",
-      "source": "https://agrarian.lk/marketing-information",
-      "data": {
-        "value": "011 2694234 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694232",
-      "source": "https://agrarian.lk/marketing-information",
-      "data": {
-        "value": "+94112694232"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://agrarian.lk/marketing-information",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694233 ",
-      "source": "https://agrarian.lk/weather-information",
-      "data": {
-        "value": "011 2694233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694231",
-      "source": "https://agrarian.lk/weather-information",
-      "data": {
-        "value": "+94112694231"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694233",
-      "source": "https://agrarian.lk/weather-information",
-      "data": {
-        "value": "+94112694233"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694232 ",
-      "source": "https://agrarian.lk/weather-information",
-      "data": {
-        "value": "011 2694232 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694234",
-      "source": "https://agrarian.lk/weather-information",
-      "data": {
-        "value": "+94112694234"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694231 ",
-      "source": "https://agrarian.lk/weather-information",
-      "data": {
-        "value": "011 2694231 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694234 ",
-      "source": "https://agrarian.lk/weather-information",
-      "data": {
-        "value": "011 2694234 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694232",
-      "source": "https://agrarian.lk/weather-information",
-      "data": {
-        "value": "+94112694232"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://agrarian.lk/weather-information",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694233 ",
-      "source": "https://agrarian.lk/",
-      "data": {
-        "value": "011 2694233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694231",
-      "source": "https://agrarian.lk/",
-      "data": {
-        "value": "+94112694231"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694233",
-      "source": "https://agrarian.lk/",
-      "data": {
-        "value": "+94112694233"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694232 ",
-      "source": "https://agrarian.lk/",
-      "data": {
-        "value": "011 2694232 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694234",
-      "source": "https://agrarian.lk/",
-      "data": {
-        "value": "+94112694234"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694231 ",
-      "source": "https://agrarian.lk/",
-      "data": {
-        "value": "011 2694231 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2694234 ",
-      "source": "https://agrarian.lk/",
-      "data": {
-        "value": "011 2694234 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112694232",
-      "source": "https://agrarian.lk/",
-      "data": {
-        "value": "+94112694232"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://agrarian.lk/",
-      "data": {
-        "value": "department"
-      }
+      "observed_at": "2026-11-09T08:54:35.726178+05:30"
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 2336 visible characters across 11 pages",
+      "detail": "Substantive page content: 685 visible characters across 4 pages",
       "source": "https://www.agrarian.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [521, 521, 521, 521]",
+      "observed_at": "2026-11-09T08:54:35.738829+05:30"
     }
   ],
   "observations": [
@@ -901,101 +102,38 @@
       "status_code": 521,
       "final_url": "https://www.agrarian.lk/",
       "redirects": [],
-      "elapsed_ms": 339,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://www.agrarian.lk/",
-      "status_code": 200,
-      "final_url": "https://www.agrarian.lk/",
-      "redirects": [
-        "https://www.agrarian.lk/"
-      ],
-      "elapsed_ms": 435,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.agrarian.lk/",
-      "status_code": 200,
-      "final_url": "https://www.agrarian.lk/",
-      "redirects": [],
-      "elapsed_ms": 331,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://www.agrarian.lk/",
-      "status_code": 200,
-      "final_url": "https://www.agrarian.lk/",
-      "redirects": [
-        "https://www.agrarian.lk/"
-      ],
-      "elapsed_ms": 350,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://agrarian.lk/about",
-      "status_code": 200,
-      "final_url": "https://agrarian.lk/about",
-      "redirects": [],
-      "elapsed_ms": 426,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://agrarian.lk/farmer-information",
-      "status_code": 200,
-      "final_url": "https://agrarian.lk/farmer-information",
-      "redirects": [],
-      "elapsed_ms": 356,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://agrarian.lk/login.php",
-      "status_code": 200,
-      "final_url": "https://agrarian.lk/login.php",
-      "redirects": [],
       "elapsed_ms": 329,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://agrarian.lk/asc-information",
-      "status_code": 200,
-      "final_url": "https://agrarian.lk/asc-information",
-      "redirects": [],
-      "elapsed_ms": 357,
+      "url": "http://www.agrarian.lk/",
+      "status_code": 521,
+      "final_url": "https://www.agrarian.lk/",
+      "redirects": [
+        "https://www.agrarian.lk/"
+      ],
+      "elapsed_ms": 300,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://agrarian.lk/marketing-information",
-      "status_code": 200,
-      "final_url": "https://agrarian.lk/marketing-information",
+      "url": "https://www.agrarian.lk/",
+      "status_code": 521,
+      "final_url": "https://www.agrarian.lk/",
       "redirects": [],
-      "elapsed_ms": 627,
+      "elapsed_ms": 306,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://agrarian.lk/weather-information",
-      "status_code": 200,
-      "final_url": "https://agrarian.lk/weather-information",
-      "redirects": [],
-      "elapsed_ms": 365,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://agrarian.lk/",
-      "status_code": 200,
-      "final_url": "https://agrarian.lk/",
-      "redirects": [],
-      "elapsed_ms": 512,
+      "url": "http://www.agrarian.lk/",
+      "status_code": 521,
+      "final_url": "https://www.agrarian.lk/",
+      "redirects": [
+        "https://www.agrarian.lk/"
+      ],
+      "elapsed_ms": 306,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -1003,69 +141,27 @@
   "snapshots": [
     {
       "url": "https://www.agrarian.lk/",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-01-6376a5f92d9d.html",
-      "sha256": "6376a5f92d9dcd1fb8c1eee0227bc283e415d1b43ecb7b68cd8defbc67224e53",
-      "bytes": 6992
+      "path": "audit.output/www.agrarian.lk/20261109.0854/snapshots/page-01-a36f6ddaf554.html",
+      "sha256": "a36f6ddaf5543b614c38d1c394114ee67033382e242ef8999ff8417ceb5cb7e6",
+      "bytes": 6989
     },
     {
       "url": "https://www.agrarian.lk/",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-02-be53d5d5ae00.html",
-      "sha256": "be53d5d5ae006d65cf0f81ee764c150f3dcbd4558514061f43b56009f50550a5",
-      "bytes": 15180
+      "path": "audit.output/www.agrarian.lk/20261109.0854/snapshots/page-02-25ae9f586258.html",
+      "sha256": "25ae9f5862584df29bcd99b78cac29ecda734467528b610b86587d4465374d12",
+      "bytes": 6989
     },
     {
       "url": "https://www.agrarian.lk/",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-03-abe916c43d07.html",
-      "sha256": "abe916c43d073b79197690eb9437958ba827601d85d18bb2e811dbf99510c0e4",
-      "bytes": 15180
+      "path": "audit.output/www.agrarian.lk/20261109.0854/snapshots/page-03-acc378260a7c.html",
+      "sha256": "acc378260a7c7081e0824c7e5237463679cf82503a525ca18e778b306900c8cb",
+      "bytes": 6989
     },
     {
       "url": "https://www.agrarian.lk/",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-04-a590174fe41c.html",
-      "sha256": "a590174fe41c0580344e0ae0d8c44631bf23c27dccae1b0436ba4f26d5b631ba",
-      "bytes": 15180
-    },
-    {
-      "url": "https://agrarian.lk/about",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-05-baed42209fad.html",
-      "sha256": "baed42209fad040d1818e18834a5b30775d84e225d6b24d6b754980c21f5d7a3",
-      "bytes": 11229
-    },
-    {
-      "url": "https://agrarian.lk/farmer-information",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-06-39098dfcfd8f.html",
-      "sha256": "39098dfcfd8f4525d8710c07baa8cf85b13deb3adc579740b005af1b78d23b3a",
-      "bytes": 8486
-    },
-    {
-      "url": "https://agrarian.lk/login.php",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-07-ffd262fad753.html",
-      "sha256": "ffd262fad753bd7258d9c5c1f8b1c60e6a9abc6afa4c95b22fb219474608b1b9",
-      "bytes": 9980
-    },
-    {
-      "url": "https://agrarian.lk/asc-information",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-08-2cad9ea8247c.html",
-      "sha256": "2cad9ea8247c15147773e82d8b226db79db8c3b76ccc64ce0c4ee3dfb2d829e4",
-      "bytes": 12209
-    },
-    {
-      "url": "https://agrarian.lk/marketing-information",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-09-2c7ffbcdf550.html",
-      "sha256": "2c7ffbcdf55034b4efd56c163e5af471d1955d5feb6ad863cfbd0373bd95f195",
-      "bytes": 18465
-    },
-    {
-      "url": "https://agrarian.lk/weather-information",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-10-3662daf288d8.html",
-      "sha256": "3662daf288d820c446e8e5f3c0db1bd8974de219ba28dab03bb027b46482da35",
-      "bytes": 12153
-    },
-    {
-      "url": "https://agrarian.lk/",
-      "path": "audit.output/www.agrarian.lk/20261108.0830/snapshots/page-11-1b08344ed5f8.html",
-      "sha256": "1b08344ed5f81c78c5d95070447c9e4e8086e5b7b962761cd77c0cecbea4105a",
-      "bytes": 15180
+      "path": "audit.output/www.agrarian.lk/20261109.0854/snapshots/page-04-692374ec810c.html",
+      "sha256": "692374ec810c645a28dfa3f7834ac588a28ee5083df952cf3229da0a7c4219ab",
+      "bytes": 6989
     }
   ],
   "reviewer_decisions": [],
@@ -1081,8 +177,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [521, 521, 521, 521]",
       "executed": true,
       "checks": [
         {
@@ -1094,44 +190,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [521, 521, 521, 521]"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -1151,28 +247,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No email evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: Password Remember me Login body { min-height: 100vh; background: linear-gradient(135deg, rgba(246, 249, 242, 0.96), rgba"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -1200,7 +277,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.98.135.195",
+    "egress_ip": "20.168.139.40",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

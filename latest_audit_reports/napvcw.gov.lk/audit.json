@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "14f37d47-818a-4de3-9c5c-d0e18d117bdd",
+  "audit_id": "abdd0177-59d5-4285-ad5c-3913da824335",
   "url": "https://napvcw.gov.lk/",
   "normalized_url": "https://napvcw.gov.lk/",
-  "started_at": "2026-11-08T09:02:17.599421+05:30",
-  "completed_at": "2026-11-08T09:02:34.558333+05:30",
+  "started_at": "2026-11-09T09:27:21.789431+05:30",
+  "completed_at": "2026-11-09T09:29:35.014152+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: _ssl.c:994: The handshake operation timed out",
+      "tls_hostname_matches: _ssl.c:994: The handshake operation timed out"
     ]
   },
   "evidence": [
@@ -26,987 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-08T09:02:18.046521+05:30"
+      "observed_at": "2026-11-09T09:27:22.096235+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-08T09:02:18.046545+05:30"
+      "observed_at": "2026-11-09T09:27:22.096258+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-08T09:02:18.385251+05:30"
+      "status": "error",
+      "detail": "_ssl.c:994: The handshake operation timed out",
+      "observed_at": "2026-11-09T09:27:32.356007+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://napvcw.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: _ssl.c:994: The handshake operation timed out",
       "source": "https://napvcw.gov.lk/",
-      "observed_at": "2026-11-08T09:02:32.529140+05:30"
+      "observed_at": "2026-11-09T09:29:35.013951+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://napvcw.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://napvcw.gov.lk/",
-      "observed_at": "2026-11-08T09:02:32.529160+05:30"
+      "observed_at": "2026-11-09T09:29:35.013975+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://napvcw.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: _ssl.c:994: The handshake operation timed out",
       "source": "https://napvcw.gov.lk/",
-      "observed_at": "2026-11-08T09:02:32.529164+05:30"
+      "observed_at": "2026-11-09T09:29:35.013981+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://napvcw.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://napvcw.gov.lk/",
-      "observed_at": "2026-11-08T09:02:32.529166+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://napvcw.gov.lk/protection-services.php",
-      "source": "https://napvcw.gov.lk/protection-services.php",
-      "observed_at": "2026-11-08T09:02:32.529169+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://napvcw.gov.lk/assistance-services.php",
-      "source": "https://napvcw.gov.lk/assistance-services.php",
-      "observed_at": "2026-11-08T09:02:32.529172+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://napvcw.gov.lk/contact-us.php",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "observed_at": "2026-11-08T09:02:32.529174+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at http://napvcw.gov.lk/si/index.php",
-      "source": "http://napvcw.gov.lk/si/index.php",
-      "observed_at": "2026-11-08T09:02:32.529177+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at http://napvcw.gov.lk/ta/index.php",
-      "source": "http://napvcw.gov.lk/ta/index.php",
-      "observed_at": "2026-11-08T09:02:32.529180+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at http://napvcw.gov.lk/index.php",
-      "source": "http://napvcw.gov.lk/index.php",
-      "observed_at": "2026-11-08T09:02:32.529182+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://napvcw.gov.lk/index.php",
-      "source": "https://napvcw.gov.lk/index.php",
-      "observed_at": "2026-11-08T09:02:32.529185+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://napvcw.gov.lk/about-us.php",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "observed_at": "2026-11-08T09:02:32.529188+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://napvcw.gov.lk/director-general-bureau.php",
-      "source": "https://napvcw.gov.lk/director-general-bureau.php",
-      "observed_at": "2026-11-08T09:02:32.529190+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://napvcw.gov.lk/legal-and-law.php",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "observed_at": "2026-11-08T09:02:32.529192+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 779 879 ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0112 779 879 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326317 ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0112326317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718592147 ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0718592147 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326321 ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0112326321 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539. ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0112 879 539. "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: officer in charge",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "officer in charge"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 779 879 ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0112 779 879 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326317 ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0112326317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718592147 ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0718592147 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326321 ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0112326321 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539. ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0112 879 539. "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: officer in charge",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "officer in charge"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 779 879 ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0112 779 879 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326317 ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0112326317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718592147 ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0718592147 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326321 ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0112326321 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539. ",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "0112 879 539. "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: officer in charge",
-      "source": "https://napvcw.gov.lk/",
-      "data": {
-        "value": "officer in charge"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 779 879 ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0112 779 879 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326317 ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0112326317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718592147 ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0718592147 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326321 ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0112326321 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539. ",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "0112 879 539. "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: officer in charge",
-      "source": "http://napvcw.gov.lk/",
-      "data": {
-        "value": "officer in charge"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "https://napvcw.gov.lk/protection-services.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://napvcw.gov.lk/protection-services.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "https://napvcw.gov.lk/assistance-services.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://napvcw.gov.lk/assistance-services.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 779 879 ",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "data": {
-        "value": "0112 779 879 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539 ",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "data": {
-        "value": "0112 879 539 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879539",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "data": {
-        "value": "+94112879539"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +0112779879",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "data": {
-        "value": "+0112779879"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mail@example.com",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "data": {
-        "value": "mail@example.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: witness.protection.srilanka@gmail.com",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "data": {
-        "value": "witness.protection.srilanka@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: and Mail Address First Floor No. 428/11 A Denzil Kobbakaduwa Mawatha, Battaramulla Email witness.protection.srilanka@gma",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "data": {
-        "value": "and Mail Address First Floor No. 428/11 A Denzil Kobbakaduwa Mawatha, Battaramulla Email witness.protection.srilanka@gma"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://napvcw.gov.lk/contact-us.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "http://napvcw.gov.lk/si/index.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 779 879 ",
-      "source": "http://napvcw.gov.lk/si/index.php",
-      "data": {
-        "value": "0112 779 879 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326317 ",
-      "source": "http://napvcw.gov.lk/si/index.php",
-      "data": {
-        "value": "0112326317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539 ",
-      "source": "http://napvcw.gov.lk/si/index.php",
-      "data": {
-        "value": "0112 879 539 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718592147 ",
-      "source": "http://napvcw.gov.lk/si/index.php",
-      "data": {
-        "value": "0718592147 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326321 ",
-      "source": "http://napvcw.gov.lk/si/index.php",
-      "data": {
-        "value": "0112326321 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "http://napvcw.gov.lk/ta/index.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 779 879 ",
-      "source": "http://napvcw.gov.lk/ta/index.php",
-      "data": {
-        "value": "0112 779 879 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326317 ",
-      "source": "http://napvcw.gov.lk/ta/index.php",
-      "data": {
-        "value": "0112326317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539 ",
-      "source": "http://napvcw.gov.lk/ta/index.php",
-      "data": {
-        "value": "0112 879 539 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718592147 ",
-      "source": "http://napvcw.gov.lk/ta/index.php",
-      "data": {
-        "value": "0718592147 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326321 ",
-      "source": "http://napvcw.gov.lk/ta/index.php",
-      "data": {
-        "value": "0112326321 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "http://napvcw.gov.lk/ta/index.php",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "http://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 779 879 ",
-      "source": "http://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0112 779 879 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326317 ",
-      "source": "http://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0112326317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718592147 ",
-      "source": "http://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0718592147 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326321 ",
-      "source": "http://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0112326321 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539. ",
-      "source": "http://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0112 879 539. "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: officer in charge",
-      "source": "http://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "officer in charge"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "https://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 779 879 ",
-      "source": "https://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0112 779 879 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326317 ",
-      "source": "https://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0112326317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718592147 ",
-      "source": "https://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0718592147 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112326321 ",
-      "source": "https://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0112326321 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539. ",
-      "source": "https://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "0112 879 539. "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: officer in charge",
-      "source": "https://napvcw.gov.lk/index.php",
-      "data": {
-        "value": "officer in charge"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sumipera@gmail.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "sumipera@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chairman@napvcw.gov.lk",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "chairman@napvcw.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: Janani.koshitha@gmail.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "Janani.koshitha@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: piyumanthipeiris@gmail.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "piyumanthipeiris@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: herathnilmini6@gmail.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "herathnilmini6@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sdig.crime.wne@police.gov.lk",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "sdig.crime.wne@police.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: addlsecprisondiv@gmail.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "addlsecprisondiv@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dg@napvcw.gov.lk",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "dg@napvcw.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nimalgpunchihewa2023@gmail.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "nimalgpunchihewa2023@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: shanilkularatne@yahoo.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "shanilkularatne@yahoo.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: Malikasuriyapperuma7@gmail.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "Malikasuriyapperuma7@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ajith.tennakoon60@gmail.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "ajith.tennakoon60@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nfjfernando@gmail.com",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "nfjfernando@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://napvcw.gov.lk/about-us.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 451 ",
-      "source": "https://napvcw.gov.lk/director-general-bureau.php",
-      "data": {
-        "value": "0112 879 451 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "https://napvcw.gov.lk/director-general-bureau.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 879 539 ",
-      "source": "https://napvcw.gov.lk/director-general-bureau.php",
-      "data": {
-        "value": "0112 879 539 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://napvcw.gov.lk/director-general-bureau.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +0112866454",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "data": {
-        "value": "+0112866454"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112779879",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "data": {
-        "value": "+94112779879"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112866454 ",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "data": {
-        "value": "0112866454 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: protection.io1@napvcw.gov.lk",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "data": {
-        "value": "protection.io1@napvcw.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: law.ad@napvcw.gov.lk",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "data": {
-        "value": "law.ad@napvcw.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: protection.io2@napvcw.gov.lk",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "data": {
-        "value": "protection.io2@napvcw.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: law.lo1@napvcw.gov.lk",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "data": {
-        "value": "law.lo1@napvcw.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: law.dir@napvcw.gov.lk",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "data": {
-        "value": "law.dir@napvcw.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://napvcw.gov.lk/legal-and-law.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 10414 visible characters across 14 pages",
-      "source": "https://napvcw.gov.lk/"
+      "observed_at": "2026-11-09T09:29:35.013985+05:30"
     }
   ],
   "observations": [
@@ -1026,224 +85,49 @@
     },
     {
       "host": "napvcw.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-27T11:06:48+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "_ssl.c:994: The handshake operation timed out"
     },
     {
       "url": "https://napvcw.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://napvcw.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 586,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "_ssl.c:994: The handshake operation timed out"
     },
     {
       "url": "http://napvcw.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://napvcw.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 464,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://napvcw.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://napvcw.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 538,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "_ssl.c:994: The handshake operation timed out"
     },
     {
       "url": "http://napvcw.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://napvcw.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 459,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://napvcw.gov.lk/protection-services.php",
-      "status_code": 200,
-      "final_url": "https://napvcw.gov.lk/protection-services.php",
-      "redirects": [],
-      "elapsed_ms": 448,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://napvcw.gov.lk/assistance-services.php",
-      "status_code": 200,
-      "final_url": "https://napvcw.gov.lk/assistance-services.php",
-      "redirects": [],
-      "elapsed_ms": 232,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://napvcw.gov.lk/contact-us.php",
-      "status_code": 200,
-      "final_url": "https://napvcw.gov.lk/contact-us.php",
-      "redirects": [],
-      "elapsed_ms": 220,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://napvcw.gov.lk/si/index.php",
-      "status_code": 200,
-      "final_url": "http://napvcw.gov.lk/si/index.php",
-      "redirects": [],
-      "elapsed_ms": 462,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://napvcw.gov.lk/ta/index.php",
-      "status_code": 200,
-      "final_url": "http://napvcw.gov.lk/ta/index.php",
-      "redirects": [],
-      "elapsed_ms": 477,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://napvcw.gov.lk/index.php",
-      "status_code": 200,
-      "final_url": "http://napvcw.gov.lk/index.php",
-      "redirects": [],
-      "elapsed_ms": 225,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://napvcw.gov.lk/index.php",
-      "status_code": 200,
-      "final_url": "https://napvcw.gov.lk/index.php",
-      "redirects": [],
-      "elapsed_ms": 272,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://napvcw.gov.lk/about-us.php",
-      "status_code": 200,
-      "final_url": "https://napvcw.gov.lk/about-us.php",
-      "redirects": [],
-      "elapsed_ms": 489,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://napvcw.gov.lk/director-general-bureau.php",
-      "status_code": 200,
-      "final_url": "https://napvcw.gov.lk/director-general-bureau.php",
-      "redirects": [],
-      "elapsed_ms": 236,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://napvcw.gov.lk/legal-and-law.php",
-      "status_code": 200,
-      "final_url": "https://napvcw.gov.lk/legal-and-law.php",
-      "redirects": [],
-      "elapsed_ms": 819,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://napvcw.gov.lk/",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-01-cde3ab487e37.html",
-      "sha256": "cde3ab487e374fe0ff4b0f35a6c3814017614bdf2904302115ea7a8c76509311",
-      "bytes": 80238
-    },
-    {
-      "url": "http://napvcw.gov.lk/",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-02-4c314dcb5b20.html",
-      "sha256": "4c314dcb5b20c27280190623be67b04397099bdaf6caf194bf89bc2093901590",
-      "bytes": 80238
-    },
-    {
-      "url": "https://napvcw.gov.lk/",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-03-e814f2d49158.html",
-      "sha256": "e814f2d49158e8c175d561d6c58cf594d0216ec2468c41d336ae932240665aed",
-      "bytes": 80238
-    },
-    {
-      "url": "http://napvcw.gov.lk/",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-04-c2e506a3b533.html",
-      "sha256": "c2e506a3b533b50b8bff19c2edc8b9b3589aa8aa93f02d551c6091d20f95b75d",
-      "bytes": 80238
-    },
-    {
-      "url": "https://napvcw.gov.lk/protection-services.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-05-ec5046646bb3.html",
-      "sha256": "ec5046646bb37d979e96fc9e96f794f5f35077d4f49f05e622b7c38839e779ff",
-      "bytes": 28624
-    },
-    {
-      "url": "https://napvcw.gov.lk/assistance-services.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-06-bca4f109cad5.html",
-      "sha256": "bca4f109cad599238f4737b4bc3f467f23d4d5735c7ee1502109da3bf2043d2a",
-      "bytes": 24631
-    },
-    {
-      "url": "https://napvcw.gov.lk/contact-us.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-07-20d1ca6e4af0.html",
-      "sha256": "20d1ca6e4af02cf21450cf409b6fa217df9070a2fbc5b3aa57f0c96536841a9a",
-      "bytes": 29223
-    },
-    {
-      "url": "http://napvcw.gov.lk/si/index.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-08-6f65358fd680.html",
-      "sha256": "6f65358fd680dc353c76b1760cf2bc3992391899a8d39505bf537be3d755ba8b",
-      "bytes": 86772
-    },
-    {
-      "url": "http://napvcw.gov.lk/ta/index.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-09-7bb231c834d9.html",
-      "sha256": "7bb231c834d9f05a4bf285c1d292811b2022ceb1d8d4c961f1f4efe4d0d4bc8e",
-      "bytes": 93400
-    },
-    {
-      "url": "http://napvcw.gov.lk/index.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-10-9f6699ad3b25.html",
-      "sha256": "9f6699ad3b25f091b449519c89aae2e740e02ecac138a86bc2ba951025bd6487",
-      "bytes": 80232
-    },
-    {
-      "url": "https://napvcw.gov.lk/index.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-11-57879c6ad432.html",
-      "sha256": "57879c6ad432ce9944e88e5b824dfd5b5d2223705c43ee2f8e1d23035e5a7a31",
-      "bytes": 80232
-    },
-    {
-      "url": "https://napvcw.gov.lk/about-us.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-12-872ce1979f5b.html",
-      "sha256": "872ce1979f5b2db8a03169092d7deae1a23c8dd2e3ca1e2846b088a6a390bdb4",
-      "bytes": 52781
-    },
-    {
-      "url": "https://napvcw.gov.lk/director-general-bureau.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-13-09a52e81e7d0.html",
-      "sha256": "09a52e81e7d05175301c0504952aa6cacd2850d6a099e3763766a47950f88cdd",
-      "bytes": 27925
-    },
-    {
-      "url": "https://napvcw.gov.lk/legal-and-law.php",
-      "path": "audit.output/napvcw.gov.lk/20261108.0902/snapshots/page-14-462157c09f2f.html",
-      "sha256": "462157c09f2f42aa091a19a796891ebfffcfcbe9eeb994246b21d229bd556369",
-      "bytes": 42822
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1257,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:994: The handshake operation timed out; _ssl.c:994: The handshake operation timed out",
       "executed": true,
       "checks": [
         {
@@ -1270,136 +154,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "_ssl.c:994: The handshake operation timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "_ssl.c:994: The handshake operation timed out"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: and Mail Address First Floor No. 428/11 A Denzil Kobbakaduwa Mawatha, Battaramulla Email witness.protection.srilanka@gma; Phone: +94112779879 (12 phone numbers found); Email: mail@example.com (20 email addresses found); Published named responsibility: officer in charge",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: and Mail Address First Floor No. 428/11 A Denzil Kobbakaduwa Mawatha, Battaramulla Email witness.protection.srilanka@gma"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94112779879 (12 phone numbers found); Email: mail@example.com (20 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: officer in charge"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing fees and payment evidence found"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing legal basis evidence found"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1419,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.98.135.195",
+    "egress_ip": "20.168.139.40",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

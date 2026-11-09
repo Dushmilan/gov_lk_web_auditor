@@ -1,8 +1,8 @@
 # Website Audit: https://cadet.lk/
 
-- Completed: 2026-11-08 08:35
+- Completed: 2026-11-09 08:59
 - Overall result: 🟠 Level 2
-- Vantage: 20.98.135.195 (US, github-actions)
+- Vantage: 20.168.139.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 15, Dutugemunu Street, Pamankada, Dehiwala, Sri Lanka. Telephone Telephone: +94 11 2815346 , +94 71 3613159 Email: nc; Phone: +94 71 3613159 (23 phone numbers found); Email: ncchq.lk@gmail.com; Published named responsibility: officer in charge
+Published postal address: No 15, Dutugemunu Street, Pamankada, Dehiwala, Sri Lanka. Telephone Telephone: +94 11 2815346 , +94 71 3613159 Email: nc; Phone: 0713613159 (23 phone numbers found); Email: ncchq.lk@gmail.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 15, Dutugemunu Street, Pamankada, Dehiwala, Sri Lanka. Telephone Telephone: +94 11 2815346 , +94 71 3613159 Email: nc |
-| reachable_contacts | ✅ | Phone: +94 71 3613159 (23 phone numbers found); Email: ncchq.lk@gmail.com |
-| named_responsibility | ✅ | Published named responsibility: officer in charge |
+| reachable_contacts | ✅ | Phone: 0713613159 (23 phone numbers found); Email: ncchq.lk@gmail.com |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 02 November 2026 |
+| published_update_date | ✅ | Published published update date: 03 November 2026 |
