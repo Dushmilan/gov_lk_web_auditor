@@ -1,8 +1,8 @@
 # Website Audit: https://cg-guangzhou.gov.lk/
 
-- Completed: 2026-11-09 09:16
+- Completed: 2026-11-10 10:58
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.139.40 (US, github-actions)
+- Vantage: 134.33.77.19 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

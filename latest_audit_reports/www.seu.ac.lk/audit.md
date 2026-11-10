@@ -1,8 +1,8 @@
 # Website Audit: http://www.seu.ac.lk/
 
-- Completed: 2026-11-09 09:01
+- Completed: 2026-11-10 10:41
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.139.40 (US, github-actions)
+- Vantage: 134.33.77.19 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -51,7 +51,7 @@ No passing required documents evidence found; No passing processing time evidenc
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: RS 2026 |
+| fees_and_payment | ✅ | Published fees and payment: RS 2027 |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

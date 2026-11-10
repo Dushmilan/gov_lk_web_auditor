@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "326c01d2-904f-4d95-8247-840f4db72280",
+  "audit_id": "967ac01f-a688-4341-bc66-a36de5c72285",
   "url": "https://phsrc.lk/",
   "normalized_url": "https://phsrc.lk/",
-  "started_at": "2026-11-09T09:23:17.190946+05:30",
-  "completed_at": "2026-11-09T09:23:24.532791+05:30",
+  "started_at": "2026-11-10T11:05:07.305708+05:30",
+  "completed_at": "2026-11-10T11:05:53.458072+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 111] Connection refused",
-      "tls_hostname_matches: [Errno 111] Connection refused"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,744 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-09T09:23:18.742325+05:30"
+      "observed_at": "2026-11-10T11:05:09.001606+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-09T09:23:18.742342+05:30"
+      "observed_at": "2026-11-10T11:05:09.001627+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-11-09T09:23:19.349882+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-10T11:05:10.111859+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://phsrc.lk/",
       "source": "https://phsrc.lk/",
-      "observed_at": "2026-11-09T09:23:24.532623+05:30"
+      "observed_at": "2026-11-10T11:05:52.859510+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://phsrc.lk/",
       "source": "http://phsrc.lk/",
-      "observed_at": "2026-11-09T09:23:24.532642+05:30"
+      "observed_at": "2026-11-10T11:05:52.859532+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://phsrc.lk/",
       "source": "https://phsrc.lk/",
-      "observed_at": "2026-11-09T09:23:24.532647+05:30"
+      "observed_at": "2026-11-10T11:05:52.859535+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://phsrc.lk/",
       "source": "http://phsrc.lk/",
-      "observed_at": "2026-11-09T09:23:24.532650+05:30"
+      "observed_at": "2026-11-10T11:05:52.859554+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.phsrc.lk/index.php",
+      "source": "https://www.phsrc.lk/index.php",
+      "observed_at": "2026-11-10T11:05:52.859559+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.phsrc.lk/",
+      "source": "https://www.phsrc.lk/",
+      "observed_at": "2026-11-10T11:05:52.859563+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.phsrc.lk/pages_e.php?id=1",
+      "source": "https://www.phsrc.lk/pages_e.php?id=1",
+      "observed_at": "2026-11-10T11:05:52.859565+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.phsrc.lk/pages_e.php?id=2",
+      "source": "https://www.phsrc.lk/pages_e.php?id=2",
+      "observed_at": "2026-11-10T11:05:52.859568+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.phsrc.lk/pages_e.php?id=7",
+      "source": "https://www.phsrc.lk/pages_e.php?id=7",
+      "observed_at": "2026-11-10T11:05:52.859570+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.phsrc.lk/pages_e.php?id=5",
+      "source": "https://www.phsrc.lk/pages_e.php?id=5",
+      "observed_at": "2026-11-10T11:05:52.859572+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.phsrc.lk/pages_e.php?id=22",
+      "source": "https://www.phsrc.lk/pages_e.php?id=22",
+      "observed_at": "2026-11-10T11:05:52.859574+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.phsrc.lk/pages_e.php?id=14",
+      "source": "https://www.phsrc.lk/pages_e.php?id=14",
+      "observed_at": "2026-11-10T11:05:52.859576+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.phsrc.lk/pages_e.php?id=21",
+      "source": "https://www.phsrc.lk/pages_e.php?id=21",
+      "observed_at": "2026-11-10T11:05:52.859578+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.phsrc.lk/pages_e.php?id=13",
+      "source": "https://www.phsrc.lk/pages_e.php?id=13",
+      "observed_at": "2026-11-10T11:05:52.859580+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 06 08 2025 - 08",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "06 08 2025 - 08"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01 08 2019 - 13",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "01 08 2019 - 13"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 02 11 2023 - 14",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "02 11 2023 - 14"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 06 08 2025 - 08",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "06 08 2025 - 08"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01 08 2019 - 13",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "01 08 2019 - 13"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 02 11 2023 - 14",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "02 11 2023 - 14"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 06 08 2025 - 08",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "06 08 2025 - 08"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01 08 2019 - 13",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "01 08 2019 - 13"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 02 11 2023 - 14",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "02 11 2023 - 14"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://phsrc.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 06 08 2025 - 08",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "06 08 2025 - 08"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01 08 2019 - 13",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "01 08 2019 - 13"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 02 11 2023 - 14",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "02 11 2023 - 14"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "http://phsrc.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/index.php",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 06 08 2025 - 08",
+      "source": "https://www.phsrc.lk/index.php",
+      "data": {
+        "value": "06 08 2025 - 08"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01 08 2019 - 13",
+      "source": "https://www.phsrc.lk/index.php",
+      "data": {
+        "value": "01 08 2019 - 13"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 02 11 2023 - 14",
+      "source": "https://www.phsrc.lk/index.php",
+      "data": {
+        "value": "02 11 2023 - 14"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/index.php",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.phsrc.lk/index.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/index.php",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 06 08 2025 - 08",
+      "source": "https://www.phsrc.lk/",
+      "data": {
+        "value": "06 08 2025 - 08"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01 08 2019 - 13",
+      "source": "https://www.phsrc.lk/",
+      "data": {
+        "value": "01 08 2019 - 13"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 02 11 2023 - 14",
+      "source": "https://www.phsrc.lk/",
+      "data": {
+        "value": "02 11 2023 - 14"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.phsrc.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/pages_e.php?id=1",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/pages_e.php?id=1",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.phsrc.lk/pages_e.php?id=1",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/pages_e.php?id=1",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/pages_e.php?id=2",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/pages_e.php?id=2",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Registrar Sri Lanka Medical Council, Norris Canal Road, Colombo 10 Sri Lanka",
+      "source": "https://www.phsrc.lk/pages_e.php?id=2",
+      "data": {
+        "value": "Registrar Sri Lanka Medical Council, Norris Canal Road, Colombo 10 Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.phsrc.lk/pages_e.php?id=2",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/pages_e.php?id=2",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/pages_e.php?id=7",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/pages_e.php?id=7",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/pages_e.php?id=7",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/pages_e.php?id=5",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/pages_e.php?id=5",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/pages_e.php?id=5",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/pages_e.php?id=22",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/pages_e.php?id=22",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/pages_e.php?id=22",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/pages_e.php?id=14",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/pages_e.php?id=14",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/pages_e.php?id=14",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/pages_e.php?id=21",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/pages_e.php?id=21",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/pages_e.php?id=21",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 2672 91",
+      "source": "https://www.phsrc.lk/pages_e.php?id=13",
+      "data": {
+        "value": "+94 011 2672 91"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: phsrc2015@gmail.com",
+      "source": "https://www.phsrc.lk/pages_e.php?id=13",
+      "data": {
+        "value": "phsrc2015@gmail.com"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.phsrc.lk/pages_e.php?id=13",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 114702 visible characters across 14 pages",
+      "source": "https://phsrc.lk/"
     }
   ],
   "observations": [
@@ -85,49 +783,224 @@
     },
     {
       "host": "phsrc.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "status": "valid",
+      "expires_at": "2027-02-09T05:29:59+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://phsrc.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://phsrc.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 2379,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://phsrc.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://phsrc.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 2227,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://phsrc.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://phsrc.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 2359,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://phsrc.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://phsrc.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 2125,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/index.php",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/index.php",
+      "redirects": [],
+      "elapsed_ms": 2575,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/",
+      "redirects": [],
+      "elapsed_ms": 3063,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=1",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/pages_e.php?id=1",
+      "redirects": [],
+      "elapsed_ms": 2330,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=2",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/pages_e.php?id=2",
+      "redirects": [],
+      "elapsed_ms": 3139,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=7",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/pages_e.php?id=7",
+      "redirects": [],
+      "elapsed_ms": 2344,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=5",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/pages_e.php?id=5",
+      "redirects": [],
+      "elapsed_ms": 2414,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=22",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/pages_e.php?id=22",
+      "redirects": [],
+      "elapsed_ms": 2316,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=14",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/pages_e.php?id=14",
+      "redirects": [],
+      "elapsed_ms": 2365,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=21",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/pages_e.php?id=21",
+      "redirects": [],
+      "elapsed_ms": 2371,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=13",
+      "status_code": 200,
+      "final_url": "https://www.phsrc.lk/pages_e.php?id=13",
+      "redirects": [],
+      "elapsed_ms": 3584,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://phsrc.lk/",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-01-133aa0bd02d9.html",
+      "sha256": "133aa0bd02d98e61b561c80770313e6b49613f3af6bd8292718c9d852ae4b50d",
+      "bytes": 28666
+    },
+    {
+      "url": "http://phsrc.lk/",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-02-81a374c8e507.html",
+      "sha256": "81a374c8e50718993263e6a023a16d29dbc0581627303bc731f43b39b6ebbec2",
+      "bytes": 28666
+    },
+    {
+      "url": "https://phsrc.lk/",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-03-dce5e4484d32.html",
+      "sha256": "dce5e4484d325a447adf9d086d04dc7e66136c0c76fd934d26f00a206046547b",
+      "bytes": 28666
+    },
+    {
+      "url": "http://phsrc.lk/",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-04-9755d0feb622.html",
+      "sha256": "9755d0feb622123df2ea7be3bee88fef9376699c373aebb3908c4c373f008eb3",
+      "bytes": 28666
+    },
+    {
+      "url": "https://www.phsrc.lk/index.php",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-05-ae959052c5b1.html",
+      "sha256": "ae959052c5b1cc0c38f91926771d262bf22dba34db5230b1024efcdc79dc31b4",
+      "bytes": 28666
+    },
+    {
+      "url": "https://www.phsrc.lk/",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-06-f9571fcff7b2.html",
+      "sha256": "f9571fcff7b2b30fd5b1d1d17fc344954d6cdf85dff399ab6ab76dd6617179df",
+      "bytes": 28666
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=1",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-07-47cf5d373a13.html",
+      "sha256": "47cf5d373a13429b26c43634573f560a3d5a1f55f93d686af6b08057f97ffa45",
+      "bytes": 14423
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=2",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-08-106e96822749.html",
+      "sha256": "106e9682274966531e1ebd6addea3321661dddbd2ee93d69366ce1001dd2bc86",
+      "bytes": 20141
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=7",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-09-bca51ea6edf7.html",
+      "sha256": "bca51ea6edf7c107158b5e549fe681067263b03bcca75c4519563dfa151ecd26",
+      "bytes": 13628
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=5",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-10-8b68f500892c.html",
+      "sha256": "8b68f500892c733ada96218e7476347df4870cafbc1e074110a045b25db9cef2",
+      "bytes": 17417
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=22",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-11-25f05163fb7e.html",
+      "sha256": "25f05163fb7e989ee371b5fccea372d7c1d021a24b924bb00bef04cb12d53eaa",
+      "bytes": 13207
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=14",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-12-57d66c17f9ea.html",
+      "sha256": "57d66c17f9eaa1cb074eaa65f76100e06f31a249d90da5a6dd34465add68e0e8",
+      "bytes": 13213
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=21",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-13-b1f45ca42e8c.html",
+      "sha256": "b1f45ca42e8c14b78d95980305d646f1fe6da41cb2daa221e270fc5ee4f7a25f",
+      "bytes": 13207
+    },
+    {
+      "url": "https://www.phsrc.lk/pages_e.php?id=13",
+      "path": "audit.output/phsrc.lk/20261110.1105/snapshots/page-14-3e2f46ae807c.html",
+      "sha256": "3e2f46ae807c44e36b8a960dbfa3c5b3d581afb082b2be659064b615c7f5f8d7",
+      "bytes": 778946
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1014,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,74 +1027,136 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Registrar Sri Lanka Medical Council, Norris Canal Road, Colombo 10 Sri Lanka; Phone: +94 011 2672 91 (4 phone numbers found); Email: phsrc2015@gmail.com; Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Registrar Sri Lanka Medical Council, Norris Canal Road, Colombo 10 Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 011 2672 91 (4 phone numbers found); Email: phsrc2015@gmail.com"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: circular"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -241,7 +1176,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.168.139.40",
+    "egress_ip": "134.33.77.19",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

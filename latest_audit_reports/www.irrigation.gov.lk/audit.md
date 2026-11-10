@@ -1,8 +1,8 @@
 # Website Audit: https://www.irrigation.gov.lk/
 
-- Completed: 2026-11-09 08:54
+- Completed: 2026-11-10 10:29
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.139.40 (US, github-actions)
+- Vantage: 134.33.77.19 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: PO Box 1138, 230, Bauddhaloka Mawatha, Colombo 07, E-Mail info@irrigation.gov.lk Social Media - Quick Links Home Overvie; Phone: +94 11 2581 162 (668 phone numbers found); Email: info@irrigation.gov.lk (12 email addresses found); Published named responsibility: department
+Published postal address: PO Box 1138, 230, Bauddhaloka Mawatha, Colombo 07, E-Mail info@irrigation.gov.lk Social Media - Quick Links Home Overvie; Phone: +94 1 12581162 (668 phone numbers found); Email: info@irrigation.gov.lk (12 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: PO Box 1138, 230, Bauddhaloka Mawatha, Colombo 07, E-Mail info@irrigation.gov.lk Social Media - Quick Links Home Overvie |
-| reachable_contacts | ✅ | Phone: +94 11 2581 162 (668 phone numbers found); Email: info@irrigation.gov.lk (12 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 1 12581162 (668 phone numbers found); Email: info@irrigation.gov.lk (12 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

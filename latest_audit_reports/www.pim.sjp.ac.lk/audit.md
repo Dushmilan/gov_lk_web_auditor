@@ -1,8 +1,8 @@
 # Website Audit: https://www.pim.sjp.ac.lk/
 
-- Completed: 2026-11-09 09:03
+- Completed: 2026-11-10 10:43
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.139.40 (US, github-actions)
+- Vantage: 134.33.77.19 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Postgraduate Institute of Management 28, Lesley Ranagala Mawatha Colombo 08 Western Province Sri Lanka body,html { /* he; Phone: +94112689639 (5 phone numbers found); Email: admin@pim.sjp.ac.lk (5 email addresses found); Published named responsibility: director
+Published postal address: Postgraduate Institute of Management 28, Lesley Ranagala Mawatha Colombo 08 Western Province Sri Lanka body,html { /* he; Phone: +94112689639 (5 phone numbers found); Email: director@pim.sjp.ac.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Postgraduate Institute of Management 28, Lesley Ranagala Mawatha Colombo 08 Western Province Sri Lanka body,html { /* he |
-| reachable_contacts | ✅ | Phone: +94112689639 (5 phone numbers found); Email: admin@pim.sjp.ac.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112689639 (5 phone numbers found); Email: director@pim.sjp.ac.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

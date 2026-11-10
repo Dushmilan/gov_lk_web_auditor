@@ -1,8 +1,8 @@
 # Website Audit: https://cg-karachi.gov.lk/
 
-- Completed: 2026-11-09 09:16
+- Completed: 2026-11-10 10:57
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.139.40 (US, github-actions)
+- Vantage: 134.33.77.19 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 20/1, 18th Street, Khayaban-e-Shamsheer, Phase V, DHA, Karachi, Pakistan General Contact Numbers: + 92 21 3534 6614 , + ; Phone: +922135346576 (28 phone numbers found); Email: slcg.karachi@mfa.gov.lk (4 email addresses found); Published named responsibility: department
+Published postal address: 20/1, 18th Street, Khayaban-e-Shamsheer, Phase V, DHA, Karachi, Pakistan General Contact Numbers: + 92 21 3534 6614 , + ; Phone: +922135854024 (28 phone numbers found); Email: slcg.karachi@mfa.gov.lk (4 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 20/1, 18th Street, Khayaban-e-Shamsheer, Phase V, DHA, Karachi, Pakistan General Contact Numbers: + 92 21 3534 6614 , +  |
-| reachable_contacts | ✅ | Phone: +922135346576 (28 phone numbers found); Email: slcg.karachi@mfa.gov.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: +922135854024 (28 phone numbers found); Email: slcg.karachi@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

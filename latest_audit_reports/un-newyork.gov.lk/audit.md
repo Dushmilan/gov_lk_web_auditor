@@ -1,8 +1,8 @@
 # Website Audit: https://un-newyork.gov.lk/
 
-- Completed: 2026-11-09 09:19
+- Completed: 2026-11-10 11:01
 - Overall result: 🟠 Level 2
-- Vantage: 20.168.139.40 (US, github-actions)
+- Vantage: 134.33.77.19 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov.; Phone: 0-8733-78741 (28 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found); Published named responsibility: director
+Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov.; Phone: 022.5126572 (28 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov. |
-| reachable_contacts | ✅ | Phone: 0-8733-78741 (28 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found) |
+| reachable_contacts | ✅ | Phone: 022.5126572 (28 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
