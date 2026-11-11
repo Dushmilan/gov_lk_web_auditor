@@ -1,8 +1,8 @@
 # Website Audit: https://un-geneva.gov.lk/
 
-- Completed: 2026-11-10 11:00
+- Completed: 2026-11-11 09:32
 - Overall result: 🟠 Level 2
-- Vantage: 134.33.77.19 (US, github-actions)
+- Vantage: 64.236.140.185 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

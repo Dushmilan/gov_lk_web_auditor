@@ -1,8 +1,8 @@
 # Website Audit: https://www.nmra.gov.lk/
 
-- Completed: 2026-11-10 11:05
+- Completed: 2026-11-11 09:37
 - Overall result: 🟠 Level 2
-- Vantage: 134.33.77.19 (US, github-actions)
+- Vantage: 64.236.140.185 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2687744 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found); Published named responsibility: division
+Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2698897 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2687744 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2698897 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

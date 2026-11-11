@@ -1,24 +1,21 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "af67c132-a249-4442-9bac-a5d0d89934e5",
+  "audit_id": "be71b78f-e6eb-40b0-9e24-69b3bcc52e75",
   "url": "https://www.cfhc.gov.lk/",
   "normalized_url": "https://www.cfhc.gov.lk/",
-  "started_at": "2026-11-10T10:55:41.755135+05:30",
-  "completed_at": "2026-11-10T10:55:56.730136+05:30",
+  "started_at": "2026-11-11T09:27:09.263245+05:30",
+  "completed_at": "2026-11-11T09:27:13.483488+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTPS probes passed; failing variants: http://www.cfhc.gov.lk/: Probe 2: Unsafe redirect blocked: [Errno -2] Name or service not known; http://www.cfhc.gov.lk/: Probe 4: Unsafe redirect blocked: [Errno -2] Name or service not known",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete"
     ]
   },
   "evidence": [
@@ -26,1535 +23,52 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-10T10:55:42.033241+05:30"
+      "observed_at": "2026-11-11T09:27:09.795818+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-10T10:55:42.033261+05:30"
+      "observed_at": "2026-11-11T09:27:09.795844+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-10T10:55:42.284226+05:30"
+      "observed_at": "2026-11-11T09:27:10.142288+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.cfhc.gov.lk/",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 403 at https://www.cfhc.gov.lk/",
       "source": "https://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-10T10:55:56.630733+05:30"
+      "observed_at": "2026-11-11T09:27:13.481489+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: Unsafe redirect blocked: [Errno -2] Name or service not known",
       "source": "http://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-10T10:55:56.630753+05:30"
+      "observed_at": "2026-11-11T09:27:13.481509+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.cfhc.gov.lk/",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 403 at https://www.cfhc.gov.lk/",
       "source": "https://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-10T10:55:56.630756+05:30"
+      "observed_at": "2026-11-11T09:27:13.481513+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: Unsafe redirect blocked: [Errno -2] Name or service not known",
       "source": "http://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-10T10:55:56.630759+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://www.cfhc.gov.lk/home.php?lang=si",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "observed_at": "2026-11-10T10:55:56.630762+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.cfhc.gov.lk/home.php?lang=tm",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "observed_at": "2026-11-10T10:55:56.630764+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.cfhc.gov.lk/home.php?lang=en",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "observed_at": "2026-11-10T10:55:56.630766+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://www.cfhc.gov.lk/contact.php?lang=si",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "observed_at": "2026-11-10T10:55:56.630769+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://www.cfhc.gov.lk/about.php?lang=si",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "observed_at": "2026-11-10T10:55:56.630771+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://www.cfhc.gov.lk/vision.php?lang=si",
-      "source": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "observed_at": "2026-11-10T10:55:56.630773+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.cfhc.gov.lk/download.php?lang=si",
-      "source": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "observed_at": "2026-11-10T10:55:56.630776+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "source": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "observed_at": "2026-11-10T10:55:56.630778+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "observed_at": "2026-11-10T10:55:56.630780+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "observed_at": "2026-11-10T10:55:56.630782+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "data": {
-        "value": "නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: எண் 15, ராக்ஹவுஸ் லேன், கொழும்பு 15, இலங்கை. எண் 15, ராக்ஹவுஸ் லேன், கொழும்பு 15, இலங்கை",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "data": {
-        "value": "எண் 15, ராக்ஹவுஸ் லேன், கொழும்பு 15, இலங்கை. எண் 15, ராக்ஹவுஸ் லேன், கொழும்பு 15, இலங்கை"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 15, Rockhouse Lane, Colombo 15, Sri Lanka.. No 15, Rockhouse Lane, Colombo 15, Sri Lanka.",
-      "source": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "data": {
-        "value": "No 15, Rockhouse Lane, Colombo 15, Sri Lanka.. No 15, Rockhouse Lane, Colombo 15, Sri Lanka."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 047-3489378 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "047-3489378 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 041-2227694 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "041-2227694 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-522217 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-522217 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 091-2242368 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "091-2242368 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 034-2276651 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "034-2276651 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0214680827 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0214680827 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-529637",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-529637"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-525061 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-525061 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-522683 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-522683 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112520482 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112520482 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-942872 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-942872 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-527066 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-527066 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-520876 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-520876 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-522683",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-522683"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 047-2222431 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "047-2222431 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-529391 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-529391 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-529637 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-529637 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-529090",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-529090"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-529364 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-529364 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-527439 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-527439 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 041-2255106 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "041-2255106 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-525262 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-525262 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 091-2277850 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "091-2277850 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 032-2224950 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "032-2224950 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 041-2251660 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "041-2251660 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112525065 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "+94 112525065 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 041-2258660 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "041-2258660 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 091-2267089 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "091-2267089 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 041-2257785 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "041-2257785 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 091-2258936 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "091-2258936 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 026-2233266 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "026-2233266 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 031-2255755 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "031-2255755 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 065-2258282 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "065-2258282 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-525063 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-525063 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-529090 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-529090 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 031-2228905 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "031-2228905 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 047-2240978 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "047-2240978 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-942873 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-942873 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2657374 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "011-2657374 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0714234354 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0714234354 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112-520577 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "0112-520577 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112522947 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "+94 112522947 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 032-2260969 ",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "032-2260969 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: amt@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "amt@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kalpitiya@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "kalpitiya@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chairman@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "chairman@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: puranawella@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "puranawella@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kudawella@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "kudawella@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wellamankara@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "wellamankara@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kalametiya@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "kalametiya@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ambalangoda@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "ambalangoda@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: valachchenai@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "valachchenai@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dickowitas@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "dickowitas@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mes@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "mes@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: amm@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "amm@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mho@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "mho@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: hikkaduwa@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "hikkaduwa@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dgmo@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "dgmo@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: hambantota@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "hambantota@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: amit@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "amit@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: myliddy@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "myliddy@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: panadura.cfhc@gmail.com",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "panadura.cfhc@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dgme@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "dgme@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: beruwala@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "beruwala@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dgmc@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "dgmc@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: cia@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "cia@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pm@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "pm@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: suduwella@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "suduwella@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dodanduwa@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "dodanduwa@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: tangalle@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "tangalle@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: galle@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "galle@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: hrm@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "hrm@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nilwella@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "nilwella@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chilaw@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "chilaw@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: negombo@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "negombo@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kirinda@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "kirinda@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fm@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "fm@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: gmocfhc@gmail.com",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "gmocfhc@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: codbay@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "codbay@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mirissa@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "mirissa@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dickowitan@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "dickowitan@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව",
-      "source": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "data": {
-        "value": "නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 026-01-02 202",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "data": {
-        "value": "026-01-02 202"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 025-12-08 202",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "data": {
-        "value": "025-12-08 202"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව",
-      "source": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "data": {
-        "value": "නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව",
-      "source": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "data": {
-        "value": "නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව",
-      "source": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "data": {
-        "value": "නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව",
-      "source": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "data": {
-        "value": "නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112942873 ",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "data": {
-        "value": "0112942873 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dikkowita_north_fm@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "data": {
-        "value": "dikkowita_north_fm@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. දික්ඕවිට ධීවර වරාය, හැදල, වත්තල. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "data": {
-        "value": "නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. දික්ඕවිට ධීවර වරාය, හැදල, වත්තල. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 524 60",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "data": {
-        "value": "+94) 011 2 524 60"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 523 05",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "data": {
-        "value": "+94) 011 2 523 05"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112942872 ",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "data": {
-        "value": "+94 112942872 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252221",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "data": {
-        "value": "+94) 011 252221"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 252305",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "data": {
-        "value": "+94) 011 252305"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 011 2 522 94",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "data": {
-        "value": "+94) 011 2 522 94"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "data": {
-        "value": "info@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dikkowita_fm@cfhc.gov.lk",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "data": {
-        "value": "dikkowita_fm@cfhc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. දික්ඔ්විට ධීවර වරාය, දික්ඔ්විට, වත්තල නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව",
-      "source": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "data": {
-        "value": "නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. දික්ඔ්විට ධීවර වරාය, දික්ඔ්විට, වත්තල නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව"
-      }
+      "observed_at": "2026-11-11T09:27:13.481517+05:30"
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 6297 visible characters across 12 pages",
+      "detail": "Substantive page content: 258 visible characters across 2 pages",
       "source": "https://www.cfhc.gov.lk/"
     }
   ],
@@ -1562,7 +76,7 @@
     {
       "host": "www.cfhc.gov.lk",
       "addresses": [
-        "66.165.236.42"
+        "184.171.243.162"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -1582,11 +96,11 @@
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://www.cfhc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 466,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 383,
+      "content_type": "text/html",
       "error": null
     },
     {
@@ -1600,11 +114,11 @@
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://www.cfhc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 212,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 153,
+      "content_type": "text/html",
       "error": null
     },
     {
@@ -1615,170 +129,20 @@
       "elapsed_ms": null,
       "content_type": null,
       "error": "Unsafe redirect blocked: [Errno -2] Name or service not known"
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "redirects": [],
-      "elapsed_ms": 182,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "redirects": [],
-      "elapsed_ms": 564,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "redirects": [],
-      "elapsed_ms": 435,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "redirects": [],
-      "elapsed_ms": 103,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "redirects": [],
-      "elapsed_ms": 110,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "redirects": [],
-      "elapsed_ms": 266,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "redirects": [],
-      "elapsed_ms": 106,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "redirects": [],
-      "elapsed_ms": 222,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "redirects": [],
-      "elapsed_ms": 218,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "status_code": 200,
-      "final_url": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "redirects": [],
-      "elapsed_ms": 108,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-01-3c56fe413619.html",
-      "sha256": "3c56fe413619b91679f8e0bca76c405227ba78432aee3ab29928cbf289a65e6b",
-      "bytes": 5474
+      "path": "audit.output/www.cfhc.gov.lk/20261111.0927/snapshots/page-01-7271dd5c11fb.html",
+      "sha256": "7271dd5c11fb9a1052a5e91a09afbe7d148fd3388dc51c338df62a0a16f06739",
+      "bytes": 1242
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-02-3c56fe413619.html",
-      "sha256": "3c56fe413619b91679f8e0bca76c405227ba78432aee3ab29928cbf289a65e6b",
-      "bytes": 5474
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/home.php?lang=si",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-03-4963f2793557.html",
-      "sha256": "4963f2793557d4a5d67f60cb1e83aa3ceb86c147d5c5af756fe79fa00904b711",
-      "bytes": 61578
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/home.php?lang=tm",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-04-8835901a89ea.html",
-      "sha256": "8835901a89ea2128fb22652e9639c9c9438fd9a5d73af89de6bbbcabc93b44ae",
-      "bytes": 61668
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/home.php?lang=en",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-05-298d825b9fa8.html",
-      "sha256": "298d825b9fa825bb6f32bc381365ad10c25518a9819075d0bd13265cb0771d1d",
-      "bytes": 55203
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/contact.php?lang=si",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-06-6f0e0985e81c.html",
-      "sha256": "6f0e0985e81c9cf42311c0c9be5743b0c05e048da1bbea2006b34992dfe43aa0",
-      "bytes": 57353
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/about.php?lang=si",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-07-3aea5d42db97.html",
-      "sha256": "3aea5d42db97725030f551d0fca7dc5660a5053affa55daeebaa1071680d23b4",
-      "bytes": 38418
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/vision.php?lang=si",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-08-2d61f7f939de.html",
-      "sha256": "2d61f7f939de64a86671dd3534ed1a1f73aaba3cc10d7aff061391fd2580803a",
-      "bytes": 26124
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/download.php?lang=si",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-09-4a8141700a4d.html",
-      "sha256": "4a8141700a4d8b050d69d7a14a8ad58c55f3904e40f89e7cfed3db4407797ac6",
-      "bytes": 25688
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/harbour_all.php?lang=si",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-10-76903ac3b1db.html",
-      "sha256": "76903ac3b1db2ae7fce086021825725622ba0a710ccf227cc59e111fc92899bf",
-      "bytes": 30937
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/harbour_detail.php?id=1&lang=si",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-11-f7dda36c7c61.html",
-      "sha256": "f7dda36c7c61f11033169e0e61404106767fa27fe1f036688d36ea9ee93c6a2e",
-      "bytes": 43153
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/harbour_detail.php?id=2&lang=si",
-      "path": "audit.output/www.cfhc.gov.lk/20261110.1055/snapshots/page-12-42d634958c40.html",
-      "sha256": "42d634958c4062725bfaef42c1ac2c2fa3893fac6a5a788f3af4f2132d3c1616",
-      "bytes": 59350
+      "path": "audit.output/www.cfhc.gov.lk/20261111.0927/snapshots/page-02-7271dd5c11fb.html",
+      "sha256": "7271dd5c11fb9a1052a5e91a09afbe7d148fd3388dc51c338df62a0a16f06739",
+      "bytes": 1242
     }
   ],
   "reviewer_decisions": [],
@@ -1794,8 +158,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.cfhc.gov.lk/: Probe 2: Unsafe redirect blocked: [Errno -2] Name or service not known; http://www.cfhc.gov.lk/: Probe 4: Unsafe redirect blocked: [Errno -2] Name or service not known; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
       "executed": true,
       "checks": [
         {
@@ -1807,44 +171,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://www.cfhc.gov.lk/: Probe 2: Unsafe redirect blocked: [Errno -2] Name or service not known; http://www.cfhc.gov.lk/: Probe 4: Unsafe redirect blocked: [Errno -2] Name or service not known"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -1864,28 +228,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing named responsibility evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව. නො. 15, රොක්හවුස් පටුමග, කොළඹ 15, ශ්‍රී ලංකාව"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94) 011 2 523 05 (49 phone numbers found); Email: info@cfhc.gov.lk (41 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing named responsibility evidence found"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -1913,7 +258,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "134.33.77.19",
+    "egress_ip": "64.236.140.185",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

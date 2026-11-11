@@ -1,8 +1,8 @@
 # Website Audit: https://www.mbslinsurance.lk/
 
-- Completed: 2026-11-10 10:50
+- Completed: 2026-11-11 09:21
 - Overall result: ⚫ Level 0
-- Vantage: 134.33.77.19 (US, github-actions)
+- Vantage: 64.236.140.185 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,17 +14,17 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Detected generic hosting marker: under construction
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011); TLS certificate has expired
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ❌ | Detected generic hosting marker: under construction |
-| http_available | ✅ | HTTP probes did not all fail |
-| redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| domain_not_parked | ❓ | No usable page was inspected |
+| site_not_defaced | ❓ | No usable page was inspected |
+| content_relevant | ❓ | No usable page was inspected |
+| hosting_configured | ❓ | No usable page was inspected |
+| http_available | ❓ | HTTP checks did not run |
+| redirect_related | ❓ | No redirect result was available |
+| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011) |
+| tls_not_expired | ❌ | TLS certificate has expired |
+| tls_hostname_matches | ❓ | TLS hostname check did not run |

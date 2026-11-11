@@ -1,8 +1,8 @@
 # Website Audit: https://ntmi.lk/
 
-- Completed: 2026-11-10 11:22
+- Completed: 2026-11-11 09:55
 - Overall result: 🟠 Level 2
-- Vantage: 134.33.77.19 (US, github-actions)
+- Vantage: 64.236.140.185 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
