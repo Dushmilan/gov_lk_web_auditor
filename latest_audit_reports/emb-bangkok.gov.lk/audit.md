@@ -1,8 +1,8 @@
 # Website Audit: https://emb-bangkok.gov.lk/
 
-- Completed: 2026-11-11 09:30
+- Completed: 2026-11-12 10:39
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.140.185 (US, github-actions)
+- Vantage: 52.173.237.217 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

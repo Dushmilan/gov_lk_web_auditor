@@ -1,8 +1,8 @@
 # Website Audit: https://alliancefinanceplc.com/
 
-- Completed: 2026-11-11 09:22
+- Completed: 2026-11-12 10:31
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.140.185 (US, github-actions)
+- Vantage: 52.173.237.217 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Address Loan Amount Occupation Submit Here Related Resources Calculator LAFL % Monthly repayment = 0.00 TK Calculate Res; Phone: 0961717119 (7 phone numbers found); Email: info@alliancefinanceplc.com (2 email addresses found); Published named responsibility: director
+Published postal address: Address Loan Amount Occupation Submit Here Related Resources Calculator LAFL % Monthly repayment = 0.00 TK Calculate Res; Phone: 09617-171190 (7 phone numbers found); Email: info@alliancefinanceplc.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Address Loan Amount Occupation Submit Here Related Resources Calculator LAFL % Monthly repayment = 0.00 TK Calculate Res |
-| reachable_contacts | ✅ | Phone: 0961717119 (7 phone numbers found); Email: info@alliancefinanceplc.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 09617-171190 (7 phone numbers found); Email: info@alliancefinanceplc.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

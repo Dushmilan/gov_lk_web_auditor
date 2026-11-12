@@ -1,8 +1,8 @@
 # Website Audit: https://www.trc.gov.lk/
 
-- Completed: 2026-11-11 09:12
+- Completed: 2026-11-12 10:21
 - Overall result: ⚫ Level 0
-- Vantage: 64.236.140.185 (US, github-actions)
+- Vantage: 52.173.237.217 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

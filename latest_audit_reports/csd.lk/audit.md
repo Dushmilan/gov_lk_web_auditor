@@ -1,8 +1,8 @@
 # Website Audit: https://csd.lk/
 
-- Completed: 2026-11-11 09:47
+- Completed: 2026-11-12 10:55
 - Overall result: 🔴 Level 1
-- Vantage: 64.236.140.185 (US, github-actions)
+- Vantage: 52.173.237.217 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "3ca58bc7-d437-4ed0-a574-69797093e3fe",
+  "audit_id": "8b6c1bc6-fd8f-4488-b069-b785016eb09b",
   "url": "http://www.ihra.cmb.ac.lk",
   "normalized_url": "http://www.ihra.cmb.ac.lk/",
-  "started_at": "2026-11-11T09:15:50.508098+05:30",
-  "completed_at": "2026-11-11T09:18:00.021868+05:30",
+  "started_at": "2026-11-12T10:25:02.433606+05:30",
+  "completed_at": "2026-11-12T10:25:14.529690+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)",
+      "tls_hostname_matches: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
     ]
   },
   "evidence": [
@@ -26,1140 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-11T09:15:52.279952+05:30"
+      "observed_at": "2026-11-12T10:25:03.193356+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-11T09:15:52.279980+05:30"
+      "observed_at": "2026-11-12T10:25:03.193376+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-11T09:15:57.275514+05:30"
+      "status": "error",
+      "detail": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)",
+      "observed_at": "2026-11-12T10:25:04.094080+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.ihra.cmb.ac.lk/",
+      "status": "error",
+      "detail": "Probe 1: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)",
       "source": "https://www.ihra.cmb.ac.lk/",
-      "observed_at": "2026-11-11T09:17:58.939940+05:30"
+      "observed_at": "2026-11-12T10:25:14.529494+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.ihra.cmb.ac.lk/",
+      "status": "error",
+      "detail": "Probe 2: Server disconnected without sending a response.",
       "source": "http://www.ihra.cmb.ac.lk/",
-      "observed_at": "2026-11-11T09:17:58.939963+05:30"
+      "observed_at": "2026-11-12T10:25:14.529515+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.ihra.cmb.ac.lk/",
+      "status": "error",
+      "detail": "Probe 3: Server disconnected without sending a response.",
       "source": "https://www.ihra.cmb.ac.lk/",
-      "observed_at": "2026-11-11T09:17:58.939967+05:30"
+      "observed_at": "2026-11-12T10:25:14.529521+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.ihra.cmb.ac.lk/",
+      "status": "error",
+      "detail": "Probe 4: Server disconnected without sending a response.",
       "source": "http://www.ihra.cmb.ac.lk/",
-      "observed_at": "2026-11-11T09:17:58.939970+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "observed_at": "2026-11-11T09:17:58.939973+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "observed_at": "2026-11-11T09:17:58.939976+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "observed_at": "2026-11-11T09:17:58.939979+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "observed_at": "2026-11-11T09:17:58.939982+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "observed_at": "2026-11-11T09:17:58.939985+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "observed_at": "2026-11-11T09:17:58.939988+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.ihra.cmb.ac.lk/contact-us/",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "observed_at": "2026-11-11T09:17:58.939991+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.ihra.cmb.ac.lk/about-us/",
-      "source": "https://www.ihra.cmb.ac.lk/about-us/",
-      "observed_at": "2026-11-11T09:17:58.939993+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "observed_at": "2026-11-11T09:17:58.939996+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.ihra.cmb.ac.lk/events/",
-      "source": "https://www.ihra.cmb.ac.lk/events/",
-      "observed_at": "2026-11-11T09:17:58.939998+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.ihra.cmb.ac.lk/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 258 7245 ",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "data": {
-        "value": "+94 11 258 7245 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nipuli@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "data": {
-        "value": "nipuli@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kanthi@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "data": {
-        "value": "kanthi@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: director@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "data": {
-        "value": "director@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ash@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "data": {
-        "value": "ash@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sagara@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "data": {
-        "value": "sagara@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 70 117 2537 ",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "data": {
-        "value": "+94 70 117 2537 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 71 104 0117 ",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "data": {
-        "value": "+94 71 104 0117 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wijayantha@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "data": {
-        "value": "wijayantha@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sudesh@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "data": {
-        "value": "sudesh@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 71 244 4849 ",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "data": {
-        "value": "+94 71 244 4849 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 71 104 0117 ",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "data": {
-        "value": "+94 71 104 0117 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabuddha@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "data": {
-        "value": "prabuddha@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wijayantha@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "data": {
-        "value": "wijayantha@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 15 Months",
-      "source": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "data": {
-        "value": "15 Months"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 71 244 4849 ",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "+94 71 244 4849 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 71 104 0117 ",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "+94 71 104 0117 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabuddha@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "prabuddha@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wijayantha@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "wijayantha@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 12 Months",
-      "source": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "data": {
-        "value": "12 Months"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 70 117 2537 ",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "data": {
-        "value": "+94 70 117 2537 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 71 104 0117 ",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "data": {
-        "value": "+94 71 104 0117 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wijayantha@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "data": {
-        "value": "wijayantha@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sudesh@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "data": {
-        "value": "sudesh@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: challenges and opportunities in the service industry. Enhance students’ communication and interpersonal skills to effect",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "data": {
-        "value": "challenges and opportunities in the service industry. Enhance students’ communication and interpersonal skills to effect"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 12 Months",
-      "source": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "data": {
-        "value": "12 Months"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0012578802",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "0012578802"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0012576243",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "0012576243"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sandamali@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "sandamali@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nihal.hewage@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "nihal.hewage@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rmsnratnayake@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "rmsnratnayake@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chamariedirisinghe@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "chamariedirisinghe@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kamani@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "kamani@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: hemakumara@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "hemakumara@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sachi@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "sachi@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: suranga@econ.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "suranga@econ.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sagara@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "sagara@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 5893 ",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "+94 11 250 5893 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 1924 ",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "+94 11 250 1924 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 205 5208 ",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "+94 11 205 5208 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 255 4724 ",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "+94 11 255 4724 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 258 1569 ",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "+94 11 258 1569 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 259 5024 ",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "+94 11 259 5024 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "+94 11 250 3393"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 258 7245 ",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "+94 11 258 7245 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: drga@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "drga@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "sar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "info@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sab@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "sab@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: drexams@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "drexams@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dr@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "dr@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: director@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "director@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: bandaradgcn@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "bandaradgcn@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Institute of Human Resource Advancement, University of Colombo, No: 275, Bauddhaloka Mawatha, Colombo 7, Sri Lanka. Phon",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "Institute of Human Resource Advancement, University of Colombo, No: 275, Bauddhaloka Mawatha, Colombo 7, Sri Lanka. Phon"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/about-us/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/about-us/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/about-us/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0857735551",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "data": {
-        "value": "0857735551"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0858019839",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "data": {
-        "value": "0858019839"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0857743190",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "data": {
-        "value": "0857743190"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0857738741",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "data": {
-        "value": "0857738741"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0857744961",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "data": {
-        "value": "0857744961"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0857736587",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "data": {
-        "value": "0857736587"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 250 3393 ",
-      "source": "https://www.ihra.cmb.ac.lk/events/",
-      "data": {
-        "value": "+94 11 250 3393 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adminar@ihra.cmb.ac.lk",
-      "source": "https://www.ihra.cmb.ac.lk/events/",
-      "data": {
-        "value": "adminar@ihra.cmb.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.ihra.cmb.ac.lk/events/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.ihra.cmb.ac.lk/events/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 18 October 2026",
-      "source": "https://www.ihra.cmb.ac.lk/events/",
-      "data": {
-        "value": "18 October 2026"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 28698 visible characters across 14 pages",
-      "source": "http://www.ihra.cmb.ac.lk/"
+      "observed_at": "2026-11-12T10:25:14.529525+05:30"
     }
   ],
   "observations": [
@@ -1179,228 +85,49 @@
     },
     {
       "host": "www.ihra.cmb.ac.lk",
-      "status": "valid",
-      "expires_at": "2027-02-06T09:22:32+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
     },
     {
       "url": "https://www.ihra.cmb.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 12228,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
     },
     {
       "url": "http://www.ihra.cmb.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/",
-      "redirects": [
-        "https://www.ihra.cmb.ac.lk/"
-      ],
-      "elapsed_ms": 8944,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "Server disconnected without sending a response."
     },
     {
       "url": "https://www.ihra.cmb.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 11527,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "Server disconnected without sending a response."
     },
     {
       "url": "http://www.ihra.cmb.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/",
-      "redirects": [
-        "https://www.ihra.cmb.ac.lk/"
-      ],
-      "elapsed_ms": 9154,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/branches/director-office/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 6876,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "redirects": [],
-      "elapsed_ms": 9512,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "redirects": [],
-      "elapsed_ms": 9193,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "redirects": [],
-      "elapsed_ms": 9528,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "redirects": [],
-      "elapsed_ms": 7711,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "redirects": [],
-      "elapsed_ms": 4082,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "redirects": [],
-      "elapsed_ms": 6419,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/about-us/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/about-us/",
-      "redirects": [],
-      "elapsed_ms": 7908,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "redirects": [],
-      "elapsed_ms": 7457,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/events/",
-      "status_code": 200,
-      "final_url": "https://www.ihra.cmb.ac.lk/events/",
-      "redirects": [],
-      "elapsed_ms": 6509,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "Server disconnected without sending a response."
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.ihra.cmb.ac.lk/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-01-6244067b5ed8.html",
-      "sha256": "6244067b5ed86af6597837f8d3bb699d9a56e68e2f574975f3d9dee6c7de5b18",
-      "bytes": 186719
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-02-6244067b5ed8.html",
-      "sha256": "6244067b5ed86af6597837f8d3bb699d9a56e68e2f574975f3d9dee6c7de5b18",
-      "bytes": 186719
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-03-6244067b5ed8.html",
-      "sha256": "6244067b5ed86af6597837f8d3bb699d9a56e68e2f574975f3d9dee6c7de5b18",
-      "bytes": 186719
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-04-6244067b5ed8.html",
-      "sha256": "6244067b5ed86af6597837f8d3bb699d9a56e68e2f574975f3d9dee6c7de5b18",
-      "bytes": 186719
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/branches/director-office/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-05-36ae24124ab1.html",
-      "sha256": "36ae24124ab1418698210afc102f58f78d3bde4d99136a79e426ead05a031b99",
-      "bytes": 137606
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-science-in-service-management-msc-sm/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-06-ae4fc8da459e.html",
-      "sha256": "ae4fc8da459e6c9bedd673d8637288941c5963791968dff82424754862632266",
-      "bytes": 146909
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/masters-programs/master-of-service-management-msm/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-07-646edd61e7a1.html",
-      "sha256": "646edd61e7a1fb8421cfaad48c5b7e81d7ad75d07f669b1232af8a0d7891d9ce",
-      "bytes": 145996
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/higher-diplomas/higher-diploma-in-service-management-hdsm/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-08-b5f5592f5bad.html",
-      "sha256": "b5f5592f5bad284e5be4ee90e0f7a9c126ceb388df607015ab862a3fd2906150",
-      "bytes": 145307
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/diplomas/diploma-in-service-management-dsm/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-09-567c6d4bff94.html",
-      "sha256": "567c6d4bff9425491f9dd86243e208f1e7afb55f46b9cd9c0b0abe68f56355b8",
-      "bytes": 141304
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/research/projects-and-consultancy-services/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-10-5940c4dbb43a.html",
-      "sha256": "5940c4dbb43aa798a4cefb0a74dbcd51f88a53bde7665e99ffef491b2d004e2a",
-      "bytes": 155646
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/contact-us/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-11-d8bf52050eff.html",
-      "sha256": "d8bf52050eff7d1d58f27edffed6ad2ec02890bcfe32a0cfd070b1b35a002290",
-      "bytes": 143108
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/about-us/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-12-c4e63c2285c7.html",
-      "sha256": "c4e63c2285c7d087377e00a19d8b67ef45e5631d5d8ab3568560d3ca6cf7ea48",
-      "bytes": 137341
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/what-we-offer/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-13-d61b0a21f8e8.html",
-      "sha256": "d61b0a21f8e8964eb756d3f1c401d2c2a384af0558480b000591e5a4399b7a31",
-      "bytes": 141958
-    },
-    {
-      "url": "https://www.ihra.cmb.ac.lk/events/",
-      "path": "audit.output/www.ihra.cmb.ac.lk/20261111.0915/snapshots/page-14-05200f5697e6.html",
-      "sha256": "05200f5697e6e32809e9c049d73b25dc0115cf60bbc7b3c5ab1a777b170a739f",
-      "bytes": 265026
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1414,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011); [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)",
       "executed": true,
       "checks": [
         {
@@ -1427,136 +154,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe; Phone: +94 11 250 3393 (19 phone numbers found); Email: adminar@ihra.cmb.ac.lk (24 email addresses found); Published named responsibility: director",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 11 250 3393 (19 phone numbers found); Email: adminar@ihra.cmb.ac.lk (24 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: rs,"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing legal basis evidence found"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published processing time: 15 Months"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published published update date: 18 October 2026"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1576,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "64.236.140.185",
+    "egress_ip": "52.173.237.217",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
