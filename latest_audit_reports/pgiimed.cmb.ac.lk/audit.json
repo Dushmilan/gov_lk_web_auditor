@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "fb6c752a-0e30-4a3e-b22e-2a8c62521b25",
+  "audit_id": "a77168c0-6f13-4a70-859d-d61c7f857678",
   "url": "https://pgiimed.cmb.ac.lk/",
   "normalized_url": "https://pgiimed.cmb.ac.lk/",
-  "started_at": "2026-11-12T10:24:56.645193+05:30",
-  "completed_at": "2026-11-12T10:25:07.632927+05:30",
+  "started_at": "2026-11-13T09:37:26.717670+05:30",
+  "completed_at": "2026-11-13T09:38:07.957267+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)",
-      "tls_hostname_matches: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,528 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-12T10:24:57.170082+05:30"
+      "observed_at": "2026-11-13T09:37:27.306323+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-12T10:24:57.170100+05:30"
+      "observed_at": "2026-11-13T09:37:27.306346+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)",
-      "observed_at": "2026-11-12T10:24:57.971086+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-13T09:37:28.794591+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: Server disconnected without sending a response.",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://pgiimed.cmb.ac.lk/",
       "source": "https://pgiimed.cmb.ac.lk/",
-      "observed_at": "2026-11-12T10:25:07.632681+05:30"
+      "observed_at": "2026-11-13T09:38:07.690623+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: Server disconnected without sending a response.",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://pgiimed.cmb.ac.lk/",
       "source": "http://pgiimed.cmb.ac.lk/",
-      "observed_at": "2026-11-12T10:25:07.632705+05:30"
+      "observed_at": "2026-11-13T09:38:07.690644+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: Server disconnected without sending a response.",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://pgiimed.cmb.ac.lk/",
       "source": "https://pgiimed.cmb.ac.lk/",
-      "observed_at": "2026-11-12T10:25:07.632710+05:30"
+      "observed_at": "2026-11-13T09:38:07.690647+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://pgiimed.cmb.ac.lk/",
       "source": "http://pgiimed.cmb.ac.lk/",
-      "observed_at": "2026-11-12T10:25:07.632714+05:30"
+      "observed_at": "2026-11-13T09:38:07.690650+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://pgiimed.cmb.ac.lk/contact/",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "observed_at": "2026-11-13T09:38:07.690652+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://pgiimed.cmb.ac.lk/administration/",
+      "source": "https://pgiimed.cmb.ac.lk/administration/",
+      "observed_at": "2026-11-13T09:38:07.690654+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://pgiimed.cmb.ac.lk/alumni/",
+      "source": "https://pgiimed.cmb.ac.lk/alumni/",
+      "observed_at": "2026-11-13T09:38:07.690656+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://pgiimed.cmb.ac.lk/lms/",
+      "source": "https://pgiimed.cmb.ac.lk/lms/",
+      "observed_at": "2026-11-13T09:38:07.690658+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://pgiimed.cmb.ac.lk/iqac/",
+      "source": "https://pgiimed.cmb.ac.lk/iqac/",
+      "observed_at": "2026-11-13T09:38:07.690660+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://pgiimed.cmb.ac.lk/advertisements/",
+      "source": "https://pgiimed.cmb.ac.lk/advertisements/",
+      "observed_at": "2026-11-13T09:38:07.690662+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://pgiimed.cmb.ac.lk",
+      "source": "https://pgiimed.cmb.ac.lk",
+      "observed_at": "2026-11-13T09:38:07.690664+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://pgiimed.cmb.ac.lk/vision-mission/",
+      "source": "https://pgiimed.cmb.ac.lk/vision-mission/",
+      "observed_at": "2026-11-13T09:38:07.690666+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://pgiimed.cmb.ac.lk/history/",
+      "source": "https://pgiimed.cmb.ac.lk/history/",
+      "observed_at": "2026-11-13T09:38:07.690668+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://pgiimed.cmb.ac.lk/current-status/",
+      "source": "https://pgiimed.cmb.ac.lk/current-status/",
+      "observed_at": "2026-11-13T09:38:07.690670+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0908147563",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "0908147563"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0908147563",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "0908147563"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0908147563",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "0908147563"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0908147563",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "0908147563"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112681510 ",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "0112681510 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112681287 ",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "0112681287 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112681610 ",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "0112681610 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112681227 ",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "0112681227 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112681257 ",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "0112681257 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: director@pgiimed.cmb.ac.lk",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "director@pgiimed.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sab@pgiimed.cmb.ac.lk",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "sab@pgiimed.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar@pgiimed.cmb.ac.lk",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "sar@pgiimed.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: adm@pgiimed.cmb.ac.lk",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "adm@pgiimed.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: library@pgiimed.cmb.ac.lk",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "library@pgiimed.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/contact/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/administration/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/administration/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/alumni/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/alumni/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/lms/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/lms/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/iqac/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/iqac/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/advertisements/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/advertisements/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://pgiimed.cmb.ac.lk/wp-content/uploads/2026/09/PGIIM-Application-Form-External.pdf",
+      "source": "https://pgiimed.cmb.ac.lk/advertisements/",
+      "data": {
+        "value": "https://pgiimed.cmb.ac.lk/wp-content/uploads/2026/09/PGIIM-Application-Form-External.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0908147563",
+      "source": "https://pgiimed.cmb.ac.lk",
+      "data": {
+        "value": "0908147563"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/vision-mission/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/vision-mission/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/history/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/history/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pgiimed.cmb.ac.lk/current-status/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://pgiimed.cmb.ac.lk/current-status/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 5499 visible characters across 14 pages",
+      "source": "https://pgiimed.cmb.ac.lk/"
     }
   ],
   "observations": [
@@ -85,49 +567,228 @@
     },
     {
       "host": "pgiimed.cmb.ac.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
+      "status": "valid",
+      "expires_at": "2027-01-27T09:33:25+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://pgiimed.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "Server disconnected without sending a response."
+      "elapsed_ms": 3854,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://pgiimed.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "Server disconnected without sending a response."
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/",
+      "redirects": [
+        "https://pgiimed.cmb.ac.lk/"
+      ],
+      "elapsed_ms": 1717,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://pgiimed.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "Server disconnected without sending a response."
+      "elapsed_ms": 3730,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://pgiimed.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/",
+      "redirects": [
+        "https://pgiimed.cmb.ac.lk/"
+      ],
+      "elapsed_ms": 1799,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/contact/",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/contact/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
+      "elapsed_ms": 1676,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/administration/",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/administration/",
+      "redirects": [],
+      "elapsed_ms": 3178,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/alumni/",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/alumni/",
+      "redirects": [],
+      "elapsed_ms": 1634,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/lms/",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/lms/",
+      "redirects": [],
+      "elapsed_ms": 1624,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/iqac/",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/iqac/",
+      "redirects": [],
+      "elapsed_ms": 2559,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/advertisements/",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/advertisements/",
+      "redirects": [],
+      "elapsed_ms": 1430,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk",
+      "redirects": [],
+      "elapsed_ms": 2733,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/vision-mission/",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/vision-mission/",
+      "redirects": [],
+      "elapsed_ms": 1435,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/history/",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/history/",
+      "redirects": [],
+      "elapsed_ms": 1385,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/current-status/",
+      "status_code": 200,
+      "final_url": "https://pgiimed.cmb.ac.lk/current-status/",
+      "redirects": [],
+      "elapsed_ms": 1457,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://pgiimed.cmb.ac.lk/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-01-129c7cbb43b6.html",
+      "sha256": "129c7cbb43b6e7a14e64b308ae968879d8fe76926e6b6e5362a55785cdc81876",
+      "bytes": 89900
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-02-e51e0104771d.html",
+      "sha256": "e51e0104771de20c9a0476c9294d12501165483103c2c76f4029e390a66969da",
+      "bytes": 89900
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-03-7a6a1d5d7cf1.html",
+      "sha256": "7a6a1d5d7cf1ac13aeba1426b0bdc733db096ee153e971d1b1321217ce83d63a",
+      "bytes": 89900
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-04-268ac47313b2.html",
+      "sha256": "268ac47313b2a7e2de58c55d699b15635a52797fcfb6c8de69f39d7cb7c9b983",
+      "bytes": 89900
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/contact/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-05-4a9dc7240a7d.html",
+      "sha256": "4a9dc7240a7d5c1b5ae52d11304609efa074e3b96a070ae141f66572a1e3c92d",
+      "bytes": 58416
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/administration/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-06-edcb03b62c9d.html",
+      "sha256": "edcb03b62c9d9be26300fd60c2299ad12eda37414a567854091c13e51a631b1c",
+      "bytes": 54707
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/alumni/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-07-6ff1cc0efa5b.html",
+      "sha256": "6ff1cc0efa5bb97989a3a31bf0b5f6cd34662771fb6ab8fff54f11906f07eea3",
+      "bytes": 54651
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/lms/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-08-37e90c98694d.html",
+      "sha256": "37e90c98694d4224d150d8df80e78ce91d36f27b7c79a32a337c72c6df53eb87",
+      "bytes": 54630
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/iqac/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-09-6f20ead96397.html",
+      "sha256": "6f20ead96397716590fcc6e6fb18ff06d67f6ed6a65edd98704e1edb20c5345d",
+      "bytes": 54637
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/advertisements/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-10-4dbc041de81c.html",
+      "sha256": "4dbc041de81c9cfe80dfb993d137bd96576d34b23bb1fbc721a266ceec397792",
+      "bytes": 59500
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-11-22519095512a.html",
+      "sha256": "22519095512a829204f8e75c3a0891bc33b66d40ec48a6f6555177ec642b2f7b",
+      "bytes": 89900
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/vision-mission/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-12-4972cca5c37c.html",
+      "sha256": "4972cca5c37c7c6902c705e06746d1baf7c1a056cef18ac381e7a07f21a7e434",
+      "bytes": 57799
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/history/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-13-cedaca3255af.html",
+      "sha256": "cedaca3255af8701382bf9a88cbba320a32f418945f6b7db0e6137064f7b9a53",
+      "bytes": 57611
+    },
+    {
+      "url": "https://pgiimed.cmb.ac.lk/current-status/",
+      "path": "audit.output/pgiimed.cmb.ac.lk/20261113.0937/snapshots/page-14-62a0a10eb9a6.html",
+      "sha256": "62a0a10eb9a6e5bce714e0ab2c1d40c29e99fcd973d3c82607b42d1c554c6f3d",
+      "bytes": 57750
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +802,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011); [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,74 +815,136 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir; Phone: 0908147563 (6 phone numbers found); Email: director@pgiimed.cmb.ac.lk (5 email addresses found); Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0908147563 (6 phone numbers found); Email: director@pgiimed.cmb.ac.lk (5 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published downloadable form: https://pgiimed.cmb.ac.lk/wp-content/uploads/2026/09/PGIIM-Application-Form-External.pdf"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -241,7 +964,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.173.237.217",
+    "egress_ip": "172.169.254.170",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

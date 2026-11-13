@@ -1,8 +1,8 @@
 # Website Audit: https://hc-singapore.gov.lk/
 
-- Completed: 2026-11-12 10:39
+- Completed: 2026-11-13 09:52
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.237.217 (US, github-actions)
+- Vantage: 172.169.254.170 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 0260249487 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found); Published named responsibility: director
+Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: +6562544596 (13 phone numbers found); Email: john@example.com (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: 0260249487 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: +6562544596 (13 phone numbers found); Email: john@example.com (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

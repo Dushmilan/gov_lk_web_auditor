@@ -1,8 +1,8 @@
 # Website Audit: https://www.tri.lk/
 
-- Completed: 2026-11-12 10:53
+- Completed: 2026-11-13 10:07
 - Overall result: 🔴 Level 1
-- Vantage: 52.173.237.217 (US, github-actions)
+- Vantage: 172.169.254.170 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0.699999999 (20 phone numbers found); Email: info@tri.lk |
+| reachable_contacts | ✅ | Phone: +94 81 2244777 (20 phone numbers found); Email: info@tri.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

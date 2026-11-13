@@ -1,8 +1,8 @@
 # Website Audit: https://www.niss.gov.lk/
 
-- Completed: 2026-11-12 11:08
+- Completed: 2026-11-13 10:21
 - Overall result: ⚫ Level 0
-- Vantage: 52.173.237.217 (US, github-actions)
+- Vantage: 172.169.254.170 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

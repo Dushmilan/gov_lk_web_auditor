@@ -1,8 +1,8 @@
 # Website Audit: https://emb-tokyo.gov.lk/
 
-- Completed: 2026-11-12 10:39
+- Completed: 2026-11-13 09:52
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.237.217 (US, github-actions)
+- Vantage: 172.169.254.170 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,23 +33,23 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m; Phone: 0991055784 (21 phone numbers found); Email: slemb.tokyo@mfa.gov.lk (8 email addresses found); Published named responsibility: director
+Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m; Phone: 0990928911 (16 phone numbers found); Email: slemb.tokyo@mfa.gov.lk (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m |
-| reachable_contacts | ✅ | Phone: 0991055784 (21 phone numbers found); Email: slemb.tokyo@mfa.gov.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0990928911 (16 phone numbers found); Email: slemb.tokyo@mfa.gov.lk (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: circular |
