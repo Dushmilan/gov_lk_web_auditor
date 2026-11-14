@@ -1,8 +1,8 @@
 # Website Audit: http://nse.gov.lk/
 
-- Completed: 2026-11-13 10:12
+- Completed: 2026-11-14 10:06
 - Overall result: ⚫ Level 0
-- Vantage: 172.169.254.170 (US, github-actions)
+- Vantage: 64.236.145.72 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

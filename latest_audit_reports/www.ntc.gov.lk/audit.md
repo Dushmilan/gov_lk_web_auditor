@@ -1,8 +1,8 @@
 # Website Audit: https://www.ntc.gov.lk/
 
-- Completed: 2026-11-13 10:17
+- Completed: 2026-11-14 10:15
 - Overall result: 🟠 Level 2
-- Vantage: 172.169.254.170 (US, github-actions)
+- Vantage: 64.236.145.72 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Office National Transport Commission No 241 Park Road Colombo 05 Sri Lanka; Phone: 0112333222 (7 phone numbers found); Email: info@ntc.gov.lk; Published named responsibility: division
+Published postal address: Office National Transport Commission No 241 Park Road Colombo 05 Sri Lanka; Phone: 0112587372 ( (11 phone numbers found); Email: info@ntc.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Office National Transport Commission No 241 Park Road Colombo 05 Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0112333222 (7 phone numbers found); Email: info@ntc.gov.lk |
+| reachable_contacts | ✅ | Phone: 0112587372 ( (11 phone numbers found); Email: info@ntc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs 50 |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

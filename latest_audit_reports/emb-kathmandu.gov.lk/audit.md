@@ -1,8 +1,8 @@
 # Website Audit: https://emb-kathmandu.gov.lk/
 
-- Completed: 2026-11-13 09:51
+- Completed: 2026-11-14 09:48
 - Overall result: 🟠 Level 2
-- Vantage: 172.169.254.170 (US, github-actions)
+- Vantage: 64.236.145.72 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: in Sri Lanka\",\"cancel_button\":\"Cancel\",\"contact_subject_placeholder\":\"How can we help you?\",\"validation_email_; Phone: 0097714720 (12 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: division
+Published postal address: in Sri Lanka\",\"cancel_button\":\"Cancel\",\"contact_subject_placeholder\":\"How can we help you?\",\"validation_email_; Phone: 0097714721389 (12 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: in Sri Lanka\",\"cancel_button\":\"Cancel\",\"contact_subject_placeholder\":\"How can we help you?\",\"validation_email_ |
-| reachable_contacts | ✅ | Phone: 0097714720 (12 phone numbers found); Email: john@example.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0097714721389 (12 phone numbers found); Email: john@example.com (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

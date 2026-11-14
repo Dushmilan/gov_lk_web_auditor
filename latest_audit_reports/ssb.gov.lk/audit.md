@@ -1,8 +1,8 @@
 # Website Audit: https://ssb.gov.lk/
 
-- Completed: 2026-11-13 10:11
+- Completed: 2026-11-14 10:05
 - Overall result: 🟠 Level 2
-- Vantage: 172.169.254.170 (US, github-actions)
+- Vantage: 64.236.145.72 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

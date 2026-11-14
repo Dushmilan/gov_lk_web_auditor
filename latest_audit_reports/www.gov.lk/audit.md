@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-11-13 09:34
+- Completed: 2026-11-14 09:32
 - Overall result: 🔴 Level 1
-- Vantage: 172.169.254.170 (US, github-actions)
+- Vantage: 64.236.145.72 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0883855034 (180 phone numbers found); Email: info@meteo.gov.lk (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0122564385 (179 phone numbers found); Email: dgdaph@sltnet.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

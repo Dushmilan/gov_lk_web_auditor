@@ -1,8 +1,8 @@
 # Website Audit: https://muslimaffairs.gov.lk/
 
-- Completed: 2026-11-13 09:29
+- Completed: 2026-11-14 09:28
 - Overall result: 🟠 Level 2
-- Vantage: 172.169.254.170 (US, github-actions)
+- Vantage: 64.236.145.72 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per ; Phone: 011 266 7909 (12 phone numbers found); Email: Published email:; Published named responsibility: officer in charge
+Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per ; Phone: 0.699999999 (13 phone numbers found); Email: Published email:; Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per  |
-| reachable_contacts | ✅ | Phone: 011 266 7909 (12 phone numbers found); Email: Published email: |
+| reachable_contacts | ✅ | Phone: 0.699999999 (13 phone numbers found); Email: Published email: |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❌
@@ -53,6 +53,6 @@ Published published update date: 26-03-2024
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs 2027 |
 | legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 1 day |
+| processing_time | ✅ | Published processing time: 19 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❌ | Published published update date: 26-03-2024 |

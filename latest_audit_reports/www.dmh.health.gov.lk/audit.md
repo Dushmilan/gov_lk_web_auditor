@@ -1,8 +1,8 @@
 # Website Audit: https://www.dmh.health.gov.lk/
 
-- Completed: 2026-11-13 09:58
+- Completed: 2026-11-14 09:54
 - Overall result: 🟠 Level 2
-- Vantage: 172.169.254.170 (US, github-actions)
+- Vantage: 64.236.145.72 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: - De Soysa Hospital for Women, Colombo 08. TP - +94112662619-23, +94112696225-26 Fax - +94112697315 Email - directordmh1; Phone: 0.319999992 (23 phone numbers found); Email: directordmh1879@gmail.com; Published named responsibility: director
+Published postal address: - De Soysa Hospital for Women, Colombo 08. TP - +94112662619-23, +94112696225-26 Fax - +94112697315 Email - directordmh1; Phone: +94112662619- (37 phone numbers found); Email: directordmh1879@gmail.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: - De Soysa Hospital for Women, Colombo 08. TP - +94112662619-23, +94112696225-26 Fax - +94112697315 Email - directordmh1 |
-| reachable_contacts | ✅ | Phone: 0.319999992 (23 phone numbers found); Email: directordmh1879@gmail.com |
+| reachable_contacts | ✅ | Phone: +94112662619- (37 phone numbers found); Email: directordmh1879@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌
