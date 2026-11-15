@@ -1,8 +1,8 @@
 # Website Audit: https://www.cabinetoffice.gov.lk/
 
-- Completed: 2026-11-14 10:22
+- Completed: 2026-11-15 09:52
 - Overall result: 🔴 Level 1
-- Vantage: 64.236.145.72 (US, github-actions)
+- Vantage: 3.42.157.143 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: of", "", "0"); var menu25 = menu3.addMenu(menu3.items[1],0,0); menu25.addItem("Ministries", "/cab/index.php?option=com_c |
-| reachable_contacts | ✅ | Phone: +94 11 2389152 (58 phone numbers found); Email: as7@cabinetoffice.gov.lk (17 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2121528 (58 phone numbers found); Email: addl_2@cabinetoffice.gov.lk (17 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

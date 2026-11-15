@@ -1,8 +1,8 @@
 # Website Audit: https://airport.lk/
 
-- Completed: 2026-11-14 10:03
+- Completed: 2026-11-15 09:38
 - Overall result: ⚫ Level 0
-- Vantage: 64.236.145.72 (US, github-actions)
+- Vantage: 3.42.157.143 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❌
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)
+No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,6 +25,18 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to g
 | hosting_configured | ❓ | No usable page was inspected |
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011) |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_browser_trusted | ❓ | Browser TLS check did not complete |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
+
+## 🟠 Level 2: ❓
+
+To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
+
+Not run because 🔴 Level 1 did not pass
+
+## 🟢 Level 3: ❓
+
+To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
+
+Not run because 🟠 Level 2 did not pass

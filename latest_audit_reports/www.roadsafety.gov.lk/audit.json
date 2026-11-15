@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "9109f63a-f4dd-4330-a58f-2f3265a551c8",
+  "audit_id": "445bd359-ae28-4406-a5c7-3ed5c3276f11",
   "url": "https://www.roadsafety.gov.lk/",
   "normalized_url": "https://www.roadsafety.gov.lk/",
-  "started_at": "2026-11-14T10:10:37.067395+05:30",
-  "completed_at": "2026-11-14T10:12:49.752633+05:30",
+  "started_at": "2026-11-15T09:44:30.710655+05:30",
+  "completed_at": "2026-11-15T09:44:50.684377+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,708 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-14T10:10:37.871416+05:30"
+      "observed_at": "2026-11-15T09:44:31.056838+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-14T10:10:37.871437+05:30"
+      "observed_at": "2026-11-15T09:44:31.056849+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-14T10:10:48.126904+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-15T09:44:31.217138+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/",
       "source": "https://www.roadsafety.gov.lk/",
-      "observed_at": "2026-11-14T10:12:49.752432+05:30"
+      "observed_at": "2026-11-15T09:44:50.541003+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.roadsafety.gov.lk/index.php/si/",
       "source": "http://www.roadsafety.gov.lk/",
-      "observed_at": "2026-11-14T10:12:49.752454+05:30"
+      "observed_at": "2026-11-15T09:44:50.541019+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/",
       "source": "https://www.roadsafety.gov.lk/",
-      "observed_at": "2026-11-14T10:12:49.752460+05:30"
+      "observed_at": "2026-11-15T09:44:50.541022+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.roadsafety.gov.lk/index.php/si/",
       "source": "http://www.roadsafety.gov.lk/",
-      "observed_at": "2026-11-14T10:12:49.752464+05:30"
+      "observed_at": "2026-11-15T09:44:50.541024+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/services-si",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/services-si",
+      "observed_at": "2026-11-15T09:44:50.541026+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "observed_at": "2026-11-15T09:44:50.541028+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "observed_at": "2026-11-15T09:44:50.541030+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/",
+      "source": "https://www.roadsafety.gov.lk/",
+      "observed_at": "2026-11-15T09:44:50.541032+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/",
+      "source": "https://www.roadsafety.gov.lk/index.php",
+      "observed_at": "2026-11-15T09:44:50.541033+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.roadsafety.gov.lk/index.php/ta/",
+      "source": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "observed_at": "2026-11-15T09:44:50.541035+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.roadsafety.gov.lk/index.php/en/",
+      "source": "https://www.roadsafety.gov.lk/index.php/en/",
+      "observed_at": "2026-11-15T09:44:50.541037+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/about-si",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/about-si",
+      "observed_at": "2026-11-15T09:44:50.541039+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/download-si",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/download-si",
+      "observed_at": "2026-11-15T09:44:50.541041+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.roadsafety.gov.lk/index.php/si/media-si/news-events",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/media-si/news-events",
+      "observed_at": "2026-11-15T09:44:50.541042+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "http://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "http://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "http://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "http://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "http://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "http://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "http://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "http://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/services-si",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/services-si",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/services-si",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/services-si",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 105 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "data": {
+        "value": "+94 112 687 105 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 113 168 501 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "data": {
+        "value": "+94 113 168 501 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak71512000c90f1fca",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "data": {
+        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak71512000c90f1fca"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 674 162 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "data": {
+        "value": "+94 112 674 162 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ncrstransport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "data": {
+        "value": "ncrstransport@gmail.com"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://www.roadsafety.gov.lk/images/Research_Proposal_to_Reduce_Motor_Cycle_Accidents_in_Sri_Lanka.pdf",
+      "source": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "data": {
+        "value": "https://www.roadsafety.gov.lk/images/Research_Proposal_to_Reduce_Motor_Cycle_Accidents_in_Sri_Lanka.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/en/",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/en/",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/en/",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 674 162 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/en/",
+      "data": {
+        "value": "+94 112 674 162 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ncrstransport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/en/",
+      "data": {
+        "value": "ncrstransport@gmail.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: for Road Safety, No 01, D.R. Wijewardene Mawatha, Colombo 10, Sri Lanka",
+      "source": "https://www.roadsafety.gov.lk/index.php/en/",
+      "data": {
+        "value": "for Road Safety, No 01, D.R. Wijewardene Mawatha, Colombo 10, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.roadsafety.gov.lk/index.php/en/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-06-16",
+      "source": "https://www.roadsafety.gov.lk/index.php/en/",
+      "data": {
+        "value": "2026-06-16"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/about-si",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/about-si",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/about-si",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/about-si",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/download-si",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/download-si",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/download-si",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/download-si",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 696 890 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/media-si/news-events",
+      "data": {
+        "value": "+94 112 696 890 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 680 163 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/media-si/news-events",
+      "data": {
+        "value": "+94 112 680 163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 687 109 ",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/media-si/news-events",
+      "data": {
+        "value": "+94 112 687 109 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transport@gmail.com",
+      "source": "https://www.roadsafety.gov.lk/index.php/si/media-si/news-events",
+      "data": {
+        "value": "transport@gmail.com"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 6106 visible characters across 14 pages",
+      "source": "https://www.roadsafety.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +747,236 @@
     },
     {
       "host": "www.roadsafety.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-12-25T00:47:51+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.roadsafety.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/",
+      "redirects": [
+        "https://www.roadsafety.gov.lk/index.php/si/"
+      ],
+      "elapsed_ms": 401,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://www.roadsafety.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "http://www.roadsafety.gov.lk/index.php/si/",
+      "redirects": [
+        "http://www.roadsafety.gov.lk/index.php/si/"
+      ],
+      "elapsed_ms": 281,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "https://www.roadsafety.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/",
+      "redirects": [
+        "https://www.roadsafety.gov.lk/index.php/si/"
+      ],
+      "elapsed_ms": 360,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://www.roadsafety.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://www.roadsafety.gov.lk/index.php/si/",
+      "redirects": [
+        "http://www.roadsafety.gov.lk/index.php/si/"
+      ],
+      "elapsed_ms": 272,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/services-si",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/services-si",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 286,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "redirects": [],
+      "elapsed_ms": 303,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "redirects": [],
+      "elapsed_ms": 278,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/",
+      "redirects": [
+        "https://www.roadsafety.gov.lk/index.php/si/"
+      ],
+      "elapsed_ms": 362,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/",
+      "redirects": [
+        "https://www.roadsafety.gov.lk/index.php/si/"
+      ],
+      "elapsed_ms": 364,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "redirects": [],
+      "elapsed_ms": 383,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/en/",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/en/",
+      "redirects": [],
+      "elapsed_ms": 365,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/about-si",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/about-si",
+      "redirects": [],
+      "elapsed_ms": 275,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/download-si",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/download-si",
+      "redirects": [],
+      "elapsed_ms": 279,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/media-si/news-events",
+      "status_code": 200,
+      "final_url": "https://www.roadsafety.gov.lk/index.php/si/media-si/news-events",
+      "redirects": [],
+      "elapsed_ms": 312,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-01-88000b9ceb42.html",
+      "sha256": "88000b9ceb422ba3fbfb9598579b978a5f9f576c9b5c16efa43c6b81a1899659",
+      "bytes": 66747
+    },
+    {
+      "url": "http://www.roadsafety.gov.lk/index.php/si/",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-02-5e51c03f5813.html",
+      "sha256": "5e51c03f581378e9aeff16d6649ef104bf7423a649a39a5e90946f5ddad7c4a0",
+      "bytes": 66716
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-03-35fb84c60a2b.html",
+      "sha256": "35fb84c60a2bc35e5f491aba7190aa5f5a86cf76c63de028369cc984ce942b6e",
+      "bytes": 66747
+    },
+    {
+      "url": "http://www.roadsafety.gov.lk/index.php/si/",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-04-0a28388cb006.html",
+      "sha256": "0a28388cb00682c83c65ee921057eabd849667ee39ef0ba09aa341d0f767cf08",
+      "bytes": 66716
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/services-si",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-05-cd0c21586153.html",
+      "sha256": "cd0c21586153a19eef9fa9198556035ca00655475bdaebc7c6881b9dc796699f",
+      "bytes": 32409
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactus-si",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-06-c66af2bfb9b9.html",
+      "sha256": "c66af2bfb9b95a2651c44a96c61c4dedcb8731096cfb7ee7adb5da82d8fe7667",
+      "bytes": 33820
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/contact-si/contactdet-si",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-07-969fdad0f690.html",
+      "sha256": "969fdad0f690f733a2bee959544045b247e14260aa120e3a466ef59c2dfd392b",
+      "bytes": 25493
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-08-7c50001a2589.html",
+      "sha256": "7c50001a2589f65d460f5fa48e066b3ae4d799f69232ff7f7a51b5605f5f41fc",
+      "bytes": 66747
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-09-1b77d354d3ef.html",
+      "sha256": "1b77d354d3ef7b7a5b2698cba9f7ffab7fa548d7a2aa303af653d4871791a145",
+      "bytes": 66747
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/ta/",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-10-2a3d6ca66da6.html",
+      "sha256": "2a3d6ca66da6b68e88541348ffd59f868aa2469d0bb67178059f3310edea8251",
+      "bytes": 64520
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/en/",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-11-543fca0eb276.html",
+      "sha256": "543fca0eb2763d5fda7f72cf0648abc81174517d2be71b4b1b70ff3288ec7917",
+      "bytes": 61639
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/about-si",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-12-a54245bfe310.html",
+      "sha256": "a54245bfe31078d160e6162177e8089d324ccec362294fd14edfa27b135566e0",
+      "bytes": 29804
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/download-si",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-13-232d5b0ebb9e.html",
+      "sha256": "232d5b0ebb9e5d4b853da9fc82febb44c45bd92f18a8f6ec22be7ffb6b49dc0e",
+      "bytes": 23973
+    },
+    {
+      "url": "https://www.roadsafety.gov.lk/index.php/si/media-si/news-events",
+      "path": "audit.output/www.roadsafety.gov.lk/20261115.0944/snapshots/page-14-fffb1e6f28f8.html",
+      "sha256": "fffb1e6f28f8d287700c3de959211c527b13254cce77eda0409b539bece2d217",
+      "bytes": 41149
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +990,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,74 +1003,136 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak71512000c90f1fca; Phone: +94 112 696 890 (6 phone numbers found); Email: transport@gmail.com (2 email addresses found); Published named responsibility: department",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak71512000c90f1fca"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 112 696 890 (6 phone numbers found); Email: transport@gmail.com (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published downloadable form: https://www.roadsafety.gov.lk/images/Research_Proposal_to_Reduce_Motor_Cycle_Accidents_in_Sri_Lanka.pdf"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published published update date: 2026-06-16"
+        }
+      ]
     },
     {
       "level": 4,
@@ -241,7 +1152,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "64.236.145.72",
+    "egress_ip": "3.42.157.143",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
