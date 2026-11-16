@@ -1,18 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "9e731f56-4a4c-41ce-bdfc-1c8a77ce610f",
+  "audit_id": "066ffbcf-c5b2-4948-9482-85500cde8a5b",
   "url": "https://crd.lk/",
   "normalized_url": "https://crd.lk/",
-  "started_at": "2026-11-15T09:07:28.640149+05:30",
-  "completed_at": "2026-11-15T09:07:32.003302+05:30",
+  "started_at": "2026-11-16T09:08:53.204435+05:30",
+  "completed_at": "2026-11-16T09:09:09.351759+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -20,88 +26,1004 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-15T09:07:28.827466+05:30"
+      "observed_at": "2026-11-16T09:08:53.388442+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-15T09:07:28.827479+05:30"
+      "observed_at": "2026-11-16T09:08:53.388464+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-15T09:07:28.844338+05:30"
+      "observed_at": "2026-11-16T09:08:53.413900+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://crd.lk/",
       "source": "https://crd.lk/",
-      "observed_at": "2026-11-15T09:07:31.990208+05:30"
+      "observed_at": "2026-11-16T09:09:08.808069+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://crd.lk/",
+      "detail": "Probe 2: HTTP 200 at https://crd.lk/",
       "source": "http://crd.lk/",
-      "observed_at": "2026-11-15T09:07:31.990219+05:30"
+      "observed_at": "2026-11-16T09:09:08.808089+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://crd.lk/",
       "source": "https://crd.lk/",
-      "observed_at": "2026-11-15T09:07:31.990221+05:30"
+      "observed_at": "2026-11-16T09:09:08.808093+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://crd.lk/",
+      "detail": "Probe 4: HTTP 200 at https://crd.lk/",
       "source": "http://crd.lk/",
-      "observed_at": "2026-11-15T09:07:31.990223+05:30"
+      "observed_at": "2026-11-16T09:09:08.808095+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://crd.lk/contact",
+      "source": "https://crd.lk/contact",
+      "observed_at": "2026-11-16T09:09:08.808098+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://crd.lk/organization",
+      "source": "https://crd.lk/organization",
+      "observed_at": "2026-11-16T09:09:08.808100+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://crd.lk/wingAeronautical%20Wing",
+      "source": "https://crd.lk/wingAeronautical Wing",
+      "observed_at": "2026-11-16T09:09:08.808102+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://crd.lk/wingAmmo%20&%20Explosive%20Wing",
+      "source": "https://crd.lk/wingAmmo & Explosive Wing",
+      "observed_at": "2026-11-16T09:09:08.808104+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://crd.lk/wingArmament%20&%20Ballistics%20Wing",
+      "source": "https://crd.lk/wingArmament & Ballistics Wing",
+      "observed_at": "2026-11-16T09:09:08.808106+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://crd.lk/wingCyber%20Security%20Wing",
+      "source": "https://crd.lk/wingCyber Security Wing",
+      "observed_at": "2026-11-16T09:09:08.808109+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://crd.lk/wingElectrical%20&%20Mechanical%20Wing",
+      "source": "https://crd.lk/wingElectrical & Mechanical Wing",
+      "observed_at": "2026-11-16T09:09:08.808111+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://crd.lk/wingIT%20&%20GIS%20Wing",
+      "source": "https://crd.lk/wingIT & GIS Wing",
+      "observed_at": "2026-11-16T09:09:08.808113+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://crd.lk/wingMarine%20Wing",
+      "source": "https://crd.lk/wingMarine Wing",
+      "observed_at": "2026-11-16T09:09:08.808115+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://crd.lk/wingNano%20and%20Modern%20Technology%20Wing",
+      "source": "https://crd.lk/wingNano and Modern Technology Wing",
+      "observed_at": "2026-11-16T09:09:08.808117+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
+      "detail": "Published phone: 026 2026-11-0",
       "source": "https://crd.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "026 2026-11-0"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://crd.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
+      "detail": "Published phone: 026 2025-10-1",
       "source": "https://crd.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "026 2025-10-1"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://crd.lk/",
+      "detail": "Published phone: 024 2024-04-1",
+      "source": "https://crd.lk/",
       "data": {
-        "value": "0950635027"
+        "value": "024 2024-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2025-04-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "025 2025-04-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2025-04-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "025 2025-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022. 2022-02-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "022. 2022-02-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-11-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-11-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-10-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-10-1"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-11-12",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "2026-11-12"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-11-0",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "026 2026-11-0"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025-10-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "026 2025-10-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-04-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2025-04-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "025 2025-04-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2025-04-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "025 2025-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022. 2022-02-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "022. 2022-02-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-11-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-11-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-10-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-10-1"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-11-12",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "2026-11-12"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-11-0",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "026 2026-11-0"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025-10-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "026 2025-10-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-04-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2025-04-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "025 2025-04-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2025-04-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "025 2025-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022. 2022-02-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "022. 2022-02-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-11-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-11-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-10-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-10-1"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-11-12",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "2026-11-12"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-11-0",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "026 2026-11-0"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025-10-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "026 2025-10-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-04-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2025-04-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "025 2025-04-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2025-04-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "025 2025-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022. 2022-02-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "022. 2022-02-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-11-2",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-11-2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2024-10-1",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "024 2024-10-1"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-11-12",
+      "source": "https://crd.lk/",
+      "data": {
+        "value": "2026-11-12"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/contact",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/contact",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/contact",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Centre for Defence Research and Development, Mahenawaththa,Moragahahena Road, Pitipana, Homagama. Phone 011-2098032 077-",
+      "source": "https://crd.lk/contact",
+      "data": {
+        "value": "Centre for Defence Research and Development, Mahenawaththa,Moragahahena Road, Pitipana, Homagama. Phone 011-2098032 077-"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/contact",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/organization",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/organization",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/organization",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/organization",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/wingAeronautical%20Wing",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/wingAeronautical%20Wing",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/wingAeronautical%20Wing",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/wingAeronautical%20Wing",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/wingAmmo%20&%20Explosive%20Wing",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/wingAmmo%20&%20Explosive%20Wing",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/wingAmmo%20&%20Explosive%20Wing",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/wingAmmo%20&%20Explosive%20Wing",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/wingArmament%20&%20Ballistics%20Wing",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/wingArmament%20&%20Ballistics%20Wing",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/wingArmament%20&%20Ballistics%20Wing",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/wingArmament%20&%20Ballistics%20Wing",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/wingCyber%20Security%20Wing",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/wingCyber%20Security%20Wing",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/wingCyber%20Security%20Wing",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/wingCyber%20Security%20Wing",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/wingElectrical%20&%20Mechanical%20Wing",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/wingElectrical%20&%20Mechanical%20Wing",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/wingElectrical%20&%20Mechanical%20Wing",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: research and development and innovations in electrical and mechanical engineering fields. The Wing`s current main focus ",
+      "source": "https://crd.lk/wingElectrical%20&%20Mechanical%20Wing",
+      "data": {
+        "value": "research and development and innovations in electrical and mechanical engineering fields. The Wing`s current main focus "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/wingElectrical%20&%20Mechanical%20Wing",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/wingIT%20&%20GIS%20Wing",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/wingIT%20&%20GIS%20Wing",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/wingIT%20&%20GIS%20Wing",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/wingIT%20&%20GIS%20Wing",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/wingMarine%20Wing",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/wingMarine%20Wing",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/wingMarine%20Wing",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/wingMarine%20Wing",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2098032 ",
+      "source": "https://crd.lk/wingNano%20and%20Modern%20Technology%20Wing",
+      "data": {
+        "value": "011-2098032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2182175 ",
+      "source": "https://crd.lk/wingNano%20and%20Modern%20Technology%20Wing",
+      "data": {
+        "value": "011-2182175 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3929482 ",
+      "source": "https://crd.lk/wingNano%20and%20Modern%20Technology%20Wing",
+      "data": {
+        "value": "077-3929482 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://crd.lk/wingNano%20and%20Modern%20Technology%20Wing",
+      "data": {
+        "value": "director"
       }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 48388 visible characters across 14 pages",
       "source": "https://crd.lk/"
     }
   ],
@@ -135,17 +1057,19 @@
       "status_code": 200,
       "final_url": "https://crd.lk/",
       "redirects": [],
-      "elapsed_ms": 311,
-      "content_type": "text/html",
+      "elapsed_ms": 679,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://crd.lk/",
       "status_code": 200,
-      "final_url": "http://crd.lk/",
-      "redirects": [],
-      "elapsed_ms": 139,
-      "content_type": "text/html",
+      "final_url": "https://crd.lk/",
+      "redirects": [
+        "https://crd.lk/"
+      ],
+      "elapsed_ms": 904,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
@@ -153,44 +1077,196 @@
       "status_code": 200,
       "final_url": "https://crd.lk/",
       "redirects": [],
-      "elapsed_ms": 105,
-      "content_type": "text/html",
+      "elapsed_ms": 635,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://crd.lk/",
       "status_code": 200,
-      "final_url": "http://crd.lk/",
+      "final_url": "https://crd.lk/",
+      "redirects": [
+        "https://crd.lk/"
+      ],
+      "elapsed_ms": 433,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/contact",
+      "status_code": 200,
+      "final_url": "https://crd.lk/contact",
       "redirects": [],
-      "elapsed_ms": 140,
-      "content_type": "text/html",
+      "elapsed_ms": 516,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/organization",
+      "status_code": 200,
+      "final_url": "https://crd.lk/organization",
+      "redirects": [],
+      "elapsed_ms": 703,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/wingAeronautical Wing",
+      "status_code": 200,
+      "final_url": "https://crd.lk/wingAeronautical%20Wing",
+      "redirects": [],
+      "elapsed_ms": 398,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/wingAmmo & Explosive Wing",
+      "status_code": 200,
+      "final_url": "https://crd.lk/wingAmmo%20&%20Explosive%20Wing",
+      "redirects": [],
+      "elapsed_ms": 397,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/wingArmament & Ballistics Wing",
+      "status_code": 200,
+      "final_url": "https://crd.lk/wingArmament%20&%20Ballistics%20Wing",
+      "redirects": [],
+      "elapsed_ms": 858,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/wingCyber Security Wing",
+      "status_code": 200,
+      "final_url": "https://crd.lk/wingCyber%20Security%20Wing",
+      "redirects": [],
+      "elapsed_ms": 385,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/wingElectrical & Mechanical Wing",
+      "status_code": 200,
+      "final_url": "https://crd.lk/wingElectrical%20&%20Mechanical%20Wing",
+      "redirects": [],
+      "elapsed_ms": 421,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/wingIT & GIS Wing",
+      "status_code": 200,
+      "final_url": "https://crd.lk/wingIT%20&%20GIS%20Wing",
+      "redirects": [],
+      "elapsed_ms": 502,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/wingMarine Wing",
+      "status_code": 200,
+      "final_url": "https://crd.lk/wingMarine%20Wing",
+      "redirects": [],
+      "elapsed_ms": 563,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://crd.lk/wingNano and Modern Technology Wing",
+      "status_code": 200,
+      "final_url": "https://crd.lk/wingNano%20and%20Modern%20Technology%20Wing",
+      "redirects": [],
+      "elapsed_ms": 378,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://crd.lk/",
-      "path": "audit.output/crd.lk/20261115.0907/snapshots/page-01-318130d5ec05.html",
-      "sha256": "318130d5ec051ec4b37a65720df7cb86593d48c1efb75751614ff7f721c4b7b3",
-      "bytes": 11956
-    },
-    {
-      "url": "http://crd.lk/",
-      "path": "audit.output/crd.lk/20261115.0907/snapshots/page-02-b5b763e198e4.html",
-      "sha256": "b5b763e198e4875ef183e135eaa7fdb01ac3b2a1fe05b58946eaf340c3b7d022",
-      "bytes": 11955
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-01-bd4e4708410a.html",
+      "sha256": "bd4e4708410a9bb86eb2b4c1d18d3b9def035109a230fdce43595d1646ea404c",
+      "bytes": 189874
     },
     {
       "url": "https://crd.lk/",
-      "path": "audit.output/crd.lk/20261115.0907/snapshots/page-03-96d958b09335.html",
-      "sha256": "96d958b093350e3a44240ac49be3e08cef5f0f8510566ce0d2a710401b2e3671",
-      "bytes": 11924
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-02-08767bddca88.html",
+      "sha256": "08767bddca8819da9652f4e9ffc2b43460f6037337eb339b6013d6246d7aa5f7",
+      "bytes": 189874
     },
     {
-      "url": "http://crd.lk/",
-      "path": "audit.output/crd.lk/20261115.0907/snapshots/page-04-f8f6c85e03f2.html",
-      "sha256": "f8f6c85e03f2194815d40c95172281a8cf4b69698604a2b04f791fce81745733",
-      "bytes": 11969
+      "url": "https://crd.lk/",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-03-31bcd7269565.html",
+      "sha256": "31bcd72695654bcf4c7c250a302fa12be8d68cde9065a083634f5513314bfa13",
+      "bytes": 189874
+    },
+    {
+      "url": "https://crd.lk/",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-04-367984814d47.html",
+      "sha256": "367984814d47d29ab696f6bb097594d3caf34eca7e553fe5bbe42c580677ad25",
+      "bytes": 189874
+    },
+    {
+      "url": "https://crd.lk/contact",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-05-2a948e76b90e.html",
+      "sha256": "2a948e76b90e53fa43fe27af3485114e07e08589f6c0a937ed23f47b84c9a7cc",
+      "bytes": 30162
+    },
+    {
+      "url": "https://crd.lk/organization",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-06-3978274b4f5b.html",
+      "sha256": "3978274b4f5b7b0b8c9b78f8c0bf4f5fe67f9a8b05e7a61d32cebf20a68a2c43",
+      "bytes": 30963
+    },
+    {
+      "url": "https://crd.lk/wingAeronautical%20Wing",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-07-aa5bd9b020e0.html",
+      "sha256": "aa5bd9b020e0fe1f2d5fe93ff3aa4b7cdc56ab2704bdd068cb551060d6a49e6c",
+      "bytes": 40762
+    },
+    {
+      "url": "https://crd.lk/wingAmmo%20&%20Explosive%20Wing",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-08-3259f06103ec.html",
+      "sha256": "3259f06103ec723e186305010cc56d7f27968b5760644e64981c3f4f5e7b64d3",
+      "bytes": 32533
+    },
+    {
+      "url": "https://crd.lk/wingArmament%20&%20Ballistics%20Wing",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-09-2e41cb8e15f0.html",
+      "sha256": "2e41cb8e15f024202373f652f92e03a7cee36309503d6e37af343fb61662bc6b",
+      "bytes": 79450
+    },
+    {
+      "url": "https://crd.lk/wingCyber%20Security%20Wing",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-10-9dbefd6915e5.html",
+      "sha256": "9dbefd6915e51ca36f7b47d9d77c3550bad644286b44af6caf77cedf8597f23b",
+      "bytes": 42833
+    },
+    {
+      "url": "https://crd.lk/wingElectrical%20&%20Mechanical%20Wing",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-11-1c9c1d9ac092.html",
+      "sha256": "1c9c1d9ac0923fe998a7924a4241b3f6b8b1f4ac213f2737a8cc09c54b7908f6",
+      "bytes": 52119
+    },
+    {
+      "url": "https://crd.lk/wingIT%20&%20GIS%20Wing",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-12-58d359dcf378.html",
+      "sha256": "58d359dcf3788122baf25f4bd8e8cfa276fc2529509ff2704263678518d111e3",
+      "bytes": 69840
+    },
+    {
+      "url": "https://crd.lk/wingMarine%20Wing",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-13-6e5134784c4b.html",
+      "sha256": "6e5134784c4bdbe9c8dd265844c64fab041982b477d9b59a3ec98f18cbe3f39e",
+      "bytes": 38252
+    },
+    {
+      "url": "https://crd.lk/wingNano%20and%20Modern%20Technology%20Wing",
+      "path": "audit.output/crd.lk/20261116.0908/snapshots/page-14-0999574de649.html",
+      "sha256": "0999574de64937f86e0ebee62c85c39e76e15d828193e9129dbca478507e2020",
+      "bytes": 36698
     }
   ],
   "reviewer_decisions": [],
@@ -206,8 +1282,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -219,26 +1295,26 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
@@ -276,9 +1352,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: and traditional tea party giving the prominence to the military tradition and Sri Lankan culture. Read More CDRD PARTICI"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -306,7 +1401,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.42.157.143",
+    "egress_ip": "13.66.168.20",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

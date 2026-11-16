@@ -1,8 +1,8 @@
 # Website Audit: https://pasdunrata.com/
 
-- Completed: 2026-11-15 09:16
+- Completed: 2026-11-16 09:20
 - Overall result: 🔴 Level 1
-- Vantage: 3.42.157.143 (US, github-actions)
+- Vantage: 13.66.168.20 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

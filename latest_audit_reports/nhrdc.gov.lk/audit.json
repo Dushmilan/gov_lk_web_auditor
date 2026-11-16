@@ -1,18 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c4a7df9f-44c6-4fc5-95c9-66c168eefa2e",
+  "audit_id": "3afbbf68-1c22-48e4-b819-396f6d9a7f99",
   "url": "https://nhrdc.gov.lk/",
   "normalized_url": "https://nhrdc.gov.lk/",
-  "started_at": "2026-11-15T09:38:43.004779+05:30",
-  "completed_at": "2026-11-15T09:38:46.646017+05:30",
+  "started_at": "2026-11-16T09:46:53.014057+05:30",
+  "completed_at": "2026-11-16T09:46:59.686410+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "http_available: Every repeated HTTP probe failed: [403, 403, 403, 403]"
     ]
   },
   "evidence": [
@@ -20,89 +17,59 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-15T09:38:43.345490+05:30"
+      "observed_at": "2026-11-16T09:46:53.354153+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-15T09:38:43.345504+05:30"
+      "observed_at": "2026-11-16T09:46:53.354173+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-15T09:38:43.487322+05:30"
+      "observed_at": "2026-11-16T09:46:53.773298+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://nhrdc.gov.lk/",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 403 at https://nhrdc.gov.lk/",
       "source": "https://nhrdc.gov.lk/",
-      "observed_at": "2026-11-15T09:38:46.632924+05:30"
+      "observed_at": "2026-11-16T09:46:59.684303+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://nhrdc.gov.lk/",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 403 at http://nhrdc.gov.lk/",
       "source": "http://nhrdc.gov.lk/",
-      "observed_at": "2026-11-15T09:38:46.632934+05:30"
+      "observed_at": "2026-11-16T09:46:59.684322+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://nhrdc.gov.lk/",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 403 at https://nhrdc.gov.lk/",
       "source": "https://nhrdc.gov.lk/",
-      "observed_at": "2026-11-15T09:38:46.632937+05:30"
+      "observed_at": "2026-11-16T09:46:59.684326+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://nhrdc.gov.lk/",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 403 at http://nhrdc.gov.lk/",
       "source": "http://nhrdc.gov.lk/",
-      "observed_at": "2026-11-15T09:38:46.632939+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://nhrdc.gov.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://nhrdc.gov.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://nhrdc.gov.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://nhrdc.gov.lk/",
-      "data": {
-        "value": "0950635027"
-      }
+      "observed_at": "2026-11-16T09:46:59.684329+05:30"
     },
     {
       "check": "page_text",
       "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "detail": "Only 186 visible characters across 4 pages; below substance threshold 200",
       "source": "https://nhrdc.gov.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
+      "observed_at": "2026-11-16T09:46:59.685864+05:30"
     }
   ],
   "observations": [
@@ -129,65 +96,65 @@
     },
     {
       "url": "https://nhrdc.gov.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://nhrdc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 278,
-      "content_type": "text/html",
+      "elapsed_ms": 234,
+      "content_type": "text/html; charset=iso-8859-1",
       "error": null
     },
     {
       "url": "http://nhrdc.gov.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "http://nhrdc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 142,
-      "content_type": "text/html",
+      "elapsed_ms": 358,
+      "content_type": "text/html; charset=iso-8859-1",
       "error": null
     },
     {
       "url": "https://nhrdc.gov.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://nhrdc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 281,
-      "content_type": "text/html",
+      "elapsed_ms": 237,
+      "content_type": "text/html; charset=iso-8859-1",
       "error": null
     },
     {
       "url": "http://nhrdc.gov.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "http://nhrdc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 140,
-      "content_type": "text/html",
+      "elapsed_ms": 2644,
+      "content_type": "text/html; charset=iso-8859-1",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://nhrdc.gov.lk/",
-      "path": "audit.output/nhrdc.gov.lk/20261115.0938/snapshots/page-01-439a6c2e269d.html",
-      "sha256": "439a6c2e269d95bc5843a4e601f2db1760e786ba291b5045fdf9328f90fab40d",
-      "bytes": 12047
+      "path": "audit.output/nhrdc.gov.lk/20261116.0946/snapshots/page-01-415ff807abb2.html",
+      "sha256": "415ff807abb2fd49ce840d67bf14cb4d647e78afa9ab115c2b2dd8c8614928dd",
+      "bytes": 358
     },
     {
       "url": "http://nhrdc.gov.lk/",
-      "path": "audit.output/nhrdc.gov.lk/20261115.0938/snapshots/page-02-8ee1dd25b318.html",
-      "sha256": "8ee1dd25b3189c75ba0a6efc2373eb242163544d7f65453edbf5c885b452f8de",
-      "bytes": 11945
+      "path": "audit.output/nhrdc.gov.lk/20261116.0946/snapshots/page-02-415ff807abb2.html",
+      "sha256": "415ff807abb2fd49ce840d67bf14cb4d647e78afa9ab115c2b2dd8c8614928dd",
+      "bytes": 358
     },
     {
       "url": "https://nhrdc.gov.lk/",
-      "path": "audit.output/nhrdc.gov.lk/20261115.0938/snapshots/page-03-00f3d75359c4.html",
-      "sha256": "00f3d75359c4b3af2f66e042afba757423c4a15f2140123db0d16e1032c16fdc",
-      "bytes": 11937
+      "path": "audit.output/nhrdc.gov.lk/20261116.0946/snapshots/page-03-415ff807abb2.html",
+      "sha256": "415ff807abb2fd49ce840d67bf14cb4d647e78afa9ab115c2b2dd8c8614928dd",
+      "bytes": 358
     },
     {
       "url": "http://nhrdc.gov.lk/",
-      "path": "audit.output/nhrdc.gov.lk/20261115.0938/snapshots/page-04-c28e31de4c70.html",
-      "sha256": "c28e31de4c70b0c9cffd0d29e9b636f9a82585cca968bff409417208ac02efe8",
-      "bytes": 12011
+      "path": "audit.output/nhrdc.gov.lk/20261116.0946/snapshots/page-04-415ff807abb2.html",
+      "sha256": "415ff807abb2fd49ce840d67bf14cb4d647e78afa9ab115c2b2dd8c8614928dd",
+      "bytes": 358
     }
   ],
   "reviewer_decisions": [],
@@ -203,8 +170,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
       "executed": true,
       "checks": [
         {
@@ -217,43 +184,43 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 186 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 186 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 186 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 186 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -303,7 +270,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.42.157.143",
+    "egress_ip": "13.66.168.20",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b559c6b0-4f78-4db7-a09d-cd423cc48368",
+  "audit_id": "aa24920d-918a-4107-b934-4060aa180580",
   "url": "https://www.cfhc.gov.lk/",
   "normalized_url": "https://www.cfhc.gov.lk/",
-  "started_at": "2026-11-15T09:23:21.482433+05:30",
-  "completed_at": "2026-11-15T09:23:24.976962+05:30",
+  "started_at": "2026-11-16T09:28:50.301834+05:30",
+  "completed_at": "2026-11-16T09:28:54.751783+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
@@ -15,9 +15,7 @@
       "hosting_configured: No usable page was inspected",
       "http_available: An HTTP probe was transient",
       "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 111] Connection refused",
-      "tls_hostname_matches: [Errno 111] Connection refused"
+      "tls_browser_trusted: Browser TLS check did not complete"
     ]
   },
   "evidence": [
@@ -25,47 +23,53 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-15T09:23:21.790174+05:30"
+      "observed_at": "2026-11-16T09:28:50.911099+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-15T09:23:21.790187+05:30"
+      "observed_at": "2026-11-16T09:28:50.911120+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-11-15T09:23:21.882502+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-16T09:28:51.330297+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 403 at https://www.cfhc.gov.lk/",
       "source": "https://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-15T09:23:24.976820+05:30"
+      "observed_at": "2026-11-16T09:28:54.750110+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "detail": "Probe 2: Unsafe redirect blocked: [Errno -2] Name or service not known",
       "source": "http://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-15T09:23:24.976831+05:30"
+      "observed_at": "2026-11-16T09:28:54.750129+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 403 at https://www.cfhc.gov.lk/",
       "source": "https://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-15T09:23:24.976833+05:30"
+      "observed_at": "2026-11-16T09:28:54.750133+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "detail": "Probe 4: Unsafe redirect blocked: [Errno -2] Name or service not known",
       "source": "http://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-15T09:23:24.976835+05:30"
+      "observed_at": "2026-11-16T09:28:54.750136+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 258 visible characters across 2 pages",
+      "source": "https://www.cfhc.gov.lk/"
     }
   ],
   "observations": [
@@ -85,19 +89,19 @@
     },
     {
       "host": "www.cfhc.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "status": "valid",
+      "expires_at": "2027-01-12T09:35:59+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "https://www.cfhc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 444,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://www.cfhc.gov.lk/",
@@ -106,16 +110,16 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "Unsafe redirect blocked: [Errno -2] Name or service not known"
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "https://www.cfhc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 440,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://www.cfhc.gov.lk/",
@@ -124,10 +128,23 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "Unsafe redirect blocked: [Errno -2] Name or service not known"
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.cfhc.gov.lk/",
+      "path": "audit.output/www.cfhc.gov.lk/20261116.0928/snapshots/page-01-7271dd5c11fb.html",
+      "sha256": "7271dd5c11fb9a1052a5e91a09afbe7d148fd3388dc51c338df62a0a16f06739",
+      "bytes": 1242
+    },
+    {
+      "url": "https://www.cfhc.gov.lk/",
+      "path": "audit.output/www.cfhc.gov.lk/20261116.0928/snapshots/page-02-7271dd5c11fb.html",
+      "sha256": "7271dd5c11fb9a1052a5e91a09afbe7d148fd3388dc51c338df62a0a16f06739",
+      "bytes": 1242
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,7 +159,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
       "executed": true,
       "checks": [
         {
@@ -196,14 +213,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -241,7 +258,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.42.157.143",
+    "egress_ip": "13.66.168.20",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

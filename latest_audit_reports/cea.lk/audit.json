@@ -1,18 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "7999651e-cf0f-4665-be3c-d65c90b6f4b5",
+  "audit_id": "754405c5-615c-4b75-b791-843e6b0224bd",
   "url": "https://cea.lk/",
   "normalized_url": "https://cea.lk/",
-  "started_at": "2026-11-15T09:17:56.646289+05:30",
-  "completed_at": "2026-11-15T09:18:01.275363+05:30",
+  "started_at": "2026-11-16T09:21:51.247888+05:30",
+  "completed_at": "2026-11-16T09:23:09.620358+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -20,88 +26,2156 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-15T09:17:57.243911+05:30"
+      "observed_at": "2026-11-16T09:21:52.473230+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-15T09:17:57.243924+05:30"
+      "observed_at": "2026-11-16T09:21:52.473253+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-15T09:17:57.740919+05:30"
+      "observed_at": "2026-11-16T09:21:53.193973+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://cea.lk/",
       "source": "https://cea.lk/",
-      "observed_at": "2026-11-15T09:18:01.259675+05:30"
+      "observed_at": "2026-11-16T09:23:09.392329+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at http://cea.lk/",
       "source": "http://cea.lk/",
-      "observed_at": "2026-11-15T09:18:01.259686+05:30"
+      "observed_at": "2026-11-16T09:23:09.392347+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://cea.lk/",
       "source": "https://cea.lk/",
-      "observed_at": "2026-11-15T09:18:01.259688+05:30"
+      "observed_at": "2026-11-16T09:23:09.392351+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at http://cea.lk/",
       "source": "http://cea.lk/",
-      "observed_at": "2026-11-15T09:18:01.259691+05:30"
+      "observed_at": "2026-11-16T09:23:09.392354+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://cea.lk/web/index.php/si",
+      "source": "https://cea.lk/web/index.php/si",
+      "observed_at": "2026-11-16T09:23:09.392356+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://cea.lk/web/index.php/ta",
+      "source": "https://cea.lk/web/index.php/ta",
+      "observed_at": "2026-11-16T09:23:09.392359+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://cea.lk/web/index.php/en",
+      "source": "https://cea.lk/web/index.php/en",
+      "observed_at": "2026-11-16T09:23:09.392361+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at http://cea.lk/web/index.php/si",
+      "source": "http://cea.lk/web/index.php/si",
+      "observed_at": "2026-11-16T09:23:09.392363+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at http://cea.lk/web/index.php/ta",
+      "source": "http://cea.lk/web/index.php/ta",
+      "observed_at": "2026-11-16T09:23:09.392366+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at http://cea.lk/web/index.php/en",
+      "source": "http://cea.lk/web/index.php/en",
+      "observed_at": "2026-11-16T09:23:09.392368+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "observed_at": "2026-11-16T09:23:09.392370+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx",
+      "source": "https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx",
+      "observed_at": "2026-11-16T09:23:09.392373+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "observed_at": "2026-11-16T09:23:09.392375+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "observed_at": "2026-11-16T09:23:09.392377+05:30"
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://cea.lk/",
+      "detail": "Published phone: 011-2873447",
+      "source": "https://cea.lk/web/index.php/si",
       "data": {
-        "value": "0950635027"
+        "value": "011-2873447"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://cea.lk/",
+      "detail": "Published phone: 011-2872419",
+      "source": "https://cea.lk/web/index.php/si",
       "data": {
-        "value": "0950635027"
+        "value": "011-2872419"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://cea.lk/",
+      "detail": "Published phone: 011-2872278",
+      "source": "https://cea.lk/web/index.php/si",
       "data": {
-        "value": "0950635027"
+        "value": "011-2872278"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://cea.lk/",
+      "detail": "Published phone: 011-2873448 ",
+      "source": "https://cea.lk/web/index.php/si",
       "data": {
-        "value": "0950635027"
+        "value": "011-2873448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2888999 ",
+      "source": "https://cea.lk/web/index.php/si",
+      "data": {
+        "value": "011-2888999 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873447",
+      "source": "https://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2873447"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872419",
+      "source": "https://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2872419"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872278",
+      "source": "https://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2872278"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873448 ",
+      "source": "https://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2873448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2888999 ",
+      "source": "https://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2888999 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873447",
+      "source": "https://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2873447"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872419",
+      "source": "https://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2872419"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872278",
+      "source": "https://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2872278"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873448 ",
+      "source": "https://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2873448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2888999 ",
+      "source": "https://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2888999 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://cea.lk/web/index.php/en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://cea.lk/web/index.php/en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx",
+      "source": "https://cea.lk/web/index.php/en",
+      "data": {
+        "value": "https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873447",
+      "source": "http://cea.lk/web/index.php/si",
+      "data": {
+        "value": "011-2873447"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872419",
+      "source": "http://cea.lk/web/index.php/si",
+      "data": {
+        "value": "011-2872419"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872278",
+      "source": "http://cea.lk/web/index.php/si",
+      "data": {
+        "value": "011-2872278"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873448 ",
+      "source": "http://cea.lk/web/index.php/si",
+      "data": {
+        "value": "011-2873448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2888999 ",
+      "source": "http://cea.lk/web/index.php/si",
+      "data": {
+        "value": "011-2888999 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873447",
+      "source": "http://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2873447"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872419",
+      "source": "http://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2872419"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872278",
+      "source": "http://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2872278"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873448 ",
+      "source": "http://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2873448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2888999 ",
+      "source": "http://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "011-2888999 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://cea.lk/web/index.php/ta",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873447",
+      "source": "http://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2873447"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872419",
+      "source": "http://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2872419"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872278",
+      "source": "http://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2872278"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873448 ",
+      "source": "http://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2873448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2888999 ",
+      "source": "http://cea.lk/web/index.php/en",
+      "data": {
+        "value": "011-2888999 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://cea.lk/web/index.php/en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "http://cea.lk/web/index.php/en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx",
+      "source": "http://cea.lk/web/index.php/en",
+      "data": {
+        "value": "http://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000066 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000066 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000045 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000045 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004262 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000004262 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 08 656 0 302 3",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "08 656 0 302 3"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000132 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000132 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000123 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000123 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 410 410 348 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 410 410 348 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000034788 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000034788 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000727 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000727 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000052 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000052 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000089 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000089 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000048 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000048 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000069 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000069 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000006575 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000006575 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000018335 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000018335 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000083 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000083 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000080 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000080 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000140 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000140 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000117 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000117 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000090 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000090 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004599 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000004599 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000005036 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000005036 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004777 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000004777 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000073 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000073 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000087 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000087 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000007285 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000007285 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000094 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000094 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000103 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000103 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000043 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000043 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000039182 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000039182 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000068542 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000068542 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000102 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000102 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000168393 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000168393 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000032 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000032 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000034 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000034 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000086 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000086 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000188 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000188 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000106 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000106 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000060 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000060 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000111 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000053 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000053 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000079 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000079 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000088 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000088 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000033 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000033 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000126 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000126 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000127 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000127 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000068992 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000068992 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000133 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000133 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000017 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000017 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000091 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000091 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000034536 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000034536 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000138 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000138 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 637 0 811 0 0 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 637 0 811 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000068 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000068 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000134 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000134 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000142 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000142 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000058 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000058 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000108 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000108 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000116 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000116 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000095 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000095 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000047 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000047 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000065 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000065 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000102787 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000102787 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000098 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000098 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000103491 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000103491 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000104 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000104 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000074 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000074 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000041 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000041 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000096 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000096 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000005622 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000005622 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000072 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000072 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000101 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000101 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000135 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000135 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000141 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000141 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000046 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000046 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000093 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000093 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000118 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000118 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000085 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000085 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000044 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000044 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000061 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000061 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000115 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000115 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000081 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000081 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000089830 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000089830 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000051 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000051 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000121 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000121 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000112 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000112 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000070 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000070 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004335 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000004335 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000038 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000038 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000076 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000076 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000092 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000092 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000124 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000124 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000006501 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000006501 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000084 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000084 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 287 0 287 2",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 0 287 0 287 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000057 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000057 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000130 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000130 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000005820 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000005820 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000035 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000035 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000120 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000120 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000168421 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000168421 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000005894 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000005894 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000006839 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000006839 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000110 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000110 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000097 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000097 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000006298 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000006298 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000007021 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000007021 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 656 0 656 0 9",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 656 0 656 0 9"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000054 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000054 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000125 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000125 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000105 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000105 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 410 0 0 0 10",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 0 410 0 0 0 10"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000141809 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000141809 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 08 604 656 60",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "08 604 656 60"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000006153 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000006153 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000089916 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000089916 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000420 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000420 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000109 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000109 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000078 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000078 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000143 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000143 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000036 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000036 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000122 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000122 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000049 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000049 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000042 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000042 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000082 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000082 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 0 0 0 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 0 0 0 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000139 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000064 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000064 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000055 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000055 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000077 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000077 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000037 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000037 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000113 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000113 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 160 000000",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 160 000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000136 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000136 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000142932 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000142932 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000005652 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000005652 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000003920 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000003920 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000180930 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000180930 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000071 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000071 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000114 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000114 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 522 0 462 5",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 0 522 0 462 5"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000040 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000063 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000063 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 0 0 0 0 0 0 348 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 0 0 0 0 0 0 348 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000128 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000128 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000142458 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000142458 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000050 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000050 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 872 698 698 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0 872 698 698 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000069301 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000069301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000075 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000075 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000131 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000131 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000006328 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000006328 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004091 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000004091 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000107 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000107 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000004063 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000004063 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000067 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000067 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000100 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000100 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000038605 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000038605 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000005218 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000005218 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000062 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000062 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000056 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000056 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000099 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000099 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000119 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000119 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000039 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000039 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000059 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000059 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000005482 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000005482 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000168106 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000168106 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000129 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000129 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000137 ",
+      "source": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "data": {
+        "value": "0000000137 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873447",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "data": {
+        "value": "011-2873447"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872419",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "data": {
+        "value": "011-2872419"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872278",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "data": {
+        "value": "011-2872278"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873448 ",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "data": {
+        "value": "011-2873448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2888999 ",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "data": {
+        "value": "011-2888999 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "data": {
+        "value": "https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 06 November 2026",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "data": {
+        "value": "06 November 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873447",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "data": {
+        "value": "011-2873447"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872419",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "data": {
+        "value": "011-2872419"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2872278",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "data": {
+        "value": "011-2872278"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2873448 ",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "data": {
+        "value": "011-2873448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2888999 ",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "data": {
+        "value": "011-2888999 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "data": {
+        "value": "https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 07 February 2025",
+      "source": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "data": {
+        "value": "07 February 2025"
       }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 86864 visible characters across 14 pages",
       "source": "https://cea.lk/"
     }
   ],
@@ -132,7 +2206,7 @@
       "status_code": 200,
       "final_url": "https://cea.lk/",
       "redirects": [],
-      "elapsed_ms": 957,
+      "elapsed_ms": 1391,
       "content_type": "text/html",
       "error": null
     },
@@ -141,7 +2215,7 @@
       "status_code": 200,
       "final_url": "http://cea.lk/",
       "redirects": [],
-      "elapsed_ms": 479,
+      "elapsed_ms": 719,
       "content_type": "text/html",
       "error": null
     },
@@ -150,7 +2224,7 @@
       "status_code": 200,
       "final_url": "https://cea.lk/",
       "redirects": [],
-      "elapsed_ms": 925,
+      "elapsed_ms": 646,
       "content_type": "text/html",
       "error": null
     },
@@ -159,35 +2233,185 @@
       "status_code": 200,
       "final_url": "http://cea.lk/",
       "redirects": [],
-      "elapsed_ms": 511,
+      "elapsed_ms": 1149,
       "content_type": "text/html",
+      "error": null
+    },
+    {
+      "url": "https://cea.lk/web/index.php/si",
+      "status_code": 200,
+      "final_url": "https://cea.lk/web/index.php/si",
+      "redirects": [],
+      "elapsed_ms": 2078,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://cea.lk/web/index.php/ta",
+      "status_code": 200,
+      "final_url": "https://cea.lk/web/index.php/ta",
+      "redirects": [],
+      "elapsed_ms": 1376,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://cea.lk/web/index.php/en",
+      "status_code": 200,
+      "final_url": "https://cea.lk/web/index.php/en",
+      "redirects": [],
+      "elapsed_ms": 1381,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://cea.lk/web/index.php/si",
+      "status_code": 200,
+      "final_url": "http://cea.lk/web/index.php/si",
+      "redirects": [],
+      "elapsed_ms": 1175,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://cea.lk/web/index.php/ta",
+      "status_code": 200,
+      "final_url": "http://cea.lk/web/index.php/ta",
+      "redirects": [],
+      "elapsed_ms": 1918,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "http://cea.lk/web/index.php/en",
+      "status_code": 200,
+      "final_url": "http://cea.lk/web/index.php/en",
+      "redirects": [],
+      "elapsed_ms": 1103,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "status_code": 200,
+      "final_url": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "redirects": [],
+      "elapsed_ms": 1224,
+      "content_type": "application/pdf",
+      "error": null
+    },
+    {
+      "url": "https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx",
+      "status_code": 200,
+      "final_url": "https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx",
+      "redirects": [],
+      "elapsed_ms": 1527,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "error": null
+    },
+    {
+      "url": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "status_code": 200,
+      "final_url": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "redirects": [],
+      "elapsed_ms": 1175,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "status_code": 200,
+      "final_url": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "redirects": [],
+      "elapsed_ms": 1468,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://cea.lk/",
-      "path": "audit.output/cea.lk/20261115.0917/snapshots/page-01-6b3dd1c138b6.html",
-      "sha256": "6b3dd1c138b67155ee19b0c3ffbba169d709c5ee1fa44ed8d58f143a9a6015ef",
-      "bytes": 12106
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-01-58d0c709d86f.html",
+      "sha256": "58d0c709d86f7dd191055a311344206c521f083d26f864c19fc470932d53503b",
+      "bytes": 2069
     },
     {
       "url": "http://cea.lk/",
-      "path": "audit.output/cea.lk/20261115.0917/snapshots/page-02-e4fd6f8887f9.html",
-      "sha256": "e4fd6f8887f961e2546d1f6f4ec66ada7aa8e4349ddcfda250e6e0c34be72f21",
-      "bytes": 12101
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-02-58d0c709d86f.html",
+      "sha256": "58d0c709d86f7dd191055a311344206c521f083d26f864c19fc470932d53503b",
+      "bytes": 2069
     },
     {
       "url": "https://cea.lk/",
-      "path": "audit.output/cea.lk/20261115.0917/snapshots/page-03-a14185883703.html",
-      "sha256": "a141858837032bc77daeae196dcc4d2008df2fa9c6d30a343d11072845a606ec",
-      "bytes": 12122
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-03-58d0c709d86f.html",
+      "sha256": "58d0c709d86f7dd191055a311344206c521f083d26f864c19fc470932d53503b",
+      "bytes": 2069
     },
     {
       "url": "http://cea.lk/",
-      "path": "audit.output/cea.lk/20261115.0917/snapshots/page-04-e1def757fcd3.html",
-      "sha256": "e1def757fcd3cee79b1f9f55b4415fd345ddfaea3af360919253cfe4568d6b45",
-      "bytes": 12142
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-04-58d0c709d86f.html",
+      "sha256": "58d0c709d86f7dd191055a311344206c521f083d26f864c19fc470932d53503b",
+      "bytes": 2069
+    },
+    {
+      "url": "https://cea.lk/web/index.php/si",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-05-e7acb84131dd.html",
+      "sha256": "e7acb84131dd841888690f3aec454d186d80c9babd03751f652124b42bec18d7",
+      "bytes": 56437
+    },
+    {
+      "url": "https://cea.lk/web/index.php/ta",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-06-c8728243f481.html",
+      "sha256": "c8728243f48190318e9337875c6473f8b98c2539d1dc8773144a4209e9892715",
+      "bytes": 71588
+    },
+    {
+      "url": "https://cea.lk/web/index.php/en",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-07-a571d267d7c3.html",
+      "sha256": "a571d267d7c3dc3c000ab18f1aa3b8faabcea4b2e8e9c01bb0ff776e2f68c15e",
+      "bytes": 48553
+    },
+    {
+      "url": "http://cea.lk/web/index.php/si",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-08-1295718c26f5.html",
+      "sha256": "1295718c26f50e673d6cc7c7be06c67b1266006d0a8969f03eaa13f17f559210",
+      "bytes": 56426
+    },
+    {
+      "url": "http://cea.lk/web/index.php/ta",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-09-007bde0bcf3e.html",
+      "sha256": "007bde0bcf3e3fd102f8ed0bee16aeae992fed1a6e5eeff085fefed5ca5c6404",
+      "bytes": 71577
+    },
+    {
+      "url": "http://cea.lk/web/index.php/en",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-10-1310769ff8ad.html",
+      "sha256": "1310769ff8ad7c4b7645b96af510da744208553006736b1ddd36c6c4e361680f",
+      "bytes": 48542
+    },
+    {
+      "url": "https://cea.lk/web/images/pdf/2021/SWM/New_Microsoft_Office_Excel_Worksheet_sinhala.pdf",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-11-a41c2805667e.html",
+      "sha256": "a41c2805667e40df5a684d7375f1ec1b7121c0ba5e00d9b90eee50717e94a90b",
+      "bytes": 327466
+    },
+    {
+      "url": "https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-12-013fe6363bdb.html",
+      "sha256": "013fe6363bdb09e2eeea33ec56cd6a687da3fef163f5fa1661d56ff26b97c257",
+      "bytes": 54828
+    },
+    {
+      "url": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1747",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-13-a26665b24a2a.html",
+      "sha256": "a26665b24a2ab06b2a79262b63198de7bade1e98c6d3788994da34456c868044",
+      "bytes": 39567
+    },
+    {
+      "url": "https://cea.lk/web/?option=com_content&view=article&layout=edit&id=1661",
+      "path": "audit.output/cea.lk/20261116.0921/snapshots/page-14-7a4b2b6ae481.html",
+      "sha256": "7a4b2b6ae4817f936d9f42fa5119c456422c4822178b8d87a16a99a60507fdc7",
+      "bytes": 38817
     }
   ],
   "reviewer_decisions": [],
@@ -203,8 +2427,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -216,26 +2440,26 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
@@ -273,9 +2497,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found; No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -303,7 +2546,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.42.157.143",
+    "egress_ip": "13.66.168.20",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

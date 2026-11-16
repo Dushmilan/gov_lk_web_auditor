@@ -1,18 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "1b93d157-7960-4551-a7b8-01f0b45087df",
+  "audit_id": "d7be5fb4-90da-4e49-9e8e-65da27d0f5c8",
   "url": "https://www.neh.health.gov.lk/",
   "normalized_url": "https://www.neh.health.gov.lk/",
-  "started_at": "2026-11-15T09:29:54.837821+05:30",
-  "completed_at": "2026-11-15T09:30:02.343036+05:30",
+  "started_at": "2026-11-16T09:36:11.552186+05:30",
+  "completed_at": "2026-11-16T09:38:24.050875+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -20,89 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-15T09:29:55.108911+05:30"
+      "observed_at": "2026-11-16T09:36:12.142861+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-15T09:29:55.108925+05:30"
+      "observed_at": "2026-11-16T09:36:12.142874+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-15T09:29:55.160529+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-11-16T09:36:22.406128+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.neh.health.gov.lk/",
-      "observed_at": "2026-11-15T09:30:02.313094+05:30"
+      "observed_at": "2026-11-16T09:38:24.050705+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.neh.health.gov.lk/",
-      "observed_at": "2026-11-15T09:30:02.313114+05:30"
+      "observed_at": "2026-11-16T09:38:24.050727+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.neh.health.gov.lk/",
-      "observed_at": "2026-11-15T09:30:02.313118+05:30"
+      "observed_at": "2026-11-16T09:38:24.050731+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.neh.health.gov.lk/",
-      "observed_at": "2026-11-15T09:30:02.313122+05:30"
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: webmaster@neh.health.gov.lk",
-      "source": "https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "data": {
-        "value": "webmaster@neh.health.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: webmaster@neh.health.gov.lk",
-      "source": "http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "data": {
-        "value": "webmaster@neh.health.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: webmaster@neh.health.gov.lk",
-      "source": "https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "data": {
-        "value": "webmaster@neh.health.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: webmaster@neh.health.gov.lk",
-      "source": "http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "data": {
-        "value": "webmaster@neh.health.gov.lk"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 120 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://www.neh.health.gov.lk/"
+      "observed_at": "2026-11-16T09:38:24.050734+05:30"
     }
   ],
   "observations": [
@@ -122,82 +85,49 @@
     },
     {
       "host": "www.neh.health.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-10T15:35:52+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.neh.health.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "redirects": [
-        "https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi"
-      ],
-      "elapsed_ms": 296,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.neh.health.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "redirects": [
-        "http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi"
-      ],
-      "elapsed_ms": 214,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.neh.health.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "redirects": [
-        "https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi"
-      ],
-      "elapsed_ms": 332,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.neh.health.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "redirects": [
-        "http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi"
-      ],
-      "elapsed_ms": 147,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "path": "audit.output/www.neh.health.gov.lk/20261115.0929/snapshots/page-01-9f5a877bd76b.html",
-      "sha256": "9f5a877bd76b18ebd39c1b1fd36a7d947ddc2383c8fa066cdee2dc52eb55ea6d",
-      "bytes": 7628
-    },
-    {
-      "url": "http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "path": "audit.output/www.neh.health.gov.lk/20261115.0929/snapshots/page-02-9f5a877bd76b.html",
-      "sha256": "9f5a877bd76b18ebd39c1b1fd36a7d947ddc2383c8fa066cdee2dc52eb55ea6d",
-      "bytes": 7628
-    },
-    {
-      "url": "https://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "path": "audit.output/www.neh.health.gov.lk/20261115.0929/snapshots/page-03-9f5a877bd76b.html",
-      "sha256": "9f5a877bd76b18ebd39c1b1fd36a7d947ddc2383c8fa066cdee2dc52eb55ea6d",
-      "bytes": 7628
-    },
-    {
-      "url": "http://www.neh.health.gov.lk/cgi-sys/suspendedpage.cgi",
-      "path": "audit.output/www.neh.health.gov.lk/20261115.0929/snapshots/page-04-9f5a877bd76b.html",
-      "sha256": "9f5a877bd76b18ebd39c1b1fd36a7d947ddc2383c8fa066cdee2dc52eb55ea6d",
-      "bytes": 7628
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -212,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -225,55 +155,55 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 120 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -311,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.42.157.143",
+    "egress_ip": "13.66.168.20",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
