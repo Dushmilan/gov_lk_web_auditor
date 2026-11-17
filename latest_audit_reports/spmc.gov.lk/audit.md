@@ -1,8 +1,8 @@
 # Website Audit: https://spmc.gov.lk/
 
-- Completed: 2026-11-16 09:39
+- Completed: 2026-11-17 11:39
 - Overall result: 🟠 Level 2
-- Vantage: 13.66.168.20 (US, github-actions)
+- Vantage: 20.161.55.185 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-10-30 |
+| published_update_date | ✅ | Published published update date: 2026-11-17 |

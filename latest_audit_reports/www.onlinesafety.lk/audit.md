@@ -1,8 +1,8 @@
 # Website Audit: https://www.onlinesafety.lk/
 
-- Completed: 2026-11-16 09:13
+- Completed: 2026-11-17 11:11
 - Overall result: ⚫ Level 0
-- Vantage: 13.66.168.20 (US, github-actions)
+- Vantage: 20.161.55.185 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,17 +14,17 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011); TLS certificate has expired
+[Errno -2] Name or service not known
 
 | Test | Result | Details |
 | --- | --- | --- |
-| dns_resolves | ✅ | Public DNS resolved |
+| dns_resolves | ❌ | [Errno -2] Name or service not known |
 | domain_not_parked | ❓ | No usable page was inspected |
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
 | http_available | ❓ | HTTP checks did not run |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011) |
-| tls_not_expired | ❌ | TLS certificate has expired |
+| tls_browser_trusted | ❓ | Browser TLS check did not complete |
+| tls_not_expired | ❓ | TLS expiry check did not run |
 | tls_hostname_matches | ❓ | TLS hostname check did not run |
