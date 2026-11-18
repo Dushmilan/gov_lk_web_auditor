@@ -1,8 +1,8 @@
 # Website Audit: https://www.agrimin.gov.lk/
 
-- Completed: 2026-11-17 12:02
+- Completed: 2026-11-18 11:24
 - Overall result: ⚫ Level 0
-- Vantage: 20.161.55.185 (US, github-actions)
+- Vantage: 4.155.199.137 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Detected generic hosting marker: under construction
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ❌ | Detected generic hosting marker: under construction |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://www.agrimin.gov.lk/: Probe 1: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1011) |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |

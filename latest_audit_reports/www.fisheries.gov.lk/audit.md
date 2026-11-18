@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-11-17 12:01
+- Completed: 2026-11-18 11:23
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.55.185 (US, github-actions)
+- Vantage: 4.155.199.137 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 16 November 2026 |
+| published_update_date | ✅ | Published published update date: 17 November 2026 |

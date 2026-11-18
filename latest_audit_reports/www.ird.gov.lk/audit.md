@@ -1,8 +1,8 @@
 # Website Audit: https://www.ird.gov.lk/
 
-- Completed: 2026-11-17 11:25
+- Completed: 2026-11-18 10:51
 - Overall result: 🔴 Level 1
-- Vantage: 20.161.55.185 (US, github-actions)
+- Vantage: 4.155.199.137 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 06) 13-08-2026 (87 phone numbers found); Email: fernando.rph@ird.gov.lk (44 email addresses found) |
+| reachable_contacts | ✅ | Phone: 06) 13-08-2026 (88 phone numbers found); Email: dissanayaka.nta@ird.gov.lk (44 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

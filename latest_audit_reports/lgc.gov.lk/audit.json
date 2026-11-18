@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c28a3fef-10b9-4c81-b6ec-811f5139ed78",
+  "audit_id": "2dbfd6e3-507d-4271-a11f-77919a488e0c",
   "url": "https://lgc.gov.lk/",
   "normalized_url": "https://lgc.gov.lk/",
-  "started_at": "2026-11-17T11:11:09.870730+05:30",
-  "completed_at": "2026-11-17T11:13:22.225938+05:30",
+  "started_at": "2026-11-18T10:36:07.824908+05:30",
+  "completed_at": "2026-11-18T10:37:33.574416+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,241 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-17T11:11:10.286569+05:30"
+      "observed_at": "2026-11-18T10:36:08.208057+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-17T11:11:10.286595+05:30"
+      "observed_at": "2026-11-18T10:36:08.208080+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-17T11:11:20.567938+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-18T10:36:08.882609+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://lgc.gov.lk/",
       "source": "https://lgc.gov.lk/",
-      "observed_at": "2026-11-17T11:13:22.225768+05:30"
+      "observed_at": "2026-11-18T10:37:33.426087+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://lgc.gov.lk/",
       "source": "http://lgc.gov.lk/",
-      "observed_at": "2026-11-17T11:13:22.225791+05:30"
+      "observed_at": "2026-11-18T10:37:33.426109+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://lgc.gov.lk/",
       "source": "https://lgc.gov.lk/",
-      "observed_at": "2026-11-17T11:13:22.225794+05:30"
+      "observed_at": "2026-11-18T10:37:33.426113+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://lgc.gov.lk/",
       "source": "http://lgc.gov.lk/",
-      "observed_at": "2026-11-17T11:13:22.225797+05:30"
+      "observed_at": "2026-11-18T10:37:33.426115+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://lgc.gov.lk/contact-us/",
+      "source": "https://lgc.gov.lk/index.php/contact-us/",
+      "observed_at": "2026-11-18T10:37:33.426118+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://lgc.gov.lk/need-services/",
+      "source": "https://lgc.gov.lk/need-services",
+      "observed_at": "2026-11-18T10:37:33.426120+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://lgc.gov.lk/why-lgc-2-0-2/",
+      "source": "https://lgc.gov.lk/index.php/why-lgc-2-0-2/",
+      "observed_at": "2026-11-18T10:37:33.426122+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://lgc.gov.lk/what-lgc-2-0-offers/",
+      "source": "https://lgc.gov.lk/index.php/what-lgc-2-0-offers/",
+      "observed_at": "2026-11-18T10:37:33.426125+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://lgc.gov.lk/request-cp-hosting/",
+      "source": "https://lgc.gov.lk/request-cp-hosting/",
+      "observed_at": "2026-11-18T10:37:33.426127+05:30"
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr",
+      "source": "https://lgc.gov.lk/",
+      "data": {
+        "value": "provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr",
+      "source": "https://lgc.gov.lk/",
+      "data": {
+        "value": "provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr",
+      "source": "https://lgc.gov.lk/",
+      "data": {
+        "value": "provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr",
+      "source": "https://lgc.gov.lk/",
+      "data": {
+        "value": "provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112369099",
+      "source": "https://lgc.gov.lk/contact-us/",
+      "data": {
+        "value": "+94112369099"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9099 ",
+      "source": "https://lgc.gov.lk/contact-us/",
+      "data": {
+        "value": "+94 11 236 9099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lgc-support@icta.lk",
+      "source": "https://lgc.gov.lk/contact-us/",
+      "data": {
+        "value": "lgc-support@icta.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lgcinfo@icta.lk",
+      "source": "https://lgc.gov.lk/contact-us/",
+      "data": {
+        "value": "lgcinfo@icta.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr",
+      "source": "https://lgc.gov.lk/contact-us/",
+      "data": {
+        "value": "provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2497900 ",
+      "source": "https://lgc.gov.lk/need-services/",
+      "data": {
+        "value": "011 2497900 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lgc-support@icta.lk",
+      "source": "https://lgc.gov.lk/need-services/",
+      "data": {
+        "value": "lgc-support@icta.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr",
+      "source": "https://lgc.gov.lk/need-services/",
+      "data": {
+        "value": "provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr",
+      "source": "https://lgc.gov.lk/why-lgc-2-0-2/",
+      "data": {
+        "value": "provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr",
+      "source": "https://lgc.gov.lk/what-lgc-2-0-offers/",
+      "data": {
+        "value": "provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9099 ",
+      "source": "https://lgc.gov.lk/request-cp-hosting/",
+      "data": {
+        "value": "+94 11 236 9099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lgcinfo@icta.lk",
+      "source": "https://lgc.gov.lk/request-cp-hosting/",
+      "data": {
+        "value": "lgcinfo@icta.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr",
+      "source": "https://lgc.gov.lk/request-cp-hosting/",
+      "data": {
+        "value": "provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 3881 visible characters across 9 pages",
+      "source": "https://lgc.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +280,161 @@
     },
     {
       "host": "lgc.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2027-01-10T19:40:11+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://lgc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://lgc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1003,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://lgc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://lgc.gov.lk/",
+      "redirects": [
+        "https://lgc.gov.lk/"
+      ],
+      "elapsed_ms": 1046,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://lgc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://lgc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1226,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://lgc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://lgc.gov.lk/",
+      "redirects": [
+        "https://lgc.gov.lk/"
+      ],
+      "elapsed_ms": 815,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lgc.gov.lk/index.php/contact-us/",
+      "status_code": 200,
+      "final_url": "https://lgc.gov.lk/contact-us/",
+      "redirects": [
+        "https://lgc.gov.lk/contact-us/"
+      ],
+      "elapsed_ms": 1089,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lgc.gov.lk/need-services",
+      "status_code": 200,
+      "final_url": "https://lgc.gov.lk/need-services/",
+      "redirects": [
+        "https://lgc.gov.lk/need-services/"
+      ],
+      "elapsed_ms": 790,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lgc.gov.lk/index.php/why-lgc-2-0-2/",
+      "status_code": 200,
+      "final_url": "https://lgc.gov.lk/why-lgc-2-0-2/",
+      "redirects": [
+        "https://lgc.gov.lk/why-lgc-2-0-2/"
+      ],
+      "elapsed_ms": 868,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lgc.gov.lk/index.php/what-lgc-2-0-offers/",
+      "status_code": 200,
+      "final_url": "https://lgc.gov.lk/what-lgc-2-0-offers/",
+      "redirects": [
+        "https://lgc.gov.lk/what-lgc-2-0-offers/"
+      ],
+      "elapsed_ms": 808,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lgc.gov.lk/request-cp-hosting/",
+      "status_code": 200,
+      "final_url": "https://lgc.gov.lk/request-cp-hosting/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 974,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://lgc.gov.lk/",
+      "path": "audit.output/lgc.gov.lk/20261118.1036/snapshots/page-01-2987eeff93d1.html",
+      "sha256": "2987eeff93d11d0427bf301cc5a0d028b6d6a12bc2e6567a6fc07aa8fdf4815e",
+      "bytes": 41797
+    },
+    {
+      "url": "https://lgc.gov.lk/",
+      "path": "audit.output/lgc.gov.lk/20261118.1036/snapshots/page-02-2987eeff93d1.html",
+      "sha256": "2987eeff93d11d0427bf301cc5a0d028b6d6a12bc2e6567a6fc07aa8fdf4815e",
+      "bytes": 41797
+    },
+    {
+      "url": "https://lgc.gov.lk/",
+      "path": "audit.output/lgc.gov.lk/20261118.1036/snapshots/page-03-2987eeff93d1.html",
+      "sha256": "2987eeff93d11d0427bf301cc5a0d028b6d6a12bc2e6567a6fc07aa8fdf4815e",
+      "bytes": 41797
+    },
+    {
+      "url": "https://lgc.gov.lk/",
+      "path": "audit.output/lgc.gov.lk/20261118.1036/snapshots/page-04-2987eeff93d1.html",
+      "sha256": "2987eeff93d11d0427bf301cc5a0d028b6d6a12bc2e6567a6fc07aa8fdf4815e",
+      "bytes": 41797
+    },
+    {
+      "url": "https://lgc.gov.lk/contact-us/",
+      "path": "audit.output/lgc.gov.lk/20261118.1036/snapshots/page-05-e0465a9126a7.html",
+      "sha256": "e0465a9126a7d3bb3a34eb7b4fcd91fbe2a4c83094580f97972d348786a7689e",
+      "bytes": 41815
+    },
+    {
+      "url": "https://lgc.gov.lk/need-services/",
+      "path": "audit.output/lgc.gov.lk/20261118.1036/snapshots/page-06-2710eb574228.html",
+      "sha256": "2710eb574228bb74bb91b28cfe284bd55d96cbe6b2e556647df4d1416fa7f535",
+      "bytes": 33535
+    },
+    {
+      "url": "https://lgc.gov.lk/why-lgc-2-0-2/",
+      "path": "audit.output/lgc.gov.lk/20261118.1036/snapshots/page-07-54beb86d4bfb.html",
+      "sha256": "54beb86d4bfbd01c560f21a5d52cf7d01c4938fb0e95ebbd17bbe92f71eb7bab",
+      "bytes": 23322
+    },
+    {
+      "url": "https://lgc.gov.lk/what-lgc-2-0-offers/",
+      "path": "audit.output/lgc.gov.lk/20261118.1036/snapshots/page-08-1963ca0b3b9c.html",
+      "sha256": "1963ca0b3b9c27256948cc1781d04a7d9d32f63d7fb76ad3d022c143cbf65980",
+      "bytes": 25850
+    },
+    {
+      "url": "https://lgc.gov.lk/request-cp-hosting/",
+      "path": "audit.output/lgc.gov.lk/20261118.1036/snapshots/page-09-942aed726aff.html",
+      "sha256": "942aed726affc6022378a4bcf4289885af7145cadf064051384f9591b8fe5a40",
+      "bytes": 38982
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +448,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +461,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +518,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing named responsibility evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: provided\",\"invalidEmail\":\"Invalid email address\",\"takenEmail\":\"Email is already registered\",\"noUsername\":\"No username pr"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94112369099 (3 phone numbers found); Email: lgc-support@icta.lk (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing named responsibility evidence found"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +567,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.55.185",
+    "egress_ip": "4.155.199.137",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

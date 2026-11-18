@@ -1,8 +1,8 @@
 # Website Audit: https://cg-karachi.gov.lk/
 
-- Completed: 2026-11-17 11:29
+- Completed: 2026-11-18 10:55
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.55.185 (US, github-actions)
+- Vantage: 4.155.199.137 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

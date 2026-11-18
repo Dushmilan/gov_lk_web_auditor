@@ -1,8 +1,8 @@
 # Website Audit: https://emb-paris.gov.lk/
 
-- Completed: 2026-11-17 11:31
+- Completed: 2026-11-18 10:57
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.55.185 (US, github-actions)
+- Vantage: 4.155.199.137 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 16 rue Spontini 75016 Paris France GENERAL EMAIL : slemb.paris@mfa.gov.lk CONSULAR EMAIL: consular.paris@mfa.gov.lk TOUR; Phone: 0155733131 (10 phone numbers found); Email: slemb.paris@mfa.gov.lk (5 email addresses found); Published named responsibility: director
+Published postal address: 16 rue Spontini 75016 Paris France GENERAL EMAIL : slemb.paris@mfa.gov.lk CONSULAR EMAIL: consular.paris@mfa.gov.lk TOUR; Phone: 0072249719 (10 phone numbers found); Email: consular.paris@mfa.gov.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 16 rue Spontini 75016 Paris France GENERAL EMAIL : slemb.paris@mfa.gov.lk CONSULAR EMAIL: consular.paris@mfa.gov.lk TOUR |
-| reachable_contacts | ✅ | Phone: 0155733131 (10 phone numbers found); Email: slemb.paris@mfa.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0072249719 (10 phone numbers found); Email: consular.paris@mfa.gov.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

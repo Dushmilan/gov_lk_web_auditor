@@ -1,8 +1,8 @@
 # Website Audit: http://siyanencoe.sch.lk/
 
-- Completed: 2026-11-17 11:19
+- Completed: 2026-11-18 10:44
 - Overall result: ⚫ Level 0
-- Vantage: 20.161.55.185 (US, github-actions)
+- Vantage: 4.155.199.137 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011); TLS certificate has expired
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,5 +26,5 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011) |
-| tls_not_expired | ❌ | TLS certificate has expired |
-| tls_hostname_matches | ❓ | TLS hostname check did not run |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |

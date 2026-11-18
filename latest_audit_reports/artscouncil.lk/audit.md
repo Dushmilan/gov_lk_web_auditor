@@ -1,8 +1,8 @@
 # Website Audit: https://artscouncil.lk/
 
-- Completed: 2026-11-17 11:14
+- Completed: 2026-11-18 10:31
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.55.185 (US, github-actions)
+- Vantage: 4.155.199.137 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: was… Read More Art Workshop – Mallika Maha Vidyalaya, Hiniduma, Galle. – 2026.10.28 Continue Programs Entertainment Prog; Phone: 026.11.04 202 (22 phone numbers found); Email: artscouncilsl@yahoo.com; Published named responsibility: division
+Published postal address: Arts Council of Sri Lanka ‘B’ Wing, 4th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Opening Hours : Monday to; Phone: +94 11 2177627 (14 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: was… Read More Art Workshop – Mallika Maha Vidyalaya, Hiniduma, Galle. – 2026.10.28 Continue Programs Entertainment Prog |
-| reachable_contacts | ✅ | Phone: 026.11.04 202 (22 phone numbers found); Email: artscouncilsl@yahoo.com |
+| postal_address | ✅ | Published postal address: Arts Council of Sri Lanka ‘B’ Wing, 4th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Opening Hours : Monday to |
+| reachable_contacts | ✅ | Phone: +94 11 2177627 (14 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ✅ | Published legal basis: circular |
+| legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ✅ | Published published update date: 2026-09-28 |

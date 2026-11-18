@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "52c0ccf5-c4b1-4d66-b9f2-ea698d47b2b7",
+  "audit_id": "5dd5c790-d90b-4af6-aeeb-56383c8a636d",
   "url": "https://aeb.gov.lk/",
   "normalized_url": "https://aeb.gov.lk/",
-  "started_at": "2026-11-17T11:51:09.521285+05:30",
-  "completed_at": "2026-11-17T11:53:22.043935+05:30",
+  "started_at": "2026-11-18T11:14:24.084526+05:30",
+  "completed_at": "2026-11-18T11:16:06.787694+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,54 +26,985 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-17T11:51:10.173649+05:30"
+      "observed_at": "2026-11-18T11:14:24.616437+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-17T11:51:10.173670+05:30"
+      "observed_at": "2026-11-18T11:14:24.616458+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-17T11:51:20.435676+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-18T11:14:24.900831+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://aeb.gov.lk/",
       "source": "https://aeb.gov.lk/",
-      "observed_at": "2026-11-17T11:53:22.043765+05:30"
+      "observed_at": "2026-11-18T11:16:06.215602+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://aeb.gov.lk/",
       "source": "http://aeb.gov.lk/",
-      "observed_at": "2026-11-17T11:53:22.043787+05:30"
+      "observed_at": "2026-11-18T11:16:06.215622+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://aeb.gov.lk/",
       "source": "https://aeb.gov.lk/",
-      "observed_at": "2026-11-17T11:53:22.043791+05:30"
+      "observed_at": "2026-11-18T11:16:06.215626+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://aeb.gov.lk/",
       "source": "http://aeb.gov.lk/",
-      "observed_at": "2026-11-17T11:53:22.043794+05:30"
+      "observed_at": "2026-11-18T11:16:06.215628+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://aeb.gov.lk/main-home/",
+      "source": "https://aeb.gov.lk/main-home/",
+      "observed_at": "2026-11-18T11:16:06.215631+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "source": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "observed_at": "2026-11-18T11:16:06.215633+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://aeb.gov.lk/technical-development-services/",
+      "source": "https://aeb.gov.lk/technical-development-services/",
+      "observed_at": "2026-11-18T11:16:06.215635+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "observed_at": "2026-11-18T11:16:06.215637+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://aeb.gov.lk/international-corporation-divisions/",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "observed_at": "2026-11-18T11:16:06.215639+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://aeb.gov.lk/finance-department/",
+      "source": "https://aeb.gov.lk/finance-department/",
+      "observed_at": "2026-11-18T11:16:06.215642+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "observed_at": "2026-11-18T11:16:06.215644+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://aeb.gov.lk/service/",
+      "source": "https://aeb.gov.lk/service/",
+      "observed_at": "2026-11-18T11:16:06.215646+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://aeb.gov.lk/information-officers/",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "observed_at": "2026-11-18T11:16:06.215648+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://aeb.gov.lk/contact-us/",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "observed_at": "2026-11-18T11:16:06.215650+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://aeb.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "http://aeb.gov.lk/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://aeb.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://aeb.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "http://aeb.gov.lk/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://aeb.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/main-home/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/main-home/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/main-home/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/main-home/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/main-home/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/main-home/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/technical-development-services/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/technical-development-services/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/technical-development-services/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/technical-development-services/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/technical-development-services/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/technical-development-services/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-253-4208 ",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "011-253-4208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-807-1371 ",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "071-807-1371 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-253-3448 ",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "011-253-3448 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: prasad@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "prasad@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-858-3132 ",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "071-858-3132 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-253-3448 ",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "011-253-3448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-207-5230 ",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "011-207-5230 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: bandara@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "bandara@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/international-corporation-divisions/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/finance-department/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/finance-department/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/finance-department/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/finance-department/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/finance-department/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/finance-department/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-122-3560 ",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "071-122-3560 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112547667 ",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "0112547667 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112547333 ",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "0112547333 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-253-3427 ",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "011-253-3427 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tilak@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "tilak@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nilmini@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "nilmini@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: anusha@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "anusha@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/service/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/service/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/service/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/service/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/service/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/service/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0718111651 ",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "0718111651 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 075536800",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "0 075536800"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112533427",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "0112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112547197 ",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "0112547197 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: poshitha@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "poshitha@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: viraj@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "viraj@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/information-officers/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2487756-",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "+94-11-2487756-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112533427",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "+94112533427"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533448 ",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "+94-11-2533448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533449 ",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "+94-11-2533449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2533427-",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "+94-11-2533427-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2987854 ",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "+94-11-2987854 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2487758 ",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "+94-11-2487758 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2987851 ",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "+94-11-2987851 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialmail@aeb.gov.lk",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "officialmail@aeb.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: officialslgc@aea.gov.lk",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "officialslgc@aea.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://aeb.gov.lk/contact-us/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 9523 visible characters across 14 pages",
+      "source": "https://aeb.gov.lk/"
     }
   ],
   "observations": [
     {
       "host": "aeb.gov.lk",
       "addresses": [
-        "209.133.215.178"
+        "23.227.180.34"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -85,49 +1017,224 @@
     },
     {
       "host": "aeb.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2027-02-04T08:33:40+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://aeb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 2083,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://aeb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://aeb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1469,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://aeb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1395,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://aeb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://aeb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1541,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/main-home/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/main-home/",
+      "redirects": [],
+      "elapsed_ms": 8763,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "redirects": [],
+      "elapsed_ms": 9306,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/technical-development-services/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/technical-development-services/",
+      "redirects": [],
+      "elapsed_ms": 9033,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "redirects": [],
+      "elapsed_ms": 9922,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/international-corporation-divisions/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/international-corporation-divisions/",
+      "redirects": [],
+      "elapsed_ms": 9065,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/finance-department/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/finance-department/",
+      "redirects": [],
+      "elapsed_ms": 8700,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "redirects": [],
+      "elapsed_ms": 8481,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/service/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/service/",
+      "redirects": [],
+      "elapsed_ms": 8794,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/information-officers/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/information-officers/",
+      "redirects": [],
+      "elapsed_ms": 10293,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://aeb.gov.lk/contact-us/",
+      "status_code": 200,
+      "final_url": "https://aeb.gov.lk/contact-us/",
+      "redirects": [],
+      "elapsed_ms": 10841,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://aeb.gov.lk/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-01-9ff1139bcf0c.html",
+      "sha256": "9ff1139bcf0cbfe638b31640e03480f2f9b75698834df3acf8d12eae18d5e81a",
+      "bytes": 51203
+    },
+    {
+      "url": "http://aeb.gov.lk/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-02-657456491224.html",
+      "sha256": "657456491224112f3e4900ac66ffdc1bd77c2adf47fec66cd26ee241162019db",
+      "bytes": 51087
+    },
+    {
+      "url": "https://aeb.gov.lk/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-03-9ff1139bcf0c.html",
+      "sha256": "9ff1139bcf0cbfe638b31640e03480f2f9b75698834df3acf8d12eae18d5e81a",
+      "bytes": 51203
+    },
+    {
+      "url": "http://aeb.gov.lk/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-04-657456491224.html",
+      "sha256": "657456491224112f3e4900ac66ffdc1bd77c2adf47fec66cd26ee241162019db",
+      "bytes": 51087
+    },
+    {
+      "url": "https://aeb.gov.lk/main-home/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-05-e7a95ecddb45.html",
+      "sha256": "e7a95ecddb45b1a97394998cc91a08e3b856392da36f685069d375f67cba2bc3",
+      "bytes": 169285
+    },
+    {
+      "url": "https://aeb.gov.lk/radiation-protection-and-technical-services/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-06-b9cc9759a4b0.html",
+      "sha256": "b9cc9759a4b01ba09309005025ee3ad09415b09542406ba4fdb2f287421c18fe",
+      "bytes": 123570
+    },
+    {
+      "url": "https://aeb.gov.lk/technical-development-services/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-07-0fffa2c11eae.html",
+      "sha256": "0fffa2c11eae5d5b019e1c405cd7306d03fe6a56de87a11afb8b74b7fd7f8d5c",
+      "bytes": 127431
+    },
+    {
+      "url": "https://aeb.gov.lk/radiation-protection-technical-services-division/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-08-5cea93d72987.html",
+      "sha256": "5cea93d729876773b0740738153a2a721a800cfa6f278a3f18fd1aef42a2eb10",
+      "bytes": 156447
+    },
+    {
+      "url": "https://aeb.gov.lk/international-corporation-divisions/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-09-0d7bab576b2e.html",
+      "sha256": "0d7bab576b2e3ceabaeb65a9d95b7def4c2ed2a6cbb51c9475ecfcb3df2f1ed8",
+      "bytes": 145914
+    },
+    {
+      "url": "https://aeb.gov.lk/finance-department/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-10-6db1cbb8751c.html",
+      "sha256": "6db1cbb8751cca08190d46fd8170517c9173bc342bac2b584c2a6b8813ac2862",
+      "bytes": 134628
+    },
+    {
+      "url": "https://aeb.gov.lk/administration-human-resources-procurement-division/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-11-2cf10d52e69d.html",
+      "sha256": "2cf10d52e69dd447fc15bb3a9a694d0ac4db8ffbf47d7328adcde04db6029962",
+      "bytes": 151721
+    },
+    {
+      "url": "https://aeb.gov.lk/service/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-12-d551e8bff70c.html",
+      "sha256": "d551e8bff70c6a80e544767b0ebba12b3903f3076ba422d6c5273f4e22b3743f",
+      "bytes": 134307
+    },
+    {
+      "url": "https://aeb.gov.lk/information-officers/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-13-55015488ea4c.html",
+      "sha256": "55015488ea4c64bc1dbcb7a46d0b761b56df2a2d84605595bcd9fd546380549f",
+      "bytes": 142308
+    },
+    {
+      "url": "https://aeb.gov.lk/contact-us/",
+      "path": "audit.output/aeb.gov.lk/20261118.1114/snapshots/page-14-ac71304d6b07.html",
+      "sha256": "ac71304d6b079c27ac881d609ee65b382c8e681bc99c703a0b7b57ed29555bb3",
+      "bytes": 142030
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1248,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +1261,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +1318,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94112533427 (21 phone numbers found); Email: officialmail@aeb.gov.lk (9 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +1367,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.55.185",
+    "egress_ip": "4.155.199.137",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
