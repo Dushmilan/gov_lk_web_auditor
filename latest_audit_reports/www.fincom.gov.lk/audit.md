@@ -1,8 +1,8 @@
 # Website Audit: https://www.fincom.gov.lk/
 
-- Completed: 2026-11-18 11:34
+- Completed: 2026-11-19 11:30
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.199.137 (US, github-actions)
+- Vantage: 57.152.36.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri; Phone: +94-11-2866679 (31 phone numbers found); Email: info@fincom.gov.lk (20 email addresses found); Published named responsibility: director
+Published postal address: will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri; Phone: +94-11-2866747 (37 phone numbers found); Email: info@fincom.gov.lk (20 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: will not be published. Required fields are marked * Name * Email * Website Comment You may use these HTML tags and attri |
-| reachable_contacts | ✅ | Phone: +94-11-2866679 (31 phone numbers found); Email: info@fincom.gov.lk (20 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94-11-2866747 (37 phone numbers found); Email: info@fincom.gov.lk (20 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

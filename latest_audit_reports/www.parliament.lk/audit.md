@@ -1,8 +1,8 @@
 # Website Audit: https://www.parliament.lk/
 
-- Completed: 2026-11-18 11:29
+- Completed: 2026-11-19 11:27
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.199.137 (US, github-actions)
+- Vantage: 57.152.36.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sign Up Your Email address Sign Up Parliament of Sri Lanka Ok .hints_tips_link { height: 10px; width: auto !important; }; Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found); Published named responsibility: director
+Published postal address: Sign Up Your Email address Sign Up Parliament of Sri Lanka Ok .hints_tips_link { height: 10px; width: auto !important; }; Phone: 0112862365 (7 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sign Up Your Email address Sign Up Parliament of Sri Lanka Ok .hints_tips_link { height: 10px; width: auto !important; } |
-| reachable_contacts | ✅ | Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112862365 (7 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-11-17 |
+| published_update_date | ✅ | Published published update date: 2026-11-18 |

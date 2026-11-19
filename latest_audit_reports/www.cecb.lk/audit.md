@@ -1,8 +1,8 @@
 # Website Audit: https://www.cecb.lk/
 
-- Completed: 2026-11-18 10:27
+- Completed: 2026-11-19 10:21
 - Overall result: 🔴 Level 1
-- Vantage: 4.155.199.137 (US, github-actions)
+- Vantage: 57.152.36.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found; No passing named responsibility eviden
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 266 8800; Email: bpuinternational@cecb.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 266 8800; Email: bpu@cecb.lk (2 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

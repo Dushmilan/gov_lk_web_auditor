@@ -1,8 +1,8 @@
 # Website Audit: https://pdasl.gov.lk/
 
-- Completed: 2026-11-18 10:46
+- Completed: 2026-11-19 10:39
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.199.137 (US, github-actions)
+- Vantage: 57.152.36.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 04th Floor, No.609, Dr.Danister de Silva Mawatha, Colombo 09, Sri Lanka © 2026 Petroleum Development Authority of Sri La; Phone: +94(0)112332002 (4 phone numbers found); Email: exploresrilanka@pdasl.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: 04th Floor, No.609, Dr.Danister de Silva Mawatha, Colombo 09, Sri Lanka © 2026 Petroleum Development Authority of Sri La; Phone: +94(0)11233200 (4 phone numbers found); Email: exploresrilanka@pdasl.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 04th Floor, No.609, Dr.Danister de Silva Mawatha, Colombo 09, Sri Lanka © 2026 Petroleum Development Authority of Sri La |
-| reachable_contacts | ✅ | Phone: +94(0)112332002 (4 phone numbers found); Email: exploresrilanka@pdasl.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94(0)11233200 (4 phone numbers found); Email: exploresrilanka@pdasl.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

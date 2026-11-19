@@ -1,8 +1,8 @@
 # Website Audit: http://www.uwu.ac.lk/
 
-- Completed: 2026-11-18 10:40
+- Completed: 2026-11-19 10:34
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.199.137 (US, github-actions)
+- Vantage: 57.152.36.199 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Badulla 90 000 Sri Lanka Telephone Telephone: +94 55 2226622 Fax: +94 55 2226633 Vice Chancellor Telephone: +94 55 22264; Phone: +94 55 2226622 (105 phone numbers found); Email: champika@uwu.ac.lk (33 email addresses found); Published named responsibility: department
+Published postal address: Badulla 90 000 Sri Lanka Telephone Telephone: +94 55 2226622 Fax: +94 55 2226633 Vice Chancellor Telephone: +94 55 22264; Phone: +94 55 2226622 (105 phone numbers found); Email: abpayments@uwu.ac.lk (33 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Badulla 90 000 Sri Lanka Telephone Telephone: +94 55 2226622 Fax: +94 55 2226633 Vice Chancellor Telephone: +94 55 22264 |
-| reachable_contacts | ✅ | Phone: +94 55 2226622 (105 phone numbers found); Email: champika@uwu.ac.lk (33 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 55 2226622 (105 phone numbers found); Email: abpayments@uwu.ac.lk (33 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
