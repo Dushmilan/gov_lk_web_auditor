@@ -1,8 +1,8 @@
 # Website Audit: https://www.npc.gov.lk/
 
-- Completed: 2026-11-19 11:27
+- Completed: 2026-11-20 11:04
 - Overall result: ⚫ Level 0
-- Vantage: 57.152.36.199 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

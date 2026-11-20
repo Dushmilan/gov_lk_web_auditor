@@ -1,8 +1,8 @@
 # Website Audit: https://www.slpa.lk/
 
-- Completed: 2026-11-19 11:05
-- Overall result: 🟠 Level 2
-- Vantage: 57.152.36.199 (US, github-actions)
+- Completed: 2026-11-20 10:48
+- Overall result: 🔴 Level 1
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: or at the address where the vehicle is ordinarily kept, notice that the Ports Authority has exercised the powers of this; Phone: +94-11 242 12 01 (34 phone numbers found); Email: info@slpa.lk (13 email addresses found); Published named responsibility: director
+No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: or at the address where the vehicle is ordinarily kept, notice that the Ports Authority has exercised the powers of this |
-| reachable_contacts | ✅ | Phone: +94-11 242 12 01 (34 phone numbers found); Email: info@slpa.lk (13 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ❓ | No phone or email evidence found |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing processing time evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: RS 0500 |
-| legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://www.slpa.lk/uploads/article_attachment/attachment_2019_07_24_15639484351563948503.pdf |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

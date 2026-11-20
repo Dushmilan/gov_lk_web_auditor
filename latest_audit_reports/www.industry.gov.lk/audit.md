@@ -1,8 +1,8 @@
 # Website Audit: https://www.industry.gov.lk/
 
-- Completed: 2026-11-19 11:20
+- Completed: 2026-11-20 10:58
 - Overall result: 🟠 Level 2
-- Vantage: 57.152.36.199 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 ඇමතුම් මධ්‍යස්ථානය : 071-2666660 විද්‍යුත් තැපැල: info@industry.gov.lk Copyright කර්මාන්ත සහ ව්‍යවසායකත්ව සංවර්ධන අමාත්‍යාංශය©2026 | Site by TheekshanaR&D; Phone: 0712666660 (24 phone numbers found); Email: info@industry.gov.lk (30 email addresses found); Published named responsibility: division
+Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 ඇමතුම් මධ්‍යස්ථානය: 071-2666660 විද්‍යුත් තැපැල: info@industry.gov.lk; Phone: 071-2666660 (30 phone numbers found); Email: info@industry.gov.lk (30 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 ඇමතුම් මධ්‍යස්ථානය : 071-2666660 විද්‍යුත් තැපැල: info@industry.gov.lk Copyright කර්මාන්ත සහ ව්‍යවසායකත්ව සංවර්ධන අමාත්‍යාංශය©2026 \| Site by TheekshanaR&D |
-| reachable_contacts | ✅ | Phone: 0712666660 (24 phone numbers found); Email: info@industry.gov.lk (30 email addresses found) |
+| postal_address | ✅ | Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 ඇමතුම් මධ්‍යස්ථානය: 071-2666660 විද්‍යුත් තැපැල: info@industry.gov.lk |
+| reachable_contacts | ✅ | Phone: 071-2666660 (30 phone numbers found); Email: info@industry.gov.lk (30 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
