@@ -1,8 +1,8 @@
 # Website Audit: http://www.ihra.cmb.ac.lk/
 
-- Completed: 2026-11-20 10:24
+- Completed: 2026-11-21 10:22
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 4.155.111.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://www.ihra.cmb.ac.lk/: Probe 3: Server disconnected without sending a response.; http://www.ihra.cmb.ac.lk/: Probe 4: Server disconnected without sending a response.; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://www.ihra.cmb.ac.lk/: Probe 3: Server disconnected without sending a response.; http://www.ihra.cmb.ac.lk/: Probe 4: Server disconnected without sending a response. |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe; Phone: +94 11 250 3393 (20 phone numbers found); Email: adminar@ihra.cmb.ac.lk (21 email addresses found); Published named responsibility: director
+Published postal address: the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe; Phone: +94 11 250 3393 (20 phone numbers found); Email: adminar@ihra.cmb.ac.lk (24 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the challenges and complexities faced by service-oriented businesses. Develop leadership and managerial competencies spe |
-| reachable_contacts | ✅ | Phone: +94 11 250 3393 (20 phone numbers found); Email: adminar@ihra.cmb.ac.lk (21 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 250 3393 (20 phone numbers found); Email: adminar@ihra.cmb.ac.lk (24 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 15 Months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 18 October 2026 |
+| published_update_date | ❓ | No passing published update date evidence found |

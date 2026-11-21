@@ -1,24 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "14b78ef8-4dba-435a-b91b-ba724ec32076",
+  "audit_id": "9680ada7-0daf-4ca3-bd5c-845a960f7295",
   "url": "https://www.boc.lk/",
   "normalized_url": "https://www.boc.lk/",
-  "started_at": "2026-11-20T10:27:04.745296+05:30",
-  "completed_at": "2026-11-20T10:27:30.036520+05:30",
+  "started_at": "2026-11-21T10:24:02.651556+05:30",
+  "completed_at": "2026-11-21T10:24:13.445993+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "http_available: Every repeated HTTP probe failed: [403, 403, 403, 403]"
     ]
   },
   "evidence": [
@@ -26,1582 +17,69 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-20T10:27:05.064010+05:30"
+      "observed_at": "2026-11-21T10:24:03.599095+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-20T10:27:05.064030+05:30"
+      "observed_at": "2026-11-21T10:24:03.599115+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-20T10:27:05.069385+05:30"
+      "observed_at": "2026-11-21T10:24:05.425601+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.boc.lk/",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 403 at https://www.boc.lk/",
       "source": "https://www.boc.lk/",
-      "observed_at": "2026-11-20T10:27:29.251281+05:30"
+      "observed_at": "2026-11-21T10:24:13.381047+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.boc.lk/",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 403 at https://www.boc.lk/",
       "source": "http://www.boc.lk/",
-      "observed_at": "2026-11-20T10:27:29.251302+05:30"
+      "observed_at": "2026-11-21T10:24:13.381062+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.boc.lk/",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 403 at https://www.boc.lk/",
       "source": "https://www.boc.lk/",
-      "observed_at": "2026-11-20T10:27:29.251306+05:30"
+      "observed_at": "2026-11-21T10:24:13.381066+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.boc.lk/",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 403 at https://www.boc.lk/",
       "source": "http://www.boc.lk/",
-      "observed_at": "2026-11-20T10:27:29.251308+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://www.boc.lk/contact",
-      "source": "https://www.boc.lk/contact",
-      "observed_at": "2026-11-20T10:27:29.251310+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.boc.lk/personal-banking/other-services",
-      "source": "https://www.boc.lk/personal-banking/other-services",
-      "observed_at": "2026-11-20T10:27:29.251312+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "observed_at": "2026-11-20T10:27:29.251314+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "observed_at": "2026-11-20T10:27:29.251316+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "observed_at": "2026-11-20T10:27:29.251318+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "observed_at": "2026-11-20T10:27:29.251321+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "observed_at": "2026-11-20T10:27:29.251323+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "observed_at": "2026-11-20T10:27:29.251325+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.boc.lk/personal-banking/other-services/special-1",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "observed_at": "2026-11-20T10:27:29.251327+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "observed_at": "2026-11-20T10:27:29.251330+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 12 18 24 30 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "00 12 18 24 30 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 337.3000 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "000 337.3000 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 0",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "Rs. 0"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 12 18 24 30 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "00 12 18 24 30 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 337.3000 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "000 337.3000 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 0",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "Rs. 0"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 12 18 24 30 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "00 12 18 24 30 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 337.3000 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "000 337.3000 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 0",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "Rs. 0"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 12 18 24 30 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "00 12 18 24 30 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 337.3000 ",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "000 337.3000 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 0",
-      "source": "https://www.boc.lk/",
-      "data": {
-        "value": "Rs. 0"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112338755",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94112338755"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 243 5814",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 243 5814"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4750",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 220 4750"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 233 8741 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 233 8741 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2338749",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "011-2338749"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2204928 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "011-2204928 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 244 6790 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 244 6790 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2338750 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "011-2338750 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112338741",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94112338741"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2204922 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "011-2204922 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112446790",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94112446790"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 4444 (",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "011 220 4444 ("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 1975",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 243 5815 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 243 5815 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 243 5814 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 243 5814 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112321160",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94112321160"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112446811",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94112446811"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 220 4444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 232 1160 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 232 1160 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4750 ",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "+94 11 220 4750 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: bocexmgt@boc.lk",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "bocexmgt@boc.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@boc.lk",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "info@boc.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: cmisa@boc.lk",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "cmisa@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 1, BOC Square, Bank of Ceylon Mawatha, Colombo 1, Sri Lanka",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "No. 1, BOC Square, Bank of Ceylon Mawatha, Colombo 1, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 600 Days",
-      "source": "https://www.boc.lk/contact",
-      "data": {
-        "value": "600 Days"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 066 9333 ",
-      "source": "https://www.boc.lk/personal-banking/other-services",
-      "data": {
-        "value": "071 066 9333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/personal-banking/other-services",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 031 3616 ",
-      "source": "https://www.boc.lk/personal-banking/other-services",
-      "data": {
-        "value": "071 031 3616 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/personal-banking/other-services",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/other-services",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/personal-banking/other-services",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/personal-banking/other-services",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5610 ",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "011 220 5610 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 1975",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5610",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "011 220 5610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2204444 ",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "+94 11 2204444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5621 ",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "011 220 5621 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5621",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "011 220 5621"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "eligibility_criteria",
-      "status": "pass",
-      "detail": "Published eligibility criteria: eligibility",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "eligibility"
-      }
-    },
-    {
-      "check": "required_documents",
-      "status": "pass",
-      "detail": "Published required documents: required documents",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "required documents"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: free of charge",
-      "source": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "data": {
-        "value": "free of charge"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2204444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "+94 11 2204444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "required_documents",
-      "status": "pass",
-      "detail": "Published required documents: required documents",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "required documents"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "data": {
-        "value": "1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2204444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "data": {
-        "value": "+94 11 2204444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 1,000",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "data": {
-        "value": "Rs. 1,000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444. ",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "data": {
-        "value": "+94 11 220 4444. "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "data": {
-        "value": "1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2204444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "data": {
-        "value": "+94 11 2204444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112205039",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "0112205039"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112205030",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "0112205030"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5033",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "011 220 5033"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5014 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "011 220 5014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5033 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "011 220 5033 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2204444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "+94 11 2204444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5030 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "011 220 5030 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5035",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "011 220 5035"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5014",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "011 220 5014"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5031",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "011 220 5031"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 220 5038",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "011 220 5038"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ibu@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "ibu@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 066 9333 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "data": {
-        "value": "071 066 9333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 031 3616 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "data": {
-        "value": "071 031 3616 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 066 9333 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "data": {
-        "value": "071 066 9333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 031 3616 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "data": {
-        "value": "071 031 3616 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 066 9333 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "data": {
-        "value": "071 066 9333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112204444",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "data": {
-        "value": "+94112204444"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 031 3616 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "data": {
-        "value": "071 031 3616 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +1975",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "data": {
-        "value": "+1975"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 220 4444 ",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "data": {
-        "value": "+94 11 220 4444 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: boc@boc.lk",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "data": {
-        "value": "boc@boc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "data": {
-        "value": "No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "data": {
-        "value": "division"
-      }
+      "observed_at": "2026-11-21T10:24:13.381069+05:30"
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 16673 visible characters across 14 pages",
+      "detail": "Substantive page content: 553 visible characters across 4 pages",
       "source": "https://www.boc.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
+      "observed_at": "2026-11-21T10:24:13.385587+05:30"
     }
   ],
   "observations": [
     {
       "host": "www.boc.lk",
       "addresses": [
-        "3.171.85.107",
-        "3.171.85.126",
-        "3.171.85.69",
-        "3.171.85.98"
+        "143.204.1.44",
+        "143.204.1.47",
+        "143.204.1.63",
+        "143.204.1.85"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -1621,219 +99,69 @@
     },
     {
       "url": "https://www.boc.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://www.boc.lk/",
       "redirects": [],
-      "elapsed_ms": 1920,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1375,
+      "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://www.boc.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://www.boc.lk/",
       "redirects": [
         "https://www.boc.lk/"
       ],
-      "elapsed_ms": 1027,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1484,
+      "content_type": "text/html",
       "error": null
     },
     {
       "url": "https://www.boc.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://www.boc.lk/",
       "redirects": [],
-      "elapsed_ms": 1851,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1386,
+      "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://www.boc.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://www.boc.lk/",
       "redirects": [
         "https://www.boc.lk/"
       ],
-      "elapsed_ms": 1856,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/contact",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/contact",
-      "redirects": [],
-      "elapsed_ms": 1723,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/personal-banking/other-services",
-      "redirects": [],
-      "elapsed_ms": 1859,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "redirects": [],
-      "elapsed_ms": 1653,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "redirects": [],
-      "elapsed_ms": 592,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "redirects": [],
-      "elapsed_ms": 703,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "redirects": [],
-      "elapsed_ms": 776,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "redirects": [],
-      "elapsed_ms": 1674,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "redirects": [],
-      "elapsed_ms": 1758,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "redirects": [],
-      "elapsed_ms": 1691,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "status_code": 200,
-      "final_url": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "redirects": [],
-      "elapsed_ms": 1885,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 115,
+      "content_type": "text/html",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://www.boc.lk/",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-01-57c2f20880bd.html",
-      "sha256": "57c2f20880bd8887d59c3a4b1ff89684c4b65484c2e6a11681508b69c703aa6c",
-      "bytes": 294002
+      "path": "audit.output/www.boc.lk/20261121.1024/snapshots/page-01-567e5d164822.html",
+      "sha256": "567e5d1648229de08068f00ccfa8832d6596472385094d148dc258613456a080",
+      "bytes": 919
     },
     {
       "url": "https://www.boc.lk/",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-02-eea2cd775ece.html",
-      "sha256": "eea2cd775ece4befe140400198aadfa6f466ec69d2ab963a077b20424d5490e3",
-      "bytes": 294002
+      "path": "audit.output/www.boc.lk/20261121.1024/snapshots/page-02-e7b6bad174da.html",
+      "sha256": "e7b6bad174da3cb0bffb1baa7fbef9866ba30ef9bffdf55dee8c602d8bc5aa0e",
+      "bytes": 919
     },
     {
       "url": "https://www.boc.lk/",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-03-74484e246cd4.html",
-      "sha256": "74484e246cd48a32f13f0c4ba9ad1e023bacd761508bfab9e3bc8b0b07b2d258",
-      "bytes": 294002
+      "path": "audit.output/www.boc.lk/20261121.1024/snapshots/page-03-7c92be28f3ac.html",
+      "sha256": "7c92be28f3ace7b5c4958a6ac4d2fac239909d37b8a96a0b7e9d34f60f7c2438",
+      "bytes": 919
     },
     {
       "url": "https://www.boc.lk/",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-04-d994070111d6.html",
-      "sha256": "d994070111d6a6129b39ccdca4d68dd47fbb19007a2a85f84fb7c73b5448e1e2",
-      "bytes": 294002
-    },
-    {
-      "url": "https://www.boc.lk/contact",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-05-a80e367b788a.html",
-      "sha256": "a80e367b788a09a328daf35762a298a62dcc47fb6286a1402b019ab4ba315d57",
-      "bytes": 216974
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-06-402adda4623a.html",
-      "sha256": "402adda4623a1c49ef00fc459a839e564940f4e0b70b325307c97815f08fa113",
-      "bytes": 224270
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/cards/information/merchants-services",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-07-d84f91746eec.html",
-      "sha256": "d84f91746eecd51b63fe493a291f05c5b9a867e88c6e2e8b75b3196cdb10d751",
-      "bytes": 217129
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts/boc-sansadha",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-08-0e7032490e49.html",
-      "sha256": "0e7032490e4933fc1346a5b1af0dd44d76bafdad4a2043c69d31b43c8864928c",
-      "bytes": 212648
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/special-1/thilinapath",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-09-96f9154ad485.html",
-      "sha256": "96f9154ad4854bc1a7264b2624cfed88bfa2d17e831ee6f312961d08d38cc931",
-      "bytes": 210058
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers/safe-deposit-lockers",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-10-b23a363c9a40.html",
-      "sha256": "b23a363c9a4013433d64fbd1d1c21291adbf277a61742c2fd36fd42b0be02c9c",
-      "bytes": 215311
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/islamic-banking/an-noor",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-11-e04f611e67ce.html",
-      "sha256": "e04f611e67cec6e649c0778580598f7fdf1d803fb52cc657c5110ceb37654b3a",
-      "bytes": 218873
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/clubs-and-societies-accounts",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-12-13852dfe4c9e.html",
-      "sha256": "13852dfe4c9ea311731802985e320ab0d654ebc7cd626d9ba0f55feeff19654c",
-      "bytes": 220557
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/special-1",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-13-46c286137c02.html",
-      "sha256": "46c286137c025f3b2f2d5c06d38e6e7f2bd9356e573783853ab997f68c4212b1",
-      "bytes": 221323
-    },
-    {
-      "url": "https://www.boc.lk/personal-banking/other-services/safe-deposit-lockers",
-      "path": "audit.output/www.boc.lk/20261120.1027/snapshots/page-14-b14f06db3507.html",
-      "sha256": "b14f06db3507b2d69e6beee83df5d6c6c6a5c1aca5b8a2701916496491e5dff1",
-      "bytes": 220515
+      "path": "audit.output/www.boc.lk/20261121.1024/snapshots/page-04-64c787e21bb7.html",
+      "sha256": "64c787e21bb79f1a50875bd944a855082bc9519aecd236d02fc161b9a4d6d4bf",
+      "bytes": 919
     }
   ],
   "reviewer_decisions": [],
@@ -1849,8 +177,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
       "executed": true,
       "checks": [
         {
@@ -1862,44 +190,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -1918,80 +246,18 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka; Phone: +94112204444 (36 phone numbers found); Email: boc@boc.lk (5 email addresses found); Published named responsibility: division",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94112204444 (36 phone numbers found); Email: boc@boc.lk (5 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published eligibility criteria: eligibility"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published required documents: required documents"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: Rs. 0"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: gazette"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published processing time: 600 Days"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -2011,7 +277,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.41.210.121",
+    "egress_ip": "4.155.111.50",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

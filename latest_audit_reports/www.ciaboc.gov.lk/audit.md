@@ -1,8 +1,8 @@
 # Website Audit: https://www.ciaboc.gov.lk/
 
-- Completed: 2026-11-20 11:02
+- Completed: 2026-11-21 11:04
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 4.155.111.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: on or before 16.11.2026. Applications received later are rejected.","Use the specimen form (see Application form below).; Phone: 0112596363 (13 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found); Published named responsibility: division
+Published postal address: on or before 16.11.2026. Applications received later are rejected.","Use the specimen form (see Application form below).; Phone: 0112502581 (13 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: on or before 16.11.2026. Applications received later are rejected.","Use the specimen form (see Application form below). |
-| reachable_contacts | ✅ | Phone: 0112596363 (13 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112502581 (13 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

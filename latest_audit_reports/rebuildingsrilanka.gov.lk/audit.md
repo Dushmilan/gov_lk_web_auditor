@@ -1,8 +1,8 @@
 # Website Audit: https://rebuildingsrilanka.gov.lk/
 
-- Completed: 2026-11-20 11:01
+- Completed: 2026-11-21 11:03
 - Overall result: 🔴 Level 1
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 4.155.111.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,8 +1,8 @@
 # Website Audit: https://www.cashew.gov.lk/
 
-- Completed: 2026-11-20 10:47
+- Completed: 2026-11-21 10:45
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 4.155.111.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sales Outlet Sri Lanka Cashew Corporation Sahas Uyana, Kandy, Sri Lanka; Phone: 0006912739 (63 phone numbers found); Email: slccextension@gmail.com (4 email addresses found); Published named responsibility: division
+Published postal address: Sales Outlet Sri Lanka Cashew Corporation Sahas Uyana, Kandy, Sri Lanka; Phone: 077 8550439 (63 phone numbers found); Email: cashewco@sltnet.lk (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sales Outlet Sri Lanka Cashew Corporation Sahas Uyana, Kandy, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0006912739 (63 phone numbers found); Email: slccextension@gmail.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 077 8550439 (63 phone numbers found); Email: cashewco@sltnet.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

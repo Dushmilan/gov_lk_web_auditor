@@ -1,8 +1,8 @@
 # Website Audit: https://nilet.gov.lk/
 
-- Completed: 2026-11-20 10:45
+- Completed: 2026-11-21 10:43
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 4.155.111.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: or an engaging workshop, our auditorium offers the perfect blend of comfort, functionality, and style to make your event; Phone: +94 11 2172 800 (15 phone numbers found); Email: nilet.languages@gmail.com; Published named responsibility: department
+Published postal address: or an engaging workshop, our auditorium offers the perfect blend of comfort, functionality, and style to make your event; Phone: 0112 172 674 (15 phone numbers found); Email: nilet.languages@gmail.com; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: or an engaging workshop, our auditorium offers the perfect blend of comfort, functionality, and style to make your event |
-| reachable_contacts | ✅ | Phone: +94 11 2172 800 (15 phone numbers found); Email: nilet.languages@gmail.com |
+| reachable_contacts | ✅ | Phone: 0112 172 674 (15 phone numbers found); Email: nilet.languages@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
