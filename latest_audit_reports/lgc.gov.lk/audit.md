@@ -1,8 +1,8 @@
 # Website Audit: https://lgc.gov.lk/
 
-- Completed: 2026-11-21 10:17
+- Completed: 2026-11-22 09:29
 - Overall result: 🔴 Level 1
-- Vantage: 4.155.111.50 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: provided","invalidEmail":"Invalid email address","takenEmail":"Email is already registered","noUsername":"No username pr |
-| reachable_contacts | ✅ | Phone: +94112369099 (442 phone numbers found); Email: lgc-support@icta.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 236 9099 (112 phone numbers found); Email: lgcinfo@icta.lk (2 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

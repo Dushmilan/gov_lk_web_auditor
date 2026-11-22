@@ -1,8 +1,8 @@
 # Website Audit: https://slndc.gov.lk/
 
-- Completed: 2026-11-21 10:41
+- Completed: 2026-11-22 09:52
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.111.50 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: National Design Centre, No 10, De Mel Road, Katubedda, Moratuwa Contact Number General – (+94) 011-2607814 Chairmen – (+; Phone: 001 234 56 78 (9 phone numbers found); Email: Info@slndc.gov.lk; Published named responsibility: director
+Published postal address: the challenges posed by the scarcity of traditional handicraft materials. Elevating Quality Standards in Sri Lanka’s Bat; Phone: +94) 011-260781 (2 phone numbers found); Email: Info@slndc.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: National Design Centre, No 10, De Mel Road, Katubedda, Moratuwa Contact Number General – (+94) 011-2607814 Chairmen – (+ |
-| reachable_contacts | ✅ | Phone: 001 234 56 78 (9 phone numbers found); Email: Info@slndc.gov.lk |
-| named_responsibility | ✅ | Published named responsibility: director |
+| postal_address | ✅ | Published postal address: the challenges posed by the scarcity of traditional handicraft materials. Elevating Quality Standards in Sri Lanka’s Bat |
+| reachable_contacts | ✅ | Phone: +94) 011-260781 (2 phone numbers found); Email: Info@slndc.gov.lk |
+| named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: RS31 |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

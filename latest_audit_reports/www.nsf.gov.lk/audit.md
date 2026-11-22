@@ -1,8 +1,8 @@
 # Website Audit: https://www.nsf.gov.lk/
 
-- Completed: 2026-11-21 10:50
+- Completed: 2026-11-22 10:01
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.111.50 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: was delivered by the Director General of the NSF, Prof Shiromi Perera while Dr Sudath Samaraweera, Chairman of the NSF i; Phone: 0005602082 . (98 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found); Published named responsibility: director
+Published postal address: was delivered by the Director General of the NSF, Prof Shiromi Perera while Dr Sudath Samaraweera, Chairman of the NSF i; Phone: 0902127680 (98 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: was delivered by the Director General of the NSF, Prof Shiromi Perera while Dr Sudath Samaraweera, Chairman of the NSF i |
-| reachable_contacts | ✅ | Phone: 0005602082 . (98 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0902127680 (98 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

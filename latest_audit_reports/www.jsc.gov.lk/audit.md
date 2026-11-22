@@ -1,8 +1,8 @@
 # Website Audit: https://www.jsc.gov.lk/
 
-- Completed: 2026-11-21 11:07
+- Completed: 2026-11-22 10:15
 - Overall result: ⚫ Level 0
-- Vantage: 4.155.111.50 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
