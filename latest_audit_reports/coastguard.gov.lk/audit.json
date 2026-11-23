@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "3fee7e8f-96b9-42ed-a994-5a6ce60df558",
+  "audit_id": "183755b7-b93a-4179-a781-5af2cdaa477a",
   "url": "https://coastguard.gov.lk",
   "normalized_url": "https://coastguard.gov.lk/",
-  "started_at": "2026-11-22T09:25:53.376237+05:30",
-  "completed_at": "2026-11-22T09:28:04.157264+05:30",
+  "started_at": "2026-11-23T10:04:28.908566+05:30",
+  "completed_at": "2026-11-23T10:13:52.626451+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: https://coastguard.gov.lk/: Probe 1: timed out; http://coastguard.gov.lk/: Probe 2: timed out; http://coastguard.gov.lk/: Probe 4: timed out",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,402 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-22T09:25:54.029364+05:30"
+      "observed_at": "2026-11-23T10:04:29.485116+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-22T09:25:54.029384+05:30"
+      "observed_at": "2026-11-23T10:04:29.485138+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-22T09:26:04.040254+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-23T10:04:29.949499+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: timed out",
       "source": "https://coastguard.gov.lk/",
-      "observed_at": "2026-11-22T09:28:04.157106+05:30"
+      "observed_at": "2026-11-23T10:13:52.367921+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://coastguard.gov.lk/",
-      "observed_at": "2026-11-22T09:28:04.157123+05:30"
+      "observed_at": "2026-11-23T10:13:52.367943+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://coastguard.gov.lk/",
       "source": "https://coastguard.gov.lk/",
-      "observed_at": "2026-11-22T09:28:04.157126+05:30"
+      "observed_at": "2026-11-23T10:13:52.367947+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://coastguard.gov.lk/",
-      "observed_at": "2026-11-22T09:28:04.157129+05:30"
+      "observed_at": "2026-11-23T10:13:52.367949+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://coastguard.gov.lk/rank-and-rates.html",
+      "source": "https://coastguard.gov.lk/rank-and-rates.html",
+      "observed_at": "2026-11-23T10:13:52.367952+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://coastguard.gov.lk/uniforms.html",
+      "source": "https://coastguard.gov.lk/uniforms.html",
+      "observed_at": "2026-11-23T10:13:52.367954+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://coastguard.gov.lk/deputy-director-general.html",
+      "source": "https://coastguard.gov.lk/deputy-director-general.html",
+      "observed_at": "2026-11-23T10:13:52.367956+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "observed_at": "2026-11-23T10:13:52.367958+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "source": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "observed_at": "2026-11-23T10:13:52.367960+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://coastguard.gov.lk/international-cooperation.html",
+      "source": "https://coastguard.gov.lk/international-cooperation.html",
+      "observed_at": "2026-11-23T10:13:52.367963+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://coastguard.gov.lk/oil-spill.html",
+      "source": "https://coastguard.gov.lk/oil-spill.html",
+      "observed_at": "2026-11-23T10:13:52.367965+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/1.jpg",
+      "source": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/1.jpg",
+      "observed_at": "2026-11-23T10:13:52.367967+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/3.jpg",
+      "source": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/3.jpg",
+      "observed_at": "2026-11-23T10:13:52.367969+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/4.jpg",
+      "source": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/4.jpg",
+      "observed_at": "2026-11-23T10:13:52.367971+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 106",
+      "source": "https://coastguard.gov.lk/",
+      "data": {
+        "value": "106"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/rank-and-rates.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/rank-and-rates.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/rank-and-rates.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/uniforms.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/uniforms.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/uniforms.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/deputy-director-general.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/deputy-director-general.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/deputy-director-general.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/international-cooperation.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/international-cooperation.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/international-cooperation.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/oil-spill.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/oil-spill.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/oil-spill.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0086150833",
+      "source": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/1.jpg",
+      "data": {
+        "value": "0086150833"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0009832007",
+      "source": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/1.jpg",
+      "data": {
+        "value": "0009832007"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0086150833",
+      "source": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/3.jpg",
+      "data": {
+        "value": "0086150833"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0009832007",
+      "source": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/3.jpg",
+      "data": {
+        "value": "0009832007"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0086150833",
+      "source": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/4.jpg",
+      "data": {
+        "value": "0086150833"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0009832007",
+      "source": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/4.jpg",
+      "data": {
+        "value": "0009832007"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 75463 visible characters across 11 pages",
+      "source": "https://coastguard.gov.lk/"
     }
   ],
   "observations": [
@@ -85,10 +441,10 @@
     },
     {
       "host": "coastguard.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2027-02-17T05:29:59+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://coastguard.gov.lk/",
@@ -110,12 +466,12 @@
     },
     {
       "url": "https://coastguard.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 920,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://coastguard.gov.lk/",
@@ -125,9 +481,166 @@
       "elapsed_ms": null,
       "content_type": null,
       "error": "timed out"
+    },
+    {
+      "url": "https://coastguard.gov.lk/rank-and-rates.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/rank-and-rates.html",
+      "redirects": [],
+      "elapsed_ms": 708,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/uniforms.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/uniforms.html",
+      "redirects": [],
+      "elapsed_ms": 997,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/deputy-director-general.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/deputy-director-general.html",
+      "redirects": [],
+      "elapsed_ms": 1659,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "redirects": [],
+      "elapsed_ms": 731,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "redirects": [],
+      "elapsed_ms": 738,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/international-cooperation.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/international-cooperation.html",
+      "redirects": [],
+      "elapsed_ms": 2001,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/oil-spill.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/oil-spill.html",
+      "redirects": [],
+      "elapsed_ms": 951,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/1.jpg",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/1.jpg",
+      "redirects": [],
+      "elapsed_ms": 1429,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/3.jpg",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/3.jpg",
+      "redirects": [],
+      "elapsed_ms": 1439,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/4.jpg",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/4.jpg",
+      "redirects": [],
+      "elapsed_ms": 1378,
+      "content_type": "image/jpeg",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://coastguard.gov.lk/",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-01-9448da7eb5d2.html",
+      "sha256": "9448da7eb5d216ef22fdbe321aae00d0b10e8a12795b6bb1f187c1f1110a5c22",
+      "bytes": 66928
+    },
+    {
+      "url": "https://coastguard.gov.lk/rank-and-rates.html",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-02-c8f58faabdea.html",
+      "sha256": "c8f58faabdea841a61622971fd09a1da2b8a3f945de16b45af3e247633319724",
+      "bytes": 37941
+    },
+    {
+      "url": "https://coastguard.gov.lk/uniforms.html",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-03-663a571be75a.html",
+      "sha256": "663a571be75adb27986549adaf8adefa2f5c4001510fb713193b6a7518c4ca5f",
+      "bytes": 89330
+    },
+    {
+      "url": "https://coastguard.gov.lk/deputy-director-general.html",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-04-c9a9729486d9.html",
+      "sha256": "c9a9729486d9524960e44a0c1bdbe197412f4c9bf9aaeda32224b380f57a2345",
+      "bytes": 36896
+    },
+    {
+      "url": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-05-973658bff29d.html",
+      "sha256": "973658bff29d596162c09e65f877bbeb3230769f3b7e51a637db948e481d3f6a",
+      "bytes": 35688
+    },
+    {
+      "url": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-06-2097d9793ff4.html",
+      "sha256": "2097d9793ff456f7b3d35726b82a673d08d864985df6eda7d247e2c774bedfe3",
+      "bytes": 62596
+    },
+    {
+      "url": "https://coastguard.gov.lk/international-cooperation.html",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-07-f69519a08e14.html",
+      "sha256": "f69519a08e1404eb84edcf91916ca6a66dca74871805c696bee1d357e3a40b49",
+      "bytes": 70842
+    },
+    {
+      "url": "https://coastguard.gov.lk/oil-spill.html",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-08-76dd82ba736f.html",
+      "sha256": "76dd82ba736faf7604a6e5c0a9dedb26766b12294be211d1daba3b665b463bd5",
+      "bytes": 56616
+    },
+    {
+      "url": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/1.jpg",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-09-a4951a8f97d2.html",
+      "sha256": "a4951a8f97d2ae7f102aa200567a4161213df4b7d678ff8005f2ce2c09197973",
+      "bytes": 218579
+    },
+    {
+      "url": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/3.jpg",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-10-4e6bc4ea338f.html",
+      "sha256": "4e6bc4ea338fc3c3d1a89e43f8c9a9784241eae4d14c28f6e9f3b6e4f7aa5e78",
+      "bytes": 230845
+    },
+    {
+      "url": "https://coastguard.gov.lk/assets/images/other_pages/marine_environmental_protection/part_1/4.jpg",
+      "path": "audit.output/coastguard.gov.lk/20261123.1004/snapshots/page-11-eb8444e24236.html",
+      "sha256": "eb8444e242366077405cfcdfd2fddef386aaff686c8f7a7a59673e3b5900e9e6",
+      "bytes": 277129
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +654,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://coastguard.gov.lk/: Probe 1: timed out; http://coastguard.gov.lk/: Probe 2: timed out; http://coastguard.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +667,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: https://coastguard.gov.lk/: Probe 1: timed out; http://coastguard.gov.lk/: Probe 2: timed out; http://coastguard.gov.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +724,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 412 260 312 (4 phone numbers found); Email: dgsecretariat@coastguard.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +773,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.41.210.121",
+    "egress_ip": "3.42.157.50",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

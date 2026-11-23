@@ -1,8 +1,8 @@
 # Website Audit: https://www.stc.lk/
 
-- Completed: 2026-11-22 10:04
+- Completed: 2026-11-23 10:45
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 3.42.157.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 011 242 2341 (67 phone numbers found); Email: udeni@stc.lk (18 email addresses found); Published named responsibility: officer in charge
+Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 070 259 0355 (67 phone numbers found); Email: anura@stc.lk (18 email addresses found); Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St |
-| reachable_contacts | ✅ | Phone: 011 242 2341 (67 phone numbers found); Email: udeni@stc.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 070 259 0355 (67 phone numbers found); Email: anura@stc.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓

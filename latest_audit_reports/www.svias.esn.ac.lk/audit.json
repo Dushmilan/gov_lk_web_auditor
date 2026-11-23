@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "812d978c-cca0-45e0-98f2-bc8b39def9a2",
+  "audit_id": "73970db5-dea1-42ca-b4d0-5034765e8f70",
   "url": "https://www.svias.esn.ac.lk/",
   "normalized_url": "https://www.svias.esn.ac.lk/",
-  "started_at": "2026-11-22T09:32:33.679809+05:30",
-  "completed_at": "2026-11-22T09:34:44.563325+05:30",
+  "started_at": "2026-11-23T10:12:29.472040+05:30",
+  "completed_at": "2026-11-23T10:12:52.198288+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 101] Network is unreachable",
-      "tls_hostname_matches: [Errno 101] Network is unreachable"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,348 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-22T09:32:33.703598+05:30"
+      "observed_at": "2026-11-23T10:12:31.125987+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-22T09:32:33.703611+05:30"
+      "observed_at": "2026-11-23T10:12:31.126010+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 101] Network is unreachable",
-      "observed_at": "2026-11-22T09:32:43.874451+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-23T10:12:31.779205+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.svias.esn.ac.lk/",
       "source": "https://www.svias.esn.ac.lk/",
-      "observed_at": "2026-11-22T09:34:44.563163+05:30"
+      "observed_at": "2026-11-23T10:12:51.284002+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.svias.esn.ac.lk/",
       "source": "http://www.svias.esn.ac.lk/",
-      "observed_at": "2026-11-22T09:34:44.563184+05:30"
+      "observed_at": "2026-11-23T10:12:51.284021+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.svias.esn.ac.lk/",
       "source": "https://www.svias.esn.ac.lk/",
-      "observed_at": "2026-11-22T09:34:44.563187+05:30"
+      "observed_at": "2026-11-23T10:12:51.284024+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.svias.esn.ac.lk/",
       "source": "http://www.svias.esn.ac.lk/",
-      "observed_at": "2026-11-22T09:34:44.563189+05:30"
+      "observed_at": "2026-11-23T10:12:51.284026+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.svias.esn.ac.lk/office/",
+      "source": "https://www.svias.esn.ac.lk/office/",
+      "observed_at": "2026-11-23T10:12:51.284029+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.svias.esn.ac.lk/department-of-carnatic-music/",
+      "source": "https://www.svias.esn.ac.lk/department-of-carnatic-music/",
+      "observed_at": "2026-11-23T10:12:51.284032+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.svias.esn.ac.lk/department-of-dance-drama-theatre/",
+      "source": "https://www.svias.esn.ac.lk/department-of-dance-drama-theatre/",
+      "observed_at": "2026-11-23T10:12:51.284034+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.svias.esn.ac.lk/department-of-visual-technological-arts/",
+      "source": "https://www.svias.esn.ac.lk/department-of-visual-technological-arts/",
+      "observed_at": "2026-11-23T10:12:51.284036+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.svias.esn.ac.lk/history/",
+      "source": "https://www.svias.esn.ac.lk/history/",
+      "observed_at": "2026-11-23T10:12:51.284038+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.svias.esn.ac.lk/vision-mission/",
+      "source": "https://www.svias.esn.ac.lk/vision-mission/",
+      "observed_at": "2026-11-23T10:12:51.284041+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.svias.esn.ac.lk/location/",
+      "source": "https://www.svias.esn.ac.lk/location/",
+      "observed_at": "2026-11-23T10:12:51.284043+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.svias.esn.ac.lk/former-directors/",
+      "source": "https://www.svias.esn.ac.lk/former-directors/",
+      "observed_at": "2026-11-23T10:12:51.284045+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.svias.esn.ac.lk/board-of-management/",
+      "source": "https://www.svias.esn.ac.lk/board-of-management/",
+      "observed_at": "2026-11-23T10:12:51.284047+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.svias.esn.ac.lk/academic-syndicate/",
+      "source": "https://www.svias.esn.ac.lk/?page_id=2874",
+      "observed_at": "2026-11-23T10:12:51.284049+05:30"
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://www.svias.esn.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://www.svias.esn.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 75 808 7516 ",
+      "source": "https://www.svias.esn.ac.lk/office/",
+      "data": {
+        "value": "+94 75 808 7516 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/office/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 75 046 9849 ",
+      "source": "https://www.svias.esn.ac.lk/department-of-carnatic-music/",
+      "data": {
+        "value": "+94 75 046 9849 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: vaheesant@esn.ac.lk",
+      "source": "https://www.svias.esn.ac.lk/department-of-carnatic-music/",
+      "data": {
+        "value": "vaheesant@esn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/department-of-carnatic-music/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 618 1841 ",
+      "source": "https://www.svias.esn.ac.lk/department-of-dance-drama-theatre/",
+      "data": {
+        "value": "+94 77 618 1841 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: Nanthujee645@gmail.com",
+      "source": "https://www.svias.esn.ac.lk/department-of-dance-drama-theatre/",
+      "data": {
+        "value": "Nanthujee645@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ushanthyn@esn.ac.lk",
+      "source": "https://www.svias.esn.ac.lk/department-of-dance-drama-theatre/",
+      "data": {
+        "value": "ushanthyn@esn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/department-of-dance-drama-theatre/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 77 228 3176 ",
+      "source": "https://www.svias.esn.ac.lk/department-of-visual-technological-arts/",
+      "data": {
+        "value": "+94 77 228 3176 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: pragashr@esn.ac.lk",
+      "source": "https://www.svias.esn.ac.lk/department-of-visual-technological-arts/",
+      "data": {
+        "value": "pragashr@esn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: pragash0333@gmail.com",
+      "source": "https://www.svias.esn.ac.lk/department-of-visual-technological-arts/",
+      "data": {
+        "value": "pragash0333@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/department-of-visual-technological-arts/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/history/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.svias.esn.ac.lk/history/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/vision-mission/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 65 222 5689 ",
+      "source": "https://www.svias.esn.ac.lk/location/",
+      "data": {
+        "value": "+94 65 222 5689 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/location/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/former-directors/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/board-of-management/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.svias.esn.ac.lk/academic-syndicate/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 8745 visible characters across 14 pages",
+      "source": "https://www.svias.esn.ac.lk/"
     }
   ],
   "observations": [
@@ -86,49 +388,226 @@
     },
     {
       "host": "www.svias.esn.ac.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 101] Network is unreachable"
+      "status": "valid",
+      "expires_at": "2027-01-12T15:46:02+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.svias.esn.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 1483,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.svias.esn.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://www.svias.esn.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 1093,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.svias.esn.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 1478,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.svias.esn.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://www.svias.esn.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 1104,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/office/",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/office/",
+      "redirects": [],
+      "elapsed_ms": 1261,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/department-of-carnatic-music/",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/department-of-carnatic-music/",
+      "redirects": [],
+      "elapsed_ms": 1276,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/department-of-dance-drama-theatre/",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/department-of-dance-drama-theatre/",
+      "redirects": [],
+      "elapsed_ms": 1291,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/department-of-visual-technological-arts/",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/department-of-visual-technological-arts/",
+      "redirects": [],
+      "elapsed_ms": 1302,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/history/",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/history/",
+      "redirects": [],
+      "elapsed_ms": 1417,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/vision-mission/",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/vision-mission/",
+      "redirects": [],
+      "elapsed_ms": 1256,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/location/",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/location/",
+      "redirects": [],
+      "elapsed_ms": 1324,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/former-directors/",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/former-directors/",
+      "redirects": [],
+      "elapsed_ms": 1323,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/board-of-management/",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/board-of-management/",
+      "redirects": [],
+      "elapsed_ms": 1317,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/?page_id=2874",
+      "status_code": 200,
+      "final_url": "https://www.svias.esn.ac.lk/academic-syndicate/",
+      "redirects": [
+        "https://www.svias.esn.ac.lk/academic-syndicate/"
+      ],
+      "elapsed_ms": 1299,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.svias.esn.ac.lk/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-01-1afd53a9feb2.html",
+      "sha256": "1afd53a9feb290a4ed180cbcc6d55972131f145f52f19056a0c0999286898a25",
+      "bytes": 116350
+    },
+    {
+      "url": "http://www.svias.esn.ac.lk/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-02-de3f04c83a1d.html",
+      "sha256": "de3f04c83a1d1e167c4115884df3a6aeeb46f724322f72a292e8bb1841c21470",
+      "bytes": 116145
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-03-7ca06bef9600.html",
+      "sha256": "7ca06bef9600080c55ccf540145f2e8ec4d90df701d19e9145be9ce578c0fdcd",
+      "bytes": 116350
+    },
+    {
+      "url": "http://www.svias.esn.ac.lk/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-04-3e02a41f973a.html",
+      "sha256": "3e02a41f973a8c4285d1191d474b7aa1a07e0bb5e395a9772874b1b7124bb68c",
+      "bytes": 116141
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/office/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-05-c99074673790.html",
+      "sha256": "c9907467379073eada011e562481cab7794e41418c88ccfb1d6441a0c94086f7",
+      "bytes": 96287
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/department-of-carnatic-music/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-06-4f98d08e20c9.html",
+      "sha256": "4f98d08e20c93bd391f4b5873383be797d1465529c860d049a23a3c81b9d1c6d",
+      "bytes": 87465
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/department-of-dance-drama-theatre/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-07-1f1a998f453c.html",
+      "sha256": "1f1a998f453c412a092e6a362b7261ef23bc12af9a63921d451d3ee25956bc2b",
+      "bytes": 90012
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/department-of-visual-technological-arts/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-08-99d7d7e2790b.html",
+      "sha256": "99d7d7e2790bc75addf506bef38e80755c081b2d2f8b00e16a1463e1dd189d6f",
+      "bytes": 87281
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/history/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-09-285ae3e637f3.html",
+      "sha256": "285ae3e637f34d9ecc903b3f72c481f2b4a8b8fcb223228f23f75e51b5c0c233",
+      "bytes": 95543
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/vision-mission/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-10-ed04cb6e7f22.html",
+      "sha256": "ed04cb6e7f22efef839303dc2d68c278c08343548609a9e5143d48f7970207de",
+      "bytes": 89266
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/location/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-11-eee82bb91f27.html",
+      "sha256": "eee82bb91f273efa639844769ef70a52976f736ae3e03529605bdf842c46a42d",
+      "bytes": 88392
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/former-directors/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-12-c9931bc1ac6f.html",
+      "sha256": "c9931bc1ac6fa19a7e0cf4f4d503bda5ad900c66cc55511286837a402de59900",
+      "bytes": 99904
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/board-of-management/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-13-935116251486.html",
+      "sha256": "935116251486d5f269e22278ef6b7daf3a97c147af2add5534b6eb680bf4758b",
+      "bytes": 90139
+    },
+    {
+      "url": "https://www.svias.esn.ac.lk/academic-syndicate/",
+      "path": "audit.output/www.svias.esn.ac.lk/20261123.1012/snapshots/page-14-cd53d68c3a28.html",
+      "sha256": "cd53d68c3a281a272a53d84494acf7e60ea5377911765af181f550590907c488",
+      "bytes": 88380
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,8 +621,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -155,56 +634,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 101] Network is unreachable"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 101] Network is unreachable"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -212,9 +691,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 75 808 7516 (5 phone numbers found); Email: vaheesant@esn.ac.lk (5 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -242,7 +740,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.41.210.121",
+    "egress_ip": "3.42.157.50",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

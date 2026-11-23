@@ -1,8 +1,8 @@
 # Website Audit: https://data.gov.lk/
 
-- Completed: 2026-11-22 09:28
+- Completed: 2026-11-23 10:07
 - Overall result: ⚫ Level 0
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 3.42.157.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

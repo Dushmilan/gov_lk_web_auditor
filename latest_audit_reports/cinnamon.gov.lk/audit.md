@@ -1,8 +1,8 @@
 # Website Audit: https://cinnamon.gov.lk/
 
-- Completed: 2026-11-22 09:20
+- Completed: 2026-11-23 09:58
 - Overall result: 🔴 Level 1
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 3.42.157.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0-8.268-2.943-9. (35 phone numbers found); Email: chathurangagunasekara85@gmail.com (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 718125575 (35 phone numbers found); Email: cinnamondept@gmail.com (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

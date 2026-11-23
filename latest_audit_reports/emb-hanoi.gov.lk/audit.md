@@ -1,8 +1,8 @@
 # Website Audit: https://emb-hanoi.gov.lk/
 
-- Completed: 2026-11-22 09:45
+- Completed: 2026-11-23 10:25
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 3.42.157.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 0310270009 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found); Published named responsibility: department
+Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 0809-7188-49 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: 0310270009 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0809-7188-49 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://wrb.lk/
 
-- Completed: 2026-11-22 09:38
+- Completed: 2026-11-23 10:16
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 3.42.157.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: hours, 24 hours, 48 hours and 72 hours. Colombo Sri Lanka; Phone: 0112697050 (21 phone numbers found); Email: infowrbit@gmail.com (7 email addresses found); Published named responsibility: director
+Published postal address: Metal analysis on water. Microbiological Analysis on water. Colombo Sri Lanka; Phone: +94112697050 (21 phone numbers found); Email: infowrbit@gmail.com (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: hours, 24 hours, 48 hours and 72 hours. Colombo Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0112697050 (21 phone numbers found); Email: infowrbit@gmail.com (7 email addresses found) |
+| postal_address | ✅ | Published postal address: Metal analysis on water. Microbiological Analysis on water. Colombo Sri Lanka |
+| reachable_contacts | ✅ | Phone: +94112697050 (21 phone numbers found); Email: infowrbit@gmail.com (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.boc.lk/
 
-- Completed: 2026-11-22 09:37
+- Completed: 2026-11-23 10:17
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 3.42.157.50 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka; Phone: 000 337.3000 (38 phone numbers found); Email: boc@boc.lk (5 email addresses found); Published named responsibility: division
+Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka; Phone: 0166 371.181 (39 phone numbers found); Email: boc@boc.lk (5 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 1, BOC Square, Bank of Ceylon Mawatha, Colombo 01, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 000 337.3000 (38 phone numbers found); Email: boc@boc.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0166 371.181 (39 phone numbers found); Email: boc@boc.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
