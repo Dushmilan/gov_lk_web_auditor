@@ -1,8 +1,8 @@
 # Website Audit: https://www.crib.lk/
 
-- Completed: 2026-11-23 10:18
+- Completed: 2026-11-24 13:17
 - Overall result: ⚫ Level 0
-- Vantage: 3.42.157.50 (US, github-actions)
+- Vantage: 172.215.209.196 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,20 +14,20 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-[Errno -3] Temporary failure in name resolution; No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; HTTP checks did not run; No redirect result was available; Browser TLS check did not complete; TLS expiry check did not run; TLS hostname check did not run
+No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
-| dns_resolves | ❓ | [Errno -3] Temporary failure in name resolution |
+| dns_resolves | ✅ | Public DNS resolved |
 | domain_not_parked | ❓ | No usable page was inspected |
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | HTTP checks did not run |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ❓ | TLS expiry check did not run |
-| tls_hostname_matches | ❓ | TLS hostname check did not run |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
 ## 🟠 Level 2: ❓
 

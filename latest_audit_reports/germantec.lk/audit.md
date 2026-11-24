@@ -1,8 +1,8 @@
 # Website Audit: https://germantec.lk/
 
-- Completed: 2026-11-23 10:13
+- Completed: 2026-11-24 13:09
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.50 (US, github-actions)
+- Vantage: 172.215.209.196 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the specific requirements of each customer. Whether you represent Sri Lanka Army, Sri Lanka Air Force, Sri Lanka Navy, S; Phone: +94 11 5741007 (3 phone numbers found); Email: dev@age.gg; Published named responsibility: department
+Published postal address: the specific requirements of each customer. Whether you represent Sri Lanka Army, Sri Lanka Air Force, Sri Lanka Navy, S; Phone: +94 11 2605625 (3 phone numbers found); Email: dev@age.gg; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the specific requirements of each customer. Whether you represent Sri Lanka Army, Sri Lanka Air Force, Sri Lanka Navy, S |
-| reachable_contacts | ✅ | Phone: +94 11 5741007 (3 phone numbers found); Email: dev@age.gg |
+| reachable_contacts | ✅ | Phone: +94 11 2605625 (3 phone numbers found); Email: dev@age.gg |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

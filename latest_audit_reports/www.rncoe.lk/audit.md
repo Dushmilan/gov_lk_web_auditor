@@ -1,8 +1,8 @@
 # Website Audit: https://www.rncoe.lk/
 
-- Completed: 2026-11-23 10:13
+- Completed: 2026-11-24 13:09
 - Overall result: 🔴 Level 1
-- Vantage: 3.42.157.50 (US, github-actions)
+- Vantage: 172.215.209.196 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Password Remember Me Selecting "Remember Me" increases the length of time until you’re asked to log in again on this dev |
-| reachable_contacts | ✅ | Phone: 045 227 3019 (2 phone numbers found); Email: info@rncoe.lk |
+| reachable_contacts | ✅ | Phone: +94452273019 (2 phone numbers found); Email: info@rncoe.lk |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

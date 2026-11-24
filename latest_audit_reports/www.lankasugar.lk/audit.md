@@ -1,8 +1,8 @@
 # Website Audit: https://www.lankasugar.lk/
 
-- Completed: 2026-11-23 10:32
+- Completed: 2026-11-24 13:30
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.50 (US, github-actions)
+- Vantage: 172.215.209.196 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 327, Ekamuthu Mawatha, Thalangama North, Battaramulla Corporate Headquarters No 327, Ekamuthu Mawatha, Thalangama Nor; Phone: 076 8213562 (50 phone numbers found); Email: K@48G9-.BYBGNPTUT; Published named responsibility: director
+Published postal address: No 327, Ekamuthu Mawatha, Thalangama North, Battaramulla Corporate Headquarters No 327, Ekamuthu Mawatha, Thalangama Nor; Phone: 076 8213562 (58 phone numbers found); Email: K@48G9-.BYBGNPTUT; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 327, Ekamuthu Mawatha, Thalangama North, Battaramulla Corporate Headquarters No 327, Ekamuthu Mawatha, Thalangama Nor |
-| reachable_contacts | ✅ | Phone: 076 8213562 (50 phone numbers found); Email: K@48G9-.BYBGNPTUT |
+| reachable_contacts | ✅ | Phone: 076 8213562 (58 phone numbers found); Email: K@48G9-.BYBGNPTUT |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

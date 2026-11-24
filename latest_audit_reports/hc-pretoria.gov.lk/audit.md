@@ -1,8 +1,8 @@
 # Website Audit: https://hc-pretoria.gov.lk/
 
-- Completed: 2026-11-23 10:28
+- Completed: 2026-11-24 13:26
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.50 (US, github-actions)
+- Vantage: 172.215.209.196 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 410, Alexander Street, Brooklyn, Pretoria Tel: +27 12 460 76 79 Email: consular.pretoria@mfa.gov.lk Register as a Sri La; Phone: 0584067751 (36 phone numbers found); Email: john@example.com (12 email addresses found); Published named responsibility: director
+Published postal address: 410, Alexander Street, Brooklyn, Pretoria Tel: +27 12 460 76 79 Email: consular.pretoria@mfa.gov.lk Register as a Sri La; Phone: 0589470451 (36 phone numbers found); Email: consular.pretoria@mfa.gov.lk (12 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 410, Alexander Street, Brooklyn, Pretoria Tel: +27 12 460 76 79 Email: consular.pretoria@mfa.gov.lk Register as a Sri La |
-| reachable_contacts | ✅ | Phone: 0584067751 (36 phone numbers found); Email: john@example.com (12 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0589470451 (36 phone numbers found); Email: consular.pretoria@mfa.gov.lk (12 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

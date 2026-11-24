@@ -1,8 +1,8 @@
 # Website Audit: https://www.presidentsoffice.gov.lk/
 
-- Completed: 2026-11-23 10:52
+- Completed: 2026-11-24 13:55
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.50 (US, github-actions)
+- Vantage: 172.215.209.196 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Presidential Secretariat, Galle Face, Colombo 00100, Sri Lanka; Phone: +94 (0) 11 2 354 35 (12 phone numbers found); Email: ps@presidentsoffice.lk; Published named responsibility: division
+Published postal address: Presidential Secretariat, Galle Face, Colombo 00100, Sri Lanka; Phone: +94-11-2-340-340 (12 phone numbers found); Email: ps@presidentsoffice.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Presidential Secretariat, Galle Face, Colombo 00100, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 (0) 11 2 354 35 (12 phone numbers found); Email: ps@presidentsoffice.lk |
+| reachable_contacts | ✅ | Phone: +94-11-2-340-340 (12 phone numbers found); Email: ps@presidentsoffice.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
