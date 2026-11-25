@@ -1,8 +1,8 @@
 # Website Audit: https://emb-muscat.gov.lk/
 
-- Completed: 2026-11-24 13:25
+- Completed: 2026-11-25 11:59
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.209.196 (US, github-actions)
+- Vantage: 20.161.78.66 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Embassy of Sri Lanka, Al Bashair Street, Villa No. 701, Way No. 2114, Madinat Sultan Qaboos, Sultanate of Oman Email : s; Phone: +96878252852 (28 phone numbers found); Email: slemb.muscat@mfa.gov.lk (6 email addresses found); Published named responsibility: director
+Published postal address: Embassy of Sri Lanka, Al Bashair Street, Villa No. 701, Way No. 2114, Madinat Sultan Qaboos, Sultanate of Oman Email : s; Phone: +96824697841 (28 phone numbers found); Email: slemb.muscat@mfa.gov.lk (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Embassy of Sri Lanka, Al Bashair Street, Villa No. 701, Way No. 2114, Madinat Sultan Qaboos, Sultanate of Oman Email : s |
-| reachable_contacts | ✅ | Phone: +96878252852 (28 phone numbers found); Email: slemb.muscat@mfa.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +96824697841 (28 phone numbers found); Email: slemb.muscat@mfa.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

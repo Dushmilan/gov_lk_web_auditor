@@ -1,8 +1,8 @@
 # Website Audit: https://sjgh.health.gov.lk/
 
-- Completed: 2026-11-24 13:28
+- Completed: 2026-11-25 12:02
 - Overall result: 🔴 Level 1
-- Vantage: 172.215.209.196 (US, github-actions)
+- Vantage: 20.161.78.66 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

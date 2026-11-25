@@ -1,8 +1,8 @@
 # Website Audit: https://nilet.gov.lk/
 
-- Completed: 2026-11-24 13:33
+- Completed: 2026-11-25 12:07
 - Overall result: 🔴 Level 1
-- Vantage: 172.215.209.196 (US, github-actions)
+- Vantage: 20.161.78.66 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
+No email evidence found; No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ❓ | No phone or email evidence found |
+| postal_address | ✅ | Published postal address: No. 321/1, High Level Road, Makubura,Pannipitiya Telephone +94 112 172 800/ +94 112 172 674/ +94 113 309 2910 |
+| reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

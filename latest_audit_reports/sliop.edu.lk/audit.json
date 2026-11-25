@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "a9fc650b-7813-4d51-bb7d-704536794d53",
+  "audit_id": "1035968d-18ba-43fb-825d-f4310067822b",
   "url": "https://sliop.edu.lk/",
   "normalized_url": "https://sliop.edu.lk/",
-  "started_at": "2026-11-24T13:28:17.132667+05:30",
-  "completed_at": "2026-11-24T13:28:34.154899+05:30",
+  "started_at": "2026-11-25T12:02:17.503107+05:30",
+  "completed_at": "2026-11-25T12:04:31.144075+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,1230 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-24T13:28:17.327889+05:30"
+      "observed_at": "2026-11-25T12:02:18.053983+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-24T13:28:17.327908+05:30"
+      "observed_at": "2026-11-25T12:02:18.053993+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-24T13:28:17.389103+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-11-25T12:02:28.381371+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://sliop.edu.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://sliop.edu.lk/",
-      "observed_at": "2026-11-24T13:28:33.087325+05:30"
+      "observed_at": "2026-11-25T12:04:31.143896+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://sliop.edu.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://sliop.edu.lk/",
-      "observed_at": "2026-11-24T13:28:33.087349+05:30"
+      "observed_at": "2026-11-25T12:04:31.143915+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://sliop.edu.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://sliop.edu.lk/",
-      "observed_at": "2026-11-24T13:28:33.087356+05:30"
+      "observed_at": "2026-11-25T12:04:31.143921+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://sliop.edu.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://sliop.edu.lk/",
-      "observed_at": "2026-11-24T13:28:33.087361+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at http://sliop.edu.lk/contact/",
-      "source": "http://sliop.edu.lk/contact/",
-      "observed_at": "2026-11-24T13:28:33.087366+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "observed_at": "2026-11-24T13:28:33.087371+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://sliop.edu.lk/contact/",
-      "source": "https://sliop.edu.lk/contact/",
-      "observed_at": "2026-11-24T13:28:33.087375+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://sliop.edu.lk",
-      "source": "https://sliop.edu.lk",
-      "observed_at": "2026-11-24T13:28:33.087379+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://sliop.edu.lk/about/",
-      "source": "https://sliop.edu.lk/about/",
-      "observed_at": "2026-11-24T13:28:33.087384+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://sliop.edu.lk/courses/",
-      "source": "https://sliop.edu.lk/courses/",
-      "observed_at": "2026-11-24T13:28:33.087389+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "observed_at": "2026-11-24T13:28:33.087394+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "observed_at": "2026-11-24T13:28:33.087400+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://sliop.edu.lk/courses/graphic-design/",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "observed_at": "2026-11-24T13:28:33.087404+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "observed_at": "2026-11-24T13:28:33.087409+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0247108039",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0247108039"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0247108039",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0247108039"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0247108039",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0247108039"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0247108039",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0247108039"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "http://sliop.edu.lk/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "http://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "http://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "http://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "http://sliop.edu.lk/contact/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "http://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "http://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "http://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: field work\",\"Form:\":\"Form:\",\"Embed Type:\":\"Embed Type:\",\"Add a FormCraft form\":\"Add a FormCraft form\",\"Inline\":\"Inline\",",
-      "source": "http://sliop.edu.lk/contact/",
-      "data": {
-        "value": "field work\",\"Form:\":\"Form:\",\"Embed Type:\":\"Embed Type:\",\"Add a FormCraft form\":\"Add a FormCraft form\",\"Inline\":\"Inline\","
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 22000",
-      "source": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "data": {
-        "value": "Rs. 22000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/contact/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/contact/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: field work\",\"Form:\":\"Form:\",\"Embed Type:\":\"Embed Type:\",\"Add a FormCraft form\":\"Add a FormCraft form\",\"Inline\":\"Inline\",",
-      "source": "https://sliop.edu.lk/contact/",
-      "data": {
-        "value": "field work\",\"Form:\":\"Form:\",\"Embed Type:\":\"Embed Type:\",\"Add a FormCraft form\":\"Add a FormCraft form\",\"Inline\":\"Inline\","
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0247108039",
-      "source": "https://sliop.edu.lk",
-      "data": {
-        "value": "0247108039"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/about/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/about/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/about/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/about/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/about/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/about/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/about/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk/about/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://sliop.edu.lk/about/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/courses/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/courses/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/courses/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/courses/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/courses/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/courses/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/courses/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk/courses/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 22,000",
-      "source": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "data": {
-        "value": "Rs. 22,000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs.10000",
-      "source": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "data": {
-        "value": "Rs.10000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 25,000",
-      "source": "https://sliop.edu.lk/courses/graphic-design/",
-      "data": {
-        "value": "Rs. 25,000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979806316",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "data": {
-        "value": "0979806316"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979873570",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "data": {
-        "value": "0979873570"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0980012112",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "data": {
-        "value": "0980012112"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 793 1349 ",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "data": {
-        "value": "076 793 1349 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0979853668",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "data": {
-        "value": "0979853668"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 686 162 ",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "data": {
-        "value": "0112 686 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 679 791 ",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "data": {
-        "value": "0112 679 791 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "data": {
-        "value": "Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 45,000",
-      "source": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "data": {
-        "value": "Rs. 45,000"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 4018 visible characters across 14 pages",
-      "source": "https://sliop.edu.lk/"
+      "observed_at": "2026-11-25T12:04:31.143924+05:30"
     }
   ],
   "observations": [
@@ -1269,224 +85,49 @@
     },
     {
       "host": "sliop.edu.lk",
-      "status": "valid",
-      "expires_at": "2026-12-25T12:01:21+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://sliop.edu.lk/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 2232,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://sliop.edu.lk/",
-      "status_code": 200,
-      "final_url": "http://sliop.edu.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 775,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://sliop.edu.lk/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 737,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://sliop.edu.lk/",
-      "status_code": 200,
-      "final_url": "http://sliop.edu.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 659,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://sliop.edu.lk/contact/",
-      "status_code": 200,
-      "final_url": "http://sliop.edu.lk/contact/",
-      "redirects": [],
-      "elapsed_ms": 566,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "redirects": [],
-      "elapsed_ms": 650,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sliop.edu.lk/contact/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/contact/",
-      "redirects": [],
-      "elapsed_ms": 816,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sliop.edu.lk",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk",
-      "redirects": [],
-      "elapsed_ms": 891,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sliop.edu.lk/about/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/about/",
-      "redirects": [],
-      "elapsed_ms": 977,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/courses/",
-      "redirects": [],
-      "elapsed_ms": 784,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "redirects": [],
-      "elapsed_ms": 706,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "redirects": [],
-      "elapsed_ms": 732,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/graphic-design/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/courses/graphic-design/",
-      "redirects": [],
-      "elapsed_ms": 589,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "status_code": 200,
-      "final_url": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "redirects": [],
-      "elapsed_ms": 721,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://sliop.edu.lk/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-01-e58206cfd3a9.html",
-      "sha256": "e58206cfd3a930046cbacc6d8f9fe46ad34cabd3a667232001cc5e08bc4ac8cf",
-      "bytes": 90995
-    },
-    {
-      "url": "http://sliop.edu.lk/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-02-c770b36e3416.html",
-      "sha256": "c770b36e341611711f28fec1140dde18b7c3768e2a127ee0e62a4c57dbcf2d2f",
-      "bytes": 90833
-    },
-    {
-      "url": "https://sliop.edu.lk/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-03-a0747f46319e.html",
-      "sha256": "a0747f46319ec60a1a21beb937ddceddff048fd7d1a4a1d8367a92fd03681bf7",
-      "bytes": 90995
-    },
-    {
-      "url": "http://sliop.edu.lk/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-04-3cb796b59545.html",
-      "sha256": "3cb796b595458714b68cca52f585ce267f962c302e45228086af6c5dcf6ded82",
-      "bytes": 90833
-    },
-    {
-      "url": "http://sliop.edu.lk/contact/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-05-01cb672c4286.html",
-      "sha256": "01cb672c4286ee9a56338204c7b0150c348143cd2d90700101a0919277cb79d4",
-      "bytes": 90994
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/computer-application-assistant-ms-office/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-06-dc777f661726.html",
-      "sha256": "dc777f6617268602e08612fe2ae856d18aa3159baf3696456716d515fdafd35b",
-      "bytes": 77286
-    },
-    {
-      "url": "https://sliop.edu.lk/contact/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-07-a9e500ba33ef.html",
-      "sha256": "a9e500ba33eff40dd8ed3c54de84ef518a9661f8bb516972d96a9a9bde33b328",
-      "bytes": 91106
-    },
-    {
-      "url": "https://sliop.edu.lk",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-08-b266d8d4da04.html",
-      "sha256": "b266d8d4da040c53fc1eacadb328f4bff0b44bea8e8aaab5c245a322f0263da7",
-      "bytes": 90995
-    },
-    {
-      "url": "https://sliop.edu.lk/about/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-09-5f0514d07d83.html",
-      "sha256": "5f0514d07d8327c1570fa7cf85caaaf604c56df58e5f0d89266ce70c1dbc0057",
-      "bytes": 70601
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-10-45b9ee90d3f2.html",
-      "sha256": "45b9ee90d3f2091b4286e43d01f56144670bb2c38dd56579bbc3987385bfaa53",
-      "bytes": 71915
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/computer-typesetting-desktop-publishing/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-11-b2bd5a6ff771.html",
-      "sha256": "b2bd5a6ff77141c6b6748e4018bf40ac2e1741138c683fb0119736691a4e43b0",
-      "bytes": 77431
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/digitalization-for-communication-and-collaboration/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-12-69810d0a316a.html",
-      "sha256": "69810d0a316a517a12d493ad0451be2c74a0dcadd5817b9284d7b14f95b3d458",
-      "bytes": 74230
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/graphic-design/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-13-9b79f8beffd3.html",
-      "sha256": "9b79f8beffd3ff5c59a7e3216f40b67fc5cfc8648a48633938bfef9e4dc396cf",
-      "bytes": 77617
-    },
-    {
-      "url": "https://sliop.edu.lk/courses/graphic-design-nvq-level-4/",
-      "path": "audit.output/sliop.edu.lk/20261124.1328/snapshots/page-14-e6f080b0bf30.html",
-      "sha256": "e6f080b0bf30f972d32be12abad248968c909ec4d450a5957a9ea8724e169bd0",
-      "bytes": 77745
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1500,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -1513,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -1570,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No email evidence found; No passing named responsibility evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: Contact Us 118, Dr Danister De Silva Mawatha, Colombo, Sri Lanka"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing named responsibility evidence found"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -1619,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.215.209.196",
+    "egress_ip": "20.161.78.66",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

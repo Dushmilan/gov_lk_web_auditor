@@ -1,8 +1,8 @@
 # Website Audit: https://tourismmin.gov.lk/
 
-- Completed: 2026-11-24 13:51
+- Completed: 2026-11-25 12:26
 - Overall result: ⚫ Level 0
-- Vantage: 172.215.209.196 (US, github-actions)
+- Vantage: 20.161.78.66 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

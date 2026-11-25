@@ -1,8 +1,8 @@
 # Website Audit: https://lankamineralsands.com/
 
-- Completed: 2026-11-24 13:30
+- Completed: 2026-11-25 12:05
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.209.196 (US, github-actions)
+- Vantage: 20.161.78.66 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

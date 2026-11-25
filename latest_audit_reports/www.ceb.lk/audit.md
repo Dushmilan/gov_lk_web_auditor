@@ -1,8 +1,8 @@
 # Website Audit: https://www.ceb.lk/
 
-- Completed: 2026-11-24 13:11
+- Completed: 2026-11-25 11:43
 - Overall result: 🔴 Level 1
-- Vantage: 172.215.209.196 (US, github-actions)
+- Vantage: 20.161.78.66 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

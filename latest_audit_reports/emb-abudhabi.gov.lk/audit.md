@@ -1,8 +1,8 @@
 # Website Audit: https://emb-abudhabi.gov.lk/
 
-- Completed: 2026-11-24 13:25
+- Completed: 2026-11-25 11:59
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.209.196 (US, github-actions)
+- Vantage: 20.161.78.66 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Embassy of Sri Lanka Villa No. 42, Sector E 18/3, Salam Street, P.O. Box: 46534, Abu Dhabi, United Arab Emirates. Teleph; Phone: 04-6048-4186- (7 phone numbers found); Email: slemb.abudhabi@mfa.gov.lk (8 email addresses found); Published named responsibility: department
+Published postal address: Embassy of Sri Lanka Villa No. 42, Sector E 18/3, Salam Street, P.O. Box: 46534, Abu Dhabi, United Arab Emirates. Teleph; Phone: +97126331661 (7 phone numbers found); Email: slemb.abudhabi@mfa.gov.lk (8 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Embassy of Sri Lanka Villa No. 42, Sector E 18/3, Salam Street, P.O. Box: 46534, Abu Dhabi, United Arab Emirates. Teleph |
-| reachable_contacts | ✅ | Phone: 04-6048-4186- (7 phone numbers found); Email: slemb.abudhabi@mfa.gov.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: +97126331661 (7 phone numbers found); Email: slemb.abudhabi@mfa.gov.lk (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
