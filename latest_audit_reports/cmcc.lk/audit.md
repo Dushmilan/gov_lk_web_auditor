@@ -1,8 +1,8 @@
 # Website Audit: https://cmcc.lk/
 
-- Completed: 2026-11-25 12:02
+- Completed: 2026-11-26 11:50
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.78.66 (US, github-actions)
+- Vantage: 40.124.217.247 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Microbiology and Immunology, Faculty of Medicine, University of Colombo, Sri Lanka; Phone: 2342355678 (3 phone numbers found); Email: demo@wenthemes.com (2 email addresses found); Published named responsibility: department
+Published postal address: Microbiology and Immunology, Faculty of Medicine, University of Colombo, Sri Lanka; Phone: 2342355678 (2 phone numbers found); Email: demo@wenthemes.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Microbiology and Immunology, Faculty of Medicine, University of Colombo, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 2342355678 (3 phone numbers found); Email: demo@wenthemes.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 2342355678 (2 phone numbers found); Email: demo@wenthemes.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

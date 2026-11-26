@@ -1,8 +1,8 @@
 # Website Audit: https://www.treasury.gov.lk/
 
-- Completed: 2026-11-25 11:51
+- Completed: 2026-11-26 11:40
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.78.66 (US, github-actions)
+- Vantage: 40.124.217.247 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: u003eThe Secretariat, Colombo 01, Sri Lanka; Phone: 0.11.2019 - 07-0 (281 phone numbers found); Email: jayasundara.jgdt@fpd.treasury.gov.lk (222 email addresses found); Published named responsibility: department
+Published postal address: Submit Ministry of Finance The Secretariat Colombo 01, Sri Lanka; Phone: 0.11.2019 - 07-0 (5 phone numbers found); Email: info@mo.treasury.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: u003eThe Secretariat, Colombo 01, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0.11.2019 - 07-0 (281 phone numbers found); Email: jayasundara.jgdt@fpd.treasury.gov.lk (222 email addresses found) |
+| postal_address | ✅ | Published postal address: Submit Ministry of Finance The Secretariat Colombo 01, Sri Lanka |
+| reachable_contacts | ✅ | Phone: 0.11.2019 - 07-0 (5 phone numbers found); Email: info@mo.treasury.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://pgim.cmb.ac.lk/
 
-- Completed: 2026-11-25 11:40
+- Completed: 2026-11-26 11:30
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.78.66 (US, github-actions)
+- Vantage: 40.124.217.247 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 2016 Postgraduate Institute of Medicine, University of Colombo, Sri Lanka; Phone: 0730907450 (16 phone numbers found); Email: arexams@pgim.cmb.ac.lk (26 email addresses found); Published named responsibility: director
+Published postal address: 2016 Postgraduate Institute of Medicine, University of Colombo, Sri Lanka; Phone: 0112696738 (16 phone numbers found); Email: merc@pgim.cmb.ac.lk (26 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2016 Postgraduate Institute of Medicine, University of Colombo, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0730907450 (16 phone numbers found); Email: arexams@pgim.cmb.ac.lk (26 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112696738 (16 phone numbers found); Email: merc@pgim.cmb.ac.lk (26 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

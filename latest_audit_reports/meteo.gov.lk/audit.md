@@ -1,8 +1,8 @@
 # Website Audit: https://meteo.gov.lk/
 
-- Completed: 2026-11-25 11:33
+- Completed: 2026-11-26 11:23
 - Overall result: ⚫ Level 0
-- Vantage: 20.161.78.66 (US, github-actions)
+- Vantage: 40.124.217.247 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

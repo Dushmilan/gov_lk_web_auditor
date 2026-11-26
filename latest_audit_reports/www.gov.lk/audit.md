@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-11-25 11:40
+- Completed: 2026-11-26 11:32
 - Overall result: 🔴 Level 1
-- Vantage: 20.161.78.66 (US, github-actions)
+- Vantage: 40.124.217.247 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 4 191919 . (165 phone numbers found); Email: departmentofayurveda@gmail.com (65 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 4 191919 . (154 phone numbers found); Email: departmentofayurveda@gmail.com (62 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

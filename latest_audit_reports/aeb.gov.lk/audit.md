@@ -1,8 +1,8 @@
 # Website Audit: https://aeb.gov.lk/
 
-- Completed: 2026-11-25 12:18
+- Completed: 2026-11-26 12:05
 - Overall result: 🔴 Level 1
-- Vantage: 20.161.78.66 (US, github-actions)
+- Vantage: 40.124.217.247 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
