@@ -1,8 +1,8 @@
 # Website Audit: https://emb-manama.gov.lk/
 
-- Completed: 2026-11-26 11:46
+- Completed: 2026-11-27 11:42
 - Overall result: 🟢 Level 3
-- Vantage: 40.124.217.247 (US, github-actions)
+- Vantage: 20.120.158.131 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and Contact Information\",\"page\":\"/address-and-contact-information\",\"order\":3,\"hasSubItems\":false,\"subItems\":[; Phone: +97317008410 (2 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: division
+Published postal address: and Contact Information\",\"page\":\"/address-and-contact-information\",\"order\":3,\"hasSubItems\":false,\"subItems\":[; Phone: +97317008410 (3 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and Contact Information\",\"page\":\"/address-and-contact-information\",\"order\":3,\"hasSubItems\":false,\"subItems\":[ |
-| reachable_contacts | ✅ | Phone: +97317008410 (2 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +97317008410 (3 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ✅

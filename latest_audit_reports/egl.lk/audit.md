@@ -1,8 +1,8 @@
 # Website Audit: https://egl.lk/
 
-- Completed: 2026-11-26 11:33
+- Completed: 2026-11-27 11:29
 - Overall result: 🔴 Level 1
-- Vantage: 40.124.217.247 (US, github-actions)
+- Vantage: 20.120.166.31 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

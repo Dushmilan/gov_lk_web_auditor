@@ -1,8 +1,8 @@
 # Website Audit: https://wijayakmhospital.com/
 
-- Completed: 2026-11-26 11:50
+- Completed: 2026-11-27 11:47
 - Overall result: 🟠 Level 2
-- Vantage: 40.124.217.247 (US, github-actions)
+- Vantage: 20.120.158.131 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Wijaya Kumaratunga Memorial Hospital, Seeduwa. Telephone 011 225 8862 - 64 E - Mail wkmhinfo@gmail.com Facebook Facebook; Phone: 0009189233 (19 phone numbers found); Email: wkmhinfo@gmail.com (2 email addresses found); Published named responsibility: director
+Published postal address: Wijaya Kumaratunga Memorial Hospital, Seeduwa. Telephone 011 225 8862 - 64 E - Mail wkmhinfo@gmail.com Facebook Facebook; Phone: 0741851053 (19 phone numbers found); Email: wkmhinfo@gmail.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Wijaya Kumaratunga Memorial Hospital, Seeduwa. Telephone 011 225 8862 - 64 E - Mail wkmhinfo@gmail.com Facebook Facebook |
-| reachable_contacts | ✅ | Phone: 0009189233 (19 phone numbers found); Email: wkmhinfo@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0741851053 (19 phone numbers found); Email: wkmhinfo@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌
