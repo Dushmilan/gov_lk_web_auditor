@@ -1,8 +1,8 @@
 # Website Audit: https://www.railway.gov.lk/
 
-- Completed: 2026-11-27 12:04
+- Completed: 2026-11-28 11:37
 - Overall result: ⚫ Level 0
-- Vantage: 20.120.166.31 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

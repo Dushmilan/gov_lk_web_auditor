@@ -1,8 +1,8 @@
 # Website Audit: https://www.ibmbb.cmb.ac.lk/
 
-- Completed: 2026-11-27 11:26
+- Completed: 2026-11-28 11:02
 - Overall result: 🔴 Level 1
-- Vantage: 20.120.158.131 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

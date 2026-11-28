@@ -1,8 +1,8 @@
 # Website Audit: https://defencesc.lk/
 
-- Completed: 2026-11-27 11:16
+- Completed: 2026-11-28 10:53
 - Overall result: ⚫ Level 0
-- Vantage: 20.120.158.131 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

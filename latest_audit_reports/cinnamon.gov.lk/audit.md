@@ -1,8 +1,8 @@
 # Website Audit: https://cinnamon.gov.lk/
 
-- Completed: 2026-11-27 11:10
+- Completed: 2026-11-28 10:49
 - Overall result: 🔴 Level 1
-- Vantage: 20.120.158.131 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 091 22 10 999 (35 phone numbers found); Email: secretary@agrimin.gov.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0713831505 (35 phone numbers found); Email: secretary@agrimin.gov.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

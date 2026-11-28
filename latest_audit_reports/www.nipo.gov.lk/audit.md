@@ -1,8 +1,8 @@
 # Website Audit: https://www.nipo.gov.lk/
 
-- Completed: 2026-11-27 12:01
+- Completed: 2026-11-28 11:34
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.166.31 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakbf9e4b8ed4da58b9; Phone: 0112 669 178 (39 phone numbers found); Email: nipos@sltnet.lk (22 email addresses found); Published named responsibility: director
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak38d3dfbb702818c3; Phone: 0112 688 768 (39 phone numbers found); Email: nipos@sltnet.lk (22 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakbf9e4b8ed4da58b9 |
-| reachable_contacts | ✅ | Phone: 0112 669 178 (39 phone numbers found); Email: nipos@sltnet.lk (22 email addresses found) |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak38d3dfbb702818c3 |
+| reachable_contacts | ✅ | Phone: 0112 688 768 (39 phone numbers found); Email: nipos@sltnet.lk (22 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

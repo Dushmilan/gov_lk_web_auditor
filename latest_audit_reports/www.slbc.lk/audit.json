@@ -1,18 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "8508b827-e218-47c1-bf6b-1a188e8ed241",
+  "audit_id": "86a33bbf-da74-4719-82d7-3d6520f23bb4",
   "url": "https://www.slbc.lk/",
   "normalized_url": "https://www.slbc.lk/",
-  "started_at": "2026-11-27T11:46:18.873624+05:30",
-  "completed_at": "2026-11-27T11:46:24.230185+05:30",
+  "started_at": "2026-11-28T11:21:10.915977+05:30",
+  "completed_at": "2026-11-28T11:21:20.800087+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "http_available: Every repeated HTTP probe failed: [404, 404, 404, 404]"
     ]
   },
   "evidence": [
@@ -20,96 +17,66 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-27T11:46:20.187047+05:30"
+      "observed_at": "2026-11-28T11:21:12.707602+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-27T11:46:20.187069+05:30"
+      "observed_at": "2026-11-28T11:21:12.707627+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-27T11:46:20.861943+05:30"
+      "observed_at": "2026-11-28T11:21:13.229969+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.slbc.lk/",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 404 at https://www.slbc.lk/",
       "source": "https://www.slbc.lk/",
-      "observed_at": "2026-11-27T11:46:24.213484+05:30"
+      "observed_at": "2026-11-28T11:21:20.797308+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://www.slbc.lk/",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 404 at http://www.slbc.lk/",
       "source": "http://www.slbc.lk/",
-      "observed_at": "2026-11-27T11:46:24.213504+05:30"
+      "observed_at": "2026-11-28T11:21:20.797328+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.slbc.lk/",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 404 at https://www.slbc.lk/",
       "source": "https://www.slbc.lk/",
-      "observed_at": "2026-11-27T11:46:24.213508+05:30"
+      "observed_at": "2026-11-28T11:21:20.797331+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://www.slbc.lk/",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 404 at http://www.slbc.lk/",
       "source": "http://www.slbc.lk/",
-      "observed_at": "2026-11-27T11:46:24.213510+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://www.slbc.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://www.slbc.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://www.slbc.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://www.slbc.lk/",
-      "data": {
-        "value": "0950635027"
-      }
+      "observed_at": "2026-11-28T11:21:20.797333+05:30"
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 267 visible characters across 4 pages",
       "source": "https://www.slbc.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [404, 404, 404, 404]",
+      "observed_at": "2026-11-28T11:21:20.799531+05:30"
     }
   ],
   "observations": [
     {
       "host": "www.slbc.lk",
       "addresses": [
-        "66.198.240.25"
+        "51.79.186.0"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -123,43 +90,43 @@
     {
       "host": "www.slbc.lk",
       "status": "valid",
-      "expires_at": "2027-02-06T00:01:09+05:30",
+      "expires_at": "2027-02-25T16:09:36+05:30",
       "hostname_valid": true,
       "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.slbc.lk/",
-      "status_code": 200,
+      "status_code": 404,
       "final_url": "https://www.slbc.lk/",
       "redirects": [],
-      "elapsed_ms": 349,
+      "elapsed_ms": 593,
       "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://www.slbc.lk/",
-      "status_code": 200,
+      "status_code": 404,
       "final_url": "http://www.slbc.lk/",
       "redirects": [],
-      "elapsed_ms": 190,
+      "elapsed_ms": 402,
       "content_type": "text/html",
       "error": null
     },
     {
       "url": "https://www.slbc.lk/",
-      "status_code": 200,
+      "status_code": 404,
       "final_url": "https://www.slbc.lk/",
       "redirects": [],
-      "elapsed_ms": 272,
+      "elapsed_ms": 2364,
       "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://www.slbc.lk/",
-      "status_code": 200,
+      "status_code": 404,
       "final_url": "http://www.slbc.lk/",
       "redirects": [],
-      "elapsed_ms": 250,
+      "elapsed_ms": 1092,
       "content_type": "text/html",
       "error": null
     }
@@ -167,27 +134,27 @@
   "snapshots": [
     {
       "url": "https://www.slbc.lk/",
-      "path": "audit.output/www.slbc.lk/20261127.1146/snapshots/page-01-d50cbb63feef.html",
-      "sha256": "d50cbb63feefe2c060838a21e53a976319276c713f2644040f590f82b0b07963",
-      "bytes": 12109
+      "path": "audit.output/www.slbc.lk/20261128.1121/snapshots/page-01-4c13d452dd5d.html",
+      "sha256": "4c13d452dd5d49671bd93ca32f2b4f85c78e39b6ab0ad1f38d98ed267f8fd896",
+      "bytes": 1251
     },
     {
       "url": "http://www.slbc.lk/",
-      "path": "audit.output/www.slbc.lk/20261127.1146/snapshots/page-02-85fa438aa87d.html",
-      "sha256": "85fa438aa87db7851a2f7bd3bc49c3366ded0a105b2a75199ce35ec52b0da990",
-      "bytes": 12053
+      "path": "audit.output/www.slbc.lk/20261128.1121/snapshots/page-02-4c13d452dd5d.html",
+      "sha256": "4c13d452dd5d49671bd93ca32f2b4f85c78e39b6ab0ad1f38d98ed267f8fd896",
+      "bytes": 1251
     },
     {
       "url": "https://www.slbc.lk/",
-      "path": "audit.output/www.slbc.lk/20261127.1146/snapshots/page-03-558a4a994cfa.html",
-      "sha256": "558a4a994cfadb6f49874e8559dec4618da5c08ab4d0ad55bd3f0e2ed7a04724",
-      "bytes": 12129
+      "path": "audit.output/www.slbc.lk/20261128.1121/snapshots/page-03-4c13d452dd5d.html",
+      "sha256": "4c13d452dd5d49671bd93ca32f2b4f85c78e39b6ab0ad1f38d98ed267f8fd896",
+      "bytes": 1251
     },
     {
       "url": "http://www.slbc.lk/",
-      "path": "audit.output/www.slbc.lk/20261127.1146/snapshots/page-04-a0735c48d127.html",
-      "sha256": "a0735c48d127680b5967857a906c4b8889b98364c203c11713bfd250563328a4",
-      "bytes": 12092
+      "path": "audit.output/www.slbc.lk/20261128.1121/snapshots/page-04-4c13d452dd5d.html",
+      "sha256": "4c13d452dd5d49671bd93ca32f2b4f85c78e39b6ab0ad1f38d98ed267f8fd896",
+      "bytes": 1251
     }
   ],
   "reviewer_decisions": [],
@@ -203,8 +170,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [404, 404, 404, 404]",
       "executed": true,
       "checks": [
         {
@@ -217,43 +184,43 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [404, 404, 404, 404]"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -303,7 +270,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.158.131",
+    "egress_ip": "48.221.154.52",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

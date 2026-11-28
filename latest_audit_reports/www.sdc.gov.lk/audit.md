@@ -1,8 +1,8 @@
 # Website Audit: https://www.sdc.gov.lk/
 
-- Completed: 2026-11-27 11:38
+- Completed: 2026-11-28 11:13
 - Overall result: ⚫ Level 0
-- Vantage: 20.120.158.131 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

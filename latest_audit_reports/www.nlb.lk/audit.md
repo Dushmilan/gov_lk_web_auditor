@@ -1,8 +1,8 @@
 # Website Audit: https://www.nlb.lk/
 
-- Completed: 2026-11-27 11:35
+- Completed: 2026-11-28 11:11
 - Overall result: ⚫ Level 0
-- Vantage: 20.120.158.131 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

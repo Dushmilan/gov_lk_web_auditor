@@ -1,8 +1,8 @@
 # Website Audit: https://www.transport.gov.lk/
 
-- Completed: 2026-11-27 12:06
+- Completed: 2026-11-28 11:39
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.166.31 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: “Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path; Phone: +94 112 187 201 (17 phone numbers found); Email: iaucomplaints.mothub@gmail.com (2 email addresses found); Published named responsibility: division
+Published postal address: “Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path; Phone: 0718757654 (18 phone numbers found); Email: info@transport.gov.lk (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: “Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path |
-| reachable_contacts | ✅ | Phone: +94 112 187 201 (17 phone numbers found); Email: iaucomplaints.mothub@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0718757654 (18 phone numbers found); Email: info@transport.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

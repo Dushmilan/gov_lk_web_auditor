@@ -1,8 +1,8 @@
 # Website Audit: https://www.roadsafety.gov.lk/
 
-- Completed: 2026-11-27 12:02
+- Completed: 2026-11-28 11:35
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.166.31 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak37b91516f6d18ea2; Phone: +94 112 680 163 (6 phone numbers found); Email: transport@gmail.com (2 email addresses found); Published named responsibility: department
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak893e5bfd0f99773b; Phone: +94 112 687 109 (7 phone numbers found); Email: transport@gmail.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak37b91516f6d18ea2 |
-| reachable_contacts | ✅ | Phone: +94 112 680 163 (6 phone numbers found); Email: transport@gmail.com (2 email addresses found) |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak893e5bfd0f99773b |
+| reachable_contacts | ✅ | Phone: +94 112 687 109 (7 phone numbers found); Email: transport@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

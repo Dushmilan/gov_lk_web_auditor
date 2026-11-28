@@ -1,8 +1,8 @@
 # Website Audit: https://emb-tokyo.gov.lk/
 
-- Completed: 2026-11-27 11:39
+- Completed: 2026-11-28 11:15
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.158.131 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m; Phone: 0887277863 (17 phone numbers found); Email: consular.lankaembassy@mfa.gov.lk (8 email addresses found); Published named responsibility: director
+Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m; Phone: +81334406911 (17 phone numbers found); Email: john@example.com (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m |
-| reachable_contacts | ✅ | Phone: 0887277863 (17 phone numbers found); Email: consular.lankaembassy@mfa.gov.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: +81334406911 (17 phone numbers found); Email: john@example.com (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

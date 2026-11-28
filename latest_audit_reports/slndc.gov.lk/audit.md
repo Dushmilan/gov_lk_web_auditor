@@ -1,8 +1,8 @@
 # Website Audit: https://slndc.gov.lk/
 
-- Completed: 2026-11-27 11:49
+- Completed: 2026-11-28 11:24
 - Overall result: 🟠 Level 2
-- Vantage: 20.120.158.131 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: National Design Centre, No 10, De Mel Road, Katubedda, Moratuwa Contact Number General – (+94) 011-2607814 Chairmen – (+; Phone: 0539140313 (21 phone numbers found); Email: Info@slndc.gov.lk; Published named responsibility: director
+Published postal address: National Design Centre, No 10, De Mel Road, Katubedda, Moratuwa Contact Number General – (+94) 011-2607814 Chairmen – (+; Phone: 0.4-7.9 11.5 2.6 1 (21 phone numbers found); Email: Info@slndc.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: National Design Centre, No 10, De Mel Road, Katubedda, Moratuwa Contact Number General – (+94) 011-2607814 Chairmen – (+ |
-| reachable_contacts | ✅ | Phone: 0539140313 (21 phone numbers found); Email: Info@slndc.gov.lk |
+| reachable_contacts | ✅ | Phone: 0.4-7.9 11.5 2.6 1 (21 phone numbers found); Email: Info@slndc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

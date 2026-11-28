@@ -1,24 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "1234583a-ec07-46d7-b1f8-972f787545ba",
+  "audit_id": "50104df5-4184-49bf-a4a4-0bde8471c4ed",
   "url": "https://lpl.lk/",
   "normalized_url": "https://lpl.lk/",
-  "started_at": "2026-11-27T11:48:47.058181+05:30",
-  "completed_at": "2026-11-27T11:49:57.446912+05:30",
+  "started_at": "2026-11-28T11:23:22.930122+05:30",
+  "completed_at": "2026-11-28T11:23:29.671696+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "http_available: Every repeated HTTP probe failed: [500, 500, 500, 500]"
     ]
   },
   "evidence": [
@@ -26,726 +17,59 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-27T11:48:48.373016+05:30"
+      "observed_at": "2026-11-28T11:23:23.909844+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-27T11:48:48.373035+05:30"
+      "observed_at": "2026-11-28T11:23:23.909864+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-27T11:48:49.732421+05:30"
+      "observed_at": "2026-11-28T11:23:24.056607+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://lpl.lk/?lang=en",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 500 at https://lpl.lk/",
       "source": "https://lpl.lk/",
-      "observed_at": "2026-11-27T11:49:57.242580+05:30"
+      "observed_at": "2026-11-28T11:23:29.669525+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://lpl.lk/?lang=en",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 500 at https://lpl.lk/",
       "source": "http://lpl.lk/",
-      "observed_at": "2026-11-27T11:49:57.242599+05:30"
+      "observed_at": "2026-11-28T11:23:29.669543+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://lpl.lk/?lang=en",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 500 at https://lpl.lk/",
       "source": "https://lpl.lk/",
-      "observed_at": "2026-11-27T11:49:57.242602+05:30"
+      "observed_at": "2026-11-28T11:23:29.669547+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://lpl.lk/?lang=en",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 500 at https://lpl.lk/",
       "source": "http://lpl.lk/",
-      "observed_at": "2026-11-27T11:49:57.242605+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242607+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://lpl.lk/?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242609+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://lpl.lk/?option=com_content&view=article&id=9&Itemid=133&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=article&id=9&Itemid=133&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242611+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://lpl.lk/?option=com_content&view=article&id=10&Itemid=134&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=article&id=10&Itemid=134&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242614+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://lpl.lk/?option=com_content&view=article&id=11&Itemid=131&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=article&id=11&Itemid=131&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242616+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://lpl.lk/?option=com_content&view=article&id=41&Itemid=224&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=article&id=41&Itemid=224&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242618+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://lpl.lk/?option=com_content&view=article&id=38&Itemid=220&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=article&id=38&Itemid=220&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242620+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://lpl.lk/?option=com_content&view=article&id=15&Itemid=138&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=article&id=15&Itemid=138&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242622+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://lpl.lk/?option=com_content&view=article&id=16&Itemid=139&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=article&id=16&Itemid=139&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242625+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://lpl.lk/?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en",
-      "source": "https://lpl.lk/index.php?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en",
-      "observed_at": "2026-11-27T11:49:57.242627+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe",
-      "source": "https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx",
-      "source": "https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "https://lpl.lk/images/pdf/Application_Form_GM__SK__Final.docx"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112459906 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "data": {
-        "value": "+94112459906 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112459908 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "data": {
-        "value": "+94112459908 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=9&Itemid=133&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=9&Itemid=133&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=9&Itemid=133&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=9&Itemid=133&lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=10&Itemid=134&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=10&Itemid=134&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=10&Itemid=134&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=10&Itemid=134&lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=11&Itemid=131&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=11&Itemid=131&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=11&Itemid=131&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=11&Itemid=131&lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=41&Itemid=224&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=41&Itemid=224&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=41&Itemid=224&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=41&Itemid=224&lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=38&Itemid=220&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=38&Itemid=220&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=38&Itemid=220&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=38&Itemid=220&lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=15&Itemid=138&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=15&Itemid=138&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=15&Itemid=138&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=15&Itemid=138&lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=16&Itemid=139&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=16&Itemid=139&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=16&Itemid=139&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?option=com_content&view=article&id=16&Itemid=139&lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 121 ",
-      "source": "https://lpl.lk/?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en",
-      "data": {
-        "value": "+94 252 249 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 252 249 400 ",
-      "source": "https://lpl.lk/?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en",
-      "data": {
-        "value": "+94 252 249 400 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://lpl.lk/?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 29 October 2026",
-      "source": "https://lpl.lk/?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en",
-      "data": {
-        "value": "29 October 2026"
-      }
+      "observed_at": "2026-11-28T11:23:29.669550+05:30"
     },
     {
       "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 6429 visible characters across 14 pages",
+      "status": "fail",
+      "detail": "Only 190 visible characters across 4 pages; below substance threshold 200",
       "source": "https://lpl.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
+      "observed_at": "2026-11-28T11:23:29.671113+05:30"
     }
   ],
   "observations": [
@@ -772,249 +96,69 @@
     },
     {
       "url": "https://lpl.lk/",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?lang=en",
-      "redirects": [
-        "https://lpl.lk/index.php?lang=en",
-        "https://lpl.lk/?lang=en"
-      ],
-      "elapsed_ms": 2001,
-      "content_type": "text/html; charset=UTF-8",
+      "status_code": 500,
+      "final_url": "https://lpl.lk/",
+      "redirects": [],
+      "elapsed_ms": 865,
+      "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://lpl.lk/",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?lang=en",
+      "status_code": 500,
+      "final_url": "https://lpl.lk/",
       "redirects": [
-        "https://lpl.lk/",
-        "https://lpl.lk/index.php?lang=en",
-        "https://lpl.lk/?lang=en"
+        "https://lpl.lk/"
       ],
-      "elapsed_ms": 2068,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 110,
+      "content_type": "text/html",
       "error": null
     },
     {
       "url": "https://lpl.lk/",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?lang=en",
-      "redirects": [
-        "https://lpl.lk/index.php?lang=en",
-        "https://lpl.lk/?lang=en"
-      ],
-      "elapsed_ms": 1771,
-      "content_type": "text/html; charset=UTF-8",
+      "status_code": 500,
+      "final_url": "https://lpl.lk/",
+      "redirects": [],
+      "elapsed_ms": 107,
+      "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://lpl.lk/",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?lang=en",
+      "status_code": 500,
+      "final_url": "https://lpl.lk/",
       "redirects": [
-        "https://lpl.lk/",
-        "https://lpl.lk/index.php?lang=en",
-        "https://lpl.lk/?lang=en"
+        "https://lpl.lk/"
       ],
-      "elapsed_ms": 2506,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en"
-      ],
-      "elapsed_ms": 1814,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=article&id=22&Itemid=146&lang=en"
-      ],
-      "elapsed_ms": 1283,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=article&id=9&Itemid=133&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=article&id=9&Itemid=133&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=article&id=9&Itemid=133&lang=en"
-      ],
-      "elapsed_ms": 1783,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=article&id=10&Itemid=134&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=article&id=10&Itemid=134&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=article&id=10&Itemid=134&lang=en"
-      ],
-      "elapsed_ms": 1328,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=article&id=11&Itemid=131&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=article&id=11&Itemid=131&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=article&id=11&Itemid=131&lang=en"
-      ],
-      "elapsed_ms": 1592,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=article&id=41&Itemid=224&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=article&id=41&Itemid=224&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=article&id=41&Itemid=224&lang=en"
-      ],
-      "elapsed_ms": 1360,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=article&id=38&Itemid=220&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=article&id=38&Itemid=220&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=article&id=38&Itemid=220&lang=en"
-      ],
-      "elapsed_ms": 1263,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=article&id=15&Itemid=138&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=article&id=15&Itemid=138&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=article&id=15&Itemid=138&lang=en"
-      ],
-      "elapsed_ms": 1298,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=article&id=16&Itemid=139&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=article&id=16&Itemid=139&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=article&id=16&Itemid=139&lang=en"
-      ],
-      "elapsed_ms": 1412,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://lpl.lk/index.php?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en",
-      "status_code": 200,
-      "final_url": "https://lpl.lk/?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en",
-      "redirects": [
-        "https://lpl.lk/?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en"
-      ],
-      "elapsed_ms": 1329,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 108,
+      "content_type": "text/html",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "https://lpl.lk/?lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-01-a91b8975fab8.html",
-      "sha256": "a91b8975fab8f2408f5fb0edf8f4efe9a82e140676a37b2fc56ae17a76c7a092",
-      "bytes": 57218
+      "url": "https://lpl.lk/",
+      "path": "audit.output/lpl.lk/20261128.1123/snapshots/page-01-a8a284f377cb.html",
+      "sha256": "a8a284f377cb9f21c53e5553234ecb693dc4c2c38f3306b6cde4aead5e05e913",
+      "bytes": 7309
     },
     {
-      "url": "https://lpl.lk/?lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-02-5d0150b05575.html",
-      "sha256": "5d0150b055759eb440cbdb520d84598d689392633eaf0b2221e7a6d3036ea380",
-      "bytes": 57218
+      "url": "https://lpl.lk/",
+      "path": "audit.output/lpl.lk/20261128.1123/snapshots/page-02-a8a284f377cb.html",
+      "sha256": "a8a284f377cb9f21c53e5553234ecb693dc4c2c38f3306b6cde4aead5e05e913",
+      "bytes": 7309
     },
     {
-      "url": "https://lpl.lk/?lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-03-55b01fef403c.html",
-      "sha256": "55b01fef403cc58c8b8dd3035bded475a828d1a326828a073d7f73edfdd839ef",
-      "bytes": 57218
+      "url": "https://lpl.lk/",
+      "path": "audit.output/lpl.lk/20261128.1123/snapshots/page-03-a8a284f377cb.html",
+      "sha256": "a8a284f377cb9f21c53e5553234ecb693dc4c2c38f3306b6cde4aead5e05e913",
+      "bytes": 7309
     },
     {
-      "url": "https://lpl.lk/?lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-04-9c5dc4145413.html",
-      "sha256": "9c5dc4145413fd50cde17e3c6da312876ce2ebf62785493df499c459f7701ed4",
-      "bytes": 57218
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-05-5ee2cc4bfbb8.html",
-      "sha256": "5ee2cc4bfbb82b13594464406802c742ed11ef9419bd2c94cf9cf17eaa2d6c56",
-      "bytes": 57492
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=article&id=22&Itemid=146&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-06-4ceebd727cfe.html",
-      "sha256": "4ceebd727cfe82c0fc0fb6ea21930d7ed6f030f6687282cee0b52920eddc7abe",
-      "bytes": 33129
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=article&id=9&Itemid=133&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-07-bad92215e507.html",
-      "sha256": "bad92215e507ed017fba0aa38747ab2d89195c2ead63ff610cd81032891c6e77",
-      "bytes": 32207
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=article&id=10&Itemid=134&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-08-3a6f105681a6.html",
-      "sha256": "3a6f105681a6613d01cd0ca524fcceb269b4e9f790ca26950392ee35f0851244",
-      "bytes": 35925
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=article&id=11&Itemid=131&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-09-dad6966847aa.html",
-      "sha256": "dad6966847aacacf6cadcf1b196938ba6a6c369847e96c32262afb73a9c0f5ab",
-      "bytes": 37538
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=article&id=41&Itemid=224&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-10-d18b71118f39.html",
-      "sha256": "d18b71118f39f196799f0ce869714a00bfd55c58f700171c60abfcbfd65f8ac8",
-      "bytes": 34013
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=article&id=38&Itemid=220&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-11-f1cde8a48983.html",
-      "sha256": "f1cde8a489836d222b964b1ebca7f64324baac6bfeabaeb0cc8826ce4a867592",
-      "bytes": 30752
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=article&id=15&Itemid=138&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-12-49d5006a6e47.html",
-      "sha256": "49d5006a6e47d1fe062238f86cbfe3b5795a6d3a2276daf36da08f5d31319993",
-      "bytes": 34399
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=article&id=16&Itemid=139&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-13-e56be29b5292.html",
-      "sha256": "e56be29b52926cece9a50763a18b3357fa58255b07f5f851f1aef414c89e48f2",
-      "bytes": 35681
-    },
-    {
-      "url": "https://lpl.lk/?option=com_content&view=category&layout=blog&id=8&Itemid=125&lang=en",
-      "path": "audit.output/lpl.lk/20261127.1148/snapshots/page-14-049495ee6157.html",
-      "sha256": "049495ee6157284981d89e6a7a37d565b413756c5d8afcd36f33c61c648b595c",
-      "bytes": 36634
+      "url": "https://lpl.lk/",
+      "path": "audit.output/lpl.lk/20261128.1123/snapshots/page-04-a8a284f377cb.html",
+      "sha256": "a8a284f377cb9f21c53e5553234ecb693dc4c2c38f3306b6cde4aead5e05e913",
+      "bytes": 7309
     }
   ],
   "reviewer_decisions": [],
@@ -1030,8 +174,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
       "executed": true,
       "checks": [
         {
@@ -1043,44 +187,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 190 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 190 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 190 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 190 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -1100,28 +244,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No email evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: Contact E-mail Latest News Vacancies for General Manager & Store Keeper 29 October 2026 The paper advertisement publishe"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -1149,7 +274,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.120.158.131",
+    "egress_ip": "48.221.154.52",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: https://nilet.gov.lk/
 
-- Completed: 2026-11-27 11:51
+- Completed: 2026-11-28 11:25
 - Overall result: 🔴 Level 1
-- Vantage: 20.120.158.131 (US, github-actions)
+- Vantage: 48.221.154.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
